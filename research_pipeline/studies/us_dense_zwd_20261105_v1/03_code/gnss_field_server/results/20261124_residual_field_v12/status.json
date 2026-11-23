@@ -1,8 +1,9 @@
 {
   "state": "stage_completed",
-  "current": "E1201_mlp",
+  "current": "E1202_cnn_lstm",
   "completed": [
-    "E1201_mlp"
+    "E1201_mlp",
+    "E1202_cnn_lstm"
   ],
-  "updated_unix": 1795456433.563456
+  "updated_unix": 1795460055.3296976
 }

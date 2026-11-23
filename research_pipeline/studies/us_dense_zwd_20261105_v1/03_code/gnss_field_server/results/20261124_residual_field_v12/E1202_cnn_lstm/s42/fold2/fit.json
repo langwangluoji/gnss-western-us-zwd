@@ -1,0 +1,7 @@
+{
+  "seconds": 450.01600000000326,
+  "steps": 42507,
+  "best_monitor_rmse_normalized": 0.232770174741745,
+  "seed": 242,
+  "budget_seconds": 450.0
+}

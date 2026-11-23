@@ -1,0 +1,5 @@
+{
+  "status": "completed",
+  "kind": "cnn_lstm",
+  "budget_seconds": 3600.0
+}
