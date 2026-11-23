@@ -1,0 +1,24 @@
+{
+  "inputs": [
+    "ZWD",
+    "T",
+    "P",
+    "existing terrain and coordinates",
+    "12h causal history"
+  ],
+  "features": 113,
+  "data_sha256": "6a57285228b043b406ad033212f6d8dbbad2e4755338e74429b1f6a7ac6b5ac5",
+  "geometry_sha256": "a824bd4d6f61c686c1c8a717075f4d8498a95903bb4664c4a0e6f4f8419b7e5b",
+  "code_sha256": "72265a09ef6da2c4c6e1fd45e2f53bc38ecc7d14c73306b1349abedc410b0fe4",
+  "train_events": 2880,
+  "all_events": 3456,
+  "monitor_events": 2,
+  "budget_per_seed": 3.0,
+  "patience": 5,
+  "seeds": [
+    42,
+    17
+  ],
+  "confirmation_C_D_read": false,
+  "smoke": true
+}

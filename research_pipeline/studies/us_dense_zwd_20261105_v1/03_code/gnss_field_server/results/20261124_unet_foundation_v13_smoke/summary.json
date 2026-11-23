@@ -1,0 +1,17 @@
+[
+  {
+    "experiment": "E1301_mlp",
+    "seed": 42,
+    "finite": true
+  },
+  {
+    "experiment": "E1302_unet16",
+    "seed": 42,
+    "finite": true
+  },
+  {
+    "experiment": "E1303_unet24",
+    "seed": 42,
+    "finite": true
+  }
+]

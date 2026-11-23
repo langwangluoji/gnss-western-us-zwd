@@ -1,0 +1,13 @@
+{
+  "kind": "unet",
+  "width": 24,
+  "seed": 42,
+  "parameters": 273769,
+  "steps": 147,
+  "best_step": 147,
+  "best_monitor_rmse_mm": 8.817307472229004,
+  "seconds": 3.0320000000065193,
+  "budget_seconds": 3.0,
+  "early_stopped": false,
+  "epochs": 0.051041666666666666
+}
