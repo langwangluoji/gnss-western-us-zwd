@@ -1,0 +1,22 @@
+{
+  "checkpoint_sha256": "2705e1c54fca39331a1396cefb71d1f5806a38476951d71f9d1cadb4f46b71c9",
+  "data_sha256": "6a57285228b043b406ad033212f6d8dbbad2e4755338e74429b1f6a7ac6b5ac5",
+  "rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "hours": 24,
+  "members": 16,
+  "seed": 19011,
+  "selection_used": false
+}

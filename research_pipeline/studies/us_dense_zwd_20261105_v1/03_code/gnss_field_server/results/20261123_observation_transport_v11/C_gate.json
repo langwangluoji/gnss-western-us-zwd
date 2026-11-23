@@ -1,0 +1,116 @@
+{
+  "passed": false,
+  "records": [
+    {
+      "seed": 42,
+      "models": {
+        "gaussian": {
+          "checkpoint_sha256": "2705e1c54fca39331a1396cefb71d1f5806a38476951d71f9d1cadb4f46b71c9",
+          "layouts": [
+            {
+              "layout": 0,
+              "macro_rmse_mm": 12.415034294128418,
+              "crps_mm": 6.993249416351318
+            },
+            {
+              "layout": 1,
+              "macro_rmse_mm": 11.855996131896973,
+              "crps_mm": 6.824161529541016
+            },
+            {
+              "layout": 2,
+              "macro_rmse_mm": 11.696121215820312,
+              "crps_mm": 6.670752048492432
+            }
+          ],
+          "macro_rmse_mm": 11.9890505472819,
+          "crps_mm": 6.829387664794922,
+          "estimator": "analytic mean and Gaussian CRPS"
+        },
+        "diffusion": {
+          "checkpoint_sha256": "4698cac4a332804d858d2135ad4ade21840435a7fe8c7a8a4f454889773c4ea7",
+          "layouts": [
+            {
+              "layout": 0,
+              "macro_rmse_mm": 12.77268123626709,
+              "crps_mm": 7.245314598083496
+            },
+            {
+              "layout": 1,
+              "macro_rmse_mm": 12.146838188171387,
+              "crps_mm": 6.970636367797852
+            },
+            {
+              "layout": 2,
+              "macro_rmse_mm": 12.044175148010254,
+              "crps_mm": 6.905585765838623
+            }
+          ],
+          "macro_rmse_mm": 12.321231524149576,
+          "crps_mm": 7.040512243906657,
+          "estimator": "K32 mean and fair CRPS"
+        }
+      },
+      "point_margin_mm": 0.237885157267252,
+      "crps_margin_vs_gaussian_mm": 0.21112457911173532,
+      "passes": false
+    },
+    {
+      "seed": 17,
+      "models": {
+        "gaussian": {
+          "checkpoint_sha256": "4a34d25322b6c8350e97f9a4bfd8880cdd4b954e48368843314ad37ddd67c033",
+          "layouts": [
+            {
+              "layout": 0,
+              "macro_rmse_mm": 12.380541801452637,
+              "crps_mm": 7.072340488433838
+            },
+            {
+              "layout": 1,
+              "macro_rmse_mm": 11.578301429748535,
+              "crps_mm": 6.704979419708252
+            },
+            {
+              "layout": 2,
+              "macro_rmse_mm": 11.54737663269043,
+              "crps_mm": 6.651262283325195
+            }
+          ],
+          "macro_rmse_mm": 11.835406621297201,
+          "crps_mm": 6.809527397155762,
+          "estimator": "analytic mean and Gaussian CRPS"
+        },
+        "diffusion": {
+          "checkpoint_sha256": "9e7dbefdf0810608886829c2350fd7ceb1dcf6f26c9446d649840e667bb4cfc0",
+          "layouts": [
+            {
+              "layout": 0,
+              "macro_rmse_mm": 12.58117389678955,
+              "crps_mm": 7.170796871185303
+            },
+            {
+              "layout": 1,
+              "macro_rmse_mm": 11.7174654006958,
+              "crps_mm": 6.814237594604492
+            },
+            {
+              "layout": 2,
+              "macro_rmse_mm": 11.567910194396973,
+              "crps_mm": 6.645489692687988
+            }
+          ],
+          "macro_rmse_mm": 11.955516497294107,
+          "crps_mm": 6.876841386159261,
+          "estimator": "K32 mean and fair CRPS"
+        }
+      },
+      "point_margin_mm": -0.10870138804117957,
+      "crps_margin_vs_gaussian_mm": 0.06731398900349905,
+      "passes": false
+    }
+  ],
+  "rule": "Both seeds: diffusion RMSE <= paired deterministic+0.2mm and CRPS better than paired Gaussian",
+  "protocol": "Frozen selected checkpoints, quarterly4h3layouts, independent noise19021, no target history",
+  "note": "Conservative gate for further diffusion temporal training; does not rule out a separately designed temporal-only mechanism"
+}

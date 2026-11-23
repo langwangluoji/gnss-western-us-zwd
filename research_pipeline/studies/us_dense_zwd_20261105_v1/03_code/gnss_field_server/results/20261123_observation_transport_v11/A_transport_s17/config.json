@@ -1,0 +1,53 @@
+{
+  "variant": "transport",
+  "arm": "deterministic",
+  "seed": 17,
+  "steps": 2000,
+  "out": "results/20261123_observation_transport_v11/A_transport_s17",
+  "encoder": null,
+  "data_sha256": "6a57285228b043b406ad033212f6d8dbbad2e4755338e74429b1f6a7ac6b5ac5",
+  "encoder_receipt": null,
+  "code_sha256": {
+    "audit.py": "b5b82e79435b888cb50858fe4af44f58e5742120bdfdce55f0980f469dcc5d3f",
+    "data.py": "902d0c9a136e88ceecccedde9378fa0d2b412bc2eb5ac3878813223131ad868f",
+    "diagnose.py": "52fd9ffa6750556804256d289b26109d5868c52e4fc30424f0f91b40e1331dfe",
+    "evaluate.py": "ba84b50d012df0e067b632772a062373ec8c4b4735dfcbdb32b57723a8744bb6",
+    "metrics.py": "cef4c36f8a230467561b12712c50b2d72cec3f0bf302c02c353ab71b957d522b",
+    "model.py": "0ff38b728dd4d8d54980821faa916b0e9fa1b8686a0ab05153a35f4f02b9243a",
+    "profile.py": "f73290949710ff8068108dea55243bcf32da5b16e85d2c378fa33b615991f9c6",
+    "report.py": "9b3487ac1fabb30195386724c2b098da7eda61d103ca6e239dc4e9f2ba3c4eab",
+    "screen.py": "6b6f3c371d6d4fe373f8b9f84c680b630e7a3fc3a2a726dff69dbdbf8e2facff",
+    "train.py": "4c13d7c180a0d128f3ad533ba761f7e0d99928c8a25d4afa900e10f53a947dec",
+    "trajectory_report.py": "af89f4e26d97636354707440a9c3d64f205791858f608374c81447a33e2cffcd",
+    "transport.py": "76ae7a99208e80bf31b1c990bc46517e87e689e7709d6c90ab46969c47546476",
+    "transport_evaluate.py": "9cff061b01c9122b66b3f22eabda159e5c4a7ab2c5d91e61af276313fdce26cd",
+    "transport_probability.py": "119ac5ffd9c88c784b7caaf5856ce25e678aa1393a03c8b050b3c24d1824cda8",
+    "transport_probe.py": "d5981fcd81ad1244ec5f9c149d83e6b50164acb619b75406e27f1160b73bb4a8",
+    "transport_report.py": "f838668fe2044c7d46f464c086e5cceac31be6b6948a2b1367f29b662a5c7fee",
+    "transport_train.py": "1986d9a0c95e643c4d93e0b15a507ac63508415690d9468f5d8204096888c261",
+    "__init__.py": "2c7a23ac601d409bc1d17857b583b0d4ad8a57b59da93c00abc248a1d59e3550"
+  },
+  "history": "missing during training and inference",
+  "parameters": 386540,
+  "query_counts": [
+    64,
+    96,
+    137,
+    160
+  ],
+  "context_count": 82,
+  "ema_decay": 0.99,
+  "optimizer": "AdamW2e-4 warmup100 cosine floor2e-5 weight_decay1e-4 clip1",
+  "selection": "2018 Jan/Apr/Jul/Oct day1 first4h 3layouts; RMSE deterministic / CRPS probabilistic",
+  "val_members": 1,
+  "normalisation_mean": [
+    79.76289367675781,
+    287.9574890136719,
+    916.6582641601562
+  ],
+  "normalisation_std": [
+    45.831058502197266,
+    9.926286697387695,
+    81.20382690429688
+  ]
+}

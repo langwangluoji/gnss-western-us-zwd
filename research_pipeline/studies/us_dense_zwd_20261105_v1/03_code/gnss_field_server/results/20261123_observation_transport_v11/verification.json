@@ -1,0 +1,62 @@
+[
+  {
+    "run": "A_base_s17",
+    "metric_difference": 0,
+    "all_stations_condition_exposed": true,
+    "all_stations_target_exposed": true
+  },
+  {
+    "run": "A_base_s42",
+    "metric_difference": 0,
+    "all_stations_condition_exposed": true,
+    "all_stations_target_exposed": true
+  },
+  {
+    "run": "A_raw_s17",
+    "metric_difference": 0,
+    "all_stations_condition_exposed": true,
+    "all_stations_target_exposed": true
+  },
+  {
+    "run": "A_raw_s42",
+    "metric_difference": 0,
+    "all_stations_condition_exposed": true,
+    "all_stations_target_exposed": true
+  },
+  {
+    "run": "A_transport_s17",
+    "metric_difference": 0,
+    "all_stations_condition_exposed": true,
+    "all_stations_target_exposed": true
+  },
+  {
+    "run": "A_transport_s42",
+    "metric_difference": 0,
+    "all_stations_condition_exposed": true,
+    "all_stations_target_exposed": true
+  },
+  {
+    "run": "B_diffusion_s17",
+    "metric_difference": 0,
+    "all_stations_condition_exposed": true,
+    "all_stations_target_exposed": true
+  },
+  {
+    "run": "B_diffusion_s42",
+    "metric_difference": 0,
+    "all_stations_condition_exposed": true,
+    "all_stations_target_exposed": true
+  },
+  {
+    "run": "B_gaussian_s17",
+    "metric_difference": 0,
+    "all_stations_condition_exposed": true,
+    "all_stations_target_exposed": true
+  },
+  {
+    "run": "B_gaussian_s42",
+    "metric_difference": 0,
+    "all_stations_condition_exposed": true,
+    "all_stations_target_exposed": true
+  }
+]

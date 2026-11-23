@@ -1,0 +1,34 @@
+[
+  {
+    "run": "A_raw_s42",
+    "query_size": 64,
+    "checkpoint_sha256": "1d833260380f119dd712467454abcc76af48b0896f903ad4e7b914f383087939",
+    "member_rms_change_mm": 2.430600881576538,
+    "mean_rms_change_mm": 2.430600881576538,
+    "note": "Common-noise path sensitivity; not by itself a distributional consistency proof"
+  },
+  {
+    "run": "A_raw_s17",
+    "query_size": 64,
+    "checkpoint_sha256": "577a5c900570f34c987b4052f32dcbedb0364e9564c04a46e1739d9183a31482",
+    "member_rms_change_mm": 1.9776537418365479,
+    "mean_rms_change_mm": 1.9776537418365479,
+    "note": "Common-noise path sensitivity; not by itself a distributional consistency proof"
+  },
+  {
+    "run": "A_transport_s42",
+    "query_size": 64,
+    "checkpoint_sha256": "9be74b920ea836cb5bcf70450529176162e406d8065413c474fa6deb4ea73e7d",
+    "member_rms_change_mm": 1.1961442232131958,
+    "mean_rms_change_mm": 1.1961442232131958,
+    "note": "Common-noise path sensitivity; not by itself a distributional consistency proof"
+  },
+  {
+    "run": "A_transport_s17",
+    "query_size": 64,
+    "checkpoint_sha256": "c90ce69676c12bd62b17494d7b0fb79b694f333420f4db2186116b3d0616d106",
+    "member_rms_change_mm": 1.2587100267410278,
+    "mean_rms_change_mm": 1.2587100267410278,
+    "note": "Common-noise path sensitivity; not by itself a distributional consistency proof"
+  }
+]

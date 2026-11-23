@@ -1,0 +1,165 @@
+{
+  "status": "passed",
+  "receipts": [
+    {
+      "run": "A_base_s17",
+      "scope": "selection",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 6435
+    },
+    {
+      "run": "A_base_s17",
+      "scope": "all_months24",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 115386
+    },
+    {
+      "run": "A_base_s42",
+      "scope": "selection",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 6435
+    },
+    {
+      "run": "A_base_s42",
+      "scope": "all_months24",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 115386
+    },
+    {
+      "run": "A_raw_s17",
+      "scope": "selection",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 6435
+    },
+    {
+      "run": "A_raw_s17",
+      "scope": "all_months24",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 115386
+    },
+    {
+      "run": "A_raw_s42",
+      "scope": "selection",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 6435
+    },
+    {
+      "run": "A_raw_s42",
+      "scope": "all_months24",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 115386
+    },
+    {
+      "run": "A_transport_s17",
+      "scope": "selection",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 6435
+    },
+    {
+      "run": "A_transport_s17",
+      "scope": "all_months24",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 115386
+    },
+    {
+      "run": "A_transport_s42",
+      "scope": "selection",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 6435
+    },
+    {
+      "run": "A_transport_s42",
+      "scope": "all_months24",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 115386
+    },
+    {
+      "run": "B_diffusion_s17",
+      "scope": "selection",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 6435
+    },
+    {
+      "run": "B_diffusion_s17",
+      "scope": "all_months24",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 115386
+    },
+    {
+      "run": "B_diffusion_s42",
+      "scope": "selection",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 6435
+    },
+    {
+      "run": "B_diffusion_s42",
+      "scope": "all_months24",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 115386
+    },
+    {
+      "run": "B_gaussian_s17",
+      "scope": "selection",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 6435
+    },
+    {
+      "run": "B_gaussian_s17",
+      "scope": "all_months24",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 115386
+    },
+    {
+      "run": "B_gaussian_s42",
+      "scope": "selection",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 6435
+    },
+    {
+      "run": "B_gaussian_s42",
+      "scope": "all_months24",
+      "max_difference": 0,
+      "matches_canonical_truth": true,
+      "all_predictions_finite": true,
+      "valid_truth_count": 115386
+    }
+  ]
+}

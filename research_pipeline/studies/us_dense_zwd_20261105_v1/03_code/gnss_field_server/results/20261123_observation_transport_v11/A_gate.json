@@ -1,0 +1,23 @@
+{
+  "selection_scores": {
+    "base": [
+      14.59038511912028,
+      14.027907053629557
+    ],
+    "raw": [
+      12.083346366882324,
+      12.064217885335287
+    ],
+    "transport": [
+      12.208257039388021,
+      12.136407216389975
+    ]
+  },
+  "eligible_variants": [
+    "raw",
+    "transport"
+  ],
+  "selected_variant": "raw",
+  "rule": "Improve both seeds over paired base; choose single variant by two-seed mean quarterly-screen RMSE",
+  "full_calendar_used_for_selection": false
+}

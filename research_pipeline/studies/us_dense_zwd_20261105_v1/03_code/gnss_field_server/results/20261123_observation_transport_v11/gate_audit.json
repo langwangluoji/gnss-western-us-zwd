@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "receipts": [
+    {
+      "seed": 42,
+      "arm": "gaussian",
+      "max_difference": 0
+    },
+    {
+      "seed": 42,
+      "arm": "diffusion",
+      "max_difference": 0
+    },
+    {
+      "seed": 17,
+      "arm": "gaussian",
+      "max_difference": 0
+    },
+    {
+      "seed": 17,
+      "arm": "diffusion",
+      "max_difference": 0
+    }
+  ]
+}

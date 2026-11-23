@@ -1,0 +1,121 @@
+{
+  "scope": "selection",
+  "repeats": 5,
+  "records": [
+    {
+      "run": "B_gaussian_s42",
+      "distance_group": "0to50km",
+      "pairs": 720,
+      "original_crps_mm": 5.272225220998128,
+      "shuffle_crps_mm": [
+        5.269766966501872,
+        5.276848951975505,
+        5.273010889689128,
+        5.268771966298421,
+        5.273256301879883
+      ],
+      "shuffle_mean_minus_original_mm": 0.00010579427083357018
+    },
+    {
+      "run": "B_gaussian_s42",
+      "distance_group": "50to150km",
+      "pairs": 519,
+      "original_crps_mm": 8.196016788482666,
+      "shuffle_crps_mm": [
+        8.185474554697672,
+        8.188030083974203,
+        8.185983022054037,
+        8.194356918334961,
+        8.193550268809
+      ],
+      "shuffle_mean_minus_original_mm": -0.0065378189086917615
+    },
+    {
+      "run": "B_diffusion_s42",
+      "distance_group": "0to50km",
+      "pairs": 720,
+      "original_crps_mm": 5.070058186848958,
+      "shuffle_crps_mm": [
+        5.2047529220581055,
+        5.20253054300944,
+        5.2068813641866045,
+        5.19857660929362,
+        5.198264280954997
+      ],
+      "shuffle_mean_minus_original_mm": 0.13214295705159618
+    },
+    {
+      "run": "B_diffusion_s42",
+      "distance_group": "50to150km",
+      "pairs": 519,
+      "original_crps_mm": 8.15211566289266,
+      "shuffle_crps_mm": [
+        8.102879683176676,
+        8.11134703954061,
+        8.10041602452596,
+        8.110353310902914,
+        8.114033857981363
+      ],
+      "shuffle_mean_minus_original_mm": -0.04430967966715471
+    },
+    {
+      "run": "B_gaussian_s17",
+      "distance_group": "0to50km",
+      "pairs": 720,
+      "original_crps_mm": 5.254258314768474,
+      "shuffle_crps_mm": [
+        5.251359462738037,
+        5.256460984547933,
+        5.25460688273112,
+        5.250244140625,
+        5.253219127655029
+      ],
+      "shuffle_mean_minus_original_mm": -0.0010801951090497752
+    },
+    {
+      "run": "B_gaussian_s17",
+      "distance_group": "50to150km",
+      "pairs": 519,
+      "original_crps_mm": 8.32673438390096,
+      "shuffle_crps_mm": [
+        8.314679940541586,
+        8.316138426462809,
+        8.311821301778158,
+        8.322727839152018,
+        8.312070687611898
+      ],
+      "shuffle_mean_minus_original_mm": -0.01124674479166643
+    },
+    {
+      "run": "B_diffusion_s17",
+      "distance_group": "0to50km",
+      "pairs": 720,
+      "original_crps_mm": 4.951552867889404,
+      "shuffle_crps_mm": [
+        5.0901414553324384,
+        5.089846611022949,
+        5.090474923451741,
+        5.082516034444173,
+        5.08240540822347
+      ],
+      "shuffle_mean_minus_original_mm": 0.1355240186055493
+    },
+    {
+      "run": "B_diffusion_s17",
+      "distance_group": "50to150km",
+      "pairs": 519,
+      "original_crps_mm": 8.067355791727701,
+      "shuffle_crps_mm": [
+        8.0244140625,
+        8.036163012186686,
+        8.0278107325236,
+        8.038848400115967,
+        8.042453130086264
+      ],
+      "shuffle_mean_minus_original_mm": -0.03341792424519774
+    }
+  ],
+  "status": "exploratory_posthoc_no_checkpoint_selection",
+  "station_marginals_exactly_preserved": true,
+  "meaning": "CRPS of observed station-to-station ZWD differences, not point ZWD RMSE or unobserved grid accuracy"
+}
