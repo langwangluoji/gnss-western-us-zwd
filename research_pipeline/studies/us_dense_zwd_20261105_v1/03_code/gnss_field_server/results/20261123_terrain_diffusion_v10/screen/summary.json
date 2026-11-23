@@ -1,0 +1,58 @@
+[
+  {
+    "run": "b1_s17",
+    "station_macro_rmse_mm": 16.912874857584637,
+    "fair_crps_mm": 14.187527974446615,
+    "coverage90": 0.0,
+    "increment_rmse_mm": 7.059985637664795
+  },
+  {
+    "run": "b1_s42",
+    "station_macro_rmse_mm": 15.685495058695475,
+    "fair_crps_mm": 13.106338500976562,
+    "coverage90": 0.0,
+    "increment_rmse_mm": 6.174060980478923
+  },
+  {
+    "run": "b2_s17",
+    "station_macro_rmse_mm": 19.160905202229817,
+    "fair_crps_mm": 10.54173469543457,
+    "coverage90": 0.5388681592039801,
+    "increment_rmse_mm": 10.84205150604248
+  },
+  {
+    "run": "b2_s42",
+    "station_macro_rmse_mm": 18.479596455891926,
+    "fair_crps_mm": 9.70938809712728,
+    "coverage90": 0.611318407960199,
+    "increment_rmse_mm": 10.746400515238443
+  },
+  {
+    "run": "d0_s17",
+    "station_macro_rmse_mm": 18.354185104370117,
+    "fair_crps_mm": 10.783593813578287,
+    "coverage90": 0.4483830845771144,
+    "increment_rmse_mm": 9.373051643371582
+  },
+  {
+    "run": "d0_s42",
+    "station_macro_rmse_mm": 20.32212511698405,
+    "fair_crps_mm": 11.638380686442057,
+    "coverage90": 0.5024875621890547,
+    "increment_rmse_mm": 11.405311902364096
+  },
+  {
+    "run": "d1_s17",
+    "station_macro_rmse_mm": 18.492045084635418,
+    "fair_crps_mm": 10.132917086283365,
+    "coverage90": 0.5161691542288557,
+    "increment_rmse_mm": 10.411027272542318
+  },
+  {
+    "run": "d1_s42",
+    "station_macro_rmse_mm": 19.227532068888348,
+    "fair_crps_mm": 11.175861676534018,
+    "coverage90": 0.45149253731343286,
+    "increment_rmse_mm": 10.638896306355795
+  }
+]

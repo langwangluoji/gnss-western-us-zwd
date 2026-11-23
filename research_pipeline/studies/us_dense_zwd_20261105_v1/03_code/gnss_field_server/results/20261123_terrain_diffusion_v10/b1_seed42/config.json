@@ -1,0 +1,32 @@
+{
+  "data": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261123_terrain_diffusion_v10_data",
+  "out": "results/20261123_terrain_diffusion_v10/b1_seed42",
+  "arm": "deterministic",
+  "seed": 42,
+  "steps": 300,
+  "validate_every": 100,
+  "width": 64,
+  "blocks": 4,
+  "queries": 32,
+  "lr": 0.0003,
+  "device": "cuda",
+  "eval_hours": 4,
+  "members": 4,
+  "ddim_steps": 20,
+  "encoder": null,
+  "initial": null,
+  "temporal": false,
+  "overfit": false,
+  "data_sha256": "6a57285228b043b406ad033212f6d8dbbad2e4755338e74429b1f6a7ac6b5ac5",
+  "parameters": 384682,
+  "source_sha256": {
+    "data.py": "75328070e5c03b14ee3101dc41c3da1832e5400bc3dcccd4ef6efed233eb341b",
+    "metrics.py": "0dd6389d924d6b8fdd84e342bb70cf762843b329654155241aec07aee7a8d658",
+    "model.py": "0ff38b728dd4d8d54980821faa916b0e9fa1b8686a0ab05153a35f4f02b9243a",
+    "train.py": "527c633c5b5247974b1dfee485a32900bfe4c4a4937e9808471e77cc6329fb37",
+    "__init__.py": "2c7a23ac601d409bc1d17857b583b0d4ad8a57b59da93c00abc248a1d59e3550"
+  },
+  "evaluation": "validation2018 January/July day1, 3 layouts, cold-start self-history; bounded screening",
+  "checkpoint_selection": "minimum three-layout mean macro RMSE on fixed validation screen",
+  "device_name": "NVIDIA GeForce RTX 4060 Laptop GPU"
+}

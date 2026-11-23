@@ -1,0 +1,18 @@
+{
+  "checkpoint_sha256": "8f9a2949775af18dbf06ea5564779c33e52a97df77e60cf9d768649e5a2aa794",
+  "data": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261123_terrain_diffusion_v10_data",
+  "data_sha256": "6a57285228b043b406ad033212f6d8dbbad2e4755338e74429b1f6a7ac6b5ac5",
+  "checkpoint": "results/20261123_terrain_diffusion_v10/screen/d1_s42/best.pt",
+  "out": "results/20261123_terrain_diffusion_v10/query_demo",
+  "hours": 2,
+  "members": 2,
+  "ddim_steps": 20,
+  "seed": 19007,
+  "rows": [
+    0,
+    6
+  ],
+  "query_csv": "results/20261123_terrain_diffusion_v10/query_demo.csv",
+  "row": 0,
+  "layout": 0
+}

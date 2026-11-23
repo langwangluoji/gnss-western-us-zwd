@@ -1,0 +1,17 @@
+{
+  "checkpoint_sha256": "d5d67f50c2934e21e454d12b63fe41e0ef47d84b1ee1ea4645dddc998d4266fa",
+  "data_sha256": "6a57285228b043b406ad033212f6d8dbbad2e4755338e74429b1f6a7ac6b5ac5",
+  "checkpoint": "results/20261123_terrain_diffusion_v10/screen/b1_s42/best.pt",
+  "out": "results/20261123_terrain_diffusion_v10/validation24_b1_s42",
+  "hours": 24,
+  "members": 8,
+  "ddim_steps": 20,
+  "seed": 19007,
+  "rows": [
+    0,
+    6
+  ],
+  "query_csv": null,
+  "row": 0,
+  "layout": 0
+}

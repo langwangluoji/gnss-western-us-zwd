@@ -1,0 +1,200 @@
+{
+  "status": "passed",
+  "same_truth_population": true,
+  "runs": [
+    {
+      "run": "b1_s17",
+      "all_predictions_finite": true,
+      "metric_max_difference": 0,
+      "samples_shape": [
+        3,
+        4,
+        8,
+        137
+      ],
+      "valid_truth_count": 3216,
+      "checkpoint_sha256": "536ce90f3c9a3fd3fc2f79947c5e8a780398d4a6721ae09ce9e7367ab315ee25",
+      "encoder": null
+    },
+    {
+      "run": "b1_s42",
+      "all_predictions_finite": true,
+      "metric_max_difference": 0,
+      "samples_shape": [
+        3,
+        4,
+        8,
+        137
+      ],
+      "valid_truth_count": 3216,
+      "checkpoint_sha256": "d5d67f50c2934e21e454d12b63fe41e0ef47d84b1ee1ea4645dddc998d4266fa",
+      "encoder": null
+    },
+    {
+      "run": "b2_s17",
+      "all_predictions_finite": true,
+      "metric_max_difference": 0,
+      "samples_shape": [
+        3,
+        4,
+        8,
+        137
+      ],
+      "valid_truth_count": 3216,
+      "checkpoint_sha256": "7cf5113e46a2b0eeda4ea0933dbf87add922cbf84853101ce1b8bbdf9e993413",
+      "encoder": null
+    },
+    {
+      "run": "b2_s42",
+      "all_predictions_finite": true,
+      "metric_max_difference": 0,
+      "samples_shape": [
+        3,
+        4,
+        8,
+        137
+      ],
+      "valid_truth_count": 3216,
+      "checkpoint_sha256": "92694e5c4487df69a75c6565260baa84a2221a1c25345f07d02dd6039e18a3a3",
+      "encoder": null
+    },
+    {
+      "run": "d0_s17",
+      "all_predictions_finite": true,
+      "metric_max_difference": 0,
+      "samples_shape": [
+        3,
+        4,
+        8,
+        137
+      ],
+      "valid_truth_count": 3216,
+      "checkpoint_sha256": "f125e914cf11d1ba6ccac74ed991721348332c882bd9e092bb1c887682feea66",
+      "encoder": null
+    },
+    {
+      "run": "d0_s42",
+      "all_predictions_finite": true,
+      "metric_max_difference": 0,
+      "samples_shape": [
+        3,
+        4,
+        8,
+        137
+      ],
+      "valid_truth_count": 3216,
+      "checkpoint_sha256": "ea35c9354b5398aeaf76101da31c94876e0a9fcc3b3af2a6b8174d02c97f0442",
+      "encoder": null
+    },
+    {
+      "run": "d1_s17",
+      "all_predictions_finite": true,
+      "metric_max_difference": 0,
+      "samples_shape": [
+        3,
+        4,
+        8,
+        137
+      ],
+      "valid_truth_count": 3216,
+      "checkpoint_sha256": "70e464a378e8c1cefcb25d9e6a6bf3e8333b3aadbbb1f15a05959572cd1c7e15",
+      "encoder": {
+        "path": "results\\20261123_terrain_diffusion_v10\\screen\\b1_s17\\best.pt",
+        "sha256": "536ce90f3c9a3fd3fc2f79947c5e8a780398d4a6721ae09ce9e7367ab315ee25",
+        "selected_step": 600,
+        "config": {
+          "data": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261123_terrain_diffusion_v10_data",
+          "out": "results\\20261123_terrain_diffusion_v10\\screen\\b1_s17",
+          "arm": "deterministic",
+          "seed": 17,
+          "steps": 1000,
+          "validate_every": 200,
+          "width": 64,
+          "blocks": 4,
+          "queries": 32,
+          "lr": 0.0003,
+          "device": "cuda",
+          "eval_hours": 4,
+          "members": 4,
+          "ddim_steps": 20,
+          "encoder": null,
+          "initial": null,
+          "temporal": false,
+          "overfit": false,
+          "data_sha256": "6a57285228b043b406ad033212f6d8dbbad2e4755338e74429b1f6a7ac6b5ac5",
+          "parameters": 384682,
+          "encoder_receipt": null,
+          "initial_receipt": null,
+          "source_sha256": {
+            "audit.py": "bd2e16285a1e70d40db1d7c742a9bd8cd437695391b3358f49dc69e6bc9d1e62",
+            "data.py": "902d0c9a136e88ceecccedde9378fa0d2b412bc2eb5ac3878813223131ad868f",
+            "evaluate.py": "bee7cd34bb9e1d120261c9134fb72c0b5f8b0841906510aae29bbc383f08c439",
+            "metrics.py": "cef4c36f8a230467561b12712c50b2d72cec3f0bf302c02c353ab71b957d522b",
+            "model.py": "0ff38b728dd4d8d54980821faa916b0e9fa1b8686a0ab05153a35f4f02b9243a",
+            "profile.py": "f73290949710ff8068108dea55243bcf32da5b16e85d2c378fa33b615991f9c6",
+            "report.py": "7d0c221896da531a13656ba40fe363a77e9e51b857a4aad16a666cbe1eb8e0ef",
+            "screen.py": "6b6f3c371d6d4fe373f8b9f84c680b630e7a3fc3a2a726dff69dbdbf8e2facff",
+            "train.py": "980163614c6643491bb43e8256e7c903d0ac22c3620829a996da54fadeb1e836",
+            "__init__.py": "2c7a23ac601d409bc1d17857b583b0d4ad8a57b59da93c00abc248a1d59e3550"
+          },
+          "evaluation": "validation2018 January/July day1, 3 layouts, cold-start self-history; bounded screening",
+          "checkpoint_selection": "deterministic: macro RMSE; probabilistic: macro fair CRPS; point tradeoff reported separately",
+          "device_name": "NVIDIA GeForce RTX 4060 Laptop GPU"
+        }
+      }
+    },
+    {
+      "run": "d1_s42",
+      "all_predictions_finite": true,
+      "metric_max_difference": 0,
+      "samples_shape": [
+        3,
+        4,
+        8,
+        137
+      ],
+      "valid_truth_count": 3216,
+      "checkpoint_sha256": "8f9a2949775af18dbf06ea5564779c33e52a97df77e60cf9d768649e5a2aa794",
+      "encoder": {
+        "path": "results\\20261123_terrain_diffusion_v10\\screen\\b1_s42\\best.pt",
+        "sha256": "d5d67f50c2934e21e454d12b63fe41e0ef47d84b1ee1ea4645dddc998d4266fa",
+        "selected_step": 800,
+        "config": {
+          "data": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261123_terrain_diffusion_v10_data",
+          "out": "results\\20261123_terrain_diffusion_v10\\screen\\b1_s42",
+          "arm": "deterministic",
+          "seed": 42,
+          "steps": 1000,
+          "validate_every": 200,
+          "width": 64,
+          "blocks": 4,
+          "queries": 32,
+          "lr": 0.0003,
+          "device": "cuda",
+          "eval_hours": 4,
+          "members": 4,
+          "ddim_steps": 20,
+          "encoder": null,
+          "initial": null,
+          "temporal": false,
+          "overfit": false,
+          "data_sha256": "6a57285228b043b406ad033212f6d8dbbad2e4755338e74429b1f6a7ac6b5ac5",
+          "parameters": 384682,
+          "source_sha256": {
+            "data.py": "75328070e5c03b14ee3101dc41c3da1832e5400bc3dcccd4ef6efed233eb341b",
+            "metrics.py": "f73797fdb4c6873c3ba984d3660994b65507e8271f6b42e927c9c998276819c2",
+            "model.py": "0ff38b728dd4d8d54980821faa916b0e9fa1b8686a0ab05153a35f4f02b9243a",
+            "profile.py": "f73290949710ff8068108dea55243bcf32da5b16e85d2c378fa33b615991f9c6",
+            "report.py": "cc7462d93183850210cd71659e6513212dd875208b99a90e0d49bbec2dd9e80d",
+            "screen.py": "6b6f3c371d6d4fe373f8b9f84c680b630e7a3fc3a2a726dff69dbdbf8e2facff",
+            "train.py": "207b28dad2e75f94e97744e9f4a2bb5c93ca9a64c259cdbd8049669ad02f9412",
+            "__init__.py": "2c7a23ac601d409bc1d17857b583b0d4ad8a57b59da93c00abc248a1d59e3550"
+          },
+          "evaluation": "validation2018 January/July day1, 3 layouts, cold-start self-history; bounded screening",
+          "checkpoint_selection": "deterministic: macro RMSE; probabilistic: macro fair CRPS; point tradeoff reported separately",
+          "device_name": "NVIDIA GeForce RTX 4060 Laptop GPU"
+        }
+      }
+    }
+  ]
+}

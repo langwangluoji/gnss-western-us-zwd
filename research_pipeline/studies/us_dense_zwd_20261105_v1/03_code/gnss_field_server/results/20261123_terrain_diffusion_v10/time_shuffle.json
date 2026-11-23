@@ -1,0 +1,14 @@
+[
+  {
+    "run": "validation24_b1_s42",
+    "increment_crps_mm": 4.038647810618083,
+    "shuffled_increment_crps_mm": 4.038647810618083,
+    "shuffle_minus_original_mm": 0.0
+  },
+  {
+    "run": "validation24_d1_s42",
+    "increment_crps_mm": 3.8061934312184653,
+    "shuffled_increment_crps_mm": 4.2812886238098145,
+    "shuffle_minus_original_mm": 0.47509519259134914
+  }
+]

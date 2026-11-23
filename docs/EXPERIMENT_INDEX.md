@@ -4,6 +4,7 @@
 
 | 实验 | 已记录状态 | 证据入口 |
 |---|---|---|
+| 20261123_terrain_diffusion_v10 | COMPLETE_BOUNDED_SCREEN_NOT_FULL_P2 | [RESULTS.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_terrain_diffusion_v10/RESULTS.md)；[训练代码与方案](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/tools/terrain_diffusion/README.md) |
 | 20261123_diffusion_observation_v09 | COMPLETE_RETAIN_V04 | [VERDICT.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_diffusion_observation_v09/VERDICT.md)；[RESULTS.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_diffusion_observation_v09/RESULTS.md) |
 | 20261123_diffusion_data_v08 | COMPLETE_RETAIN_V04 | [VERDICT.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_diffusion_data_v08/VERDICT.md)；[RESULTS.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_diffusion_data_v08/RESULTS.md) |
 | 20261123_diffusion_v07 | COMPLETE_RETAIN_V04 | [VERDICT.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_diffusion_v07/VERDICT.md)；[ARCHITECTURE.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_diffusion_v07/ARCHITECTURE.md) |

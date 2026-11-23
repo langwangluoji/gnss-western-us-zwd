@@ -1,0 +1,14 @@
+{
+  "run": "b1_s42",
+  "all_predictions_finite": true,
+  "metric_max_difference": 0,
+  "samples_shape": [
+    3,
+    4,
+    8,
+    137
+  ],
+  "valid_truth_count": 3216,
+  "checkpoint_sha256": "d5d67f50c2934e21e454d12b63fe41e0ef47d84b1ee1ea4645dddc998d4266fa",
+  "encoder": null
+}

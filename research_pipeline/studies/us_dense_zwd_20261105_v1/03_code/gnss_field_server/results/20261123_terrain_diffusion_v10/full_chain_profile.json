@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "hours": 4,
+  "members": 4,
+  "ddim_steps": 20,
+  "queries": 16,
+  "context": 82,
+  "seconds": 7.678889199974947,
+  "peak_memory_mb": 1920.39501953125,
+  "loss": 1.4196830987930298,
+  "finite_gradients": true,
+  "history_gradient": "full graph; no detach except auxiliary v preservation",
+  "increment_scale": 0.1414501965045929
+}
