@@ -1,0 +1,93 @@
+{
+  "macro_rmse_mm": 12.234643618265787,
+  "crps_mm": 7.005975723266602,
+  "layouts": [
+    {
+      "layout": 0,
+      "station_macro_rmse_mm": 12.108798027038574,
+      "micro_rmse_mm": 12.371942520141602,
+      "mae_mm": 9.320784568786621,
+      "bias_mm": -1.2238026857376099,
+      "fair_crps_mm": 6.895158767700195,
+      "coverage90": 0.5887629348447818,
+      "p90_absolute_mm": 19.82548713684082,
+      "p95_absolute_mm": 25.180891036987305,
+      "negative_fraction": 5.0689375506893756e-05,
+      "width90_mm": 19.861953420228925,
+      "valid_count": 38462,
+      "station_count": 137,
+      "increment": {
+        "station_macro_rmse_mm": 6.298766613006592,
+        "micro_rmse_mm": 6.382052898406982,
+        "mae_mm": 4.75546932220459,
+        "bias_mm": 0.016937116160988808,
+        "fair_crps_mm": 3.540217161178589,
+        "coverage90": 0.9354198929551444,
+        "p90_absolute_mm": 10.23018741607666,
+        "p95_absolute_mm": 12.927011489868164,
+        "negative_fraction": 0.49030565693430656,
+        "width90_mm": 28.07951878093127,
+        "valid_count": 36807,
+        "station_count": 137
+      }
+    },
+    {
+      "layout": 1,
+      "station_macro_rmse_mm": 12.461825370788574,
+      "micro_rmse_mm": 12.979877471923828,
+      "mae_mm": 9.555587768554688,
+      "bias_mm": -2.2125160694122314,
+      "fair_crps_mm": 7.0894598960876465,
+      "coverage90": 0.5939368727575269,
+      "p90_absolute_mm": 20.673851013183594,
+      "p95_absolute_mm": 26.6639347076416,
+      "negative_fraction": 0.00010296279399837795,
+      "width90_mm": 20.137927733161423,
+      "valid_count": 38462,
+      "station_count": 137,
+      "increment": {
+        "station_macro_rmse_mm": 6.277747631072998,
+        "micro_rmse_mm": 6.378467082977295,
+        "mae_mm": 4.7501220703125,
+        "bias_mm": 0.02972763404250145,
+        "fair_crps_mm": 3.5447211265563965,
+        "coverage90": 0.9356644116608254,
+        "p90_absolute_mm": 10.201864242553711,
+        "p95_absolute_mm": 12.91077709197998,
+        "negative_fraction": 0.48902795408864913,
+        "width90_mm": 28.461415715473713,
+        "valid_count": 36807,
+        "station_count": 137
+      }
+    },
+    {
+      "layout": 2,
+      "station_macro_rmse_mm": 12.133307456970215,
+      "micro_rmse_mm": 12.668828964233398,
+      "mae_mm": 9.482841491699219,
+      "bias_mm": -2.266101598739624,
+      "fair_crps_mm": 7.033308506011963,
+      "coverage90": 0.5826010087878946,
+      "p90_absolute_mm": 20.394994735717773,
+      "p95_absolute_mm": 25.919157028198242,
+      "negative_fraction": 3.960107461476074e-05,
+      "width90_mm": 19.996783539370004,
+      "valid_count": 38462,
+      "station_count": 137,
+      "increment": {
+        "station_macro_rmse_mm": 6.295305252075195,
+        "micro_rmse_mm": 6.387788772583008,
+        "mae_mm": 4.782162666320801,
+        "bias_mm": 0.04821181669831276,
+        "fair_crps_mm": 3.5563137531280518,
+        "coverage90": 0.9310185562528867,
+        "p90_absolute_mm": 10.285529136657715,
+        "p95_absolute_mm": 13.18116569519043,
+        "negative_fraction": 0.4877667803871787,
+        "width90_mm": 28.286231901430153,
+        "valid_count": 36807,
+        "station_count": 137
+      }
+    }
+  ]
+}

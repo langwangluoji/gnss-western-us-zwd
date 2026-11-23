@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "canonical_truth_checked": true,
+  "checkpoint_hashes_checked": true,
+  "evaluations": [
+    {
+      "seed": 42,
+      "method": "diffusion_k64",
+      "macro_rmse_mm": 11.77532958984375,
+      "empirical_crps_mm": 6.815957754633498,
+      "fair_crps_mm": 6.755199362987636
+    },
+    {
+      "seed": 42,
+      "method": "diffusion_nested_k16",
+      "macro_rmse_mm": 11.899749755859375,
+      "empirical_crps_mm": 7.006809980833894,
+      "fair_crps_mm": 6.7640162586183905
+    },
+    {
+      "seed": 42,
+      "method": "post_four_k16",
+      "macro_rmse_mm": 11.9910306930542,
+      "empirical_crps_mm": 6.97895049351325,
+      "fair_crps_mm": 6.918273994681986
+    },
+    {
+      "seed": 42,
+      "method": "post_first_k16",
+      "macro_rmse_mm": 12.109493255615234,
+      "empirical_crps_mm": 7.167260696167748,
+      "fair_crps_mm": 6.924466973894808
+    },
+    {
+      "seed": 17,
+      "method": "diffusion_k64",
+      "macro_rmse_mm": 12.108721733093262,
+      "empirical_crps_mm": 7.060392414624634,
+      "fair_crps_mm": 6.997764226819487
+    },
+    {
+      "seed": 17,
+      "method": "diffusion_nested_k16",
+      "macro_rmse_mm": 12.23464298248291,
+      "empirical_crps_mm": 7.25620604072783,
+      "fair_crps_mm": 7.005975650864985
+    },
+    {
+      "seed": 17,
+      "method": "post_four_k16",
+      "macro_rmse_mm": 12.579907417297363,
+      "empirical_crps_mm": 7.313456823498846,
+      "fair_crps_mm": 7.250872558084453
+    },
+    {
+      "seed": 17,
+      "method": "post_first_k16",
+      "macro_rmse_mm": 12.69725513458252,
+      "empirical_crps_mm": 7.505023065432499,
+      "fair_crps_mm": 7.254792675535248
+    }
+  ]
+}

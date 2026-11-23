@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "seed": 42,
+      "common_shift_spread_max_roundoff_mm": 3.0517578125e-05
+    },
+    {
+      "seed": 17,
+      "common_shift_spread_max_roundoff_mm": 3.0517578125e-05
+    }
+  ]
+}

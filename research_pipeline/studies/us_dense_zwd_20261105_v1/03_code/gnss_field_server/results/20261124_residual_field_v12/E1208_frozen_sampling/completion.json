@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "seconds": 1336.4369999999763,
+  "receipts": [
+    {
+      "seed": 42,
+      "gaussian_sha256": "8602eb01172326beaa4f75f77ef90b0448a3fc70a6cd0a445a1f60c38ac88f74",
+      "diffusion_sha256": "d617b7b611570a89720d685bc5d0ea90c6eeb4c5b2c144e0782c250cfd8aea6f",
+      "post_tree_sha256": "66ad858f916b3acda3aac2657c3d2ba8811030fb300e9ccb697fe06dd73c5f38"
+    },
+    {
+      "seed": 17,
+      "gaussian_sha256": "6cacebf82884e12929d72ca0d36e9c67edd5a14f04d4ae201236a0c0b672b6ee",
+      "diffusion_sha256": "e74a14661e48442a00453f22ac6ed1b545eec3e1c65124a1e5c65bb04178f29b",
+      "post_tree_sha256": "5917c87ba014decdf87a7603764f7a308f8edaa6b741c9781825de504af0b640"
+    }
+  ],
+  "protocol": "Frozen checkpoints, independent noise12471,12month-start days24h3layouts; diffusion64; post applied independently to four16-member groups; no reselection or fitting",
+  "caution": "Post group-aggregated ensemble members are coupled within groups; fair CRPS is descriptive here, not asserted unbiased for independent output draws"
+}

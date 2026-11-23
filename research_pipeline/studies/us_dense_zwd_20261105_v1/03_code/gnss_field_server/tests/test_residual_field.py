@@ -54,3 +54,11 @@ def test_tree_rejects_empty_monitor(tmp_path):
     from tools.terrain_diffusion.residual_experiment import fit_tree
     with pytest.raises(ValueError,match='empty fit or monitor'):
         fit_tree(np.zeros((2,3,2)),np.zeros((2,3)),np.ones((2,3),bool),np.zeros(2,bool),tmp_path,1,42)
+
+
+def test_sorted_crps_matches_pairwise_definition():
+    from tools.terrain_diffusion.v12_ensemble_scores import crps_fields
+    rng=np.random.default_rng(3);s=rng.normal(size=(7,5,4));y=rng.normal(size=(5,4));y[0,0]=np.nan
+    empirical,fair=crps_fields(s,y);first=np.abs(s-y[None]).mean(0);pair=np.abs(s[:,None]-s[None,:]).sum((0,1))
+    np.testing.assert_allclose(empirical,first-pair/(2*7*7),equal_nan=True)
+    np.testing.assert_allclose(fair,first-pair/(2*7*6),equal_nan=True)

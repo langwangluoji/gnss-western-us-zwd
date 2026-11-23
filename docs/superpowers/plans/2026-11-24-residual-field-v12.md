@@ -22,7 +22,7 @@ Residual diffusion operates in full target point values; no24/64-dimensional res
 - [x] Implement foundation/crossfit and downstream models, serial queue and atomic receipts.
 - [x] Smoke every arm on real data, independent review and fixes.
 - [x] Start full serial queue, verify first running stage; check periodically in this chat, no recurring automation.
-- [ ] Finish all evaluations, audit saved metrics, write final report/figures, sync and verify GitHub.
+- [x] Finish all evaluations, audit saved metrics, write final report/figures, sync and verify GitHub.
 
 Ruling: one-hour budget is per model family, split across two seeds and required fold fits; diagnostics/evaluation are additional. This keeps the whole suite practical, with actual budget reported. CNN-LSTM uses multiscale radial neighbourhoods to respect irregular GNSS geometry. No dense interpolation is treated as truth. Full suite may extend beyond07–08 depending on evaluation/runtime.
 
@@ -37,3 +37,5 @@ Formal E1201 verified running with finite updates and saved progress; smoke diag
 
 
 Frozen evaluation addendum (before E1206 completion): E1208 checks finite-ensemble point error after the seven trained arms, without any new fitting or selection. Analytic Gaussian mean/CRPS and independent K64 diffusion on the same expanded calendar; post correction applied in four16-member groups so its ensemble-summary features match training. Main E1201–07 K16 results stay unchanged. Post correction depends on ensemble moments and induces within-group member dependence, so its fair-CRPS estimate must not be claimed unbiased for an underlying iid distribution; add empirical CRPS alongside it in the final analysis. This is a numerical evaluation check, not another hour of training.
+
+Final verification: 26 tests passed. E1201–07 completed; E1208 frozen K64 completed, eight saved evaluations independently recomputed against canonical truth; checkpoint hashes verified. Figures and full Chinese analysis saved. Git synchronization checked at delivery.

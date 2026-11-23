@@ -1,3 +1,5 @@
+> 工程短跑：每模型族8秒，用于验证管线。科学结论请查看正式v12实验。
+
 # v12 overnight residual field results
 
 All experiments completed.

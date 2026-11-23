@@ -1,0 +1,44 @@
+[
+  {
+    "experiment": "E1201_mlp",
+    "fits": 8,
+    "seconds": 3600.0960000000196,
+    "updates": 828147
+  },
+  {
+    "experiment": "E1202_cnn_lstm",
+    "fits": 8,
+    "seconds": 3600.1260000000475,
+    "updates": 339843
+  },
+  {
+    "experiment": "E1203_xgboost",
+    "fits": 8,
+    "seconds": 69.29599999991478,
+    "updates": 8119
+  },
+  {
+    "experiment": "E1204_xgb_residual",
+    "fits": 2,
+    "seconds": 13.423000000067987,
+    "updates": 1831
+  },
+  {
+    "experiment": "E1207_diffusion_xgb",
+    "fits": 2,
+    "seconds": 1.547000000020489,
+    "updates": 231
+  },
+  {
+    "experiment": "E1205_correlated_gaussian",
+    "fits": 2,
+    "seconds": 3600.006999999867,
+    "updates": 710931
+  },
+  {
+    "experiment": "E1206_diffusion",
+    "fits": 2,
+    "seconds": 3600.0060000001686,
+    "updates": 223665
+  }
+]

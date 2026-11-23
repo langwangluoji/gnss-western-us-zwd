@@ -1,0 +1,82 @@
+[
+  {
+    "experiment": "E1205_correlated_gaussian",
+    "seed": 42,
+    "checkpoint": "best",
+    "fixed_training_mean_micro_rmse_mm": 11.730059623718262
+  },
+  {
+    "experiment": "E1205_correlated_gaussian",
+    "seed": 42,
+    "checkpoint": "last_ema",
+    "fixed_training_mean_micro_rmse_mm": 9.9303560256958
+  },
+  {
+    "experiment": "E1206_diffusion",
+    "seed": 42,
+    "checkpoint": "best",
+    "fixed_training_v_mse": 0.5876574238451818,
+    "events": 12,
+    "noise_levels": [
+      10,
+      30,
+      60,
+      90
+    ],
+    "noise_seed": 46123
+  },
+  {
+    "experiment": "E1206_diffusion",
+    "seed": 42,
+    "checkpoint": "last_ema",
+    "fixed_training_v_mse": 0.23111959414867064,
+    "events": 12,
+    "noise_levels": [
+      10,
+      30,
+      60,
+      90
+    ],
+    "noise_seed": 46123
+  },
+  {
+    "experiment": "E1205_correlated_gaussian",
+    "seed": 17,
+    "checkpoint": "best",
+    "fixed_training_mean_micro_rmse_mm": 11.574706077575684
+  },
+  {
+    "experiment": "E1205_correlated_gaussian",
+    "seed": 17,
+    "checkpoint": "last_ema",
+    "fixed_training_mean_micro_rmse_mm": 9.653594970703125
+  },
+  {
+    "experiment": "E1206_diffusion",
+    "seed": 17,
+    "checkpoint": "best",
+    "fixed_training_v_mse": 0.5758117421840628,
+    "events": 12,
+    "noise_levels": [
+      10,
+      30,
+      60,
+      90
+    ],
+    "noise_seed": 46123
+  },
+  {
+    "experiment": "E1206_diffusion",
+    "seed": 17,
+    "checkpoint": "last_ema",
+    "fixed_training_v_mse": 0.2178082480871429,
+    "events": 12,
+    "noise_levels": [
+      10,
+      30,
+      60,
+      90
+    ],
+    "noise_seed": 46123
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "seed": 42,
+    "population": "fit",
+    "count": 4732,
+    "micro_rmse_before": 11.26367473602295,
+    "micro_rmse_after": 8.55932331085205,
+    "bias_before": -0.8804346323013306,
+    "bias_after": -0.019336175173521042
+  },
+  {
+    "seed": 42,
+    "population": "monitor",
+    "count": 2357,
+    "micro_rmse_before": 13.647758483886719,
+    "micro_rmse_after": 13.429998397827148,
+    "bias_before": -1.2344087362289429,
+    "bias_after": 0.20333215594291687
+  },
+  {
+    "seed": 17,
+    "population": "fit",
+    "count": 4732,
+    "micro_rmse_before": 11.32129192352295,
+    "micro_rmse_after": 8.61287784576416,
+    "bias_before": -0.3086809813976288,
+    "bias_after": -0.004413579124957323
+  },
+  {
+    "seed": 17,
+    "population": "monitor",
+    "count": 2357,
+    "micro_rmse_before": 13.690892219543457,
+    "micro_rmse_after": 13.472562789916992,
+    "bias_before": -0.3739333748817444,
+    "bias_after": 0.25789758563041687
+  }
+]

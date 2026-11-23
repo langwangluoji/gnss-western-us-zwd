@@ -1,0 +1,3 @@
+{
+  "meaning": "Empirical CRPS scores each finite ensemble CDF; fair CRPS is unbiased for an underlying distribution only with iid members. E1207 common correction depends on all16 members, so its fair score is descriptive. E1206-to-E1207 empirical and fair score changes agree because all pair distances within each ensemble are unchanged."
+}
