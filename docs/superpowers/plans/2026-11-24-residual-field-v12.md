@@ -21,7 +21,7 @@ Residual diffusion operates in full target point values; no24/64-dimensional res
 - [x] Cache multiscale allowed features and spatial-fold training packs; record hashes.
 - [x] Implement foundation/crossfit and downstream models, serial queue and atomic receipts.
 - [x] Smoke every arm on real data, independent review and fixes.
-- [ ] Start full serial queue, verify first running stage; check periodically in this chat, no recurring automation.
+- [x] Start full serial queue, verify first running stage; check periodically in this chat, no recurring automation.
 - [ ] Finish all evaluations, audit saved metrics, write final report/figures, sync and verify GitHub.
 
 Ruling: one-hour budget is per model family, split across two seeds and required fold fits; diagnostics/evaluation are additional. This keeps the whole suite practical, with actual budget reported. CNN-LSTM uses multiscale radial neighbourhoods to respect irregular GNSS geometry. No dense interpolation is treated as truth. Full suite may extend beyond07–08 depending on evaluation/runtime.
@@ -32,3 +32,5 @@ Implementation/review ledger: model and queue tests first failed on missing modu
 Verification:25 targeted tests passed; completed smoke stages independently recomputed against canonical validation labels. Expanded inference is part of the smoke run, so diffusion output validation adds several minutes even with an8-second fitting budget. No formal result is inferred from smoke.
 
 2026-11-24 00:53CST: fixed smoke2 completed all7 stages in509.6s including full-calendar inference. Formal serial worker launched after independent canonical-truth/metric audit; budget3600s/family. Windows execution-state request prevents idle sleep only during worker lifetime.
+
+Formal E1201 verified running with finite updates and saved progress; smoke diagnostic maps, sequences, terrain/calibration/spatial tables completed and inspected. Next: hourly health checks; all dependent work remains in the same serial worker.

@@ -1,0 +1,7 @@
+{
+  "status": "completed",
+  "scope": "posthoc frozen expanded predictions; one fixed spatial shuffle, not significance test",
+  "terrain_rows": 42,
+  "spatial_rows": 12,
+  "calibration_rows": 18
+}
