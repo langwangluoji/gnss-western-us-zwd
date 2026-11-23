@@ -2,7 +2,7 @@
 
 当前研究范围为 **25–50°N、125–110°W陆地域**，数据覆盖2016—2020年。发布格网为25 km、144×96；有效空间分辨能力通过未见站点及站间差值评价。
 
-代码与轻量研究证据同步至私有仓库 [langwangluoji/gnss-western-us-zwd](https://github.com/langwangluoji/gnss-western-us-zwd)。Windows长路径检出建议使用 `git -c core.longpaths=true clone`。
+代码与轻量研究证据同步至公开仓库 [langwangluoji/gnss-western-us-zwd](https://github.com/langwangluoji/gnss-western-us-zwd)。Windows长路径检出建议使用 `git -c core.longpaths=true clone`。
 
 当前工程位于 `research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server`。工作区中的20261105是历史名称，不代表当前仍使用2008—2011年的南加州小区域。
 

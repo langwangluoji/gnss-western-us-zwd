@@ -2,7 +2,10 @@
   "full_name": "langwangluoji/gnss-western-us-zwd",
   "html_url": "https://github.com/langwangluoji/gnss-western-us-zwd",
   "clone_url": "https://github.com/langwangluoji/gnss-western-us-zwd.git",
-  "private": true,
+  "private": false,
   "default_branch": "main",
-  "id": 1468449174
+  "id": 1468449174,
+  "visibility": "public",
+  "visibility_changed_on": "2026-11-23",
+  "anonymous_access_verified": true
 }
