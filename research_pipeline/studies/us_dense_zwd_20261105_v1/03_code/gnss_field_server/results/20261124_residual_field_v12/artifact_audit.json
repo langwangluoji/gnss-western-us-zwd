@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "experiment": "E1201_mlp",
+      "seed": 42,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1201_mlp",
+      "seed": 42,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1201_mlp",
+      "seed": 17,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1201_mlp",
+      "seed": 17,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    }
+  ]
+}

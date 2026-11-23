@@ -1,6 +1,8 @@
 {
-  "state": "running",
+  "state": "stage_completed",
   "current": "E1201_mlp",
-  "completed": [],
-  "updated_unix": 1795452823.5061061
+  "completed": [
+    "E1201_mlp"
+  ],
+  "updated_unix": 1795456433.563456
 }

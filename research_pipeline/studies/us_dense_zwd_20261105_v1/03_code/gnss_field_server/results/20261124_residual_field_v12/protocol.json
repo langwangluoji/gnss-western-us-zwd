@@ -1,0 +1,48 @@
+{
+  "experiments": [
+    [
+      "E1201_mlp",
+      "foundation",
+      "mlp"
+    ],
+    [
+      "E1202_cnn_lstm",
+      "foundation",
+      "cnn_lstm"
+    ],
+    [
+      "E1203_xgboost",
+      "foundation",
+      "xgboost"
+    ],
+    [
+      "E1204_xgb_residual",
+      "tree",
+      false
+    ],
+    [
+      "E1205_correlated_gaussian",
+      "probability",
+      "gaussian"
+    ],
+    [
+      "E1206_diffusion",
+      "probability",
+      "diffusion"
+    ],
+    [
+      "E1207_diffusion_xgb",
+      "tree",
+      true
+    ]
+  ],
+  "budget_seconds": 3600.0,
+  "smoke": false,
+  "data_sha256": "6a57285228b043b406ad033212f6d8dbbad2e4755338e74429b1f6a7ac6b5ac5",
+  "source_sha256": {
+    "residual_experiment.py": "01bc8791ea4441047e14dbb68173ada348c29bfe8cad946c15b6b8a98277defb",
+    "residual_field.py": "6b23f66ea42e0652f4122a12d303012e62999be6008f75d147e87296b8648874",
+    "residual_queue.py": "a47dacbc5f68cf70f1598a521e4276a7d993f1048c71dc9866eb90f08f9047d5"
+  },
+  "started_unix": 1795452779.9424374
+}
