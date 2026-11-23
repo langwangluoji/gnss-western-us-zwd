@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "row": 0,
+      "hour": 0,
+      "max_feature_error": 0.0003452669770922512
+    },
+    {
+      "row": 6,
+      "hour": 12,
+      "max_feature_error": 0.0003452669770922512
+    }
+  ],
+  "reference": "Original Dataset.batch + features_from_batch at same fixed grid geometry; winter and summer",
+  "tolerance": "atol0.004,rtol0.002 for float32 second moments"
+}

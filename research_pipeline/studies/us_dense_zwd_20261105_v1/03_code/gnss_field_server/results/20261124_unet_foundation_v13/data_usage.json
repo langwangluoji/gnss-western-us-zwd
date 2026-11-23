@@ -1,0 +1,9 @@
+{
+  "events": 3456,
+  "fit_events": 2880,
+  "fit_target_entries": 923640,
+  "heldout_temporal_entries": 186368,
+  "distinct_training_hours": 1440,
+  "unique_station_hours": 554083,
+  "data_note": "Both layouts share each hour; target entries include repeated station-hours across layouts. Expanded sampling uses existing72 windows, not new weather dates. Training model/normalization observe only the activated allowed-variable data contract."
+}

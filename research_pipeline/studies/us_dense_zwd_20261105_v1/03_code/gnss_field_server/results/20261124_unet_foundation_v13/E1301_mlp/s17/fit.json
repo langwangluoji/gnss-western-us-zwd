@@ -1,0 +1,13 @@
+{
+  "kind": "mlp",
+  "width": 0,
+  "seed": 17,
+  "parameters": 31233,
+  "steps": 64345,
+  "best_step": 45659,
+  "best_monitor_rmse_mm": 9.935211181640625,
+  "seconds": 600.625,
+  "budget_seconds": 600.0,
+  "early_stopped": false,
+  "epochs": 22.34201388888889
+}

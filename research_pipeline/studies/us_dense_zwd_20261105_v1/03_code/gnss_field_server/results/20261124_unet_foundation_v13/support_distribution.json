@@ -1,0 +1,25 @@
+{
+  "training": {
+    "count": 923640,
+    "quantiles_km": [
+      14.10586929321289,
+      22.666460037231445,
+      43.04827117919922,
+      86.53019714355469,
+      149.57907104492188
+    ],
+    "fraction_above100km": 0.21073578450478542
+  },
+  "validation": {
+    "count": 115386,
+    "quantiles_km": [
+      42.14314651489258,
+      60.601715087890625,
+      77.9327392578125,
+      109.63462829589844,
+      151.7068328857422
+    ],
+    "fraction_above100km": 0.3267380791430503
+  },
+  "definition": "Distance to nearest currently valid conditioning ZWD; training counts all supervised layout-station-hour entries"
+}
