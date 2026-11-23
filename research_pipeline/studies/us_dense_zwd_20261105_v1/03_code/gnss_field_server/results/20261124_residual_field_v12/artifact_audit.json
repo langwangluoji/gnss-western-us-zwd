@@ -84,6 +84,34 @@
       "scope": "expanded",
       "max_difference": 0,
       "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1204_xgb_residual",
+      "seed": 42,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1204_xgb_residual",
+      "seed": 42,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1204_xgb_residual",
+      "seed": 17,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1204_xgb_residual",
+      "seed": 17,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
     }
   ]
 }

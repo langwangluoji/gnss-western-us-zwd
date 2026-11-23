@@ -1,10 +1,11 @@
 {
   "state": "stage_completed",
-  "current": "E1203_xgboost",
+  "current": "E1204_xgb_residual",
   "completed": [
     "E1201_mlp",
     "E1202_cnn_lstm",
-    "E1203_xgboost"
+    "E1203_xgboost",
+    "E1204_xgb_residual"
   ],
-  "updated_unix": 1795460147.5092123
+  "updated_unix": 1795460171.4006445
 }
