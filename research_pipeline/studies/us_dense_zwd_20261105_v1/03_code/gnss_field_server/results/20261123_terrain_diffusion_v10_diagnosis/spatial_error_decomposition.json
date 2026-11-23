@@ -1,0 +1,34 @@
+[
+  {
+    "run": "validation24_b1_s42",
+    "window_offset_mse_fraction": 0.532480713687352,
+    "within_window_centered_rmse_mm": 12.36471593946331
+  },
+  {
+    "run": "validation24_d1_s42",
+    "window_offset_mse_fraction": 0.6066464045578958,
+    "within_window_centered_rmse_mm": 13.087312034250424
+  },
+  {
+    "run": "b1_s42",
+    "distance_error_spearman": 0.4443309709608577,
+    "nearest_configured_station_km_quantiles": [
+      14.636961092183755,
+      60.67456463616181,
+      77.89622203823865,
+      108.72668810200261,
+      381.074837775092
+    ]
+  },
+  {
+    "run": "d1_s42",
+    "distance_error_spearman": 0.32443547373168097,
+    "nearest_configured_station_km_quantiles": [
+      14.636961092183755,
+      60.67456463616181,
+      77.89622203823865,
+      108.72668810200261,
+      381.074837775092
+    ]
+  }
+]

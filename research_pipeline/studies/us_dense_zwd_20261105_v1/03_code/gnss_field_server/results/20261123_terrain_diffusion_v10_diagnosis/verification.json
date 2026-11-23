@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "max_metric_difference": 0.0,
+  "identical_validation_population": true,
+  "all_predictions_finite": true,
+  "source_checkpoints_unchanged": true,
+  "training_updates": 0
+}

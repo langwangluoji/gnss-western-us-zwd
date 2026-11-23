@@ -1,5 +1,7 @@
 # 当前研究进展：2026-11-23
 
+最新冻结权重诊断：[v10瓶颈分析](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_terrain_diffusion_v10_diagnosis/ANALYSIS.md)。同人口固定高程IDW12.290mm优于当前B1平均16.299mm，优先改进观测/高差编码。训练真实目标历史带来明显优势，自生成历史在layout0的两种子诊断中没有稳定点值收益；查询32→137有输出敏感性，K4→K32约减少1.3mm集合均值评分误差。优化有有效学习，尚不能判定收敛或统一过拟合；本次未重训、未读取确认/C/D标签。
+
 最新实现：[v10真实本机筛查](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_terrain_diffusion_v10/RESULTS.md)。已按允许变量独立QC激活410训练/137验证合同，确认138及C/D标签保持隔离。B1/B2/D0/D1两种子各1000步，平均宏RMSE分别16.299/18.820/19.338/18.860mm；这是新人口下的缩减筛查，不能与旧v04约9mm直接比较。已提供真实训练曲线、概率/地形诊断、24h生成及完整4h×K4×DDIM20反向验证；正式P2/P3未完成，当前未达8mm。
 
 设计入口：[地形感知时空图扩散v2](superpowers/specs/2026-11-23-terrain-temporal-diffusion-v2.md)。旧A+B685站按100km块与物理组形成训练410、验证137、空间确认138；原C/D各110保留登记角色。训练池内动态条件/目标轮换，直接生成ZWD。旧A-only协议用于历史复现，不再作为新轨道的唯一条件规则。v10原型与正式设计的差异在代码README逐项列出。

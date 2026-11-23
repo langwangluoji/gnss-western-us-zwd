@@ -1,0 +1,14 @@
+{
+  "data_sha256": "6a57285228b043b406ad033212f6d8dbbad2e4755338e74429b1f6a7ac6b5ac5",
+  "checkpoint_sha256": {
+    "b1_s42": "d5d67f50c2934e21e454d12b63fe41e0ef47d84b1ee1ea4645dddc998d4266fa",
+    "d1_s42": "8f9a2949775af18dbf06ea5564779c33e52a97df77e60cf9d768649e5a2aa794",
+    "b1_s17": "536ce90f3c9a3fd3fc2f79947c5e8a780398d4a6721ae09ce9e7367ab315ee25",
+    "d1_s17": "70e464a378e8c1cefcb25d9e6a6bf3e8333b3aadbbb1f15a05959572cd1c7e15"
+  },
+  "code_sha256": "52fd9ffa6750556804256d289b26109d5868c52e4fc30424f0f91b40e1331dfe",
+  "status": "frozen_diagnostic_no_training",
+  "validation": "layout0, Jan/Jul four hours, K32 nested ensemble",
+  "training_history": "training410 only; four selected training windows; not a validation score",
+  "sealed_labels_read": false
+}
