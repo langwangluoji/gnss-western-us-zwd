@@ -1,0 +1,72 @@
+{
+  "status": "METADATA_ONLY_PROPOSAL_NOT_ACTIVATED",
+  "seed": 20261123,
+  "block_m": 100000,
+  "source_sha256": "80e0d53cd5cb1d98bafe6e5cc40c653a6d3ee4f22ccfe3851c32181b84e17d9b",
+  "script_sha256": "572192b5c2e4bb8768137109d8d08772b6d89dbbe3a6b8559957535c120f3e61",
+  "counts": {
+    "training": 410,
+    "confirmation": 138,
+    "validation": 137,
+    "legacy_D": 110,
+    "legacy_C": 110
+  },
+  "fold_counts": {
+    "0": 138,
+    "1": 137,
+    "2": 137,
+    "3": 137,
+    "4": 136
+  },
+  "old_roles_by_new": {
+    "development": {
+      "confirmation": 0,
+      "legacy_C": 110,
+      "legacy_D": 0,
+      "training": 0,
+      "validation": 0
+    },
+    "input": {
+      "confirmation": 35,
+      "legacy_C": 0,
+      "legacy_D": 0,
+      "training": 104,
+      "validation": 35
+    },
+    "retrospective": {
+      "confirmation": 0,
+      "legacy_C": 0,
+      "legacy_D": 110,
+      "training": 0,
+      "validation": 0
+    },
+    "train": {
+      "confirmation": 103,
+      "legacy_C": 0,
+      "legacy_D": 0,
+      "training": 306,
+      "validation": 102
+    }
+  },
+  "physical_overlap": false,
+  "labels_read": false,
+  "weather_values_read": false,
+  "height_counts": {
+    "0": {
+      "confirmation": 55,
+      "training": 165,
+      "validation": 55
+    },
+    "1": {
+      "confirmation": 51,
+      "training": 150,
+      "validation": 51
+    },
+    "2": {
+      "confirmation": 32,
+      "training": 95,
+      "validation": 31
+    }
+  },
+  "note": "QC may reduce effective counts; repartition does not erase prior development exposure."
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASSED_ARTIFACT_AND_ALGEBRA_CHECKS",
+  "station_rows": 905,
+  "candidate_rows": 685,
+  "counts": {
+    "training": 410,
+    "confirmation": 138,
+    "validation": 137,
+    "legacy_D": 110,
+    "legacy_C": 110
+  },
+  "physical_group_isolation": true,
+  "block_isolation": true,
+  "script_hash_matches": true,
+  "local_links_checked": 7,
+  "svg_xml_valid": 3,
+  "diffusion_v_roundtrip_error": 8.881784197001252e-16,
+  "model_trained": false,
+  "observation_labels_read": false,
+  "scope": "Metadata, files and synthetic algebra only; not GNSS model validation"
+}

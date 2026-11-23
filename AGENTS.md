@@ -1,5 +1,7 @@
 # 当前项目范围与验证
 
+- 2026-11-23最新授权：新时空扩散研究允许重组旧A+B训练候选池并动态轮换条件/目标站，详见 `docs/superpowers/specs/2026-11-23-terrain-temporal-diffusion-v2.md`。当前410训练/137验证/138确认是已生成的元数据提案，先完成P0数据合同再激活；C/D仍保持隔离。以下A174唯一输入规则继续适用于历史实验复现，不覆盖新协议。旧数据包、实验锁和结果不可因新划分而改写。
+
 - 当前研究：美国西部25–50°N、125–110°W，2016–2020，A174/B511/C110/D110。先读 `docs/CURRENT_RESEARCH.md` 和 `docs/EXPERIMENT_INDEX.md`。
 - 当前工程：`research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server`。旧39站/2008–2011结果不能替代当前扩区域结果。
 - 回答“最新”之前检查工程 `results/` 的实际目录、状态、实验锁与数据角色，不能只依赖外层README或历史运行状态。
