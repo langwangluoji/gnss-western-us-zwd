@@ -33,5 +33,7 @@
   "local_weight_files": 473,
   "github_repository": "https://github.com/langwangluoji/gnss-western-us-zwd",
   "github_private": true,
-  "sync_status": "repository_created_pending_initial_push"
+  "sync_status": "initial_push_verified",
+  "verified_initial_commit": "eb3c5022b7be772405258f838eb4fbd618914609",
+  "verified_remote_branch": "main"
 }

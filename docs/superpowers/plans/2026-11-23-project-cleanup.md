@@ -24,18 +24,18 @@
 - Fresh checkout: import/CLI, test collection and data-root discoverability.
 
 ### Task 1: Inventory and dependency closure
-- [ ] Record all file sizes and non-followed links in maintenance/cleanup_20261123.
-- [ ] Inspect current tools/configs and data manifests; define retained dependencies.
-- [ ] Write exact move/delete plan and verify source/target containment.
+- [x] Record all file sizes and non-followed links in maintenance/cleanup_20261123.
+- [x] Inspect current tools/configs and data manifests; define retained dependencies.
+- [x] Write exact move/delete plan and verify source/target containment.
 
 ### Task 2: Cleanup and project navigation
-- [ ] Move historical research/materials to external archive with per-operation ledger.
-- [ ] Remove confirmed regenerable caches and duplicate packages with paths, sizes and reconstruction instructions.
-- [ ] Preserve retained data/weights hashes; write README, current progress, artifact inventory, archive pointer and AGENTS.
-- [ ] Validate latest entry points and run the current test suite with the PyTorch interpreter.
+- [x] Move historical research/materials to external archive with per-operation ledger.
+- [x] Remove confirmed regenerable caches with paths, sizes and reconstruction instructions; release/package copies archived.
+- [x] Preserve retained data/weights hashes; write README, current progress, artifact inventory, archive pointer and AGENTS.
+- [x] Validate latest entry points and run the current test suite with the PyTorch interpreter.
 
 ### Task 3: GitHub synchronization
-- [ ] Create root Git repository and allowlist .gitignore; index lightweight code/evidence.
-- [ ] Scan staged content for large files and secrets; commit using authenticated GitHub identity.
-- [ ] Create private repository using current account; push main and verify private state and remote SHA.
-- [ ] Independent final review; fix material issues and verify final clean status.
+- [x] Create root Git repository and allowlist .gitignore; index lightweight code/evidence.
+- [x] Scan staged content for large files and secrets; commit using authenticated GitHub identity.
+- [x] Create private repository using current account; push main and verify private state and remote SHA.
+- [x] Independent final review; fix material issues and record fresh verification. Final documentation receipt follows the initial push.

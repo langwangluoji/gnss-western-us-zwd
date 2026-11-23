@@ -52,6 +52,7 @@
 **/development.jsonl
 **/events.jsonl
 **/portable_smoke/
+**/*.local.txt
 **/*predictions.csv
 **/hourly_station_counts.csv
 **/representative_publication_fields.svg
