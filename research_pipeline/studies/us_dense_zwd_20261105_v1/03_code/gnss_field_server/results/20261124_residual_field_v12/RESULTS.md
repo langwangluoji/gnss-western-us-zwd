@@ -1,6 +1,6 @@
 # v12 overnight residual field results
 
-Queue partial; status.json is authoritative.
+All experiments completed.
 
 Training410/validation137; allowed ZWD/T/P only. Frozen confirmation138 and C/D unread. Three spatial-fold foundation predictions train downstream models; final foundations are refitted. Same2018 development calendar, not a blind test. Radial CNN-LSTM uses12h observable history; stochastic temporal coherence is not trained.
 
@@ -12,6 +12,7 @@ Training410/validation137; allowed ZWD/T/P only. Frozen confirmation138 and C/D 
 | E1204_xgb_residual | 12.0023 | 9.2973 | 4.3201 |
 | E1205_correlated_gaussian | 11.8799 | 6.3885 | 4.2975 |
 | E1206_diffusion | 12.0552 | 6.8738 | 3.5286 |
+| E1207_diffusion_xgb | 12.3859 | 7.0742 | 3.5582 |
 
 K1 deterministic CRPS is MAE; probability arms K16 at expansion (matches post-calibration ensemble features). Independent selection K16. Baseline is selected by two-seed quarterly RMSE. Model-family budgets include its own fold fitting; downstream dependencies are extra cost. Trees can early-stop. Fixed spatial Gaussian covariance is a meaningful correlated baseline, not a learned temporal model. Diffusion has full point residual support but retains query-graph dependence. Post-XGBoost common correction preserves ensemble spread. Historical PWV station-cohort selection remains.
 
