@@ -34,3 +34,6 @@ Verification:25 targeted tests passed; completed smoke stages independently reco
 2026-11-24 00:53CST: fixed smoke2 completed all7 stages in509.6s including full-calendar inference. Formal serial worker launched after independent canonical-truth/metric audit; budget3600s/family. Windows execution-state request prevents idle sleep only during worker lifetime.
 
 Formal E1201 verified running with finite updates and saved progress; smoke diagnostic maps, sequences, terrain/calibration/spatial tables completed and inspected. Next: hourly health checks; all dependent work remains in the same serial worker.
+
+
+Frozen evaluation addendum (before E1206 completion): E1208 checks finite-ensemble point error after the seven trained arms, without any new fitting or selection. Analytic Gaussian mean/CRPS and independent K64 diffusion on the same expanded calendar; post correction applied in four16-member groups so its ensemble-summary features match training. Main E1201–07 K16 results stay unchanged. Post correction depends on ensemble moments and induces within-group member dependence, so its fair-CRPS estimate must not be claimed unbiased for an underlying iid distribution; add empirical CRPS alongside it in the final analysis. This is a numerical evaluation check, not another hour of training.
