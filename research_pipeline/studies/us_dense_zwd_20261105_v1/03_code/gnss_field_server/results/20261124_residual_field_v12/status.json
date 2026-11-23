@@ -1,6 +1,5 @@
 {
-  "state": "stage_completed",
-  "current": "E1207_diffusion_xgb",
+  "state": "completed",
   "completed": [
     "E1201_mlp",
     "E1202_cnn_lstm",
@@ -10,5 +9,6 @@
     "E1206_diffusion",
     "E1207_diffusion_xgb"
   ],
-  "updated_unix": 1795467925.0317888
+  "total_seconds": 15154.356322526932,
+  "updated_unix": 1795467934.29876
 }
