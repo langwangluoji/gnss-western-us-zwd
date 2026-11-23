@@ -1,0 +1,1 @@
+{"checks":{"basis_query_error":2.915745871412412e-07,"models":{"24":{"future_perturbation_error":0.0,"sampler_gradient_l1":34.53229197720066},"64":{"future_perturbation_error":0.0,"sampler_gradient_l1":58.38913264381699}},"nested_basis":true,"orthogonality_error":7.152557373046875e-07},"code_sha256":"3718efd082e75309c0bc1a0fbdbc8a325ee17edeb70d607fcd8da84f071119d5"}
