@@ -112,6 +112,34 @@
       "scope": "expanded",
       "max_difference": 0,
       "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1205_correlated_gaussian",
+      "seed": 42,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1205_correlated_gaussian",
+      "seed": 42,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1205_correlated_gaussian",
+      "seed": 17,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1205_correlated_gaussian",
+      "seed": 17,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
     }
   ]
 }

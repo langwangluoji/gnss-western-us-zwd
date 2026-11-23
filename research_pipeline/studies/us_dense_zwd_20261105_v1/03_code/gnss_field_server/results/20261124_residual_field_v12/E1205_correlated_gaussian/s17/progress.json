@@ -1,0 +1,8 @@
+{
+  "step": 354980,
+  "train_seconds": 1800.0009999998729,
+  "loss": -0.4039177894592285,
+  "gradient_norm": 6.014371395111084,
+  "validation_rmse_mm": 15.223002433776855,
+  "validation_crps_mm": 9.612092971801758
+}
