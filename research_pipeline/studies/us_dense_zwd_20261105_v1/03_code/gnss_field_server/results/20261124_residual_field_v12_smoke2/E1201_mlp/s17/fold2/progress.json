@@ -1,0 +1,7 @@
+{
+  "step": 200,
+  "seconds": 0.875,
+  "loss": 0.07895621657371521,
+  "monitor_rmse_normalized": 0.337434321641922,
+  "gradient_norm": 0.5001347661018372
+}

@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "steps": 788,
+  "training_seconds": 4.0,
+  "selection_seconds": 0.29599999997299165,
+  "total_seconds": 6.1560000000172295,
+  "residual_scale": 0.33532094955444336,
+  "seed": 17
+}

@@ -1,0 +1,201 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "experiment": "E1201_mlp",
+      "seed": 42,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1201_mlp",
+      "seed": 42,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1201_mlp",
+      "seed": 17,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1201_mlp",
+      "seed": 17,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1202_cnn_lstm",
+      "seed": 42,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1202_cnn_lstm",
+      "seed": 42,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1202_cnn_lstm",
+      "seed": 17,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1202_cnn_lstm",
+      "seed": 17,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1203_xgboost",
+      "seed": 42,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1203_xgboost",
+      "seed": 42,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1203_xgboost",
+      "seed": 17,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1203_xgboost",
+      "seed": 17,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1204_xgb_residual",
+      "seed": 42,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1204_xgb_residual",
+      "seed": 42,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1204_xgb_residual",
+      "seed": 17,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1204_xgb_residual",
+      "seed": 17,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1205_correlated_gaussian",
+      "seed": 42,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1205_correlated_gaussian",
+      "seed": 42,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1205_correlated_gaussian",
+      "seed": 17,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1205_correlated_gaussian",
+      "seed": 17,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1206_diffusion",
+      "seed": 42,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1206_diffusion",
+      "seed": 42,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1206_diffusion",
+      "seed": 17,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1206_diffusion",
+      "seed": 17,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1207_diffusion_xgb",
+      "seed": 42,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1207_diffusion_xgb",
+      "seed": 42,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1207_diffusion_xgb",
+      "seed": 17,
+      "scope": "selection",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    },
+    {
+      "experiment": "E1207_diffusion_xgb",
+      "seed": 17,
+      "scope": "expanded",
+      "max_difference": 0,
+      "canonical_truth_matches": true
+    }
+  ]
+}

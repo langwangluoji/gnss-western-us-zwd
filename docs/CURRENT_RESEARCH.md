@@ -1,5 +1,8 @@
 # 当前研究进展：2026-11-24
 
+进行中：[v12夜间串行残差场实验](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/tools/terrain_diffusion/V12.md)。用户于11月24日授权E1201–E1207全部运行，每模型族约1小时。真实数据七阶段短跑已完成、25测试通过，正式队列从头启动；当前状态见[status.json](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_residual_field_v12/status.json)。新实验完成前，下列v11仍是最新完整科学结果。基础场三选一，空间留出残差用于XGBoost/相关高斯/扩散，最后检验共同后校正。
+
+
 最新实践：[v11观测编码与直接扩散](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_observation_transport_v11/RESULTS.md)。10组真实训练、24,000次更新完成。2018每个月月1日24小时、137验证站、3布局的扩展评分中，两种子平均宏RMSE：base14.307、raw12.456、transport12.231、高斯12.285、扩散12.339mm；固定高程IDW12.066mm。raw按季度选模规则进入B，未用扩展结果回改。扩散对50km以内站对差值CRPS比独立高斯改善约5.0%，保边际空间shuffle使其变差0.135/0.131mm，支持局地联合生成；50–150km关联仍需校准。C门槛未通过，自生成历史时序训练未启动。下一步优先空间空洞训练和固定支撑查询：训练/验证最近观测中位距离39.69/77.93km，查询64→137也会改变输出。18测试、20组预测复算和4组门槛复算通过；确认138及C/D标签未读取，未达8mm。
 
 

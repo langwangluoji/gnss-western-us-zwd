@@ -1,0 +1,5 @@
+{
+  "status": "completed",
+  "kind": "cnn_lstm",
+  "seed": 17
+}

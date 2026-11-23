@@ -1,0 +1,25 @@
+{
+  "selected": {
+    "experiment": "E1203_xgboost",
+    "kind": "xgboost",
+    "score": 12.708340485890705
+  },
+  "candidates": [
+    {
+      "experiment": "E1201_mlp",
+      "kind": "mlp",
+      "score": 18.06864229838053
+    },
+    {
+      "experiment": "E1202_cnn_lstm",
+      "kind": "cnn_lstm",
+      "score": 37.52252197265625
+    },
+    {
+      "experiment": "E1203_xgboost",
+      "kind": "xgboost",
+      "score": 12.708340485890705
+    }
+  ],
+  "rule": "mean two-seed quarterly RMSE; not expanded calendar"
+}
