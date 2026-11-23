@@ -1,12 +1,13 @@
 {
   "state": "stage_completed",
-  "current": "E1205_correlated_gaussian",
+  "current": "E1206_diffusion",
   "completed": [
     "E1201_mlp",
     "E1202_cnn_lstm",
     "E1203_xgboost",
     "E1204_xgb_residual",
-    "E1205_correlated_gaussian"
+    "E1205_correlated_gaussian",
+    "E1206_diffusion"
   ],
-  "updated_unix": 1795463788.1464202
+  "updated_unix": 1795467912.0999982
 }
