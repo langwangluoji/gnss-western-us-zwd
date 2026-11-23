@@ -4,6 +4,8 @@
 
 | 实验 | 已记录状态 | 证据入口 |
 |---|---|---|
+| 20261123_diffusion_data_v08 | COMPLETE_RETAIN_V04 | [VERDICT.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_diffusion_data_v08/VERDICT.md)；[RESULTS.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_diffusion_data_v08/RESULTS.md) |
+| 20261123_diffusion_v07 | COMPLETE_RETAIN_V04 | [VERDICT.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_diffusion_v07/VERDICT.md)；[ARCHITECTURE.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_diffusion_v07/ARCHITECTURE.md) |
 | 20261123_masked_graph_v06 | COMPLETE_RETAIN_V04 | [RESULTS.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_masked_graph_v06/RESULTS.md)；[REVIEW.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_masked_graph_v06/REVIEW.md) |
 | 20261123_graph_fusion_v05 | COMPLETE_NO_GAIN | [RESULTS.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_graph_fusion_v05/RESULTS.md)；[REVIEW.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_graph_fusion_v05/REVIEW.md) |
 | local_baselines_full2019 | 见报告/锁文件 | [metrics.json](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/local_baselines_full2019/metrics.json) |
