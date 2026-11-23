@@ -1,0 +1,1 @@
+{"date":"2026-11-23","command":"D:/anaconda3-2025.12-2/envs/pytorch/python.exe -m pytest tests/test_data.py tests/test_geometry.py -q","result":"7 passed in 3.11s","exit_code":0,"additional":"finalize_sequence_spike.py exit 0; see verification.json for real-checkpoint arithmetic, operator, source, causal and generation checks","full_suite_rerun":false}

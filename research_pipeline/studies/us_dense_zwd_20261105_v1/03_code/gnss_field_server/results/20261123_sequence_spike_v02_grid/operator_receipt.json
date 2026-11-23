@@ -1,0 +1,1 @@
+{"adapter_sha256":"4cbb697841b861ed55c58602e13c11e39bd44a9d82f5e6b41c3ba1b51ac512ab","core_sha256":"73e94c1f3ecec42018028aab06395ef2f99a8214a2ebe84775de7bc75d841727","initial_v1":"direct coordinate prototype retained separately; never compare as same operator","training_and_evaluation":"144x96 Z0 grid, bilinear query, exp(-H/3000)"}
