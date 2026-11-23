@@ -71,3 +71,10 @@
 # Real validation experiments happen to live under build: keep their text receipts.
 !/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/build/
 !/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/build/full_generative_real_check_v*/
+
+# v12 fitted tree weights and queue process locks remain local
+**/20261124_residual_field_v12*/**/*.ubj
+**/20261124_residual_field_v12*/queue.lock
+
+# Interrupted implementation smoke remains local; review receipt retained in plan
+/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_residual_field_v12_smoke/
