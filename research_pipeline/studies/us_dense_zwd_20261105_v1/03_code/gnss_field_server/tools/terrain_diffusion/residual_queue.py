@@ -94,6 +94,9 @@ def main():
         assert all(sha(root/'cache'/name)==value for name,value in ready['packs'].items()),'Cache hash mismatch'
     fd=os.open(lock,os.O_CREAT|os.O_EXCL|os.O_WRONLY);os.write(fd,str(os.getpid()).encode());os.close(fd)
     try:
+        if os.name=='nt':
+            import ctypes
+            ctypes.windll.kernel32.SetThreadExecutionState(0x80000001)
         progress(root,state='preparing',completed=completed);prepare(root,a.smoke)
         write_json(root/'protocol.json',dict(experiments=EXPERIMENTS,budget_seconds=a.budget_seconds,smoke=a.smoke,data_sha256=Dataset(device='cpu').contract['data_sha256'],source_sha256={p.name:sha(p) for p in Path(__file__).parent.glob('residual*.py')},started_unix=started))
         for eid,stage,kind in EXPERIMENTS:
@@ -109,7 +112,11 @@ def main():
         if a.sync:sync_safely(root,'Complete v12 serial residual-field queue')
     except BaseException as e:
         (root/'failure.txt').write_text(traceback.format_exc(),encoding='utf-8',newline='\n');progress(root,state='failed',completed=completed,error=repr(e));raise
-    finally:lock.unlink(missing_ok=True)
+    finally:
+        if os.name=='nt':
+            import ctypes
+            ctypes.windll.kernel32.SetThreadExecutionState(0x80000000)
+        lock.unlink(missing_ok=True)
 
 
 if __name__=='__main__':main()
