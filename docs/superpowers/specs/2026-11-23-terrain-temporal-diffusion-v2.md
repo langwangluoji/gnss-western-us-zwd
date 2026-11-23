@@ -2,13 +2,15 @@
 
 版本：v2，2026-11-23。任务：动态稀疏站网下的地表ZWD概率重建与连续演变。本文是可实施的研究方案；本轮已完成元数据划分、流程图与设计复核，模型训练从下述P0开始。新协议独立于历史ABCD实验，原数据包、权重和实验锁保持完整。
 
+图像查看：三张PNG使用完整地址；也可下载并打开[离线架构图预览](assets/20261123_diffusion_v2/diagrams-offline.html)，三图已内嵌，无需网络。公式已使用显式分组的兼容语法。
+
 ## 1. 方法定位与总流程
 
 本方法把稀疏GNSS重建表述为条件随机场学习：用部分站点的历史ZWD和允许气象变量，结合查询位置的地形，生成整组查询点的ZWD及其连续演变。训练信号来自真实站点，MAE式动态遮站使同一网络适应不同站网布局，图交互表达地形相关的空间联系，时间条件维持成员演变，扩散表达观测不足时的多种可能结果。
 
 主模型直接生成标准化地表ZWD，不接入v04均值、不使用插值图教师。研究价值通过三个问题建立：动态遮站是否改善未见站泛化，地形编码是否改善高差/空间缺口表现，时序扩散是否优于同编码器的简单概率模型。最终论文主张以这些实验支持的机制为中心。
 
-![总体架构](assets/20261123_diffusion_v2/architecture.png)
+![总体架构](https://raw.githubusercontent.com/langwangluoji/gnss-western-us-zwd/main/docs/superpowers/specs/assets/20261123_diffusion_v2/architecture.png)
 
 图1同时给出训练监督和部署生成路径。物理小时记为τ，扩散步记为s。每个小时内部联合去噪所有目标节点，小时之间通过同成员生成历史连接。因果模式只使用≤τ的观测；整段双向补全属于单独的事后重建实验。
 
@@ -28,7 +30,7 @@
 
 训练池三个高程组为165/150/95站，验证55/51/31站，确认55/51/32站。分配不拆物理组及100km方块，元数据核验通过。以上为几何分配人数；允许变量QC后的有效站数和站时数在P0重新统计。不会为凑齐人数把剔除站从验证搬入训练。
 
-![站网划分](assets/20261123_diffusion_v2/station_split.png)
+![站网划分](https://raw.githubusercontent.com/langwangluoji/gnss-western-us-zwd/main/docs/superpowers/specs/assets/20261123_diffusion_v2/station_split.png)
 
 逐站清单：[station_assignment_proposal.csv](assets/20261123_diffusion_v2/station_assignment_proposal.csv)；来源与划分收据：[station_split_receipt.json](assets/20261123_diffusion_v2/station_split_receipt.json)；复现脚本：[build_assets.py](assets/20261123_diffusion_v2/build_assets.py)。这份清单尚未激活为训练数据合同。
 
@@ -101,12 +103,12 @@ $$C\subset S_{tr},\quad Q\subset S_{tr}\setminus C,\quad C\cap Q=\varnothing.$$
 
 记地形曲面上的查询位置为q=(x,y,H)，观测条件为
 
-$$\mathcal C_\tau=\{q_i,a_i,y_{i,u},w_{i,u},m_{i,u}:i\in C,\ \tau-L+1\le u\le\tau\},$$
+$$\mathcal{C}_\tau=\{q_i,a_i,y_{i,u},w_{i,u},m_{i,u}:i\in C,\ \tau-L+1\leq u\leq\tau\},$$
 
 其中a是地形、w=(T,P)、m是逐变量有效掩码，L=12。对固定查询集合Q，学习因果条件生成模型：
 
-$$p_\theta(Y_{Q,1:T}\Vert\mathcal C_{1:T})=
-\prod_{\tau=1}^{T}p_\theta(Y_{Q,\tau}\mid Y_{Q,<\tau},\mathcal C_{\le\tau},Q).$$
+$$p_\theta(Y_{Q,1:T}\Vert\mathcal{C}_{1:T})=
+\prod_{\tau=1}^{T}p_\theta(Y_{Q,\tau}\mid Y_{Q,<\tau},\mathcal{C}_{\leq\tau},Q).$$
 
 双竖线表示逐时条件化协议。每步可使用当前小时GNSS与历史信息；同小时ERA5再分析可用性是数据条件，不自动等价于业务实时气象到达。
 
@@ -124,13 +126,13 @@ $$p_\theta(Y_{Q,1:T}\Vert\mathcal C_{1:T})=
 
 ## 5. 模型各模块的具体设计
 
-![去噪器内部结构](assets/20261123_diffusion_v2/denoiser.png)
+![去噪器内部结构](https://raw.githubusercontent.com/langwangluoji/gnss-western-us-zwd/main/docs/superpowers/specs/assets/20261123_diffusion_v2/denoiser.png)
 
 ### 5.1 特征与地形边编码
 
 节点初始向量：
 
-$$h_{i,u}^{(0)}=\operatorname{MLP}_{in}([\tilde y,\tilde T,\tilde P,m,\log(1+age),a_i,\phi(q_i),\phi(u)])\in\mathbb R^{64}.$$
+$$h_{i,u}^{(0)}=\mathrm{MLP}_{in}([\tilde y,\tilde T,\tilde P,m,\log(1+age),a_i,\phi(q_i),\phi(u)])\in\mathbb{R}^{64}.$$
 
 坐标使用归一化原坐标和小规模固定Fourier特征，不使用站名/站号嵌入。每轴初始4个频率，对应约50/100/200/400km；频率作为表示尺度，不称已恢复分辨率。地形数值和位置分别投影后相加或拼接MLP，配置中固定一种，主版为拼接。
 
@@ -140,7 +142,7 @@ W0首版输入维数固定如下：静态7维为x/y/H、坡度x/y、粗糙度、
 
 空间邻接按当前输入站几何建立：8个近邻（上限300km）＋4个100–600km较远邻居；不足时保留实际邻居和自环，不用任意远站强行补足。验证时邻接重新按可见站几何构建，测试站不影响条件图。边向量
 
-$$e_{ij}=[\Delta x/100\mathrm{km},\Delta y/100\mathrm{km},d_{ij}/100\mathrm{km},\Delta H/1000\mathrm m,\Delta rough/500\mathrm m].$$
+$$e_{ij}=[\Delta x/100\mathrm{km},\Delta y/100\mathrm{km},d_{ij}/100\mathrm{km},\Delta H/1000\mathrm{m},\Delta rough/500\mathrm{m}].$$
 
 这将水平传播与地形高差分开交给网络学习。无风速/风向输入时，边方向权重表示统计方向依赖，不将其命名为已测平流速度。
 
@@ -148,8 +150,8 @@ $$e_{ij}=[\Delta x/100\mathrm{km},\Delta y/100\mathrm{km},d_{ij}/100\mathrm{km},
 
 每个小时使用2层、4头图注意力。第l层单头为
 
-$$a_{ij}=\operatorname{softmax}_{j\in\mathcal N(i)}\left((W_Qh_i)^T(W_Kh_j)/\sqrt{d_h}+b_\theta(e_{ij})\right),$$
-$$h_i'=h_i+W_O\operatorname{Concat}_{heads}\sum_j a_{ij}[W_Vh_j+g_\theta(e_{ij})].$$
+$$a_{ij}=\mathrm{softmax}_{j\in\mathcal{N}(i)}\left((W_Qh_i)^T(W_Kh_j)/\sqrt{d_h}+b_\theta(e_{ij})\right),$$
+$$h_i'=h_i+W_O\mathrm{Concat}_{heads}\sum_j a_{ij}[W_Vh_j+g_\theta(e_{ij})].$$
 
 之后Pre-LayerNorm＋两层FFN（64→128→64，SiLU，dropout0.1）及残差。不可见、padding节点在softmax前屏蔽。几何参数共享，站点重排后对应输出重排。
 
@@ -167,7 +169,7 @@ $$h_i'=h_i+W_O\operatorname{Concat}_{heads}\sum_j a_{ij}[W_Vh_j+g_\theta(e_{ij})
 
 查询到条件站的注意力沿用水平位移/高差边偏置：
 
-$$c_q=\sum_{i\in C}\operatorname{softmax}_i\left((W_Qh_q)^T(W_Kc_i)/\sqrt{d_h}+b(e_{qi})\right)W_Vc_i.$$
+$$c_q=\sum_{i\in C}\mathrm{softmax}_i\left((W_Qh_q)^T(W_Kc_i)/\sqrt{d_h}+b(e_{qi})\right)W_Vc_i.$$
 
 所有输入来自可见条件。目标站干净当前标签不出现在此分支，teacher forcing历史只进入前一小节的目标状态接口。
 
@@ -181,7 +183,7 @@ $$c_q=\sum_{i\in C}\operatorname{softmax}_i\left((W_Qh_q)^T(W_Kc_i)/\sqrt{d_h}+b
 
 标准化真实ZWD为x0，扩散s=1…S，S=100；a_s=\bar\alpha_s、\sigma_s=\sqrt{1-a_s}。余弦候选日程采用f(t)=cos²(((t/S+0.008)/1.008)π/2)，先取理论比值f(s)/f(0)，计算β_s=clip(1-f(s)/f(s-1),1e-8,0.999)。随后重新累乘得到实际a_0=1、a_s=product_(j=1…s)(1-β_j)。训练加噪、v转换和DDIM统一使用裁剪后实际数组并保存哈希，不能混用理论端点和实际累计值。
 
-$$x_s=\sqrt{a_s}x_0+\sigma_s\epsilon,\qquad\epsilon\sim\mathcal N(0,I),$$
+$$x_s=\sqrt{a_s}x_0+\sigma_s\epsilon,\qquad\epsilon\sim\mathcal{N}(0,I),$$
 $$v^*=\sqrt{a_s}\epsilon-\sigma_s x_0.$$
 
 网络预测v后，可以恢复：
@@ -223,7 +225,7 @@ $$x_{s'}=\sqrt{a_{s'}}\hat x_0+\sqrt{1-a_{s'}}\hat\epsilon.$$
 
 对每站有效当前记录先平均，再对站平均：
 
-$$\mathcal L_v=\frac1{|Q_{valid}|}\sum_i\frac{\sum_\tau m_{i\tau}\|v_\theta-v^*\|^2}{\sum_\tau m_{i\tau}}.$$
+$$\mathcal{L}_v=\frac{1}{|Q_{valid}|}\sum_i\frac{\sum_\tau m_{i\tau}\|v_\theta-v^*\|^2}{\sum_\tau m_{i\tau}}.$$
 
 实际单小时batch按站点抽样概率修正或按窗口累积，实现时明确归一化。扩散步均匀抽样，主版不再叠加未经消融的SNR权重。
 
@@ -231,12 +233,12 @@ $$\mathcal L_v=\frac1{|Q_{valid}|}\sum_i\frac{\sum_\tau m_{i\tau}\|v_\theta-v^*\
 
 K个成员z_k的fair CRPS：
 
-$$\mathrm{CRPS}_{fair}=\frac1K\sum_k|z_k-y|-\frac1{2K(K-1)}\sum_{k\ne l}|z_k-z_l|.$$
+$$\mathrm{CRPS}_{fair}=\frac{1}{K}\sum_k|z_k-y|-\frac{1}{2K(K-1)}\sum_{k\neq l}|z_k-z_l|.$$
 
 时间增量对每个成员计算Δz_{k,τ}=z_{k,τ}-z_{k,τ-1}，再与真实Δy计算CRPS。只在两小时都有真实观测的位置计分。微调主损失：
 
-$$\mathcal L=\frac{\mathrm{CRPS}(Z,Y)}{s_y}
-+0.5\frac{\mathrm{CRPS}(\Delta Z,\Delta Y)}{s_\Delta}+0.05\mathcal L_v.$$
+$$\mathcal{L}=\frac{\mathrm{CRPS}(Z,Y)}{s_y}
++0.5\frac{\mathrm{CRPS}(\Delta Z,\Delta Y)}{s_\Delta}+0.05\mathcal{L}_v.$$
 
 s_y/s_Δ由训练数据计算并冻结，两项分别报告。边际-only分支令时间系数为0，构成配对对照。K4用于微调，独立K64/K128用于评价；不以扩大区间单独判断模型变好。初期空间差值评分只用于评价，待上述机制成立再决定是否加入训练。
 
@@ -258,7 +260,7 @@ NDP论文说明一般边缘一致性并无自动保证，因此本模型的连�
 
 点估计取集合均值，误差e_it=mean_k(z_kit)-y_it，单位mm：
 
-$$\mathrm{RMSE}_{macro}=\frac1N\sum_i\sqrt{\frac1{n_i}\sum_t e_{it}^2},\qquad
+$$\mathrm{RMSE}_{macro}=\frac{1}{N}\sum_i\sqrt{\frac{1}{n_i}\sum_t e_{it}^2},\qquad
 \mathrm{RMSE}_{micro}=\sqrt{\frac{\sum_{it}e_{it}^2}{\sum_i n_i}}.$$
 
 主目标8mm指预先锁定条件站密度、目标站人口和日历上的macro RMSE。同步报告MAE、Bias、P90/P95绝对误差、逐站分布；不选最接近真值的成员，不把局部最优地形组作为全域结果。
