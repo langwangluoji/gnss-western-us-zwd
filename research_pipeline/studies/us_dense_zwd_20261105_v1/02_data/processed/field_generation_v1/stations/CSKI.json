@@ -1,0 +1,14 @@
+{
+  "station": "CSKI",
+  "source_sha256": "724a95e481deb33a8410ed5c9fe59bcc33e4255981c3a436552c35818c30120c",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\cski.pwv.gz",
+  "coverage": {
+    "2016": 0.9757513661202186,
+    "2017": 0.9302511415525114,
+    "2018": 0.9636986301369863,
+    "2019": 0.9945205479452055,
+    "2020": 0.9803051001821493
+  },
+  "valid_hours": 42485,
+  "cache_sha256": "21748f4ea31998a68d7cd1eb9e42b9eaba790542b6d94a466049fd1e45813498"
+}

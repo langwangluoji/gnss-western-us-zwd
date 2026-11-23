@@ -1,0 +1,14 @@
+{
+  "station": "KGMN",
+  "source_sha256": "a1127efb25f1c49a16b4ed4bd8761cc36878f8d416b37605075c0040c5ca6b56",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\kgmn.pwv.gz",
+  "coverage": {
+    "2016": 0.9849726775956285,
+    "2017": 0.9775114155251141,
+    "2018": 0.9678082191780822,
+    "2019": 0.9144977168949772,
+    "2020": 0.9400045537340619
+  },
+  "valid_hours": 41961,
+  "cache_sha256": "590b8f1641a3beb4509079c1e3e9332baa60e19251f48dc0818bf910356d452b"
+}

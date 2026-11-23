@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "updates": 200,
+  "resume_at": 100,
+  "exact": true,
+  "model": "ResidualField",
+  "optimizers": 2,
+  "device": "cuda"
+}

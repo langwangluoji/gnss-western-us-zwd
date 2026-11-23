@@ -1,0 +1,122 @@
+{
+  "ensemble_audit": {
+    "vae": {
+      "point": {
+        "prefix_macro_rmse": {
+          "4": 9.268068069611074,
+          "8": 8.913439488750702,
+          "16": 8.720650469908414,
+          "32": 8.666146237132995
+        },
+        "micro_mse": 83.46926124247098,
+        "estimated_member_mean_mse_penalty": 1.5358122743830867,
+        "corrected_micro_mse": 81.93344896808789,
+        "mean_shift_from_deterministic_initializer_mm": 0.483327837410592,
+        "estimated_squared_mean_drift_from_initializer": 9.130110302153517,
+        "first16_macro_rmse": 8.720650469908414,
+        "second16_macro_rmse": 8.78990560342,
+        "independent_half_mean_disagreement_mm": 2.470154293356867
+      },
+      "joint": {
+        "prefix_macro_rmse": {
+          "4": 9.268068069611074,
+          "8": 8.913439488750702,
+          "16": 8.720650469908414,
+          "32": 8.666146237132995
+        },
+        "micro_mse": 83.46926124247098,
+        "estimated_member_mean_mse_penalty": 1.5358122743830867,
+        "corrected_micro_mse": 81.93344896808789,
+        "mean_shift_from_deterministic_initializer_mm": 0.483327837410592,
+        "estimated_squared_mean_drift_from_initializer": 9.130110302153517,
+        "first16_macro_rmse": 8.720650469908414,
+        "second16_macro_rmse": 8.78990560342,
+        "independent_half_mean_disagreement_mm": 2.470154293356867
+      }
+    },
+    "gan": {
+      "point": {
+        "prefix_macro_rmse": {
+          "4": 8.905595799465779,
+          "8": 8.750718620000459,
+          "16": 8.649523692385026,
+          "32": 8.460473709737943
+        },
+        "micro_mse": 78.55398479758715,
+        "estimated_member_mean_mse_penalty": 2.0565226922279756,
+        "corrected_micro_mse": 76.49746210535918,
+        "mean_shift_from_deterministic_initializer_mm": 0.6272067863802381,
+        "estimated_squared_mean_drift_from_initializer": 4.322523289783549,
+        "first16_macro_rmse": 8.649523692385026,
+        "second16_macro_rmse": 8.507758934309205,
+        "independent_half_mean_disagreement_mm": 2.9461458204826108
+      },
+      "joint": {
+        "prefix_macro_rmse": {
+          "4": 9.20093821925219,
+          "8": 9.07601709141096,
+          "16": 8.941957150029737,
+          "32": 8.756812140312837
+        },
+        "micro_mse": 86.7312984466095,
+        "estimated_member_mean_mse_penalty": 1.6869074400706987,
+        "corrected_micro_mse": 85.0443910065388,
+        "mean_shift_from_deterministic_initializer_mm": -0.4826182655156843,
+        "estimated_squared_mean_drift_from_initializer": 4.870264762340324,
+        "first16_macro_rmse": 8.941957150029737,
+        "second16_macro_rmse": 8.765360394210417,
+        "independent_half_mean_disagreement_mm": 2.624093664270721
+      }
+    },
+    "diffusion": {
+      "point": {
+        "prefix_macro_rmse": {
+          "4": 8.963459397563447,
+          "8": 8.632184410020178,
+          "16": 8.522427465324869,
+          "32": 8.44615512496745
+        },
+        "micro_mse": 79.34008484413204,
+        "estimated_member_mean_mse_penalty": 1.2520860751529883,
+        "corrected_micro_mse": 78.08799876897905,
+        "mean_shift_from_deterministic_initializer_mm": 0.9269537349745353,
+        "estimated_squared_mean_drift_from_initializer": 5.5267091018558245,
+        "first16_macro_rmse": 8.522427465324869,
+        "second16_macro_rmse": 8.513207915161349,
+        "independent_half_mean_disagreement_mm": 2.1981558546623257
+      },
+      "joint": {
+        "prefix_macro_rmse": {
+          "4": 9.204628514677006,
+          "8": 8.82576754910239,
+          "16": 8.72076866386633,
+          "32": 8.62735822934572
+        },
+        "micro_mse": 84.14553675528812,
+        "estimated_member_mean_mse_penalty": 1.5054547429042122,
+        "corrected_micro_mse": 82.64008201238391,
+        "mean_shift_from_deterministic_initializer_mm": 0.6122136867691946,
+        "estimated_squared_mean_drift_from_initializer": 8.193774378820393,
+        "first16_macro_rmse": 8.72076866386633,
+        "second16_macro_rmse": 8.714195721945897,
+        "independent_half_mean_disagreement_mm": 2.4923353179450642
+      }
+    }
+  },
+  "simulation": {
+    "mu": 0.5,
+    "sigma": 2.0,
+    "target": 0.0,
+    "members": 4,
+    "repetitions": 100000,
+    "true_mean_mse": 0.25,
+    "theoretical_naive_mse": 1.25,
+    "naive_estimate": 1.2517968183069161,
+    "unbiased_estimate": 0.2535492525493728,
+    "unbiased_mean_standard_error": 0.006035935184216724,
+    "negative_unbiased_fraction": 0.55762,
+    "identity_max_error": 3.552713678800501e-15
+  },
+  "scope": "Archived C48 predictions only; no training, no new selection, no D labels",
+  "caution": "Micro-MSE correction estimates Monte Carlo error; it is not station-macro RMSE or evidence of deployment accuracy"
+}

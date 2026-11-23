@@ -1,0 +1,14 @@
+{
+  "station": "CLBD",
+  "source_sha256": "3f8148c84096463ed683047535b712e64ebea2b27b909e5dabdd5e1d8f94f695",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\clbd.pwv.gz",
+  "coverage": {
+    "2016": 0.9929417122040073,
+    "2017": 0.9891552511415526,
+    "2018": 0.9844748858447488,
+    "2019": 0.9832191780821918,
+    "2020": 0.9196265938069217
+  },
+  "valid_hours": 42702,
+  "cache_sha256": "ef9890456bacd87c6b80165690d523a68e95f07b56c27812a0066268f9120efc"
+}

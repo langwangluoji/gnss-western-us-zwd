@@ -1,0 +1,13 @@
+{
+  "kind": "synthetic_linear_operator_illustration_not_model_validation",
+  "seed": 42,
+  "grid_shape": [
+    48,
+    64
+  ],
+  "synthetic_stations": 128,
+  "max_station_prediction_difference_mm": 1.6375789613221059e-15,
+  "grid_difference_rms_mm": 3.0000000000000004,
+  "mean_station_difference_mm": 2.017971293538645e-17,
+  "interpretation": "Neither field is designated atmospheric truth; station equality does not determine full-grid spectrum."
+}

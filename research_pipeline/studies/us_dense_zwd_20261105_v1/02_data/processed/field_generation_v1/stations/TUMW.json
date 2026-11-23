@@ -1,0 +1,14 @@
+{
+  "station": "TUMW",
+  "source_sha256": "c4bdc73cf8a51f224e606036f1f0430704cc4ae734bc73339309d23bfc274977",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\tumw.pwv.gz",
+  "coverage": {
+    "2016": 0.9538934426229508,
+    "2017": 0.940068493150685,
+    "2018": 0.911986301369863,
+    "2019": 0.9784246575342466,
+    "2020": 0.9924863387978142
+  },
+  "valid_hours": 41892,
+  "cache_sha256": "3d1f750050f8e8390ececfa5b4f9cf8617ed930a12ad02d27ccd2865e22c40f4"
+}

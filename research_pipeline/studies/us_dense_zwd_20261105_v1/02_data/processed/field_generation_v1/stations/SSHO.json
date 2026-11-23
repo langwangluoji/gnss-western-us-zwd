@@ -1,0 +1,14 @@
+{
+  "station": "SSHO",
+  "source_sha256": "eb654d599f9d6a3ba961c4a0565e9a7051505c38d676dc28b0583e64ed6a56f1",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ssho.pwv.gz",
+  "coverage": {
+    "2016": 0.9521857923497268,
+    "2017": 0.9646118721461188,
+    "2018": 0.9509132420091324,
+    "2019": 0.7731735159817351,
+    "2020": 0.9475182149362478
+  },
+  "valid_hours": 40240,
+  "cache_sha256": "07fd8f66cd4ff0a5f0d2a471249cb0a28dcf842af4744b435a04b4cfbfafff53"
+}

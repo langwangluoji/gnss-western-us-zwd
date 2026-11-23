@@ -1,0 +1,14 @@
+{
+  "station": "NAIU",
+  "source_sha256": "b4cbe83e16be9f88ba376a7280e6293516c51ada0efa118d1c8d4d8a8cde9526",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\naiu.pwv.gz",
+  "coverage": {
+    "2016": 0.9779143897996357,
+    "2017": 0.9764840182648402,
+    "2018": 0.984703196347032,
+    "2019": 0.9704337899543379,
+    "2020": 0.986908014571949
+  },
+  "valid_hours": 42940,
+  "cache_sha256": "61bf0ea7d25128d2b6b76fadce60cff37d93cee5662b9b7fbe09f2fda884eff5"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "FRED",
+  "source_sha256": "c27652bc7f13a411e7c80fdf2808d6c76a036bb0fa21370610348fca7c06ed4a",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\fred.pwv.gz",
+  "coverage": {
+    "2016": 0.9784836065573771,
+    "2017": 0.9603881278538813,
+    "2018": 0.927054794520548,
+    "2019": 0.5652968036529681,
+    "2020": 0.9921448087431693
+  },
+  "valid_hours": 38796,
+  "cache_sha256": "f128d00ea983ced191294cc313a13590584e98b7806b8963eae9322b823c74de"
+}

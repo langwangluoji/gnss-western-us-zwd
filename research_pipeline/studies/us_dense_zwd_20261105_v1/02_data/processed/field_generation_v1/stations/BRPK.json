@@ -1,0 +1,14 @@
+{
+  "station": "BRPK",
+  "source_sha256": "6c21e83f1ed38e622671b541eaba988dd699430ba74e4dcdc437b3e15dcc3c2f",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\brpk.pwv.gz",
+  "coverage": {
+    "2016": 0.9848588342440802,
+    "2017": 0.9759132420091324,
+    "2018": 0.9695205479452055,
+    "2019": 0.5031963470319635,
+    "2020": 0.0
+  },
+  "valid_hours": 30101,
+  "cache_sha256": "bfd8af9a96b8521a967d9821d62dda7a317491fedcc28cf6cd05c78bfb5cdb40"
+}

@@ -1,0 +1,20 @@
+{
+  "synthetic_only": true,
+  "cases": 1024,
+  "members": 48,
+  "dimensions": 4,
+  "truth_correlation": 0.85,
+  "matching_dependence": {
+    "crps_mean": 0.5752065528705101,
+    "energy_mean": 1.2290254397872513,
+    "variogram_p05_mean": 0.06694956462738576
+  },
+  "shuffled_dependence_same_exact_marginals": {
+    "crps_mean": 0.57520655287051,
+    "energy_mean": 1.2958425358747347,
+    "variogram_p05_mean": 0.2054376207319052
+  },
+  "marginal_crps_difference": 4.218847493575595e-15,
+  "energy_crps_estimator": "U-statistic off-diagonal finite-member fair estimate",
+  "variogram_estimator": "Squared empirical p0.5 pair-moment difference, same K"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "QMAR",
+  "source_sha256": "723da60bdb8838ad1c0c320d0363a40b425dcd812929a7c41d58dd6a8f880506",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\qmar.pwv.gz",
+  "coverage": {
+    "2016": 0.9157559198542805,
+    "2017": 0.9668949771689498,
+    "2018": 0.9309360730593608,
+    "2019": 0.9462328767123288,
+    "2020": 0.8414162112932605
+  },
+  "valid_hours": 40349,
+  "cache_sha256": "d888324fcca9b496e06f262452d23db09f9961cb7b392972da2dbb36d6d32e2d"
+}

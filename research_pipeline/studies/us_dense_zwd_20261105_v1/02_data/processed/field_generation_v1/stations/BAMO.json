@@ -1,0 +1,14 @@
+{
+  "station": "BAMO",
+  "source_sha256": "0b0ae3587f98067979878b968948726d61034d98eeaa60d3cb2ddac610058a80",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\bamo.pwv.gz",
+  "coverage": {
+    "2016": 0.9913479052823315,
+    "2017": 0.9859589041095891,
+    "2018": 0.9835616438356164,
+    "2019": 0.9964611872146119,
+    "2020": 0.8764799635701275
+  },
+  "valid_hours": 42389,
+  "cache_sha256": "5f7e9689ec8359cee12ba3b1e0e70586edaeb7af6465fdc2b655d73c643d9e9f"
+}

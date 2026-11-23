@@ -1,0 +1,14 @@
+{
+  "station": "RBUT",
+  "source_sha256": "d4a1a139d6ebc2c5e7712703c12600f45737a9db7c723ae92112b0b06df363cc",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\rbut.pwv.gz",
+  "coverage": {
+    "2016": 0.9936247723132969,
+    "2017": 0.9875570776255708,
+    "2018": 0.9928082191780822,
+    "2019": 0.9939497716894977,
+    "2020": 0.09585610200364299
+  },
+  "valid_hours": 35625,
+  "cache_sha256": "b4edd147dca74b2119bce0d7d32f31ce625a7ce342fcdf4b121e3986da83bfb3"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "JPLM",
+  "source_sha256": "c96214854109c03cd8d309731fa29966c22487af1f6c89edbe86a97e16ee4157",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\jplm.pwv.gz",
+  "coverage": {
+    "2016": 0.9644808743169399,
+    "2017": 0.9942922374429224,
+    "2018": 0.9319634703196347,
+    "2019": 0.9971461187214612,
+    "2020": 0.998747723132969
+  },
+  "valid_hours": 42854,
+  "cache_sha256": "3878a19a9c66f88c686cec42704a57d1a4ebc39a4506d01bda215b18685226e4"
+}

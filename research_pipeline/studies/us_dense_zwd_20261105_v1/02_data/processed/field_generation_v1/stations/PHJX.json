@@ -1,0 +1,14 @@
+{
+  "station": "PHJX",
+  "source_sha256": "6de509f5117a97246da96eba5388f8397bf2b926b6710f492e4f09b060d87547",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\phjx.pwv.gz",
+  "coverage": {
+    "2016": 0.9935109289617486,
+    "2017": 0.9820776255707763,
+    "2018": 0.9127853881278539,
+    "2019": 0.957648401826484,
+    "2020": 0.47768670309653916
+  },
+  "valid_hours": 37911,
+  "cache_sha256": "8d0574180e72935171ea8d41331d12acd7be6ca0d87828a453668d514454d4b9"
+}

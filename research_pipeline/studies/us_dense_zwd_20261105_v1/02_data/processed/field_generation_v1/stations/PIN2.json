@@ -1,0 +1,14 @@
+{
+  "station": "PIN2",
+  "source_sha256": "19d07dad7a5467a4151ed54b309976d27e457a26fba20900132fcfa69dbbc685",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\pin2.pwv.gz",
+  "coverage": {
+    "2016": 0.964936247723133,
+    "2017": 0.9771689497716894,
+    "2018": 0.9563926940639269,
+    "2019": 0.9082191780821918,
+    "2020": 0.8216074681238615
+  },
+  "valid_hours": 40587,
+  "cache_sha256": "cd7ec557fe57f753d1ad34ceefd3afe2eb06d85560d72b5c209f4f417148ef32"
+}

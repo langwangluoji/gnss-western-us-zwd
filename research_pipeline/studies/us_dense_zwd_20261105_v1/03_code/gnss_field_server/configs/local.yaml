@@ -1,0 +1,14 @@
+science:
+  rank: 128
+runtime:
+  data_root: ../../02_data/processed/gnss_field_server_v1
+  run_root: runs
+  cache_root: cache
+  device: cuda
+  cpus: 7
+  patch_chunk: 4
+  micro_hours: 1
+campaign:
+  name: tongji_field_v2
+  legacy_source: ../../02_data/processed/field_generation_v1
+  environment: gnss-field

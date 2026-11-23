@@ -1,0 +1,14 @@
+{
+  "station": "UPSA",
+  "source_sha256": "4dc10110387c8e97cc699cac7ba7df1dbc09c2547c0d5dd1be4b257b3f2f7b89",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\upsa.pwv.gz",
+  "coverage": {
+    "2016": 0.9265710382513661,
+    "2017": 0.9204337899543379,
+    "2018": 0.9843607305936073,
+    "2019": 0.9834474885844748,
+    "2020": 0.986908014571949
+  },
+  "valid_hours": 42109,
+  "cache_sha256": "45c3cb01da360924f9b190791571bef2af5baf5d6a75e64ccc6f3f2b81420add"
+}

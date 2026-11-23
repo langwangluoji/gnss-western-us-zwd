@@ -1,0 +1,14 @@
+{
+  "station": "THCP",
+  "source_sha256": "13b5899ca783b71382bc5678235170cb3f1e4effdec177c6fe4efcefa64177a4",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\thcp.pwv.gz",
+  "coverage": {
+    "2016": 0.9947632058287796,
+    "2017": 0.9796803652968037,
+    "2018": 0.971689497716895,
+    "2019": 0.9921232876712329,
+    "2020": 0.9660746812386156
+  },
+  "valid_hours": 43009,
+  "cache_sha256": "1b40be6f523cc6022c7ed9fda48094cadba7f87bd3a252d89d11b71311c5aca2"
+}

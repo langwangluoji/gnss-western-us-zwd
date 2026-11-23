@@ -1,0 +1,14 @@
+{
+  "station": "BSPC",
+  "source_sha256": "ae34ad90c89d37ccb59794f205981fd84c1564d986b1588277e9b84eec80fd8e",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\bspc.pwv.gz",
+  "coverage": {
+    "2016": 0.9480874316939891,
+    "2017": 0.9986301369863013,
+    "2018": 0.9851598173515982,
+    "2019": 0.6515981735159817,
+    "2020": 0.0
+  },
+  "valid_hours": 31414,
+  "cache_sha256": "955bca7df9fd4d7bd3c3190fdfdf5539f6867b0f193c9085d379f3e5ec7ea0be"
+}

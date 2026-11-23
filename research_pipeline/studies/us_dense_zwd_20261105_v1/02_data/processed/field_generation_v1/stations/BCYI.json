@@ -1,0 +1,14 @@
+{
+  "station": "BCYI",
+  "source_sha256": "c19d945a0c868019add512f6c5ae89b197fb6c06ae5b397eef6c9fb120454395",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\bcyi.pwv.gz",
+  "coverage": {
+    "2016": 0.9890710382513661,
+    "2017": 0.9883561643835617,
+    "2018": 0.979337899543379,
+    "2019": 0.9729452054794521,
+    "2020": 0.23110200364298725
+  },
+  "valid_hours": 36478,
+  "cache_sha256": "a66774c5861ec35761eb34afddb35003e76fc3d30a67e4e16f3eb63f6aeb7580"
+}

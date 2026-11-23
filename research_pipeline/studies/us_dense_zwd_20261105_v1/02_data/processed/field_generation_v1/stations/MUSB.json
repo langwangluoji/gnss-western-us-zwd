@@ -1,0 +1,14 @@
+{
+  "station": "MUSB",
+  "source_sha256": "24b712c5d7dcf2737b1a54d991083cab497000337d7030fdc98584cfae72ac05",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\musb.pwv.gz",
+  "coverage": {
+    "2016": 0.9926001821493625,
+    "2017": 0.9744292237442922,
+    "2018": 0.9907534246575342,
+    "2019": 0.9954337899543378,
+    "2020": 0.6823770491803278
+  },
+  "valid_hours": 40648,
+  "cache_sha256": "d18d174b4403ac9a58d38b60ad880dfa5afd3ba1ad29b2af290b7e69cb114336"
+}

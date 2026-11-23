@@ -1,0 +1,14 @@
+{
+  "station": "HOPB",
+  "source_sha256": "2997d69d4a2e2b5915ab7d10c3ceca4d19a83664523a0140c766b05587c24ba1",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\hopb.pwv.gz",
+  "coverage": {
+    "2016": 0.9174635701275046,
+    "2017": 0.9827625570776256,
+    "2018": 0.9611872146118722,
+    "2019": 0.9914383561643836,
+    "2020": 0.9935109289617486
+  },
+  "valid_hours": 42500,
+  "cache_sha256": "53e301dc1110770e545e35d54f4f3c60d7a72bbd4a51c0609097c9f6e6ecd583"
+}

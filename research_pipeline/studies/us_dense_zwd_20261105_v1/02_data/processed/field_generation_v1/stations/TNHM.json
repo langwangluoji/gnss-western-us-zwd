@@ -1,0 +1,14 @@
+{
+  "station": "TNHM",
+  "source_sha256": "3114588b46278798c4fe459735be1391c5461dbf38b4be1a860bf639150a6472",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\tnhm.pwv.gz",
+  "coverage": {
+    "2016": 0.9960154826958105,
+    "2017": 0.9825342465753425,
+    "2018": 0.978310502283105,
+    "2019": 0.9900684931506849,
+    "2020": 0.9948770491803278
+  },
+  "valid_hours": 43338,
+  "cache_sha256": "9058d63b6972d67b6a2577cadbafd1a14745aaaf9532de7ec7fa5ddb59436e1e"
+}

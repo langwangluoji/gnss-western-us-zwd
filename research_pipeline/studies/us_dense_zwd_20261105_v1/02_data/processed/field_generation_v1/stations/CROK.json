@@ -1,0 +1,14 @@
+{
+  "station": "CROK",
+  "source_sha256": "3bf0f0eaf0d1d72c6420331d8a5a0e8c0196e916c07aa0174c0160b4fea76280",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\crok.pwv.gz",
+  "coverage": {
+    "2016": 0.9670992714025501,
+    "2017": 0.9747716894977169,
+    "2018": 0.9679223744292238,
+    "2019": 0.4940639269406393,
+    "2020": 0.0
+  },
+  "valid_hours": 29841,
+  "cache_sha256": "08d4d842877d1226cf45ec0ed471c178bf07e0415b052b0018eec96e3a33f8ff"
+}

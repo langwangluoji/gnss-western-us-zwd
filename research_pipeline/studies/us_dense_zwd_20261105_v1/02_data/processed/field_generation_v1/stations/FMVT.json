@@ -1,0 +1,14 @@
+{
+  "station": "FMVT",
+  "source_sha256": "f6befa4eda5194468dead737ab97f0b94495782549dc1f8fc62800a21442e573",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\fmvt.pwv.gz",
+  "coverage": {
+    "2016": 0.9867941712204007,
+    "2017": 0.9843607305936073,
+    "2018": 0.9735159817351599,
+    "2019": 0.9965753424657534,
+    "2020": 0.9918032786885246
+  },
+  "valid_hours": 43261,
+  "cache_sha256": "2311ad155907b26fae155eee215a16eb3fa4e56ac5dbfaddaca918016e91a0d0"
+}

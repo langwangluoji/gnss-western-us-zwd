@@ -1,0 +1,14 @@
+{
+  "station": "YONC",
+  "source_sha256": "9412428bc352a2de270d441df7a70ef66cc0e12edfb7c5d6b6ae2352e7251c5a",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\yonc.pwv.gz",
+  "coverage": {
+    "2016": 0.9270264116575592,
+    "2017": 0.9025114155251142,
+    "2018": 0.9601598173515982,
+    "2019": 0.9194063926940639,
+    "2020": 0.8727231329690346
+  },
+  "valid_hours": 40180,
+  "cache_sha256": "1cb365a4aa580fb2f10e9895f0812b26914f52e225464b20b6a54cbd4c6b3710"
+}

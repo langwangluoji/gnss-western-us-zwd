@@ -1,0 +1,14 @@
+{
+  "station": "OHLN",
+  "source_sha256": "758515c3a74419e3a1f20009235284411dec12cdcaac36c0c88ca3a7c3b4a904",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ohln.pwv.gz",
+  "coverage": {
+    "2016": 0.9941939890710383,
+    "2017": 0.9841324200913242,
+    "2018": 0.9797945205479452,
+    "2019": 0.9922374429223745,
+    "2020": 0.9931693989071039
+  },
+  "valid_hours": 43353,
+  "cache_sha256": "b3639cf35170816621702bf02b78cae00042e24981e18cb63688d8d7f665ead6"
+}

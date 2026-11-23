@@ -1,0 +1,14 @@
+{
+  "station": "SPKN",
+  "source_sha256": "ae49260c83326b50d0265901d168b074b954d5e74b0aa14abcb01b901b38616c",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\spkn.pwv.gz",
+  "coverage": {
+    "2016": 0.9854280510018215,
+    "2017": 0.9485159817351598,
+    "2018": 0.9159817351598174,
+    "2019": 0.9812785388127854,
+    "2020": 0.9437613843351548
+  },
+  "valid_hours": 41875,
+  "cache_sha256": "4c4797a8a7b09ef779544eaac79cc09295895b9ac75e9b70974b8ee84645bda0"
+}

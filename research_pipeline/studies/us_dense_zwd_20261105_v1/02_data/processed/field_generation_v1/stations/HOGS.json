@@ -1,0 +1,14 @@
+{
+  "station": "HOGS",
+  "source_sha256": "9f9a835f8eddcb1badf78d02375202b5a03b9527d82572959f2dbd9ce31f5a6a",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\hogs.pwv.gz",
+  "coverage": {
+    "2016": 0.9596994535519126,
+    "2017": 0.9849315068493151,
+    "2018": 0.9568493150684931,
+    "2019": 0.9960045662100456,
+    "2020": 0.9920309653916212
+  },
+  "valid_hours": 42879,
+  "cache_sha256": "509f753203e630eafb6c64d73597c76d732e37f9a46f6f7c366c222149748762"
+}

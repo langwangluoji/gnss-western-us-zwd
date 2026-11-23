@@ -1,0 +1,14 @@
+{
+  "station": "SLMS",
+  "source_sha256": "771b1b06f46a91835aa386cad482fe11a3e30da34882b5bac13373024735bc66",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\slms.pwv.gz",
+  "coverage": {
+    "2016": 0.9861111111111112,
+    "2017": 0.9702054794520548,
+    "2018": 0.9718036529680365,
+    "2019": 0.9703196347031964,
+    "2020": 0.9845173041894353
+  },
+  "valid_hours": 42822,
+  "cache_sha256": "cd453e3aa63ada6c7e9ad6f7d6c6d3aaa6f96900edc668c4a33920034caa3630"
+}

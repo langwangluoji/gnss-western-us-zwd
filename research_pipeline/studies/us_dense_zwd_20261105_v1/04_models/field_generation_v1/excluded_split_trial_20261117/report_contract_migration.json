@@ -1,0 +1,11 @@
+{
+  "reason": "Reporting-only additions: conditional groups, paired fine-scale diagnostics, coverage and fixed-event grid export. Training and data source files unchanged.",
+  "old_contract": "d785b61d40b3358dcc5d38dbc134f5b08a72b7e7f9e5048da2d8200a9e62732f",
+  "new_contract": "a290fe2daaa47cb40ac7f9384e761e91f3e7c8d5cf89c1ce17f05f2b767285bc",
+  "checkpoint_before": "4919fc59d8f7c81dbc553c9950738bc3c5b8e8f072af33039a3f9d2531313764",
+  "checkpoint_after": "4aba2aa8b9b658668f9dccfadf6636ad0eed39a078ba77b5b4045cde2e4241f3",
+  "step": 389,
+  "model_fingerprint": "ee81dd96ad2ee59e78c5cb5b7cdf8e04e930f8ae5474b9f69bd5dadce83f6c0d",
+  "ema_fingerprint": "0a47d9718609553993e4bfca6bb173a140bcd5c038404504238d55eebe172b50",
+  "report_tests_passed": true
+}

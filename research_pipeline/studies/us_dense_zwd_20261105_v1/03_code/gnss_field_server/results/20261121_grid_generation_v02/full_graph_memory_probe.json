@@ -1,0 +1,12 @@
+{
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "samples": 2,
+  "shape": [
+    144,
+    96
+  ],
+  "recompute": false,
+  "seconds": 1.1570000000065193,
+  "peak_memory_mb": 3876.68798828125,
+  "gradient_norm": 0.7760438919067383
+}

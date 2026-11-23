@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "nonzero_residual_mean_local_global_difference_mm": 0.0,
+  "std_local_global_difference_mm": 0.0,
+  "padding_test": true,
+  "contract": "a290fe2daaa47cb40ac7f9384e761e91f3e7c8d5cf89c1ce17f05f2b767285bc"
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-17",
+  "scope": "Final protocol only; no code/weights/training edits",
+  "adopted": [
+    "Separate published land domain from observable station population",
+    "Report fullF alongside primaryS0 and fixed stress denominators",
+    "Four required fine-scale comparisons,group-macro,sharedcohort",
+    "IUT differs from picking significant bins",
+    "Coverage equivalence,finiteKquantiles and uncertainty",
+    "A-only deployed joint baseline",
+    "2019 selection evidence vs2020locked confirmation"
+  ],
+  "client_additions": [
+    "Coastal coarsening complete-stencil commonT and boundary sensitivity",
+    "Explicit empirical quantile algorithm and observation-noise interpretation",
+    "Three training seeds averaged at metric level,not prediction level"
+  ],
+  "source": "pro_final_protocol_review_snapshot.txt",
+  "interpretation": "Review agreement is not independent physical evidence; numerical pilot and primary papers provide separate checks"
+}

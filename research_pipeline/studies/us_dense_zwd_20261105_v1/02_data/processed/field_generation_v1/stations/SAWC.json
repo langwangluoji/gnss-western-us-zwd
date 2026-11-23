@@ -1,0 +1,14 @@
+{
+  "station": "SAWC",
+  "source_sha256": "f2ba3e1d8245e01e7bc9bf5a0b69ecbbb52111c12769b669accfe966d01b2090",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\sawc.pwv.gz",
+  "coverage": {
+    "2016": 0.9764344262295082,
+    "2017": 0.9631278538812785,
+    "2018": 0.9116438356164384,
+    "2019": 0.9694063926940639,
+    "2020": 0.99408014571949
+  },
+  "valid_hours": 42224,
+  "cache_sha256": "42f36bb7fef6be981c339c12206ea99196086a2f83c53f37c5d835d7bc23a005"
+}

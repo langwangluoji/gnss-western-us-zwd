@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_PUBLICATION_TOLERANCE",
+  "max_error_mm": 0.0017956905181790717,
+  "cause": "TF32 convolution enabled; source 8-hour vs single-hour replay differs up to .00102234mm",
+  "resolution": "strict FP32 for both extraction and full publication in confirmation_v02; original coefficients and source weights unchanged",
+  "old_artifacts_retained": true
+}

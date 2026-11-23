@@ -1,0 +1,14 @@
+{
+  "station": "SGPS",
+  "source_sha256": "a47ed65bc3f95d6c7c9c80861b7d014e3b7a05106d51a48fd5177e58d02f1a73",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\sgps.pwv.gz",
+  "coverage": {
+    "2016": 0.9906648451730419,
+    "2017": 0.989041095890411,
+    "2018": 0.9352739726027397,
+    "2019": 0.9745433789954338,
+    "2020": 0.9918032786885246
+  },
+  "valid_hours": 42808,
+  "cache_sha256": "a8e15bd35255b395da2273b35cc05c6d292e752d15a0a48dedf2c758df60caab"
+}

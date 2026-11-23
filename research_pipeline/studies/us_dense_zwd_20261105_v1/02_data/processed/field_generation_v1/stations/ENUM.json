@@ -1,0 +1,14 @@
+{
+  "station": "ENUM",
+  "source_sha256": "52561e85e21f5a2dde067b92fa9a7ae9846b2158879cf74d91b54dc175f799f6",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\enum.pwv.gz",
+  "coverage": {
+    "2016": 0.9431921675774135,
+    "2017": 0.952054794520548,
+    "2018": 0.958904109589041,
+    "2019": 0.9928082191780822,
+    "2020": 0.9968123861566485
+  },
+  "valid_hours": 42478,
+  "cache_sha256": "179de7ab68f2e0f1cb051f5c9917b1045f97c5621a8cd638e82bc2cff0cec2cb"
+}

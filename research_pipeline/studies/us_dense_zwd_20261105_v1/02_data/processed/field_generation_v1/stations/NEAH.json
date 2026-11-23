@@ -1,0 +1,14 @@
+{
+  "station": "NEAH",
+  "source_sha256": "079c357aa44b71fbf887f9e18af2f53aac4b70577537d13879b559d691880fd7",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\neah.pwv.gz",
+  "coverage": {
+    "2016": 0.9906648451730419,
+    "2017": 0.9882420091324201,
+    "2018": 0.9914383561643836,
+    "2019": 0.9811643835616438,
+    "2020": 0.9896402550091075
+  },
+  "valid_hours": 43332,
+  "cache_sha256": "619afd49b73b17c2a89acc23702f1ccc62f2ba3a4f28c48d70f3673549d2a7dd"
+}

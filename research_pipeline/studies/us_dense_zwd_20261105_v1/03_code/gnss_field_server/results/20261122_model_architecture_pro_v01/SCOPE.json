@@ -1,0 +1,8 @@
+{
+  "task": "architecture design and Pro review only",
+  "production_model_changes": false,
+  "new_server_jobs": false,
+  "baseline_mean": "frozen M0+IDW",
+  "key_evidence": "20261122_generation_postrun_research_v01",
+  "candidate_math": "independent Gaussian carrier with normalized Hermite deformation; not yet a trained model"
+}

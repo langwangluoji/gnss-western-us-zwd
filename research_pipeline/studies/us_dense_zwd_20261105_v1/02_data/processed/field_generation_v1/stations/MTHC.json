@@ -1,0 +1,14 @@
+{
+  "station": "MTHC",
+  "source_sha256": "efe39a0dee8147aa08756b093d6f375eb6ac6ed5f940f923a468015dfc2f3705",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\mthc.pwv.gz",
+  "coverage": {
+    "2016": 0.9540072859744991,
+    "2017": 0.9891552511415526,
+    "2018": 0.9121004566210046,
+    "2019": 0.9896118721461187,
+    "2020": 0.9952185792349727
+  },
+  "valid_hours": 42446,
+  "cache_sha256": "4bf0847193341954e7b5f0eba3430e3f07bcf6ff05943661a390d08a9045839c"
+}

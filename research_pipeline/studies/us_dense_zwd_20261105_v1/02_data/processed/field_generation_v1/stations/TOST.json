@@ -1,0 +1,14 @@
+{
+  "station": "TOST",
+  "source_sha256": "6fad3fbead2ea60f09119e0d9f1c38f5553c28f2108511cda4f053743888dd6b",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\tost.pwv.gz",
+  "coverage": {
+    "2016": 0.9935109289617486,
+    "2017": 0.9898401826484018,
+    "2018": 0.9813926940639269,
+    "2019": 0.9940639269406393,
+    "2020": 0.9973816029143898
+  },
+  "valid_hours": 43464,
+  "cache_sha256": "4f9d6645e7ebc91ccbe27a3376aa7dd62071cc8fe553b21c407453b0f830a1f3"
+}

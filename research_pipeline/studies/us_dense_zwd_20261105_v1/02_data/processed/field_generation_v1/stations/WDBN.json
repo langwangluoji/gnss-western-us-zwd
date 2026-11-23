@@ -1,0 +1,14 @@
+{
+  "station": "WDBN",
+  "source_sha256": "b0f0ded762be11d3ddc62350ffa45c6e99a9ccdd06db5578e202a98733aec48e",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\wdbn.pwv.gz",
+  "coverage": {
+    "2016": 0.9971539162112932,
+    "2017": 0.9875570776255708,
+    "2018": 0.9834474885844748,
+    "2019": 0.9374429223744293,
+    "2020": 0.6958105646630237
+  },
+  "valid_hours": 40349,
+  "cache_sha256": "30e97dbf3e4fdc527a14aa48c61b486dae2e0055a5b5e2a7c0389c4b42d00927"
+}

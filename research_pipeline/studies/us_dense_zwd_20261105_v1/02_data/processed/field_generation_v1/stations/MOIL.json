@@ -1,0 +1,14 @@
+{
+  "station": "MOIL",
+  "source_sha256": "fc4d2262ec9927b7c41b5764eb20be04ac57f06cee66afe71fc792856fe93f8c",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\moil.pwv.gz",
+  "coverage": {
+    "2016": 0.9988615664845173,
+    "2017": 0.9837899543378995,
+    "2018": 0.9815068493150685,
+    "2019": 0.984703196347032,
+    "2020": 0.9922586520947176
+  },
+  "valid_hours": 43332,
+  "cache_sha256": "af49f606a1dd7a48261f3faaf4350989bd538ed996e09381ea033b2f7572101d"
+}

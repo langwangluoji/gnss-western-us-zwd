@@ -1,0 +1,14 @@
+{
+  "station": "IID2",
+  "source_sha256": "b622c609d0ef92bf95ed34de974901acd724babc03a0a65aed18462fcb8a7f9f",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\iid2.pwv.gz",
+  "coverage": {
+    "2016": 0.988615664845173,
+    "2017": 0.9863013698630136,
+    "2018": 0.9755707762557078,
+    "2019": 0.9866438356164383,
+    "2020": 0.9875910746812386
+  },
+  "valid_hours": 43188,
+  "cache_sha256": "0e5b1b6758b7c030574fc966f27f8c1a073081a4873f2e45822596b18d3f6ad3"
+}

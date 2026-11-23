@@ -1,0 +1,14 @@
+{
+  "station": "AZU1",
+  "source_sha256": "d36721d3f63e7092b6c86aebf13acf8e6d5f8fdab85209710c2e6f8f7ff03fa8",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\azu1.pwv.gz",
+  "coverage": {
+    "2016": 0.9670992714025501,
+    "2017": 0.960730593607306,
+    "2018": 0.9934931506849315,
+    "2019": 0.9914383561643836,
+    "2020": 0.9758652094717668
+  },
+  "valid_hours": 42871,
+  "cache_sha256": "59b93eb36998baed459fd95ffc23b57bad3ce7892c4514e3cd0818aa9c6497a7"
+}

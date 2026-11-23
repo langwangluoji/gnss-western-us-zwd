@@ -1,0 +1,14 @@
+{
+  "station": "OZST",
+  "source_sha256": "446f341e7a5b2b129b768da482db4b1974ef9b0d42415807e2f321123614ec42",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ozst.pwv.gz",
+  "coverage": {
+    "2016": 0.9852003642987249,
+    "2017": 0.9621004566210045,
+    "2018": 0.9734018264840183,
+    "2019": 0.9819634703196347,
+    "2020": 0.9930555555555556
+  },
+  "valid_hours": 42934,
+  "cache_sha256": "ab1e56f1c8e3b808559905ad06e82a7cbf69e5d8b05e74c10fc2ed0600d099f9"
+}

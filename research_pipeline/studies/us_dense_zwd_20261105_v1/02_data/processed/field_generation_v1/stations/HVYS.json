@@ -1,0 +1,14 @@
+{
+  "station": "HVYS",
+  "source_sha256": "bfccccb51300cabe62983030b5355980858a052096526a52bc81e0ddee9286d6",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\hvys.pwv.gz",
+  "coverage": {
+    "2016": 0.9918032786885246,
+    "2017": 0.9954337899543378,
+    "2018": 0.9715753424657534,
+    "2019": 0.9917808219178083,
+    "2020": 0.9976092896174863
+  },
+  "valid_hours": 43394,
+  "cache_sha256": "1ac70c1e8949152677f7f7ee03778d18aade0154d5e408c4880f4f1613606f6b"
+}

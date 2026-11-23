@@ -1,0 +1,14 @@
+{
+  "station": "BELI",
+  "source_sha256": "153c7312656936764a741b2002f59e0cecf84d67c6fe22a2e2aaddf5406c3464",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\beli.pwv.gz",
+  "coverage": {
+    "2016": 0.97632058287796,
+    "2017": 0.9729452054794521,
+    "2018": 0.9757990867579909,
+    "2019": 0.9882420091324201,
+    "2020": 0.9906648451730419
+  },
+  "valid_hours": 43006,
+  "cache_sha256": "63c032e4476abc0a4a9452c3db60164a441fb92c70a0b75f9293f74acb682721"
+}

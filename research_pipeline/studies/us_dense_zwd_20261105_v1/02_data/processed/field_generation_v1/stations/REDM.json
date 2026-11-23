@@ -1,0 +1,14 @@
+{
+  "station": "REDM",
+  "source_sha256": "c01002dc32db7bf72b9a6569f9e416e734f550960760de95aba8cee30a70963f",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\redm.pwv.gz",
+  "coverage": {
+    "2016": 0.9951047358834244,
+    "2017": 0.9850456621004566,
+    "2018": 0.9699771689497717,
+    "2019": 0.9720319634703196,
+    "2020": 0.9891848816029144
+  },
+  "valid_hours": 43071,
+  "cache_sha256": "d69a05f1f7bcf162687924d2c89e22c6ed9a8aaad9487884b51d1d262dd0efb4"
+}

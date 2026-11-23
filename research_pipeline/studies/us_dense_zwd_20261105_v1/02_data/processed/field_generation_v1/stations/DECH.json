@@ -1,0 +1,14 @@
+{
+  "station": "DECH",
+  "source_sha256": "68cdb15cf82980c483f18f7f1eca3df91a3bb3a43852d2f88092d0df1be4b7cc",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\dech.pwv.gz",
+  "coverage": {
+    "2016": 0.9536657559198543,
+    "2017": 0.9151826484018265,
+    "2018": 0.9028538812785388,
+    "2019": 0.8722602739726028,
+    "2020": 0.9803051001821493
+  },
+  "valid_hours": 40555,
+  "cache_sha256": "37b8f7ea4cdc82d08d4357ca3ded46315a0ec99c3783f99723ac95f7611f8ca6"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "EOCG",
+  "source_sha256": "9abea1a57b11bfb93ae0a138167ed999158692f3f8f16afa0f3041cbfac5083d",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\eocg.pwv.gz",
+  "coverage": {
+    "2016": 0.981443533697632,
+    "2017": 0.9732876712328767,
+    "2018": 0.958904109589041,
+    "2019": 0.9832191780821918,
+    "2020": 0.985655737704918
+  },
+  "valid_hours": 42818,
+  "cache_sha256": "240208c63694b90436c5d39aace3ebabd40cac5e8c3954b46adee6a3b21e5a01"
+}

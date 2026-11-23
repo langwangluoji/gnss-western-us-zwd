@@ -1,0 +1,14 @@
+{
+  "station": "BEMT",
+  "source_sha256": "f03366daf47dd965e8a6d30ac77d110d57a87e613fa46c6731b504c05b8cab20",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\bemt.pwv.gz",
+  "coverage": {
+    "2016": 0.9951047358834244,
+    "2017": 0.9910958904109589,
+    "2018": 0.9699771689497717,
+    "2019": 0.9855022831050229,
+    "2020": 0.6647313296903461
+  },
+  "valid_hours": 40392,
+  "cache_sha256": "9a1013c595d6541a7dbac3c92141ac1e1c03c62bef2c0cf7533783978a9368ca"
+}

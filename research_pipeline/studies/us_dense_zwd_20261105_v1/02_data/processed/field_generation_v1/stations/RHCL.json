@@ -1,0 +1,14 @@
+{
+  "station": "RHCL",
+  "source_sha256": "a83a712402dbd7fa7cfe89572d61c0167172b340b323728ef42783b79b0eb282",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\rhcl.pwv.gz",
+  "coverage": {
+    "2016": 0.993283242258652,
+    "2017": 0.9877853881278539,
+    "2018": 0.9743150684931506,
+    "2019": 0.9912100456621005,
+    "2020": 0.9933970856102003
+  },
+  "valid_hours": 43322,
+  "cache_sha256": "4755bb730600ec0c27e2d4e5fbb7ababac67f2b5d8ecbaedbc0466eb01672b18"
+}

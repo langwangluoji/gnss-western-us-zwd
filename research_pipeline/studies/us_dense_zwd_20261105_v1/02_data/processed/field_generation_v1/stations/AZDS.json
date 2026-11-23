@@ -1,0 +1,14 @@
+{
+  "station": "AZDS",
+  "source_sha256": "34ac355df644bd3f968d304ae44df509d7c3fd6de33226018ae83b56beea3187",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\azds.pwv.gz",
+  "coverage": {
+    "2016": 0.9897540983606558,
+    "2017": 0.9762557077625571,
+    "2018": 0.9712328767123287,
+    "2019": 0.6432648401826484,
+    "2020": 0.9263433515482696
+  },
+  "valid_hours": 39526,
+  "cache_sha256": "594ea63e41c9758f8f318bdda357ea8aa29b6b7df707afb32f77079c4fdbff87"
+}

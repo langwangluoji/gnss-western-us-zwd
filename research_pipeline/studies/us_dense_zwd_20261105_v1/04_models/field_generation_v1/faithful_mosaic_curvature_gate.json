@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "exact": true,
+  "updates": 3,
+  "contract": "2720514d18a48288acb1fbb5b0ecee73c01e0549efce13cb6b554dcfe79332a3",
+  "patches": 6,
+  "test": "Actual real-data mosaic/query/curvature; faithful mean trajectory equals MSE with independent clipping"
+}

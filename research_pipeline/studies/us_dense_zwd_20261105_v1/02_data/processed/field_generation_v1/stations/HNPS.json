@@ -1,0 +1,14 @@
+{
+  "station": "HNPS",
+  "source_sha256": "c308fa345643cc0027c93fe80f385b898cd799255f4b0a06e335c1bafb890fa7",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\hnps.pwv.gz",
+  "coverage": {
+    "2016": 0.9132513661202186,
+    "2017": 0.9931506849315068,
+    "2018": 0.9659817351598173,
+    "2019": 0.9914383561643836,
+    "2020": 0.9980646630236795
+  },
+  "valid_hours": 42636,
+  "cache_sha256": "fad27443ae932dfee0645b3f619bf7aaa0a15988eabd176ce16ed9095bd2f94b"
+}

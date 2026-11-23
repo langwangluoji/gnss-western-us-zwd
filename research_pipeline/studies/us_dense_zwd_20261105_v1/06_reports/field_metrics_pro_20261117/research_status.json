@@ -1,0 +1,21 @@
+{
+  "task": "GNSS_METRICS_20261117",
+  "date": "2026-11-17",
+  "mode_observed": "Pro",
+  "state": "pro_completed_client_verified_small_experiments_completed",
+  "chat_url": "https://chatgpt.com/c/6af6fa29-6a4c-83e8-a0a7-15d62767383b",
+  "training": "paused_M0_step1021",
+  "synthetic_counterexample": true,
+  "pro_rounds": 2,
+  "pro_final_observed": "Answer completed; Stop button absent; final sources and conclusion present",
+  "raw_response": "pro_response_snapshot.txt",
+  "screenshot": "pro_completed.jpg",
+  "experiments": [
+    "synthetic_image_counterexamples",
+    "synthetic_joint_dependence_counterexample",
+    "real_training_period_grouped_reference_cv",
+    "real_A_only_input_thinning_constant_climate_boundary"
+  ],
+  "optimizer_updates": 0,
+  "small_experiment_verification": "4 numerical tests, actual source exclusion, identical target keys across scales/scenarios, independent macro aggregation"
+}

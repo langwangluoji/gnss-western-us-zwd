@@ -1,0 +1,14 @@
+{
+  "station": "ORVB",
+  "source_sha256": "6094daa89fccaafec37a0a0e25a37de5f129be1a168549547c0ce2a57b733c66",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\orvb.pwv.gz",
+  "coverage": {
+    "2016": 0.99408014571949,
+    "2017": 0.9866438356164383,
+    "2018": 0.9759132420091324,
+    "2019": 0.9002283105022831,
+    "2020": 0.9346539162112932
+  },
+  "valid_hours": 42020,
+  "cache_sha256": "c56df67815aa5143504c9571251f878e5974abc67da4a8db35aa786205c131d8"
+}

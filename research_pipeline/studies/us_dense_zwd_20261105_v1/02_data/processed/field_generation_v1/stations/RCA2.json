@@ -1,0 +1,14 @@
+{
+  "station": "RCA2",
+  "source_sha256": "7ec8e57ad81da9d10239b8a6ba4c217a2e3c470f159cfcb63a54c4177e26553c",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\rca2.pwv.gz",
+  "coverage": {
+    "2016": 0.9913479052823315,
+    "2017": 0.9865296803652968,
+    "2018": 0.9759132420091324,
+    "2019": 0.9821917808219178,
+    "2020": 0.9959016393442623
+  },
+  "valid_hours": 43251,
+  "cache_sha256": "5c24619bacc45c2e942e2e9b681a81c7fc7510ecab860720e4d485e932e262b8"
+}

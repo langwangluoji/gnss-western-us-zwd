@@ -1,0 +1,14 @@
+{
+  "station": "GR8R",
+  "source_sha256": "fbd788840a4354a5023e8e8d3f5597235c1c7bb33e17680227bcce313431d6f6",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\gr8r.pwv.gz",
+  "coverage": {
+    "2016": 0.9890710382513661,
+    "2017": 0.979337899543379,
+    "2018": 0.9695205479452055,
+    "2019": 0.9878995433789954,
+    "2020": 0.8144353369763205
+  },
+  "valid_hours": 41568,
+  "cache_sha256": "c2d1cd42b3fb6beab43778fb9e62d211804fb2a376861e76bce8ea96a3ce070c"
+}

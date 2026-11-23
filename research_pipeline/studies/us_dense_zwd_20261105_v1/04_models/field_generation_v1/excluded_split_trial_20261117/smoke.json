@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "time": 1794879496.7871907,
+  "station": 1,
+  "hour": 18,
+  "field_shape": [
+    1,
+    144,
+    96
+  ],
+  "contract": "a290fe2daaa47cb40ac7f9384e761e91f3e7c8d5cf89c1ce17f05f2b767285bc",
+  "real_local_global_mm": 1.9073486328125e-06,
+  "tests": [
+    "field disk reload",
+    "height restoration",
+    "station permutation",
+    "all missing",
+    "faithful mean trajectory",
+    "label poisoning input invariance"
+  ]
+}

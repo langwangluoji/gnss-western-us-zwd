@@ -1,0 +1,14 @@
+{
+  "station": "FHOG",
+  "source_sha256": "668c23a0d68e1ab6a7deee835d2c9e607181d3cdf1c7a00ebb8c9f00369ad67b",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\fhog.pwv.gz",
+  "coverage": {
+    "2016": 0.9862249544626593,
+    "2017": 0.9723744292237443,
+    "2018": 0.9594748858447488,
+    "2019": 0.9453196347031964,
+    "2020": 0.9931693989071039
+  },
+  "valid_hours": 42591,
+  "cache_sha256": "0926d51f20653766204d2b1c659ef9dea8e521d4a201f67d65320ffd1916c9e5"
+}

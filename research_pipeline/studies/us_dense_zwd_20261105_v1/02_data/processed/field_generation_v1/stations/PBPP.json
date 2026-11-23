@@ -1,0 +1,14 @@
+{
+  "station": "PBPP",
+  "source_sha256": "2f6b9a1c141199e534ade489e9cf27ea172ffe32fc37591297d6a87143765173",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\pbpp.pwv.gz",
+  "coverage": {
+    "2016": 0.9906648451730419,
+    "2017": 0.9898401826484018,
+    "2018": 0.9460045662100457,
+    "2019": 0.9674657534246576,
+    "2020": 0.9858834244080146
+  },
+  "valid_hours": 42795,
+  "cache_sha256": "f62378684e951aac26bf20c8a1b1b77e0f41be456c0a6b25433c77fa883c8884"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "ANA1",
+  "source_sha256": "4733f4ae76567ce7d598cb8132ba351c610cfd4be1024f96d56a047b00046083",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ana1.pwv.gz",
+  "coverage": {
+    "2016": 0.9379553734061931,
+    "2017": 0.9689497716894977,
+    "2018": 0.9839041095890411,
+    "2019": 0.9962328767123287,
+    "2020": 0.9972677595628415
+  },
+  "valid_hours": 42833,
+  "cache_sha256": "dcf8c1bef363d8c5c8dabbbfaad83b1f588ce4fc4cd7c5743f62b0eeb3696fb8"
+}

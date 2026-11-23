@@ -1,0 +1,14 @@
+{
+  "station": "AHID",
+  "source_sha256": "d5baf548dbd63b6f5b6b7295bef9e75a3f13e9c9b51e0caacd4c42208b5928a8",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ahid.pwv.gz",
+  "coverage": {
+    "2016": 0.9807604735883424,
+    "2017": 0.9856164383561644,
+    "2018": 0.9785388127853881,
+    "2019": 0.9969178082191781,
+    "2020": 0.7100409836065574
+  },
+  "valid_hours": 40791,
+  "cache_sha256": "dbbed566637614da60e782ec6f968d7ea37d296700c3e795deb2d6d8a40ab8f3"
+}

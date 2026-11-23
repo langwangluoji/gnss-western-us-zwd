@@ -1,0 +1,14 @@
+{
+  "station": "GOLY",
+  "source_sha256": "4a6e5a1c727a36829f43029d554eddde745cba2657bf69ada458fa73ff19b1ae",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\goly.pwv.gz",
+  "coverage": {
+    "2016": 0.947632058287796,
+    "2017": 0.9628995433789954,
+    "2018": 0.9715753424657534,
+    "2019": 0.9484018264840183,
+    "2020": 0.962431693989071
+  },
+  "valid_hours": 42032,
+  "cache_sha256": "38c1e643a299e17bd9a939a6a63203f9924d3c4c1bab85aafb3685bce24079d6"
+}

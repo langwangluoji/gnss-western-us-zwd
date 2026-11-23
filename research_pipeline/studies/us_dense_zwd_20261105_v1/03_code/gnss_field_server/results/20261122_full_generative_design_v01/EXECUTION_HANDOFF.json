@@ -1,0 +1,102 @@
+{
+  "architecture": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261122_full_generative_design_v01\\ARCHITECTURE.md",
+  "core_test_seconds": 148.46,
+  "core_tests": 120,
+  "created_unix": 1795363067.3110015,
+  "environment_modified": "ZhouSiyu project plotting dependencies only",
+  "final_campaign_seconds": 4.49,
+  "final_campaign_tests": 29,
+  "max_card_hours": 24,
+  "max_simultaneous_GPU": 1,
+  "old_experiments_preserved": true,
+  "packages": {
+    "code": {
+      "bytes": 315530,
+      "release": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/code/20261122_generative_full_v01",
+      "run": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/runs/20261122_us_zwd_gan_diffusion_vae_full_a800_v01",
+      "sha256": "ddff9650e8cfa7b5fd0c97ef5cfe3660b157896b94ac98e25102c07289984cb7"
+    },
+    "data": {
+      "bytes": 102870605,
+      "release": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/code/20261122_generative_full_v01",
+      "run": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/runs/20261122_us_zwd_gan_diffusion_vae_full_a800_v01",
+      "sha256": "8fa4dfe8297de4714c3a6461cb6e91e7873f8664a52f462e10d4af0e6a1c1560"
+    }
+  },
+  "population": {
+    "D_labels_read": false,
+    "hours": 8760,
+    "new_support_covers_original_population": true,
+    "passed": true,
+    "station_hours": 642258,
+    "stations": 76,
+    "truth_max_abs_error_mm": 0.0
+  },
+  "preflight_card_hour_cap": 1,
+  "real_cuda": {
+    "diffusion_pretrain": {
+      "CPU_RNG_exact": true,
+      "continuous_updates": 200,
+      "maximum_float_state_error": 0.0,
+      "passed": true,
+      "resumed_updates": [
+        100,
+        100
+      ]
+    },
+    "gan_pretrain": {
+      "CPU_RNG_exact": true,
+      "continuous_updates": 200,
+      "maximum_float_state_error": 0.0,
+      "passed": true,
+      "resumed_updates": [
+        100,
+        100
+      ]
+    },
+    "representation": {
+      "CPU_RNG_exact": true,
+      "continuous_updates": 200,
+      "maximum_float_state_error": 0.0,
+      "passed": true,
+      "resumed_updates": [
+        100,
+        100
+      ]
+    }
+  },
+  "server_jobs_submitted": true,
+  "source_sha256": {
+    "__init__.py": "afe437c40e78840a7a8005a2db7acb31f3458537a86539eb2289e73a2e9807a1",
+    "architecture.py": "a3e469edbc9a1b21169903dc58d271f49bf3cc54524c62996944fb3de250ce80",
+    "background.py": "4ff3369a8a2646c9d58a452a0ad1e544b2e3a468ddf6d234a47b90f174b57471",
+    "benchmark.py": "21615b0e7ab732d48222132ddc4f91dae8fc1887892dc1ae1fc71e4f4882a583",
+    "campaign.py": "99379adc1ea6457c3eb00f5aa21b30740a2dc250c74d3e979afdc9f5de37ed25",
+    "data.py": "ed55e36f211015faf1d91ac0a4ae7a4b9072cb3de46025719aacabe1b0451aa6",
+    "diagnostics.py": "a4dbd28eb377b0165275c6a1fcc6cbaa933dae3d93a3730388c7aedab4c6f4a8",
+    "evaluation.py": "1a6cc52f49b49a7ce2a85b8671d5b00d44ba575255cf7967f2e040ff31d0eefb",
+    "observations.py": "ce6e1bb74ef693f059f233518d447db271f484c7c1f958e2489ba631deb8f9a6",
+    "report.py": "b06c1af6420ddb402f8e35927d495a6501c28e2da648e420dcb4ebad285c6e23",
+    "training.py": "f1811225b6cd28b83516cd3677fbc43504ee11f5105229d28cf0c8c368d087cc"
+  },
+  "status": "SERVER_AUDIT_RUNNING_A800_PREFLIGHT_QUEUED",
+  "submission": {
+    "created_unix": 1795366450.941459,
+    "release_sha256": {
+      "data": "8fa4dfe8297de4714c3a6461cb6e91e7873f8664a52f462e10d4af0e6a1c1560",
+      "code": "ff0e87773fc8cb29eced1d87ec6dbb0157467a1cbe9cd49760441e96e58d9151"
+    },
+    "max_preflight_card_hours": 1,
+    "max_total_card_hours": 24,
+    "audit_job_id": "3697507",
+    "preflight_job_id": "3697508",
+    "handoff_job_id": "3697509",
+    "config": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/code/20261122_generative_full_v02/configs/full_generative_a800_v01.json",
+    "release": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/code/20261122_generative_full_v02",
+    "run": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/runs/20261122_us_zwd_gan_diffusion_vae_full_a800_v01",
+    "submitted_unix": 1795366454.4909744
+  },
+  "code_revision": "v02",
+  "updated_unix": 1795366555.9023907,
+  "active_monitor": "authenticated_runner.py; bridge_v02; server_status_v02.json"
+}

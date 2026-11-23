@@ -1,0 +1,32 @@
+{
+  "scope": "constructive geometry-only nullspace example; not overfitting causality or model skill",
+  "labels_loaded": false,
+  "training_performed": false,
+  "seed": 20261123,
+  "grid_shape": [
+    144,
+    96
+  ],
+  "grid_cells": 13824,
+  "land_cells": 3724,
+  "rbf_centres": 3456,
+  "rbf_length_scale_km": 50,
+  "fixed_A_constraints": 153,
+  "fixed_B_constraints": 454,
+  "numerical_rank": 533,
+  "coefficient_nullity": 2923,
+  "smallest_retained_singular_value": 1.2586233375694669e-10,
+  "rank_threshold_relative": 1e-11,
+  "common_height_land_perturbation_rms_mm": 5.0,
+  "maximum_A_B_query_change_mm": 1.4259511406160553e-10,
+  "C_geometry_count": 83,
+  "C_query_change_rms_mm": 1.0893392454140942,
+  "maximum_C_query_change_mm": 7.372774477066752,
+  "interpretation": "A and B queries cannot distinguish f and f+delta; A-only coarse conditions stay equal; C geometry used without labels",
+  "limitations": [
+    "field is a smooth constructed perturbation, not a learned posterior",
+    "no claim that all meteorological priors allow this perturbation",
+    "all geometrically valid A/B constraints enforced; no current-label support filtering",
+    "random subsets of these fixed measurements cannot add information in their common nullspace"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "stochastic": {
+    "seconds": 0.3129999999946449,
+    "peak_memory_mb": 257.6015625,
+    "loss": 65.22761535644531,
+    "gradient_finite": true,
+    "gradient_norm": 41.63459014892578,
+    "shape": [
+      4,
+      1,
+      144,
+      96
+    ],
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "diffusion": {
+    "seconds": 2.3589999999967404,
+    "peak_memory_mb": 355.3662109375,
+    "loss": 65.22761535644531,
+    "gradient_finite": true,
+    "gradient_norm": 63.502784729003906,
+    "shape": [
+      4,
+      1,
+      144,
+      96
+    ],
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "gan": {
+    "seconds": 0.014999999984866008,
+    "peak_memory_mb": 321.66943359375,
+    "loss": 65.22761535644531,
+    "gradient_finite": true,
+    "gradient_norm": 41.63459014892578,
+    "shape": [
+      4,
+      1,
+      144,
+      96
+    ],
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  }
+}

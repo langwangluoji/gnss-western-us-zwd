@@ -1,0 +1,14 @@
+{
+  "station": "CAND",
+  "source_sha256": "1ba532ed5f6d55ede1971c805ec1d9e061e9838e0498846b6da7547408c5190f",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\cand.pwv.gz",
+  "coverage": {
+    "2016": 0.994535519125683,
+    "2017": 0.9930365296803653,
+    "2018": 0.9689497716894977,
+    "2019": 0.9976027397260274,
+    "2020": 0.9978369763205829
+  },
+  "valid_hours": 43427,
+  "cache_sha256": "6d095d278ef2ae98c491c21dd301c1e7d0239041998add7678e2fac23fe69e17"
+}

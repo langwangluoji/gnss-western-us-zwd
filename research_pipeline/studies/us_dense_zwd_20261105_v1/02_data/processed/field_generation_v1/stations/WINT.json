@@ -1,0 +1,14 @@
+{
+  "station": "WINT",
+  "source_sha256": "e42ab1be417e58dc96729af5005a580464711e189dd611ed50ed026ca1aef706",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\wint.pwv.gz",
+  "coverage": {
+    "2016": 0.998747723132969,
+    "2017": 0.9804794520547945,
+    "2018": 0.9845890410958904,
+    "2019": 0.991324200913242,
+    "2020": 0.9936247723132969
+  },
+  "valid_hours": 43399,
+  "cache_sha256": "768d843a75bcc863585c0fc8980c6d6889c6fcbbf423f544074f294d4e19818f"
+}

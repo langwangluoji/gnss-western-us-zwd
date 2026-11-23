@@ -1,0 +1,103 @@
+[
+  {
+    "id": "SSIM",
+    "title": "Image Quality Assessment: From Error Visibility to Structural Similarity",
+    "year": 2004,
+    "url": "https://ece.uwaterloo.ca/~z70wang/publications/ssim.html",
+    "verified": "Author page abstract and metadata; original scope perceptual similarity, not physical truth"
+  },
+  {
+    "id": "FFL",
+    "title": "Focal Frequency Loss for Image Reconstruction and Synthesis",
+    "year": 2021,
+    "url": "https://arxiv.org/abs/2012.12821",
+    "code": "https://raw.githubusercontent.com/EndlessSora/focal-frequency-loss/master/focal_frequency_loss/focal_frequency_loss.py",
+    "verified": "Author abstract and actual orthonormal complex FFT implementation; adaptive frequency weights"
+  },
+  {
+    "id": "LPIPS",
+    "title": "The Unreasonable Effectiveness of Deep Features as a Perceptual Metric",
+    "year": 2018,
+    "url": "https://openaccess.thecvf.com/content_cvpr_2018/html/Zhang_The_Unreasonable_Effectiveness_CVPR_2018_paper.html",
+    "verified": "Search-indexed original paper description; full CVF page blocked403; primary arXiv abstract available"
+  },
+  {
+    "id": "CorrDiff",
+    "title": "Residual corrective diffusion modeling for km-scale atmospheric downscaling",
+    "year": 2025,
+    "url": "https://www.nature.com/articles/s43247-025-02042-5",
+    "accessible_preprint": "https://arxiv.org/html/2309.15214v4",
+    "verified": "Published title/abstract via search, accessible author preprint; Nature cookie redirect blocked direct fetch"
+  },
+  {
+    "id": "RainFARM",
+    "title": "RainFARM: Rainfall Downscaling by a Filtered Autoregressive Model",
+    "year": 2006,
+    "url": "https://journals.ametsoc.org/view/journals/hydr/7/4/jhm517_1.xml",
+    "accessible_author_record": "https://iris.cnr.it/handle/20.500.14243/47684",
+    "verified": "Primary paper indexed abstract/author repository; method does stochastic rainfall disaggregation, not GNSS evidence"
+  },
+  {
+    "id": "VS",
+    "title": "Variogram-Based Proper Scoring Rules for Probabilistic Forecasts of Multivariate Quantities",
+    "year": 2015,
+    "url": "https://doi.org/10.1175/MWR-D-14-00269.1",
+    "accessible_pdf": "https://repository.library.noaa.gov/view/noaa/22327/noaa_22327_DS1.pdf",
+    "verified": "Original source metadata/index; score formula independently verified in Pic et al2025"
+  },
+  {
+    "id": "Pic2025",
+    "title": "Proper scoring rules for multivariate probabilistic forecasts based on aggregation and transformation",
+    "year": 2025,
+    "url": "https://ascmo.copernicus.org/articles/11/23/2025/index.html",
+    "verified": "Full text formulas energy/variogram/patched scores; variogram bias blind; no universal best score"
+  },
+  {
+    "id": "Ballarotta2019",
+    "title": "On the resolutions of ocean altimetry maps",
+    "year": 2019,
+    "url": "https://os.copernicus.org/articles/15/1091/2019/index.html",
+    "verified": "Full text spectral error vs independent along-track data; detrend, Hann, Welch; NSR0.5 is study convention with sensitivity, not GNSS universal cutoff"
+  },
+  {
+    "id": "FSS",
+    "title": "Scale-Selective Verification of Rainfall Accumulations from High-Resolution Forecasts of Convective Events",
+    "year": 2008,
+    "url": "https://doi.org/10.1175/2007MWR2123.1",
+    "verified": "Original indexed metadata and matched verification grids; threshold/neighborhood event metric"
+  },
+  {
+    "id": "ConditionalSimulation",
+    "title": "Key concepts of geostatistical simulation",
+    "url": "https://pro.arcgis.com/en/pro-app/3.3/help/analysis/geostatistical-analyst/key-concepts-of-geostatistical-simulation.htm",
+    "verified": "Official full documentation; kriging smooths, conditional simulations add model-based variance with Gaussian/stationary assumptions"
+  },
+  {
+    "id": "GStatSim",
+    "title": "GStatSim V1.0: a Python package for geostatistical interpolation and conditional simulation",
+    "year": 2023,
+    "url": "https://gmd.copernicus.org/articles/16/3765/2023/",
+    "verified": "Primary methods article retrieved"
+  },
+  {
+    "id": "SpatialCV",
+    "title": "Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure",
+    "year": 2017,
+    "url": "https://doi.org/10.1111/ecog.02881",
+    "verified": "Original paper metadata/author site; blocked validation matches structured prediction target"
+  },
+  {
+    "id": "SAL",
+    "title": "SAL—A Novel Quality Measure for the Verification of Quantitative Precipitation Forecasts",
+    "year": 2008,
+    "url": "https://doi.org/10.1175/2008MWR2415.1",
+    "verified": "Original source and DLR author repository indexed description; object structure/amplitude/location, precipitation-specific origin"
+  },
+  {
+    "id": "WeatherBench2",
+    "title": "WeatherBench 2: A Benchmark for the Next Generation of Data-Driven Global Weather Models",
+    "year": 2024,
+    "url": "https://doi.org/10.1029/2023MS004019",
+    "verified": "Primary paper indexed sections energy spectra and evaluation resolution; official documentation retrieved"
+  }
+]

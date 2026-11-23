@@ -1,0 +1,10 @@
+{
+  "folder": "C:\\Users\\user\\AppData\\Local\\Temp\\gnss_gen3_analysis_fixed_20261122_111105",
+  "purpose": "read-only completed-run export; corrected selected-lock hash",
+  "created": "2026-11-22T11:11:05.419788",
+  "prior_attempt": {
+    "folder": "C:\\Users\\user\\AppData\\Local\\Temp\\gnss_gen3_analysis_fetch_20261122_110644",
+    "purpose": "read-only completed-run export",
+    "created": "2026-11-22T11:06:44.7589229+08:00"
+  }
+}

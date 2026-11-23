@@ -1,0 +1,113 @@
+{
+  "interpretation": "Independent numerical review of a C2019 post-diagnostic candidate. The two parameters were fitted on B2018 only. C2019 motivated and evaluated the candidate. D2020 sealed.",
+  "contrast": "conditional minus constant, same analytic blend mean and common original sample draws",
+  "replications": 2000,
+  "seed": 20261117,
+  "resampling": "Paired fixed-origin calendar blocks and named dense groups. Equal group weights applied after averaging valid group-hours.",
+  "inputs_sha256": {
+    "results\\20261119_local_conditional_probability_v01\\joint_scores.npz": "0886b3efb4df0dfebafa4f26a77cba8f08c68fe1dc7114d2242d89ab2ddb0b73",
+    "results\\20261119_local_fused_probability_v02\\full2019\\joint_scores.npz": "6ed998bb941caa51119e6ab2e0f73eb6dafaf9cea42d9b1ec8aecb2c413da5b6",
+    "results\\20261119_local_conditional_probability_v01\\protocol.lock.json": "9c2481b33569a0f87d377bf6a0461273017743659835b1771b097bf54a2d2ce3",
+    "results\\20261119_local_conditional_probability_v01\\B_only_parameters.lock.json": "87291597346ae29048a628eaa3591d1b14ff8079f3b1647ba123a18fe771f3eb"
+  },
+  "total_nominal_hours": 8760,
+  "n_groups": 6,
+  "group_ids": [
+    "-3:-7",
+    "-8:1",
+    "-6:-3",
+    "3:-9",
+    "-8:-1",
+    "-8:-2"
+  ],
+  "group_hours": 49908,
+  "joint_scored_station_hours": 309138,
+  "primary_station_hours": 642258,
+  "observed_difference_mm": {
+    "ES": -0.059095801200707586,
+    "VS": -0.021490812882653476
+  },
+  "bootstrap": {
+    "7": {
+      "block_days": 7,
+      "n_time_blocks": 53,
+      "n_groups": 6,
+      "intervals_mm": {
+        "ES": [
+          -0.10055855526475728,
+          -0.021218253151341654
+        ],
+        "VS": [
+          -0.03809407396545498,
+          -0.007456082640543521
+        ]
+      }
+    },
+    "14": {
+      "block_days": 14,
+      "n_time_blocks": 27,
+      "n_groups": 6,
+      "intervals_mm": {
+        "ES": [
+          -0.10529844100836615,
+          -0.017299462432800897
+        ],
+        "VS": [
+          -0.04094390331498958,
+          -0.005241531948126316
+        ]
+      }
+    }
+  },
+  "audit": {
+    "verified_monthly_pairs": 12,
+    "conditional_sample_rescaling_max_error_mm": 0.0,
+    "hourly_multiplier_max_absolute_error": 0.0,
+    "no_A_hours": 9,
+    "hourly_multiplier_quantiles": {
+      "minimum": 0.6895515869511886,
+      "p10": 0.7910043335568799,
+      "median": 0.960095436735951,
+      "p90": 1.2115300376843965,
+      "maximum": 1.82583795697625
+    },
+    "coverage_90_by_stratum": {
+      "DJF": {
+        "n_hours": 2160,
+        "n_station_hours": 159107,
+        "constant": 0.9307516620126425,
+        "conditional": 0.8981240232898632
+      },
+      "MAM": {
+        "n_hours": 2208,
+        "n_station_hours": 164275,
+        "constant": 0.895614655598475,
+        "conditional": 0.8770889178575104
+      },
+      "JJA": {
+        "n_hours": 2208,
+        "n_station_hours": 160179,
+        "constant": 0.7755691950596323,
+        "conditional": 0.8279855643020478
+      },
+      "SON": {
+        "n_hours": 2184,
+        "n_station_hours": 158697,
+        "constant": 0.8862507964886568,
+        "conditional": 0.8797530554683438
+      },
+      "A_Z0_low": {
+        "n_hours": 2239,
+        "n_station_hours": 166132,
+        "constant": 0.9425650451420811,
+        "conditional": 0.8907032215418906
+      },
+      "A_Z0_high": {
+        "n_hours": 2509,
+        "n_station_hours": 181534,
+        "constant": 0.7882120177906253,
+        "conditional": 0.850883406033669
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "station": "RICH",
+  "source_sha256": "fe1c9cffd46b44cfafafb3ff4e1de123c843865853bd2fddd842b6b1d47deafe",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\rich.pwv.gz",
+  "coverage": {
+    "2016": 0.9513888888888888,
+    "2017": 0.9657534246575342,
+    "2018": 0.9811643835616438,
+    "2019": 0.9864155251141552,
+    "2020": 0.10086520947176685
+  },
+  "valid_hours": 34939,
+  "cache_sha256": "7ea35d443fd47a9890b601e84a91e7f240f2fbeea320207e25643d7bb3321a34"
+}

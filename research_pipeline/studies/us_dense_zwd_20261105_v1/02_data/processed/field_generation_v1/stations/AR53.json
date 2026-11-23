@@ -1,0 +1,14 @@
+{
+  "station": "AR53",
+  "source_sha256": "6e1d34a2072f20c15a7508d6a28a4f1d7cd87f6d81902049097d86f4e0872844",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ar53.pwv.gz",
+  "coverage": {
+    "2016": 0.9955601092896175,
+    "2017": 0.9744292237442922,
+    "2018": 0.9778538812785388,
+    "2019": 0.9926940639269406,
+    "2020": 0.9936247723132969
+  },
+  "valid_hours": 43271,
+  "cache_sha256": "6844e6f9f9509b1ab63d80b2ec4601db189322f3d938aa24c144663ea0234536"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "LGWD",
+  "source_sha256": "efdb4b673f40e2e5d001ea04fef1743aef15f564f53192b0622aae52a7807f12",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\lgwd.pwv.gz",
+  "coverage": {
+    "2016": 0.9935109289617486,
+    "2017": 0.9534246575342465,
+    "2018": 0.9850456621004566,
+    "2019": 0.9891552511415526,
+    "2020": 0.9444444444444444
+  },
+  "valid_hours": 42669,
+  "cache_sha256": "8c47a06c9c775781d4a6496c509c56a0967f596006cd154d733050868bc9ab70"
+}

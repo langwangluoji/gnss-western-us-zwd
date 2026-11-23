@@ -1,0 +1,171 @@
+{
+  "weight": 0.26112698785540106,
+  "fit_scope": "locked B2018 864-hour exploratory pool",
+  "evaluation_scope": "C2019 full-year development",
+  "formula": "M0 + weight * (A_IDW - M0)",
+  "score_population": "S0 intersected with F0",
+  "hours": 8760,
+  "stations": 76,
+  "station_hours": 642258,
+  "full_f0_stations": 103,
+  "full_f0_station_hours": 873417,
+  "maximum_M0_reconstruction_error_mm": 0.0001373291015625,
+  "maximum_A_IDW_check_error_mm": 0.0,
+  "metrics": {
+    "M0": {
+      "station_macro_rmse_mm": 10.344628765758863,
+      "micro_rmse_mm": 11.019855618289185,
+      "station_macro_mae_mm": 7.98451992252571,
+      "micro_mae_mm": 8.013871319984837,
+      "station_macro_bias_mm": -2.356693624651025,
+      "bias_mm": -2.3585464239416334,
+      "p95_absolute_error_mm": 22.556350326538087,
+      "n_stations": 76,
+      "n_station_hours": 642258
+    },
+    "A_IDW": {
+      "station_macro_rmse_mm": 10.278529023297574,
+      "micro_rmse_mm": 11.176887009371368,
+      "station_macro_mae_mm": 7.956403172270689,
+      "micro_mae_mm": 7.981208271170103,
+      "station_macro_bias_mm": -3.2151080979849325,
+      "bias_mm": -3.253962825015959,
+      "p95_absolute_error_mm": 23.81067504882813,
+      "n_stations": 76,
+      "n_station_hours": 642258
+    },
+    "blend": {
+      "station_macro_rmse_mm": 9.995855483352363,
+      "micro_rmse_mm": 10.672188036028187,
+      "station_macro_mae_mm": 7.720256292681182,
+      "micro_mae_mm": 7.747000691150671,
+      "station_macro_bias_mm": -2.5808488104041865,
+      "bias_mm": -2.5923638116304955,
+      "p95_absolute_error_mm": 22.191102690841234,
+      "n_stations": 76,
+      "n_station_hours": 642258
+    }
+  },
+  "increments_0_50km": {
+    "M0": {
+      "group_macro_rmse_mm": 11.52199450437026,
+      "n_groups": 8,
+      "n_pair_hours": 842428,
+      "n_pairs": 100,
+      "same_height_surface": {
+        "group_macro_rmse_mm": 8.756933850903131,
+        "n_groups": 6,
+        "n_pair_hours": 262849,
+        "n_pairs": 31
+      }
+    },
+    "A_IDW": {
+      "group_macro_rmse_mm": 10.854780043565029,
+      "n_groups": 8,
+      "n_pair_hours": 842428,
+      "n_pairs": 100,
+      "same_height_surface": {
+        "group_macro_rmse_mm": 8.09152796605942,
+        "n_groups": 6,
+        "n_pair_hours": 262849,
+        "n_pairs": 31
+      }
+    },
+    "blend": {
+      "group_macro_rmse_mm": 11.053902555672952,
+      "n_groups": 8,
+      "n_pair_hours": 842428,
+      "n_pairs": 100,
+      "same_height_surface": {
+        "group_macro_rmse_mm": 8.147776485829594,
+        "n_groups": 6,
+        "n_pair_hours": 262849,
+        "n_pairs": 31
+      }
+    }
+  },
+  "point_intervals": {
+    "ci95_mm": {
+      "blend_minus_M0": [
+        -0.398947358630901,
+        -0.2856885060035237
+      ],
+      "blend_minus_A_IDW": [
+        -0.4136293627022209,
+        -0.16685339536773297
+      ]
+    },
+    "seed": 20261117,
+    "block_days": 7,
+    "n_blocks": 53,
+    "replicates": 2000,
+    "attempts": 2000,
+    "crossed_dense_groups": false,
+    "difference_mm": {
+      "blend_minus_M0": -0.3487732824064995,
+      "blend_minus_A_IDW": -0.28267353994521116
+    }
+  },
+  "increment_intervals": {
+    "ci95_mm": {
+      "blend_minus_M0": [
+        -0.8036073836880034,
+        -0.16963330245044536
+      ],
+      "blend_minus_A_IDW": [
+        -0.4276531656581196,
+        0.8081484720812997
+      ]
+    },
+    "seed": 20261117,
+    "block_days": 7,
+    "n_blocks": 53,
+    "replicates": 2000,
+    "attempts": 2000,
+    "crossed_dense_groups": true,
+    "difference_mm": {
+      "blend_minus_M0": -0.4680919486973085,
+      "blend_minus_A_IDW": 0.1991225121079232
+    }
+  },
+  "inputs_sha256": {
+    "results/20261119_local_method_research_v01/B_only_parameters.lock.json": "490b4e833b2e354021b5f9da61311638711bd566b9b5bd5f86a8f459df3f60fd",
+    "../../02_data/processed/gnss_field_server_v1/stations.csv": "80e0d53cd5cb1d98bafe6e5cc40c653a6d3ee4f22ccfe3851c32181b84e17d9b",
+    "results/20261119_frozen_m0_audit/release/seed_42/mean_base/full2019/5000/forecast_2019-01.npz": "b3d4f2c95934c0b237e492a549d1c0dd1661b25cb377a6a347958c092afb691f",
+    "results/20261119_frozen_m0_audit/monthly/2019-01.npz": "1c888f3ac13a83bae225e6c114f04092a2f94f4de229a955af74ce2cd4d60bd2",
+    "results/local_baselines_2019_20261118/A_IDW/forecast_2019-01.npz": "dad7ca9476e5689dbded705e6dbf55f42b80b74d1998b86b69ac9c41d6bd9893",
+    "results/20261119_frozen_m0_audit/release/seed_42/mean_base/full2019/5000/forecast_2019-02.npz": "bc7d6eac92d49cc4b37cc1e455bd55939642427b42f25c05a607552a6e119aaf",
+    "results/20261119_frozen_m0_audit/monthly/2019-02.npz": "f2852326acb7cf20229e4dac4eca86f68d3736fd4fba5d4dd13f53d6eccece2b",
+    "results/local_baselines_2019_20261118/A_IDW/forecast_2019-02.npz": "12e6c3bc46dd4bca8ca1d88f31354476ed8542a43890c8178c2f6e3dd1005d2b",
+    "results/20261119_frozen_m0_audit/release/seed_42/mean_base/full2019/5000/forecast_2019-03.npz": "364dce1eaefe5890467db353ffe5584207c7de65f7a46aa591dc33345055f385",
+    "results/20261119_frozen_m0_audit/monthly/2019-03.npz": "98d1989d55fd865c8c8ccd98e97846d441d91a6506343bf6e6911193f044c06f",
+    "results/local_baselines_2019_20261118/A_IDW/forecast_2019-03.npz": "1e66f10d532b65adfc8b6828454be99769fd1d0a396bebaa3f0c9671b5bcb37b",
+    "results/20261119_frozen_m0_audit/release/seed_42/mean_base/full2019/5000/forecast_2019-04.npz": "5fdc798b331b4e47e08cc5ef7814edb710b44444ada31abdcea983e8c2aff072",
+    "results/20261119_frozen_m0_audit/monthly/2019-04.npz": "d312993d2c11accb92db1f7709ddb965043568f53637fe7a8d88b34b5f40f597",
+    "results/local_baselines_2019_20261118/A_IDW/forecast_2019-04.npz": "0c639593f3c3f029a191837f1e17de755f7affb39348c63c474ee0940b794066",
+    "results/20261119_frozen_m0_audit/release/seed_42/mean_base/full2019/5000/forecast_2019-05.npz": "a85ad248fbd817b8d7b5937c80deb7cda14f81cefed889e0957e3818910de163",
+    "results/20261119_frozen_m0_audit/monthly/2019-05.npz": "680dfcd2bb7da00b4a72a2e0526092ef90cc489c1ba2bb1b12a3c251efe6e4c6",
+    "results/local_baselines_2019_20261118/A_IDW/forecast_2019-05.npz": "ef0ce8beac90065f7a5a75d85162406e49771d849d22e65f6d8a11a85326b6eb",
+    "results/20261119_frozen_m0_audit/release/seed_42/mean_base/full2019/5000/forecast_2019-06.npz": "c71c3e97872527d87708cf06e052c572fd6bd3def6cbc86bd08b6ec110ec3a72",
+    "results/20261119_frozen_m0_audit/monthly/2019-06.npz": "800a2531baee218a6f4ea2aba88ef37eb7e29a664f2ee604802317e059d928ca",
+    "results/local_baselines_2019_20261118/A_IDW/forecast_2019-06.npz": "745068b86ab50a4b9b02e4f7083efda8228ec2863826bfb0f79447798fc52389",
+    "results/20261119_frozen_m0_audit/release/seed_42/mean_base/full2019/5000/forecast_2019-07.npz": "ec78d39ac1e95a2452b42b73e5fda496eaba954602c5dbe2652e193ffba98d6b",
+    "results/20261119_frozen_m0_audit/monthly/2019-07.npz": "c3d9d0d3223d37a61878127b06a6f62230de192e98314743caef9240dfaa9ab4",
+    "results/local_baselines_2019_20261118/A_IDW/forecast_2019-07.npz": "4cba91728a01deb601e886486f8271f9e8b2c9bec720583061aee0070e2ae05b",
+    "results/20261119_frozen_m0_audit/release/seed_42/mean_base/full2019/5000/forecast_2019-08.npz": "0f59da339b713b89e1edfe2dbffaf010744fee544f13751d9cd52dbcdf93e83c",
+    "results/20261119_frozen_m0_audit/monthly/2019-08.npz": "47cc2c9e039ed726db6dae8797203a149e34321a3d2711035a7c68b610a0232e",
+    "results/local_baselines_2019_20261118/A_IDW/forecast_2019-08.npz": "990d222fdb75d038a0f475d66cf6b2bdeb8410051997e77fd6abff6b5977cf00",
+    "results/20261119_frozen_m0_audit/release/seed_42/mean_base/full2019/5000/forecast_2019-09.npz": "25200966b658f05afbc536667325c99011df31932c8411c98c5029e87a383a82",
+    "results/20261119_frozen_m0_audit/monthly/2019-09.npz": "e44c36254c7e4eb359a5d4f7db11e36e520569c71f295c7cd40123da9923f349",
+    "results/local_baselines_2019_20261118/A_IDW/forecast_2019-09.npz": "bc69596f3acf24214fb1f4221e5c286c24102f92d9758f51b9df33169c57c31b",
+    "results/20261119_frozen_m0_audit/release/seed_42/mean_base/full2019/5000/forecast_2019-10.npz": "e7d9b85d06ab103dc1295ad8239c0e07889c27cf56c37aaa6abd60b7206c4f32",
+    "results/20261119_frozen_m0_audit/monthly/2019-10.npz": "4b0d919ec31b6517bc4f2540d6fb5ec843ca2ee7740fc44abdc64f1aa360db22",
+    "results/local_baselines_2019_20261118/A_IDW/forecast_2019-10.npz": "2c299a8f8406812b43f133316aef57f22238ef1cba8503b592d2d9e0c85a9dbd",
+    "results/20261119_frozen_m0_audit/release/seed_42/mean_base/full2019/5000/forecast_2019-11.npz": "585888d1842cc34704b658e5469082b40263b547fcc75a1c533f9b59647e3d6b",
+    "results/20261119_frozen_m0_audit/monthly/2019-11.npz": "af06e596494dfa5f60090325306a0cc1d9b0c1938c10cb150b7fb0c32b0dac55",
+    "results/local_baselines_2019_20261118/A_IDW/forecast_2019-11.npz": "644879fa36a6b62a6fd3ee8ea8ce62ca46d2ad1ca75299d3d0a86cf2a30776a6",
+    "results/20261119_frozen_m0_audit/release/seed_42/mean_base/full2019/5000/forecast_2019-12.npz": "06e18c5066f18ed154645cca14aa4566602b8696fee82eb55f641d3299909b82",
+    "results/20261119_frozen_m0_audit/monthly/2019-12.npz": "76bed6030c6931eb344836f38c8f8f68b4b5c16833f66250441566fa5362234f",
+    "results/local_baselines_2019_20261118/A_IDW/forecast_2019-12.npz": "e56ef19a2a26cf225e50fae96c554f7957437bf3a7ba64189e88db2280e6d95b"
+  }
+}

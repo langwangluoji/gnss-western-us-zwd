@@ -1,0 +1,83 @@
+{
+  "queue": {
+    "campaign_id": "20261121_us_dense_zwd_gen3_unet_df_gan_v02",
+    "state": "COMPLETE",
+    "jobs": [
+      {
+        "job_id": "3645090",
+        "state": "RUNNING|gpu8001"
+      }
+    ]
+  },
+  "snapshot_time": 1795288543.0639384,
+  "runs": [
+    {
+      "name": "fold_0/diffusion",
+      "state": "COMPLETE",
+      "step": 684,
+      "dev_rmse": 7.231715058748459,
+      "dev_CRPS": 4.286589481103152,
+      "dev_ES": 4.6941898566880935,
+      "dev_coverage90": 0.8430891674591416,
+      "dev_mean_mcse": 0.3542264092434127,
+      "training_minutes": 56.12920283631732
+    },
+    {
+      "name": "fold_0/gan",
+      "state": "COMPLETE",
+      "step": 684,
+      "dev_rmse": 7.253056014497681,
+      "dev_CRPS": 4.306354541744031,
+      "dev_ES": 4.712520865933631,
+      "dev_coverage90": 0.8446541623749295,
+      "dev_mean_mcse": 0.31282692320252237,
+      "training_minutes": 11.486314174967507
+    },
+    {
+      "name": "fold_0/stochastic",
+      "state": "COMPLETE",
+      "step": 684,
+      "dev_rmse": 7.210710178221767,
+      "dev_CRPS": 4.285816805377904,
+      "dev_ES": 4.685287333154086,
+      "dev_coverage90": 0.8479577676937617,
+      "dev_mean_mcse": 0.3047383426726868,
+      "training_minutes": 8.828943874376515
+    },
+    {
+      "name": "fold_1/diffusion",
+      "state": "COMPLETE",
+      "step": 684,
+      "dev_rmse": 7.284260554070643,
+      "dev_CRPS": 4.264169473297645,
+      "dev_ES": 4.690074841872357,
+      "dev_coverage90": 0.8376257426407496,
+      "dev_mean_mcse": 0.459934387084163,
+      "training_minutes": 53.68832561206072
+    },
+    {
+      "name": "fold_1/gan",
+      "state": "COMPLETE",
+      "step": 684,
+      "dev_rmse": 7.360858942826202,
+      "dev_CRPS": 4.316842612568908,
+      "dev_ES": 4.743677671213377,
+      "dev_coverage90": 0.8395285649616545,
+      "dev_mean_mcse": 0.40149588612443377,
+      "training_minutes": 11.355583071274062
+    },
+    {
+      "name": "fold_1/stochastic",
+      "state": "COMPLETE",
+      "step": 684,
+      "dev_rmse": 7.281573900668504,
+      "dev_CRPS": 4.280345308717792,
+      "dev_ES": 4.707363705350928,
+      "dev_coverage90": 0.8438817603174606,
+      "dev_mean_mcse": 0.39788013938904765,
+      "training_minutes": 8.301523269868145
+    }
+  ],
+  "scope": "B2018 inner96 metrics only. Outer results exist on server but are not in this telemetry snapshot.",
+  "scheduler_caveat": "Monitoring stopped immediately at queue COMPLETE; captured sacct was still RUNNING before final process exit. Do not claim current scheduler state from stale snapshot."
+}

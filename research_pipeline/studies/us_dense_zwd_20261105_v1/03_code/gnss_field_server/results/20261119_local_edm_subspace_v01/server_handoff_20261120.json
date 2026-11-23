@@ -1,0 +1,16 @@
+{
+  "archive_sha256": "31016a67516344b5102d01c4e7ad3a33b79620c7a661b75842e5302d730b993b",
+  "release": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/code/20261120_observable_subspace_v02",
+  "release_sha256": "0f1d9cdf470910dbec68de61a618dee54d3c55b8c4dae64e590b02af92c91923",
+  "benchmark_job_id": "3610271",
+  "budget_gate_job_id": "3610272",
+  "run": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/runs/20261120_us_dense_zwd_observable64_coverage_v02",
+  "maximum_concurrent_GPU": 1,
+  "default_scientific_arm": "mean",
+  "maximum_updates": 1572,
+  "D2020": false,
+  "no_EDM_GAN_search_jobs": true,
+  "status": "benchmark pending Priority; gate pending Dependency",
+  "pause": "scancel --signal=USR1 <training_job_id>; saves and exits 75; afterok does not advance",
+  "recovery": "Inspect Slurm state and run lease, then resubmit the same stage/run; replace downstream dependency with new training job ID"
+}

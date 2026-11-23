@@ -1,0 +1,14 @@
+{
+  "station": "CIRX",
+  "source_sha256": "f417d32f05e859e80a28e687f51cfa06f4783cc3e6ca173229749e5f43360f06",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\cirx.pwv.gz",
+  "coverage": {
+    "2016": 0.9845173041894353,
+    "2017": 0.9844748858447488,
+    "2018": 0.9682648401826484,
+    "2019": 0.8900684931506849,
+    "2020": 0.99408014571949
+  },
+  "valid_hours": 42283,
+  "cache_sha256": "943fc9121183f968465db1fc4237085aa01c7cf59d027dbfb0031714bd3dd379"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "NHRG",
+  "source_sha256": "5acd284c32ba8f50127cc230a2d93e90f5f8b43a0551994a8e76418cef42a55f",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\nhrg.pwv.gz",
+  "coverage": {
+    "2016": 0.9980646630236795,
+    "2017": 0.9908675799086758,
+    "2018": 0.9898401826484018,
+    "2019": 0.9898401826484018,
+    "2020": 0.9887295081967213
+  },
+  "valid_hours": 43474,
+  "cache_sha256": "7fddcf405a3f29e77c9a613cc4c52520c71845f5e9ffa82a9aeea6cf6c34eb78"
+}

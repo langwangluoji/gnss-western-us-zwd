@@ -1,0 +1,14 @@
+{
+  "station": "RAGG",
+  "source_sha256": "35d6e8c2abd136e2afdab1d79fc6052632fa4a2044c0b85ded940cd573619ddd",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ragg.pwv.gz",
+  "coverage": {
+    "2016": 0.9877049180327869,
+    "2017": 0.9807077625570776,
+    "2018": 0.9036529680365297,
+    "2019": 0.4265981735159817,
+    "2020": 0.0
+  },
+  "valid_hours": 28920,
+  "cache_sha256": "30e0c03e29ede708dc226f924bfaa70222cef666812d8f87fb8ff300243f4a39"
+}

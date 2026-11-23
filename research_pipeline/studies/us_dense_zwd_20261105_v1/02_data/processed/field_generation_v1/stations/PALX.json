@@ -1,0 +1,14 @@
+{
+  "station": "PALX",
+  "source_sha256": "a6d1eade216008ddddadc7379c6773c092d2a375c448ffb25801a059b0a7878a",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\palx.pwv.gz",
+  "coverage": {
+    "2016": 0.9944216757741348,
+    "2017": 0.9856164383561644,
+    "2018": 0.9444063926940639,
+    "2019": 0.9705479452054795,
+    "2020": 0.993283242258652
+  },
+  "valid_hours": 42869,
+  "cache_sha256": "310b4842f78ddf95daa88ebd4202fd1ccd4a73ef7fa7e73b35b490c258428abd"
+}

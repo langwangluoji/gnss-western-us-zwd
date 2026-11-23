@@ -1,0 +1,24 @@
+{
+  "root": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/runs/20261121_us_dense_zwd_gen3_unet_df_gan_v01",
+  "generated_at": 1795276377.593788,
+  "runs": [],
+  "full2019": [],
+  "read_only": true,
+  "campaign_queue": {
+    "campaign_id": "20261121_us_dense_zwd_gen3_unet_df_gan_v01",
+    "state": "FAILED",
+    "jobs": [
+      {
+        "job_id": "3644321",
+        "state": "FAILED"
+      }
+    ]
+  },
+  "last_update": null,
+  "ssh_sync": {
+    "sync_ok": true,
+    "last_success": 1795276377.593788,
+    "last_attempt": 1795276443.5483193,
+    "error": ""
+  }
+}

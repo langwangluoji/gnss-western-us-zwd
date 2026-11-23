@@ -1,0 +1,29 @@
+{
+  "engineering_hours": [
+    420776,
+    420793,
+    420810,
+    420827,
+    420843,
+    420860,
+    420877,
+    420894
+  ],
+  "not_scientific_candidate": true,
+  "Gaussian_old_new_max_error_mm": 8.392333984375e-05,
+  "stochastic": {
+    "ES_loss_mm": 4.684152603149414,
+    "gradient_norm": 1.0523558855056763,
+    "output_weight_norm_after_update": 0.0005656853318214417
+  },
+  "diffusion": {
+    "ES_loss_mm": 5.021686553955078,
+    "gradient_norm": 1.4079376459121704,
+    "output_weight_norm_after_update": 0.0005656852736137807
+  },
+  "gan": {
+    "ES_loss_mm": 4.727047920227051,
+    "gradient_norm": 1.2729779481887817,
+    "output_weight_norm_after_update": 0.0005656852736137807
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "station": "SPIC",
+  "source_sha256": "18e19083b42c8bad3f2aac939830e9aec7d7eabfe50e7212cdf6e513b1a5b22e",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\spic.pwv.gz",
+  "coverage": {
+    "2016": 0.9960154826958105,
+    "2017": 0.9820776255707763,
+    "2018": 0.9865296803652968,
+    "2019": 0.9754566210045662,
+    "2020": 0.9992030965391621
+  },
+  "valid_hours": 43316,
+  "cache_sha256": "2be20fa4cc7f32aa03e1a5406e9d7f627ee07792e3f8c799b2a6a1865586b1c4"
+}

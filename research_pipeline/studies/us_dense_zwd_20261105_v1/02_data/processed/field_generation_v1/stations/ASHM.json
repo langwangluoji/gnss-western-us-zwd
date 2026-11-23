@@ -1,0 +1,14 @@
+{
+  "station": "ASHM",
+  "source_sha256": "9d10dc942a7c02b610d13900aebf1ca9277774e01dc88e3ab858624c6aae2705",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ashm.pwv.gz",
+  "coverage": {
+    "2016": 0.993283242258652,
+    "2017": 0.9898401826484018,
+    "2018": 0.9747716894977169,
+    "2019": 0.7175799086757991,
+    "2020": 0.652436247723133
+  },
+  "valid_hours": 37952,
+  "cache_sha256": "07f79419bb238d5c05423b48c9c03df8a024324329e5fff34c4b2cc7718af0a1"
+}

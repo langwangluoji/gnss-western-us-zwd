@@ -1,0 +1,14 @@
+{
+  "station": "NEWS",
+  "source_sha256": "bb2845f31db7d760b472225089f75a4154843a9ca74f9e28a9ba4a1043b14057",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\news.pwv.gz",
+  "coverage": {
+    "2016": 0.9863387978142076,
+    "2017": 0.9815068493150685,
+    "2018": 0.9912100456621005,
+    "2019": 0.990296803652968,
+    "2020": 0.9894125683060109
+  },
+  "valid_hours": 43311,
+  "cache_sha256": "6c753405cafba6b6ce0c119bbdabbb1c2223b826d2ff232a0cf69385f98bf2b9"
+}

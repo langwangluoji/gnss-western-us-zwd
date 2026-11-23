@@ -1,0 +1,14 @@
+{
+  "station": "LRA3",
+  "source_sha256": "c483657b1ea44c67d63afb7a1b21d7ed3b1aa56cdbec31a9d8af21bedf0c06ee",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\lra3.pwv.gz",
+  "coverage": {
+    "2016": 0.995787795992714,
+    "2017": 0.9678082191780822,
+    "2018": 0.970662100456621,
+    "2019": 0.9683789954337899,
+    "2020": 0.9916894353369763
+  },
+  "valid_hours": 42922,
+  "cache_sha256": "a41dc581c1d659cbe43dbc704aff778623a055014f08478c7d914110a661b1f8"
+}

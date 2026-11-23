@@ -1,0 +1,14 @@
+{
+  "station": "DDSN",
+  "source_sha256": "b7d80bac82731e15779a8745d99e8f5a257baaf4f6af6f9291678430fd90840c",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ddsn.pwv.gz",
+  "coverage": {
+    "2016": 0.9973816029143898,
+    "2017": 0.9726027397260274,
+    "2018": 0.9527397260273973,
+    "2019": 0.9878995433789954,
+    "2020": 0.9978369763205829
+  },
+  "valid_hours": 43046,
+  "cache_sha256": "b74c84e8fe057387cbe58171aac501b03d35d28acff6f0f0411aa71707ee6322"
+}

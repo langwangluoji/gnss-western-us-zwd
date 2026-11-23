@@ -1,0 +1,14 @@
+{
+  "station": "PTRO",
+  "source_sha256": "4ecc5bbe1b6e97dc8dbe8454ed12b99293f54343ea4b413d503a030e1c8238af",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ptro.pwv.gz",
+  "coverage": {
+    "2016": 0.9960154826958105,
+    "2017": 0.983675799086758,
+    "2018": 0.9788812785388128,
+    "2019": 0.9837899543378995,
+    "2020": 0.9829234972677595
+  },
+  "valid_hours": 43193,
+  "cache_sha256": "954d5eb81beace3cc2e9987ed0613e03238b31719b70356b7b64c897755e70a2"
+}

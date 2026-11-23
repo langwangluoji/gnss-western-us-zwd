@@ -1,0 +1,14 @@
+{
+  "station": "MONP",
+  "source_sha256": "88b2dd300af612f9d05388181fd8026aaee75bd01ad3e6c0592d26104228922c",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\monp.pwv.gz",
+  "coverage": {
+    "2016": 0.9620901639344263,
+    "2017": 0.9205479452054794,
+    "2018": 0.9345890410958904,
+    "2019": 0.9276255707762557,
+    "2020": 0.9854280510018215
+  },
+  "valid_hours": 41484,
+  "cache_sha256": "4233c066986b3e10f03762695c931e89c916b8e6230977abc454ad32dfb1c1c7"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "KOOT",
+  "source_sha256": "350dc353881c19109feb27835633df8d14f6ad388facb9a200f01f2aa9bff315",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\koot.pwv.gz",
+  "coverage": {
+    "2016": 0.9272540983606558,
+    "2017": 0.9361872146118722,
+    "2018": 0.9795662100456621,
+    "2019": 0.9908675799086758,
+    "2020": 0.9914617486338798
+  },
+  "valid_hours": 42316,
+  "cache_sha256": "f8f0f67c189df8c929c5ad109ea5069839dd77ca41cb91365369312ada7a7db5"
+}

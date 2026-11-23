@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+/data/
+/runs/
+/logs/
+*.key
+*.pem
+.env
+.cdsapirc
+credentials*
+reports/*environment*.json

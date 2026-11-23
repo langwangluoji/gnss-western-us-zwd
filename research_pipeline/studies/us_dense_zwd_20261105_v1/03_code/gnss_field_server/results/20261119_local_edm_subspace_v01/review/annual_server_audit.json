@@ -1,0 +1,220 @@
+{
+  "bundle": {
+    "nominal_hours": 8760,
+    "B_stations": 511,
+    "qualified_hours": 8736,
+    "blocked_weeks": 12,
+    "guarded_hours": 2448,
+    "qualified_guarded_hours": 2448,
+    "training_hours": 6288,
+    "development_hours": 288,
+    "maximum_updates": 1572,
+    "minimum_train_to_development_anchor_hours": 67,
+    "train_station_hours": 2716685,
+    "development_station_hours": 126639,
+    "maximum_old_background_error_mm": 0.0001220703125,
+    "manifest_sha256": "e619d04e6c6c64164624f8983db9e507803bab5501a6250e35f93010f3bc927d",
+    "data_sha256": "1aef008569ff066efb63724117d87d3d0d0a23a4d5c785b0eac108be7561478b",
+    "spatial_sha256": "b633c2ae59e4ab41ec90b8914108071842e431221a19b354e01542ece19106b7"
+  },
+  "scope": "Read-only audit of B2018 bundle and C2019 forecast outputs; D2020 observation data unopened.",
+  "annual": {
+    "primary_station_hours": 642258,
+    "point_RMSE_mm": {
+      "integrated_edm": 9.967997294860947,
+      "trained_mean_control": 9.973942690684995
+    },
+    "mean_pool_standard_error_RMS_mm": 0.004111059941351414,
+    "groups": 6,
+    "paired_ci_replicates": 2000,
+    "paired_ci_seed": 20261117,
+    "crossed": {
+      "EDM_minus_Gaussian": {
+        "difference_mm": {
+          "ES": -0.038619582998852556,
+          "VS": 7.123903580151366e-05
+        },
+        "7": {
+          "intervals_mm": {
+            "ES": [
+              -0.09032213492405851,
+              -0.0013546951964339563
+            ],
+            "VS": [
+              -0.004609213967405212,
+              0.006187751544458226
+            ]
+          },
+          "n_blocks": 53,
+          "n_groups": 6
+        },
+        "14": {
+          "intervals_mm": {
+            "ES": [
+              -0.09351588913427546,
+              -0.0020771006018732024
+            ],
+            "VS": [
+              -0.004627037772619126,
+              0.005577601269335107
+            ]
+          },
+          "n_blocks": 27,
+          "n_groups": 6
+        }
+      },
+      "EDM_minus_Gaussian_plus_independent_EDM_shift": {
+        "difference_mm": {
+          "ES": 4.7592876513249996e-05,
+          "VS": -1.4628971728489427e-06
+        },
+        "7": {
+          "intervals_mm": {
+            "ES": [
+              -0.00030678951427713267,
+              0.0004959348219037889
+            ],
+            "VS": [
+              -9.454931009682643e-06,
+              5.941396065663891e-06
+            ]
+          },
+          "n_blocks": 53,
+          "n_groups": 6
+        },
+        "14": {
+          "intervals_mm": {
+            "ES": [
+              -0.0003203109051631914,
+              0.0005387995785016479
+            ],
+            "VS": [
+              -9.390276668792837e-06,
+              6.459938884440432e-06
+            ]
+          },
+          "n_blocks": 27,
+          "n_groups": 6
+        }
+      },
+      "EDM_minus_independent_EDM_shift_minus_Gaussian": {
+        "difference_mm": {
+          "ES": 6.064320429245272e-05,
+          "VS": -2.433743894049095e-06
+        },
+        "7": {
+          "intervals_mm": {
+            "ES": [
+              -0.0003002678174813099,
+              0.0005186247412348296
+            ],
+            "VS": [
+              -9.92718236422684e-06,
+              5.091298357564759e-06
+            ]
+          },
+          "n_blocks": 53,
+          "n_groups": 6
+        },
+        "14": {
+          "intervals_mm": {
+            "ES": [
+              -0.00031215012643970227,
+              0.0005590018962712676
+            ],
+            "VS": [
+              -9.701826963383384e-06,
+              5.717939376530285e-06
+            ]
+          },
+          "n_blocks": 27,
+          "n_groups": 6
+        }
+      },
+      "trained_mean_control_minus_EDM": {
+        "difference_mm": {
+          "ES": 0.006925058977665487,
+          "VS": -0.0008754621839999855
+        },
+        "7": {
+          "intervals_mm": {
+            "ES": [
+              -0.006053295893186216,
+              0.022563583811088965
+            ],
+            "VS": [
+              -0.0029698155602917815,
+              0.0007565010142181791
+            ]
+          },
+          "n_blocks": 53,
+          "n_groups": 6
+        },
+        "14": {
+          "intervals_mm": {
+            "ES": [
+              -0.005596764452384003,
+              0.023799567870199698
+            ],
+            "VS": [
+              -0.002892625052713106,
+              0.000755363848705712
+            ]
+          },
+          "n_blocks": 27,
+          "n_groups": 6
+        }
+      },
+      "trained_mean_control_minus_Gaussian": {
+        "difference_mm": {
+          "ES": -0.031694524021187075,
+          "VS": -0.000804223148198498
+        },
+        "7": {
+          "intervals_mm": {
+            "ES": [
+              -0.06890225789285603,
+              -0.005675426182116034
+            ],
+            "VS": [
+              -0.004055545190757921,
+              0.0033375378958126842
+            ]
+          },
+          "n_blocks": 53,
+          "n_groups": 6
+        },
+        "14": {
+          "intervals_mm": {
+            "ES": [
+              -0.0709611093135142,
+              -0.006045746491255746
+            ],
+            "VS": [
+              -0.004253426603440919,
+              0.0028822694430832123
+            ]
+          },
+          "n_blocks": 27,
+          "n_groups": 6
+        }
+      }
+    }
+  },
+  "inputs_sha256": {
+    "results\\20261119_local_edm_subspace_v01\\server_bundle\\manifest.json": "e619d04e6c6c64164624f8983db9e507803bab5501a6250e35f93010f3bc927d",
+    "results\\20261119_local_edm_subspace_v01\\server_bundle\\data.npz": "1aef008569ff066efb63724117d87d3d0d0a23a4d5c785b0eac108be7561478b",
+    "results\\20261119_local_edm_subspace_v01\\server_bundle\\spatial.npz": "b633c2ae59e4ab41ec90b8914108071842e431221a19b354e01542ece19106b7",
+    "results\\20261119_local_edm_subspace_v01\\server_bundle\\preparation.lock.json": "e5ccd7b5903174abba1a2e2066ab76af0731b03e813b920792415cdced95fce1",
+    "results\\20261119_local_edm_subspace_v01\\full2019\\protocol.lock.json": "89aefe83abe64c2774b305fdcb789256bda4bb63fef4d797597492aa89b1341f",
+    "results\\20261119_local_edm_subspace_v01\\full2019\\attribution.lock.json": "80138d7ff4397eef52fb7b721e992a58d7eb46eeb9ddd9047a700ede7cf0f571",
+    "results\\20261119_local_edm_subspace_v01\\full2019\\integrated_mean.npz": "fd1370d79434df796d50e988f1e5c448004f846380e9b18c7d1c27c5c718f29b",
+    "results\\20261119_local_edm_subspace_v01\\full2019\\annual_means.npz": "fea70b25c74fd13b7861d16877a0917478797dd3416830ab05f9cfeb00fda8b4",
+    "results\\20261119_local_edm_subspace_v01\\full2019\\attribution_scores.npz": "58c26c3d1014a9ffabae50d9036d885eb416faa3418c601baf328569164185e5",
+    "results\\20261119_local_edm_subspace_v01\\full2019\\attribution_results.json": "65c3c78a94ad142c7adbeeaf707a69c9d92980c9d4066710894b93e4ead02312",
+    "results\\20261119_local_edm_subspace_v01\\mean_shift_control_v02\\annual_results.json": "98b41cfd14cab0a2ad12a6eb2901efdc62eec29502ebbc394022e612d24cfbfc",
+    "results\\20261119_local_edm_subspace_v01\\mean_shift_control_v02\\annual_protocol.lock.json": "fe156d8cb285d66804cd9ca35881f7c43322aec611990c4586c095de3442e44b",
+    "results\\20261119_local_edm_subspace_v01\\mean_shift_control_v02\\annual_scores.npz": "a55a19395a3d040f29377cc9c6a5092f24f827fef5f0943e993470a06be8fd13",
+    "results\\20261119_local_edm_subspace_v01\\mean_shift_control_v02\\annual_shift.npz": "06eeda1ccdcd48b34977d3d341fde01d9fb229ea1222ea73836d51570a03d7a1"
+  }
+}

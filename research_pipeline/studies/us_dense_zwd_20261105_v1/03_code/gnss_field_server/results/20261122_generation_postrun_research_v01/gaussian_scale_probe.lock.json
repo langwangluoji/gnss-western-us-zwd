@@ -1,0 +1,21 @@
+{
+  "models": [
+    "one global latent-field scale",
+    "one global total-error scale"
+  ],
+  "bounds": [
+    0.1,
+    1.8
+  ],
+  "optimizer": "bounded scipy minimize_scalar",
+  "target": "training-station macro analytic Gaussian CRPS",
+  "fit_year": 2018,
+  "fit_hours": 5472,
+  "fit_stations": "B_fold != outer_fold only",
+  "score_hours": "locked outer96",
+  "point_mean": "frozen M0+IDW",
+  "C2019": false,
+  "D2020": false,
+  "training_gpu_jobs": false,
+  "exploratory": true
+}

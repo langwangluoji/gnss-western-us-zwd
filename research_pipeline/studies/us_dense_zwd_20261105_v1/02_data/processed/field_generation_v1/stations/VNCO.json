@@ -1,0 +1,14 @@
+{
+  "station": "VNCO",
+  "source_sha256": "12a60b5e8a7e6659991d54687c41db969bf8d4c694e6b815ca06e81b2048d154",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\vnco.pwv.gz",
+  "coverage": {
+    "2016": 0.9941939890710383,
+    "2017": 0.992351598173516,
+    "2018": 0.979337899543379,
+    "2019": 0.9892694063926941,
+    "2020": 0.9916894353369763
+  },
+  "valid_hours": 43382,
+  "cache_sha256": "4637e93b91afb40d31ca658ebe5897c4d676cc1548254cc1a2b3411694a9ba2b"
+}

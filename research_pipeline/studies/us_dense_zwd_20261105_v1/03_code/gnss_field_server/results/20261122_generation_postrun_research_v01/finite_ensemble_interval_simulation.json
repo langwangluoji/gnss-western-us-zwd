@@ -1,0 +1,63 @@
+{
+  "draws_per_K": 200000,
+  "seed": 20261122,
+  "distribution": "N(0,1); numpy linear sample quantiles; independent target integrated analytically",
+  "results": {
+    "16": {
+      "80": {
+        "expected_coverage": 0.7139636890557589,
+        "simulation_se": 0.00022554718102211615
+      },
+      "90": {
+        "expected_coverage": 0.8064809762339796,
+        "simulation_se": 0.0001950339922131597
+      },
+      "95": {
+        "expected_coverage": 0.8519682661423021,
+        "simulation_se": 0.00017826246260983707
+      }
+    },
+    "32": {
+      "80": {
+        "expected_coverage": 0.7524254290372718,
+        "simulation_se": 0.00016404944082380895
+      },
+      "90": {
+        "expected_coverage": 0.8503549249910889,
+        "simulation_se": 0.00013082502208801463
+      },
+      "95": {
+        "expected_coverage": 0.8990299662075266,
+        "simulation_se": 0.00010927296204055621
+      }
+    },
+    "64": {
+      "80": {
+        "expected_coverage": 0.776105688725346,
+        "simulation_se": 0.0001126853382440757
+      },
+      "90": {
+        "expected_coverage": 0.8730537251628708,
+        "simulation_se": 9.061988817588098e-05
+      },
+      "95": {
+        "expected_coverage": 0.9233814496291187,
+        "simulation_se": 7.021267494681633e-05
+      }
+    },
+    "128": {
+      "80": {
+        "expected_coverage": 0.7877480908931747,
+        "simulation_se": 7.950485589730609e-05
+      },
+      "90": {
+        "expected_coverage": 0.8864113896759703,
+        "simulation_se": 6.12761997890353e-05
+      },
+      "95": {
+        "expected_coverage": 0.9356168118093351,
+        "simulation_se": 4.7546044103124285e-05
+      }
+    }
+  }
+}

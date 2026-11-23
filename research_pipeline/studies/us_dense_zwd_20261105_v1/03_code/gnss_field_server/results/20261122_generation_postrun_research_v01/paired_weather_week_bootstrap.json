@@ -1,0 +1,75 @@
+{
+  "folds": {
+    "0": {
+      "stochastic": {
+        "difference_mm": 0.20276101427698556,
+        "interval95_mm": [
+          0.12508097103296462,
+          0.2830083576862871
+        ],
+        "blocks": 12,
+        "draws": 2000,
+        "seed": 20261122,
+        "interpretation": "candidate minus baseline; unadjusted exploratory interval on sampled weather-week clusters"
+      },
+      "diffusion": {
+        "difference_mm": 0.18144296839109586,
+        "interval95_mm": [
+          0.11364712803710249,
+          0.24756241449211167
+        ],
+        "blocks": 12,
+        "draws": 2000,
+        "seed": 20261122,
+        "interpretation": "candidate minus baseline; unadjusted exploratory interval on sampled weather-week clusters"
+      },
+      "gan": {
+        "difference_mm": 0.28444542230677783,
+        "interval95_mm": [
+          0.17610308295431204,
+          0.3906150462273711
+        ],
+        "blocks": 12,
+        "draws": 2000,
+        "seed": 20261122,
+        "interpretation": "candidate minus baseline; unadjusted exploratory interval on sampled weather-week clusters"
+      }
+    },
+    "1": {
+      "stochastic": {
+        "difference_mm": 0.4813491217111059,
+        "interval95_mm": [
+          0.3227738992779184,
+          0.639844802200308
+        ],
+        "blocks": 12,
+        "draws": 2000,
+        "seed": 20261122,
+        "interpretation": "candidate minus baseline; unadjusted exploratory interval on sampled weather-week clusters"
+      },
+      "diffusion": {
+        "difference_mm": 0.5041688679169214,
+        "interval95_mm": [
+          0.3376778517656984,
+          0.6666635236940911
+        ],
+        "blocks": 12,
+        "draws": 2000,
+        "seed": 20261122,
+        "interpretation": "candidate minus baseline; unadjusted exploratory interval on sampled weather-week clusters"
+      },
+      "gan": {
+        "difference_mm": 0.5092802705327495,
+        "interval95_mm": [
+          0.32931448459363943,
+          0.6889717851314594
+        ],
+        "blocks": 12,
+        "draws": 2000,
+        "seed": 20261122,
+        "interpretation": "candidate minus baseline; unadjusted exploratory interval on sampled weather-week clusters"
+      }
+    }
+  },
+  "note": "12 sampled weather-week clusters, 8 hours each; no dense-station-group resampling or multiplicity-adjusted inference"
+}

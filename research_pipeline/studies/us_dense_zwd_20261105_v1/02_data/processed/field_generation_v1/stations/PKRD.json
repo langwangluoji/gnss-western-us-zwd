@@ -1,0 +1,14 @@
+{
+  "station": "PKRD",
+  "source_sha256": "169abd07efc9044a6f06af6318642f3358a57c15ac1190688fc3f43ddeb0ddca",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\pkrd.pwv.gz",
+  "coverage": {
+    "2016": 0.9700591985428051,
+    "2017": 0.9641552511415525,
+    "2018": 0.9416666666666667,
+    "2019": 0.9296803652968036,
+    "2020": 0.9313524590163934
+  },
+  "valid_hours": 41541,
+  "cache_sha256": "31849d5b0211bc942e62852ffd0eca9c3e0eded1a3c71c590bd90088ec669492"
+}

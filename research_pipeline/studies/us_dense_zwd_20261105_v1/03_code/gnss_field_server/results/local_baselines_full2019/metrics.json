@@ -1,0 +1,24 @@
+{
+  "coarse_bilinear": {
+    "station_macro_rmse_mm": 13.36402660153798,
+    "micro_rmse_mm": 16.05784577496489,
+    "station_macro_mae_mm": 10.799107607573415,
+    "micro_mae_mm": 10.857950428145068,
+    "station_macro_bias_mm": -6.5226932009107195,
+    "bias_mm": -6.594302006599357,
+    "p95_absolute_error_mm": 35.41856803894044,
+    "n_stations": 76,
+    "n_station_hours": 642258
+  },
+  "A_IDW": {
+    "station_macro_rmse_mm": 10.278529023297574,
+    "micro_rmse_mm": 11.176887009371368,
+    "station_macro_mae_mm": 7.956403172270689,
+    "micro_mae_mm": 7.981208271170103,
+    "station_macro_bias_mm": -3.2151080979849325,
+    "bias_mm": -3.253962825015959,
+    "p95_absolute_error_mm": 23.81067504882813,
+    "n_stations": 76,
+    "n_station_hours": 642258
+  }
+}

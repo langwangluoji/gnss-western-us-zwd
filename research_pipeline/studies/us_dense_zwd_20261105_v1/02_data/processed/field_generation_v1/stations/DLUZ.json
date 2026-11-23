@@ -1,0 +1,14 @@
+{
+  "station": "DLUZ",
+  "source_sha256": "78a8fad1d06f03c6bfa89b60a249d2c5bb9b84b1adf82884be91115e629eaed3",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\dluz.pwv.gz",
+  "coverage": {
+    "2016": 0.9153005464480874,
+    "2017": 0.9537671232876712,
+    "2018": 0.9689497716894977,
+    "2019": 0.9858447488584475,
+    "2020": 0.9986338797814208
+  },
+  "valid_hours": 42291,
+  "cache_sha256": "f5968d5dc83f7e3fa31739c41490e8d9afe650d879fc8f7cd5bd746fca46fdaf"
+}

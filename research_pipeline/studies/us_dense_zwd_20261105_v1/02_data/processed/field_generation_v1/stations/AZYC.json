@@ -1,0 +1,14 @@
+{
+  "station": "AZYC",
+  "source_sha256": "0a073690a2dc6c2bcde8462af1333d5bc6465fc9f1b7b1a595f5dc754837a433",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\azyc.pwv.gz",
+  "coverage": {
+    "2016": 0.9890710382513661,
+    "2017": 0.9699771689497717,
+    "2018": 0.9545662100456621,
+    "2019": 0.944634703196347,
+    "2020": 0.8839936247723132
+  },
+  "valid_hours": 41587,
+  "cache_sha256": "581d61aff6c695d8d1d90fa4dd454f7cf9708b8bc4a32343b1754b4f3fd9fef7"
+}

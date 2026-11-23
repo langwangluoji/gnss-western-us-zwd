@@ -1,0 +1,14 @@
+{
+  "station": "KBRC",
+  "source_sha256": "bd60d5e9d938580680aadf4367b3a7c88f06064cf6f50b77bcdbafb5c1df7b7a",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\kbrc.pwv.gz",
+  "coverage": {
+    "2016": 0.9905510018214936,
+    "2017": 0.9856164383561644,
+    "2018": 0.9813926940639269,
+    "2019": 0.9811643835616438,
+    "2020": 0.9877049180327869
+  },
+  "valid_hours": 43203,
+  "cache_sha256": "06ba2bb9bc2ff1bf1670abce2d5291da8217d8eef79e411f16be07c1575ca28f"
+}

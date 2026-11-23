@@ -1,0 +1,14 @@
+{
+  "station": "VTOR",
+  "source_sha256": "b75d1bc2b3593b9912d1146a85ce5e6a8afb158927cc712ece3c96cafea9f24d",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\vtor.pwv.gz",
+  "coverage": {
+    "2016": 0.9979508196721312,
+    "2017": 0.9904109589041096,
+    "2018": 0.9692922374429224,
+    "2019": 0.9824200913242009,
+    "2020": 0.9927140255009107
+  },
+  "valid_hours": 43259,
+  "cache_sha256": "8e10067ffaeedd61348056ef3ff6230ffc6348b7b8ed98225900d7479eed5842"
+}

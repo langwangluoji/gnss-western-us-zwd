@@ -1,0 +1,14 @@
+{
+  "station": "ACSB",
+  "source_sha256": "5996a3594c3af61c168cc02e7b429c3c56044216c13adcf5b69b5c90b1258040",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\acsb.pwv.gz",
+  "coverage": {
+    "2016": 0.9669854280510018,
+    "2017": 0.9823059360730594,
+    "2018": 0.976027397260274,
+    "2019": 0.9605022831050228,
+    "2020": 0.9746129326047359
+  },
+  "valid_hours": 42624,
+  "cache_sha256": "28fdf7e8dea9bf8480892926ad1457aeb0682c5c95bacf728180634742c62466"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "ELSR",
+  "source_sha256": "85b0ed52590173df8954f64a13c80f4ec508294e2c6e2720da132e6c1d83e51a",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\elsr.pwv.gz",
+  "coverage": {
+    "2016": 0.9513888888888888,
+    "2017": 0.9675799086757991,
+    "2018": 0.9034246575342466,
+    "2019": 0.9251141552511416,
+    "2020": 0.9370446265938069
+  },
+  "valid_hours": 41082,
+  "cache_sha256": "ea8c593dfb0105077c4c2a857fa438ddefade4896549e6afbc1be352e33f87a5"
+}

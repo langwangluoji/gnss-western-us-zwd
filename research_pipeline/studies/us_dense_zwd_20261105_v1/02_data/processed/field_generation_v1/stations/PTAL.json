@@ -1,0 +1,14 @@
+{
+  "station": "PTAL",
+  "source_sha256": "b039b48fb265da78c3295a8bbc79e5e27ad3dd4a3b46d3d670eba3040b9c12bc",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ptal.pwv.gz",
+  "coverage": {
+    "2016": 0.9964708561020036,
+    "2017": 0.9961187214611872,
+    "2018": 0.9558219178082191,
+    "2019": 0.9581050228310503,
+    "2020": 0.9853142076502732
+  },
+  "valid_hours": 42900,
+  "cache_sha256": "83a990c194a9e6c6be1374b4b03d5ca0d12b6af11e3b347521ae98b905a530d0"
+}

@@ -1,0 +1,440 @@
+[
+  {
+    "fold": 0,
+    "arm": "stochastic",
+    "training": [
+      {
+        "step": 100,
+        "lr": 0.0001,
+        "loss": 6.470213413238525,
+        "observation_ES_mm": 6.470213413238525,
+        "adversarial": 0.0
+      },
+      {
+        "step": 200,
+        "lr": 9.300881593465226e-05,
+        "loss": 5.788470268249512,
+        "observation_ES_mm": 5.788470268249512,
+        "adversarial": 0.0
+      },
+      {
+        "step": 300,
+        "lr": 7.4010078067319e-05,
+        "loss": 6.605912208557129,
+        "observation_ES_mm": 6.605912208557129,
+        "adversarial": 0.0
+      },
+      {
+        "step": 400,
+        "lr": 4.837039946627573e-05,
+        "loss": 6.658050537109375,
+        "observation_ES_mm": 6.658050537109375,
+        "adversarial": 0.0
+      },
+      {
+        "step": 500,
+        "lr": 2.3332273564906415e-05,
+        "loss": 5.834921360015869,
+        "observation_ES_mm": 5.834921360015869,
+        "adversarial": 0.0
+      },
+      {
+        "step": 600,
+        "lr": 5.968271952213959e-06,
+        "loss": 5.540649890899658,
+        "observation_ES_mm": 5.540649890899658,
+        "adversarial": 0.0
+      },
+      {
+        "step": 684,
+        "lr": 1e-06,
+        "loss": 4.55551290512085,
+        "observation_ES_mm": 4.55551290512085,
+        "adversarial": 0.0
+      }
+    ],
+    "development": [
+      {
+        "step": 200,
+        "RMSE": 7.3633789320009555,
+        "ES": 4.864834690399245
+      },
+      {
+        "step": 342,
+        "RMSE": 7.298433917017639,
+        "ES": 4.811456264758511
+      },
+      {
+        "step": 684,
+        "RMSE": 7.210710178221767,
+        "ES": 4.685287333154086
+      }
+    ],
+    "cohort": "old inner96 fitted stations; not new spatial inner"
+  },
+  {
+    "fold": 0,
+    "arm": "diffusion",
+    "training": [
+      {
+        "step": 100,
+        "lr": 0.0001,
+        "loss": 6.478187561035156,
+        "observation_ES_mm": 6.478187561035156,
+        "adversarial": 0.0
+      },
+      {
+        "step": 200,
+        "lr": 9.300881593465226e-05,
+        "loss": 5.787531852722168,
+        "observation_ES_mm": 5.787531852722168,
+        "adversarial": 0.0
+      },
+      {
+        "step": 300,
+        "lr": 7.4010078067319e-05,
+        "loss": 6.62223482131958,
+        "observation_ES_mm": 6.62223482131958,
+        "adversarial": 0.0
+      },
+      {
+        "step": 400,
+        "lr": 4.837039946627573e-05,
+        "loss": 6.609011650085449,
+        "observation_ES_mm": 6.609011650085449,
+        "adversarial": 0.0
+      },
+      {
+        "step": 500,
+        "lr": 2.3332273564906415e-05,
+        "loss": 5.944494247436523,
+        "observation_ES_mm": 5.944494247436523,
+        "adversarial": 0.0
+      },
+      {
+        "step": 600,
+        "lr": 5.968271952213959e-06,
+        "loss": 5.578921318054199,
+        "observation_ES_mm": 5.578921318054199,
+        "adversarial": 0.0
+      },
+      {
+        "step": 684,
+        "lr": 1e-06,
+        "loss": 4.571552276611328,
+        "observation_ES_mm": 4.571552276611328,
+        "adversarial": 0.0
+      }
+    ],
+    "development": [
+      {
+        "step": 200,
+        "RMSE": 7.362911876400668,
+        "ES": 4.865846577222226
+      },
+      {
+        "step": 342,
+        "RMSE": 7.323436698044943,
+        "ES": 4.825705866136791
+      },
+      {
+        "step": 684,
+        "RMSE": 7.231715058748459,
+        "ES": 4.6941898566880935
+      }
+    ],
+    "cohort": "old inner96 fitted stations; not new spatial inner"
+  },
+  {
+    "fold": 0,
+    "arm": "gan",
+    "training": [
+      {
+        "step": 100,
+        "lr": 0.0001,
+        "loss": 6.48409366607666,
+        "observation_ES_mm": 6.4696478843688965,
+        "adversarial": 0.14445635676383972
+      },
+      {
+        "step": 200,
+        "lr": 9.300881593465226e-05,
+        "loss": 5.763842582702637,
+        "observation_ES_mm": 5.763617515563965,
+        "adversarial": 0.002251669764518738
+      },
+      {
+        "step": 300,
+        "lr": 7.4010078067319e-05,
+        "loss": 6.464726448059082,
+        "observation_ES_mm": 6.591214179992676,
+        "adversarial": -1.2648766040802002
+      },
+      {
+        "step": 400,
+        "lr": 4.837039946627573e-05,
+        "loss": 6.4181294441223145,
+        "observation_ES_mm": 6.6045637130737305,
+        "adversarial": -1.8643431663513184
+      },
+      {
+        "step": 500,
+        "lr": 2.3332273564906415e-05,
+        "loss": 5.050736904144287,
+        "observation_ES_mm": 5.988001823425293,
+        "adversarial": -9.372649192810059
+      },
+      {
+        "step": 600,
+        "lr": 5.968271952213959e-06,
+        "loss": 3.383753776550293,
+        "observation_ES_mm": 5.605923652648926,
+        "adversarial": -22.221698760986328
+      },
+      {
+        "step": 684,
+        "lr": 1e-06,
+        "loss": 3.317473888397217,
+        "observation_ES_mm": 4.549263000488281,
+        "adversarial": -12.317892074584961
+      }
+    ],
+    "development": [
+      {
+        "step": 200,
+        "RMSE": 7.358804536735815,
+        "ES": 4.862195166216408
+      },
+      {
+        "step": 342,
+        "RMSE": 7.299093945895289,
+        "ES": 4.810430641498815
+      },
+      {
+        "step": 684,
+        "RMSE": 7.253056014497681,
+        "ES": 4.712520865933631
+      }
+    ],
+    "cohort": "old inner96 fitted stations; not new spatial inner"
+  },
+  {
+    "fold": 1,
+    "arm": "stochastic",
+    "training": [
+      {
+        "step": 100,
+        "lr": 0.0001,
+        "loss": 6.36536979675293,
+        "observation_ES_mm": 6.36536979675293,
+        "adversarial": 0.0
+      },
+      {
+        "step": 200,
+        "lr": 9.300881593465226e-05,
+        "loss": 5.721467971801758,
+        "observation_ES_mm": 5.721467971801758,
+        "adversarial": 0.0
+      },
+      {
+        "step": 300,
+        "lr": 7.4010078067319e-05,
+        "loss": 5.755080223083496,
+        "observation_ES_mm": 5.755080223083496,
+        "adversarial": 0.0
+      },
+      {
+        "step": 400,
+        "lr": 4.837039946627573e-05,
+        "loss": 5.79325532913208,
+        "observation_ES_mm": 5.79325532913208,
+        "adversarial": 0.0
+      },
+      {
+        "step": 500,
+        "lr": 2.3332273564906415e-05,
+        "loss": 5.377655029296875,
+        "observation_ES_mm": 5.377655029296875,
+        "adversarial": 0.0
+      },
+      {
+        "step": 600,
+        "lr": 5.968271952213959e-06,
+        "loss": 5.226851463317871,
+        "observation_ES_mm": 5.226851463317871,
+        "adversarial": 0.0
+      },
+      {
+        "step": 684,
+        "lr": 1e-06,
+        "loss": 4.366397380828857,
+        "observation_ES_mm": 4.366397380828857,
+        "adversarial": 0.0
+      }
+    ],
+    "development": [
+      {
+        "step": 200,
+        "RMSE": 7.501229239753459,
+        "ES": 4.890287254095491
+      },
+      {
+        "step": 342,
+        "RMSE": 7.407522893975531,
+        "ES": 4.815498331704617
+      },
+      {
+        "step": 684,
+        "RMSE": 7.281573900668504,
+        "ES": 4.707363705350928
+      }
+    ],
+    "cohort": "old inner96 fitted stations; not new spatial inner"
+  },
+  {
+    "fold": 1,
+    "arm": "diffusion",
+    "training": [
+      {
+        "step": 100,
+        "lr": 0.0001,
+        "loss": 6.354038715362549,
+        "observation_ES_mm": 6.354038715362549,
+        "adversarial": 0.0
+      },
+      {
+        "step": 200,
+        "lr": 9.300881593465226e-05,
+        "loss": 5.747767925262451,
+        "observation_ES_mm": 5.747767925262451,
+        "adversarial": 0.0
+      },
+      {
+        "step": 300,
+        "lr": 7.4010078067319e-05,
+        "loss": 5.7590227127075195,
+        "observation_ES_mm": 5.7590227127075195,
+        "adversarial": 0.0
+      },
+      {
+        "step": 400,
+        "lr": 4.837039946627573e-05,
+        "loss": 5.766960144042969,
+        "observation_ES_mm": 5.766960144042969,
+        "adversarial": 0.0
+      },
+      {
+        "step": 500,
+        "lr": 2.3332273564906415e-05,
+        "loss": 5.385115623474121,
+        "observation_ES_mm": 5.385115623474121,
+        "adversarial": 0.0
+      },
+      {
+        "step": 600,
+        "lr": 5.968271952213959e-06,
+        "loss": 5.25868034362793,
+        "observation_ES_mm": 5.25868034362793,
+        "adversarial": 0.0
+      },
+      {
+        "step": 684,
+        "lr": 1e-06,
+        "loss": 4.334651947021484,
+        "observation_ES_mm": 4.334651947021484,
+        "adversarial": 0.0
+      }
+    ],
+    "development": [
+      {
+        "step": 200,
+        "RMSE": 7.513033636606692,
+        "ES": 4.897525045762211
+      },
+      {
+        "step": 342,
+        "RMSE": 7.414924991461473,
+        "ES": 4.81405173945041
+      },
+      {
+        "step": 684,
+        "RMSE": 7.284260554070643,
+        "ES": 4.690074841872357
+      }
+    ],
+    "cohort": "old inner96 fitted stations; not new spatial inner"
+  },
+  {
+    "fold": 1,
+    "arm": "gan",
+    "training": [
+      {
+        "step": 100,
+        "lr": 0.0001,
+        "loss": 6.371147632598877,
+        "observation_ES_mm": 6.355068206787109,
+        "adversarial": 0.1607922911643982
+      },
+      {
+        "step": 200,
+        "lr": 9.300881593465226e-05,
+        "loss": 5.766139030456543,
+        "observation_ES_mm": 5.756283283233643,
+        "adversarial": 0.09855780005455017
+      },
+      {
+        "step": 300,
+        "lr": 7.4010078067319e-05,
+        "loss": 5.698442459106445,
+        "observation_ES_mm": 5.781831741333008,
+        "adversarial": -0.8338913321495056
+      },
+      {
+        "step": 400,
+        "lr": 4.837039946627573e-05,
+        "loss": 5.62531042098999,
+        "observation_ES_mm": 5.873346328735352,
+        "adversarial": -2.480360507965088
+      },
+      {
+        "step": 500,
+        "lr": 2.3332273564906415e-05,
+        "loss": 4.937016487121582,
+        "observation_ES_mm": 5.4600677490234375,
+        "adversarial": -5.23051118850708
+      },
+      {
+        "step": 600,
+        "lr": 5.968271952213959e-06,
+        "loss": 3.7709639072418213,
+        "observation_ES_mm": 5.226655006408691,
+        "adversarial": -14.556910514831543
+      },
+      {
+        "step": 684,
+        "lr": 1e-06,
+        "loss": 3.3718128204345703,
+        "observation_ES_mm": 4.442933559417725,
+        "adversarial": -10.71120548248291
+      }
+    ],
+    "development": [
+      {
+        "step": 200,
+        "RMSE": 7.498457962783093,
+        "ES": 4.8869747571819655
+      },
+      {
+        "step": 342,
+        "RMSE": 7.393608867920106,
+        "ES": 4.802913283598099
+      },
+      {
+        "step": 684,
+        "RMSE": 7.360858942826202,
+        "ES": 4.743677671213377
+      }
+    ],
+    "cohort": "old inner96 fitted stations; not new spatial inner"
+  }
+]

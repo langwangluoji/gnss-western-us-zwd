@@ -1,0 +1,14 @@
+{
+  "station": "POTR",
+  "source_sha256": "ffaef116de7abf7a326db65ae56969bbd80e87f3bfed023d5dd5aa54927b1ad4",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\potr.pwv.gz",
+  "coverage": {
+    "2016": 0.9519581056466302,
+    "2017": 0.9192922374429223,
+    "2018": 0.9642694063926941,
+    "2019": 0.9465753424657535,
+    "2020": 0.9660746812386156
+  },
+  "valid_hours": 41640,
+  "cache_sha256": "2c2980e2038531caef6156359c479c968051045af99eabce256fe08349dd0525"
+}

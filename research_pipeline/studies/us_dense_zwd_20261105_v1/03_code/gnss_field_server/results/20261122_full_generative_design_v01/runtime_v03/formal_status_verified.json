@@ -1,0 +1,64 @@
+{
+  "checked_unix": 1795371578.5321777,
+  "run": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/runs/20261122_us_zwd_gan_diffusion_vae_full_a800_v03",
+  "queue": "3699476|A800|RUNNING|2:54|fg-prepare-6450d45a|gpu8011\n3698990|amd|RUNNING|22:36|wrf_seg_0010|cpua274\n3699477|intel|PENDING|0:00|fg-dispatch-6450d45a|(Dependency)\n",
+  "campaign": {
+    "accounted_card_seconds": 633.0,
+    "intents": [
+      {
+        "allocated_seconds": 5940,
+        "job_id": "3699476",
+        "stage": "prepare",
+        "token": "6450d45a07e74a61a96073c9b73a17c6"
+      }
+    ],
+    "jobs": [
+      {
+        "elapsed_seconds": 356.0,
+        "exit_code": "0:0",
+        "job_id": "3697508",
+        "stage": "benchmark",
+        "state": "COMPLETED"
+      },
+      {
+        "elapsed_seconds": 277.0,
+        "exit_code": "0:0",
+        "job_id": "3698894",
+        "stage": "benchmark",
+        "state": "COMPLETED"
+      },
+      {
+        "allocated_seconds": 5940,
+        "dispatcher_job_id": "3699477",
+        "job_id": "3699476",
+        "stage": "prepare",
+        "token": "6450d45a07e74a61a96073c9b73a17c6"
+      }
+    ],
+    "schema": 1,
+    "stages": {}
+  },
+  "first_submission": {
+    "config": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/code/20261122_generative_full_v05/configs/full_generative_a800_v02.json",
+    "created_unix": 1795371386.944774,
+    "release": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/code/20261122_generative_full_v05",
+    "result": {
+      "job_id": "3699476",
+      "stage": "prepare",
+      "token": "6450d45a07e74a61a96073c9b73a17c6"
+    },
+    "run": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/runs/20261122_us_zwd_gan_diffusion_vae_full_a800_v03",
+    "total_budget_card_hours": 23.485587101326434
+  },
+  "preflight": {
+    "already_billed_card_seconds": 633.0,
+    "measured_total_card_hours": 23.485587101326434,
+    "mode": "measured_runtime_reused_fixed_products",
+    "state": "COMPLETE",
+    "updated_unix": 1795371383.987377
+  },
+  "progress": {},
+  "logs": {
+    "prepare-3699476.out": ""
+  }
+}

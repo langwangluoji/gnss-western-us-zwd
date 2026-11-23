@@ -1,0 +1,14 @@
+{
+  "station": "THMS",
+  "source_sha256": "223cc145e98b18ea464dcbf65821eec8a220b3f4bd8507af58fec8a46ed2a719",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\thms.pwv.gz",
+  "coverage": {
+    "2016": 0.9459244080145719,
+    "2017": 0.9211187214611872,
+    "2018": 0.9550228310502283,
+    "2019": 0.9900684931506849,
+    "2020": 0.9920309653916212
+  },
+  "valid_hours": 42131,
+  "cache_sha256": "fc15aef20db33533a815d204fd7d90ac9c7a9e87be67d8278919cf62334e3dcd"
+}

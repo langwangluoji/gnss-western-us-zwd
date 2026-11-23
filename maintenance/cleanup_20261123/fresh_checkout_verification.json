@@ -1,0 +1,17 @@
+{
+  "cli": {
+    "returncode": 0,
+    "summary": "  --device DEVICE",
+    "error_tail": ""
+  },
+  "collection": {
+    "returncode": 0,
+    "summary": "539 tests collected in 4.85s",
+    "error_tail": ""
+  },
+  "parity": {
+    "returncode": 0,
+    "summary": "5 passed in 6.91s",
+    "error_tail": ""
+  }
+}

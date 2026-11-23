@@ -1,0 +1,14 @@
+{
+  "station": "WAMC",
+  "source_sha256": "8cb6346caed71f06b944c2b12ef88e4b7709f058c8941f4e3095704cacb646cb",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\wamc.pwv.gz",
+  "coverage": {
+    "2016": 0.9515027322404371,
+    "2017": 0.9299086757990868,
+    "2018": 0.9482876712328767,
+    "2019": 0.972716894977169,
+    "2020": 0.9723360655737705
+  },
+  "valid_hours": 41873,
+  "cache_sha256": "4019593d00bd383463e710e4b042967eb4016b74369b60a495bc35297460fb9e"
+}

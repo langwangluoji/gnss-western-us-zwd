@@ -1,0 +1,109 @@
+{
+  "accepted": true,
+  "job_id": "3633416",
+  "node": "gpu8006",
+  "gpu": "A800",
+  "gpus": 1,
+  "allocation_cap_seconds": 14400,
+  "queue": {
+    "campaign_id": "20261121_us_dense_zwd_grid69_processor_pair_v01",
+    "state": "RUNNING",
+    "jobs": [
+      {
+        "job_id": "3633416",
+        "state": "RUNNING|gpu8006"
+      }
+    ]
+  },
+  "snapshot_time": 1795243693.9545043,
+  "startup": {
+    "step": 200,
+    "startup": true,
+    "metrics": {
+      "joint": {
+        "value": 5.374417006969452,
+        "rmse_mm": 7.398745145093069,
+        "mae_mm": 5.615113000289832,
+        "bias_mm": -0.14378656141162716,
+        "population": "B2018 inner 96 anchors, fitted groups; incremental development",
+        "n_station_hours": 22421,
+        "n_stations": 244
+      }
+    },
+    "updated": 1795243605.7370071
+  },
+  "training": [
+    {
+      "step": 100,
+      "stage": "grid_processor_refine",
+      "lr": 0.0001,
+      "loss": 6.374130845069885,
+      "observation_ES_mm": 6.374130845069885,
+      "supervised_station_hours": 1884,
+      "training_epoch_hours": 5472,
+      "effective_hours": 8,
+      "cumulative_supervised_station_hours": 188077,
+      "training_gpu_card_hours": 0.10761551544380685,
+      "gpu_time_scope": "single GPU process elapsed including evaluation; not Slurm billed accounting",
+      "elapsed_seconds": 387.41585559770465,
+      "updates_per_second": 0.25812056619551654,
+      "allocation_elapsed_seconds": 387.4158815201372,
+      "gpu_memory_mb": 180.56396484375,
+      "updated": 1795243195.2255013
+    },
+    {
+      "step": 200,
+      "stage": "grid_processor_refine",
+      "lr": 9.964886831700443e-05,
+      "loss": 5.4652533531188965,
+      "observation_ES_mm": 5.4652533531188965,
+      "supervised_station_hours": 1856,
+      "training_epoch_hours": 5472,
+      "effective_hours": 8,
+      "cumulative_supervised_station_hours": 376538,
+      "training_gpu_card_hours": 0.2200863950021772,
+      "gpu_time_scope": "single GPU process elapsed including evaluation; not Slurm billed accounting",
+      "elapsed_seconds": 792.3110220078379,
+      "updates_per_second": 0.2524261236366109,
+      "allocation_elapsed_seconds": 798.0140186883509,
+      "gpu_memory_mb": 180.56396484375,
+      "updated": 1795243605.8235033
+    }
+  ],
+  "initial": {
+    "bias_mm": -0.2336624074890016,
+    "mae_mm": 5.6188530035784945,
+    "n_station_hours": 22421,
+    "n_stations": 244,
+    "population": "B2018 inner 96 anchors, fitted groups; incremental development",
+    "rmse_mm": 7.40287362647984,
+    "value": 5.378754576047261,
+    "step": 0
+  },
+  "server_release_sha256": "1e01c3bdefb04f1f14f2bb813764829d0a0c69bd0dd23ef0994f2a0440e89035",
+  "local_engineering": {
+    "actual_updates": 400,
+    "bitwise": true,
+    "continuous": 200,
+    "elapsed_seconds": 98.20299999999406,
+    "passed": true,
+    "resume": [
+      100,
+      100
+    ],
+    "signature": {
+      "data": "22d7ace27e05fa8c251a301a454831df2ee158dd3fa15dea3ab79841c0828053",
+      "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "runner": "06bbfb52aff7d3a692ea5178a9750044e200cbc2c0c94e738635b3df872c143b",
+      "torch": "2.8.0+cu129"
+    },
+    "step100_sha256": "81e1f3b258746b2669e7d7312d20ff0ba07cde96ffd5092ef2b6e18b06e71db7",
+    "weights_changed": true,
+    "zero_digest": "21e0868d8d288053601b380878ea884582c5e6850032837589244ced13652bdf"
+  },
+  "monitor": "http://127.0.0.1:8781/",
+  "EDM": false,
+  "GAN": false,
+  "C2019": false,
+  "D2020": false
+}

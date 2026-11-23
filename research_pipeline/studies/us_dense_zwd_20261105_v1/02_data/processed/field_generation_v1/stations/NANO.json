@@ -1,0 +1,14 @@
+{
+  "station": "NANO",
+  "source_sha256": "ff8d73e845b170b9be2bbceb889a50c2dbe557d59b57d0821ac3877e5fe311f1",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\nano.pwv.gz",
+  "coverage": {
+    "2016": 0.9986338797814208,
+    "2017": 0.9954337899543378,
+    "2018": 0.9823059360730594,
+    "2019": 0.9984018264840183,
+    "2020": 0.9896402550091075
+  },
+  "valid_hours": 43536,
+  "cache_sha256": "d8be05f3a4a4da9442daf7aa2aa0c0f0f59e6ac08fba202b7a0d5cb79a09cde3"
+}

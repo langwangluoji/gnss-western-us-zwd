@@ -1,0 +1,14 @@
+{
+  "station": "BEAT",
+  "source_sha256": "6c9e7e2c8fc72b8dde6f3a1460a47b36c42fccc42cb1924c2122eb897e26b97c",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\beat.pwv.gz",
+  "coverage": {
+    "2016": 0.9585610200364298,
+    "2017": 0.9845890410958904,
+    "2018": 0.9598173515981735,
+    "2019": 0.7245433789954338,
+    "2020": 0.0
+  },
+  "valid_hours": 31800,
+  "cache_sha256": "70514a07de45dfb390fb0442c8099c2f1906454eab1f6f87257bc94aeff9b6ac"
+}

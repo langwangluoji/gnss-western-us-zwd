@@ -1,0 +1,14 @@
+{
+  "station": "GARL",
+  "source_sha256": "9fe4fecd1739fb91cee4f83614e96f07587310c851cb7ea45067621bb0bfb02c",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\garl.pwv.gz",
+  "coverage": {
+    "2016": 0.9966985428051002,
+    "2017": 0.9961187214611872,
+    "2018": 0.9804794520547945,
+    "2019": 0.9971461187214612,
+    "2020": 0.9985200364298725
+  },
+  "valid_hours": 43576,
+  "cache_sha256": "b856ffecf72c6961eabbbae42af6c19f6f14d8dab116fd12fbec3de6d1caa917"
+}

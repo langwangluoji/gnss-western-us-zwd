@@ -1,0 +1,14 @@
+{
+  "station": "KNOL",
+  "source_sha256": "3dca10c7df8176b4f523be6e6ef80344a52b2e34693fbac190ddf4acd1e8f079",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\knol.pwv.gz",
+  "coverage": {
+    "2016": 0.9947632058287796,
+    "2017": 0.9309360730593608,
+    "2018": 0.9082191780821918,
+    "2019": 0.9718036529680365,
+    "2020": 0.9948770491803278
+  },
+  "valid_hours": 42101,
+  "cache_sha256": "b505fa58181702125b9133cb73627db1a61d510ad02554d726d7769d79c8f217"
+}

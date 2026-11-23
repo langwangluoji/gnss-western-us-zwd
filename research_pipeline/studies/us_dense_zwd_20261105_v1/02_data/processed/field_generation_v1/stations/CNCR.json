@@ -1,0 +1,14 @@
+{
+  "station": "CNCR",
+  "source_sha256": "562f5a9c7ba0ba5be7fa5d152b3f4410b800fa725ccbcb79cb2a790da32003cd",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\cncr.pwv.gz",
+  "coverage": {
+    "2016": 0.9367030965391621,
+    "2017": 0.9711187214611872,
+    "2018": 0.9389269406392694,
+    "2019": 0.9779680365296803,
+    "2020": 0.9721083788706739
+  },
+  "valid_hours": 42066,
+  "cache_sha256": "c06f3ae6c798a079013fa0d2cccb4fa71d6c93261d8fe0813ffdb10f8997af1b"
+}

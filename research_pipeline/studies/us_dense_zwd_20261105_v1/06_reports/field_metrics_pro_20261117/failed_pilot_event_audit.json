@@ -1,0 +1,13 @@
+{
+  "weak_source_cases": [
+    {
+      "region": "dense_training_geometry",
+      "fold": 1,
+      "fraction": 0.5,
+      "date": "2016-02-18 02:00:00",
+      "sources": 2,
+      "event_type": "rapid_input_A_proxy"
+    }
+  ],
+  "reason": "Rapid event selection initially accepted changing missing-station composition; no scientific results produced."
+}

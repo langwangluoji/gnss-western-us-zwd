@@ -1,0 +1,14 @@
+{
+  "station": "SRB1",
+  "source_sha256": "062c3dade48c268d1cf5d8b831182366d0ba99763610a4d10b90fc9d71cfcd08",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\srb1.pwv.gz",
+  "coverage": {
+    "2016": 0.9935109289617486,
+    "2017": 0.979337899543379,
+    "2018": 0.9769406392694064,
+    "2019": 0.9812785388127854,
+    "2020": 0.9937386156648452
+  },
+  "valid_hours": 43189,
+  "cache_sha256": "a0843e700e31dde0e15e28bccb966dcae54f21557acc318cb776dc6952f9e711"
+}

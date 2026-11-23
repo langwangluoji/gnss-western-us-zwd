@@ -1,0 +1,14 @@
+{
+  "station": "POMM",
+  "source_sha256": "806275c51262c9c142937985d6c8de32d5283111f0561d582b2c8d1ddfa387f9",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\pomm.pwv.gz",
+  "coverage": {
+    "2016": 0.9949908925318761,
+    "2017": 0.9882420091324201,
+    "2018": 0.9840182648401826,
+    "2019": 0.9921232876712329,
+    "2020": 0.8172814207650273
+  },
+  "valid_hours": 41887,
+  "cache_sha256": "e2876f4251378d399dba43bf2346e6548337b153e912b589fe775d28e8dee699"
+}

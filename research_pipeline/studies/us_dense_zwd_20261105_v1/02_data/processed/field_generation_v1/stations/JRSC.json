@@ -1,0 +1,14 @@
+{
+  "station": "JRSC",
+  "source_sha256": "ae6b51261e65e0facc5567ed196236bdd1607445fc8a6ad365b43057bdc123a0",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\jrsc.pwv.gz",
+  "coverage": {
+    "2016": 0.9866803278688525,
+    "2017": 0.9809360730593607,
+    "2018": 0.9792237442922375,
+    "2019": 0.9767123287671233,
+    "2020": 0.9986338797814208
+  },
+  "valid_hours": 43166,
+  "cache_sha256": "69671acd6bbe5de43b59d555d21f1ba9ac2fe287eefb7fadb686497a38552962"
+}

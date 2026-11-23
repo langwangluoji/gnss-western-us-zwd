@@ -1,0 +1,14 @@
+{
+  "station": "OPCP",
+  "source_sha256": "50eb1c59fb4520f28a1e16b75a8abaa0bf2523aca8c99319f6f00d03077722dd",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\opcp.pwv.gz",
+  "coverage": {
+    "2016": 0.98224043715847,
+    "2017": 0.9583333333333334,
+    "2018": 0.9665525114155251,
+    "2019": 0.9591324200913242,
+    "2020": 0.9680100182149363
+  },
+  "valid_hours": 42395,
+  "cache_sha256": "2ea16f5dcedc7c8a5a3a33503adf5b7a689c494a62da4ae1bc75c3411918d757"
+}

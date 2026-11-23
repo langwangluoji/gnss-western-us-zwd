@@ -1,0 +1,14 @@
+{
+  "station": "ELTN",
+  "source_sha256": "95367e8afe8e8b82445e893427ea80a4bba0c15d72f0342d8b035a7e41ddc1f7",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\eltn.pwv.gz",
+  "coverage": {
+    "2016": 0.9906648451730419,
+    "2017": 0.9924657534246575,
+    "2018": 0.9121004566210046,
+    "2019": 0.9958904109589041,
+    "2020": 0.9972677595628415
+  },
+  "valid_hours": 42870,
+  "cache_sha256": "a6a2d82125bc9c33862661cd822055a9ff688a0d4ab63ebc79d04f3a7e883107"
+}

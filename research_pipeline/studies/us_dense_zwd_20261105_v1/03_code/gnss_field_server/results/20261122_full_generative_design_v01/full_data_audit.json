@@ -1,0 +1,36 @@
+{
+  "training_data_hash": "ab3c649e829a1a36912fe3ce1f748ff2f950d6952439024fb217e560c1ee4b42",
+  "years": [
+    {
+      "year": 2016,
+      "hours": 8784,
+      "B_valid_station_hours": 4421243,
+      "hours_B_ge4": 8784,
+      "A_valid_median": 173.0,
+      "B_valid_median": 506.0,
+      "hours_A_ge3_B_ge4": 8784
+    },
+    {
+      "year": 2017,
+      "hours": 8760,
+      "B_valid_station_hours": 4376239,
+      "hours_B_ge4": 8760,
+      "A_valid_median": 172.0,
+      "B_valid_median": 505.0,
+      "hours_A_ge3_B_ge4": 8760
+    },
+    {
+      "year": 2018,
+      "hours": 8760,
+      "B_valid_station_hours": 4334994,
+      "hours_B_ge4": 8736,
+      "A_valid_median": 172.0,
+      "B_valid_median": 504.0,
+      "hours_A_ge3_B_ge4": 8736
+    }
+  ],
+  "raw_monthly_bytes": 145303296,
+  "condition69_cache_FP32_GB": 100.360912896,
+  "truth": "surface_ZWD_mm_at_B_stations_only",
+  "dense_target_available": false
+}

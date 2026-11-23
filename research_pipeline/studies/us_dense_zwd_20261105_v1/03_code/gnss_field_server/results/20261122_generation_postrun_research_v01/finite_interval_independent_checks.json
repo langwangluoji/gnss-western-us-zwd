@@ -1,0 +1,20 @@
+{
+  "independent_normal_check": {
+    "16": {
+      "direct_coverage": 0.80849,
+      "integrated_coverage": 0.8064809762339796,
+      "absolute_difference": 0.0020090237660204124
+    },
+    "32": {
+      "direct_coverage": 0.84882,
+      "integrated_coverage": 0.8503549249910889,
+      "absolute_difference": 0.0015349249910888707
+    }
+  },
+  "passed": true,
+  "uniform_order_statistic": {
+    "K": 16,
+    "exact": 0.7941176470588235,
+    "simulation": 0.7936985483526734
+  }
+}

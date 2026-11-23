@@ -1,0 +1,14 @@
+{
+  "station": "CGDM",
+  "source_sha256": "2935d46b485d8e29e573d32483e63c0b755f83e0fd31e1e012304348bbdbb292",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\cgdm.pwv.gz",
+  "coverage": {
+    "2016": 0.9916894353369763,
+    "2017": 0.989041095890411,
+    "2018": 0.9521689497716895,
+    "2019": 0.5412100456621004,
+    "2020": 0.9946493624772313
+  },
+  "valid_hours": 39194,
+  "cache_sha256": "98420b5a92edec510f574f74ba8b2393b6b41fec7b85cd2cf83d463a5b8d9429"
+}

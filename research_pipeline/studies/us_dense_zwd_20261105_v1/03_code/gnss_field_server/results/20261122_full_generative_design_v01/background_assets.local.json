@@ -1,0 +1,11 @@
+{
+  "network_checkpoint": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261118_us_dense_zwd_a800_m0_5k_evalfix_v02\\seed_42\\mean_base\\candidate_005000.pt",
+  "geometry_coefficients": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261122_local_operator_exploration_v01\\selection.lock.json",
+  "fusion_settings": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261120_local_context_three_arm_v01\\dataset\\settings.json",
+  "expected_sha256": {
+    "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261118_us_dense_zwd_a800_m0_5k_evalfix_v02\\seed_42\\mean_base\\candidate_005000.pt": "605650e000ce4a0ab31d3d85996fd16316c978547fe9f2821c65c346cd1b86f0",
+    "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261122_local_operator_exploration_v01\\selection.lock.json": "0d340d9db2e99bb364d92e5c39b9f4074b927e6b643513e5633ee5d9ef252326",
+    "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261120_local_context_three_arm_v01\\dataset\\settings.json": "b0a63b603ddcd7b475f52f5267f4102bac487b59c50c695f1fad64e045e2897f"
+  },
+  "geometry_readout_index": 0
+}

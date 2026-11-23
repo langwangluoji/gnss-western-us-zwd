@@ -1,0 +1,14 @@
+{
+  "station": "ELKO",
+  "source_sha256": "24e2c1dc5d59bd6b009aaf9390a838485bca3a6bcd4036029f1e259be4dc63f4",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\elko.pwv.gz",
+  "coverage": {
+    "2016": 0.9946493624772313,
+    "2017": 0.9928082191780822,
+    "2018": 0.9552511415525115,
+    "2019": 0.9979452054794521,
+    "2020": 0.9943078324225865
+  },
+  "valid_hours": 43278,
+  "cache_sha256": "16eabd80970a6625bc17bebb2ea82cea4109b4487a5890ee7e6c427df46ce39c"
+}

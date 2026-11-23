@@ -1,0 +1,14 @@
+{
+  "station": "IMPS",
+  "source_sha256": "261c46ac192b0cefe82b46e64d8994c39533a4b404242a18a4823f566b9a0166",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\imps.pwv.gz",
+  "coverage": {
+    "2016": 0.9931693989071039,
+    "2017": 0.9912100456621005,
+    "2018": 0.9679223744292238,
+    "2019": 0.9899543378995433,
+    "2020": 0.9926001821493625
+  },
+  "valid_hours": 43277,
+  "cache_sha256": "0d7f5017baa49cf4c71602f745238edbab3a5d846f44cfb5695fb2565723b4c1"
+}

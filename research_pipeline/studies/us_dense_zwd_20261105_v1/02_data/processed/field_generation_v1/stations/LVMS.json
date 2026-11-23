@@ -1,0 +1,14 @@
+{
+  "station": "LVMS",
+  "source_sha256": "664df5ff0e0eebb2a468181ef40c36a763cce5223dbe4555af17b08aa13e2325",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\lvms.pwv.gz",
+  "coverage": {
+    "2016": 0.9834927140255009,
+    "2017": 0.9779680365296803,
+    "2018": 0.9347031963470319,
+    "2019": 0.9904109589041096,
+    "2020": 0.9889571948998178
+  },
+  "valid_hours": 42757,
+  "cache_sha256": "64ccc2abe365fddc81f0d08843363391562b0262b67fc6a5748af422de9d183f"
+}

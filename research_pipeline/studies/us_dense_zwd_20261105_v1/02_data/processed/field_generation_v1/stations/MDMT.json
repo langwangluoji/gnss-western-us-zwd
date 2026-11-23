@@ -1,0 +1,14 @@
+{
+  "station": "MDMT",
+  "source_sha256": "ab24ffa060b1a14723dbb5fa6a4e6dc212f88712251a3c81a5c455377cbc7312",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\mdmt.pwv.gz",
+  "coverage": {
+    "2016": 0.9890710382513661,
+    "2017": 0.9797945205479452,
+    "2018": 0.9681506849315068,
+    "2019": 0.954337899543379,
+    "2020": 0.9398907103825137
+  },
+  "valid_hours": 42368,
+  "cache_sha256": "703aec27f864913da359dba9370495b41d8a93a93750707b2a326cf5d13f4f09"
+}

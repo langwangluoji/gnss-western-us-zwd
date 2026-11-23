@@ -1,0 +1,14 @@
+{
+  "station": "GHRP",
+  "source_sha256": "786917f0e14e90ea1e4dcd5512f3fd4e094ee2e8df4433ed5fdbd723634cc5f0",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ghrp.pwv.gz",
+  "coverage": {
+    "2016": 0.957308743169399,
+    "2017": 0.9377853881278538,
+    "2018": 0.9152968036529681,
+    "2019": 0.9962328767123287,
+    "2020": 0.9993169398907104
+  },
+  "valid_hours": 42147,
+  "cache_sha256": "70e7976781c3bea9f90116a9192cf52f30d223ccf94c10d67740c8572cf8e1ac"
+}

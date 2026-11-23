@@ -1,0 +1,14 @@
+{
+  "station": "PFLD",
+  "source_sha256": "a5b88fa93fa61f5e111ae9107a59366dd46c24a16a887d9378b68b6938e67147",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\pfld.pwv.gz",
+  "coverage": {
+    "2016": 0.9540072859744991,
+    "2017": 0.9780821917808219,
+    "2018": 0.9291095890410959,
+    "2019": 0.9674657534246576,
+    "2020": 0.957764116575592
+  },
+  "valid_hours": 41975,
+  "cache_sha256": "fd39bff2eaa0181aa18a5af7b202baffea9789b6000e95db9d4bf14abf747317"
+}

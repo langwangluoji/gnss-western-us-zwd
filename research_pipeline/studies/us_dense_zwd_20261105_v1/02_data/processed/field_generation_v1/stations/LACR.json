@@ -1,0 +1,14 @@
+{
+  "station": "LACR",
+  "source_sha256": "bc19031dc9a24a2d1973b8bddaded5a47608e2506457aff43411bb436ee4a78d",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\lacr.pwv.gz",
+  "coverage": {
+    "2016": 0.9980646630236795,
+    "2017": 0.9859589041095891,
+    "2018": 0.9800228310502284,
+    "2019": 0.9962328767123287,
+    "2020": 0.9996584699453552
+  },
+  "valid_hours": 43497,
+  "cache_sha256": "58fb0144f5711498f1ff958e30b4168aa7b4f9747adaf71ea9d93b02c280fe82"
+}

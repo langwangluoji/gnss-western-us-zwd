@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE",
+  "test_cases_passed": 27,
+  "arms_completed": 10,
+  "updates": 3000,
+  "source_weights_unchanged": true,
+  "source_code_unchanged": true,
+  "C_used_for_this_selection": false,
+  "D_used": false,
+  "final_verdict_sha256": "6d7028acb8b11f20c2a7955f14ba4be4aaa1978ffc75afee59176c55ba48338a",
+  "pair_contract_sha256": "66c64e48bf972010f3b7ca3b27bea446ba6a36ccf3888a8c80134588204256c9",
+  "reference_checks_sha256": "72ee442c2cf9a57a0f14aa2a57b8754fef9a39bdcdab865a28f27fa3814ed67c",
+  "prefix_max_mm": 6.103515625e-05,
+  "server_jobs_submitted": false
+}

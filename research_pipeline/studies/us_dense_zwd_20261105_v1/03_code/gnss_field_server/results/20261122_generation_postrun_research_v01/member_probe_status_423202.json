@@ -1,0 +1,44 @@
+{
+  "hour": 423202,
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "base_query_error_mm": 4.57763671875e-05,
+  "context_source": "rebuilt from A only; no full feature-cache copy",
+  "runs": {
+    "fold_0/stochastic": {
+      "members": 128,
+      "first32_max_error_mm": 5.340576171875e-05,
+      "inference_seconds": 0.21900000001187436,
+      "mean_change32_to128_rms_mm": 0.21421505510807037
+    },
+    "fold_0/diffusion": {
+      "members": 128,
+      "first32_max_error_mm": 5.340576171875e-05,
+      "inference_seconds": 7.437999999994645,
+      "mean_change32_to128_rms_mm": 0.2686159312725067
+    },
+    "fold_0/gan": {
+      "members": 128,
+      "first32_max_error_mm": 5.340576171875e-05,
+      "inference_seconds": 0.26600000000325963,
+      "mean_change32_to128_rms_mm": 0.23148031532764435
+    },
+    "fold_1/stochastic": {
+      "members": 128,
+      "first32_max_error_mm": 5.340576171875e-05,
+      "inference_seconds": 0.25,
+      "mean_change32_to128_rms_mm": 0.20051974058151245
+    },
+    "fold_1/diffusion": {
+      "members": 128,
+      "first32_max_error_mm": 4.57763671875e-05,
+      "inference_seconds": 7.4210000000020955,
+      "mean_change32_to128_rms_mm": 0.3252297639846802
+    },
+    "fold_1/gan": {
+      "members": 128,
+      "first32_max_error_mm": 5.340576171875e-05,
+      "inference_seconds": 0.23399999999674037,
+      "mean_change32_to128_rms_mm": 0.2263411283493042
+    }
+  }
+}

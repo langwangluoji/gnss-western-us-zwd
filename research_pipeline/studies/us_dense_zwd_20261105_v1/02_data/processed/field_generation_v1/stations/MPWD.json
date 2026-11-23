@@ -1,0 +1,14 @@
+{
+  "station": "MPWD",
+  "source_sha256": "7d6b08c8f98cc6b6bf677361e85218b56bfc9c9811fef1c644bc494499718298",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\mpwd.pwv.gz",
+  "coverage": {
+    "2016": 0.995332422586521,
+    "2017": 0.982648401826484,
+    "2018": 0.9856164383561644,
+    "2019": 0.9924657534246575,
+    "2020": 0.9979508196721312
+  },
+  "valid_hours": 43445,
+  "cache_sha256": "3efafa4d8f593db5e28a90db02f5f40d96b72d9a08657eec28ac283955d76633"
+}

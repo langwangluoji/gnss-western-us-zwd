@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "integration": "16-point Gauss-Hermite per Gaussian dimension",
+  "marginal_moments": {
+    "0.0": {
+      "mean": 0.0,
+      "variance": 1.0000000000000004,
+      "skewness": -1.1102230246251565e-16,
+      "excess_kurtosis": 2.220446049250313e-15
+    },
+    "0.5": {
+      "mean": 5.551115123125783e-17,
+      "variance": 1.0000000000000002,
+      "skewness": 0.6260990336999417,
+      "excess_kurtosis": 1.0800000000000018
+    },
+    "-0.5": {
+      "mean": -5.551115123125783e-17,
+      "variance": 1.0,
+      "skewness": -0.6260990336999417,
+      "excess_kurtosis": 1.0800000000000027
+    },
+    "1.0": {
+      "mean": 1.1102230246251565e-16,
+      "variance": 1.0000000000000004,
+      "skewness": 0.8838834764831854,
+      "excess_kurtosis": 2.2500000000000036
+    },
+    "-1.0": {
+      "mean": -5.551115123125783e-17,
+      "variance": 1.0000000000000004,
+      "skewness": -0.8838834764831854,
+      "excess_kurtosis": 2.2500000000000044
+    },
+    "3.0": {
+      "mean": 1.1102230246251565e-16,
+      "variance": 1.0000000000000004,
+      "skewness": 0.9961174629530407,
+      "excess_kurtosis": 2.970000000000007
+    }
+  },
+  "spatial_covariance": [
+    {
+      "rho": 0.65,
+      "quadrature": 0.4929724861325837,
+      "formula": 0.49297248613258354
+    },
+    {
+      "rho": -0.4,
+      "quadrature": -0.3620358286185424,
+      "formula": -0.3620358286185421
+    }
+  ],
+  "step0_rotation_max_error": 8.881784197001252e-16,
+  "nonlinear_query_counterexample": {
+    "grid_then_query_variance": 0.6295121951219512,
+    "query_then_nonlinearity_variance": 0.65
+  },
+  "carrier_dependent_coefficient_counterexample_mean": 0.3138083579726152,
+  "scope": "Mathematics only. No learned accuracy, physical truth or latent identifiability claim."
+}

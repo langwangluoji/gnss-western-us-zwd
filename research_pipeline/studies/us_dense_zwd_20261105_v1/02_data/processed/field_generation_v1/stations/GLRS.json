@@ -1,0 +1,14 @@
+{
+  "station": "GLRS",
+  "source_sha256": "22a95882b4978be54afeeb688e9851ea3b91d5e8f12f369906708d4f2939ed45",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\glrs.pwv.gz",
+  "coverage": {
+    "2016": 0.9919171220400729,
+    "2017": 0.9718036529680365,
+    "2018": 0.9521689497716895,
+    "2019": 0.991324200913242,
+    "2020": 0.9978369763205829
+  },
+  "valid_hours": 43016,
+  "cache_sha256": "8600684ad13386ae401eb374478efc1f42b4fdb6ff79ff20fbd53a144ef831d0"
+}

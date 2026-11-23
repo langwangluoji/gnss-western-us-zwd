@@ -1,0 +1,14 @@
+{
+  "station": "CRU1",
+  "source_sha256": "e5caa7678d8c2fe4791ead6fda0aa00906b7cf52a0333130bb49421d9a659445",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\cru1.pwv.gz",
+  "coverage": {
+    "2016": 0.9862249544626593,
+    "2017": 0.9873287671232877,
+    "2018": 0.9595890410958904,
+    "2019": 0.9952054794520548,
+    "2020": 0.9892987249544627
+  },
+  "valid_hours": 43126,
+  "cache_sha256": "7ce81421a1f160c05671e8c7b3af81fe01b153fdb65021fb8f1d313cb4503d7d"
+}

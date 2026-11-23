@@ -1,0 +1,200 @@
+{
+  "protocol": "gnss_field_final_evaluation_v1",
+  "date": "2026-11-17",
+  "status": "final_v1_reviewed",
+  "execution": "specification_only_no_training_or_final_evaluation_started",
+  "data": {
+    "training_years": [
+      2016,
+      2017,
+      2018
+    ],
+    "development_year": 2019,
+    "retrospective_year": 2020,
+    "roles": {
+      "input_A": 174,
+      "training_B": 511,
+      "development_C": 110,
+      "retrospective_D": 110
+    },
+    "grid_km": 25,
+    "height_scale_m": 3000,
+    "height_datum": "EGM96",
+    "time_scale": "nominal_product_hour"
+  },
+  "populations": {
+    "full": "F: role+valid truth+fixed land/query geometry",
+    "primary": "S0: F under normal-A support",
+    "fine": "T: common complete coarsening stencils and S0",
+    "stress": "Fixed F and normal-A S0; changed support is a coverage diagnostic"
+  },
+  "support": {
+    "nearest_input_km_max": 100,
+    "neighbors_within150km_min": 3,
+    "within_input_hull": true,
+    "nearest_training_label_km_max": 100,
+    "complete_query_stencil": true
+  },
+  "point": {
+    "primary": "station_macro_surface_ZWD_RMSE_mm",
+    "auxiliary": [
+      "station_macro_MAE",
+      "bias",
+      "P95_absolute_error",
+      "micro_RMSE"
+    ],
+    "checkpoint_selection": "unrounded_minimum2019_RMSE_for_current_point_product",
+    "stochastic_members": 64,
+    "stability_members": 128,
+    "stability_tolerance_mm": 0.005,
+    "stability_on": "2019_only",
+    "training_seeds": [
+      42,
+      17,
+      101
+    ],
+    "seed_aggregation": "mean_of_metrics_not_mean_of_predictions",
+    "current_probability_checkpoint_branch": false
+  },
+  "fine": {
+    "primary": "mean_over_dense_groups_of_RMSE_of_paired_Z0_increments_0to50km",
+    "distance_bins_km": [
+      [
+        0,
+        25
+      ],
+      [
+        25,
+        50
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        100,
+        200
+      ]
+    ],
+    "same_height_surface_pairs_m_max": 100,
+    "coarsening": "global_origin_aligned4x4_mean_then_bilinear_align_corners_false",
+    "boundary": "common_complete_interior_stencils_primary_mask_normalized_coastal_sensitivity",
+    "confirmation": "All four paired comparisons on common T improve: point and increments versus Bstar, and point and increments versus self100km"
+  },
+  "images": {
+    "primary_ranking": false,
+    "SSIM": {
+      "window": 7,
+      "window_weights": "uniform",
+      "physical_width_km": 175,
+      "K1": 0.01,
+      "K2": 0.03,
+      "data_range": "training_AplusB_Z0_P99.5_minus_P0.5",
+      "per_image_normalization": false
+    },
+    "wavelength_bins_km": [
+      [
+        50,
+        100
+      ],
+      [
+        100,
+        200
+      ],
+      [
+        200,
+        400
+      ],
+      [
+        400,
+        null
+      ]
+    ],
+    "spectral_window": "common_complete_rectangles_detrend_Hann_energy_corrected",
+    "phase_sensitive_error": true
+  },
+  "probability": {
+    "marginal_primary": "station_macro_CRPS_surface_mm",
+    "interval_levels": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "coverage_engineering_tolerance": 0.03,
+    "coverage_confirmation": "CI_of_coverage_difference_entirely_within_tolerance_band",
+    "joint_metrics": [
+      "ES_l2_norm_power1_normalized_sqrt_n",
+      "VS_p0.5"
+    ],
+    "joint_group_valid_station_min": 4,
+    "variogram_weight": "1/max(distance_km,25),normalized_sum1",
+    "M2_joint_claim": false,
+    "oracle_member": false,
+    "member_ids": "global_across_patches_and_sites",
+    "point_noninferiority_margin": null,
+    "empirical_quantile_method": "Hyndman-Fan type7 linear; record implementation version; compare actual finite-ensemble product",
+    "interval_monte_carlo_check": "Known-distribution synthetic check before formal evaluation; unify K128 on2019 if K64 tail uncertainty changes decision; otherwise mark indeterminate",
+    "target": "GNSS observation predictive distribution unless separately validated measurement-error model exists",
+    "joint_baseline_conditioning": "Current A and training-period parameters only; currentB forbidden"
+  },
+  "stress": {
+    "keep_A_counts": [
+      174,
+      131,
+      87,
+      44,
+      1,
+      0
+    ],
+    "seeds_count": 5,
+    "current_and_persistent_outages_separate": true,
+    "rebuild": [
+      "tokens",
+      "four_frames",
+      "geometry",
+      "support",
+      "frozen_mean_cache"
+    ],
+    "cache_key_contains_input_mask": true
+  },
+  "uncertainty": {
+    "bootstrap_replicates": 2000,
+    "day_block_length": 7,
+    "bootstrap_seed": 20261117,
+    "all_stations_synchronized_time_blocks": true,
+    "fine_resample": "crossed_time_blocks_and_dense_groups",
+    "events": "whole_weather_processes",
+    "decision_multiplicity": "IUT all required endpoints pass95pairedCI; selective model/bin/scenario claims require preregisteredHolm; otherwise exploratory",
+    "block_length_sensitivity_days": 14,
+    "confirmation_year": 2020
+  },
+  "baselines": [
+    "coarse_bilinear",
+    "A_IDW",
+    "A_kriging",
+    "M0",
+    "M0_innovation_IDW",
+    "M2F",
+    "M2J",
+    "conditional_geostatistical_joint_simulation_if_implemented"
+  ],
+  "thresholds": {
+    "source": "training_only",
+    "terrain_high_quantile": 0.75,
+    "terrain_low_quantile": 0.25,
+    "wet_quantile": 0.95,
+    "change3h_tail_quantile": 0.95,
+    "event_merge_gap_hours": 6,
+    "event_window_halfwidth_hours": 12,
+    "derived_numeric_values": "compute_and_hash_before_formal_training"
+  },
+  "declarations": {
+    "absolute_RMSE_target_mm": null,
+    "point": "paired_improvement_against_locked_Bstar",
+    "fine": "all_preregistered_point_and_increment_coarsening_tests_plus_increment_baseline",
+    "marginal_probability": "CRPS_improvement_with_calibration_and_width_reported",
+    "joint_probability": "ES_and_VS_improvement_against_valid_joint_baseline",
+    "fine_scope": "Relative to locked point-optimal Bstar and self100km; not an all-baseline spatial championship"
+  },
+  "review_evidence": "pro_final_protocol_review_snapshot.txt"
+}

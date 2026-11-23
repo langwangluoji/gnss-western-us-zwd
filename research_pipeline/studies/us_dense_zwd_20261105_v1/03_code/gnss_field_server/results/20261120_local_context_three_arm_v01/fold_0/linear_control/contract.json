@@ -1,0 +1,1 @@
+{"C2019":false,"D2020":false,"alphas":[0.0001,0.001,0.01,0.1,1.0],"dataset":"8d6495174d190945d95312f1439fa370a6a432232404a233daecbabf709b65b3","fold":0,"labels":"core B fitted groups only","selection":"inner ES K16 with zero and scalar candidates","source":"f39c25044fa62c8d7c24c345fa33ba6864a9e036ebfba9486e75c22488358400"}

@@ -1,0 +1,14 @@
+{
+  "station": "VIMT",
+  "source_sha256": "c095575ffabaf88e47cb00d4f5344b65ea7d3155f4b12a30ed6ff97a9485d6e5",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\vimt.pwv.gz",
+  "coverage": {
+    "2016": 0.9931693989071039,
+    "2017": 0.9744292237442922,
+    "2018": 0.9767123287671233,
+    "2019": 0.9853881278538813,
+    "2020": 0.9792805100182149
+  },
+  "valid_hours": 43050,
+  "cache_sha256": "d3f8f5ea1a4cc8e9c4f48304124dcc8a1bb400cd64aed654298176a60f2fa133"
+}

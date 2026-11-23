@@ -1,0 +1,3104 @@
+- link "跳转到内容":
+  - /url: "#_R_2lemhqd9iqeprb347l9arad5_"
+- complementary:
+  - navigation "应用导航":
+    - button "首页":
+      - generic: 首页
+    - button "资料空间":
+      - generic: 资料空间
+    - button "定时任务":
+      - generic: 定时任务
+    - button "插件":
+      - generic: 插件
+    - button "探索":
+      - generic: 探索
+    - button "站点":
+      - generic: 站点
+    - button "项目":
+      - generic: 项目
+    - button "用量":
+    - button "打开个人资料菜单"
+  - navigation "首页":
+    - link "首页":
+      - /url: /
+      - generic: ChatGPT
+    - button "搜索":
+    - button "显示/隐藏侧边栏" [expanded]:
+    - button "新聊天":
+      - generic: 新聊天
+    - list:
+      - button "你的 Dot":
+        - generic: 你的 Dot
+    - button "置顶" [expanded]:
+      - generic: 置顶
+    - list:
+      - group "取消API密钥登录":
+        - link "取消API密钥登录":
+          - /url: /c/6af15d65-4710-83e8-9a6e-206aef77a3a7
+          - generic: 取消API密钥登录
+        - button "取消置顶聊天":
+        - button "聊天操作":
+    - button "项目" [expanded]:
+      - generic: 项目
+    - button "项目侧边栏选项":
+    - button "添加新项目":
+    - list:
+      - listitem: 没有项目
+    - button "最近" [expanded]:
+      - generic: 最近
+    - button "聊天侧边栏选项":
+    - button "新聊天":
+    - list:
+      - group "Diffusion融合研究设计":
+        - link "Diffusion融合研究设计":
+          - /url: /c/6af6fa29-6a4c-83e8-a0a7-15d62767383b
+          - generic: Diffusion融合研究设计
+        - button "置顶聊天":
+        - button "聊天操作":
+      - group "稀疏GNSS超分方案分析":
+        - link "稀疏GNSS超分方案分析":
+          - /url: /c/6af84935-f784-83ee-a907-537d2fc65d89
+          - generic: 稀疏GNSS超分方案分析
+        - button "置顶聊天":
+        - button "聊天操作":
+      - group "稀疏GNSS重建预测研究":
+        - link "稀疏GNSS重建预测研究":
+          - /url: /c/6af6dcb0-8f3c-83e8-bc0e-c7dff4ddba7e
+          - generic: 稀疏GNSS重建预测研究
+        - button "置顶聊天":
+        - button "聊天操作":
+      - group "设置每周研究精选":
+        - link "设置每周研究精选":
+          - /url: /c/6ab8953e-0554-83e8-8a53-45a3d75e2a72
+          - generic: 设置每周研究精选
+        - button "置顶聊天":
+        - button "聊天操作":
+      - group "使用Landsat水体监测":
+        - link "使用Landsat水体监测":
+          - /url: /c/6af156eb-a494-83ee-80e7-13444919fcc6
+          - generic: 使用Landsat水体监测
+        - button "置顶聊天":
+        - button "聊天操作":
+      - group "XGBoost接入SR-PS研究":
+        - link "XGBoost接入SR-PS研究":
+          - /url: /c/6aeedcb7-5b40-83e8-a1f5-d7a36f3e724b
+          - generic: XGBoost接入SR-PS研究
+        - button "置顶聊天":
+        - button "聊天操作":
+      - group "审阅GNSS架构":
+        - link "审阅GNSS架构":
+          - /url: /c/6aedfced-84c8-83ec-b5fa-6f42acb7ad16
+          - generic: 审阅GNSS架构
+        - button "置顶聊天":
+        - button "聊天操作":
+      - group "GNSS湿延迟GAN审阅":
+        - link "GNSS湿延迟GAN审阅":
+          - /url: /c/6aedf435-d0ec-83e8-a572-8f0e496e90d4
+          - generic: GNSS湿延迟GAN审阅
+        - button "置顶聊天":
+        - button "聊天操作":
+      - group "审阅GNSS超分结果":
+        - link "审阅GNSS超分结果":
+          - /url: /c/6aedb8d0-f578-83e8-bd70-c6a943d879e2
+          - generic: 审阅GNSS超分结果
+        - button "置顶聊天":
+        - button "聊天操作":
+      - group "GNSS重建技术审阅":
+        - link "GNSS重建技术审阅":
+          - /url: /c/6aec71f6-f0dc-83ee-8c23-7dca2a337e44
+          - generic: GNSS重建技术审阅
+        - button "置顶聊天":
+        - button "聊天操作":
+      - group "解决个人资料无法打开":
+        - link "解决个人资料无法打开":
+          - /url: /c/6aebd9f6-2048-83ee-9c06-f2b3d14f1873
+          - generic: 解决个人资料无法打开
+        - button "置顶聊天":
+        - button "聊天操作":
+      - group "审阅GNSS重建方案":
+        - link "审阅GNSS重建方案":
+          - /url: /c/6ae9f983-d048-83e8-846e-22fe0f3574f1
+          - generic: 审阅GNSS重建方案
+        - button "置顶聊天":
+        - button "聊天操作":
+      - group "审阅配图坐标推导方案":
+        - link "审阅配图坐标推导方案":
+          - /url: /c/6aea8e95-5954-83ec-959d-8fe8b2bdd5bd
+          - generic: 审阅配图坐标推导方案
+        - button "置顶聊天":
+        - button "聊天操作":
+      - group "推导稿与核验表":
+        - link "推导稿与核验表":
+          - /url: /c/6aea0475-6ef4-83ee-9691-9b7e33b297bf
+          - generic: 推导稿与核验表
+        - button "置顶聊天":
+        - button "聊天操作":
+      - group "修复Windows安全中心开户地址":
+        - link "修复Windows安全中心开户地址":
+          - /url: /c/6ae9420f-2d54-83ee-affc-500b657579f0
+          - generic: 修复Windows安全中心开户地址
+        - button "置顶聊天":
+        - button "聊天操作":
+  - separator
+- main:
+  - button "Diffusion融合研究设计":
+    - generic: Diffusion融合研究设计
+  - button "分享":
+  - button "切换摘要面板固定状态" [expanded] [pressed]:
+  - region "对话":
+    - status:
+      - generic: 正在加载更早的消息…
+    - heading "你说：" [level=4]
+    - generic: 进一步确定最终方案，不再检索。用户强调主成果是高分辨率连续ZWD场及可信精度评定，不是站点预测。严格2016–18训练/2019开发/2020回顾，25–50N/125–110W全部陆地，约100km格一固定输入站，600km patch/300km stride/25km格网。新M0冻结后：faithful高斯主臂、联合NLL对照，真实站监督、配对初始化；所有均值必须来自同一发布格网，查询方差头仅边缘概率。请解决：1 真站监督的空间欠定性，首轮是否弱teacher或空间先验，如何避免把IDW当真值？2 分散留出和密集留出站组、站间差值距离分箱如何证实细尺度收益，不能把25km采样称有效分辨率。3 粗场双线性、输入站直接IDW、新M0、两臂如何区分均值纠偏与细尺度收益？4 owner patch评分却展示拼接场不一致，请给统一可微拼接的均值与特征，再预测查询边缘方差，避免独立patch概率融合。5 最强反例与停止加模型的门槛。6 唯一预算、早停、RMSE优先选模、可信支持域；新M0完成且faithful首评后交接，对照顺序后台训练。给可执行默认，区分工程完成与科研成功，解释维护成本。约1800字。
+    - button "复制消息"
+    - button "共享提示":
+    - button "编辑消息"
+    - button "思考了 7m 54s":
+      - generic: 思考了 7m 54s
+    - heading "ChatGPT 说：" [level=4]
+    - paragraph:
+      - text: "**建议锁定一个协议：发布统一拼接的"
+      - math:
+        - generic: Z
+        - generic: "0"
+      - text: Z
+      - generic: "0"
+      - text: 格网、地形和高度恢复算子，形成可查询的连续 ZWD 场；地表 ZWD 栅格是该场的采样产品。**所有方法均从发布格网评分，查询方差仅提供边缘概率。25 km始终称为输出间距。
+    - heading "1．空间欠定：首轮加一个弱先验，不加teacher" [level=2]
+    - paragraph:
+      - text: 稀疏站监督无法排除“站上误差相同、站间场完全不同”的解。默认加入
+      - strong:
+        - text: 最终
+        - math:
+          - generic: Z
+          - generic: "0"
+        - text: Z
+        - generic: "0"
+        - text: 均值的弱曲率惩罚
+      - text: ：
+    - math:
+      - generic: R
+      - generic: =
+      - generic: mean
+      - generic: ⁡
+      - generic: "["
+      - generic: m
+      - generic: E
+      - generic: +
+      - generic: m
+      - generic: W
+      - generic: +
+      - generic: m
+      - generic: "N"
+      - generic: +
+      - generic: m
+      - generic: S
+      - generic: −
+      - generic: "4"
+      - generic: m
+      - generic: C
+      - generic: s
+      - generic: "0"
+      - generic: "]"
+      - generic: "2"
+      - generic: ","
+      - generic: λ
+      - generic: =
+      - generic: "10"
+      - generic: −
+      - generic: "3"
+      - generic: ","
+    - generic: R =
+    - generic: mean
+    - generic: "["
+    - text: s
+    - generic: "0"
+    - text: m
+    - generic: E
+    - text: +
+    - text: m
+    - generic: W
+    - text: +
+    - text: m
+    - generic: "N"
+    - text: +
+    - text: m
+    - generic: S
+    - text: − 4
+    - text: m
+    - generic: C
+    - generic: "]"
+    - generic: "2"
+    - text: ", λ ="
+    - text: "1"
+    - text: "0"
+    - generic: −3
+    - text: ","
+    - paragraph:
+      - text: 其中
+      - math:
+        - generic: s
+        - generic: "0"
+      - text: s
+      - generic: "0"
+      - text: 是训练期
+      - math:
+        - generic: Z
+        - generic: "0"
+      - text: Z
+      - generic: "0"
+      - text: 标准差，差分步长固定25 km。M0、faithful和联合NLL均使用相同的
+      - math:
+        - generic: λ
+        - generic: R
+      - generic: λR
+      - text: ；站点均值损失也按训练尺度标准化。先验不除以预测方差，不跨无效地形计算，不强制4×4块均值为零。该系数只是预登记起点。
+    - paragraph: "**它表达“缺资料处优先平滑”，不能证明真实细节。**首轮不加IDW teacher，避免把插值形状变成额外真值；faithful对应的是“同样曲率正则下的MSE均值学习”。"
+    - heading "2．训练、发布、评分使用同一拼接算子" [level=2]
+    - paragraph: 统一米制投影、格点原点和尺度：600 km对应24格，stride为12格。采用固定可分离窗：
+    - math:
+      - generic: w
+      - generic: i
+      - generic: j
+      - generic: =
+      - generic: sin
+      - generic: ⁡
+      - generic: "2"
+      - generic: ⁣
+      - generic: π
+      - generic: (
+      - generic: i
+      - generic: +
+      - generic: "1"
+      - generic: /
+      - generic: "2"
+      - generic: )
+      - generic: "24"
+      - generic: sin
+      - generic: ⁡
+      - generic: "2"
+      - generic: ⁣
+      - generic: π
+      - generic: (
+      - generic: j
+      - generic: +
+      - generic: "1"
+      - generic: /
+      - generic: "2"
+      - generic: )
+      - generic: "24"
+      - generic: ","
+      - generic: α
+      - generic: p
+      - generic: j
+      - generic: =
+      - generic: w
+      - generic: p
+      - generic: j
+      - generic: ∑
+      - generic: q
+      - generic: w
+      - generic: q
+      - generic: j
+      - generic: .
+    - text: w
+    - generic: ij
+    - text: =
+    - text: sin
+    - generic: "2"
+    - generic: "24"
+    - generic: π(i + 1/2)
+    - text: sin
+    - generic: "2"
+    - generic: "24"
+    - generic: π(j + 1/2)
+    - text: ","
+    - text: α
+    - generic: pj
+    - text: =
+    - text: ∑
+    - generic: q
+    - text: w
+    - generic: qj
+    - text: w
+    - generic: pj
+    - text: .
+    - paragraph: M0先生成全局拼接均值并冻结。两臂发布：
+    - math:
+      - generic: m
+      - generic: j
+      - generic: =
+      - generic: m
+      - generic: ˉ
+      - generic: "0"
+      - generic: ","
+      - generic: j
+      - generic: +
+      - generic: s
+      - generic: ∑
+      - generic: p
+      - generic: α
+      - generic: p
+      - generic: j
+      - generic: r
+      - generic: p
+      - generic: j
+      - generic: ","
+      - generic: f
+      - generic: j
+      - generic: =
+      - generic: ∑
+      - generic: p
+      - generic: α
+      - generic: p
+      - generic: j
+      - generic: f
+      - generic: p
+      - generic: j
+      - generic: .
+    - text: m
+    - generic: j
+    - text: =
+    - generic: m
+    - text: ˉ
+    - generic: 0,j
+    - text: +
+    - text: s
+    - generic: p
+    - generic: ∑
+    - text: α
+    - generic: pj
+    - text: r
+    - generic: pj
+    - text: ","
+    - text: f
+    - generic: j
+    - text: =
+    - generic: p
+    - generic: ∑
+    - text: α
+    - generic: pj
+    - text: f
+    - generic: pj
+    - text: .
+    - paragraph: 残差条件必须使用同一个全局M0。站点均值为
+    - math:
+      - generic: "y"
+      - generic: ^
+      - generic: i
+      - generic: =
+      - generic: e
+      - generic: −
+      - generic: H
+      - generic: i
+      - generic: /
+      - generic: "3000"
+      - generic: H
+      - generic: i
+      - generic: m
+      - generic: ;
+    - generic: "y"
+    - text: ^
+    - generic: i
+    - text: =
+    - text: e
+    - text: −
+    - text: H
+    - generic: i
+    - text: /3000
+    - text: H
+    - generic: i
+    - text: m;
+    - paragraph:
+      - text: 方差头读取
+      - math:
+        - generic: H
+        - generic: i
+        - generic: f
+      - text: H
+      - generic: i
+      - text: f
+      - text: 及三项几何变量，faithful处detach特征和NLL均值，
+      - strong: 不融合patch概率
+      - text: 。
+    - paragraph: 训练必须对完整拼接图求导：单格最多4个patch，单站双线性读取可能涉及9个，曲率及多站样本还需扩展并集。不能省掉邻patch或将其残差detach。每个站时刻只计一次损失。
+    - paragraph: 另须明确：上述高度查询一般不等于直接插值地表ZWD栅格。发布接口、评分脚本和产品说明必须采用前者，不能混称精度。
+    - heading "3．如何检验细尺度收益" [level=2]
+    - paragraph:
+      - text: 源站固定后，非输入物理站默认按约70%/15%/15%分训练、开发、回顾角色；开发和回顾各约半数分散留出，另一半来自
+      - strong: 整组留出的50 km密集站块
+      - text: ，组内至少4站。按组取近似比例，别名不得跨角色，全部依据训练期资料确定；源站角色保持不变。
+    - paragraph:
+      - text: 在独立站组计算站间差值误差，距离箱固定为
+      - strong: 0–25、25–50、50–100、100–200 km
+      - text: 。同时检查
+      - math:
+        - generic: Z
+        - generic: "0"
+      - text: Z
+      - generic: "0"
+      - text: 差值和相近高程站对，报告站对数、独立站组数，并按站组和天气时段做配对重采样。缺少密集站对时，应承认细尺度证据不足。
+    - paragraph:
+      - text: 比较粗场双线性、输入站IDW、新M0、两臂；
+      - strong: IDW也先生成25 km格网，再经同一算子评分
+      - text: 。另加廉价的“M0＋源站创新IDW”诊断。
+    - paragraph: 区分两类收益：
+    - list:
+      - listitem: RMSE、偏差改善，但短距离差值误差不改善：主要支持均值纠偏。
+      - listitem: 将每个预测场固定降到100 km、再回采样后，原场在独立站及短距离差值上稳定更好：才支持额外细尺度信息。
+    - paragraph: 这仍不能直接换算成“25 km有效分辨率”。
+    - heading "4．支持域不能靠图面完整定义" [level=2]
+    - paragraph: 全部陆地可以输出，但先登记支持域候选：最近有效源站≤100 km、150 km内至少3个有效源站，且距训练标签站≤100 km。DEM必须完整覆盖所需patch及边界范围。
+    - paragraph:
+      - text: 这些只是支持条件，可信程度还须由2019误差和覆盖率验证。主比较采用预登记的共同可评分集合，同时报告支持域覆盖率、域外结果及patch边界表现；禁止模型自行删难例。
+      - strong: 留出站RMSE不能冒充整个陆地面积上的场RMSE。
+    - heading "5．唯一预算与交接" [level=2]
+    - paragraph: 默认单seed42、配对初始化及样本顺序：
+    - list:
+      - listitem: M0最多30,000步；faithful及对照各20,000步，不再Optuna。
+      - text: AdamW初始学习率
+      - math:
+        - generic: "10"
+        - generic: −
+        - generic: "4"
+      - text: "1"
+      - text: "0"
+      - generic: −4
+      - text: ，warmup500步，余弦降至
+      - math:
+        - generic: "10"
+        - generic: −
+        - generic: "6"
+      - text: "1"
+      - text: "0"
+      - generic: −6
+      - text: ，EMA=0.999；均值与方差分别裁剪。
+      - listitem: 微批为一个完整拼接样本，累计8次更新；显存不足采用重计算，不删贡献patch。
+      - listitem: 每1000步按固定全年2019评价；连续6次无更低RMSE则停。严格最低RMSE选模，CRPS只处理完全同分。
+    - paragraph: 新M0完成冻结、faithful真实更新且首次开发RMSE及曲线可见后交接；主臂结束后对照顺序后台训练。2020仅在配置锁定后回顾。
+    - heading "6．可推翻条件与维护成本" [level=2]
+    - paragraph: "**最强反例是：加入一个在所有评分站为零、站间却有峰谷的场，站点指标可以完全不变。**平滑先验和漂亮图面均不能排除它。"
+    - paragraph: 达到预算或耐心上限后，若M2不优于M0及简单校正，停止加模型；若仅改善总体RMSE、未改善短距离差值和原场相对100 km版本的表现，只认纠偏成果，不宣称细尺度恢复成功。
+    - paragraph:
+      - text: 工程完成还需两臂结束、产品可复现、发布与评分逐值一致；科研成功需要独立证据支持上述收益。两阶段系统要维护M0、残差尺度、拼接、支持域和概率校准，源网或DEM变化还需复核。
+      - strong: 这些成本应由可重复的场重建收益来证明合理性。
+    - button "复制":
+    - button "评价回复":
+    - button "朗读":
+    - button "分享":
+    - button "来源":
+    - button "更多操作":
+    - separator "今天 11:00":
+      - time: 今天 11:00
+    - heading "你说：" [level=4]
+    - generic: 请使用Pro深入调研并给出有原始论文链接的技术方案。本轮任务ID GNSS_METRICS_20261117。我们的目标是稀疏GNSS条件下生成高分辨率连续ZWD场，主研究模型未来是条件残差Diffusion，GAN作对照。当前本机训练已经暂停，不要建议先全量训练。研究区域25–50N/125–110W，Lambert米制投影，25km输出间距，600km/24×24 patch、300km stride、正弦平方窗拼接。2016–18训练、2019开发、2020锁定后回顾。905物理站，输入174、训练511、开发110、回顾110，密集50km组≥4站已整组隔离；开发58密集+52分散，回顾57+53。输入五变量+当前/t-6/12/18h粗场；真实标签是地表ZWD毫米。当前公共高度归算Z0=ZWD*exp(H/3000)，查询反变换exp(-H/3000)*Interp(Z0)，H为EGM96高程。这只是固定经验尺度高度，需讨论残留地形结构。M0真实训练站监督；M2-F/J仅边缘高斯；之后EDM/GAN目标场尚未确定，不将IDW场直接当独立真值。 用户新想法：全部已有站归算同高程，把Z0当单通道二维物理图像，IDW或克里金插值生成高分辨率参考图像，用图像超分指标指导损失函数和最终精度。请先独立判断哪些部分成立、哪些会形成循环评价或泄漏。认真调研CV超分、天气/气候降尺度、海洋遥感重建、地统计/逆问题领域，给具体可执行而不过度复杂的指标与实验。 请覆盖：1 MAE/RMSE/PSNR/SSIM/MS-SSIM、梯度/边缘/拉普拉斯、SAM、LPIPS/DISTS/FID/KID/NIQE哪些适合物理单通道场，哪些不宜主用，动态范围/归一化/掩膜/尺度敏感性。2 二维/径向/方向功率谱、频带能量、复数频谱误差/交叉谱/相干性/相位、空间频率谱损失、Focal Frequency Loss、Fourier和小波多尺度损失：相同功率谱但相位错位反例；总场/残差/ensemble mean与单成员区别；海岸缺测/不规则域/窗口/去趋势/25km Nyquist50km和实际可解析尺度、24×24小patch谱不稳定。3 半变异函数/结构函数/方向性、独立站对差值、与谱关系及无需插值的计算，密集留出组和有效分辨率证据。4 气象FSS、SAL、尺度分解误差、邻域阈值指标是否适合ZWD、阈值需训练期确定；不能为加指标而堆。5 概率生成场CRPS、覆盖率/宽度、PIT/rank histogram、energy/variogram score及空间相关；确定性kriging均值作diffusion/GAN真图的风险、条件模拟能否成为先验但非真值。 请给四类明确标记：物理观测主证据、参考图一致性、空间统计合理性、生成分布校准。设计reference施工：输入A、训练监督B、开发C、回顾D物理站严格隔离；训练teacher用哪些站、开发reference用哪些站、不能全部站生成训练图。如何用训练期分组空间交叉验证/站点稀疏化建立reference可信尺度与不确定性；IDW/kriging双参考敏感性；teacher辅助监督可能把模型上限变成插值器；数据支撑只到某尺度时如何频带加权。给M0/M2和EDM/GAN损失建议公式、单位/权重选择原则，不无根据给一堆固定lambda；标准EDM去噪目标与图像辅助损失适用条件区分。最后给最小本机方向筛选方案：先用已有场及少量固定事件验证指标能否识别平移/模糊/偏置/伪高频/随机相位等反例，再决定训练，预算明确。优先核查SSIM原文、FocalFrequencyLoss、LPIPS、CorrDiff、RainFARM、proper multivariate energy/variogram评分等原始来源，找不到不要编造。请形成有结论的推荐表、关键公式、可推翻反例、项目落地顺序，注明哪些结论是方法推论而非已在我数据上证明。可以充分展开，不只概念名词。
+    - generic: …
+    - button "显示更多":
+      - generic: 显示更多
+    - button "复制消息"
+    - button "共享提示":
+    - button "编辑消息"
+    - button "思考了 10m 56s":
+      - generic: 思考了 10m 56s
+    - heading "你说：" [level=4]
+    - generic: 补充本轮用户刚刚提出的重点（继续GNSS_METRICS_20261117）：请针对五类情况给具体评价方案：稀疏站区、单点、全图、地形突变、天气突变。“单点”同时考虑逐独立站点评价和仅1个输入站可用两种解释。需要固定的分组/事件定义、训练期阈值、评价指标、应比较的baseline、是否可用于训练loss及适用条件。稀疏化压力测试对A输入做75/50/25%保留、空间整块缺口、仅1站/全缺站，B/C/D标签固定，支持覆盖单列，不因无支持删难例后宣称好。地形用原始高分DEM聚合得到起伏/坡度/坡向与站格高差；既评Z0也恢复地表ZWD，检查固定3000m归算引入的误差，地形边界不必是真实水汽不连续。天气突变区分时间1/3/6小时增量、极端湿状态、空间锋面/湿峰，事件阈值用2016–18训练B确定，2019仅评价，2020封存；输出当前同期重建τ0时峰值时差是重建滞后不是预报提前量。事件窗口合并，按独立天气过程bootstrap；天气事件定义可用事后观测作评价标签，但不能进输入或支持条件。不把天气突变自动称降雨。请把此补充和原调研综合，先给五场景推荐表；也请讨论山区且稀疏且天气突变交叉场景，样本不足不要强下结论。
+    - button "复制消息"
+    - button "共享提示":
+    - button "编辑消息"
+    - button "思考了 17m 59s":
+      - generic: 思考了 17m 59s
+    - heading "ChatGPT 说：" [level=4]
+    - heading "GNSS_METRICS_20261117：连续ZWD场的评价、参考图与生成目标方案" [level=1]
+    - paragraph:
+      - text: "**推荐保留“"
+      - math:
+        - generic: Z
+        - generic: "0"
+      - text: Z
+      - generic: "0"
+      - text: 单通道物理场”的表示，但把插值图定位为有误差的参考分析，而不是独立真值。**最终精度仍须由未参与输入和训练的真实站观测检验；细尺度收益需要位置对应的站间差值、尺度分解和独立事件证据；生成模型还需检验空间联合分布。
+    - paragraph: 本轮不恢复训练。以下先给五场景方案，再说明指标、reference施工和未来损失设计。文献结论与本项目设计建议分别说明；所有阈值和预算都是可预登记的默认方案，尚未在这905站上验证。
+    - heading "一、五场景推荐表" [level=2]
+    - paragraph:
+      - text: 各场景共同比较：
+      - strong: 粗场双线性、仅A输入站的IDW、仅A输入站的kriging、新M0、M2-F/J
+      - text: ；以后再加入使用同一信息条件和发布算子的EDM/GAN。所有插值基线也先生成25 km格网，再通过相同查询算子评分。
+    - paragraph: 下表中的分位数均由2016–2018训练资料确定，2019不重新估计阈值，2020保持封存。
+    - table:
+      - rowgroup:
+        - row "场景 固定分组或事件定义 应优先报告什么 基线与训练loss适用条件":
+          - columnheader "场景"
+          - columnheader "固定分组或事件定义"
+          - columnheader "应优先报告什么"
+          - columnheader "基线与训练loss适用条件"
+      - rowgroup:
+        - row "稀疏站区 用正常A网下的最近源站距离、150 km内有效源站数分层；距离超过训练期上四分位定义稀疏层。同时实施A保留75%/50%/25%、整块缺口、仅1站、全缺站测试 全部预定目标的地表RMSE、MAE、Bias；误差随距离/密度变化；CRPS与覆盖率；支持率、无输出率另列 同输入子集的IDW、kriging和M0最关键。未来可做输入缺失增强，但真实B标签固定；不能通过遮掉输出图模拟删站":
+          - cell "稀疏站区":
+            - strong: 稀疏站区
+          - cell "用正常A网下的最近源站距离、150 km内有效源站数分层；距离超过训练期上四分位定义稀疏层。同时实施A保留75%/50%/25%、整块缺口、仅1站、全缺站测试"
+          - cell "全部预定目标的地表RMSE、MAE、Bias；误差随距离/密度变化；CRPS与覆盖率；支持率、无输出率另列"
+          - cell "同输入子集的IDW、kriging和M0最关键。未来可做输入缺失增强，但真实B标签固定；不能通过遮掉输出图模拟删站"
+        - row "单点①：逐独立站评价 C110和以后D110逐物理站评分；密集组、分散站分别汇总 每站RMSE、Bias、误差分位数；1/3/6 h增量误差；区间覆盖与宽度；再做站宏平均 这是主要物理证据，可直接使用B站观测损失。单个站点没有二维SSIM或二维谱的含义":
+          - cell "单点①：逐独立站评价":
+            - strong: 单点①：逐独立站评价
+          - cell "C110和以后D110逐物理站评分；密集组、分散站分别汇总"
+          - cell "每站RMSE、Bias、误差分位数；1/3/6 h增量误差；区间覆盖与宽度；再做站宏平均"
+          - cell "这是主要物理证据，可直接使用B站观测损失。单个站点没有二维SSIM或二维谱的含义"
+        - row "单点②：仅1个输入站可用 根据几何预先固定保留站，整个评价域、整个事件使用同一站；不能为每个目标挑选不同“最佳源站” 全目标误差、随源站距离增长的误差、概率退化及失败率 增加“常量 传播”和训练期气候场基线。仅一站时的细结构主要来自先验和辅助条件，不能称为由该站解析出来":
+          - cell "单点②：仅1个输入站可用":
+            - strong: 单点②：仅1个输入站可用
+          - cell "根据几何预先固定保留站，整个评价域、整个事件使用同一站；不能为每个目标挑选不同“最佳源站”"
+          - cell "全目标误差、随源站距离增长的误差、概率退化及失败率"
+          - cell "增加“常量 传播”和训练期气候场基线。仅一站时的细结构主要来自先验和辅助条件，不能称为由该站解析出来":
+            - text: 增加“常量
+            - math:
+              - generic: Z
+              - generic: "0"
+            - text: Z
+            - generic: "0"
+            - text: 传播”和训练期气候场基线。仅一站时的细结构主要来自先验和辅助条件，不能称为由该站解析出来
+        - row "全图 使用最终正弦平方窗拼接场，固定陆地范围、reference支持mask和面积权重 站点主证据＋参考图误差；频带误差、方向谱、拼接边界诊断；有生成成员时增加联合概率评分 IDW/kriging全图是参考分析。图像loss只能约束已验证尺度或明确先验，不能替代真实站监督":
+          - cell "全图":
+            - strong: 全图
+          - cell "使用最终正弦平方窗拼接场，固定陆地范围、reference支持mask和面积权重"
+          - cell "站点主证据＋参考图误差；频带误差、方向谱、拼接边界诊断；有生成成员时增加联合概率评分"
+          - cell "IDW/kriging全图是参考分析。图像loss只能约束已验证尺度或明确先验，不能替代真实站监督"
+        - row "地形突变 原始高分DEM聚合得到起伏、坡度、坡向及站格高差；高起伏/大高差取训练站分布P75以上，平缓对照取P25以下 同报地表ZWD和 误差；误差随高程、起伏和站格高差变化；相近高程站对的差值误差 可用于条件特征、分层采样和诊断；不能把DEM边缘直接当湿延迟边缘标签":
+          - cell "地形突变":
+            - strong: 地形突变
+          - cell "原始高分DEM聚合得到起伏、坡度、坡向及站格高差；高起伏/大高差取训练站分布P75以上，平缓对照取P25以下"
+          - cell "同报地表ZWD和 误差；误差随高程、起伏和站格高差变化；相近高程站对的差值误差":
+            - text: 同报地表ZWD和
+            - math:
+              - generic: Z
+              - generic: "0"
+            - text: Z
+            - generic: "0"
+            - text: 误差；误差随高程、起伏和站格高差变化；相近高程站对的差值误差
+          - cell "可用于条件特征、分层采样和诊断；不能把DEM边缘直接当湿延迟边缘标签":
+            - text: 可用于条件特征、分层采样和诊断；
+            - strong: 不能把DEM边缘直接当湿延迟边缘标签
+        - row "天气突变 分开定义1/3/6 h快速增湿/减湿、极端湿状态、强空间湿梯度及观测站集合上的湿峰 增量RMSE、峰值幅度误差、同期重建滞后；事件内站对差值；事件条件下的概率诊断 比较当前插值、M0，以及同信息的 粗场保持基线。可用B事件作训练采样，但不能把C/D事后事件标签送入输入":
+          - cell "天气突变":
+            - strong: 天气突变
+          - cell "分开定义1/3/6 h快速增湿/减湿、极端湿状态、强空间湿梯度及观测站集合上的湿峰"
+          - cell "增量RMSE、峰值幅度误差、同期重建滞后；事件内站对差值；事件条件下的概率诊断"
+          - cell "比较当前插值、M0，以及同信息的 粗场保持基线。可用B事件作训练采样，但不能把C/D事后事件标签送入输入":
+            - text: 比较当前插值、M0，以及同信息的
+            - math:
+              - generic: t
+              - generic: −
+              - generic: "6"
+            - generic: t −
+            - generic: "6"
+            - text: 粗场保持基线。可用B事件作训练采样，但不能把C/D事后事件标签送入输入
+    - button "复制表格":
+    - button "展开表格":
+    - heading "1. 稀疏化测试的固定实施方式" [level=3]
+    - paragraph: 对A174个物理站生成三个固定、嵌套的删站名单，保留数明确为：
+    - list:
+      - listitem: 75%：131站；
+      - listitem: 50%：87站；
+      - listitem: 25%：44站。
+    - paragraph: 名单按预登记随机种子和静态区域分层生成，跨模型、跨patch、跨整个天气事件保持一致。另固定三个300 km空间缺口，位置仅由训练期站网几何选定；仅1站测试可固定北、中、南三个代表站，每次只保留其中一个。
+    - paragraph: 需要区分两条压力测试：
+    - list:
+      - strong: 当前失联
+      - text: ：仅删除
+      - math:
+        - generic: t
+      - generic: t
+      - text: 的对应输入，历史三帧保留。
+      - strong: 持续失联
+      - text: ：四帧使用相同删站名单。
+    - paragraph: 删站后必须重新构造粗场、逐变量mask、站token、最近距离和邻站数。若独立ERA5辅助仍保留，应明确称为“无GNSS的辅助条件重建”，而不是无条件生成。
+    - paragraph: "**B/C/D标签及评价人口固定。**有限预测即使位于支持域外也要计分；无法输出的案例报告失败率，不从总体消失。工程比较可预先统一规定训练期气候场作为失败回退，并另报“含统一回退的全案例RMSE”，不能为某个模型临时选择有利回退。"
+    - heading "2. 地形分组的具体计算" [level=3]
+    - paragraph: 建议由原始高分DEM先计算，再聚合到25 km格网：
+    - math:
+      - generic: r
+      - generic: e
+      - generic: l
+      - generic: i
+      - generic: e
+      - generic: f
+      - generic: =
+      - generic: P
+      - generic: "95"
+      - generic: (
+      - generic: H
+      - generic: )
+      - generic: −
+      - generic: P
+      - generic: "5"
+      - generic: (
+      - generic: H
+      - generic: )
+      - generic: ","
+      - generic: Δ
+      - generic: H
+      - generic: i
+      - generic: =
+      - generic: H
+      - generic: i
+      - generic: −
+      - generic: Interp
+      - generic: ⁡
+      - generic: (
+      - generic: H
+      - generic: "25"
+      - generic: )
+      - generic: i
+      - generic: .
+    - generic: relief
+    - text: =
+    - text: P
+    - generic: "95"
+    - text: (H) −
+    - text: P
+    - generic: "5"
+    - text: (H), Δ
+    - text: H
+    - generic: i
+    - text: =
+    - text: H
+    - generic: i
+    - text: −
+    - generic: Interp
+    - text: (
+    - text: H
+    - generic: "25"
+    - text: )
+    - generic: i
+    - text: .
+    - paragraph:
+      - text: 坡度保留中位数和P90；坡向采用坡度加权的
+      - math:
+        - generic: sin
+        - generic: ⁡
+        - generic: /
+        - generic: cos
+        - generic: ⁡
+      - generic: sin / cos
+      - text: 汇总，平地标记为无有效坡向。这里的
+      - math:
+        - generic: Δ
+        - generic: H
+        - generic: i
+      - text: Δ
+      - text: H
+      - generic: i
+      - text: 是
+      - strong: 高程代表性差异
+      - text: ，不能直接称为DEM或GNSS测量误差。
+    - paragraph:
+      - text: 固定3000 m归算可做一个廉价敏感性诊断：仅对插值基线，在训练B空间交叉验证中比较2000/3000/4000 m三个尺度，源站归算和目标恢复必须同步改变。这些数值只是敏感性探针；
+      - strong: 不能只修改已训练网络的输出反变换，也不能用C/D选一个“最优高度尺度”。
+    - heading "3. 天气事件的默认定义" [level=3]
+    - paragraph: 阈值按预定300 km区域、季节和高程带计算；资料不足时按预定规则合并到600 km父区，不能看结果后临时调整。
+    - list:
+      - text: 时间增量：
+      - math:
+        - generic: Δ
+        - generic: h
+        - generic: "y"
+        - generic: i
+        - generic: (
+        - generic: t
+        - generic: )
+        - generic: =
+        - generic: "y"
+        - generic: i
+        - generic: (
+        - generic: t
+        - generic: )
+        - generic: −
+        - generic: "y"
+        - generic: i
+        - generic: (
+        - generic: t
+        - generic: −
+        - generic: h
+        - generic: )
+        - generic: ","
+        - generic: h
+        - generic: =
+        - generic: "1"
+        - generic: ","
+        - generic: "3"
+        - generic: ","
+        - generic: "6"
+        - generic: h
+        - generic: .
+      - text: Δ
+      - generic: h
+      - text: "y"
+      - generic: i
+      - text: (t) =
+      - text: "y"
+      - generic: i
+      - text: (t) −
+      - text: "y"
+      - generic: i
+      - text: (t −
+      - generic: h), h =
+      - text: 1, 3, 6
+      - text: h.
+      - text: 分别用训练期正、负增量尾部95%分位数定义快速增湿、减湿。两端必须有真实有效标签，不能靠时间插值制造事件。
+      - listitem: 极端湿状态：超过对应训练分层的ZWD P95。
+      - text: 强空间湿梯度：同期站对的
+      - math:
+        - generic: ∣
+        - generic: Δ
+        - generic: Z
+        - generic: "0"
+        - generic: ∣
+        - generic: /
+        - generic: d
+      - text: ∣Δ
+      - text: Z
+      - generic: "0"
+      - text: ∣/d
+      - text: 超过训练期相同距离箱阈值。没有额外气象证据时，应称“强湿梯度”，不直接认定为锋面。
+      - listitem: 湿峰：在密集组内超过湿状态阈值，并在归算场上高于至少两个近邻。峰位评价限于同一观测站集合，不能把插值图上的峰位置当真实峰位置。
+    - paragraph:
+      - text: 同区域超阈值间隔≤6 h的记录合并，前后各扩12 h，重叠窗口再次合并；相邻区域同期过程共同分组。bootstrap抽取
+      - strong: 完整天气过程和物理站组
+      - text: ，不是逐小时抽样。
+    - paragraph:
+      - math:
+        - generic: τ
+        - generic: =
+        - generic: "0"
+      - generic: τ =
+      - generic: "0"
+      - text: 同期重建的峰值时间差属于
+      - strong: 重建滞后或提前偏移
+      - text: ，不是预报提前量；高ZWD或快速增湿也不能自动解释为降雨。
+    - paragraph: “山区×稀疏×天气突变”应单列。可预登记：不足5个独立站组或20个独立过程时只给描述性结果和案例，不作稳定优劣判断；这些数量是报告门槛，不是统计充分性的保证。
+    - separator
+    - heading "二、先明确四类证据，避免图像指标越权" [level=2]
+    - table:
+      - rowgroup:
+        - row "证据类别 本项目中的对象 可以支持什么 不能支持什么":
+          - columnheader "证据类别"
+          - columnheader "本项目中的对象"
+          - columnheader "可以支持什么"
+          - columnheader "不能支持什么"
+      - rowgroup:
+        - row "物理观测主证据 C站2019、锁定后D站2020真实地表ZWD 未见站精度、局地差值、事件响应 自动推断整个陆地每个格点的真实误差":
+          - cell "物理观测主证据":
+            - strong: 物理观测主证据
+          - cell "C站2019、锁定后D站2020真实地表ZWD"
+          - cell "未见站精度、局地差值、事件响应"
+          - cell "自动推断整个陆地每个格点的真实误差"
+        - row "参考图一致性 A+B构建的IDW/kriging分析图 与指定分析方法在指定尺度上一致 独立真实细场精度":
+          - cell "参考图一致性":
+            - strong: 参考图一致性
+          - cell "A+B构建的IDW/kriging分析图"
+          - cell "与指定分析方法在指定尺度上一致"
+          - cell "独立真实细场精度"
+        - row "空间统计合理性 谱、变差函数、方向性、增量分布 能量和空间结构是否合理 湿峰位置正确、事件配对正确":
+          - cell "空间统计合理性":
+            - strong: 空间统计合理性
+          - cell "谱、变差函数、方向性、增量分布"
+          - cell "能量和空间结构是否合理"
+          - cell "湿峰位置正确、事件配对正确"
+        - row "生成分布校准 生成成员在独立站及站组上的分布 边缘覆盖、联合依赖、概率技巧 无观测区域的完整后验已经被验证":
+          - cell "生成分布校准":
+            - strong: 生成分布校准
+          - cell "生成成员在独立站及站组上的分布"
+          - cell "边缘覆盖、联合依赖、概率技巧"
+          - cell "无观测区域的完整后验已经被验证"
+    - button "复制表格":
+    - button "展开表格":
+    - paragraph: 不要把四类指标加权成一个“综合精度分”。主排序仍由预登记的独立站RMSE决定；细尺度和概率结论另设证据条件。
+    - heading "可以是单通道张量，但不是完全去地形的图像" [level=3]:
+      - math:
+        - generic: Z
+        - generic: "0"
+      - text: Z
+      - generic: "0"
+      - text: 可以是单通道张量，但不是完全去地形的图像
+    - paragraph:
+      - text: 令地表标签为
+      - math:
+        - generic: "y"
+        - generic: i
+      - text: "y"
+      - generic: i
+      - text: ，则
+    - math:
+      - generic: z
+      - generic: i
+      - generic: =
+      - generic: Z
+      - generic: "0"
+      - generic: ","
+      - generic: i
+      - generic: =
+      - generic: "y"
+      - generic: i
+      - generic: e
+      - generic: H
+      - generic: i
+      - generic: /
+      - generic: H
+      - generic: s
+      - generic: ","
+      - generic: H
+      - generic: s
+      - generic: =
+      - generic: "3000"
+      - generic: m
+      - generic: ","
+    - text: z
+    - generic: i
+    - text: =
+    - text: Z
+    - generic: 0,i
+    - text: =
+    - text: "y"
+    - generic: i
+    - text: e
+    - text: H
+    - generic: i
+    - text: /
+    - text: H
+    - generic: s
+    - text: ","
+    - text: H
+    - generic: s
+    - text: =
+    - text: "3000"
+    - text: m,
+    - math:
+      - generic: "y"
+      - generic: ^
+      - generic: i
+      - generic: =
+      - generic: e
+      - generic: −
+      - generic: H
+      - generic: i
+      - generic: /
+      - generic: H
+      - generic: s
+      - generic: H
+      - generic: i
+      - generic: ⁣
+      - generic: "["
+      - generic: Blend
+      - generic: ⁡
+      - generic: (
+      - generic: Z
+      - generic: ^
+      - generic: "0"
+      - generic: )
+      - generic: "]"
+      - generic: .
+    - generic: "y"
+    - text: ^
+    - generic: i
+    - text: =
+    - text: e
+    - text: −
+    - text: H
+    - generic: i
+    - text: /
+    - text: H
+    - generic: s
+    - text: H
+    - generic: i
+    - generic: "["
+    - generic: Blend
+    - text: (
+    - generic: Z
+    - text: ^
+    - generic: "0"
+    - text: )
+    - generic: "]"
+    - text: .
+    - paragraph: 这个表示适合卷积、频域分析和场生成。但固定指数尺度隐含了对垂直湿折射率分布的近似，不能保证消除真实地形、季节和湿度依赖。
+    - paragraph: 还存在一个直接的损失差异：
+    - math:
+      - generic: (
+      - generic: z
+      - generic: ^
+      - generic: i
+      - generic: −
+      - generic: z
+      - generic: i
+      - generic: )
+      - generic: "2"
+      - generic: =
+      - generic: e
+      - generic: "2"
+      - generic: H
+      - generic: i
+      - generic: /
+      - generic: H
+      - generic: s
+      - generic: (
+      - generic: "y"
+      - generic: ^
+      - generic: i
+      - generic: −
+      - generic: "y"
+      - generic: i
+      - generic: )
+      - generic: "2"
+      - generic: .
+    - text: (
+    - generic: z
+    - text: ^
+    - generic: i
+    - text: −
+    - text: z
+    - generic: i
+    - text: )
+    - generic: "2"
+    - text: =
+    - text: e
+    - text: "2"
+    - text: H
+    - generic: i
+    - text: /
+    - text: H
+    - generic: s
+    - text: (
+    - generic: "y"
+    - text: ^
+    - generic: i
+    - text: −
+    - text: "y"
+    - generic: i
+    - text: )
+    - generic: "2"
+    - text: .
+    - paragraph:
+      - text: 因此，等权优化
+      - math:
+        - generic: Z
+        - generic: "0"
+      - text: Z
+      - generic: "0"
+      - text: 图像MSE，会改变不同高程站的地表误差权重。
+      - strong: 主监督和主精度仍应恢复到地表mm。
+      - math:
+        - generic: Z
+        - generic: "0"
+      - text: Z
+      - generic: "0"
+      - text: 指标用于结构分析，并与高程分层同时报告。
+    - paragraph: 归算往返能恢复原值，只证明数值实现一致，不证明3000 m符合真实大气剖面。地表图中由DEM反变换产生的细纹理，也不能自动计为水汽细尺度重建收益。
+    - separator
+    - heading "三、reference怎样施工，才能避免循环评价" [level=2]
+    - paragraph: 沿用已固定的A174、B511、C110、D110及密集组划分，不重新分站。
+    - table:
+      - rowgroup:
+        - row "阶段 reference构建站 真正外部检验站 必须锁住的限制":
+          - columnheader "阶段"
+          - columnheader "reference构建站"
+          - columnheader "真正外部检验站"
+          - columnheader "必须锁住的限制"
+      - rowgroup:
+        - row "2016–2018训练teacher 当期A+B B内部空间分组交叉验证 C/D观测不进入teacher、归一化、变差参数或损失":
+          - cell "2016–2018训练teacher"
+          - cell "当期A+B"
+          - cell "B内部空间分组交叉验证"
+          - cell "C/D观测不进入teacher、归一化、变差参数或损失"
+        - row "2019开发reference 当期A+B C110：58密集、52分散 B2019只供离线reference，不进入模型条件或梯度":
+          - cell "2019开发reference"
+          - cell "当期A+B"
+          - cell "C110：58密集、52分散"
+          - cell "B2019只供离线reference，不进入模型条件或梯度"
+        - row "2020锁定后回顾reference 当期A+B D110：57密集、53分散 沿用锁定规则，不能因回顾结果重调":
+          - cell "2020锁定后回顾reference"
+          - cell "当期A+B"
+          - cell "D110：57密集、53分散"
+          - cell "沿用锁定规则，不能因回顾结果重调"
+    - button "复制表格":
+    - button "展开表格":
+    - paragraph: "**“全部站都可以按同一公式归算”是数学上成立的；“全部站合并生成训练图”不成立。**若C/D参与建图，再用这些站的拟合误差认证图像，就是循环评价。全站事后分析图可以另列，但不能回流开发或冒充独立精度。"
+    - paragraph: 输入支持mask、最近距离和邻站数只能由实际可见A生成。teacher质量mask只用于损失或参考图评价，不能变成推理时不可获得的条件通道。
+    - heading "训练期建立reference的可信尺度" [level=3]
+    - paragraph: 建议一个有限方案：
+    - list:
+      - listitem: 在B内做5折空间分组验证，密集组和物理别名保持完整。
+      - text: 每折用
+      - math:
+        - generic: A
+        - generic: +
+        - generic: B
+        - generic: ∖
+        - generic: B
+        - generic: f
+      - generic: A +
+      - generic: B ∖
+      - text: B
+      - generic: f
+      - text: 建图，在隐藏的
+      - math:
+        - generic: B
+        - generic: f
+      - text: B
+      - generic: f
+      - text: 评分。
+      - listitem: 趋势、协方差、nugget等参数在折内拟合，不能先用全部B拟合后再假装留出。
+      - text: 对可用B增加100%/50%两种空间分层保留水平；这里检验的是
+      - strong: reference密度敏感性
+      - text: ，不同于前述A输入退化测试。
+      - listitem: 比较固定IDW与一个简单局地kriging，不同时搜索大量核函数。
+      - listitem: 在隐藏站检验地表RMSE、站对差值、kriging区间覆盖及不同平滑尺度的增量价值。
+    - paragraph:
+      - text: 空间、时间依赖会让随机逐行交叉验证低估误差；阻断大小也应符合“站网内部插值”任务，不能无意变成大区域外推。
+      - 'link "biom.uni-freiburg.de: Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure, https://www.biom.uni-freiburg.de/mitarbeiter/dormann/roberts-et-al-2017-ecography.pdf/at_download/file?utm_source=chatgpt.com"':
+        - /url: https://www.biom.uni-freiburg.de/mitarbeiter/dormann/roberts-et-al-2017-ecography.pdf/at_download/file?utm_source=chatgpt.com
+        - generic: biom.uni-freiburg.de
+    - paragraph: "**IDW与kriging一致不等于两者正确；二者差异也不是可信区间。**它们只是方法敏感性。站对距离箱也不是傅里叶波长，不能把25–50 km站对结果直接解释成“25 km有效分辨率”。"
+    - heading "确定性kriging teacher的风险需要准确表述" [level=3]
+    - paragraph: 两个情况不同：
+    - list:
+      - text: 只由A生成的确定性图
+      - math:
+        - generic: T
+        - generic: (
+        - generic: A
+        - generic: )
+      - generic: T(A)
+      - text: ，在完整A条件下是确定目标。
+      - text: 由A+B生成的图
+      - math:
+        - generic: T
+        - generic: (
+        - generic: A
+        - generic: ","
+        - generic: B
+        - generic: )
+      - generic: T(A, B)
+      - text: ，在模型只看A时仍有条件变化，因为B未知。
+    - paragraph:
+      - text: 所以不能说“确定性teacher必然让Diffusion没有随机性”。更准确的是：它学习的是
+      - strong: 插值分析的条件分布
+      - text: 。
+    - paragraph: 在假设正确的地统计模型下，
+    - math:
+      - generic: Var
+      - generic: ⁡
+      - generic: (
+      - generic: Z
+      - generic: ∣
+      - generic: A
+      - generic: )
+      - generic: =
+      - generic: Var
+      - generic: ⁡
+      - generic: ⁣
+      - generic: (
+      - generic: E
+      - generic: "["
+      - generic: Z
+      - generic: ∣
+      - generic: A
+      - generic: ","
+      - generic: B
+      - generic: "]"
+      - generic: ∣
+      - generic: A
+      - generic: )
+      - generic: +
+      - generic: E
+      - generic: ⁣
+      - generic: "["
+      - generic: Var
+      - generic: ⁡
+      - generic: (
+      - generic: Z
+      - generic: ∣
+      - generic: A
+      - generic: ","
+      - generic: B
+      - generic: )
+      - generic: ∣
+      - generic: A
+      - generic: "]"
+      - generic: .
+    - generic: Var
+    - text: (Z ∣
+    - generic: A) =
+    - generic: Var
+    - generic: (E[Z ∣ A, B] ∣ A)
+    - text: +
+    - text: E
+    - text: "["
+    - generic: Var
+    - text: (Z ∣ A, B) ∣ A]
+    - text: .
+    - paragraph: 只学习kriging均值图，可能遗漏第二项代表的站间未知变化。条件模拟
+    - math:
+      - generic: Z
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: ∼
+      - generic: "N"
+      - generic: (
+      - generic: m
+      - generic: K
+      - generic: ","
+      - generic: Σ
+      - generic: K
+      - generic: )
+    - text: Z
+    - generic: (k)
+    - text: ∼
+    - text: N(
+    - text: m
+    - generic: K
+    - text: ","
+    - text: Σ
+    - generic: K
+    - text: )
+    - paragraph:
+      - text: 可以补入
+      - strong: 协方差模型所假设的变化
+      - text: ，适合先验、合成检验或明确标记的先验蒸馏；它仍不是独立观测真值。kriging方差也不自动包含协方差参数误差和模型失配。
+      - 'link "cambridge.org: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F73CA4908E19CFBAA2026ED1F1E17304/S0001867800039379a.pdf/the-intrinsic-random-functions-and-their-applications.pdf, https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F73CA4908E19CFBAA2026ED1F1E17304/S0001867800039379a.pdf/the-intrinsic-random-functions-and-their-applications.pdf?utm_source=chatgpt.com, 另外 1 个来源"':
+        - /url: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F73CA4908E19CFBAA2026ED1F1E17304/S0001867800039379a.pdf/the-intrinsic-random-functions-and-their-applications.pdf?utm_source=chatgpt.com
+        - generic: cambridge.org
+        - generic: "+1"
+    - paragraph: 强teacher约束可能让模型继承插值器的平滑与外推偏差，但teacher不是严格的数学性能上限：模型利用额外气象和历史信息后，可能在独立站优于teacher。必须通过C/D检验这种改善，而不能由reference指标自证。
+    - separator
+    - heading "四、图像指标：推荐与不推荐" [level=2]
+    - table:
+      - rowgroup:
+        - row "指标 建议定位 本项目需要注意的边界":
+          - columnheader "指标"
+          - columnheader "建议定位"
+          - columnheader "本项目需要注意的边界"
+      - rowgroup:
+        - row "MAE、RMSE、Bias 地表独立站主指标；格网版本另标reference一致性 站宏与所有站时刻混合RMSE分开； 误差不能直接冒充地表mm误差":
+          - cell "MAE、RMSE、Bias":
+            - strong: MAE、RMSE、Bias
+          - cell "地表独立站主指标；格网版本另标reference一致性"
+          - cell "站宏与所有站时刻混合RMSE分开； 误差不能直接冒充地表mm误差":
+            - text: 站宏与所有站时刻混合RMSE分开；
+            - math:
+              - generic: Z
+              - generic: "0"
+            - text: Z
+            - generic: "0"
+            - text: 误差不能直接冒充地表mm误差
+        - row "PSNR 最多作为reference附表 固定动态范围后是RMSE的单调变换，不增加物理证据":
+          - cell "PSNR":
+            - strong: PSNR
+          - cell "最多作为reference附表"
+          - cell "固定动态范围后是RMSE的单调变换，不增加物理证据"
+        - row "SSIM 少量结构诊断 固定动态范围、物理窗口和共同mask；高SSIM不保证小偏差":
+          - cell "SSIM":
+            - strong: SSIM
+          - cell "少量结构诊断"
+          - cell "固定动态范围、物理窗口和共同mask；高SSIM不保证小偏差"
+        - row "MS-SSIM 首轮暂不采用 24×24不适合照搬标准五尺度；放大图像不会创造可验证尺度":
+          - cell "MS-SSIM":
+            - strong: MS-SSIM
+          - cell "首轮暂不采用"
+          - cell "24×24不适合照搬标准五尺度；放大图像不会创造可验证尺度"
+        - row "梯度、边缘、拉普拉斯 在可信尺度作诊断或一个弱辅助项 梯度比较向量而非只有模长；IDW邻域切换也会产生伪边缘":
+          - cell "梯度、边缘、拉普拉斯":
+            - strong: 梯度、边缘、拉普拉斯
+          - cell "在可信尺度作诊断或一个弱辅助项"
+          - cell "梯度比较向量而非只有模长；IDW邻域切换也会产生伪边缘"
+        - row "SAM 不采用 单通道正值像元的光谱角恒为0；全图展平后的角度又会忽略比例误差":
+          - cell "SAM":
+            - strong: SAM
+          - cell "不采用"
+          - cell "单通道正值像元的光谱角恒为0；全图展平后的角度又会忽略比例误差"
+        - row "LPIPS、DISTS 不作主精度或默认loss 自然图像感知标定没有自动迁移为湿延迟物理标定":
+          - cell "LPIPS、DISTS":
+            - strong: LPIPS、DISTS
+          - cell "不作主精度或默认loss"
+          - cell "自然图像感知标定没有自动迁移为湿延迟物理标定"
+        - row "FID、KID 首轮省略 不检查同期条件配对；样本量和时空相关性也影响估计":
+          - cell "FID、KID":
+            - strong: FID、KID
+          - cell "首轮省略"
+          - cell "不检查同期条件配对；样本量和时空相关性也影响估计"
+        - row "NIQE 不采用 “无参考”仍依赖自然照片统计先验，不能认证大气场真实性":
+          - cell "NIQE":
+            - strong: NIQE
+          - cell "不采用"
+          - cell "“无参考”仍依赖自然照片统计先验，不能认证大气场真实性"
+    - button "复制表格":
+    - button "展开表格":
+    - heading "PSNR、SSIM的具体规则" [level=3]
+    - math:
+      - generic: P
+      - generic: S
+      - generic: "N"
+      - generic: R
+      - generic: =
+      - generic: "20"
+      - generic: log
+      - generic: ⁡
+      - generic: "10"
+      - generic: L
+      - generic: R
+      - generic: M
+      - generic: S
+      - generic: E
+      - generic: .
+    - generic: PSNR
+    - text: =
+    - text: "20"
+    - generic: log
+    - generic: "10"
+    - generic: RMSE
+    - generic: L
+    - text: .
+    - paragraph:
+      - math:
+        - generic: L
+      - generic: L
+      - text: 必须在训练期固定并记录。不得每幅图分别min–max、分别标准化或裁掉超出范围的预测。逐图PSNR再平均还会改变聚合权重，不能简单声称与汇总RMSE排序完全一致。
+    - paragraph: SSIM原始形式为
+    - math:
+      - generic: S
+      - generic: S
+      - generic: I
+      - generic: M
+      - generic: =
+      - generic: (
+      - generic: "2"
+      - generic: μ
+      - generic: x
+      - generic: μ
+      - generic: "y"
+      - generic: +
+      - generic: C
+      - generic: "1"
+      - generic: )
+      - generic: (
+      - generic: "2"
+      - generic: σ
+      - generic: x
+      - generic: "y"
+      - generic: +
+      - generic: C
+      - generic: "2"
+      - generic: )
+      - generic: (
+      - generic: μ
+      - generic: x
+      - generic: "2"
+      - generic: +
+      - generic: μ
+      - generic: "y"
+      - generic: "2"
+      - generic: +
+      - generic: C
+      - generic: "1"
+      - generic: )
+      - generic: (
+      - generic: σ
+      - generic: x
+      - generic: "2"
+      - generic: +
+      - generic: σ
+      - generic: "y"
+      - generic: "2"
+      - generic: +
+      - generic: C
+      - generic: "2"
+      - generic: )
+      - generic: ","
+      - generic: C
+      - generic: i
+      - generic: =
+      - generic: (
+      - generic: K
+      - generic: i
+      - generic: L
+      - generic: )
+      - generic: "2"
+      - generic: .
+    - generic: SSIM
+    - text: =
+    - text: (
+    - text: μ
+    - generic: x
+    - generic: "2"
+    - text: +
+    - text: μ
+    - generic: "y"
+    - generic: "2"
+    - text: +
+    - text: C
+    - generic: "1"
+    - text: )(
+    - text: σ
+    - generic: x
+    - generic: "2"
+    - text: +
+    - text: σ
+    - generic: "y"
+    - generic: "2"
+    - text: +
+    - text: C
+    - generic: "2"
+    - text: )
+    - text: (2
+    - text: μ
+    - generic: x
+    - text: μ
+    - generic: "y"
+    - text: +
+    - text: C
+    - generic: "1"
+    - text: )(2
+    - text: σ
+    - generic: xy
+    - text: +
+    - text: C
+    - generic: "2"
+    - text: )
+    - text: ","
+    - text: C
+    - generic: i
+    - text: =
+    - text: (
+    - text: K
+    - generic: i
+    - text: L
+    - text: )
+    - generic: "2"
+    - text: .
+    - paragraph:
+      - text: 原论文使用11×11高斯窗、标准差1.5像元。用于25 km格网，相当于约275 km窗口、37.5 km高斯标准差，显然不能默认称为25 km细节检验。MS-SSIM的尺度组合也来自视觉评价设计。
+      - 'link "cns.nyu.edu: https://www.cns.nyu.edu/pub/lcv/wang03-reprint.pdf, https://www.cns.nyu.edu/pub/lcv/wang03-reprint.pdf?utm_source=chatgpt.com, 另外 1 个来源"':
+        - /url: https://www.cns.nyu.edu/pub/lcv/wang03-reprint.pdf?utm_source=chatgpt.com
+        - generic: cns.nyu.edu
+        - generic: "+1"
+    - paragraph: 一个公式反例：局部均值100 mm的图整体增加5 mm，结构完全不变，SSIM亮度项仍约为0.9988；但系统偏差确实有5 mm。
+    - paragraph: 掩膜处理采用最简单可复核的方式：**只在共同完整有效窗口计算，并报告窗口覆盖率。**海洋、无效格和缺测不能补零后当正常图像；若采用mask归一局部统计，要标为修改版SSIM。
+    - paragraph: 梯度和拉普拉斯分别具有mm/km、mm/km²单位。先固定空间尺度再比较，不能把像素差分直接当物理梯度。
+    - heading "为什么不以感知分数作主目标" [level=3]
+    - paragraph:
+      - text: LPIPS依据深特征与人类视觉相似判断建立；DISTS明确设计了对纹理重采样及部分几何变化的容忍性。湿峰发生位置变化却可能正是本项目需要惩罚的错误。复制单通道为RGB不能解决这个问题。
+      - 'link "richzhang.github.io: The Unreasonable Effectiveness of Deep Features as a Perceptual Metric, https://richzhang.github.io/PerceptualSimilarity/?utm_source=chatgpt.com, 另外 1 个来源"':
+        - /url: https://richzhang.github.io/PerceptualSimilarity/?utm_source=chatgpt.com
+        - generic: richzhang.github.io
+        - generic: "+1"
+    - paragraph:
+      - text: FID/KID比较图像集合的特征分布。把所有预测图随机分配到错误日期，图像集合不变，FID/KID可以完全不变，同期重建却已失效。NIQE则依赖自然照片统计。这些指标不应决定本项目精度排序。
+      - 'link "proceedings.neurips.cc: GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium, https://proceedings.neurips.cc/paper/2017/hash/8a1d694707eb0fefe65871369074926d-Abstract.html?utm_source=chatgpt.com, 另外 2 个来源"':
+        - /url: https://proceedings.neurips.cc/paper/2017/hash/8a1d694707eb0fefe65871369074926d-Abstract.html?utm_source=chatgpt.com
+        - generic: proceedings.neurips.cc
+        - generic: "+2"
+    - separator
+    - heading "五、频谱应该检验什么，不能检验什么" [level=2]
+    - heading "1. 至少区分能量与位置" [level=3]
+    - paragraph:
+      - text: 对相同预处理后的场，令
+      - math:
+        - generic: Z
+        - generic: =
+        - generic: F
+        - generic: z
+      - generic: Z =
+      - generic: Fz
+      - text: 、
+      - math:
+        - generic: Z
+        - generic: ^
+        - generic: =
+        - generic: F
+        - generic: z
+        - generic: ^
+      - generic: Z
+      - text: ^
+      - text: =
+      - text: F
+      - generic: z
+      - text: ^
+      - text: ：
+    - math:
+      - generic: P
+      - generic: z
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: =
+      - generic: E
+      - generic: ∣
+      - generic: Z
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: ∣
+      - generic: "2"
+      - generic: ","
+      - generic: P
+      - generic: e
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: =
+      - generic: E
+      - generic: ∣
+      - generic: Z
+      - generic: ^
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: −
+      - generic: Z
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: ∣
+      - generic: "2"
+      - generic: .
+    - text: P
+    - generic: z
+    - text: (k) =
+    - text: E∣Z(k)
+    - text: ∣
+    - generic: "2"
+    - text: ","
+    - text: P
+    - generic: e
+    - text: (k) =
+    - text: E∣
+    - generic: Z
+    - text: ^
+    - text: (k) −
+    - text: Z(k)
+    - text: ∣
+    - generic: "2"
+    - text: .
+    - list:
+      - listitem: 二维PSD保留方向信息。
+      - listitem: 径向PSD便于汇总，但会掩盖方向性。
+      - listitem: 方向谱用于检查不同方向的平滑或伪纹理。
+      - listitem: 频带积分能量反映某个尺度范围的方差贡献。
+    - paragraph: "**径向平均PSD与按圆环积分的能谱不是同一个量，斜率不能混用。**频率用cycles/km、波长用km；频带积分应能回到相应方差单位。"
+    - paragraph: 最直接的反例是空间平移：
+    - math:
+      - generic: z
+      - generic: ^
+      - generic: (
+      - generic: x
+      - generic: )
+      - generic: =
+      - generic: z
+      - generic: (
+      - generic: x
+      - generic: −
+      - generic: δ
+      - generic: )
+      - generic: ⟹
+      - generic: Z
+      - generic: ^
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: =
+      - generic: e
+      - generic: −
+      - generic: i
+      - generic: "2"
+      - generic: π
+      - generic: k
+      - generic: ⋅
+      - generic: δ
+      - generic: Z
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: .
+    - generic: z
+    - text: ^
+    - text: (x) =
+    - generic: z(x −
+    - generic: δ) ⟹
+    - generic: Z
+    - text: ^
+    - text: (k) =
+    - text: e
+    - generic: −i2πk⋅δ
+    - text: Z(k).
+    - paragraph: 功率谱完全相同，湿峰位置却错了。随机化满足共轭对称的相位，也可以保留谱幅而破坏真实结构。
+    - paragraph: 因此，在reference确有支持的尺度上，应补充：
+    - math:
+      - generic: S
+      - generic: z
+      - generic: ^
+      - generic: z
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: =
+      - generic: E
+      - generic: "["
+      - generic: Z
+      - generic: ^
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: Z
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: ∗
+      - generic: "]"
+      - generic: ","
+    - text: S
+    - generic: z
+    - text: ^
+    - text: z
+    - text: (k) =
+    - text: E[
+    - generic: Z
+    - text: ^
+    - text: (k)Z(k
+    - text: )
+    - generic: ∗
+    - text: "],"
+    - math:
+      - generic: γ
+      - generic: "2"
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: =
+      - generic: ∣
+      - generic: S
+      - generic: z
+      - generic: ^
+      - generic: z
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: ∣
+      - generic: "2"
+      - generic: P
+      - generic: z
+      - generic: ^
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: P
+      - generic: z
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: ","
+      - generic: ϕ
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: =
+      - generic: arg
+      - generic: ⁡
+      - generic: S
+      - generic: z
+      - generic: ^
+      - generic: z
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: .
+    - text: γ
+    - generic: "2"
+    - text: (k) =
+    - text: P
+    - generic: z
+    - text: ^
+    - text: (k)
+    - text: P
+    - generic: z
+    - text: (k)
+    - text: ∣
+    - text: S
+    - generic: z
+    - text: ^
+    - text: z
+    - text: (k)
+    - text: ∣
+    - generic: "2"
+    - text: ", ϕ(k) ="
+    - generic: arg
+    - text: S
+    - generic: z
+    - text: ^
+    - text: z
+    - text: (k).
+    - paragraph: 这里有两个容易漏掉的问题：
+    - list:
+      - listitem: 用单次FFT直接计算“相干性”，非零频率会恒为1；必须先平均互谱、自谱，再取比值。
+      - listitem: 固定平移也可能保持相干性为1，只在交叉相位出现线性变化。因此相干性仍不能替代复数误差和相位诊断。
+    - heading "2. 借鉴海洋重建，但不照搬分辨率数字" [level=3]
+    - paragraph:
+      - text: 海洋高度计制图研究把发布格网投影到
+      - strong: 未参与制图的沿轨观测
+      - text: ，使用
+    - math:
+      - generic: "N"
+      - generic: S
+      - generic: R
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: =
+      - generic: P
+      - generic: z
+      - generic: ^
+      - generic: −
+      - generic: z
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: P
+      - generic: z
+      - generic: (
+      - generic: k
+      - generic: )
+    - generic: NSR
+    - text: (k) =
+    - text: P
+    - generic: z
+    - text: (k)
+    - text: P
+    - generic: z
+    - text: ^
+    - text: −z
+    - text: (k)
+    - paragraph:
+      - text: 评价不同尺度的误差。Ballarotta等使用过NSR=0.5的经验界限，并检验其他阈值；这不是普遍的物理分辨率标准。
+      - 'link "os.copernicus.org: OS - On the resolutions of ocean altimetry maps, https://os.copernicus.org/articles/15/1091/2019/os-15-1091-2019.html?utm_source=chatgpt.com"':
+        - /url: https://os.copernicus.org/articles/15/1091/2019/os-15-1091-2019.html?utm_source=chatgpt.com
+        - generic: os.copernicus.org
+    - paragraph: 本项目可借用“独立观测上的尺度误差”思路，但GNSS没有同样密集的规则轨迹。**先把C站插值成图，再计算其二维谱，仍会混入插值器的频响。**当前更可靠的是站对差值和局地梯度；若使用reference误差谱，应明确叫“相对reference的尺度一致性”。
+    - paragraph:
+      - text: OceanBench区分模拟全场真值实验与真实独立沿轨观测实验，也支持这种证据分层。IDW图不应被命名为模拟真值。
+      - 'link "proceedings.neurips.cc: https://proceedings.neurips.cc/paper_files/paper/2023/file/f6ccbf94fa57c2ae372ece91b537574d-Supplemental-Datasets_and_Benchmarks.pdf, https://proceedings.neurips.cc/paper_files/paper/2023/file/f6ccbf94fa57c2ae372ece91b537574d-Supplemental-Datasets_and_Benchmarks.pdf?utm_source=chatgpt.com"':
+        - /url: https://proceedings.neurips.cc/paper_files/paper/2023/file/f6ccbf94fa57c2ae372ece91b537574d-Supplemental-Datasets_and_Benchmarks.pdf?utm_source=chatgpt.com
+        - generic: proceedings.neurips.cc
+    - heading "3. 25 km与24×24的限制" [level=3]
+    - paragraph:
+      - text: 25 km采样的轴向Nyquist波长为50 km；600 km窗口基本波数间隔为
+      - math:
+        - generic: "1"
+        - generic: /
+        - generic: "600"
+        - generic: k
+        - generic: m
+        - generic: −
+        - generic: "1"
+      - text: 1/600
+      - generic: km
+      - generic: −1
+      - text: 。这只是采样上限，实际可解析尺度通常还受输入密度、误差、模型及插值算子限制。
+    - paragraph: 24×24的单patch低频模式很少，不能可靠拟合精细谱斜率。FFT角点的较高径向波数也不能被解释为所有方向都能解析约35 km结构。
+    - paragraph: 默认建议：
+    - list:
+      - listitem: 优先在较大拼接域的完整可信内窗计算；没有合适内窗时，汇总多个固定小窗并承认局限。
+      - listitem: 使用相同去均值/去趋势算子及taper，另报被移除的均值和趋势误差。
+      - listitem: 记录窗能量归一化，不能把加窗导致的能量减少当作平滑改善。
+      - listitem: 海岸和缺测mask会造成频域卷积混合；相同mask并不能完全消除偏差。
+      - listitem: 零填充可以让谱图更密，不能增加真实频率信息。
+    - heading "4. 总场、残差、ensemble mean和成员必须分别看" [level=3]
+    - paragraph: 在线性预处理和FFT下：
+    - math:
+      - generic: "1"
+      - generic: K
+      - generic: ∑
+      - generic: k
+      - generic: ∣
+      - generic: F
+      - generic: X
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: ∣
+      - generic: "2"
+      - generic: =
+      - generic: ∣
+      - generic: F
+      - generic: X
+      - generic: ˉ
+      - generic: ∣
+      - generic: "2"
+      - generic: +
+      - generic: "1"
+      - generic: K
+      - generic: ∑
+      - generic: k
+      - generic: ∣
+      - generic: F
+      - generic: (
+      - generic: X
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: −
+      - generic: X
+      - generic: ˉ
+      - generic: )
+      - generic: ∣
+      - generic: "2"
+      - generic: .
+    - generic: K
+    - generic: "1"
+    - generic: k
+    - generic: ∑
+    - text: ∣F
+    - text: X
+    - generic: (k)
+    - text: ∣
+    - generic: "2"
+    - text: =
+    - text: ∣F
+    - generic: X
+    - text: ˉ
+    - text: ∣
+    - generic: "2"
+    - text: +
+    - generic: K
+    - generic: "1"
+    - generic: k
+    - generic: ∑
+    - text: ∣F(
+    - text: X
+    - generic: (k)
+    - text: −
+    - generic: X
+    - text: ˉ
+    - text: )
+    - text: ∣
+    - generic: "2"
+    - text: .
+    - paragraph: 随机细节会在ensemble mean中相消。因此应分别报告：
+    - list:
+      - listitem: ensemble mean的站点精度；
+      - listitem: 单成员总场谱的均值与分位带；
+      - listitem: 新增残差的谱；
+      - listitem: 有可信reference时的配对复数误差。
+    - paragraph:
+      - text: CorrDiff确实采用均值回归加残差扩散，但其目标是高分辨率WRF场；论文也承认概率校准仍有不足。谱恢复、点精度和校准不能互相替代。
+      - 'link "nature.com: Residual corrective diffusion modeling for km-scale atmospheric downscaling, https://www.nature.com/articles/s43247-025-02042-5?utm_source=chatgpt.com, 另外 1 个来源"':
+        - /url: https://www.nature.com/articles/s43247-025-02042-5?utm_source=chatgpt.com
+        - generic: nature.com
+        - generic: "+1"
+    - paragraph:
+      - text: RainFARM通过随机细尺度构造保持合理统计与可靠粗尺度信息，并不声称预测出每个真实细节的位置。你的100 km粗IDW不是面积平均，不能据此强制4×4块守恒或残差块均值为零。
+      - 'link "journals.ametsoc.org: RainFARM: Rainfall Downscaling by a Filtered Autoregressive Model, https://journals.ametsoc.org/view/journals/hydr/7/4/jhm517_1.xml?utm_source=chatgpt.com"':
+        - /url: https://journals.ametsoc.org/view/journals/hydr/7/4/jhm517_1.xml?utm_source=chatgpt.com
+        - generic: journals.ametsoc.org
+    - separator
+    - heading "六、半变异函数与独立站对：当前最值得做的空间证据" [level=2]
+    - paragraph: 无需先插值，在同一时刻、同一站对集合上计算：
+    - math:
+      - generic: γ
+      - generic: ^
+      - generic: (
+      - generic: h
+      - generic: ","
+      - generic: θ
+      - generic: )
+      - generic: =
+      - generic: "1"
+      - generic: "2"
+      - generic: ∣
+      - generic: P
+      - generic: h
+      - generic: ","
+      - generic: θ
+      - generic: ∣
+      - generic: ∑
+      - generic: (
+      - generic: i
+      - generic: ","
+      - generic: j
+      - generic: )
+      - generic: ∈
+      - generic: P
+      - generic: h
+      - generic: ","
+      - generic: θ
+      - generic: (
+      - generic: z
+      - generic: i
+      - generic: −
+      - generic: z
+      - generic: j
+      - generic: )
+      - generic: "2"
+      - generic: .
+    - generic: γ
+    - text: ^
+    - text: (h, θ) =
+    - text: 2∣
+    - text: P
+    - generic: h,θ
+    - text: ∣
+    - generic: "1"
+    - text: (i,j)∈
+    - text: P
+    - generic: h,θ
+    - generic: ∑
+    - text: (
+    - text: z
+    - generic: i
+    - text: −
+    - text: z
+    - generic: j
+    - text: )
+    - generic: "2"
+    - text: .
+    - paragraph: 更关键的是位置对应的差值误差：
+    - math:
+      - generic: E
+      - generic: Δ
+      - generic: (
+      - generic: h
+      - generic: ","
+      - generic: θ
+      - generic: )
+      - generic: =
+      - generic: "1"
+      - generic: ∣
+      - generic: P
+      - generic: h
+      - generic: ","
+      - generic: θ
+      - generic: ∣
+      - generic: ∑
+      - generic: "["
+      - generic: (
+      - generic: z
+      - generic: ^
+      - generic: i
+      - generic: −
+      - generic: z
+      - generic: ^
+      - generic: j
+      - generic: )
+      - generic: −
+      - generic: (
+      - generic: z
+      - generic: i
+      - generic: −
+      - generic: z
+      - generic: j
+      - generic: )
+      - generic: "]"
+      - generic: "2"
+      - generic: .
+    - text: E
+    - generic: Δ
+    - text: (h, θ) =
+    - text: ∣
+    - text: P
+    - generic: h,θ
+    - text: ∣
+    - generic: "1"
+    - text: ∑
+    - text: "[("
+    - generic: z
+    - text: ^
+    - generic: i
+    - text: −
+    - generic: z
+    - text: ^
+    - generic: j
+    - text: ) − (
+    - text: z
+    - generic: i
+    - text: −
+    - text: z
+    - generic: j
+    - text: )]
+    - generic: "2"
+    - text: .
+    - paragraph: 默认距离箱为0–25、25–50、50–100、100–200 km。方向角统一采用投影坐标约定；方向样本不足时不强行细分。先在密集组内汇总，再跨组平均，避免一个密集区域以大量相关站对主导结果。
+    - paragraph: 在相应平稳性条件下，二阶结构函数、协方差和谱满足
+    - math:
+      - generic: S
+      - generic: "2"
+      - generic: (
+      - generic: h
+      - generic: )
+      - generic: =
+      - generic: "2"
+      - generic: γ
+      - generic: (
+      - generic: h
+      - generic: )
+      - generic: =
+      - generic: "2"
+      - generic: "["
+      - generic: C
+      - generic: (
+      - generic: "0"
+      - generic: )
+      - generic: −
+      - generic: C
+      - generic: (
+      - generic: h
+      - generic: )
+      - generic: "]"
+      - generic: ","
+    - text: S
+    - generic: "2"
+    - text: (h) =
+    - generic: 2γ(h) =
+    - generic: 2[C(0) −
+    - generic: C(h)],
+    - math:
+      - generic: γ
+      - generic: (
+      - generic: h
+      - generic: )
+      - generic: =
+      - generic: ∫
+      - generic: "["
+      - generic: "1"
+      - generic: −
+      - generic: cos
+      - generic: ⁡
+      - generic: (
+      - generic: "2"
+      - generic: π
+      - generic: k
+      - generic: ⋅
+      - generic: h
+      - generic: )
+      - generic: "]"
+      - generic: P
+      - generic: (
+      - generic: k
+      - generic: )
+      - generic: d
+      - generic: k
+      - generic: .
+    - generic: γ(h) =
+    - generic: ∫[1 −
+    - generic: cos(2πk ⋅
+    - generic: h)]P(k) dk.
+    - paragraph:
+      - text: 这个关系有条件，不能反过来宣称整个西部
+      - math:
+        - generic: Z
+        - generic: "0"
+      - text: Z
+      - generic: "0"
+      - text: 已经平稳。趋势、季节和残留地形结构都应分层处理。地统计方法本身也依赖随机函数及协方差假设。
+      - 'link "cambridge.org: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F73CA4908E19CFBAA2026ED1F1E17304/S0001867800039379a.pdf/the-intrinsic-random-functions-and-their-applications.pdf, https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F73CA4908E19CFBAA2026ED1F1E17304/S0001867800039379a.pdf/the-intrinsic-random-functions-and-their-applications.pdf?utm_source=chatgpt.com"':
+        - /url: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F73CA4908E19CFBAA2026ED1F1E17304/S0001867800039379a.pdf/the-intrinsic-random-functions-and-their-applications.pdf?utm_source=chatgpt.com
+        - generic: cambridge.org
+    - paragraph:
+      - text: 短距离差异还包含观测误差。若噪声独立，增量平方会额外包含
+      - math:
+        - generic: τ
+        - generic: i
+        - generic: "2"
+        - generic: +
+        - generic: τ
+        - generic: j
+        - generic: "2"
+      - text: τ
+      - generic: i
+      - generic: "2"
+      - text: +
+      - text: τ
+      - generic: j
+      - generic: "2"
+      - text: ；相关噪声还涉及协方差项。不能把nugget全部解释成真实湿延迟小尺度能量。
+    - paragraph:
+      - strong: 推荐的细尺度证据链是：
+    - list:
+      - listitem: 未见站RMSE改善；
+      - text: 短距离
+      - math:
+        - generic: E
+        - generic: Δ
+      - text: E
+      - generic: Δ
+      - text: 稳定改善；
+      - listitem: 原场优于其固定低通/粗化版本；
+      - listitem: 改善不只来自地形反变换或整体偏差修正；
+      - listitem: 在独立天气过程及密集留出组上重复出现。
+    - paragraph: 即使通过，也应报告“在哪些距离范围、密度和天气条件下得到证据”，而不是直接宣布全域25 km有效分辨率。
+    - separator
+    - heading "七、FSS、SAL与多尺度误差的取舍" [level=2]
+    - paragraph: FSS比较阈值超越区域在邻域内的面积比例：
+    - math:
+      - generic: F
+      - generic: S
+      - generic: S
+      - generic: r
+      - generic: ","
+      - generic: τ
+      - generic: =
+      - generic: "1"
+      - generic: −
+      - generic: ∑
+      - generic: x
+      - generic: "["
+      - generic: p
+      - generic: f
+      - generic: (
+      - generic: x
+      - generic: ;
+      - generic: r
+      - generic: ","
+      - generic: τ
+      - generic: )
+      - generic: −
+      - generic: p
+      - generic: o
+      - generic: (
+      - generic: x
+      - generic: ;
+      - generic: r
+      - generic: ","
+      - generic: τ
+      - generic: )
+      - generic: "]"
+      - generic: "2"
+      - generic: ∑
+      - generic: x
+      - generic: "["
+      - generic: p
+      - generic: f
+      - generic: (
+      - generic: x
+      - generic: ;
+      - generic: r
+      - generic: ","
+      - generic: τ
+      - generic: )
+      - generic: "2"
+      - generic: +
+      - generic: p
+      - generic: o
+      - generic: (
+      - generic: x
+      - generic: ;
+      - generic: r
+      - generic: ","
+      - generic: τ
+      - generic: )
+      - generic: "2"
+      - generic: "]"
+      - generic: .
+    - generic: FSS
+    - generic: r,τ
+    - text: =
+    - generic: 1 −
+    - text: ∑
+    - generic: x
+    - text: "["
+    - text: p
+    - generic: f
+    - text: (x; r, τ
+    - text: )
+    - generic: "2"
+    - text: +
+    - text: p
+    - generic: o
+    - text: (x; r, τ
+    - text: )
+    - generic: "2"
+    - text: "]"
+    - text: ∑
+    - generic: x
+    - text: "["
+    - text: p
+    - generic: f
+    - text: (x; r, τ) −
+    - text: p
+    - generic: o
+    - text: (x; r, τ)
+    - text: "]"
+    - generic: "2"
+    - text: .
+    - paragraph:
+      - text: 它适合回答“湿异常区域是否出现在附近”，允许一定定位误差。原始方法用于降水空间验证。
+      - 'link "doi.org: Scale-Selective Verification of Rainfall Accumulations from High-Resolution Forecasts of Convective Events, https://doi.org/10.1175/2007MWR2123.1?utm_source=chatgpt.com"':
+        - /url: https://doi.org/10.1175/2007MWR2123.1?utm_source=chatgpt.com
+        - generic: doi.org
+    - paragraph:
+      - text: 对本项目，
+      - strong: FSS最多保留为一个事件诊断，不作主选模指标或默认loss
+      - text: ：
+    - list:
+      - listitem: 阈值使用训练期确定的季节/区域湿异常阈值；
+      - listitem: 预测和reference使用同一阈值，不能各自取本图百分位；
+      - listitem: 在插值reference上计算时，仍属于参考图一致性；
+      - listitem: 双方均无超阈值区域时预先规定处理并报告次数；
+      - listitem: 大邻域高FSS不能证明25 km定位准确。
+    - paragraph:
+      - text: SAL依赖对象结构、幅度和位置。ZWD具有广泛正值背景，可能形成一个巨大对象；改成有符号异常后，又需重新解释对象和重心。因此首轮不建议加入SAL。
+      - 'link "elib.dlr.de: https://elib.dlr.de/56501/1/WernliPaulatHagenFrei2008.pdf, https://elib.dlr.de/56501/1/WernliPaulatHagenFrei2008.pdf?utm_source=chatgpt.com"':
+        - /url: https://elib.dlr.de/56501/1/WernliPaulatHagenFrei2008.pdf?utm_source=chatgpt.com
+        - generic: elib.dlr.de
+    - paragraph:
+      - text: 更直接的首轮选择是：
+      - strong: 原场与固定粗化版本的独立站误差比较＋距离分箱差值误差
+      - text: 。这比同时堆叠SSIM、FSS、SAL更容易解释。
+    - separator
+    - heading "八、生成分布：边缘校准与空间联合校准分开" [level=2]
+    - heading "边缘指标" [level=3]
+    - math:
+      - generic: C
+      - generic: R
+      - generic: P
+      - generic: S
+      - generic: (
+      - generic: F
+      - generic: ","
+      - generic: "y"
+      - generic: )
+      - generic: =
+      - generic: E
+      - generic: ∣
+      - generic: X
+      - generic: −
+      - generic: "y"
+      - generic: ∣
+      - generic: −
+      - generic: "1"
+      - generic: "2"
+      - generic: E
+      - generic: ∣
+      - generic: X
+      - generic: −
+      - generic: X
+      - generic: ′
+      - generic: ∣
+      - generic: .
+    - generic: CRPS
+    - text: (F, y) =
+    - generic: E∣X −
+    - generic: y∣ −
+    - generic: "2"
+    - generic: "1"
+    - text: E∣X −
+    - text: X
+    - generic: ′
+    - text: ∣.
+    - paragraph:
+      - text: CRPS保持mm单位，确定性分布下退化为绝对误差。同时报告80%/95%覆盖率、区间宽度和PIT/rank histogram；直方图按季节、密度、高程和天气分层。总体均匀不等于条件校准。
+      - 'link "sites.stat.washington.edu: https://sites.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf, https://sites.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf?utm_source=chatgpt.com"':
+        - /url: https://sites.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf?utm_source=chatgpt.com
+        - generic: sites.stat.washington.edu
+    - paragraph:
+      - text: M2-F/J的查询高斯头可用于这些边缘指标。
+      - strong: 它们尚未定义完整空间联合分布，不能未经声明地逐站独立抽样后计算“生成场联合技巧”。
+    - heading "联合指标：ES与VS互补" [level=3]
+    - paragraph:
+      - text: 对同一生成成员在一个独立站组上的向量
+      - math:
+        - generic: X
+      - generic: X
+      - text: ：
+    - math:
+      - generic: E
+      - generic: S
+      - generic: (
+      - generic: F
+      - generic: ","
+      - generic: "y"
+      - generic: )
+      - generic: =
+      - generic: E
+      - generic: ∥
+      - generic: X
+      - generic: −
+      - generic: "y"
+      - generic: ∥
+      - generic: "2"
+      - generic: −
+      - generic: "1"
+      - generic: "2"
+      - generic: E
+      - generic: ∥
+      - generic: X
+      - generic: −
+      - generic: X
+      - generic: ′
+      - generic: ∥
+      - generic: "2"
+      - generic: .
+    - generic: ES(F, y) =
+    - generic: E∥X −
+    - text: "y"
+    - text: ∥
+    - generic: "2"
+    - text: −
+    - generic: "2"
+    - generic: "1"
+    - text: E∥X −
+    - text: X
+    - generic: ′
+    - text: ∥
+    - generic: "2"
+    - text: .
+    - paragraph:
+      - text: 取范数一次方，不把指数改成2；后者会退化为主要评价均值，失去严格分布识别性。跨不同大小站组可用固定的
+      - math:
+        - generic: "n"
+      - generic: "n"
+      - text: 归一化。
+      - 'link "sites.stat.washington.edu: https://sites.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf, https://sites.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf?utm_source=chatgpt.com"':
+        - /url: https://sites.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf?utm_source=chatgpt.com
+        - generic: sites.stat.washington.edu
+    - paragraph: 再配一个variogram score：
+    - math:
+      - generic: V
+      - generic: S
+      - generic: p
+      - generic: (
+      - generic: F
+      - generic: ","
+      - generic: "y"
+      - generic: )
+      - generic: =
+      - generic: ∑
+      - generic: i
+      - generic: <
+      - generic: j
+      - generic: w
+      - generic: i
+      - generic: j
+      - generic: "["
+      - generic: ∣
+      - generic: "y"
+      - generic: i
+      - generic: −
+      - generic: "y"
+      - generic: j
+      - generic: ∣
+      - generic: p
+      - generic: −
+      - generic: E
+      - generic: ∣
+      - generic: X
+      - generic: i
+      - generic: −
+      - generic: X
+      - generic: j
+      - generic: ∣
+      - generic: p
+      - generic: "]"
+      - generic: "2"
+      - generic: .
+    - text: V
+    - text: S
+    - generic: p
+    - text: (F, y) =
+    - generic: i<j
+    - generic: ∑
+    - text: w
+    - generic: ij
+    - text: "[∣"
+    - text: "y"
+    - generic: i
+    - text: −
+    - text: "y"
+    - generic: j
+    - text: ∣
+    - generic: p
+    - text: − E∣
+    - text: X
+    - generic: i
+    - text: −
+    - text: X
+    - generic: j
+    - text: ∣
+    - generic: p
+    - text: "]"
+    - generic: "2"
+    - text: .
+    - paragraph:
+      - text: 首轮可固定
+      - math:
+        - generic: p
+        - generic: =
+        - generic: "0.5"
+      - generic: p =
+      - generic: "0.5"
+      - text: ，权重只由几何和距离箱确定。ES对部分相关性错误不够敏感；VS可以补充，但它看不到共同偏差，不能单独使用。
+      - 'link "repository.library.noaa.gov: mwrD1400269 1321..1334, https://repository.library.noaa.gov/view/noaa/22327/noaa_22327_DS1.pdf?utm_source=chatgpt.com"':
+        - /url: https://repository.library.noaa.gov/view/noaa/22327/noaa_22327_DS1.pdf?utm_source=chatgpt.com
+        - generic: repository.library.noaa.gov
+    - paragraph:
+      - text: 一个必做反例是：
+      - strong: 逐站独立打乱ensemble成员编号
+      - text: 。各站样本集合、CRPS、覆盖率、均值、方差均不变，但空间依赖已被破坏。联合评分应在多事件平均上识别这类改变。
+    - paragraph: 所有成员必须先拼接为完整发布场，再查询站点。同一成员编号要贯穿全部patch和站点；拼接本身会改变协方差，不能只平均各patch的评分。
+    - paragraph:
+      - text: 固定K，禁止oracle选择“最接近真值”的成员。若成员是独立抽样且评价底层采样分布，CRPS/ES的第二项可用
+      - math:
+        - generic: "2"
+        - generic: K
+        - generic: (
+        - generic: K
+        - generic: −
+        - generic: "1"
+        - generic: )
+      - generic: 2K(K −
+      - generic: 1)
+      - text: 分母的非对角估计，减少有限K偏差。VS也存在有限K误差，应统一K并报告抽样敏感性。
+    - paragraph: 此外，有限ensemble mean的MSE含有约为生成方差/K的附加项；单成员高频更丰富不意味着均值RMSE更好。
+    - heading "事件条件评分的解释" [level=3]
+    - paragraph:
+      - text: 按观测值挑出极端天气后计算的CRPS，是事件条件诊断，不能替代全样本proper评价。未来若要优化极端概率，应使用明确的proper阈值变换或加权评分，而不是简单提高“观察到极端”的样本损失权重。2025年的聚合与变换评分研究为这种设计提供了理论框架，但非单射变换通常不能识别完整联合分布。
+      - 'link "ascmo.copernicus.org: ASCMO - Proper scoring rules for multivariate probabilistic forecasts based on aggregation and transformation, https://ascmo.copernicus.org/articles/11/23/2025/index.html?utm_source=chatgpt.com"':
+        - /url: https://ascmo.copernicus.org/articles/11/23/2025/index.html?utm_source=chatgpt.com
+        - generic: ascmo.copernicus.org
+    - separator
+    - heading "九、未来损失函数：保留简单主目标，辅助项必须有证据" [level=2]
+    - heading "1. M0与M2" [level=3]
+    - paragraph:
+      - text: 定义统一发布场观测算子
+      - math:
+        - generic: O
+        - generic: i
+      - text: O
+      - generic: i
+      - text: ，固定训练尺度
+      - math:
+        - generic: c
+        - generic: "y"
+      - text: c
+      - generic: "y"
+      - text: ：
+    - math:
+      - generic: e
+      - generic: i
+      - generic: =
+      - generic: O
+      - generic: i
+      - generic: (
+      - generic: m
+      - generic: )
+      - generic: −
+      - generic: "y"
+      - generic: i
+      - generic: c
+      - generic: "y"
+      - generic: .
+    - text: e
+    - generic: i
+    - text: =
+    - text: c
+    - generic: "y"
+    - text: O
+    - generic: i
+    - text: (m) −
+    - text: "y"
+    - generic: i
+    - text: .
+    - paragraph: M0主损失：
+    - math:
+      - generic: L
+      - generic: o
+      - generic: b
+      - generic: s
+      - generic: =
+      - generic: "1"
+      - generic: "2"
+      - generic: ⟨
+      - generic: e
+      - generic: i
+      - generic: "2"
+      - generic: ⟩
+      - generic: B
+      - generic: .
+    - text: L
+    - generic: obs
+    - text: =
+    - generic: "2"
+    - generic: "1"
+    - text: ⟨
+    - text: e
+    - generic: i
+    - generic: "2"
+    - text: ⟩
+    - generic: B
+    - text: .
+    - paragraph: M2-F保留：
+    - math:
+      - generic: L
+      - generic: F
+      - generic: =
+      - generic: L
+      - generic: o
+      - generic: b
+      - generic: s
+      - generic: +
+      - generic: "1"
+      - generic: "2"
+      - generic: ⟨
+      - generic: log
+      - generic: ⁡
+      - generic: q
+      - generic: i
+      - generic: +
+      - generic: sg
+      - generic: ⁡
+      - generic: (
+      - generic: e
+      - generic: i
+      - generic: )
+      - generic: "2"
+      - generic: q
+      - generic: i
+      - generic: ⟩
+      - generic: B
+      - generic: ","
+    - text: L
+    - generic: F
+    - text: =
+    - text: L
+    - generic: obs
+    - text: +
+    - generic: "2"
+    - generic: "1"
+    - generic: ⟨
+    - generic: log
+    - text: q
+    - generic: i
+    - text: +
+    - text: q
+    - generic: i
+    - generic: sg
+    - text: (
+    - text: e
+    - generic: i
+    - text: )
+    - generic: "2"
+    - generic: ⟩
+    - generic: B
+    - text: ","
+    - paragraph:
+      - text: 方差头读取detach特征，
+      - math:
+        - generic: q
+        - generic: i
+        - generic: =
+        - generic: V
+        - generic: i
+        - generic: /
+        - generic: c
+        - generic: "y"
+        - generic: "2"
+      - text: q
+      - generic: i
+      - text: =
+      - text: V
+      - generic: i
+      - text: /
+      - text: c
+      - generic: "y"
+      - generic: "2"
+      - text: 。M2-J使用普通联合NLL。两臂不因本轮研究而立即新增多个图像loss。
+    - paragraph:
+      - text: 只有reference通过训练期验证后，才考虑
+      - strong: 一个
+      - text: 可信频带辅助项：
+    - math:
+      - generic: L
+      - generic: b
+      - generic: a
+      - generic: "n"
+      - generic: d
+      - generic: =
+      - generic: ∑
+      - generic: b
+      - generic: η
+      - generic: b
+      - generic: mean
+      - generic: ⁡
+      - generic: k
+      - generic: ∈
+      - generic: b
+      - generic: ∣
+      - generic: F
+      - generic: (
+      - generic: m
+      - generic: −
+      - generic: z
+      - generic: r
+      - generic: e
+      - generic: f
+      - generic: s
+      - generic: z
+      - generic: )
+      - generic: k
+      - generic: ∣
+      - generic: "2"
+      - generic: .
+    - text: L
+    - generic: band
+    - text: =
+    - generic: b
+    - generic: ∑
+    - text: η
+    - generic: b
+    - generic: mean
+    - generic: k∈b
+    - text: F
+    - generic: (
+    - text: s
+    - generic: z
+    - text: m −
+    - text: z
+    - generic: ref
+    - generic: )
+    - generic: k
+    - generic: "2"
+    - text: .
+    - paragraph:
+      - math:
+        - generic: η
+        - generic: b
+      - text: η
+      - generic: b
+      - text: 由训练期隐藏站收益、稀疏化稳定性和双参考敏感性决定。短波缺证据就置零，不因希望图像“更锐利”而提高权重。
+    - paragraph:
+      - text: 可以先登记≥200、100–200、50–100 km三档进行诊断，但
+      - strong: 这不是已经验证的可信频带
+      - text: 。新增短波是否有价值，应通过隐藏站上的原场/滤波版本比较判断。
+    - heading "2. Fourier、FFL和小波loss的实质" [level=3]
+    - paragraph: 正交FFT下，全频等权复数L2与空间MSE按Parseval等价；正交小波全系数等权L2也类似。真正改变目标的是频带权重、范数或局部支持。
+    - paragraph: Focal Frequency Loss使用复数差及动态权重：
+    - math:
+      - generic: L
+      - generic: F
+      - generic: F
+      - generic: L
+      - generic: =
+      - generic: "1"
+      - generic: "N"
+      - generic: ∑
+      - generic: k
+      - generic: sg
+      - generic: ⁡
+      - generic: ⁣
+      - generic: "["
+      - generic: ∣
+      - generic: Z
+      - generic: ^
+      - generic: k
+      - generic: −
+      - generic: Z
+      - generic: k
+      - generic: ∣
+      - generic: α
+      - generic: max
+      - generic: ⁡
+      - generic: ℓ
+      - generic: ∣
+      - generic: Z
+      - generic: ^
+      - generic: ℓ
+      - generic: −
+      - generic: Z
+      - generic: ℓ
+      - generic: ∣
+      - generic: α
+      - generic: +
+      - generic: ϵ
+      - generic: "]"
+      - generic: ∣
+      - generic: Z
+      - generic: ^
+      - generic: k
+      - generic: −
+      - generic: Z
+      - generic: k
+      - generic: ∣
+      - generic: "2"
+      - generic: .
+    - text: L
+    - generic: FFL
+    - text: =
+    - generic: "N"
+    - generic: "1"
+    - generic: k
+    - generic: ∑
+    - generic: sg
+    - generic: "["
+    - text: max
+    - generic: ℓ
+    - text: ∣
+    - generic: Z
+    - text: ^
+    - generic: ℓ
+    - text: −
+    - text: Z
+    - generic: ℓ
+    - text: ∣
+    - generic: α
+    - text: + ϵ
+    - text: ∣
+    - generic: Z
+    - text: ^
+    - generic: k
+    - text: −
+    - text: Z
+    - generic: k
+    - text: ∣
+    - generic: α
+    - generic: "]"
+    - text: ∣
+    - generic: Z
+    - text: ^
+    - generic: k
+    - text: −
+    - text: Z
+    - generic: k
+    - text: ∣
+    - generic: "2"
+    - text: .
+    - paragraph:
+      - text: 原论文锁定权重梯度，强调当前难以拟合的频率；
+      - strong: 它不是专门强调高频的物理损失
+      - text: 。DC偏差、teacher伪纹理和不可预测噪声都可能成为“难频率”。因此应晚于固定可信频带loss尝试。
+      - 'link "arxiv.org: Focal Frequency Loss for Image Reconstruction and Synthesis, https://arxiv.org/html/2012.12821v3?utm_source=chatgpt.com"':
+        - /url: https://arxiv.org/html/2012.12821v3?utm_source=chatgpt.com
+        - generic: arxiv.org
+    - paragraph: 小波有空间局部性，可能更适合山前或局地天气结构，但仍受边界、缺测与reference真实性限制，不会自动创造真值。
+    - paragraph: 权重原则是：统一无量纲化、按有效样本平均，记录辅助梯度量级及方向，再用训练期交叉验证登记一个候选。不要把多个loss数值相近当成作用相近，也不要把原始梯度范数当成Adam实际更新贡献。当前指标审计阶段无需进行这类反向传播测试。
+    - heading "3. EDM：先解决目标随机场，再谈图像辅助" [level=3]
+    - paragraph:
+      - text: 若完整目标场
+      - math:
+        - generic: z
+        - generic: ∗
+      - text: z
+      - generic: ∗
+      - text: 已有明确来源，令
+    - math:
+      - generic: r
+      - generic: ∗
+      - generic: =
+      - generic: z
+      - generic: ∗
+      - generic: −
+      - generic: μ
+      - generic: "0"
+      - generic: s
+      - generic: r
+      - generic: ","
+      - generic: r
+      - generic: σ
+      - generic: =
+      - generic: r
+      - generic: ∗
+      - generic: +
+      - generic: σ
+      - generic: ϵ
+      - generic: .
+    - text: r
+    - generic: ∗
+    - text: =
+    - text: s
+    - generic: r
+    - text: z
+    - generic: ∗
+    - text: −
+    - text: μ
+    - generic: "0"
+    - text: ","
+    - text: r
+    - generic: σ
+    - text: =
+    - text: r
+    - generic: ∗
+    - text: +
+    - generic: σϵ.
+    - paragraph: 标准EDM损失为
+    - math:
+      - generic: L
+      - generic: E
+      - generic: D
+      - generic: M
+      - generic: =
+      - generic: E
+      - generic: "["
+      - generic: σ
+      - generic: "2"
+      - generic: +
+      - generic: σ
+      - generic: d
+      - generic: a
+      - generic: t
+      - generic: a
+      - generic: "2"
+      - generic: (
+      - generic: σ
+      - generic: σ
+      - generic: d
+      - generic: a
+      - generic: t
+      - generic: a
+      - generic: )
+      - generic: "2"
+      - generic: ∥
+      - generic: D
+      - generic: θ
+      - generic: (
+      - generic: r
+      - generic: σ
+      - generic: ","
+      - generic: σ
+      - generic: ","
+      - generic: c
+      - generic: )
+      - generic: −
+      - generic: r
+      - generic: ∗
+      - generic: ∥
+      - generic: "2"
+      - generic: "2"
+      - generic: "]"
+      - generic: .
+    - text: L
+    - generic: EDM
+    - text: =
+    - text: E
+    - generic: "["
+    - text: (σ
+    - text: σ
+    - generic: data
+    - text: )
+    - generic: "2"
+    - text: σ
+    - generic: "2"
+    - text: +
+    - text: σ
+    - generic: data
+    - generic: "2"
+    - text: ∥
+    - text: D
+    - generic: θ
+    - text: (
+    - text: r
+    - generic: σ
+    - text: ", σ, c) −"
+    - text: r
+    - generic: ∗
+    - text: ∥
+    - generic: "2"
+    - generic: "2"
+    - generic: "]"
+    - text: .
+    - paragraph:
+      - text: 这里的
+      - math:
+        - generic: σ
+        - generic: d
+        - generic: a
+        - generic: t
+        - generic: a
+      - text: σ
+      - generic: data
+      - text: 须与残差标准化相匹配，不能照搬官方图像设置的0.5。
+      - 'link "proceedings.neurips.cc: https://proceedings.neurips.cc/paper_files/paper/2022/file/a98846e9d9cc01cfb87eb694d946ce6b-Paper-Conference.pdf, https://proceedings.neurips.cc/paper_files/paper/2022/file/a98846e9d9cc01cfb87eb694d946ce6b-Paper-Conference.pdf?utm_source=chatgpt.com, 另外 1 个来源"':
+        - /url: https://proceedings.neurips.cc/paper_files/paper/2022/file/a98846e9d9cc01cfb87eb694d946ce6b-Paper-Conference.pdf?utm_source=chatgpt.com
+        - generic: proceedings.neurips.cc
+        - generic: "+1"
+    - paragraph: 本项目当前有三种不同目标来源：
+    - list:
+      - listitem: 插值均值图：学习插值分析分布；
+      - listitem: 条件模拟：学习经过检验的地统计先验分布；
+      - listitem: 独立物理模拟或更密观测场：提供另一类高分辨率目标证据。
+    - paragraph:
+      - text: 三者不能混称真实GNSS细场。当前尚未确定目标场，
+      - strong: 不应先启动标准全场EDM训练，再靠SSIM或谱loss补救目标不明的问题。
+    - paragraph:
+      - text: 缺测图任意补零、只mask loss，也不能保证学习到完整场score；无效值仍可能进入加噪和卷积。固定稀疏站算子的共同零空间不会因再随机遮站消失。Ambient Diffusion的可识别性结果有观测算子条件，不能直接用来证明本项目任意mask训练成立。
+      - 'link "proceedings.neurips.cc: https://proceedings.neurips.cc/paper_files/paper/2023/file/012af729c5d14d279581fc8a5db975a1-Paper-Conference.pdf, https://proceedings.neurips.cc/paper_files/paper/2023/file/012af729c5d14d279581fc8a5db975a1-Paper-Conference.pdf?utm_source=chatgpt.com"':
+        - /url: https://proceedings.neurips.cc/paper_files/paper/2023/file/012af729c5d14d279581fc8a5db975a1-Paper-Conference.pdf?utm_source=chatgpt.com
+        - generic: proceedings.neurips.cc
+    - paragraph: 将来首个EDM版本建议先用标准去噪目标。SSIM、FFL等非线性辅助可能改变最优去噪器，尤其不能要求高噪声条件下的去噪均值恢复每个不可预测细节。
+    - heading "4. GAN对照" [level=3]
+    - paragraph: GAN应使用与EDM相同的目标来源、条件信息和发布拼接。一个清楚的候选是：
+    - math:
+      - generic: L
+      - generic: G
+      - generic: =
+      - generic: E
+      - generic: S
+      - generic: ^
+      - generic: ⁣
+      - generic: (
+      - generic: O
+      - generic: G
+      - generic: (
+      - generic: c
+      - generic: ","
+      - generic: ξ
+      - generic: )
+      - generic: ","
+      - generic: "y"
+      - generic: B
+      - generic: )
+      - generic: /
+      - generic: c
+      - generic: "y"
+      - generic: +
+      - generic: λ
+      - generic: a
+      - generic: d
+      - generic: v
+      - generic: L
+      - generic: c
+      - generic: G
+      - generic: A
+      - generic: "N"
+      - generic: .
+    - text: L
+    - generic: G
+    - text: =
+    - generic: ES
+    - text: (OG(c, ξ),
+    - text: "y"
+    - generic: B
+    - text: )
+    - text: /
+    - text: c
+    - generic: "y"
+    - text: +
+    - text: λ
+    - generic: adv
+    - text: L
+    - generic: cGAN
+    - text: .
+    - paragraph: 观测端ES约束分布，对抗项约束所声明的场目标分布；这仍是设计建议，不保证优于均值MSE。它避免把每个随机成员都逐点压向同一观测而缩小方差，但也不能约束观测算子的零空间。
+    - paragraph: 如果GAN忽略噪声，应按退化ensemble报告。若“真图”是IDW图，判别器学习到的主要真实性标准也可能只是IDW特征。
+    - separator
+    - heading "十、最小本机筛选：先验收指标，再决定训练" [level=2]
+    - heading "阶段A：指标反例验收——不训练、不需要神经网络推理" [level=3]
+    - paragraph: 从2016–2018固定12个事件，每事件取两个预登记评价域，形成24个域时刻。按季节及平稳/高湿/强梯度分层，不能按某个模型误差挑选。
+    - paragraph: 每个域最多12种版本，总计不超过288个场比较：
+    - table:
+      - rowgroup:
+        - row "反例 应识别它的证据 容易被蒙混的指标":
+          - columnheader "反例"
+          - columnheader "应识别它的证据"
+          - columnheader "容易被蒙混的指标"
+      - rowgroup:
+        - row "常量偏差、幅度缩放 Bias、RMSE、MAE 去均值谱、部分结构相似指标":
+          - cell "常量偏差、幅度缩放"
+          - cell "Bias、RMSE、MAE"
+          - cell "去均值谱、部分结构相似指标"
+        - row "平移25/50 km 配对误差、交叉相位、站对差值 PSD、频带能量":
+          - cell "平移25/50 km"
+          - cell "配对误差、交叉相位、站对差值"
+          - cell "PSD、频带能量"
+        - row "模糊 独立站细尺度差值、梯度、频带误差 可能仍较高的SSIM":
+          - cell "模糊"
+          - cell "独立站细尺度差值、梯度、频带误差"
+          - cell "可能仍较高的SSIM"
+        - row "加伪高频噪声 真站误差、校准、联合评分 “高频能量恢复”":
+          - cell "加伪高频噪声"
+          - cell "真站误差、校准、联合评分"
+          - cell "“高频能量恢复”"
+        - row "随机相位 复数误差、位置对应指标 完整周期场的功率谱":
+          - cell "随机相位"
+          - cell "复数误差、位置对应指标"
+          - cell "完整周期场的功率谱"
+        - row "地形相关伪纹理 地形分层误差、 /地表对照 平原主导的全图均值指标":
+          - cell "地形相关伪纹理"
+          - cell "地形分层误差、 /地表对照":
+            - text: 地形分层误差、
+            - math:
+              - generic: Z
+              - generic: "0"
+            - text: Z
+            - generic: "0"
+            - text: /地表对照
+          - cell "平原主导的全图均值指标"
+        - row "日期乱配 同期站点与事件误差 FID/KID":
+          - cell "日期乱配"
+          - cell "同期站点与事件误差"
+          - cell "FID/KID"
+        - row "复制IDW reference C类证据暴露循环 对该reference的全部图像指标":
+          - cell "复制IDW reference"
+          - cell "C类证据暴露循环"
+          - cell "对该reference的全部图像指标"
+        - row "ensemble逐站乱序 ES/VS等联合诊断 边缘CRPS、覆盖率":
+          - cell "ensemble逐站乱序"
+          - cell "ES/VS等联合诊断"
+          - cell "边缘CRPS、覆盖率"
+    - button "复制表格":
+    - button "展开表格":
+    - paragraph: 理想周期场上的谱反例，与加窗、海岸mask后的实际行为应分开记录，不能声称随机相位在任何掩膜后仍严格保持谱。
+    - paragraph:
+      - text: 若没有保存的ensemble，可使用已知联合分布的低成本合成集合，仅验证评分程序；不能将其当模型性能。阶段A预算：
+      - strong: 最多4 CPU小时，0次optimizer更新
+      - text: 。
+    - heading "阶段B：reference小规模筛选" [level=3]
+    - paragraph: 在上述24个域时刻做：
+    - list:
+      - listitem: B内5个空间折；
+      - listitem: B保留100%/50%；
+      - listitem: IDW与一个简单局地kriging。
+    - paragraph: 最多480个局地reference构建，另保留完整A+B参考。目标是判断哪些尺度值得进一步验证，不据此宣称全年精度或极端事件显著性。
+    - heading "阶段C：有限输入退化推理" [level=3]
+    - paragraph: 阶段A通过后，才对实际已有、可读取的冻结检查点实施A稀疏化测试。仅修改输入、重建条件并前向推理，不更新权重。
+    - paragraph: 可限定为6个固定事件、3个压力域，最多2 GPU小时；优先完成每个案例内所有模型的配对，再进入下一案例。当前失联与持续失联分开，不能用已有完整输入输出图做遮罩代替。
+    - paragraph: 这个小样本阶段只回答：
+    - list:
+      - listitem: 指标能否发现已知错误；
+      - listitem: reference是否稳定；
+      - listitem: 模型在哪类输入退化下失效；
+      - listitem: 后续是否有理由投入训练。
+    - paragraph: 它不能完成“山区×稀疏×天气突变”的最终统计认证。
+    - separator
+    - heading "十一、优先原始来源" [level=2]
+    - paragraph: 以下核心文献均已有正式发表；作者存档或arXiv链接用于获取原文，不代表仍仅是预印本。
+    - table:
+      - rowgroup:
+        - row "原始来源 本项目最值得读取的部分":
+          - columnheader "原始来源"
+          - columnheader "本项目最值得读取的部分"
+      - rowgroup:
+        - row "Wang et al., SSIM, IEEE TIP, 2004；MS-SSIM, Asilomar, 2003 动态范围、局部统计、窗口及尺度含义":
+          - cell "Wang et al., SSIM, IEEE TIP, 2004；MS-SSIM, Asilomar, 2003":
+            - link "Wang et al., SSIM, IEEE TIP, 2004":
+              - /url: https://www.cns.nyu.edu/pub/lcv/wang03-reprint.pdf?utm_source=chatgpt.com
+            - text: ；
+            - link "MS-SSIM, Asilomar, 2003":
+              - /url: https://www.ece.uwaterloo.ca/~z70wang/publications/msssim.pdf?utm_source=chatgpt.com
+          - cell "动态范围、局部统计、窗口及尺度含义"
+        - row "Jiang et al., Focal Frequency Loss, ICCV 2021； 官方实现 复数频率误差、动态权重与stop-gradient":
+          - cell "Jiang et al., Focal Frequency Loss, ICCV 2021； 官方实现":
+            - link "Jiang et al., Focal Frequency Loss, ICCV 2021":
+              - /url: https://arxiv.org/abs/2012.12821?utm_source=chatgpt.com
+            - text: ；
+            - link "官方实现":
+              - /url: https://github.com/EndlessSora/focal-frequency-loss
+              - generic: 官方实现
+          - cell "复数频率误差、动态权重与stop-gradient"
+        - row "Zhang et al., LPIPS, CVPR 2018；Ding et al., DISTS, TPAMI 感知相似性与物理定位误差的区别":
+          - cell "Zhang et al., LPIPS, CVPR 2018；Ding et al., DISTS, TPAMI":
+            - link "Zhang et al., LPIPS, CVPR 2018":
+              - /url: https://richzhang.github.io/PerceptualSimilarity/?utm_source=chatgpt.com
+            - text: ；
+            - link "Ding et al., DISTS, TPAMI":
+              - /url: https://www.cns.nyu.edu/pub/lcv/ding20-preprint.pdf?utm_source=chatgpt.com
+          - cell "感知相似性与物理定位误差的区别"
+        - row "Mardani et al., CorrDiff, Communications Earth & Environment, 2025 物理模拟目标、残差生成、谱与校准分开":
+          - cell "Mardani et al., CorrDiff, Communications Earth & Environment, 2025":
+            - link "Mardani et al., CorrDiff, Communications Earth & Environment, 2025":
+              - /url: https://www.nature.com/articles/s43247-025-02042-5?utm_source=chatgpt.com
+          - cell "物理模拟目标、残差生成、谱与校准分开"
+        - row "Rebora et al., RainFARM, JHM, 2006 合理随机细尺度与真实细节位置的区别":
+          - cell "Rebora et al., RainFARM, JHM, 2006":
+            - link "Rebora et al., RainFARM, JHM, 2006":
+              - /url: https://doi.org/10.1175/JHM517.1
+          - cell "合理随机细尺度与真实细节位置的区别"
+        - row "Ballarotta et al., Ocean Science, 2019；OceanBench补充材料, NeurIPS 2023 独立观测尺度误差、OSSE与真实观测实验区分":
+          - cell "Ballarotta et al., Ocean Science, 2019；OceanBench补充材料, NeurIPS 2023":
+            - link "Ballarotta et al., Ocean Science, 2019":
+              - /url: https://os.copernicus.org/articles/15/1091/2019/
+            - text: ；
+            - link "OceanBench补充材料, NeurIPS 2023":
+              - /url: https://proceedings.neurips.cc/paper_files/paper/2023/file/f6ccbf94fa57c2ae372ece91b537574d-Supplemental-Datasets_and_Benchmarks.pdf?utm_source=chatgpt.com
+          - cell "独立观测尺度误差、OSSE与真实观测实验区分"
+        - row "Roberts & Lean, FSS, MWR, 2008；Wernli et al., SAL, MWR, 2008 邻域容忍、对象指标的定义与限制":
+          - cell "Roberts & Lean, FSS, MWR, 2008；Wernli et al., SAL, MWR, 2008":
+            - link "Roberts & Lean, FSS, MWR, 2008":
+              - /url: https://doi.org/10.1175/2007MWR2123.1?utm_source=chatgpt.com
+            - text: ；
+            - link "Wernli et al., SAL, MWR, 2008":
+              - /url: https://elib.dlr.de/56501/1/WernliPaulatHagenFrei2008.pdf?utm_source=chatgpt.com
+          - cell "邻域容忍、对象指标的定义与限制"
+        - row "Gneiting & Raftery, JASA, 2007；Scheuerer & Hamill, MWR, 2015 CRPS、energy score、variogram score":
+          - cell "Gneiting & Raftery, JASA, 2007；Scheuerer & Hamill, MWR, 2015":
+            - link "Gneiting & Raftery, JASA, 2007":
+              - /url: https://sites.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf?utm_source=chatgpt.com
+            - text: ；
+            - link "Scheuerer & Hamill, MWR, 2015":
+              - /url: https://repository.library.noaa.gov/view/noaa/22327/noaa_22327_DS1.pdf?utm_source=chatgpt.com
+          - cell "CRPS、energy score、variogram score"
+        - row "Pic et al., ASCMO, 2025 通过固定变换构造有解释性的proper多元评分":
+          - cell "Pic et al., ASCMO, 2025":
+            - link "Pic et al., ASCMO, 2025":
+              - /url: https://ascmo.copernicus.org/articles/11/23/2025/index.html?utm_source=chatgpt.com
+          - cell "通过固定变换构造有解释性的proper多元评分"
+        - row "Karras et al., EDM, NeurIPS 2022； 官方loss实现 标准去噪目标、预条件和噪声尺度":
+          - cell "Karras et al., EDM, NeurIPS 2022； 官方loss实现":
+            - link "Karras et al., EDM, NeurIPS 2022":
+              - /url: https://proceedings.neurips.cc/paper_files/paper/2022/hash/a98846e9d9cc01cfb87eb694d946ce6b-Abstract.html?utm_source=chatgpt.com
+            - text: ；
+            - link "官方loss实现":
+              - /url: https://github.com/NVlabs/edm/blob/main/training/loss.py?utm_source=chatgpt.com
+              - generic: 官方loss实现
+          - cell "标准去噪目标、预条件和噪声尺度"
+        - row "Daras et al., Ambient Diffusion, NeurIPS 2023 从缺测数据学习完整分布所需的可识别性条件":
+          - cell "Daras et al., Ambient Diffusion, NeurIPS 2023":
+            - link "Daras et al., Ambient Diffusion, NeurIPS 2023":
+              - /url: https://proceedings.neurips.cc/paper_files/paper/2023/file/012af729c5d14d279581fc8a5db975a1-Paper-Conference.pdf?utm_source=chatgpt.com
+          - cell "从缺测数据学习完整分布所需的可识别性条件"
+    - button "复制表格":
+    - button "展开表格":
+    - paragraph: "**当前最值得推进的是两项工作：指标反例验收，以及训练期reference空间交叉验证。**通过后，再决定哪些长波结构可用于辅助监督、EDM/GAN应学习哪一种明确的目标分布。若一个方案只提高SSIM、谱能量或图面锐利度，却没有独立站、短距离差值和概率校准证据，就不足以支持“更准确的高分辨率连续ZWD场”这一成果声明。"
+    - button "复制":
+    - button "评价回复":
+    - button "朗读":
+    - button "分享":
+    - button "更多操作":
+    - generic: ChatGPT 可能会出错。请核查重要信息。
+    - button "滚动到底部":
+    - heading "最新一条回复" [level=4]
+    - status
+    - button "添加文件等内容":
+    - textbox "询问 ChatGPT":
+      - paragraph: 询问 ChatGPT
+    - button "选择 ChatGPT 模型":
+      - generic: 思考强度
+      - generic: Pro
+    - button "听写":
+    - button "开始语音":
+    - status
+- status
+- status: 回答已完成
+- status
+- status
+- status
+- dialog:
+  - banner:
+    - button "输出" [expanded]:
+      - generic: 输出
+  - generic: 暂无输出
+  - banner:
+    - button "子智能体" [expanded]:
+      - generic: 子智能体
+  - button "Final mask audit 已完成":
+    - generic: Final mask audit
+    - generic: 已完成
+  - button "Design audit 已完成":
+    - generic: Design audit
+    - generic: 已完成
+  - button "Diffusion evidence 已完成":
+    - generic: Diffusion evidence
+    - generic: 已完成
+  - button "Metrics cv sources 已完成":
+    - generic: Metrics cv sources
+    - generic: 已完成
+  - button "Metrics weather ocean 已完成":
+    - generic: Metrics weather ocean
+    - generic: 已完成
+  - button "Metrics geostat prob 已完成":
+    - generic: Metrics geostat prob
+    - generic: 已完成

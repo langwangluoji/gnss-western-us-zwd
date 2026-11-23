@@ -1,0 +1,14 @@
+{
+  "station": "ARLI",
+  "source_sha256": "9742b84976d9d5dbcd02b657bbf1e5dac7cb59a77edfa76747ce4561f8557ca2",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\arli.pwv.gz",
+  "coverage": {
+    "2016": 0.9545765027322405,
+    "2017": 0.9466894977168949,
+    "2018": 0.967351598173516,
+    "2019": 0.9946347031963471,
+    "2020": 0.9645947176684881
+  },
+  "valid_hours": 42338,
+  "cache_sha256": "4a7c2e4dd215879a6da781c141c912cdff3850491d517a0af8227820651fc82d"
+}

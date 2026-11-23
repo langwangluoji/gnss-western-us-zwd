@@ -1,0 +1,14 @@
+{
+  "station": "CHWK",
+  "source_sha256": "ac137f5328164ab330ce9201bab2867a37664ae270e515975ffc2580ccf19788",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\chwk.pwv.gz",
+  "coverage": {
+    "2016": 0.9916894353369763,
+    "2017": 0.9968036529680365,
+    "2018": 0.9964611872146119,
+    "2019": 0.9973744292237443,
+    "2020": 0.9766621129326047
+  },
+  "valid_hours": 43488,
+  "cache_sha256": "65ff77f9f8ec4bdbadc8d8357fe0d6dce9424f2aa1a395f3d6dc81dfd28863f7"
+}

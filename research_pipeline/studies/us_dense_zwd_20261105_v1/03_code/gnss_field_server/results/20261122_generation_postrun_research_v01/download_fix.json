@@ -1,0 +1,9 @@
+{
+  "prior_authentication": "password successful",
+  "prior_exit": 1,
+  "identified_defect": "result selection has no sha256; hash is in selection.lock.json products",
+  "fix": "read checkpoint and sha256 from immutable product selection lock",
+  "remote_stderr_captured": true,
+  "python_syntax_passed": true,
+  "contract_RED_GREEN_passed": true
+}

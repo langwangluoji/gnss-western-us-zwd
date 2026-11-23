@@ -1,0 +1,14 @@
+{
+  "station": "LMHG",
+  "source_sha256": "4f64f5aafbcbf2f50e7dd54ec0482ae49130629946bc4de61997f48cbd9f05a9",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\lmhg.pwv.gz",
+  "coverage": {
+    "2016": 0.9883879781420765,
+    "2017": 0.973744292237443,
+    "2018": 0.9786529680365297,
+    "2019": 0.977283105022831,
+    "2020": 0.786771402550091
+  },
+  "valid_hours": 41257,
+  "cache_sha256": "e2e1cb3c0dde5dc82133696561526c14a8dd35a14fa87ef2ae57884f10a17395"
+}

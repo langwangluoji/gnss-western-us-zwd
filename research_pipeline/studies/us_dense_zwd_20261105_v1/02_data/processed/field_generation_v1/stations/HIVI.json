@@ -1,0 +1,14 @@
+{
+  "station": "HIVI",
+  "source_sha256": "97a7aacedfa3acabc84be6715ec80e2b7a533981f090fba8b7956295ce1b25fa",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\hivi.pwv.gz",
+  "coverage": {
+    "2016": 0.9903233151183971,
+    "2017": 0.9877853881278539,
+    "2018": 0.9549086757990868,
+    "2019": 0.9866438356164383,
+    "2020": 0.9946493624772313
+  },
+  "valid_hours": 43097,
+  "cache_sha256": "f5e326a1391e58fe57a34c58d6e9b7eed340afe7db82d1f42b824fa00a343cf2"
+}

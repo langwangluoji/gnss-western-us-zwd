@@ -1,0 +1,14 @@
+{
+  "station": "OPBL",
+  "source_sha256": "65c23d99d424a35e6306fe80ddf0f11ed01a0ec7834ae6880fd6c3dbc1fa6464",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\opbl.pwv.gz",
+  "coverage": {
+    "2016": 0.9947632058287796,
+    "2017": 0.9871004566210045,
+    "2018": 0.9828767123287672,
+    "2019": 0.9800228310502284,
+    "2020": 0.9939663023679417
+  },
+  "valid_hours": 43311,
+  "cache_sha256": "7b52063f8f0b0cf350892e335f0285e72b3c65ea08ec85e6945ff78b33d273aa"
+}

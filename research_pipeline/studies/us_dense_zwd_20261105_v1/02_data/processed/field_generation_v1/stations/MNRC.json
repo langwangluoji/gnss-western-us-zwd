@@ -1,0 +1,14 @@
+{
+  "station": "MNRC",
+  "source_sha256": "16a8e8317c776f01757aa87d21de23b5f91e5e69448896a847d3556a55249a9b",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\mnrc.pwv.gz",
+  "coverage": {
+    "2016": 0.9403460837887068,
+    "2017": 0.9234018264840183,
+    "2018": 0.9664383561643836,
+    "2019": 0.9398401826484019,
+    "2020": 0.39651639344262296
+  },
+  "valid_hours": 36531,
+  "cache_sha256": "1e13966866eb1b66f978e2fc826c203e079ea30f6fae804b0ea82e749df50165"
+}

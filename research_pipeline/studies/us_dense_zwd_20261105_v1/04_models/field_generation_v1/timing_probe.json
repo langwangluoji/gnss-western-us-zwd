@@ -1,0 +1,5 @@
+{
+  "m2_eight_sample_backward_seconds": 3.4625061999977333,
+  "m2_global_field_seconds_cached_m0": 0.3040535500003898,
+  "note": "Isolated timing only, no optimizer step or registered checkpoint; concurrent M0 training may inflate times. M0 cache cold during backward and warm during global-field timing."
+}

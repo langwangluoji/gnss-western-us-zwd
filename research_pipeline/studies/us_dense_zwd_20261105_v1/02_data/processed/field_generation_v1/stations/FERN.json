@@ -1,0 +1,14 @@
+{
+  "station": "FERN",
+  "source_sha256": "804d355d91557e98b60c7674d1552f5a5b9ed07254ad72015ac349e11f646c93",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\fern.pwv.gz",
+  "coverage": {
+    "2016": 0.9923724954462659,
+    "2017": 0.9930365296803653,
+    "2018": 0.9720319634703196,
+    "2019": 0.9920091324200914,
+    "2020": 0.9930555555555556
+  },
+  "valid_hours": 43344,
+  "cache_sha256": "59464845cbbbf8c1a76760c2a88d4ebacc24d1b40d0b7521a8bc75e706238f2d"
+}

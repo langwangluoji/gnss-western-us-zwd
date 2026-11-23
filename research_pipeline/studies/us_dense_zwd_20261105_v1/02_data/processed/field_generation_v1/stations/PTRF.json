@@ -1,0 +1,14 @@
+{
+  "station": "PTRF",
+  "source_sha256": "dff0bc495825c07d786a1f3b8065f64811b3ae67ac9630ee29f85dac39e09c5a",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ptrf.pwv.gz",
+  "coverage": {
+    "2016": 0.9978369763205829,
+    "2017": 0.9898401826484018,
+    "2018": 0.9254566210045662,
+    "2019": 0.9689497716894977,
+    "2020": 0.9871357012750456
+  },
+  "valid_hours": 42702,
+  "cache_sha256": "6f4f9738cc1d360421051a91b82c6fea03483f9e69d2dd523c684928c332d307"
+}

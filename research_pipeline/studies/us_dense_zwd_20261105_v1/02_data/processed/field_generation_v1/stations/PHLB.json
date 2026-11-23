@@ -1,0 +1,14 @@
+{
+  "station": "PHLB",
+  "source_sha256": "2b99d6e11181accead5be626afa8798f4c7ca31f4679a450911489eb7c206297",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\phlb.pwv.gz",
+  "coverage": {
+    "2016": 0.9882741347905283,
+    "2017": 0.9751141552511415,
+    "2018": 0.9180365296803653,
+    "2019": 0.4940639269406393,
+    "2020": 0.0
+  },
+  "valid_hours": 29593,
+  "cache_sha256": "fae67734dfbb16d3c5c65dd7e2b1f0c927632a5f64f0f7f9528aafc75cca3e12"
+}

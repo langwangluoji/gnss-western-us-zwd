@@ -1,0 +1,14 @@
+{
+  "station": "YAKI",
+  "source_sha256": "e0d031f3ea2f09bfdfa6f2839fbac76ee723d8d7b0bbd7b36dd5bac2d7cdaaf4",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\yaki.pwv.gz",
+  "coverage": {
+    "2016": 0.9915755919854281,
+    "2017": 0.9568493150684931,
+    "2018": 0.966324200913242,
+    "2019": 0.9878995433789954,
+    "2020": 0.9771174863387978
+  },
+  "valid_hours": 42794,
+  "cache_sha256": "de371a6970914c2d7c7ebc559d4a8cc1944829cd0e9c83d561c1359292c1d7e9"
+}

@@ -1,0 +1,12 @@
+{
+  "station_macro_rmse_mm": 12.413321206365003,
+  "rmse_mm": 14.885390181599707,
+  "mae_mm": 10.087566693326153,
+  "bias_mm": -5.555660992584208,
+  "stations": 76,
+  "station_hours": 42540,
+  "step": 1000,
+  "startup": false,
+  "scope": "2019_screen",
+  "updated": 1794881974.1315818
+}

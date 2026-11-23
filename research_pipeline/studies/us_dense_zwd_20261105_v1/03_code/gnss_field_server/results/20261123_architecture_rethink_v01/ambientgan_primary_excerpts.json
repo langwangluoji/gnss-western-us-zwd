@@ -1,0 +1,47 @@
+{
+  "source": "https://www.cs.utexas.edu/~ecprice/papers/ambientgan.pdf",
+  "sha256": "16ce69017afac6f717cc06c6d1a4a2f11a12b1f3c54ad7f3c86949a73766623a",
+  "pages": 22,
+  "excerpts": [
+    {
+      "page": 1,
+      "term": "measurements",
+      "excerpt": "Published as a conference paper at ICLR 2018\nAMBIENTGAN: GENERATIVE MODELS FROM LOSSY\nMEASUREMENTS\nAshish Bora\nDepartment of Computer Science\nUniversity of Texas at Austin\nashish.bora@utexas.edu\nEric Price\nDepartment of Computer Science\nUniversity of Texas at Austin\necprice@cs.utexas.edu\nAlexandros G. Dimakis\nDepartment of Electrical and Computer Engineering\nUniversity of Texas at Austin\ndimakis@austin.utexas.edu\nABSTRACT\nGenerative models provide a way to model structure in complex distributions and\nhave been shown to be useful for many tasks of practical interest. However, cur-\nrent techniques for training generative models require access to fully-observed\nsamples. In many se"
+    },
+    {
+      "page": 2,
+      "term": "unique",
+      "excerpt": "ess is not invertible for a single image. However,\nwe show that the distribution of measured images uniquely determines the distribution of original\nimages. This implies that a pure Nash equilibrium for the GAN game must \ufb01nd a generative model\nthat matches the true distribution. We show similar results for a dropout measurement model, where\neach pixel is set to zero with some probability p, and a random projection measurement model,\nwhere we observe the inner product of the image with a random Gaussian vector.\nEmpirical results.\nOur empirical work also considers measurement models for which we do not\nhave provable guarantees. We present results on some of our models now and defer the full ex"
+    },
+    {
+      "page": 2,
+      "term": "measurements",
+      "excerpt": " noisy\nor incomplete samples. We show that our observations can be even projections or more general\nmeasurements of different types and the unknown distribution is still provably recoverable. A critical\nassumption for our framework and theory to work is that the measurement process is known and\nsatis\ufb01es certain technical conditions.\nWe present several measurement processes for which it is possible to learn a generative model from\na dataset of measured samples, both in theory and in practice. Our approach uses a new way of\ntraining GANs, which we call AmbientGAN. The idea is simple: rather than distinguish a real\nimage from a generated image as in a traditional GAN, our discriminator must dis"
+    },
+    {
+      "page": 3,
+      "term": "identif",
+      "excerpt": "ach image. On left, the training data\ndoes not include the angle of the projections, so it can-\nnot identify orientation or chirality. On right, the train-\ning data includes the angle.\nFigure 3: Results with Convolve+Noise on celebA (left) and 1D-projections on MNIST (right).\nLearning a GAN on images denoised by Wiener deconvolution leads to poor sample quality while\nour models are able to produce cleaner samples.\nIn Fig. 3b, we consider learning a generative model on the 2D images in the MNIST handwritten\ndigit dataset [LeCun et al. (1998)] from pairs of 1D projections. That is, measurements consist of\npicking two random lines and projecting the image onto each line, so the observed value a"
+    },
+    {
+      "page": 3,
+      "term": "measurements",
+      "excerpt": "Published as a conference paper at ICLR 2018\nFigure 2: (Left) Samples of lossy measurements used for training. Samples produced by (middle) a\nbaseline that trains from inpainted images, and (right) our model.\n(a) (left) Samples of lossy measurements. Each\nimage is a blurred noisy version of the original.\nSamples produced by (middle) a baseline that uses\nWiener deconvolution, and (right) our model.\n(b) Samples produced by our model trained from two\n1D projections of each image. On left, the training data\ndoes not include the angle of the projections, so it can-\nnot identify orientation or chirality. On right, the train-\ning data includes the angle.\nFigure 3: Results with "
+    },
+    {
+      "page": 4,
+      "term": "measurements",
+      "excerpt": "bution, superscript \u2018g\u2019 for the gener-\nated distributions, \u2018x\u2019 for the underlying space and \u2018y\u2019 for measurements. Let pr\nx be a real underlying\ndistribution over Rn. We observe lossy measurements performed on samples from pr\nx. If we let m be\nthe size of each observed measurement, then, each measurement is an output of some measurement\nfunction f\u03b8 : Rn \u2192Rm, parameterized by \u03b8. We allow the measurement function to be stochastic\nby letting the parameters of the measurement functions have a distribution p\u03b8. With this notation,\nfor a given x and \u03b8, the measurements are given by y = f\u03b8(x). We assume that it is easy to sample\n\u0398 \u223cp\u03b8 and to compute f\u03b8(x) for any x and \u03b8. The distributions pr\nx and p"
+    },
+    {
+      "page": 5,
+      "term": "unique",
+      "excerpt": "ing distribution pr\nx for certain measurement\nmodels. Our broad approach is to show that there is a unique distribution pr\nx consistent with the\nobserved measurement distribution pr\ny, i.e., the mapping of distributions of samples pr\nx to distri-\nbution of measurements pr\ny is invertible even though the map from an individual image x to its\nmeasurements f\u03b8(x) is not. If this holds, then the following lemma immediately gives a consistency\nguarantee with the AmbientGAN training procedure.\nLemma 5.1. As in Section 3, let pr\nx be the data distribution, p\u03b8 be the distribution over parameters\nof the measurement functions and pr\ny be the induced measurement distribution. Further, assume that\nfor th"
+    },
+    {
+      "page": 5,
+      "term": "measurements",
+      "excerpt": " Convolve+Noise: Let k\nbe a convolution kernel and let \u0398 \u223cp\u03b8 be the distribution of noise. Then the measurements are\ngiven by f\u0398(x) = k \u2217x+\u0398, where \u2217is the convolution operator. Block-Patch: A randomly chosen\nk \u00d7 k patch is set to zero. Keep-Patch: All pixels outside a randomly chosen k \u00d7 k patch are set to\nzero. Extract-Patch: A random k\u00d7k patch is extracted. Note that unlike the previous measurement\nfunction, the information about the location of the patch is lost. Pad-Rotate-Project: We pad the\nimage on all four sides by zeros. Then we rotate the image by a random angle (\u03b8) about its center.\nThe padding is done to make sure that the original pixels stay within the boundary. Finally, for e"
+    }
+  ]
+}

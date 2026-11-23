@@ -1,0 +1,14 @@
+{
+  "station": "LDSW",
+  "source_sha256": "b5703726b44e51a987341f01d8dc766c3aa8d53d55e7f8137ef1db9861e9dedc",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ldsw.pwv.gz",
+  "coverage": {
+    "2016": 0.9888433515482696,
+    "2017": 0.9892694063926941,
+    "2018": 0.976027397260274,
+    "2019": 0.8636986301369863,
+    "2020": 0.9981785063752276
+  },
+  "valid_hours": 42236,
+  "cache_sha256": "2bfde438ab2c29ca8170819cf89f737e3e95a6a9c3c1661a3b5ba524980e37ea"
+}

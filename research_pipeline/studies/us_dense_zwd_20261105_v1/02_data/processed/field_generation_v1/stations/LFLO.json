@@ -1,0 +1,14 @@
+{
+  "station": "LFLO",
+  "source_sha256": "a72c79508d23bc5949d33dd2e92e46083388fc2a274f3e8bcd1967d1dbe7d27a",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\lflo.pwv.gz",
+  "coverage": {
+    "2016": 0.9593579234972678,
+    "2017": 0.922945205479452,
+    "2018": 0.952054794520548,
+    "2019": 0.9472602739726027,
+    "2020": 0.7534153005464481
+  },
+  "valid_hours": 39768,
+  "cache_sha256": "5a46b552ab456c5090c210c4d68e39c563bb896168834dbfbea60e29f7b93e02"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "ORMT",
+  "source_sha256": "7586256bc0b2dbe1d6100d478fcad7111bf67de7cd4f08731225560e68bb3df0",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ormt.pwv.gz",
+  "coverage": {
+    "2016": 0.9937386156648452,
+    "2017": 0.9940639269406393,
+    "2018": 0.9859589041095891,
+    "2019": 0.9853881278538813,
+    "2020": 0.9944216757741348
+  },
+  "valid_hours": 43441,
+  "cache_sha256": "c0edb938292166ce112dd45a3a29b4768815bfbcefcd8c72da9b241aab11e81b"
+}

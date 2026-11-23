@@ -1,0 +1,1 @@
+{"actual_updates":400,"bitwise":true,"continuous":200,"elapsed_seconds":75.23399999999674,"passed":true,"resume":[100,100],"signature":{"data":"58ca6d30dd5e55c4254fa4a6324ee9577553e442711db9ce7e2b3066f94fee31","device":"NVIDIA GeForce RTX 4060 Laptop GPU","runner":"5f1ed5a116e31690e09d449f4b52476d8d3fb68908485818153b28474d16aca9","torch":"2.8.0+cu129"},"weights_changed":true}

@@ -1,0 +1,38 @@
+{
+  "note": "Current corrected-split M0 step1000 development screen; counts/protocol diagnostics, not final model quality",
+  "configured_development_stations": 110,
+  "scored_stations": 76,
+  "station_hours": 42540,
+  "pair_counts": {
+    "0-25": {
+      "station_pairs": 58,
+      "surface_pairs_height_difference_le100m": 22
+    },
+    "25-50": {
+      "station_pairs": 76,
+      "surface_pairs_height_difference_le100m": 22
+    },
+    "50-100": {
+      "station_pairs": 96,
+      "surface_pairs_height_difference_le100m": 27
+    },
+    "100-200": {
+      "station_pairs": 230,
+      "surface_pairs_height_difference_le100m": 44
+    }
+  },
+  "nearest_input_distance_quantiles_km": [
+    5.419524398395036,
+    28.231434837057698,
+    41.32698346951719,
+    53.152597361525395,
+    98.73864469530515
+  ],
+  "input_count150km_quantiles": [
+    3.0,
+    6.0,
+    7.0,
+    8.0,
+    10.0
+  ]
+}

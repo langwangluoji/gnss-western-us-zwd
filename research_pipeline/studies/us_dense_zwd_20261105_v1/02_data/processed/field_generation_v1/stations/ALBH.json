@@ -1,0 +1,14 @@
+{
+  "station": "ALBH",
+  "source_sha256": "d5f9e0f7e543a1dac049c6349579e4f258a8d232661b3a7ddba9bf06eabc7712",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\albh.pwv.gz",
+  "coverage": {
+    "2016": 0.9980646630236795,
+    "2017": 0.9941780821917808,
+    "2018": 0.9794520547945206,
+    "2019": 0.994406392694064,
+    "2020": 0.9979508196721312
+  },
+  "valid_hours": 43533,
+  "cache_sha256": "a8ded48e40e00d7260f446c3f6ac04567bd4a3e6eaac01e687a3de702f05e4c6"
+}

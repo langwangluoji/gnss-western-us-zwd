@@ -1,0 +1,14 @@
+{
+  "station": "CRRS",
+  "source_sha256": "a5e49bc2728d8eefc01f28535c9764c0e511b91abe4858b0c42f463e38981d92",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\crrs.pwv.gz",
+  "coverage": {
+    "2016": 0.9754098360655737,
+    "2017": 0.9818493150684932,
+    "2018": 0.9614155251141553,
+    "2019": 0.9922374429223745,
+    "2020": 0.995332422586521
+  },
+  "valid_hours": 43026,
+  "cache_sha256": "8806f82f4a0229168e02259f16b64e8526ba1963142f097d000380599cf0b831"
+}

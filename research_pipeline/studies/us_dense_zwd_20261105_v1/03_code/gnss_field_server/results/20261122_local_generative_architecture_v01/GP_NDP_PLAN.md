@@ -1,0 +1,11 @@
+# Correlated-noise NDP follow-up
+
+Registered before running this follow-up,2026-11-22. Same user-authorized local NDP exploration; no server. Original independent-noise NDP480-step folds remain archived and reported. First-fold K32 results already seen, so this is an adaptive incremental follow-up, not new independent confirmation.
+
+Hypothesis: using the frozen Gaussian prior correlation as forward diffusion noise can retain established spatial dependence while learning non-Gaussian observation residuals. Candidate names N-GP-point and N-GP-set, two existing folds, fresh seed42,480 DSM updates, batch8, same exact training hours/order/targets/conditioning/optimizer/schedule/inner checkpoints as N-point/N-set. Change only the noise correlation: coherent source factors plus observation tau are divided by their fixed marginal SD, yielding unit-marginal correlated Gaussian noise. Independent and GP-noise DSM both keep clean residuals normalized by10*hour amplitude. No target-dependent noise, no extra tau at inference.
+
+For forward covarianceR, the probability-flow ODE in sigma is (x-E[x0|x_sigma])/sigma: R cancels the precision in the score. The same18-step Heun sampler is therefore used; pointwise MSE has the same conditional-mean optimum even without Mahalanobis weighting, though finite-capacity training weights are not equivalent. This is our NDP-inspired variant, not an original-paper reproduction.
+
+Register160/320/480 inner K16 ES candidates exactly as in the independent-noise branch. No pretraining or warm-start from independent-noise weights. Outer12 hours/K32, same masks and seed. Two versions isolate attention effects within each noise family; joint improvement may come from importing the frozen Gaussian correlation rather than learning it. B2018 remains exposed incremental development.
+
+All selected NDP checkpoints subsequently receive K32/128/512 fixed-prefix sampling audit, no reselection. In addition to raw MC point means, report a fixed-coefficient zero-mean control variate: subtract the analytic Gaussian-sampler gain times the initial diffusion noise before averaging, then add the frozen mean. This changes the Monte Carlo estimator, not the sample distribution or model. Report both estimators and their MC standard errors; do not claim an architecture gain from estimator variance reduction.

@@ -1,0 +1,14 @@
+{
+  "station": "EMIG",
+  "source_sha256": "b469105ebf17bcb3678a8fe8e74b8e765b7ea2a96d3699f2b94a533d30267256",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\emig.pwv.gz",
+  "coverage": {
+    "2016": 0.995332422586521,
+    "2017": 0.9899543378995433,
+    "2018": 0.9611872146118722,
+    "2019": 0.9358447488584475,
+    "2020": 0.2182377049180328
+  },
+  "valid_hours": 35950,
+  "cache_sha256": "954a447b1d2987acedb2ffdde21518f8bbcbf73d754f2a70596548d948d4aaf0"
+}

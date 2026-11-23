@@ -1,0 +1,14 @@
+{
+  "station": "HOTK",
+  "source_sha256": "e22ba33fd020fa16eaa1e6998429f773633a0dca16736730d1fb31388ab76145",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\hotk.pwv.gz",
+  "coverage": {
+    "2016": 0.9907786885245902,
+    "2017": 0.9565068493150685,
+    "2018": 0.9077625570776255,
+    "2019": 0.9458904109589041,
+    "2020": 0.9842896174863388
+  },
+  "valid_hours": 41966,
+  "cache_sha256": "d0f50e808a57ceb5add620369066cfed75c66ee4cc9a097cae89c29ff0d9ea74"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "TJRN",
+  "source_sha256": "e5df5d2820f76f082965876ad586d01390ed0f0aa47e7fae0f3a7723cc42d756",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\tjrn.pwv.gz",
+  "coverage": {
+    "2016": 0.985655737704918,
+    "2017": 0.9804794520547945,
+    "2018": 0.9660958904109589,
+    "2019": 0.9970319634703196,
+    "2020": 0.9959016393442623
+  },
+  "valid_hours": 43192,
+  "cache_sha256": "021c72249bb6137c48e7b86e83b0ba312a9ac0eea44899898919dead92a10809"
+}

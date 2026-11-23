@@ -1,0 +1,9 @@
+{
+  "sha256": "49d44f20309a30e6e3e2558f7142a8b23b293c4939a0c41a1a5e7c85060cae9c",
+  "files_verified": 18,
+  "checkpoint_sha256": {
+    "mean": "ae04939fc897e1c6c4a2a22e68b5d7581d060d926402eb480cbbf1990b2e7b31",
+    "edm": "5c416f692e0833073961ba12dbfc669669231f0a4670368147d98eb500727a2a"
+  },
+  "D2020": false
+}

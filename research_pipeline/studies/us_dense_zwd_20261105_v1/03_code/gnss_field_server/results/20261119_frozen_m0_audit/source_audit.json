@@ -1,0 +1,8 @@
+{
+  "remote": [
+    "IMPORT /share/home/u23114/.conda/envs/ZhouSiyu/bin/python /share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/code/a800_evalfix_v04/gnss_field_server/src/gnss_field/__init__.py",
+    "DEPENDENCIES []"
+  ],
+  "different_sources": [],
+  "release_files": 85
+}

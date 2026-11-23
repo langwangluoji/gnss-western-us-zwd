@@ -1,0 +1,14 @@
+{
+  "station": "NVLA",
+  "source_sha256": "9e619e13a86ca9c5c61e4d51a39dc350126875923dcbd9949e51766a3478bf6a",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\nvla.pwv.gz",
+  "coverage": {
+    "2016": 0.9692622950819673,
+    "2017": 0.9775114155251141,
+    "2018": 0.9788812785388128,
+    "2019": 0.9918949771689498,
+    "2020": 0.9890710382513661
+  },
+  "valid_hours": 43029,
+  "cache_sha256": "ab0652afc6112f00b0a81ab2cf826f389e46ad7071640654374905b0107946d9"
+}

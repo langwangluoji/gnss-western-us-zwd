@@ -1,0 +1,15 @@
+{
+  "import_path": "C:\\Users\\user\\AppData\\Local\\Temp\\gnss_wheel_rbfn5i6j\\installed\\gnss_field\\__init__.py",
+  "hashes": {
+    "plan": "b184b03d8e09aef028480b7060cd5d161ef33690e23584ca17d09d0c07f08525",
+    "data": "dd1cc505eae8a78644e2298ba8ac9f4179acce67d5a4d71181e13fd78db400f2",
+    "code": "a5e5a2b378475f10feb1334d0bd7bde6e8465e54ee1f6732147c337b6ecd15c3",
+    "protocol": "25e7f9a60ed59d3edbba2409aad40653522ba38b2700f99735960c2fd1938768"
+  },
+  "source_digest": "23be004d127f5a3e9724472c34a47444311ad9e37a14df51beff3ee41ec55abb",
+  "resources_present": true,
+  "outside_source_directory": true,
+  "training_started": false,
+  "cli_help_passed": true,
+  "isolated_install_verified": true
+}

@@ -1,0 +1,14 @@
+{
+  "station": "LMRR",
+  "source_sha256": "de97399df1d696b28a40a80dc59c07320a0b933a8fe610d8abd88aff696e1cc8",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\lmrr.pwv.gz",
+  "coverage": {
+    "2016": 0.9471766848816029,
+    "2017": 0.9639269406392694,
+    "2018": 0.9573059360730594,
+    "2019": 0.8347031963470319,
+    "2020": 0.9821265938069217
+  },
+  "valid_hours": 41089,
+  "cache_sha256": "d660e6d6f608c6be333c9dbdeddd81cd82f9fb24d5844ebd900ba71e9aaa2675"
+}

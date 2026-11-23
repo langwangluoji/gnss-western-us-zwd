@@ -1,0 +1,120 @@
+{
+  "scope": "Fresh raw inventory and source hashes; full processed validity scan. Regional raw completeness CSV is prior audit, not rescanned here.",
+  "raw_files": 5084,
+  "raw_bytes": 9622411448,
+  "missing_files": [],
+  "extra_files": [],
+  "size_mismatch": [],
+  "global_bounds": {
+    "lon": [
+      -178.12094228349997,
+      179.30132642766972
+    ],
+    "lat": [
+      -89.99893056810588,
+      83.64323665026862
+    ]
+  },
+  "header_time": [
+    "2000-10-30 00:00:00",
+    "2021-12-30 23:00:00"
+  ],
+  "regional_candidates": 837,
+  "screenshot_box_stations": 1694,
+  "construction": {
+    "stations": 176,
+    "bounds": {
+      "lon": [
+        -122.50343769645453,
+        -113.73134275623424
+      ],
+      "lat": [
+        32.66639501827908,
+        38.44421470899332
+      ]
+    },
+    "axis_start": "2000-01-01 00:00:00",
+    "axis_end": "2021-12-31 23:00:00",
+    "duplicate_hours": 0,
+    "axis_gaps": 0
+  },
+  "input39": {
+    "stations": 39,
+    "bounds": {
+      "lon": [
+        -122.09614319187374,
+        -113.73134275623424
+      ],
+      "lat": [
+        32.66639501827908,
+        38.08999031988549
+      ]
+    },
+    "axis_start": "2000-01-01 00:00:00",
+    "axis_end": "2021-12-31 23:00:00",
+    "duplicate_hours": 0,
+    "axis_gaps": 0
+  },
+  "validation42": {
+    "stations": 42,
+    "bounds": {
+      "lon": [
+        -121.8232339879582,
+        -115.29391699732057
+      ],
+      "lat": [
+        32.890663657166485,
+        38.38033538806225
+      ]
+    },
+    "axis_start": "2000-01-01 00:00:00",
+    "axis_end": "2021-12-31 23:00:00",
+    "duplicate_hours": 0,
+    "axis_gaps": 0
+  },
+  "test26": {
+    "stations": 26,
+    "bounds": {
+      "lon": [
+        -122.21428372369918,
+        -115.8248901462626
+      ],
+      "lat": [
+        32.954702647721355,
+        38.53018537394004
+      ]
+    },
+    "axis_start": "2020-01-01 00:00:00",
+    "axis_end": "2021-12-31 23:00:00",
+    "duplicate_hours": 0,
+    "axis_gaps": 0
+  },
+  "splits": {
+    "train": 65369,
+    "eligible": 191948,
+    "dev": 8741,
+    "screen": 576,
+    "retro": 17506,
+    "early_mean": 83232,
+    "full_train": 118149
+  },
+  "domain_cells": 226,
+  "train_complete_by_year": {
+    "2007": 928,
+    "2008": 7896,
+    "2009": 8053,
+    "2010": 7801,
+    "2011": 6596,
+    "2012": 5740,
+    "2013": 5081,
+    "2014": 6657,
+    "2015": 2806,
+    "2016": 5252,
+    "2017": 4833,
+    "2018": 3726
+  },
+  "source_hashes": {
+    "checked": 244,
+    "mismatches": []
+  }
+}

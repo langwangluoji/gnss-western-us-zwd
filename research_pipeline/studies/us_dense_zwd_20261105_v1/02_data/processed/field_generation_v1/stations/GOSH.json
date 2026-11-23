@@ -1,0 +1,14 @@
+{
+  "station": "GOSH",
+  "source_sha256": "0b88863f8d56b2833f32a27636ddaacd5f0d07ae70428ead8be8a01b07baf863",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\gosh.pwv.gz",
+  "coverage": {
+    "2016": 0.923155737704918,
+    "2017": 0.9038812785388128,
+    "2018": 0.9811643835616438,
+    "2019": 0.9982876712328768,
+    "2020": 0.9977231329690346
+  },
+  "valid_hours": 42131,
+  "cache_sha256": "dee63db24aec6684b67fe57cd54cddb1a1928d25c1b9f33e5fadf8666cad44d7"
+}

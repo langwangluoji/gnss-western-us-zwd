@@ -1,0 +1,14 @@
+{
+  "station": "BLY1",
+  "source_sha256": "0d50801dc678fa802b8cc742dd8000e154099acd80a4c8b04e6ac7e7da5926c8",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\bly1.pwv.gz",
+  "coverage": {
+    "2016": 0.9404599271402551,
+    "2017": 0.9438356164383561,
+    "2018": 0.9666666666666667,
+    "2019": 0.9849315068493151,
+    "2020": 0.9766621129326047
+  },
+  "valid_hours": 42204,
+  "cache_sha256": "4f4c2681e786e56b0e47daab5386b66e32427b17e1030b4a9555e0eacfab53e7"
+}

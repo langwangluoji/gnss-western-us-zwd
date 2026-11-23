@@ -1,0 +1,14 @@
+{
+  "station": "OAKR",
+  "source_sha256": "c0707d30430a82a896c631929af2f330e9397216ebae7c1329cd2dd1b464283b",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\oakr.pwv.gz",
+  "coverage": {
+    "2016": 0.9346539162112932,
+    "2017": 0.9375570776255707,
+    "2018": 0.9759132420091324,
+    "2019": 0.9784246575342466,
+    "2020": 0.9812158469945356
+  },
+  "valid_hours": 42162,
+  "cache_sha256": "bcb1bb17adf5b5f1ed074c4ff185ec53834b78bc0aab1c7024a998492377e8c4"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "IDOG",
+  "source_sha256": "19e0192e568099f7c3a6f4fa569e1b28db040a759c56f0f17f54f4394c3e678c",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\idog.pwv.gz",
+  "coverage": {
+    "2016": 0.9849726775956285,
+    "2017": 0.9820776255707763,
+    "2018": 0.9537671232876712,
+    "2019": 0.9893835616438356,
+    "2020": 0.992827868852459
+  },
+  "valid_hours": 42998,
+  "cache_sha256": "3eb587a1dfb35629aaf639b922ba724f2db8a330f96a4d10be8f53a4224da8c5"
+}

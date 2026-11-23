@@ -1,0 +1,14 @@
+{
+  "station": "CJMG",
+  "source_sha256": "b3b99b7392ad7bba8594e8ba626733ed6a27256c25395858d24ea6d9b462b36e",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\cjmg.pwv.gz",
+  "coverage": {
+    "2016": 0.9796220400728597,
+    "2017": 0.9866438356164383,
+    "2018": 0.9610730593607306,
+    "2019": 0.9914383561643836,
+    "2020": 0.8611111111111112
+  },
+  "valid_hours": 41916,
+  "cache_sha256": "91e0fe685664dfc7ce47d223a7a8574c15913eb6971086767e1e31277958bfad"
+}

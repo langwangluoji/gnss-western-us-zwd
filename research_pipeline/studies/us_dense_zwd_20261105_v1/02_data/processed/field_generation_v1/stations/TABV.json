@@ -1,0 +1,14 @@
+{
+  "station": "TABV",
+  "source_sha256": "25e236761d506eaeae9fad787799f1d741f79561d19b50916e53575916737759",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\tabv.pwv.gz",
+  "coverage": {
+    "2016": 0.9734744990892532,
+    "2017": 0.9194063926940639,
+    "2018": 0.9425799086757991,
+    "2019": 0.8573059360730594,
+    "2020": 0.9800774134790529
+  },
+  "valid_hours": 40981,
+  "cache_sha256": "b4c5c3ccc9017e9614e6c1aa10400e3173c3bff519f14b1526ae620a8f6243e5"
+}

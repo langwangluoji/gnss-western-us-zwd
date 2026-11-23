@@ -1,0 +1,14 @@
+{
+  "station": "LINJ",
+  "source_sha256": "312640c63479bd6f50ebcf6251112f3aef92b3f98128d30960fe1984fab7b6d1",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\linj.pwv.gz",
+  "coverage": {
+    "2016": 0.9924863387978142,
+    "2017": 0.972716894977169,
+    "2018": 0.930365296803653,
+    "2019": 0.9930365296803653,
+    "2020": 0.995332422586521
+  },
+  "valid_hours": 42831,
+  "cache_sha256": "99fb3cfe107f5cce8b236288f13c228daee88213d0e680fa8b86cd322c18f615"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "PLPX",
+  "source_sha256": "fafdd8f878bd4392b4f11262d0605a5654a4076f016c4f67625b5aefc4666fc6",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\plpx.pwv.gz",
+  "coverage": {
+    "2016": 0.9813296903460837,
+    "2017": 0.9934931506849315,
+    "2018": 0.9654109589041096,
+    "2019": 0.9837899543378995,
+    "2020": 0.9974954462659381
+  },
+  "valid_hours": 43160,
+  "cache_sha256": "0142fe5e503513ad36a969b3b02e5c8e1235e1fc978b23b456eaed3cafa77ba7"
+}

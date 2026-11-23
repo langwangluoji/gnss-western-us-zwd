@@ -1,0 +1,14 @@
+{
+  "station": "OBSR",
+  "source_sha256": "02e6fa550ba219d57938d2c50d531e6c8342401ef8724cf85e3d8055ca50f547",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\obsr.pwv.gz",
+  "coverage": {
+    "2016": 0.982695810564663,
+    "2017": 0.9534246575342465,
+    "2018": 0.9602739726027397,
+    "2019": 0.9506849315068493,
+    "2020": 0.8888888888888888
+  },
+  "valid_hours": 41532,
+  "cache_sha256": "1f211c89801c07bf9da3d7f8f006a268e105fc4263d48cfe4c9eaf85925c3e49"
+}

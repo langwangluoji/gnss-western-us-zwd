@@ -1,0 +1,14 @@
+{
+  "station": "TONO",
+  "source_sha256": "0d8c39c2f15d5436e24321ae5887b0e78a3e532cd5510dcf38c340ef662c6af2",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\tono.pwv.gz",
+  "coverage": {
+    "2016": 0.9963570127504554,
+    "2017": 0.9828767123287672,
+    "2018": 0.9514840182648402,
+    "2019": 0.9762557077625571,
+    "2020": 0.9979508196721312
+  },
+  "valid_hours": 43015,
+  "cache_sha256": "8bbe4359598d15067300df932d0ebe06fe9af93af33a7d7b7979a901d4bb27ed"
+}

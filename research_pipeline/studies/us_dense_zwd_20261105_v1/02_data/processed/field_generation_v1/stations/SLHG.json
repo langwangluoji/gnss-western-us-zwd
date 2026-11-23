@@ -1,0 +1,14 @@
+{
+  "station": "SLHG",
+  "source_sha256": "87d3434031b849324d882097a48bbb5746a1e0e58153a8e509ac7dd582be4d40",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\slhg.pwv.gz",
+  "coverage": {
+    "2016": 0.9919171220400729,
+    "2017": 0.9730593607305936,
+    "2018": 0.9738584474885845,
+    "2019": 0.9675799086757991,
+    "2020": 0.9978369763205829
+  },
+  "valid_hours": 43009,
+  "cache_sha256": "158a8161b349bd49da861170f0188b40ed56f924e64d6baa26d175ba7ea4175a"
+}

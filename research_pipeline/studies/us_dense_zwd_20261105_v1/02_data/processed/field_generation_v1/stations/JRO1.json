@@ -1,0 +1,14 @@
+{
+  "station": "JRO1",
+  "source_sha256": "3e52129309a8448c9e2589fc1950ee9410c30725ec8453adfb5da52515ae4069",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\jro1.pwv.gz",
+  "coverage": {
+    "2016": 0.995332422586521,
+    "2017": 0.9877853881278539,
+    "2018": 0.9320776255707762,
+    "2019": 0.9624429223744292,
+    "2020": 0.9741575591985429
+  },
+  "valid_hours": 42549,
+  "cache_sha256": "24dc64f9f98d49a5b47bd3c32d95b1c8991e062538cb8cecd96eadc541892033"
+}

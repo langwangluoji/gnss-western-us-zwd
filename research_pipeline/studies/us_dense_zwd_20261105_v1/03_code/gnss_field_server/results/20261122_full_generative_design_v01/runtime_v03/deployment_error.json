@@ -1,0 +1,1 @@
+{"error": "['sbatch', '--test-only', '--no-requeue']: sbatch: error: \u5fc5\u987b\u4e3a\u6bcf\u4e2a GPU \u8bbe\u7f6e\u4e0d\u8d85\u8fc7 7 \u4e2a CPU \u6838\u5fc3\u3002\u793a\u4f8b: salloc -p A800 --gres=gpu:a800:1 -n 7\nallocation failure: Unspecified error\n", "updated_unix": 1795369574.8119464}

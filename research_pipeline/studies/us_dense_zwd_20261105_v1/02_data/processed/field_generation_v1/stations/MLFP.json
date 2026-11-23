@@ -1,0 +1,14 @@
+{
+  "station": "MLFP",
+  "source_sha256": "e735d486a8c100e754a9b5101699012fea355ce5070f5ecca3ef43a0a2e782a1",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\mlfp.pwv.gz",
+  "coverage": {
+    "2016": 0.9946493624772313,
+    "2017": 0.9907534246575342,
+    "2018": 0.9864155251141552,
+    "2019": 0.9928082191780822,
+    "2020": 0.9895264116575592
+  },
+  "valid_hours": 43446,
+  "cache_sha256": "672fa4b64a88174d087862e0ff6dd452253a5887695bfdffe21b4ceb95782167"
+}

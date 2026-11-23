@@ -1,0 +1,14 @@
+{
+  "station": "AGMT",
+  "source_sha256": "204094887ba4495b2010be4ce7d59e83c660ca4378dbd755def27b8edcd9d7d6",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\agmt.pwv.gz",
+  "coverage": {
+    "2016": 0.9959016393442623,
+    "2017": 0.9812785388127854,
+    "2018": 0.9745433789954338,
+    "2019": 0.9905251141552511,
+    "2020": 0.9980646630236795
+  },
+  "valid_hours": 43325,
+  "cache_sha256": "8eb53be7347ee97e6ef1698d4393f4a7734456d74d83780d7c3931ae05ec08dc"
+}

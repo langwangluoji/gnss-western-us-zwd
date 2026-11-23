@@ -1,0 +1,14 @@
+{
+  "station": "PNVL",
+  "source_sha256": "1ed1d257c9367d8af9eb124d08afb8f20b623005cc6a5df5b72cb6e7bb3b67df",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\pnvl.pwv.gz",
+  "coverage": {
+    "2016": 0.9542349726775956,
+    "2017": 0.9488584474885845,
+    "2018": 0.955365296803653,
+    "2019": 0.9791095890410959,
+    "2020": 0.9762067395264117
+  },
+  "valid_hours": 42215,
+  "cache_sha256": "7634294685a767f76e678764d80d7c8521ab8519e1dc24401fd2e83b874f3c4f"
+}

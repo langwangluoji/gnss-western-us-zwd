@@ -1,0 +1,14 @@
+{
+  "station": "UFDA",
+  "source_sha256": "29c9df6807c9bb2c401f8aa524333c5ce249c2b35738c8587f57e0fb2eff7340",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ufda.pwv.gz",
+  "coverage": {
+    "2016": 0.9693761384335154,
+    "2017": 0.955365296803653,
+    "2018": 0.905365296803653,
+    "2019": 0.9381278538812785,
+    "2020": 0.9238387978142076
+  },
+  "valid_hours": 41148,
+  "cache_sha256": "7552dcb3bda48451fc3896f66a9f8cac76a2d67ac25f5de9f7b2ba166f1733dd"
+}

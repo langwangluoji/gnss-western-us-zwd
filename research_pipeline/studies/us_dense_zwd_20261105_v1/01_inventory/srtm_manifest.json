@@ -1,0 +1,318 @@
+{
+  "product": "CGIAR-CSI / CIAT hole-filled SRTM version 4.1, 3 arc-seconds",
+  "product_source": "https://srtm.csi.cgiar.org/",
+  "vertical_datum_source": "https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm-1-arc",
+  "support_bounds_wsen": [
+    -123.0,
+    31.0,
+    -113.0,
+    39.0
+  ],
+  "horizontal_crs": "EPSG:4326",
+  "vertical_reference": "EGM96 orthometric height, meters",
+  "nominal_resolution": "3 arc-seconds, approximately 90 m at equator",
+  "processing": "CIAT hole filling with interpolation and auxiliary DEM data, as documented in product readme",
+  "citation": "Jarvis A., H.I. Reuter, A. Nelson, E. Guevara, 2008, Hole-filled seamless SRTM data V4, CIAT.",
+  "nasa_30m_access_check": {
+    "status": "Earthdata authentication required",
+    "http_status": 302,
+    "redirect_host": "urs.earthdata.nasa.gov",
+    "metadata_source": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=SRTMGL1&version=003"
+  },
+  "tiles": [
+    {
+      "tile": "srtm_12_05",
+      "url": "https://srtm.csi.cgiar.org/wp-content/uploads/files/srtm_5x5/TIFF/srtm_12_05.zip",
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\02_data\\raw\\srtm\\srtm_12_05.zip",
+      "bytes": 20628019,
+      "sha256": "b8650ac03eef94ed2b108ea3f37fb68a7aa65618a4a149ee37ff503e1f2bda52",
+      "zip_crc_verified": true,
+      "zip_members": [
+        {
+          "name": "readme.txt",
+          "bytes": 2479,
+          "crc32": "8fa39c10"
+        },
+        {
+          "name": "srtm_12_05.hdr",
+          "bytes": 1145,
+          "crc32": "23b08add"
+        },
+        {
+          "name": "srtm_12_05.tfw",
+          "bytes": 156,
+          "crc32": "817929ae"
+        },
+        {
+          "name": "srtm_12_05.tif",
+          "bytes": 72096675,
+          "crc32": "ed8f59f8"
+        }
+      ],
+      "raster_bounds_wsen": [
+        -125.0,
+        35.0,
+        -120.0,
+        40.0
+      ],
+      "crs": "EPSG:4326",
+      "width": 6000,
+      "height": 6000,
+      "resolution_degrees": [
+        0.0008333333333333334,
+        0.0008333333333333334
+      ],
+      "dtype": "int16",
+      "nodata": -32768.0,
+      "uncompressed_tif_sha256": "b654855e3f1471a73f6679402b83f4fd642ce71dca573132a1a1056c1b09314e"
+    },
+    {
+      "tile": "srtm_12_06",
+      "url": "https://srtm.csi.cgiar.org/wp-content/uploads/files/srtm_5x5/TIFF/srtm_12_06.zip",
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\02_data\\raw\\srtm\\srtm_12_06.zip",
+      "bytes": 790295,
+      "sha256": "7db95f32dd074f86fe22f6abc7fde7fa40019514f203cb3e45d861c9ec547733",
+      "zip_crc_verified": true,
+      "zip_members": [
+        {
+          "name": "readme.txt",
+          "bytes": 2479,
+          "crc32": "8fa39c10"
+        },
+        {
+          "name": "srtm_12_06.hdr",
+          "bytes": 1145,
+          "crc32": "15f1fae0"
+        },
+        {
+          "name": "srtm_12_06.tfw",
+          "bytes": 156,
+          "crc32": "368359f5"
+        },
+        {
+          "name": "srtm_12_06.tif",
+          "bytes": 72096675,
+          "crc32": "5835deb3"
+        }
+      ],
+      "raster_bounds_wsen": [
+        -125.0,
+        30.0,
+        -120.0,
+        35.0
+      ],
+      "crs": "EPSG:4326",
+      "width": 6000,
+      "height": 6000,
+      "resolution_degrees": [
+        0.0008333333333333334,
+        0.0008333333333333334
+      ],
+      "dtype": "int16",
+      "nodata": -32768.0,
+      "uncompressed_tif_sha256": "bf9b552a303a2c0f301ae993524f94b37989a4df3260017a35bee28e1b65400b"
+    },
+    {
+      "tile": "srtm_13_05",
+      "url": "https://srtm.csi.cgiar.org/wp-content/uploads/files/srtm_5x5/TIFF/srtm_13_05.zip",
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\02_data\\raw\\srtm\\srtm_13_05.zip",
+      "bytes": 41863492,
+      "sha256": "fd8075988ad481df0d450f9a32a2fd2209644bf0fff670db596e07f54152c70a",
+      "zip_crc_verified": true,
+      "zip_members": [
+        {
+          "name": "readme.txt",
+          "bytes": 2479,
+          "crc32": "8fa39c10"
+        },
+        {
+          "name": "srtm_13_05.hdr",
+          "bytes": 1145,
+          "crc32": "700e93ce"
+        },
+        {
+          "name": "srtm_13_05.tfw",
+          "bytes": 156,
+          "crc32": "6786ce6b"
+        },
+        {
+          "name": "srtm_13_05.tif",
+          "bytes": 72096675,
+          "crc32": "3b849026"
+        }
+      ],
+      "raster_bounds_wsen": [
+        -120.0,
+        35.0,
+        -115.0,
+        40.0
+      ],
+      "crs": "EPSG:4326",
+      "width": 6000,
+      "height": 6000,
+      "resolution_degrees": [
+        0.0008333333333333334,
+        0.0008333333333333334
+      ],
+      "dtype": "int16",
+      "nodata": -32768.0,
+      "uncompressed_tif_sha256": "35587a2b8b99f73c2221ef4fb6194032e107403fdf0e479bc76a0d627de4f8d9"
+    },
+    {
+      "tile": "srtm_13_06",
+      "url": "https://srtm.csi.cgiar.org/wp-content/uploads/files/srtm_5x5/TIFF/srtm_13_06.zip",
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\02_data\\raw\\srtm\\srtm_13_06.zip",
+      "bytes": 20545247,
+      "sha256": "011f4b971c4a28b683150507c2d9157e544a664edf562ee8e46d0d24eb18b197",
+      "zip_crc_verified": true,
+      "zip_members": [
+        {
+          "name": "readme.txt",
+          "bytes": 2479,
+          "crc32": "8fa39c10"
+        },
+        {
+          "name": "srtm_13_06.hdr",
+          "bytes": 1145,
+          "crc32": "464fe3f3"
+        },
+        {
+          "name": "srtm_13_06.tfw",
+          "bytes": 156,
+          "crc32": "d07cbe30"
+        },
+        {
+          "name": "srtm_13_06.tif",
+          "bytes": 72096675,
+          "crc32": "265e72e9"
+        }
+      ],
+      "raster_bounds_wsen": [
+        -120.0,
+        30.0,
+        -115.0,
+        35.0
+      ],
+      "crs": "EPSG:4326",
+      "width": 6000,
+      "height": 6000,
+      "resolution_degrees": [
+        0.0008333333333333334,
+        0.0008333333333333334
+      ],
+      "dtype": "int16",
+      "nodata": -32768.0,
+      "uncompressed_tif_sha256": "e9af0c64882854d572ea18e3e72cebd7897b9e6fe2dea903416aa654b3d9576b"
+    },
+    {
+      "tile": "srtm_14_05",
+      "url": "https://srtm.csi.cgiar.org/wp-content/uploads/files/srtm_5x5/TIFF/srtm_14_05.zip",
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\02_data\\raw\\srtm\\srtm_14_05.zip",
+      "bytes": 41433087,
+      "sha256": "f41863cc7b58759fd4f9f978d5626e8be60b7885771666e1e2101696a2358fcd",
+      "zip_crc_verified": true,
+      "zip_members": [
+        {
+          "name": "readme.txt",
+          "bytes": 2479,
+          "crc32": "8fa39c10"
+        },
+        {
+          "name": "srtm_14_05.hdr",
+          "bytes": 1145,
+          "crc32": "43401574"
+        },
+        {
+          "name": "srtm_14_05.tfw",
+          "bytes": 156,
+          "crc32": "62309e0c"
+        },
+        {
+          "name": "srtm_14_05.tif",
+          "bytes": 72096675,
+          "crc32": "ebfe37e5"
+        }
+      ],
+      "raster_bounds_wsen": [
+        -115.0,
+        35.0,
+        -110.0,
+        40.0
+      ],
+      "crs": "EPSG:4326",
+      "width": 6000,
+      "height": 6000,
+      "resolution_degrees": [
+        0.0008333333333333334,
+        0.0008333333333333334
+      ],
+      "dtype": "int16",
+      "nodata": -32768.0,
+      "uncompressed_tif_sha256": "22926df6dfc947770eb73e453a2480a9d000f4761fdf44fc4751b6a35ecd9932"
+    },
+    {
+      "tile": "srtm_14_06",
+      "url": "https://srtm.csi.cgiar.org/wp-content/uploads/files/srtm_5x5/TIFF/srtm_14_06.zip",
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\02_data\\raw\\srtm\\srtm_14_06.zip",
+      "bytes": 33791609,
+      "sha256": "c3734439ce68c08b0e06e8600897d1b31e6eb26e8f7efc8de76f2d7920bfa522",
+      "zip_crc_verified": true,
+      "zip_members": [
+        {
+          "name": "readme.txt",
+          "bytes": 2479,
+          "crc32": "8fa39c10"
+        },
+        {
+          "name": "srtm_14_06.hdr",
+          "bytes": 1145,
+          "crc32": "75016549"
+        },
+        {
+          "name": "srtm_14_06.tfw",
+          "bytes": 156,
+          "crc32": "d5caee57"
+        },
+        {
+          "name": "srtm_14_06.tif",
+          "bytes": 72096675,
+          "crc32": "43076512"
+        }
+      ],
+      "raster_bounds_wsen": [
+        -115.0,
+        30.0,
+        -110.0,
+        35.0
+      ],
+      "crs": "EPSG:4326",
+      "width": 6000,
+      "height": 6000,
+      "resolution_degrees": [
+        0.0008333333333333334,
+        0.0008333333333333334
+      ],
+      "dtype": "int16",
+      "nodata": -32768.0,
+      "uncompressed_tif_sha256": "855e0387b0f4058ba86fd647ce4ba9ed56fc64f2c1194ed184c73fa7bef7480e"
+    }
+  ],
+  "output": {
+    "path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\02_data\\processed\\terrain\\srtm_cgiar_v41_90m_support_123W_113W_31N_39N.tif",
+    "bytes": 61132778,
+    "sha256": "8fe9cbe68190885870e4cb38abe9e322a18d9f99476f2b9a6c398218d21ee3b4",
+    "coverage_qa": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\02_data\\processed\\terrain\\srtm_coverage_qa.json",
+    "resolution_degrees": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bounds_wsen": [
+      -123.0,
+      31.0,
+      -113.0,
+      39.0
+    ]
+  },
+  "status": "complete",
+  "completed_utc": "2026-11-05T03:08:36.679405+00:00"
+}

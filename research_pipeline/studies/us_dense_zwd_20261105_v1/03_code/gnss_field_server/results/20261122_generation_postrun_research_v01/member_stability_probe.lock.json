@@ -1,0 +1,23 @@
+{
+  "hours": [
+    421186,
+    421690,
+    422362,
+    423202,
+    424042,
+    424714,
+    425386,
+    426058,
+    426898,
+    427738,
+    428242,
+    429082
+  ],
+  "members": 128,
+  "rule": "first fixed pilot hour in each of 12 registered weather weeks; selected without errors",
+  "seed": 20261124,
+  "C2019": false,
+  "D2020": false,
+  "training": false,
+  "created": 1795318274.020604
+}

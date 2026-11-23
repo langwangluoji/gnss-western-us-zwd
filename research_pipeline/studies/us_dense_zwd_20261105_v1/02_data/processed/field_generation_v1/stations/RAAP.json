@@ -1,0 +1,14 @@
+{
+  "station": "RAAP",
+  "source_sha256": "fee2b324e2924c5d3f716cf424fc208e740a625cb24c2ebd8844ce62a0d53af8",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\raap.pwv.gz",
+  "coverage": {
+    "2016": 0.9650500910746812,
+    "2017": 0.9746575342465753,
+    "2018": 0.9711187214611872,
+    "2019": 0.8046803652968036,
+    "2020": 0.972563752276867
+  },
+  "valid_hours": 41114,
+  "cache_sha256": "e01af5c85c38740c453119f97f0c3eafbd9d51a1e61beaf8c69e5ee44d1b75a3"
+}

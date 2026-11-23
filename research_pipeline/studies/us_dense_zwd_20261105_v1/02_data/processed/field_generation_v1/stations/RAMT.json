@@ -1,0 +1,14 @@
+{
+  "station": "RAMT",
+  "source_sha256": "6312ce56127618c1fa57dc279c68eedec1df18707e4bea270fe0e44c36fd075d",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ramt.pwv.gz",
+  "coverage": {
+    "2016": 0.995787795992714,
+    "2017": 0.9876712328767123,
+    "2018": 0.9825342465753425,
+    "2019": 0.9876712328767123,
+    "2020": 0.9951047358834244
+  },
+  "valid_hours": 43399,
+  "cache_sha256": "0cf6d70eb01e2b46e598e060c2da0a1412da91531ae3e568167fb3342483e858"
+}

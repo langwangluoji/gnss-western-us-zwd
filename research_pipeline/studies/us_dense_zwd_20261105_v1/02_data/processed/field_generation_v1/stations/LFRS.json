@@ -1,0 +1,14 @@
+{
+  "station": "LFRS",
+  "source_sha256": "0d73c165bc4e0470c9912ba471447b554ec60e0468327f8a8a75209d62edc8a5",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\lfrs.pwv.gz",
+  "coverage": {
+    "2016": 0.9878187613843351,
+    "2017": 0.955365296803653,
+    "2018": 0.9610730593607306,
+    "2019": 0.9864155251141552,
+    "2020": 0.9949908925318761
+  },
+  "valid_hours": 42846,
+  "cache_sha256": "5a99b6d7176b8bc6450e2f51e965b9052fbf5631e617cff094f4180a85e78ea1"
+}

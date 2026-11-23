@@ -1,0 +1,174 @@
+ Value: https://chatgpt.com/c/6af6fa29-6a4c-83e8-a0a7-15d62767383b ID: RootWebArea
+											449 group (组)
+												450 group (组)
+													451 hyperlink (链接) 跳转到内容 Value: https://chatgpt.com/c/6af6fa29-6a4c-83e8-a0a7-15d62767383b#_R_2lelhqd9iqeprb347l9arad5_
+												452 group (组)
+												453 group (补充)
+													454 group (导航) 应用导航
+														455 button (按钮) 首页
+														456 button (按钮) 资料空间
+														457 button (按钮) 定时任务
+														458 button (按钮) 插件
+														459 button (按钮) 探索
+														460 button (按钮) 站点
+														461 button (按钮) 项目
+														462 button (按钮) 用量 ID: radix-_r_1e_
+														463 button (按钮) 打开个人资料菜单 ID: radix-_R_4ned9n9qd9iqeprb347l9arad5_
+												464 group (主要)
+													465 group (章节标题)
+														466 button (按钮) 新聊天
+															467 image (图形)
+														468 group (组)
+															469 text (文本) Diffusion融合研究设计
+															470 button (按钮) 聊天操作 ID: radix-_r_4e_
+															471 button (按钮) 分享
+															472 button (切换按钮) 切换摘要面板固定状态
+																473 image (图形)
+													474 group (区域) 对话
+														1594 text (文本) 后验采样：
+														1595 custom (数学)
+															1596 text (文本) 𝑧
+															1597 text (文本) 𝑞
+															1598 text (文本) =
+															1599 text (文本) 𝜇
+															1600 text (文本) 𝑞
+															1601 text (文本) +
+															1602 text (文本) 𝜎
+															1603 text (文本) 𝑞
+															1604 text (文本) ⊙
+															1605 text (文本) 𝜖
+															1606 text (文本) ,
+															1607 text (文本) 𝜖
+															1608 text (文本) ∼
+															1609 text (文本) 𝑁
+															1610 text (文本) (
+															1611 text (文本) 0
+															1612 text (文本) ,
+															1613 text (文本) 𝐼
+															1614 text (文本) )
+															1615 text (文本) .
+														1616 text (文本) B站的当前观测只在这个训练后验及真实站似然中使用。
+														1617 text (标题) 3. 条件先验
+														1618 text (文本) 条件先验：
+														1619 custom (数学)
+															1620 text (文本) 𝑝
+															1621 text (文本) 𝜓
+															1622 text (文本) (
+															1623 text (文本) 𝑧
+															1624 text (文本) ∣
+															1625 text (文本) 𝑐
+															1626 text (文本) )
+															1627 text (文本) =
+															1628 text (文本) 𝑁
+															1629 text (文本) (
+															1630 text (文本) 𝜇
+															1631 text (文本) 𝑝
+															1632 text (文本) (
+															1633 text (文本) 𝑐
+															1634 text (文本) )
+															1635 text (文本) ,
+															1636 text (文本) diag
+															1637 text (文本) ⁡
+															1638 text (文本) (
+															1639 text (文本) 𝜎
+															1640 text (文本) 𝑝
+															1641 text (文本) 2
+															1642 text (文本) (
+															1643 text (文本) 𝑐
+															1644 text (文本) )
+															1645 text (文本) )
+															1646 text (文本) )
+															1647 text (文本) .
+														1648 text (文本) 使用256维全局条件向量，经过：
+														1649 custom (数学)
+															1650 text (文本) 256
+															1651 text (文本) →
+															1652 text (文本) 256
+															1653 text (文本) →
+															1654 text (文本) 128.
+														1655 text (文本) 输出64维均值及64维log-variance。
+														1656 text (文本) 推理时不再读取B。
+														1657 text (文本) 关键反对意见：对角高斯先验是一个很强的限制。
+														1658 text (文本) 如果VAE后验实际存在明显的条件多峰、潜变量相关性，后验可能无法被对角先验充分表达。
+														1659 text (文本) 这正是后续GAN和Diffusion可以研究的对象，但前提是VAE的64维潜变量确实携带了有效信息。
+														1660 text (标题) 4. 场解码器：这是整个方案最重要的共享组件
+														1661 text (文本) 我建议使用五级条件金字塔解码器，而不是直接把64维潜变量广播到全部576×格点后用普通MLP生成图像。
+														1662 text (文本) 具体结构：
+														1714 table (表格)
+															1715 data item (行)
+																1716 data item (列标题) 解码层
+																1717 data item (列标题) 输入
+																1718 data item (列标题) 输出
+															1719 data item (行)
+																1720 data item (项) 初始层
+																1721 data item (项) 条件192＋潜变量投影64
+																1722 data item (项) 9×6×192
+															1723 data item (行)
+																1724 data item (项) 上采样1
+																1725 data item (项) 192＋条件128
+																1726 data item (项) 18×12×128
+															1727 data item (行)
+																1728 data item (项) 上采样2
+																1729 data item (项) 128＋条件96
+																1730 data item (项) 36×24×96
+															1731 data item (行)
+																1732 data item (项) 上采样3
+																1733 data item (项) 96＋条件64
+																1734 data item (项) 72×48×64
+															1735 data item (行)
+																1736 data item (项) 上采样4
+																1737 data item (项) 64＋条件32
+																1738 data item (项) 144×96×32
+															1739 data item (行)
+																1740 data item (项) 输出
+																1741 data item (项) 3×3卷积
+																1742 data item (项) 144×96×1
+														1563 button (按钮) 滚动到底部
+														513 text (标题) 最新一条回复
+														514 group (组)
+															515 group (组)
+																516 group (组)
+																	517 button (按钮) 添加文件等内容
+																	518 text field (编辑) (settable, string) 询问 ChatGPT Value: 询问 ChatGPT
+																		1743 text (文本) 询问 ChatGPT
+																		1429 text (文本) 
+																	521 group (组)
+																		522 button (按钮) 选择 ChatGPT 模型 ID: radix-_r_16_
+																	523 button (按钮) 听写
+																	1744 button (按钮) 开始语音
+																	525 status bar (状态)
+												526 status bar (状态) ID: DndLiveRegion-0
+												527 group (组)
+												528 status bar (状态)
+													1745 text (文本) 回答已完成
+												529 group (组)
+												530 group (组)
+												531 status bar (状态) ID: DndLiveRegion-1
+												1666 group (组)
+												1667 group (组)
+												1668 group (组)
+												1686 group (组)
+												1687 group (组)
+												1688 group (组)
+												1702 group (组)
+												1704 group (组)
+												1705 group (组)
+												1709 group (组)
+												1710 group (组)
+												1711 group (组)
+												1746 group (组)
+											532 group (组)
+										533 group (组)
+										534 status bar (状态) ID: DndLiveRegion-0
+										535 status bar (状态) ID: DndLiveRegion-1
+										536 group (组)
+										537 group (组)
+			8 pane (区域)
+				9 pane (区域)
+					10 button (按钮) 最小化 ID: view_1
+					11 button (按钮) 恢复 ID: view_3
+					12 button (按钮) 关闭 ID: view_4
+
+Document text: ```
+询问 ChatGPT
+```

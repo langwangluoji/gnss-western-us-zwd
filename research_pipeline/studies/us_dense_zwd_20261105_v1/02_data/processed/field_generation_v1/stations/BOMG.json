@@ -1,0 +1,14 @@
+{
+  "station": "BOMG",
+  "source_sha256": "a1b166eb88a097eb9fe2ce1b4ce11d63334c03ac654ea06bf2cc12e51f73ec93",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\bomg.pwv.gz",
+  "coverage": {
+    "2016": 0.9960154826958105,
+    "2017": 0.9775114155251141,
+    "2018": 0.9742009132420091,
+    "2019": 0.9787671232876712,
+    "2020": 0.9770036429872495
+  },
+  "valid_hours": 43002,
+  "cache_sha256": "c60a1cfc3cd85ff9e6e719a3d99ef2a8f81d7b4b0a66498cf41de9b36427904b"
+}

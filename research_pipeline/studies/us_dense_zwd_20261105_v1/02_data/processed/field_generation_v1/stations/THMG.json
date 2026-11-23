@@ -1,0 +1,14 @@
+{
+  "station": "THMG",
+  "source_sha256": "c144d7bd8de1b373c27349dc5f3c3322523db6d080560b3ef563fe7afc9d057b",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\thmg.pwv.gz",
+  "coverage": {
+    "2016": 0.9919171220400729,
+    "2017": 0.979337899543379,
+    "2018": 0.9635844748858448,
+    "2019": 0.9541095890410959,
+    "2020": 0.9813296903460837
+  },
+  "valid_hours": 42711,
+  "cache_sha256": "1e872a51fcfe148307a84d5f27de743906333ac273cb2ca3901ba0a04317f37b"
+}

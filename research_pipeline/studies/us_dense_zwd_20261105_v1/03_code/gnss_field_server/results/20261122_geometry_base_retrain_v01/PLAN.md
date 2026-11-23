@@ -1,0 +1,28 @@
+# Geometry-corrected frozen base retraining plan
+
+User instruction2026-11-22: retrain according to the explained corrected-base arrangement. Subsequent steering authorizes server training once verified. Perform mean validation and engineering locally, then submit the same scientific queue on one A800, sequential only, benchmark/budget gated. M0 stays frozen at5000. Previous experiments and their locks stay unchanged. No environment installation.
+
+## Fixed scientific contract
+
+New mean =0.7388730121445989*M0+0.26112698785540106*A-IDW + locked93-feature geometry ridge correction. Existing two B-only fold readouts from20261122_local_operator_exploration_v01/selection.lock.json are retained separately, without selecting a fold on C. Geometry uses the old69 readout schema(compact67+two innovation aggregates), plus24 moments. Generator conditions remain the existing different69 schema(compact67+absoluteXY). Do not conflate these schemas or silently replace input channels.
+
+1. Reproduce archived C96 full-grid means using an exact query-corner implementation, tolerance0.001mm. Pruning unused output vertices is allowed because this readout has no interactions between target vertices; input A observations and all M0 patch contributors remain intact.
+2. Full2019: compute all8760 hours, same110 metadata stations /76 scored stations /642258 station-hours, same archived population. Commit predictions before opening archived labels. Report coarse,IDW,M0,old mixture,newfold0,newfold1. Save M0 grids monthly for reuse. C is already exposed development; D2020 remains sealed. Gate for this retraining: both new fold means must improve full-year station-macro RMSE relative to old mixture and directIDW. If this fails, stop at the mean validation report; do not tune to C.
+3. Rebuild new means for the existing912 B2018 cache rows, full144x96 grids, query-equivalent within0.001mm. Freeze these fields. Training576 hours, original inner48 / outer288 and physical station splits remain unchanged. Inference conditions never read B/C/D labels.
+4. Fit field and observation-nugget Gaussian scales using only each fold's fitting B2018 labels/training576 hours. Use registered200km spatial-group composite NLL, source coherent covariance fixed. No C calibration; nugget enters station forecasts once.
+5. Fresh seed42 training, common new base and calibrated prior: plain GAN, plain diffusion, pointwise observation DSM with independent noise and pointwise DSM with calibrated GP correlation noise. No attention/MP/noise-injection architecture extensions. GAN/DF each72 updates, effective8 hours/micro1/K4: one complete pass over576 hours. NDP each1440 updates/batch8. Both folds independently. Preserve paired initialization and deterministic schedule. Old48-step model scores are context, not a causal matched retraining control.
+6. Inner selection fixed12 monthly hours/K32 at0/36/72 for grid models,480/960/1440 for NDP. Grid/NDP separate point and joint candidates; select mean macroRMSE and groupES respectively. For point means use fixed zero-mean noise control variates, never center the scored ensemble. Outer12 calendar-selected hours withK128, same noise prefix; report ES/VS/CRPS, coverage,width, point scores and MC error. Include new Gaussian control. NDP models still produce a finite station observation distribution, not a continuous published field.
+
+AdamW1e-4,weight_decay1e-4,clip1,FP32,raw weights; cosine to1e-5, no warmup. GAN criticAdam1e-4,betas0/.9,GP10,adversarial0.1 matching actual previous implementation. Diffusion18-step Heun35NFE with recomputation. Server allocation cap1 card-hour for this finite queue; benchmark must estimate completion plus margin within it. Do not silently increase budget or submit concurrent GPUs.
+
+## Implementation / verification
+
+- [ ] `retrain_geometry.py`: exact93-feature field readout; test linear normalization equivalence, full/pruned target equivalence and locked C96 reproduction.
+- [ ] `annual_base.py`: atomic monthly prediction/cache commits, provenance, exact old masks, full-year metrics and gate. Benchmark M0 warm4-hour batch measured0.03125s/hour before feature work.
+- [ ] `retrain_data.py`: reuse old input cache read-only, new fold-dependent means and training-only Gaussian refit; label-isolation, grid/query equivalence and starting-Gaussian checks.
+- [ ] `train_new_base.py`: actual sequential optimization, locks, finite checks, complete optimizer/RNG/cursor checkpoints, inner-only products and outer evaluation.
+- [ ] Tests plus independent review before fitting heads. Save training/development curves, representative means/uncertainty fields, point predictions, result tables and delivery hashes.
+
+Review focus: old generation-condition69 differs from ridge-readout69; residual supervision must subtract the new fold's mean; new mean can depend on historical fitted B labels only via frozen coefficients; Gaussian fit uses current training role only; no doubled observation noise; continuous field query must agree with point predictions; completed outputs require hash validation; no hidden reuse of old residual-head weights.
+
+Engineering ruling: actual4 versus2+2 recovery is checked with exact random states/nonfloating state, float state absolute tolerance1e-7, and forecast maximum difference0.001mm. Initial tests found a CPU RNG loading error(fixed), then a1.49e-8 critic/optimizer difference after device restoration while generator weights were identical. This is a numerical recovery contract, not a bitwise restart claim, and not a200-step production acceptance. The tolerance is unrelated to score selection.

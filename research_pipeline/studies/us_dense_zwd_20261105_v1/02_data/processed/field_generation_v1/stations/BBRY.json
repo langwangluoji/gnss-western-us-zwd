@@ -1,0 +1,14 @@
+{
+  "station": "BBRY",
+  "source_sha256": "1610caded5f506239cb2283185cc833589794612f5eb3bf23bcb01f8db4c8079",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\bbry.pwv.gz",
+  "coverage": {
+    "2016": 0.9960154826958105,
+    "2017": 0.988013698630137,
+    "2018": 0.977054794520548,
+    "2019": 0.9856164383561644,
+    "2020": 0.9930555555555556
+  },
+  "valid_hours": 43320,
+  "cache_sha256": "9e58041ebfbfe414a089840c6892e1865f9c97519a9f32401b7d79fdd69b41ab"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "MTFV",
+  "source_sha256": "e27df36b5b26ef8ee533eceedede42f1964a6aa5f8d686d229c4c76dde66feb9",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\mtfv.pwv.gz",
+  "coverage": {
+    "2016": 0.9973816029143898,
+    "2017": 0.9574200913242009,
+    "2018": 0.916324200913242,
+    "2019": 0.9398401826484019,
+    "2020": 0.6219262295081968
+  },
+  "valid_hours": 38871,
+  "cache_sha256": "325d77f47582ba1588b5f819a9dbf066638bab810e16d855d25fbaa14bbd510a"
+}

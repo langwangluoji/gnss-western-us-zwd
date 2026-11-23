@@ -1,0 +1,14 @@
+{
+  "station": "DRA4",
+  "source_sha256": "0dad054fe7d1dc1c865d6c3a45f06225e6a6b373ee8657e998447d09e78a0222",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\dra4.pwv.gz",
+  "coverage": {
+    "2016": 0.9508196721311475,
+    "2017": 0.9765981735159818,
+    "2018": 0.9777397260273972,
+    "2019": 0.9856164383561644,
+    "2020": 0.9902094717668488
+  },
+  "valid_hours": 42804,
+  "cache_sha256": "0333f3f5b5b6ccc60b2bf7e092cb1975736095ea2be2db2e279330a8c3fd45bb"
+}

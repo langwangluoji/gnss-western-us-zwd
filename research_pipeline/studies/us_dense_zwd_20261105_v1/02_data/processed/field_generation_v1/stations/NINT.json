@@ -1,0 +1,14 @@
+{
+  "station": "NINT",
+  "source_sha256": "875f0484034acb009350e8b75ec4e223b23e7932e2c7745a74c9ef6f8a49973e",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\nint.pwv.gz",
+  "coverage": {
+    "2016": 0.9603825136612022,
+    "2017": 0.9647260273972603,
+    "2018": 0.9468036529680365,
+    "2019": 0.9832191780821918,
+    "2020": 0.98816029143898
+  },
+  "valid_hours": 42474,
+  "cache_sha256": "9a3c3dd66f8fbde9d5a8a7e311f0c30cfccb0048a75691414e5d8e0c13954681"
+}

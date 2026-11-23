@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "max_error_mm": 0.000125885009765625,
+  "hours": [
+    420780,
+    421398
+  ],
+  "seconds": 3.0,
+  "identity": {
+    "network_checkpoint": "605650e000ce4a0ab31d3d85996fd16316c978547fe9f2821c65c346cd1b86f0",
+    "geometry_coefficients": "0d340d9db2e99bb364d92e5c39b9f4074b927e6b643513e5633ee5d9ef252326",
+    "fusion_settings": "b0a63b603ddcd7b475f52f5267f4102bac487b59c50c695f1fad64e045e2897f",
+    "geometry_readout_index": 0,
+    "statistics": "a3fe6b42ecdf7c8616f39d862c7cd5dd3180f3783c4d8cff85c0706b4ec1ee88",
+    "grid": "a824bd4d6f61c686c1c8a717075f4d8498a95903bb4664c4a0e6f4f8419b7e5b",
+    "source": "registered frozen input-only fusion field"
+  }
+}

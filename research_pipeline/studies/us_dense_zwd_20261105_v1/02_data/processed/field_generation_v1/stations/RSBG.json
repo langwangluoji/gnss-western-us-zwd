@@ -1,0 +1,14 @@
+{
+  "station": "RSBG",
+  "source_sha256": "8cbd95719f3cd5eef97f0e25658e5a474ad33a52d89145fc3eabf25ba2bcd2e1",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\rsbg.pwv.gz",
+  "coverage": {
+    "2016": 0.9526411657559198,
+    "2017": 0.9101598173515981,
+    "2018": 0.9366438356164384,
+    "2019": 0.636986301369863,
+    "2020": 0.8978825136612022
+  },
+  "valid_hours": 38013,
+  "cache_sha256": "5d9931be0c00646419630ef717599c5512313dfc8ce86cfca0e0c2e14374b648"
+}

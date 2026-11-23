@@ -1,0 +1,14 @@
+{
+  "station": "TCSG",
+  "source_sha256": "1d971ff9b261cf5b3f827c9a3c1aeb0d95a7d75adcc4bc6fe92fcf4e214fda58",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\tcsg.pwv.gz",
+  "coverage": {
+    "2016": 0.9935109289617486,
+    "2017": 0.9398401826484019,
+    "2018": 0.9769406392694064,
+    "2019": 0.9958904109589041,
+    "2020": 0.24009562841530055
+  },
+  "valid_hours": 36351,
+  "cache_sha256": "b3a4284d3b75511bca2565eb09480422e7889fb9b32e9d2f05c7dc93319b21b3"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "OREO",
+  "source_sha256": "f1fc97ad53699fe285931b080395628ec5639bf2085674d42c726825064f2c59",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\oreo.pwv.gz",
+  "coverage": {
+    "2016": 0.9302140255009107,
+    "2017": 0.9835616438356164,
+    "2018": 0.978310502283105,
+    "2019": 0.9819634703196347,
+    "2020": 0.9717668488160291
+  },
+  "valid_hours": 42495,
+  "cache_sha256": "531eb744a45be3640b29fe479093e05694d0b0f46bb623fb9a46ea766a82d698"
+}

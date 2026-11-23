@@ -1,0 +1,14 @@
+{
+  "station": "OFW2",
+  "source_sha256": "df1961d994118857468c468f5e8bdd38acea7549e607bd7b152775302edc45ab",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ofw2.pwv.gz",
+  "coverage": {
+    "2016": 0.9775728597449909,
+    "2017": 0.9563926940639269,
+    "2018": 0.9624429223744292,
+    "2019": 0.9654109589041096,
+    "2020": 0.9479735883424408
+  },
+  "valid_hours": 42180,
+  "cache_sha256": "473ededc1001221dd055aef9026606f3295bdbdb2fcd75b4cdbd1f454cacea7c"
+}

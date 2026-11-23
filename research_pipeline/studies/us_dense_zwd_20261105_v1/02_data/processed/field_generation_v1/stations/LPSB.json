@@ -1,0 +1,14 @@
+{
+  "station": "LPSB",
+  "source_sha256": "c5ffe240d86ccfa6532ef956f84473e1c0e8666a448be00c9be462cd2238f453",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\lpsb.pwv.gz",
+  "coverage": {
+    "2016": 0.9422814207650273,
+    "2017": 0.9278538812785389,
+    "2018": 0.9071917808219178,
+    "2019": 0.9065068493150685,
+    "2020": 0.9249772313296903
+  },
+  "valid_hours": 40418,
+  "cache_sha256": "3cefea756d08d88965f3d21f07f1021ddabb3ff6c178e3b6f147365872b205ab"
+}

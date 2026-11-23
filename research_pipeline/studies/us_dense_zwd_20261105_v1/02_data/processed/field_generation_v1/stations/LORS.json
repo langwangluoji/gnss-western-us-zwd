@@ -1,0 +1,14 @@
+{
+  "station": "LORS",
+  "source_sha256": "4d996d284e662f2d8a1c5220586e033dc690d675bd275cb5d2ddd35505636ce5",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\lors.pwv.gz",
+  "coverage": {
+    "2016": 0.951844262295082,
+    "2017": 0.9763698630136987,
+    "2018": 0.9781963470319635,
+    "2019": 0.9952054794520548,
+    "2020": 0.9997723132969034
+  },
+  "valid_hours": 42983,
+  "cache_sha256": "c06dc8482332410038c2fc79e14045c9fb490c8bb45015e7509bb62316578339"
+}

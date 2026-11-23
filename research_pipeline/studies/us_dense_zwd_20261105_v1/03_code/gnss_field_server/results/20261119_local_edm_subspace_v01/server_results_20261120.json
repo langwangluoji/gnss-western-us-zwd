@@ -1,0 +1,154 @@
+{
+  "captured_at": "2026-11-20T09:06:34+08:00",
+  "status": "COMPLETE",
+  "jobs": [
+    {
+      "job_id": "3610271",
+      "name": "ZSY_OBS64_bench",
+      "partition": "A800",
+      "state": "COMPLETED",
+      "exit": "0:0",
+      "elapsed": "00:01:24",
+      "start": "2026-11-20T08:48:36",
+      "end": "2026-11-20T08:50:00",
+      "node": "gpu8010"
+    },
+    {
+      "job_id": "3610272",
+      "name": "ZSY_OBS64_gate",
+      "partition": "intel",
+      "state": "COMPLETED",
+      "exit": "0:0",
+      "elapsed": "00:00:25",
+      "start": "2026-11-20T08:50:07",
+      "end": "2026-11-20T08:50:32",
+      "node": "cpui168"
+    },
+    {
+      "job_id": "3610283",
+      "name": "ZSY_OBS64_mean",
+      "partition": "A800",
+      "state": "COMPLETED",
+      "exit": "0:0",
+      "elapsed": "00:00:59",
+      "start": "2026-11-20T08:50:37",
+      "end": "2026-11-20T08:51:36",
+      "node": "gpu8019"
+    },
+    {
+      "job_id": "3610284",
+      "name": "ZSY_OBS64_eval19",
+      "partition": "A800",
+      "state": "COMPLETED",
+      "exit": "0:0",
+      "elapsed": "00:02:10",
+      "start": "2026-11-20T08:51:38",
+      "end": "2026-11-20T08:53:48",
+      "node": "gpu8019"
+    }
+  ],
+  "metrics": {
+    "group_macro_ES_mm": 6.852148403637777,
+    "group_macro_VS_mm": 1.3649652203085445,
+    "intervals": {
+      "80": {
+        "coverage": 0.7782808293535315,
+        "width_mm": 22.952977848536836
+      },
+      "90": {
+        "coverage": 0.8629096097248589,
+        "width_mm": 29.255135491709055
+      },
+      "95": {
+        "coverage": 0.9083172982590372,
+        "width_mm": 34.45075123190959
+      }
+    },
+    "mean_kind": "analytic Gaussian mean",
+    "n_group_hours": 49908,
+    "n_groups": 6,
+    "point": {
+      "bias_mm": -2.393364073004027,
+      "micro_mae_mm": 7.688526439877378,
+      "micro_rmse_mm": 10.578872755930135,
+      "n_station_hours": 642258,
+      "n_stations": 76,
+      "p95_absolute_error_mm": 21.957074737548837,
+      "station_macro_bias_mm": -2.3830391194714777,
+      "station_macro_mae_mm": 7.661563089210381,
+      "station_macro_rmse_mm": 9.939549653975696
+    },
+    "scope": "C2019 exposed development, not D2020 retrospective",
+    "station_macro_CRPS_mm": 5.622509397054796
+  },
+  "selected": {
+    "checkpoint": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/runs/20261120_us_dense_zwd_observable64_coverage_v02/mean_seed42/candidate_001572.pt",
+    "checkpoint_sha256": "ae04939fc897e1c6c4a2a22e68b5d7581d060d926402eb480cbbf1990b2e7b31",
+    "members": 16,
+    "population": "B incremental weather development",
+    "step": 1572,
+    "value": 5.432113581233555
+  },
+  "benchmark": {
+    "arm": "edm",
+    "bundle_manifest_sha256": "e619d04e6c6c64164624f8983db9e507803bab5501a6250e35f93010f3bc927d",
+    "checkpoint_seconds": 0.007397793233394623,
+    "development_seconds": 0.9994814936071634,
+    "engineering_only": true,
+    "environment": {
+      "cuda": "12.6",
+      "executable": "/share/home/u23114/.conda/envs/ZhouSiyu/bin/python",
+      "numpy": "2.3.5",
+      "pandas": "2.3.3",
+      "python": "3.11.18",
+      "runner": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/code/20261120_observable_subspace_v02/src/gnss_field/training/observable.py",
+      "torch": "2.8.0+cu126"
+    },
+    "formal_verification": true,
+    "gpu": "NVIDIA A800-SXM4-80GB",
+    "maximum_initial_Gaussian_error_mm": 7.62939453125e-06,
+    "metrics": {
+      "joint": {
+        "members": 16,
+        "population": "B incremental weather development",
+        "value": 5.4885379274686175
+      }
+    },
+    "model_sha256": "00d0bc96c7e3e9ed2f25198c310b633aebde7c31062ff12078da843a967765dd",
+    "model_sources_sha256": {
+      "edm": "00d0bc96c7e3e9ed2f25198c310b633aebde7c31062ff12078da843a967765dd",
+      "mean": "00441db71f7d3754b43d6996c771144abb374122c184600b94e1892ed5082b5d"
+    },
+    "no_scientific_selection": true,
+    "peak_cpu_rss_mb": 1319.171875,
+    "peak_memory_mb": 115.609375,
+    "platform": "Linux",
+    "real_100_plus100_equals200": true,
+    "real_slurm_signal_resume": true,
+    "release_sha256": "0f1d9cdf470910dbec68de61a618dee54d3c55b8c4dae64e590b02af92c91923",
+    "runner_sha256": "f643f9651fad9c3fb20198039c6fd53c30b6f599ebbce3ba76784def45df1005",
+    "seconds_per_update": 0.19033906981348991,
+    "slurm_signal_probe": {
+      "engineering_updates": 10,
+      "paused_step": 5,
+      "resumed_step": 10,
+      "target": "3610271.0",
+      "verified": true
+    },
+    "total_engineering_updates": 430,
+    "updates": 20
+  },
+  "comparison": {
+    "mixed_mean_RMSE_mm": 9.995855483039318,
+    "new_RMSE_mm": 9.939549653975696,
+    "RMSE_change_mm": -0.05630582906362136,
+    "RMSE_improvement_percent": 0.5632917478564939,
+    "matched_finite128_Gaussian_ES_mm": 6.923940702675555,
+    "ES_change_mm": -0.07179229903777795,
+    "matched_finite128_Gaussian_CRPS_mm": 5.6690512168746015,
+    "CRPS_change_mm": -0.04654181981980532
+  },
+  "n_unique_training_hours": 6288,
+  "D2020": "sealed",
+  "new_training_submitted": false
+}

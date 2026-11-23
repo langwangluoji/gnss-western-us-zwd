@@ -1,0 +1,14 @@
+{
+  "station": "LSIG",
+  "source_sha256": "fc6e1b41ad30750fc4d85bfe862145f606ec8091f2f4a889301118791d1e2dad",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\lsig.pwv.gz",
+  "coverage": {
+    "2016": 0.9241803278688525,
+    "2017": 0.9747716894977169,
+    "2018": 0.9724885844748858,
+    "2019": 0.9679223744292238,
+    "2020": 0.9921448087431693
+  },
+  "valid_hours": 42370,
+  "cache_sha256": "f8473ce132623e4cadf448f756d4e13f72250789a2f749771f4ba6fcae2411ab"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "JNHG",
+  "source_sha256": "8a07511299374db52159e36b03d39d3f02c4e1837a202ce8ea24d4690e9047e2",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\jnhg.pwv.gz",
+  "coverage": {
+    "2016": 0.9857695810564663,
+    "2017": 0.9735159817351599,
+    "2018": 0.9692922374429224,
+    "2019": 0.9926940639269406,
+    "2020": 0.9099499089253188
+  },
+  "valid_hours": 42367,
+  "cache_sha256": "4145763edccef0fde932bf76c892b0a9bc589025b51d61a3cf60a489059272a1"
+}

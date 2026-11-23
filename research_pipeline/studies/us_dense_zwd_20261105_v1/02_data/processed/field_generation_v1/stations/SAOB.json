@@ -1,0 +1,14 @@
+{
+  "station": "SAOB",
+  "source_sha256": "8e49bf088a1a86d81fcf04c4a86374ee406a32342cebd98506a56bf0f35f0098",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\saob.pwv.gz",
+  "coverage": {
+    "2016": 0.9916894353369763,
+    "2017": 0.9855022831050229,
+    "2018": 0.9735159817351599,
+    "2019": 0.9777397260273972,
+    "2020": 0.9960154826958105
+  },
+  "valid_hours": 43186,
+  "cache_sha256": "dc22ceab00295628e68bd7ee543df50511c5ff434524fec2f521d052b13e98b1"
+}

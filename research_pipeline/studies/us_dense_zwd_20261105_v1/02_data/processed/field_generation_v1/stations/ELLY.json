@@ -1,0 +1,14 @@
+{
+  "station": "ELLY",
+  "source_sha256": "ce1d31bc166921c839de337257e581f5fb5d657ec86bb1657fd3cb825034e5cc",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\elly.pwv.gz",
+  "coverage": {
+    "2016": 0.9882741347905283,
+    "2017": 0.9552511415525115,
+    "2018": 0.9471461187214611,
+    "2019": 0.6122146118721461,
+    "2020": 0.986908014571949
+  },
+  "valid_hours": 39378,
+  "cache_sha256": "dfc01906c3ad1e8bf609a40cba298bbd2b420c234803e3ad2543662331bd3ced"
+}

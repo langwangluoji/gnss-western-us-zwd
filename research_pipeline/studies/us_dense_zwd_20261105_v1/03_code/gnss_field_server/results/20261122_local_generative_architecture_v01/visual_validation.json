@@ -1,0 +1,1 @@
+{"images":["training_curves.png","metric_comparison.png","sampling_estimator_comparison.png","field_examples.png","base_field_audit.png"],"notes":"Readable axes and legends; K32 raw point estimator labeled explicitly; K512 control-variate estimator shown separately. Field output spacing25km, not validated effective resolution.","passed":true}

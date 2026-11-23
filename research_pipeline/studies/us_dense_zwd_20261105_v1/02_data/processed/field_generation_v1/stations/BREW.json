@@ -1,0 +1,14 @@
+{
+  "station": "BREW",
+  "source_sha256": "7b1d542dd0cfbe898210a832aa38f92b2f1f13956c3ffae3760061065ec63921",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\brew.pwv.gz",
+  "coverage": {
+    "2016": 0.9992030965391621,
+    "2017": 0.9994292237442922,
+    "2018": 0.9464611872146119,
+    "2019": 0.9964611872146119,
+    "2020": 0.9891848816029144
+  },
+  "valid_hours": 43241,
+  "cache_sha256": "d53e4c2579cfc029c5bc2526e9cb6a75203d9dc8ac6490bf5b7bdf9ffdb73fbf"
+}

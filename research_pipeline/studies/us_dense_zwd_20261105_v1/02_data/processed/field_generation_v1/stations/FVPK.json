@@ -1,0 +1,14 @@
+{
+  "station": "FVPK",
+  "source_sha256": "6bd9e83f77df01227d6bbe4c52f5c3f6f533cbd750ebdea0f600e0a972ad64c5",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\fvpk.pwv.gz",
+  "coverage": {
+    "2016": 0.9454690346083788,
+    "2017": 0.9506849315068493,
+    "2018": 0.9223744292237442,
+    "2019": 0.9555936073059361,
+    "2020": 0.9684653916211293
+  },
+  "valid_hours": 41591,
+  "cache_sha256": "d4a211b2c354f4c500054c4c6243f128c7d026047646f823374305ae6b0468c0"
+}

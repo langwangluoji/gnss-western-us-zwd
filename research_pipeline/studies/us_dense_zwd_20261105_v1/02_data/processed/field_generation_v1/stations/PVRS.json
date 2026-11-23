@@ -1,0 +1,14 @@
+{
+  "station": "PVRS",
+  "source_sha256": "fd3bd38ef49ee60517e905802d79fe9b8928a66a845acf918eb91f1d27cc4143",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\pvrs.pwv.gz",
+  "coverage": {
+    "2016": 0.988615664845173,
+    "2017": 0.9889269406392694,
+    "2018": 0.9860730593607306,
+    "2019": 0.757648401826484,
+    "2020": 0.9992030965391621
+  },
+  "valid_hours": 41399,
+  "cache_sha256": "424e2bd642727644e329749cbd1b0ba6ff6debb3fc572d581908556503fc93ef"
+}

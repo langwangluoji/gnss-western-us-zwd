@@ -1,0 +1,21 @@
+{
+  "status": "RESEARCH_COMPLETE_PLAN_ONLY",
+  "date": "2026-11-23",
+  "browser_mode": "Pro; observed strength 5 of 5",
+  "browser_url": "https://chatgpt.com/c/6b038916-7530-83ee-9b40-f1bd3a5437b2",
+  "response_end_marker_verified": true,
+  "source_contract_sha256": "bb2cea5f3d79da32e6af1a5b9761619d0e1137427287d14d72c72693c051baf2",
+  "source_training_code_unchanged": true,
+  "source_models_unchanged": true,
+  "new_training_started": false,
+  "server_jobs_submitted": false,
+  "files": {
+    "results\\20261123_postrun_design_v01\\pro_handoff.txt": "c0393c23e9c0ea35c08512f6a4b34bde5373ca0f5b7bfeb9ee9bd24ad40dc7fc",
+    "results\\20261123_postrun_design_v01\\pro_response.txt": "cd16acee34c1e379fca2cf19430964f88fab9045f708a3d7ba878dee80265721",
+    "results\\20261123_postrun_design_v01\\pro_review.jpg": "6f0a5aa3b23cf68a1c8b8be4a1942c074c6be12d98c857b8251304a82625c158",
+    "results\\20261123_postrun_design_v01\\finite_member_audit.json": "5f7bb9d3107d0cf5abb6f88a2c86c633841cfed55a2670d1540a8eecfffb0c73",
+    "results\\20261123_postrun_design_v01\\MEAN_ESTIMATION_AUDIT.md": "aff85f78a094a8dc281a66193fab89dc5ac1bec9ea5c4d214763d1b0fc2781b5",
+    "docs\\superpowers\\specs\\2026-11-23-generator-mean-control-design.md": "b64fb18f8cb9ac64636a423e64bd9dcacde39336ae195ab756fb2e343f432921",
+    "tools\\audit_generator_mean_estimation.py": "f4ca92d3aca895507f767880317347e7f0403c05e567dd4f2a13cf8b47edc079"
+  }
+}

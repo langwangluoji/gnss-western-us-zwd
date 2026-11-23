@@ -1,0 +1,82 @@
+{
+  "status": "SERVER_DEFAULT_MEAN_WORKFLOW_COMPLETE",
+  "Pro_review_complete": true,
+  "Pro_review": "pro_pretransfer_review_20261120.md",
+  "tests_passed": 84,
+  "release_sha256": "0f1d9cdf470910dbec68de61a618dee54d3c55b8c4dae64e590b02af92c91923",
+  "archive_sha256": "31016a67516344b5102d01c4e7ad3a33b79620c7a661b75842e5302d730b993b",
+  "release_files_verified": 67,
+  "CRC_passed": true,
+  "deployed_source_matches_local": true,
+  "portable_resume": {
+    "arm": "edm",
+    "bundle_manifest_sha256": "e619d04e6c6c64164624f8983db9e507803bab5501a6250e35f93010f3bc927d",
+    "checkpoint_seconds": 0.0,
+    "development_seconds": 1.5470000000004802,
+    "engineering_only": true,
+    "environment": {
+      "cuda": "12.9",
+      "executable": "D:\\anaconda3-2025.12-2\\envs\\pytorch\\python.exe",
+      "numpy": "2.3.5",
+      "pandas": "2.3.3",
+      "python": "3.11.13",
+      "runner": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\src\\gnss_field\\training\\observable.py",
+      "torch": "2.8.0+cu129"
+    },
+    "formal_verification": false,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "maximum_initial_Gaussian_error_mm": 7.62939453125e-06,
+    "metrics": {
+      "joint": {
+        "members": 16,
+        "population": "B incremental weather development",
+        "value": 5.488537914223141
+      }
+    },
+    "model_sha256": "00d0bc96c7e3e9ed2f25198c310b633aebde7c31062ff12078da843a967765dd",
+    "model_sources_sha256": {
+      "edm": "00d0bc96c7e3e9ed2f25198c310b633aebde7c31062ff12078da843a967765dd",
+      "mean": "00441db71f7d3754b43d6996c771144abb374122c184600b94e1892ed5082b5d"
+    },
+    "no_scientific_selection": true,
+    "peak_cpu_rss_mb": null,
+    "peak_memory_mb": 114.0283203125,
+    "platform": "Windows",
+    "real_100_plus100_equals200": true,
+    "real_slurm_signal_resume": false,
+    "release_sha256": null,
+    "runner_sha256": "f643f9651fad9c3fb20198039c6fd53c30b6f599ebbce3ba76784def45df1005",
+    "seconds_per_update": 0.09375,
+    "slurm_signal_probe": {
+      "engineering_updates": 0,
+      "verified": false
+    },
+    "total_engineering_updates": 420,
+    "updates": 20
+  },
+  "training_hours": 6288,
+  "maximum_updates": 1572,
+  "D2020_included": false,
+  "server_upload_complete": true,
+  "server_jobs_submitted": true,
+  "remaining_server_checks": [],
+  "server_release": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/code/20261120_observable_subspace_v02",
+  "server_verified_files": 67,
+  "benchmark_job_id": "3610271",
+  "budget_gate_job_id": "3610272",
+  "slurm_static_preflight_passed": true,
+  "server_import_path_verified": true,
+  "scientific_training_started": true,
+  "server_queue_state_at_handoff": {
+    "3610271": "COMPLETED",
+    "3610272": "COMPLETED",
+    "3610283": "COMPLETED",
+    "3610284": "COMPLETED"
+  },
+  "scientific_training_complete": true,
+  "full_C2019_evaluation_complete": true,
+  "A800_exact_resume_passed": true,
+  "Slurm_signal_resume_passed": true,
+  "mean_job_id": "3610283",
+  "evaluation_job_id": "3610284"
+}

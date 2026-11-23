@@ -1,0 +1,9 @@
+# Install into a new Python3.11 environment. Never upgrade the system driver.
+# Install torch separately with the official cu126 index, then this file.
+numpy==2.3.5
+scipy>=1.14,<2
+pandas>=2.2,<3
+PyYAML>=6,<7
+pyproj>=3.6,<4
+optuna>=4.0,<5
+pytest>=8,<9

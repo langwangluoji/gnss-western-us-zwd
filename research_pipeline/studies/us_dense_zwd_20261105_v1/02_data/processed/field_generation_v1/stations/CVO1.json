@@ -1,0 +1,14 @@
+{
+  "station": "CVO1",
+  "source_sha256": "6aaba2a530867569d29ece24081e85a017dfea51c952799459d119169cf4fdd6",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\cvo1.pwv.gz",
+  "coverage": {
+    "2016": 0.9792805100182149,
+    "2017": 0.9791095890410959,
+    "2018": 0.9404109589041096,
+    "2019": 0.9154109589041096,
+    "2020": 0.39207650273224043
+  },
+  "valid_hours": 36880,
+  "cache_sha256": "56f2adb5a7f4021464439d5dc629572aa7c683b60d66e81fa42b34d8cd57770b"
+}

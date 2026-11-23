@@ -1,0 +1,25 @@
+{
+  "old_dense_cross_role_groups": 27,
+  "new_dense_cross_role_groups": 0,
+  "observation_cache_reuse": "Identical full station identity/order/geometry and per-station numeric cache hashes; only role/cohort assignment changed",
+  "cohorts": {
+    "development": {
+      "dense": 58,
+      "dispersed": 52
+    },
+    "input": {
+      "dense": 0,
+      "dispersed": 174
+    },
+    "retrospective": {
+      "dense": 57,
+      "dispersed": 53
+    },
+    "train": {
+      "dense": 296,
+      "dispersed": 215
+    }
+  },
+  "old_run_excluded": true,
+  "retrain_from_scratch": true
+}

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "src/gnss_field/models/grid_generation.py": "211aeefd7cb9bcb1b508ae3ff647aa2e70387ed5dc6ba75d719ba97eb5c296fe",
+    "tools/grid_generation_data.py": "8d853434fb3e717a34b05899e3ec93a6ff8e0a6883b35f9d6f9cb78007aeaae8",
+    "tools/grid_generation_metrics.py": "1cb1a30214ca697768adabb37dece885abd8b0d0859335aceacbfcb6053eb5b7",
+    "tools/grid_generation_release.py": "decb0fcc87e3ea3381731c7f6a5d7fe8ce14ba763d23b6bed2e8a9e024efb5ba",
+    "tools/grid_generation_report.py": "8839e62e2566831c6c804711a0236ae3005788f53caa063338a7dd180bca04e0",
+    "tools/grid_generation_submit.py": "989769dbd574bda4af89ac9a83a5df749262b1510c1946d0c575583b5e1d70af",
+    "tools/grid_generation_train.py": "b368d2fd018ea849450f136cce1269d8d7d8fbb34ee9cdcce98c9d38a3dcdb6a",
+    "tools/prepare_grid_generation_submission.py": "389db2867eb5907d01ebea2b8d5481611bae1c79273cf14c76217a458222c66e",
+    "tools/ssh_tcp_transport.py": "b261e2516469f6cb5bb4ba1e9ba61d6d298b165682a38fee8aaf26aec5d9d7b9",
+    "tests/test_grid_generation.py": "7ee9b384eea73cb733decadfb5b4c434a0a2ef17387142005037dd4878b06036",
+    "tests/test_grid_generation_pipeline.py": "a8e7a8300e13321b0498e61cd5788d25d4486b137bdf5039f4fea3d0b037e018",
+    "configs/grid_generation_v01.json": "e0746b6fecdb38939c1c22a227a5dd60e8e363a3b4d73566abd2a5083d53e5d3",
+    "slurm/grid_generation_a800.sh": "e89b4c29dff1b80b0ca8d20a4ac425d465664815a2675f65c6428fa7a1b6afa9",
+    "docs/superpowers/specs/2026-11-21-grid-generation-v01.md": "bd420446645e69b3481e7a1cbb056b08819e2afa5b4c141f5df718c571dcbb46",
+    "docs/superpowers/plans/2026-11-21-grid-generation-v01.md": "2f5c332ba2627418847d12503f007ad883dccca004d8b7df665cbf6eb9befc51"
+  },
+  "remote_jobs_submitted": false,
+  "authentication_pending": true,
+  "final_release_requires_downloaded_means": true
+}

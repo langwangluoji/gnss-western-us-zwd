@@ -1,0 +1,14 @@
+{
+  "station": "PLNA",
+  "source_sha256": "ea2fa8de14ce101418e5994da3ae13330063ff09d34c9caa16c7b300d255e2f2",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\plna.pwv.gz",
+  "coverage": {
+    "2016": 0.9633424408014571,
+    "2017": 0.9651826484018264,
+    "2018": 0.9628995433789954,
+    "2019": 0.9605022831050228,
+    "2020": 0.9956739526411658
+  },
+  "valid_hours": 42512,
+  "cache_sha256": "e2e760e1717fff77e533f0a232e1bb12b15128c85b9fc43a504ab63a24b9a4a5"
+}

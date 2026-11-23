@@ -1,0 +1,14 @@
+{
+  "station": "TOIY",
+  "source_sha256": "9f876ae1e8b3ed2db3caec6fed52cdabda95bf7306b7ebc2c20b857ee1ad6c61",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\toiy.pwv.gz",
+  "coverage": {
+    "2016": 0.9988615664845173,
+    "2017": 0.9811643835616438,
+    "2018": 0.9738584474885845,
+    "2019": 0.9931506849315068,
+    "2020": 0.998747723132969
+  },
+  "valid_hours": 43373,
+  "cache_sha256": "2311f7b45504584af57b39e2af36cfd0bda3921fb1aa7f514ed6f52a5d149e81"
+}

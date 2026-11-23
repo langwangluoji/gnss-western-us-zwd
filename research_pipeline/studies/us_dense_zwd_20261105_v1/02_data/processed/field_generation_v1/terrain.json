@@ -1,0 +1,302 @@
+{
+  "tiles": [
+    {
+      "tile": "srtm_14_08.zip",
+      "sha256": "28026dbc469d04ba43f377bf1e7ce62acce29ebc06857d876144194df0ff4a9b",
+      "grid_points": 26
+    },
+    {
+      "tile": "srtm_15_08.zip",
+      "sha256": "1415d1a78de1057372b1f70fe2657cc66beb455585de503718404315ab3bf6d0",
+      "grid_points": 61
+    },
+    {
+      "tile": "srtm_14_07.zip",
+      "sha256": "b5696f63df8805e940142cbb52ee9e3cd405e28aaf7f00c4f410e4dc90cfefc0",
+      "grid_points": 201
+    },
+    {
+      "tile": "srtm_13_07.zip",
+      "sha256": "8b71e8d368aa401abedcbc5bf65bd2d4cb3fbb33b20c1c96075abb3c2c06ebab",
+      "grid_points": 6
+    },
+    {
+      "tile": "srtm_13_06.zip",
+      "sha256": "011f4b971c4a28b683150507c2d9157e544a664edf562ee8e46d0d24eb18b197",
+      "grid_points": 197
+    },
+    {
+      "tile": "srtm_15_07.zip",
+      "sha256": "bd0877287cf2c50e3e5088604b4b196e1d1b7776f5d5080055653888a318ebe1",
+      "grid_points": 378
+    },
+    {
+      "tile": "srtm_14_06.zip",
+      "sha256": "c3734439ce68c08b0e06e8600897d1b31e6eb26e8f7efc8de76f2d7920bfa522",
+      "grid_points": 368
+    },
+    {
+      "tile": "srtm_12_06.zip",
+      "sha256": "7db95f32dd074f86fe22f6abc7fde7fa40019514f203cb3e45d861c9ec547733",
+      "grid_points": 5
+    },
+    {
+      "tile": "srtm_16_06.zip",
+      "sha256": "be882fb902acea3a6d5c50a6b11466453f4b3a9d74769600ca7461f45526084e",
+      "grid_points": 29
+    },
+    {
+      "tile": "srtm_15_06.zip",
+      "sha256": "ad8c267acb96b3f3d9a8516b90b6df855e6fda966eac0dbed9c3b64638433666",
+      "grid_points": 414
+    },
+    {
+      "tile": "srtm_12_05.zip",
+      "sha256": "b8650ac03eef94ed2b108ea3f37fb68a7aa65618a4a149ee37ff503e1f2bda52",
+      "grid_points": 182
+    },
+    {
+      "tile": "srtm_13_05.zip",
+      "sha256": "fd8075988ad481df0d450f9a32a2fd2209644bf0fff670db596e07f54152c70a",
+      "grid_points": 394
+    },
+    {
+      "tile": "srtm_14_05.zip",
+      "sha256": "f41863cc7b58759fd4f9f978d5626e8be60b7885771666e1e2101696a2358fcd",
+      "grid_points": 383
+    },
+    {
+      "tile": "srtm_15_05.zip",
+      "sha256": "480313f3fd65cefd3e5d64753ce7104d5b8447fa7bd03b1030ee91919ae8fe02",
+      "grid_points": 384
+    },
+    {
+      "tile": "srtm_16_05.zip",
+      "sha256": "4ab5da5f01f19c67c2f770e9dd0a38053c953d17edad6ca553eec42f88e7e280",
+      "grid_points": 96
+    },
+    {
+      "tile": "srtm_12_04.zip",
+      "sha256": "177d40900984a1c702a097c27492643793e2f6b6a4a49036dfb7dd1387b0bd10",
+      "grid_points": 312
+    },
+    {
+      "tile": "srtm_13_04.zip",
+      "sha256": "d33dab3cc666a3d7aa64a5cb96a356951179ff19a010fc2adbeddc0b02992e83",
+      "grid_points": 352
+    },
+    {
+      "tile": "srtm_14_04.zip",
+      "sha256": "bbde73054b66ae2c738d595c1a5e0a5a82efaa78c994b26f7a6e1dc3cc8ed580",
+      "grid_points": 366
+    },
+    {
+      "tile": "srtm_15_04.zip",
+      "sha256": "6102f687d8067c77ad83357d0f24004bce68ee98f337d1b6ee301bef8411cf16",
+      "grid_points": 363
+    },
+    {
+      "tile": "srtm_16_04.zip",
+      "sha256": "17e50297bb900e1146b031c9cf3385283cabffb1243961b00152f6febff4f396",
+      "grid_points": 162
+    },
+    {
+      "tile": "srtm_12_03.zip",
+      "sha256": "8c0d186081949086f2bbd3c726727afa5a394d91bd78770d74565aba5d16d167",
+      "grid_points": 267
+    },
+    {
+      "tile": "srtm_13_03.zip",
+      "sha256": "79e3169c8c639fce9087b2a1cdfc2b47dcae0474eed02a5cd0102910bb7134cc",
+      "grid_points": 352
+    },
+    {
+      "tile": "srtm_14_03.zip",
+      "sha256": "488fd2b05848fdc302a2c228414cc1b739f32a5d91f8dab2c4f7beae4aff73e5",
+      "grid_points": 339
+    },
+    {
+      "tile": "srtm_15_03.zip",
+      "sha256": "85cbd4b4a28bac78fc27821a2a24f7c67f210500b6e33a31a7c9457b25d1b90f",
+      "grid_points": 341
+    },
+    {
+      "tile": "srtm_16_03.zip",
+      "sha256": "f75949fe903e611639bcd623217f3a968c88ed37cfe9d3d3d78446f7c15e059c",
+      "grid_points": 231
+    },
+    {
+      "tile": "srtm_11_03.zip",
+      "sha256": "a3a92bc9703015ce80097db20a1acf201a4b3a58160ae6d2acd80dba25d3ba25",
+      "grid_points": 20
+    },
+    {
+      "tile": "srtm_14_02.zip",
+      "sha256": "b48dfb6b983bdd461ba56b7c23ebcf60412c33d3bab6e9b99ba40db5c9d12d0c",
+      "grid_points": 229
+    },
+    {
+      "tile": "srtm_12_02.zip",
+      "sha256": "085f377bccad96710eb75600577faa00df593b58e8087f8ed598f068f193f7bf",
+      "grid_points": 227
+    },
+    {
+      "tile": "srtm_13_02.zip",
+      "sha256": "e200beaafc2989137ff7129a93120f16ad051c535f37c3c5b3da8f439353b61b",
+      "grid_points": 224
+    },
+    {
+      "tile": "srtm_15_02.zip",
+      "sha256": "852a0296cd7f2aa01ccfa8a1bb9f61e016a3f4e24a91c3b8880263cdecb269e1",
+      "grid_points": 211
+    },
+    {
+      "tile": "srtm_16_02.zip",
+      "sha256": "49818a2606c392542c706cfee693b7709446265c31ec676f5c7c47a731a08380",
+      "grid_points": 166
+    },
+    {
+      "tile": "srtm_11_02.zip",
+      "sha256": "1c35930d4e6e42c67b572f8e2e49cf8669396ccbd5f78c5505c6549370691aee",
+      "grid_points": 114
+    },
+    {
+      "tile": "srtm_10_02.zip",
+      "sha256": "1ccab84f4b06dead2e2b00a769141270e2c22e1962c4a3ecc2e31eabd34c8622",
+      "grid_points": 3
+    }
+  ],
+  "datum": "EGM96",
+  "ocean_background_height": 0,
+  "coastal_nearest_valid_samples": [
+    {
+      "lon": -107.43876360399223,
+      "lat": 24.26100023499511,
+      "nearest_valid_pixels": 3.1622776601683795,
+      "height": 5.460688591003418,
+      "tile": "srtm_15_08.zip",
+      "method": "valid terrain mean in approximately25km coastal grid footprint"
+    },
+    {
+      "lon": -112.19045468605597,
+      "lat": 25.95611053903886,
+      "nearest_valid_pixels": 13.0,
+      "height": 53.397090911865234,
+      "tile": "srtm_14_07.zip",
+      "method": "valid terrain mean in approximately25km coastal grid footprint"
+    },
+    {
+      "lon": -113.84981423611293,
+      "lat": 27.594966170021358,
+      "nearest_valid_pixels": 5.0,
+      "height": 14.76821517944336,
+      "tile": "srtm_14_07.zip",
+      "method": "valid terrain mean in approximately25km coastal grid footprint"
+    },
+    {
+      "lon": -114.34441776872146,
+      "lat": 27.835380794862914,
+      "nearest_valid_pixels": 1.0,
+      "height": 20.91897201538086,
+      "tile": "srtm_14_07.zip",
+      "method": "valid terrain mean in approximately25km coastal grid footprint"
+    },
+    {
+      "lon": -114.0829974826517,
+      "lat": 28.051820897131165,
+      "nearest_valid_pixels": 4.123105625617661,
+      "height": 8.342122077941895,
+      "tile": "srtm_14_07.zip",
+      "method": "valid terrain mean in approximately25km coastal grid footprint"
+    },
+    {
+      "lon": -113.53457602847301,
+      "lat": 28.932452134224427,
+      "nearest_valid_pixels": 14.866068747318506,
+      "height": 425.6370849609375,
+      "tile": "srtm_14_07.zip",
+      "method": "valid terrain mean in approximately25km coastal grid footprint"
+    },
+    {
+      "lon": -117.09849970025324,
+      "lat": 32.6189785363638,
+      "nearest_valid_pixels": 3.1622776601683795,
+      "height": 73.2484130859375,
+      "tile": "srtm_13_06.zip",
+      "method": "valid terrain mean in approximately25km coastal grid footprint"
+    },
+    {
+      "lon": -119.82783267433011,
+      "lat": 34.409861052997535,
+      "nearest_valid_pixels": 9.0,
+      "height": 337.74273681640625,
+      "tile": "srtm_13_06.zip",
+      "method": "valid terrain mean in approximately25km coastal grid footprint"
+    },
+    {
+      "lon": -108.77202208081789,
+      "lat": 25.50043423048719,
+      "nearest_valid_pixels": 4.123105625617661,
+      "height": 5.000583171844482,
+      "tile": "srtm_15_07.zip",
+      "method": "valid terrain mean in approximately25km coastal grid footprint"
+    },
+    {
+      "lon": -112.93663793171406,
+      "lat": 30.488021668423094,
+      "nearest_valid_pixels": 8.48528137423857,
+      "height": 24.300615310668945,
+      "tile": "srtm_14_06.zip",
+      "method": "valid terrain mean in approximately25km coastal grid footprint"
+    },
+    {
+      "lon": -122.20826879192815,
+      "lat": 37.51953792305508,
+      "nearest_valid_pixels": 1.0,
+      "height": 81.94061279296875,
+      "tile": "srtm_12_05.zip",
+      "method": "valid terrain mean in approximately25km coastal grid footprint"
+    },
+    {
+      "lon": -122.50830824340588,
+      "lat": 37.734661899650554,
+      "nearest_valid_pixels": 1.0,
+      "height": 75.83478546142578,
+      "tile": "srtm_12_05.zip",
+      "method": "valid terrain mean in approximately25km coastal grid footprint"
+    },
+    {
+      "lon": -126.349946998045,
+      "lat": 50.6114691579007,
+      "nearest_valid_pixels": 3.1622776601683795,
+      "height": 226.44100952148438,
+      "tile": "srtm_11_02.zip",
+      "method": "valid terrain mean in approximately25km coastal grid footprint"
+    },
+    {
+      "lon": -127.64528505655389,
+      "lat": 52.07512442685719,
+      "nearest_valid_pixels": 16.278820596099706,
+      "height": 442.8457336425781,
+      "tile": "srtm_11_02.zip",
+      "method": "valid terrain mean in approximately25km coastal grid footprint"
+    },
+    {
+      "lon": -128.0381428896617,
+      "lat": 52.26854399060398,
+      "nearest_valid_pixels": 6.0,
+      "height": 183.9500274658203,
+      "tile": "srtm_11_02.zip",
+      "method": "valid terrain mean in approximately25km coastal grid footprint"
+    },
+    {
+      "lon": -126.97414074599304,
+      "lat": 52.33835663723561,
+      "nearest_valid_pixels": 7.0,
+      "height": 828.6234130859375,
+      "tile": "srtm_11_02.zip",
+      "method": "valid terrain mean in approximately25km coastal grid footprint"
+    }
+  ],
+  "geometry_sha256": "a824bd4d6f61c686c1c8a717075f4d8498a95903bb4664c4a0e6f4f8419b7e5b"
+}

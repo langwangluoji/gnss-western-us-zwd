@@ -1,0 +1,14 @@
+{
+  "station": "P388",
+  "source_sha256": "8d17f2fe33595a72f8620bbee9b1ed901e9a6b4d303ad9617758b78cd007767a",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\p388.pwv.gz",
+  "coverage": {
+    "2016": 0.9918032786885246,
+    "2017": 0.9605022831050228,
+    "2018": 0.9708904109589042,
+    "2019": 0.9821917808219178,
+    "2020": 0.9931693989071039
+  },
+  "valid_hours": 42959,
+  "cache_sha256": "de8629d701231117512ccfdc2bb254578443f8bbba6d6e7de7d455bdec88590f"
+}

@@ -1,0 +1,9 @@
+{
+  "python": "3.11.13",
+  "torch": "2.8.0+cu129",
+  "numpy": "2.3.5",
+  "cuda": "12.9",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "tf32": false,
+  "deterministic": true
+}

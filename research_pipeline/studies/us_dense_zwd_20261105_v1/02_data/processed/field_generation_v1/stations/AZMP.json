@@ -1,0 +1,14 @@
+{
+  "station": "AZMP",
+  "source_sha256": "aacf0d14609e0fc7dde5290077f9252b403e569421db6c6dac3cdc85c27c8ed3",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\azmp.pwv.gz",
+  "coverage": {
+    "2016": 0.9830373406193078,
+    "2017": 0.9855022831050229,
+    "2018": 0.9473744292237443,
+    "2019": 0.8115296803652968,
+    "2020": 0.9902094717668488
+  },
+  "valid_hours": 41374,
+  "cache_sha256": "7783eaf74cda4f9f4b52f29f07380501b383a9955b0a19f6e3d94f1394a8d961"
+}

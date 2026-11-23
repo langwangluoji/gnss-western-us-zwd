@@ -1,0 +1,14 @@
+{
+  "station": "MIDA",
+  "source_sha256": "b20ee245e92f5efc2134b13a5e109b9e3d523474171b841603e6c768c3e0bb73",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\mida.pwv.gz",
+  "coverage": {
+    "2016": 0.995332422586521,
+    "2017": 0.9953196347031964,
+    "2018": 0.988013698630137,
+    "2019": 0.9946347031963471,
+    "2020": 0.9972677595628415
+  },
+  "valid_hours": 43590,
+  "cache_sha256": "2249d89e6a3c72a10a30750e405d90801bf8f11b127e626d30915bd79fca0224"
+}

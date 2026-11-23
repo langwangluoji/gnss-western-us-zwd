@@ -1,0 +1,35 @@
+{
+  "allocation_elapsed_seconds": 93.88481028005481,
+  "budget": 1572,
+  "elapsed_seconds": 93.88481028005481,
+  "pending_evaluation": false,
+  "products": {
+    "joint": [
+      {
+        "checkpoint": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/runs/20261120_us_dense_zwd_observable64_coverage_v02/edm_seed42/candidate_001572.pt",
+        "members": 16,
+        "population": "B incremental weather development",
+        "step": 1572,
+        "value": 5.442473438051012
+      },
+      {
+        "checkpoint": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/runs/20261120_us_dense_zwd_observable64_coverage_v02/edm_seed42/candidate_001500.pt",
+        "members": 16,
+        "population": "B incremental weather development",
+        "step": 1500,
+        "value": 5.444623801443312
+      },
+      {
+        "checkpoint": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/runs/20261120_us_dense_zwd_observable64_coverage_v02/edm_seed42/candidate_001400.pt",
+        "members": 16,
+        "population": "B incremental weather development",
+        "step": 1400,
+        "value": 5.447814318868849
+      }
+    ]
+  },
+  "stage": "observable_edm_refine",
+  "status": "COMPLETE",
+  "step": 1572,
+  "updated": 1795138035.9600213
+}

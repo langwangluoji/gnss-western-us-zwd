@@ -1,0 +1,14 @@
+{
+  "station": "CPXX",
+  "source_sha256": "01e8246e8749abf876bcd845b5f548bcc28cbaef700c90925d6f74cf2302437c",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\cpxx.pwv.gz",
+  "coverage": {
+    "2016": 0.9973816029143898,
+    "2017": 0.9796803652968037,
+    "2018": 0.985730593607306,
+    "2019": 0.9458904109589041,
+    "2020": 0.9847449908925319
+  },
+  "valid_hours": 42914,
+  "cache_sha256": "91dddd69871b1f0b674cebcded4fb5261365cc90feff043febc9e7fce0fdd221"
+}

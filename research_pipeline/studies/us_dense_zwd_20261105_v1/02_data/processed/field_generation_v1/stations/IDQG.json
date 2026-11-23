@@ -1,0 +1,14 @@
+{
+  "station": "IDQG",
+  "source_sha256": "38108e5a86f7f4a5e07f41f25918e3f9bc1800180267289c4830cd2b2f9dd960",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\idqg.pwv.gz",
+  "coverage": {
+    "2016": 0.9845173041894353,
+    "2017": 0.9759132420091324,
+    "2018": 0.9247716894977169,
+    "2019": 0.9650684931506849,
+    "2020": 0.9922586520947176
+  },
+  "valid_hours": 42468,
+  "cache_sha256": "364db081363f7a65a1af0204a9ed2e6c460188c16e15f642b8617e2352db1af0"
+}

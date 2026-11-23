@@ -1,0 +1,14 @@
+{
+  "station": "DAM3",
+  "source_sha256": "ebad41e2a54e1092375d35ea15a117a553bc3a6acf3942cab5d8baec0e322788",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\dam3.pwv.gz",
+  "coverage": {
+    "2016": 0.9867941712204007,
+    "2017": 0.9634703196347032,
+    "2018": 0.9557077625570777,
+    "2019": 0.5799086757990868,
+    "2020": 0.0
+  },
+  "valid_hours": 30560,
+  "cache_sha256": "22c733506134c62964045497dfd75f7f9afdc52514cd61840981410956d13e0d"
+}

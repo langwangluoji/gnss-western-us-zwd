@@ -1,0 +1,14 @@
+{
+  "station": "BKMS",
+  "source_sha256": "30ea60baf8ef77b22bc7851be4eb9f63884a69676b0e28523f5a3d988b178b68",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\bkms.pwv.gz",
+  "coverage": {
+    "2016": 0.9962431693989071,
+    "2017": 0.9924657534246575,
+    "2018": 0.9769406392694064,
+    "2019": 0.9964611872146119,
+    "2020": 0.9989754098360656
+  },
+  "valid_hours": 43507,
+  "cache_sha256": "edaa0204347bf477baf434916ea71cdeb07bdb13296ad57f82e6457a0b667e90"
+}

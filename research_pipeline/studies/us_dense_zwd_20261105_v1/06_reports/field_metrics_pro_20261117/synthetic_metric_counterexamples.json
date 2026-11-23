@@ -1,0 +1,63 @@
+{
+  "seed": 20261117,
+  "synthetic_only": true,
+  "periodic_boundary": true,
+  "ssim_note": "Uniform 7x7 population covariance, fixed data range100, periodic boundary; not a package default or project score.",
+  "parseval_passed": true,
+  "rows": [
+    {
+      "case": "Reference",
+      "rmse_mm": 0.0,
+      "bias_mm": 0.0,
+      "ssim_fixed_range_100": 1.0,
+      "relative_demeaned_psd_l2": 0.0,
+      "relative_complex_spectrum_l2": 0.0,
+      "gradient_error_mm_per_cell": 0.0
+    },
+    {
+      "case": "Bias +10 mm",
+      "rmse_mm": 10.0,
+      "bias_mm": 10.0,
+      "ssim_fixed_range_100": 0.9950953863171933,
+      "relative_demeaned_psd_l2": 1.16152389654848e-16,
+      "relative_complex_spectrum_l2": 2.6080775048386914e-16,
+      "gradient_error_mm_per_cell": 5.691931053813679e-15
+    },
+    {
+      "case": "Blur",
+      "rmse_mm": 5.371855190126956,
+      "bias_mm": 1.5734327421215414e-14,
+      "ssim_fixed_range_100": 0.8136056873812438,
+      "relative_demeaned_psd_l2": 0.18650038772326008,
+      "relative_complex_spectrum_l2": 0.26859275950634753,
+      "gradient_error_mm_per_cell": 4.459777662188144
+    },
+    {
+      "case": "Shift 4 cells",
+      "rmse_mm": 15.57793224793182,
+      "bias_mm": 9.25185853854297e-18,
+      "ssim_fixed_range_100": 0.3331698403525727,
+      "relative_demeaned_psd_l2": 2.704379230929301e-16,
+      "relative_complex_spectrum_l2": 0.7788966123965896,
+      "gradient_error_mm_per_cell": 9.114473061835806
+    },
+    {
+      "case": "Added high frequency",
+      "rmse_mm": 4.999999999999999,
+      "bias_mm": 7.709882115452476e-18,
+      "ssim_fixed_range_100": 0.8662056451694174,
+      "relative_demeaned_psd_l2": 0.010971880993514177,
+      "relative_complex_spectrum_l2": 0.24999999999999983,
+      "gradient_error_mm_per_cell": 10.281134408884132
+    },
+    {
+      "case": "Random phase / same PSD",
+      "rmse_mm": 27.43157125686237,
+      "bias_mm": 1.9737298215558337e-16,
+      "ssim_fixed_range_100": 0.02376506837784996,
+      "relative_demeaned_psd_l2": 1.1590271890176236e-15,
+      "relative_complex_spectrum_l2": 1.371578562843117,
+      "gradient_error_mm_per_cell": 10.137053150707658
+    }
+  ]
+}

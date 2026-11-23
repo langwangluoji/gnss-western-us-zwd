@@ -1,0 +1,14 @@
+{
+  "station": "COPR",
+  "source_sha256": "2d7be28d117c44a8ac3a4094aadcf0971ae821958c5cd4a93c74a2a09542c686",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\copr.pwv.gz",
+  "coverage": {
+    "2016": 0.9871357012750456,
+    "2017": 0.9708904109589042,
+    "2018": 0.9698630136986301,
+    "2019": 0.9941780821917808,
+    "2020": 0.995787795992714
+  },
+  "valid_hours": 43128,
+  "cache_sha256": "02442dca3b7ee3908521157e347f823847082f65e26eff32c77953df7aaba2df"
+}

@@ -1,0 +1,1 @@
+{"code":"79870a6f6a17f5d87a44558af625d4c8981ff3c34a708a638dd6e370212469d1","masks":"original F/S0 unchanged; all land retained with support flag","rule":"Z0 = temperature * logaddexp(0, raw_Z0 / temperature), before Q","scope":"Post-run engineering parameterization, all methods equally; no retuning, no new independent confirmation","server_jobs":false,"temperature_mm":0.1}

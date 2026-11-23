@@ -1,0 +1,14 @@
+{
+  "station": "SOMT",
+  "source_sha256": "5e59cae7069504e0a7d7e7afb702015cc33f14fc5f6cac5b28726545eb051594",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\somt.pwv.gz",
+  "coverage": {
+    "2016": 0.9637978142076503,
+    "2017": 0.9853881278538813,
+    "2018": 0.9621004566210045,
+    "2019": 0.9823059360730594,
+    "2020": 0.9888433515482696
+  },
+  "valid_hours": 42817,
+  "cache_sha256": "a17ffe721678feb9405dace6596680bd6e20b5bb0578c714edc0a009aaba64fa"
+}

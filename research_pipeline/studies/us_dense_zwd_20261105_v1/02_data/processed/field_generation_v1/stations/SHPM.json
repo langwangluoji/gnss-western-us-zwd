@@ -1,0 +1,14 @@
+{
+  "station": "SHPM",
+  "source_sha256": "2f8dd84b3f216b064e1e5e4def4a36da530a5dc16c2141e4c6bc3c115b9d630f",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\shpm.pwv.gz",
+  "coverage": {
+    "2016": 0.9970400728597449,
+    "2017": 0.9901826484018265,
+    "2018": 0.9702054794520548,
+    "2019": 0.6655251141552512,
+    "2020": 0.0
+  },
+  "valid_hours": 31761,
+  "cache_sha256": "8998fd4583e6a0b3e248e9b791e5fb2ed7cc726d0f2c4469fa36499522e5535e"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "CDMT",
+  "source_sha256": "f559fb99520a3150d3243f6816f45b2cae9b739af453d70cadb59c725ef2ebc4",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\cdmt.pwv.gz",
+  "coverage": {
+    "2016": 0.9920309653916212,
+    "2017": 0.9843607305936073,
+    "2018": 0.9711187214611872,
+    "2019": 0.9909817351598174,
+    "2020": 0.9974954462659381
+  },
+  "valid_hours": 43287,
+  "cache_sha256": "7260d8db87b486c6e50b887c871cdbe6c529877aeb9a82e123a54fcd1c461fce"
+}

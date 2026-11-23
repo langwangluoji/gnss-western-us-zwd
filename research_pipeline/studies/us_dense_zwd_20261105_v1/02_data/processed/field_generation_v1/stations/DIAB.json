@@ -1,0 +1,14 @@
+{
+  "station": "DIAB",
+  "source_sha256": "d2510361337ca842ca0324f31fa3a7679162fede48f1dda5a7e66537e2c0810a",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\diab.pwv.gz",
+  "coverage": {
+    "2016": 0.9941939890710383,
+    "2017": 0.9901826484018265,
+    "2018": 0.9671232876712329,
+    "2019": 0.9893835616438356,
+    "2020": 0.9962431693989071
+  },
+  "valid_hours": 43297,
+  "cache_sha256": "0defab12da46ece8fc9bbaf780f49915ce2459e4e7a2bd6fe01704f0965520d0"
+}

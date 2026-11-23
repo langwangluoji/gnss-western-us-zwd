@@ -1,0 +1,14 @@
+{
+  "station": "MLKE",
+  "source_sha256": "b1ee708d95bd4cdd9a34578af263b67d7cd29f90fb72cb1f13baa182e4ae42af",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\mlke.pwv.gz",
+  "coverage": {
+    "2016": 0.9870218579234973,
+    "2017": 0.9531963470319634,
+    "2018": 0.9797945205479452,
+    "2019": 0.8777397260273972,
+    "2020": 0.9977231329690346
+  },
+  "valid_hours": 42056,
+  "cache_sha256": "e170dec2ab8c8bad19d2e2816b3fd47fc9a2b2e3c4c23bb12e2277b7a9a46413"
+}

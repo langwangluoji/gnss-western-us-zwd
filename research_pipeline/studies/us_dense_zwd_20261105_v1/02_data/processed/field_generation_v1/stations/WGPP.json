@@ -1,0 +1,14 @@
+{
+  "station": "WGPP",
+  "source_sha256": "795d705ae2073d0f6262578d50c1b395aee2a2eb142fd1f2ba8306e1ca5cdf0d",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\wgpp.pwv.gz",
+  "coverage": {
+    "2016": 0.9551457194899818,
+    "2017": 0.9810502283105023,
+    "2018": 0.9720319634703196,
+    "2019": 0.9876712328767123,
+    "2020": 0.9824681238615665
+  },
+  "valid_hours": 42781,
+  "cache_sha256": "eb08e39ca7a61f4d76b4dc14454d92211a587d6564c375bc7ff8e9efb7f84ce4"
+}

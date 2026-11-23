@@ -1,0 +1,17 @@
+[
+  {
+    "path": "research_pipeline/studies/europe_dense_zwd_20261104_v1/03_code/model/network.py",
+    "sha256": "b65d29441e79e10f604e411e408c28526a35342bad5d4973cc6c8db86b601dae",
+    "reason": "Dynamic us_gan import required by four actual model-parity tests"
+  },
+  {
+    "path": "research_pipeline/studies/europe_dense_zwd_20261104_v1/03_code/training/core.py",
+    "sha256": "9781fe1e122bada1d2cb15f36b582df3210ded1ad1df06883a050706c98eb90f",
+    "reason": "Dynamic us_gan import required by four actual model-parity tests"
+  },
+  {
+    "path": "research_pipeline/studies/europe_dense_zwd_20261104_v1/README.md",
+    "sha256": "c9422f48abda308a43715f2f9fba29c113b40686f30e9f1f943a4c7013d69647",
+    "reason": "Compatibility-only directory label"
+  }
+]

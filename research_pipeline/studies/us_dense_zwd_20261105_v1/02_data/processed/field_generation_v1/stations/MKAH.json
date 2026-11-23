@@ -1,0 +1,14 @@
+{
+  "station": "MKAH",
+  "source_sha256": "de41d6616f474ffe7006c0bdde8e16d3628cbe97defb3f300d94d97cf4acf4b5",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\mkah.pwv.gz",
+  "coverage": {
+    "2016": 0.9536657559198543,
+    "2017": 0.9304794520547945,
+    "2018": 0.9684931506849315,
+    "2019": 0.9792237442922375,
+    "2020": 0.9751821493624773
+  },
+  "valid_hours": 42156,
+  "cache_sha256": "556a192a782cb7055da2b2693eb3a3b791b11ba69416b1405dc2eec47e6e29cb"
+}

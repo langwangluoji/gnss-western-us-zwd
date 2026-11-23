@@ -1,0 +1,104 @@
+{
+  "root": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/runs/20261121_us_dense_zwd_grid69_processor_pair_v01",
+  "generated_at": 1795243693.9545043,
+  "runs": [
+    {
+      "name": "fold_0/mlp69",
+      "status": {
+        "stage": "B2018 inner development",
+        "status": "RUNNING",
+        "step": 200,
+        "updated": 1795243605.8235033,
+        "products": {
+          "joint": [
+            {
+              "bias_mm": -0.2336624074890016,
+              "mae_mm": 5.6188530035784945,
+              "n_station_hours": 22421,
+              "n_stations": 244,
+              "population": "B2018 inner 96 anchors, fitted groups; incremental development",
+              "rmse_mm": 7.40287362647984,
+              "value": 5.378754576047261,
+              "step": 0
+            }
+          ]
+        }
+      },
+      "training": [
+        {
+          "step": 100,
+          "stage": "grid_processor_refine",
+          "lr": 0.0001,
+          "loss": 6.374130845069885,
+          "observation_ES_mm": 6.374130845069885,
+          "supervised_station_hours": 1884,
+          "training_epoch_hours": 5472,
+          "effective_hours": 8,
+          "cumulative_supervised_station_hours": 188077,
+          "training_gpu_card_hours": 0.10761551544380685,
+          "gpu_time_scope": "single GPU process elapsed including evaluation; not Slurm billed accounting",
+          "elapsed_seconds": 387.41585559770465,
+          "updates_per_second": 0.25812056619551654,
+          "allocation_elapsed_seconds": 387.4158815201372,
+          "gpu_memory_mb": 180.56396484375,
+          "updated": 1795243195.2255013
+        },
+        {
+          "step": 200,
+          "stage": "grid_processor_refine",
+          "lr": 9.964886831700443e-05,
+          "loss": 5.4652533531188965,
+          "observation_ES_mm": 5.4652533531188965,
+          "supervised_station_hours": 1856,
+          "training_epoch_hours": 5472,
+          "effective_hours": 8,
+          "cumulative_supervised_station_hours": 376538,
+          "training_gpu_card_hours": 0.2200863950021772,
+          "gpu_time_scope": "single GPU process elapsed including evaluation; not Slurm billed accounting",
+          "elapsed_seconds": 792.3110220078379,
+          "updates_per_second": 0.2524261236366109,
+          "allocation_elapsed_seconds": 798.0140186883509,
+          "gpu_memory_mb": 180.56396484375,
+          "updated": 1795243605.8235033
+        }
+      ],
+      "development": [
+        {
+          "step": 200,
+          "startup": true,
+          "metrics": {
+            "joint": {
+              "value": 5.374417006969452,
+              "rmse_mm": 7.398745145093069,
+              "mae_mm": 5.615113000289832,
+              "bias_mm": -0.14378656141162716,
+              "population": "B2018 inner 96 anchors, fitted groups; incremental development",
+              "n_station_hours": 22421,
+              "n_stations": 244
+            }
+          },
+          "updated": 1795243605.7370071
+        }
+      ]
+    }
+  ],
+  "full2019": [],
+  "read_only": true,
+  "campaign_queue": {
+    "campaign_id": "20261121_us_dense_zwd_grid69_processor_pair_v01",
+    "state": "RUNNING",
+    "jobs": [
+      {
+        "job_id": "3633416",
+        "state": "RUNNING|gpu8006"
+      }
+    ]
+  },
+  "last_update": 1795243605.8235033,
+  "ssh_sync": {
+    "sync_ok": true,
+    "last_success": 1795243693.9545043,
+    "last_attempt": 1795243698.9114552,
+    "error": ""
+  }
+}

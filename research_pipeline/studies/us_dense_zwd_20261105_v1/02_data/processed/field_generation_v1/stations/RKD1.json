@@ -1,0 +1,14 @@
+{
+  "station": "RKD1",
+  "source_sha256": "cf3701d727bb68b30b86f484ac611b17fe5c7c30dda5348951ae4d0b8b84da35",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\rkd1.pwv.gz",
+  "coverage": {
+    "2016": 0.9486566484517304,
+    "2017": 0.9404109589041096,
+    "2018": 0.9240867579908676,
+    "2019": 0.9028538812785388,
+    "2020": 0.9919171220400729
+  },
+  "valid_hours": 41288,
+  "cache_sha256": "ea84c7f9349a992cd1d4f62f268ad4250abf7cefa0ae9a865b3f56ca1f6a6015"
+}

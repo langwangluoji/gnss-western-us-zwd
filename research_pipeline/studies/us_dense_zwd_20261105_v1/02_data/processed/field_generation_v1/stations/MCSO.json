@@ -1,0 +1,14 @@
+{
+  "station": "MCSO",
+  "source_sha256": "611d4b8c0c7346b4d5384eab6af392c8e8a60376d0f0cc4a038eb0f40e8fe2a8",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\mcso.pwv.gz",
+  "coverage": {
+    "2016": 0.9959016393442623,
+    "2017": 0.991324200913242,
+    "2018": 0.9934931506849315,
+    "2019": 0.9820776255707763,
+    "2020": 0.839936247723133
+  },
+  "valid_hours": 42116,
+  "cache_sha256": "7a9bbf1f86b061e817a66e9aa206765ef6d11d59d4c2b759487dbeae81738eda"
+}

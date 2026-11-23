@@ -1,0 +1,14 @@
+{
+  "station": "PDTN",
+  "source_sha256": "5c8f5f1893894c7aa722ec5b429eeb7e46f0d7e5ae104ad77652b0fb2c778293",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\pdtn.pwv.gz",
+  "coverage": {
+    "2016": 0.9903233151183971,
+    "2017": 0.979337899543379,
+    "2018": 0.9265981735159817,
+    "2019": 0.9368721461187215,
+    "2020": 0.9832650273224044
+  },
+  "valid_hours": 42239,
+  "cache_sha256": "fa8da11a6ec98e227e0e6f586b115f60718deceb8ba562b13fa07625a5da4285"
+}

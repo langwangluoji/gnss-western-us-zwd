@@ -1,0 +1,14 @@
+{
+  "station": "ISLK",
+  "source_sha256": "5077d42d8f6c3f8fa5657daf2348e812ae1645f2d5b638f124addd587d611293",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\islk.pwv.gz",
+  "coverage": {
+    "2016": 0.9828096539162113,
+    "2017": 0.9803652968036529,
+    "2018": 0.953310502283105,
+    "2019": 0.9931506849315068,
+    "2020": 0.9978369763205829
+  },
+  "valid_hours": 43037,
+  "cache_sha256": "a102b18338444cd75cf4d56fd0d4563153012c4c2992c0ec9f742d97905ad080"
+}

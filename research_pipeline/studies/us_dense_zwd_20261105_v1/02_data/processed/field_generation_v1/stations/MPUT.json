@@ -1,0 +1,14 @@
+{
+  "station": "MPUT",
+  "source_sha256": "321097470d3aae03608ff3d02598520893a64ae7d35d0a616bf917578080b5cb",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\mput.pwv.gz",
+  "coverage": {
+    "2016": 0.9954462659380692,
+    "2017": 0.9845890410958904,
+    "2018": 0.9873287671232877,
+    "2019": 0.9804794520547945,
+    "2020": 0.8111338797814208
+  },
+  "valid_hours": 41732,
+  "cache_sha256": "890b488ea78237f1aa58ad33b234343e041acc4b17e2fbb5a5681a5a2d9e35a7"
+}

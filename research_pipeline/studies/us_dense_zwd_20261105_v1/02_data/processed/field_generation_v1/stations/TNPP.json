@@ -1,0 +1,14 @@
+{
+  "station": "TNPP",
+  "source_sha256": "c2b1b499db2994d237a4f69652192464b2bac1b3de0a07444f0e7ace5174f103",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\tnpp.pwv.gz",
+  "coverage": {
+    "2016": 0.9867941712204007,
+    "2017": 0.9882420091324201,
+    "2018": 0.9660958904109589,
+    "2019": 0.9754566210045662,
+    "2020": 0.9862249544626593
+  },
+  "valid_hours": 42996,
+  "cache_sha256": "2740e29da87c0ce8bd06c4233c1d1dfaaf422fb383f14d8fb209722ff560ab41"
+}

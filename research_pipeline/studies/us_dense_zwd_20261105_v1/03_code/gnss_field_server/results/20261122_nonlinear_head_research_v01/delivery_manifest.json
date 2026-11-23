@@ -1,0 +1,45 @@
+{
+  "verified": true,
+  "neural_updates": 4752,
+  "server_jobs": false,
+  "C2019_new_evaluation": false,
+  "D2020": false,
+  "files": {
+    "RESULTS.md": {
+      "bytes": 9814,
+      "sha256": "b07467ab43684564b3d006bc6085a42045165c775865f09428b4e1e4d1b93e7e"
+    },
+    "PRO_REVIEW.md": {
+      "bytes": 3352,
+      "sha256": "36d3a376c4c114e3676276506f304a5302caef7a7f87030bd94547606f0fe755"
+    },
+    "historical_curves.png": {
+      "bytes": 213794,
+      "sha256": "040db1cbc1eb0203546ff1416f1591c4725953e42a186a514628e4c12d57ba13"
+    },
+    "nonlinear_optimization_results.png": {
+      "bytes": 158395,
+      "sha256": "6a7ec9af9db57ed3ba9943af0189ab380a154c33824c2e747c4e7ec83a7ca129"
+    },
+    "critic_gradient_diagnostics.png": {
+      "bytes": 59907,
+      "sha256": "7b2efe982bb52e25db6e79e8f7490d648d026a4f0f4faea2f857451a895de750"
+    },
+    "pro_final_review.jpg": {
+      "bytes": 88917,
+      "sha256": "4ec942a7f09e3678fb467d82cd44c063139ca8575aba171840656b2752797c60"
+    },
+    "paired_intervals.json": {
+      "bytes": 823,
+      "sha256": "f89c9f32b80486405920fba30b1348ddfbbd26b338e215399295402ee4139573"
+    },
+    "critic_diagnostics.json": {
+      "bytes": 29637,
+      "sha256": "3adf38aa650253bd2fb5fa1c183b84b3123ea203d17011b5192223ccbbaab005"
+    },
+    "validation.json": {
+      "bytes": 902,
+      "sha256": "0e6f20a8ca34ca9a4353e93ed958266b0269ab929e1eaf5e1f350a63db51c608"
+    }
+  }
+}

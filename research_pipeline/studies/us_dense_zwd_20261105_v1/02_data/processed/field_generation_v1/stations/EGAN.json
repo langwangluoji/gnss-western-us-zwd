@@ -1,0 +1,14 @@
+{
+  "station": "EGAN",
+  "source_sha256": "c6e56f675b6b5b14189a94816fc2d3bf671bf9aebb71dcecb8acdd82e809dc0a",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\egan.pwv.gz",
+  "coverage": {
+    "2016": 0.9841757741347905,
+    "2017": 0.9769406392694064,
+    "2018": 0.9522831050228311,
+    "2019": 0.9786529680365297,
+    "2020": 0.9815573770491803
+  },
+  "valid_hours": 42740,
+  "cache_sha256": "a460e9a9d79a2ef20abd2faa9b3bc56563b21e2e720ba732b30b0f61bdeed0e0"
+}

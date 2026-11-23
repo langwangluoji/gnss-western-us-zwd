@@ -1,0 +1,14 @@
+{
+  "station": "LWST",
+  "source_sha256": "cd811d5f0aee48128ac07aa681d7f0c731884482386558b6a8de5bc3ab7bf602",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\lwst.pwv.gz",
+  "coverage": {
+    "2016": 0.9665300546448088,
+    "2017": 0.9636986301369863,
+    "2018": 0.9684931506849315,
+    "2019": 0.9190639269406393,
+    "2020": 0.9948770491803278
+  },
+  "valid_hours": 42206,
+  "cache_sha256": "3be27fbdff112e0804968fe7546e5ae9b26ffababa45a5277b23a8467e0eedda"
+}

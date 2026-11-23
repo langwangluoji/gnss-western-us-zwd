@@ -1,0 +1,28 @@
+{
+  "status": "EDM_TRAINING_AND_C2019_EVALUATION_COMPLETE",
+  "registered": true,
+  "production_code_changed": false,
+  "release_sha256": "0f1d9cdf470910dbec68de61a618dee54d3c55b8c4dae64e590b02af92c91923",
+  "registration_sha256": "36cb06f7460e520c49e6c15c0f3e6b51017b1dc259d8d0a0f10d6649a26e8c83",
+  "source_validation": "v02 source checksums unchanged; existing 84 tests and actual A800 EDM benchmark apply",
+  "formal_EDM_submitted": true,
+  "maximum_additional_card_hours": 1.0,
+  "new_jobs": [
+    "EDM training",
+    "C2019 evaluation afterok"
+  ],
+  "training_job_id": "3610617",
+  "evaluation_job_id": "3610618",
+  "reference_mean_preserved": true,
+  "first_development_evaluation_confirmed": true,
+  "server_run": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/runs/20261120_us_dense_zwd_observable64_coverage_v02",
+  "training_directory": "edm_seed42",
+  "evaluation_directory": "edm_full2019",
+  "training_complete": true,
+  "current_step": 1572,
+  "B_development_ES_mm": 5.442473438051012,
+  "selected_step_from_training_status": 1572,
+  "evaluation_complete": true,
+  "selected_checkpoint_sha256": "5c416f692e0833073961ba12dbfc669669231f0a4670368147d98eb500727a2a",
+  "remaining": "Local attribution and paired uncertainty analysis; no automatic additional training"
+}

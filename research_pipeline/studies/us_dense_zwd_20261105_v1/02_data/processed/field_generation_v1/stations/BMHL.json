@@ -1,0 +1,14 @@
+{
+  "station": "BMHL",
+  "source_sha256": "2bef0fb497026d1039e6a9c2894ef7c9410a576f561bf55e45a2764f3e029f36",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\bmhl.pwv.gz",
+  "coverage": {
+    "2016": 0.9949908925318761,
+    "2017": 0.9852739726027397,
+    "2018": 0.9734018264840183,
+    "2019": 0.9872146118721461,
+    "2020": 0.9968123861566485
+  },
+  "valid_hours": 43302,
+  "cache_sha256": "31cef9580412c771b9eaf603388551bea7b9d69cb81e0453de4dca6225b1e0d8"
+}

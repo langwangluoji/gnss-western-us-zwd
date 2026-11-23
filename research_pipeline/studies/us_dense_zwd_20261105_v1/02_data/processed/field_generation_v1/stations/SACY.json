@@ -1,0 +1,14 @@
+{
+  "station": "SACY",
+  "source_sha256": "1af8f8698dd33831094329d742e2203cdd83e2e5495aa13f93f87b7ebf8c5ea8",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\sacy.pwv.gz",
+  "coverage": {
+    "2016": 0.9438752276867031,
+    "2017": 0.9626712328767123,
+    "2018": 0.9458904109589041,
+    "2019": 0.9324200913242009,
+    "2020": 0.9670992714025501
+  },
+  "valid_hours": 41673,
+  "cache_sha256": "e404954c447a98348ecd4b0cb9fbbe5fbedca4a09bfd52307fd8be8cac5c80d6"
+}

@@ -1,0 +1,243 @@
+{
+  "root": "/share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/runs/20261121_us_dense_zwd_gen3_unet_df_gan_v02",
+  "generated_at": 1795279374.313974,
+  "runs": [
+    {
+      "name": "fold_0/stochastic",
+      "status": {
+        "stage": "B2018\u751f\u6210\u5f0f\u5185\u5c42\u5f00\u53d1 \u00b7 fold_0/stochastic",
+        "status": "RUNNING",
+        "step": 300,
+        "updated": 1795279312.6347656,
+        "products": {
+          "point": [
+            {
+              "value": 7.298433917017639,
+              "rmse_mm": 7.298433917017639,
+              "mae_mm": 5.526908780775296,
+              "bias_mm": -0.02216139131236459,
+              "CRPS_mm": 4.401854461445027,
+              "coverage90": 0.8663542290879255,
+              "width90_mm": 23.557675074550044,
+              "group_VS": 1.2256907181859966,
+              "mean_mc_se_mm": 0.050364437648041396,
+              "n_stations": 244,
+              "n_station_hours": 22421,
+              "population": "B2018 inner96, fitted station groups; incremental development",
+              "step": 342
+            }
+          ],
+          "joint": [
+            {
+              "value": 4.811456264758511,
+              "rmse_mm": 7.298433917017639,
+              "mae_mm": 5.526908780775296,
+              "bias_mm": -0.02216139131236459,
+              "CRPS_mm": 4.401854461445027,
+              "coverage90": 0.8663542290879255,
+              "width90_mm": 23.557675074550044,
+              "group_VS": 1.2256907181859966,
+              "mean_mc_se_mm": 0.050364437648041396,
+              "n_stations": 244,
+              "n_station_hours": 22421,
+              "population": "B2018 inner96, fitted station groups; incremental development",
+              "step": 342
+            }
+          ],
+          "marginal": [
+            {
+              "value": 4.401854461445027,
+              "rmse_mm": 7.298433917017639,
+              "mae_mm": 5.526908780775296,
+              "bias_mm": -0.02216139131236459,
+              "CRPS_mm": 4.401854461445027,
+              "coverage90": 0.8663542290879255,
+              "width90_mm": 23.557675074550044,
+              "group_VS": 1.2256907181859966,
+              "mean_mc_se_mm": 0.050364437648041396,
+              "n_stations": 244,
+              "n_station_hours": 22421,
+              "population": "B2018 inner96, fitted station groups; incremental development",
+              "step": 342
+            }
+          ]
+        }
+      },
+      "training": [
+        {
+          "step": 100,
+          "stage": "generation_refine",
+          "lr": 0.0001,
+          "loss": 6.470213413238525,
+          "observation_ES_mm": 6.470213413238525,
+          "adversarial": 0.0,
+          "supervised_station_hours": 1884,
+          "effective_hours": 8,
+          "cumulative_supervised_station_hours": 188077,
+          "training_gpu_card_hours": 0.021681698366689185,
+          "gpu_time_scope": "single GPU process elapsed including evaluation; not Slurm billed accounting",
+          "elapsed_seconds": 78.05411412008107,
+          "updates_per_second": 1.2811624489922036,
+          "allocation_elapsed_seconds": 78.05447913706303,
+          "gpu_memory_mb": 63636.921875,
+          "updated": 1795279160.3878002
+        },
+        {
+          "step": 200,
+          "stage": "generation_refine",
+          "lr": 9.300881593465226e-05,
+          "loss": 5.788470268249512,
+          "observation_ES_mm": 5.788470268249512,
+          "adversarial": 0.0,
+          "supervised_station_hours": 1856,
+          "effective_hours": 8,
+          "cumulative_supervised_station_hours": 376538,
+          "training_gpu_card_hours": 0.04189689232916054,
+          "gpu_time_scope": "single GPU process elapsed including evaluation; not Slurm billed accounting",
+          "elapsed_seconds": 150.82881238497794,
+          "updates_per_second": 1.3260065954077576,
+          "allocation_elapsed_seconds": 159.05907689407468,
+          "gpu_memory_mb": 63636.921875,
+          "updated": 1795279241.392327
+        },
+        {
+          "step": 300,
+          "stage": "generation_refine",
+          "lr": 7.4010078067319e-05,
+          "loss": 6.605912208557129,
+          "observation_ES_mm": 6.605912208557129,
+          "adversarial": 0.0,
+          "supervised_station_hours": 1900,
+          "effective_hours": 8,
+          "cumulative_supervised_station_hours": 564544,
+          "training_gpu_card_hours": 0.06397263435388191,
+          "gpu_time_scope": "single GPU process elapsed including evaluation; not Slurm billed accounting",
+          "elapsed_seconds": 230.30148367397487,
+          "updates_per_second": 1.3026403269928277,
+          "allocation_elapsed_seconds": 230.30150625295937,
+          "gpu_memory_mb": 63636.921875,
+          "updated": 1795279312.6347656
+        }
+      ],
+      "development": [
+        {
+          "step": 200,
+          "startup": true,
+          "metrics": {
+            "point": {
+              "value": 7.3633789320009555,
+              "rmse_mm": 7.3633789320009555,
+              "mae_mm": 5.581626314167693,
+              "bias_mm": -0.04293922571260781,
+              "CRPS_mm": 4.450880724929137,
+              "coverage90": 0.8674845667905308,
+              "width90_mm": 23.880547417684305,
+              "group_VS": 1.2384078533303151,
+              "mean_mc_se_mm": 0.007276000906962638,
+              "n_stations": 244,
+              "n_station_hours": 22421,
+              "population": "B2018 inner96, fitted station groups; incremental development"
+            },
+            "joint": {
+              "value": 4.864834690399245,
+              "rmse_mm": 7.3633789320009555,
+              "mae_mm": 5.581626314167693,
+              "bias_mm": -0.04293922571260781,
+              "CRPS_mm": 4.450880724929137,
+              "coverage90": 0.8674845667905308,
+              "width90_mm": 23.880547417684305,
+              "group_VS": 1.2384078533303151,
+              "mean_mc_se_mm": 0.007276000906962638,
+              "n_stations": 244,
+              "n_station_hours": 22421,
+              "population": "B2018 inner96, fitted station groups; incremental development"
+            },
+            "marginal": {
+              "value": 4.450880724929137,
+              "rmse_mm": 7.3633789320009555,
+              "mae_mm": 5.581626314167693,
+              "bias_mm": -0.04293922571260781,
+              "CRPS_mm": 4.450880724929137,
+              "coverage90": 0.8674845667905308,
+              "width90_mm": 23.880547417684305,
+              "group_VS": 1.2384078533303151,
+              "mean_mc_se_mm": 0.007276000906962638,
+              "n_stations": 244,
+              "n_station_hours": 22421,
+              "population": "B2018 inner96, fitted station groups; incremental development"
+            }
+          },
+          "updated": 1795279241.296364
+        },
+        {
+          "step": 342,
+          "startup": false,
+          "metrics": {
+            "point": {
+              "value": 7.298433917017639,
+              "rmse_mm": 7.298433917017639,
+              "mae_mm": 5.526908780775296,
+              "bias_mm": -0.02216139131236459,
+              "CRPS_mm": 4.401854461445027,
+              "coverage90": 0.8663542290879255,
+              "width90_mm": 23.557675074550044,
+              "group_VS": 1.2256907181859966,
+              "mean_mc_se_mm": 0.050364437648041396,
+              "n_stations": 244,
+              "n_station_hours": 22421,
+              "population": "B2018 inner96, fitted station groups; incremental development"
+            },
+            "joint": {
+              "value": 4.811456264758511,
+              "rmse_mm": 7.298433917017639,
+              "mae_mm": 5.526908780775296,
+              "bias_mm": -0.02216139131236459,
+              "CRPS_mm": 4.401854461445027,
+              "coverage90": 0.8663542290879255,
+              "width90_mm": 23.557675074550044,
+              "group_VS": 1.2256907181859966,
+              "mean_mc_se_mm": 0.050364437648041396,
+              "n_stations": 244,
+              "n_station_hours": 22421,
+              "population": "B2018 inner96, fitted station groups; incremental development"
+            },
+            "marginal": {
+              "value": 4.401854461445027,
+              "rmse_mm": 7.298433917017639,
+              "mae_mm": 5.526908780775296,
+              "bias_mm": -0.02216139131236459,
+              "CRPS_mm": 4.401854461445027,
+              "coverage90": 0.8663542290879255,
+              "width90_mm": 23.557675074550044,
+              "group_VS": 1.2256907181859966,
+              "mean_mc_se_mm": 0.050364437648041396,
+              "n_stations": 244,
+              "n_station_hours": 22421,
+              "population": "B2018 inner96, fitted station groups; incremental development"
+            }
+          },
+          "updated": 1795279349.801212
+        }
+      ]
+    }
+  ],
+  "full2019": [],
+  "read_only": true,
+  "campaign_queue": {
+    "campaign_id": "20261121_us_dense_zwd_gen3_unet_df_gan_v02",
+    "state": "RUNNING",
+    "jobs": [
+      {
+        "job_id": "3645090",
+        "state": "RUNNING|gpu8001"
+      }
+    ]
+  },
+  "last_update": 1795279312.6347656,
+  "ssh_sync": {
+    "sync_ok": true,
+    "last_success": 1795279374.313974,
+    "last_attempt": 1795279376.4956493,
+    "error": ""
+  }
+}

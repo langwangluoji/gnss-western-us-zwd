@@ -1,0 +1,14 @@
+{
+  "station": "KTBW",
+  "source_sha256": "c8f991690fd602528122d03292472610a919f4eeffb404ab579244d7589bafc7",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ktbw.pwv.gz",
+  "coverage": {
+    "2016": 0.9855418943533698,
+    "2017": 0.9492009132420092,
+    "2018": 0.9182648401826484,
+    "2019": 0.98162100456621,
+    "2020": 0.9543488160291439
+  },
+  "valid_hours": 41998,
+  "cache_sha256": "9bc53189a259633416662c7f789788e0b226b84a93b9f8e52321a1a9809ede93"
+}

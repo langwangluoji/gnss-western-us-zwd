@@ -1,0 +1,14 @@
+{
+  "station": "VCWA",
+  "source_sha256": "d24e83300385827f7ea35097f6db22b561cfaa7a0caeee2c3948a720edd9ac8b",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\vcwa.pwv.gz",
+  "coverage": {
+    "2016": 0.9874772313296903,
+    "2017": 0.9496575342465754,
+    "2018": 0.9583333333333334,
+    "2019": 0.9803652968036529,
+    "2020": 0.9549180327868853
+  },
+  "valid_hours": 42364,
+  "cache_sha256": "7c1a6c5566f77dbb3807f7515b6adb184f4330fa6a13be2ffd900c416118bef6"
+}

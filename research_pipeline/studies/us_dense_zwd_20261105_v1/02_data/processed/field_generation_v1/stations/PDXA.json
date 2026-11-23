@@ -1,0 +1,14 @@
+{
+  "station": "PDXA",
+  "source_sha256": "86329d7c17cc2fb065c8a03858fd0933dda5eace5ba52e5967769137f82f28d9",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\pdxa.pwv.gz",
+  "coverage": {
+    "2016": 0.969148451730419,
+    "2017": 0.978310502283105,
+    "2018": 0.9577625570776256,
+    "2019": 0.9087899543378996,
+    "2020": 0.9978369763205829
+  },
+  "valid_hours": 42199,
+  "cache_sha256": "080cbb909fbbb7d0d46fe6921f889fc4077b0366dfc8e78fc2977eb615ca25ea"
+}

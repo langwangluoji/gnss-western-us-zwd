@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "source_bundle_verified": true,
+  "cases": {
+    "fold_0/diffusion": {
+      "mean_query_max_error_mm": 3.464408905529126e-05,
+      "member_query_max_error_mm": 2.5350726787110034e-05,
+      "checked_stations": 193,
+      "amplitude": 1.051707148551941,
+      "hour": 421186
+    },
+    "fold_0/gan": {
+      "mean_query_max_error_mm": 2.4705534286795228e-05,
+      "member_query_max_error_mm": 2.3104585693545232e-05,
+      "checked_stations": 193,
+      "amplitude": 1.051707148551941,
+      "hour": 421186
+    },
+    "fold_0/stochastic": {
+      "mean_query_max_error_mm": 2.7553323974416344e-05,
+      "member_query_max_error_mm": 2.3134450941597606e-05,
+      "checked_stations": 193,
+      "amplitude": 1.051707148551941,
+      "hour": 421186
+    },
+    "fold_1/diffusion": {
+      "mean_query_max_error_mm": 2.8235154360345405e-05,
+      "member_query_max_error_mm": 2.700744181538539e-05,
+      "checked_stations": 232,
+      "amplitude": 1.051707148551941,
+      "hour": 421186
+    },
+    "fold_1/gan": {
+      "mean_query_max_error_mm": 3.610448561630619e-05,
+      "member_query_max_error_mm": 2.5952042363996952e-05,
+      "checked_stations": 232,
+      "amplitude": 1.051707148551941,
+      "hour": 421186
+    },
+    "fold_1/stochastic": {
+      "mean_query_max_error_mm": 3.7290579200544016e-05,
+      "member_query_max_error_mm": 2.2919655378927928e-05,
+      "checked_stations": 232,
+      "amplitude": 1.051707148551941,
+      "hour": 421186
+    }
+  }
+}

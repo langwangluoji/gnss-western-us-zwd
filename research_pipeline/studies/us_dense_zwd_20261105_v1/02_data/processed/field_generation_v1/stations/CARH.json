@@ -1,0 +1,14 @@
+{
+  "station": "CARH",
+  "source_sha256": "551319a90748aef6139761d90c2a7938f98f13330057d99df649dfde91e2a9ca",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\carh.pwv.gz",
+  "coverage": {
+    "2016": 0.9899817850637522,
+    "2017": 0.971689497716895,
+    "2018": 0.9767123287671233,
+    "2019": 0.9912100456621005,
+    "2020": 0.9970400728597449
+  },
+  "valid_hours": 43205,
+  "cache_sha256": "03fe51b699043d90736c4cf317c9ffaa0db1af26a49232e7b65b245ed9769cb5"
+}

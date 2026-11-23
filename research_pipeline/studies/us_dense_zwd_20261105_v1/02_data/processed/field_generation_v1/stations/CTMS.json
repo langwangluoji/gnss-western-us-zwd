@@ -1,0 +1,14 @@
+{
+  "station": "CTMS",
+  "source_sha256": "a60110d579607e98031411de650346959b68ac223ebb6517eebaf52b57507273",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ctms.pwv.gz",
+  "coverage": {
+    "2016": 0.9883879781420765,
+    "2017": 0.9819634703196347,
+    "2018": 0.9678082191780822,
+    "2019": 0.9917808219178083,
+    "2020": 0.9979508196721312
+  },
+  "valid_hours": 43216,
+  "cache_sha256": "61125797872593f3d7e00a90c82bdee5abb2196c75718bc2eadd8a70c6f96bae"
+}

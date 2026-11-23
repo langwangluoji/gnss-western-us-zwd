@@ -1,0 +1,14 @@
+{
+  "station": "TNBA",
+  "source_sha256": "f343e869829c20609cfb00e4a522aa6ac8890287fd025e2fc9893cdff4ff92fa",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\tnba.pwv.gz",
+  "coverage": {
+    "2016": 0.9896402550091075,
+    "2017": 0.9765981735159818,
+    "2018": 0.9584474885844749,
+    "2019": 0.9682648401826484,
+    "2020": 0.20423497267759563
+  },
+  "valid_hours": 35920,
+  "cache_sha256": "e102dd744b7891a4e5938c1a6374e94ad76cb420761abb9d1b681637f02ffaaa"
+}

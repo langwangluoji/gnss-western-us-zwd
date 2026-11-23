@@ -1,0 +1,14 @@
+{
+  "station": "P232",
+  "source_sha256": "32a64a50313fd6f7800677fe37b03a2cbb7e929406548440c23ac66da5e7a398",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\p232.pwv.gz",
+  "coverage": {
+    "2016": 0.9959016393442623,
+    "2017": 0.9719178082191781,
+    "2018": 0.9695205479452055,
+    "2019": 0.9786529680365297,
+    "2020": 0.9260018214936248
+  },
+  "valid_hours": 42462,
+  "cache_sha256": "879a2feee4cde889eda0ea3440e7d8f7a4e8fdedca0529e6ab3e3e50309b8e89"
+}

@@ -1,0 +1,18 @@
+{
+  "download_files_verified": 126,
+  "archive_sha256": "27a4ca243dbc6117f2a26f0f4b44ed73ea2414b5fb01fcab38d9bd9f06c5d28a",
+  "outer_metric_reproduction_tolerance": 1e-06,
+  "local_fixed_hours": 12,
+  "local_inference_runs": 72,
+  "local_members": 128,
+  "max_first32_error_mm": 9.1552734375e-05,
+  "pytest": {
+    "passed": 310,
+    "elapsed_seconds": 48.84
+  },
+  "Pro_completed_reviews": 2,
+  "new_server_jobs_submitted": false,
+  "C2019_accessed": false,
+  "D2020_accessed": false,
+  "stage": "research results and next experimental design delivered; proposed new training not executed"
+}

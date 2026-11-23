@@ -1,0 +1,14 @@
+{
+  "station": "PPBF",
+  "source_sha256": "931ec5205cf2760f234a40d870e6aaab51f0b859c4ba2c00814969de570f7623",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ppbf.pwv.gz",
+  "coverage": {
+    "2016": 0.9978369763205829,
+    "2017": 0.9871004566210045,
+    "2018": 0.9796803652968037,
+    "2019": 0.9815068493150685,
+    "2020": 0.9935109289617486
+  },
+  "valid_hours": 43319,
+  "cache_sha256": "7f6d1b0145d71f07843b794e0cb8ee3ab1482ba20b2f00922c0c2e652346ec1a"
+}

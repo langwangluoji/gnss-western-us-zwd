@@ -1,0 +1,472 @@
+{
+  "scope": "Read-only replay of the saved pilot outputs. C2019 is development, D2020 was not read.",
+  "engineering_preflight": {
+    "benchmark_seconds": 25.20300000000134,
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "engineering_updates": 400,
+    "estimated_seconds_per_update": 0.06300750000000335,
+    "gaussian_heun_gain": 1.0447288398272812,
+    "maximum_batch_error_mm": 1.52587890625e-05,
+    "maximum_initial_Gaussian_error_mm": 1.52587890625e-05,
+    "maximum_prefix_error_mm": 1.52587890625e-05,
+    "passed": true,
+    "peak_memory_mb": 77.01171875,
+    "real_100_plus100_equals200": true
+  },
+  "gain": {
+    "independent": 1.0447288398272807,
+    "locked": 1.0447288398272812,
+    "absolute_error": 4.440892098500626e-16
+  },
+  "training": {
+    "training_hours": 576,
+    "development_hours": 288,
+    "minimum_gap_hours": 97,
+    "scope": "EDM head and condition PCA only. Frozen B2018 background reused B development weeks.",
+    "selection_values": [
+      {
+        "step": 0,
+        "value": 5.488539280162917
+      },
+      {
+        "step": 100,
+        "value": 5.488335972030957
+      },
+      {
+        "step": 200,
+        "value": 5.486917893091838
+      },
+      {
+        "step": 300,
+        "value": 5.484747766620583
+      },
+      {
+        "step": 400,
+        "value": 5.481934018433094
+      },
+      {
+        "step": 500,
+        "value": 5.478675247066551
+      },
+      {
+        "step": 600,
+        "value": 5.475069127976894
+      },
+      {
+        "step": 700,
+        "value": 5.471289283699459
+      },
+      {
+        "step": 800,
+        "value": 5.467451141112381
+      }
+    ]
+  },
+  "evaluation": {
+    "hours": 288,
+    "stations_S0": 76,
+    "station_hours_S0": 20909,
+    "locked_point_rmse_mm": 10.631393746973394
+  },
+  "results": {
+    "64": {
+      "products": {
+        "EDM": {
+          "ES": 7.560012329695252,
+          "VS": 1.50506523711047,
+          "station_macro_rmse_mm": 10.656415983370579
+        },
+        "Gaussian": {
+          "ES": 7.609167528103545,
+          "VS": 1.505352221054066,
+          "station_macro_rmse_mm": 10.686461244814181
+        },
+        "EDM_shape_Gaussian_mean": {
+          "ES": 7.609429106694855,
+          "VS": 1.5053498373344862,
+          "station_macro_rmse_mm": 10.686461244814181
+        },
+        "Gaussian_shape_EDM_mean": {
+          "ES": 7.559766559428944,
+          "VS": 1.5050609871289096,
+          "station_macro_rmse_mm": 10.656415983370579
+        },
+        "EDM_shape_locked_mean": {
+          "ES": 7.575734581508528,
+          "VS": 1.4984791656456409,
+          "station_macro_rmse_mm": 10.631393746973394
+        },
+        "Gaussian_shape_locked_mean": {
+          "ES": 7.575489635556757,
+          "VS": 1.4984792249379904,
+          "station_macro_rmse_mm": 10.631393746973394
+        }
+      },
+      "crossed": {
+        "original_EDM_minus_Gaussian": {
+          "difference_mm": {
+            "ES": -0.04915519840829568,
+            "VS": -0.00028698394359524294
+          },
+          "7": {
+            "intervals_mm": {
+              "ES": [
+                -0.11557478986638603,
+                -0.0003717710034344396
+              ],
+              "VS": [
+                -0.006212563697626106,
+                0.006805303532596504
+              ]
+            },
+            "n_time_blocks": 12,
+            "n_groups": 6
+          },
+          "14": {
+            "intervals_mm": {
+              "ES": [
+                -0.11557478986638603,
+                -0.0003717710034344396
+              ],
+              "VS": [
+                -0.006212563697626106,
+                0.006805303532596504
+              ]
+            },
+            "n_time_blocks": 12,
+            "n_groups": 6
+          }
+        },
+        "same_locked_mean": {
+          "difference_mm": {
+            "ES": 0.0002449459517723879,
+            "VS": -5.92923490348037e-08
+          },
+          "7": {
+            "intervals_mm": {
+              "ES": [
+                -0.0002608431115709346,
+                0.0008798565170943845
+              ],
+              "VS": [
+                -2.907322844639151e-05,
+                2.918242265597518e-05
+              ]
+            },
+            "n_time_blocks": 12,
+            "n_groups": 6
+          },
+          "14": {
+            "intervals_mm": {
+              "ES": [
+                -0.0002608431115709346,
+                0.0008798565170943845
+              ],
+              "VS": [
+                -2.907322844639151e-05,
+                2.918242265597518e-05
+              ]
+            },
+            "n_time_blocks": 12,
+            "n_groups": 6
+          }
+        },
+        "same_Gaussian_empirical_mean": {
+          "difference_mm": {
+            "ES": 0.00026157859130728373,
+            "VS": -2.3837195795685685e-06
+          },
+          "7": {
+            "intervals_mm": {
+              "ES": [
+                -0.00023983183604169649,
+                0.0008814267306113936
+              ],
+              "VS": [
+                -3.1460932625418455e-05,
+                2.6728859594507095e-05
+              ]
+            },
+            "n_time_blocks": 12,
+            "n_groups": 6
+          },
+          "14": {
+            "intervals_mm": {
+              "ES": [
+                -0.00023983183604169649,
+                0.0008814267306113936
+              ],
+              "VS": [
+                -3.1460932625418455e-05,
+                2.6728859594507095e-05
+              ]
+            },
+            "n_time_blocks": 12,
+            "n_groups": 6
+          }
+        },
+        "same_EDM_empirical_mean": {
+          "difference_mm": {
+            "ES": 0.00024577026630721475,
+            "VS": 4.249981561461583e-06
+          },
+          "7": {
+            "intervals_mm": {
+              "ES": [
+                -0.000248891224118043,
+                0.0008566820517731873
+              ],
+              "VS": [
+                -2.683512969408665e-05,
+                3.375083377111278e-05
+              ]
+            },
+            "n_time_blocks": 12,
+            "n_groups": 6
+          },
+          "14": {
+            "intervals_mm": {
+              "ES": [
+                -0.000248891224118043,
+                0.0008566820517731873
+              ],
+              "VS": [
+                -2.683512969408665e-05,
+                3.375083377111278e-05
+              ]
+            },
+            "n_time_blocks": 12,
+            "n_groups": 6
+          }
+        }
+      },
+      "mean_drift_rms_mm": 0.2672619164657546,
+      "mean_drift_bias_mm": 0.1348549823851153,
+      "centered_member_difference_rms_mm": 0.04656159847516438,
+      "station_member_std_difference_rms_mm": 0.0073672469970989885,
+      "group_ids": [
+        "-3:-7",
+        "-8:1",
+        "-6:-3",
+        "3:-9",
+        "-8:-1",
+        "-8:-2"
+      ],
+      "group_hours": 1636,
+      "joint_station_hours": 10104
+    },
+    "128": {
+      "products": {
+        "EDM": {
+          "ES": 7.520978805118834,
+          "VS": 1.4994506642352015,
+          "station_macro_rmse_mm": 10.630309566858656
+        },
+        "Gaussian": {
+          "ES": 7.57021927842624,
+          "VS": 1.4997451374018966,
+          "station_macro_rmse_mm": 10.660436091405307
+        },
+        "EDM_shape_Gaussian_mean": {
+          "ES": 7.570479691155181,
+          "VS": 1.4997421893130494,
+          "station_macro_rmse_mm": 10.660436091405307
+        },
+        "Gaussian_shape_EDM_mean": {
+          "ES": 7.520734811401225,
+          "VS": 1.4994399227243342,
+          "station_macro_rmse_mm": 10.630309566858656
+        },
+        "EDM_shape_locked_mean": {
+          "ES": 7.554193113015285,
+          "VS": 1.4948660309029531,
+          "station_macro_rmse_mm": 10.631393746973394
+        },
+        "Gaussian_shape_locked_mean": {
+          "ES": 7.553934945663909,
+          "VS": 1.494865733370677,
+          "station_macro_rmse_mm": 10.631393746973394
+        }
+      },
+      "crossed": {
+        "original_EDM_minus_Gaussian": {
+          "difference_mm": {
+            "ES": -0.04924047330740521,
+            "VS": -0.0002944731666953096
+          },
+          "7": {
+            "intervals_mm": {
+              "ES": [
+                -0.11511969934281406,
+                -0.0004133059712378216
+              ],
+              "VS": [
+                -0.006276209117577046,
+                0.006807885986945394
+              ]
+            },
+            "n_time_blocks": 12,
+            "n_groups": 6
+          },
+          "14": {
+            "intervals_mm": {
+              "ES": [
+                -0.11511969934281406,
+                -0.0004133059712378216
+              ],
+              "VS": [
+                -0.006276209117577046,
+                0.006807885986945394
+              ]
+            },
+            "n_time_blocks": 12,
+            "n_groups": 6
+          }
+        },
+        "same_locked_mean": {
+          "difference_mm": {
+            "ES": 0.00025816735137938193,
+            "VS": 2.975322765308772e-07
+          },
+          "7": {
+            "intervals_mm": {
+              "ES": [
+                -0.0002108261013017067,
+                0.0008322359302438046
+              ],
+              "VS": [
+                -1.9415833479937957e-05,
+                2.01789201087956e-05
+              ]
+            },
+            "n_time_blocks": 12,
+            "n_groups": 6
+          },
+          "14": {
+            "intervals_mm": {
+              "ES": [
+                -0.0002108261013017067,
+                0.0008322359302438046
+              ],
+              "VS": [
+                -1.9415833479937957e-05,
+                2.01789201087956e-05
+              ]
+            },
+            "n_time_blocks": 12,
+            "n_groups": 6
+          }
+        },
+        "same_Gaussian_empirical_mean": {
+          "difference_mm": {
+            "ES": 0.0002604127289419204,
+            "VS": -2.948088847324864e-06
+          },
+          "7": {
+            "intervals_mm": {
+              "ES": [
+                -0.00020783465262832316,
+                0.0008395754159441806
+              ],
+              "VS": [
+                -2.360826894277352e-05,
+                1.9151686077751838e-05
+              ]
+            },
+            "n_time_blocks": 12,
+            "n_groups": 6
+          },
+          "14": {
+            "intervals_mm": {
+              "ES": [
+                -0.00020783465262832316,
+                0.0008395754159441806
+              ],
+              "VS": [
+                -2.360826894277352e-05,
+                1.9151686077751838e-05
+              ]
+            },
+            "n_time_blocks": 12,
+            "n_groups": 6
+          }
+        },
+        "same_EDM_empirical_mean": {
+          "difference_mm": {
+            "ES": 0.00024399371761123925,
+            "VS": 1.0741510866119826e-05
+          },
+          "7": {
+            "intervals_mm": {
+              "ES": [
+                -0.0002184378870990696,
+                0.0008142350562677924
+              ],
+              "VS": [
+                -1.8134596293652076e-05,
+                4.25302293508229e-05
+              ]
+            },
+            "n_time_blocks": 12,
+            "n_groups": 6
+          },
+          "14": {
+            "intervals_mm": {
+              "ES": [
+                -0.0002184378870990696,
+                0.0008142350562677924
+              ],
+              "VS": [
+                -1.8134596293652076e-05,
+                4.25302293508229e-05
+              ]
+            },
+            "n_time_blocks": 12,
+            "n_groups": 6
+          }
+        }
+      },
+      "mean_drift_rms_mm": 0.26713517488798266,
+      "mean_drift_bias_mm": 0.13479742004233075,
+      "centered_member_difference_rms_mm": 0.046585881387596194,
+      "station_member_std_difference_rms_mm": 0.00604989454127756,
+      "group_ids": [
+        "-3:-7",
+        "-8:1",
+        "-6:-3",
+        "3:-9",
+        "-8:-1",
+        "-8:-2"
+      ],
+      "group_hours": 1636,
+      "joint_station_hours": 10104
+    }
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261117,
+    "scope": "Paired calendar blocks and fixed 50 km dense groups, group macro"
+  },
+  "diagnostic": "Empirical mean alignment uses the same finite ensemble and couples its members. It is a decomposition diagnostic, not an iid forecast or a separately fitted model.",
+  "inputs_sha256": {
+    "results/20261119_local_edm_subspace_v01/condition_pca.npz": "74d8127b1dab7bf377aac7f9188fa4a7f5f387902f60d0a3fd4b70f73e461d23",
+    "results/20261119_local_method_research_v02/observable_subspace.npz": "6ceabe32ed008a63eb67b84b260b3581ba46ea69072f2749afe1077e1f50572f",
+    "results/20261119_local_fused_probability_v02/B_only_parameters.lock.json": "16315c0b1e02b3d491353d7f861287fad6d1d249b68f779df926201313a8b0b2",
+    "results/20261119_local_conditional_probability_v01/B_only_parameters.lock.json": "87291597346ae29048a628eaa3591d1b14ff8079f3b1647ba123a18fe771f3eb",
+    "results/20261119_local_edm_subspace_v01/code_snapshot/local_subspace_data.py": "13af665cf1c8cc1c19cbd2f7a32032825d9eb40023ff4f02a4c44830dea0d174",
+    "results/20261119_local_edm_subspace_v01/code_snapshot/subspace.py": "00d0bc96c7e3e9ed2f25198c310b633aebde7c31062ff12078da843a967765dd",
+    "results/20261119_local_edm_subspace_v01/code_snapshot/local_subspace_pilot.py": "b985ed6ee6cdecc18a26adce9a5dc8f740d4e381221c5d77c85bc6c759e7f926",
+    "../../02_data/processed/gnss_field_server_v1/stations.csv": "80e0d53cd5cb1d98bafe6e5cc40c653a6d3ee4f22ccfe3851c32181b84e17d9b",
+    "results/20261119_local_condition_probe_v01/conditions_2018.npz": "942980318b6a77b03b5b617755b3b427ec3d11e96045b2fe74653a950fd34dcb",
+    "results/20261119_local_condition_probe_v01/conditions_2019.npz": "744374f430f19d2a288bd361a42729bfd82078d9f070e6fe892d38df7a1a89f6",
+    "results/20261119_local_edm_subspace_v01/pilot.lock.json": "cd8f6079db2adc28bd24bf6a56324746796938c87abe1c7472af0ffa657a4364",
+    "results/20261119_local_edm_subspace_v01/selection.lock.json": "75ac410291692625c17a33cbe5cae7c8e0bb40f0bdbd62bde6c5dad872da9967",
+    "results/20261119_local_edm_subspace_v01/preflight.json": "ba94dbbd270314c1840f16e42f20e4ff95c8a8e37b79eff8076237f68a15c6a1",
+    "results/20261119_local_edm_subspace_v01/scientific/contract.json": "d8eba139c3c28b25cfd0e9509bb4907e0d189c98a3d611f09016148f96bd7ca9",
+    "results/20261119_local_edm_subspace_v01/scientific/initial_metrics.json": "03ae22169be3e7cd6797eb3025047e7e20d43d7f1684ca2c3e76e98469a926ef",
+    "results/20261119_local_edm_subspace_v01/scientific/development.jsonl": "70541b9cac0bff196eab2d7776c7ec9984bae450999f31f10290b3c9c740b369",
+    "results/20261119_local_edm_subspace_v01/scientific/candidate_000800.pt": "52e646158c4c17b860f133d70585e1544733421739da06f062651975efeb4065",
+    "results/20261119_local_edm_subspace_v01/C2019_forecast.npz": "c4f3985ee34885c924d65166c3a0a65fcb9d63bd778164b31bdde3b9276b5afd",
+    "results/20261119_local_edm_subspace_v01/C2019_results.json": "840a674f577d5bf7c7d151b3ac9cdf54d2839334f242b456c9d567f95c56084a"
+  }
+}

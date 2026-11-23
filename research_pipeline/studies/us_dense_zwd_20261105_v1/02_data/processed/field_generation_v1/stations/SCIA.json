@@ -1,0 +1,14 @@
+{
+  "station": "SCIA",
+  "source_sha256": "811a233aa8f3deae7989355cedd8d5cc88776aa3a201b2455c30a090b8373f93",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\scia.pwv.gz",
+  "coverage": {
+    "2016": 0.9930555555555556,
+    "2017": 0.9867579908675799,
+    "2018": 0.9802511415525114,
+    "2019": 0.9921232876712329,
+    "2020": 0.9985200364298725
+  },
+  "valid_hours": 43416,
+  "cache_sha256": "fb2176091f9ea413e4b01f359da58ef6fe9f47a73eecf77318ddc3c3c031f652"
+}

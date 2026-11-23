@@ -1,0 +1,14 @@
+{
+  "station": "ORES",
+  "source_sha256": "3fdf494b47c0d220949aee410bcadd92757f1651b1095d185bd58b972f9d737e",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ores.pwv.gz",
+  "coverage": {
+    "2016": 0.9903233151183971,
+    "2017": 0.9820776255707763,
+    "2018": 0.9849315068493151,
+    "2019": 0.9834474885844748,
+    "2020": 0.9921448087431693
+  },
+  "valid_hours": 43260,
+  "cache_sha256": "b74c7c2432ed6e466904d7352b6a2dbe4f12f3ab08a9d8dcb0db7965a3ac6191"
+}

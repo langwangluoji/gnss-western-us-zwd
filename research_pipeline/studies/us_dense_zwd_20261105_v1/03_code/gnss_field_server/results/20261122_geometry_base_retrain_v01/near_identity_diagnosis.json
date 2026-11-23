@@ -1,0 +1,398 @@
+{
+  "scope": "local diagnostic only;one predetermined fitting B hour;no validation selection;no server jobs",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "products": [
+    {
+      "fold": 0,
+      "arm": "gan",
+      "product": "point",
+      "selected_step": 0,
+      "baseline_RMSE_mm": 8.442602751680795,
+      "RMSE_mm": 8.442602751680795,
+      "mean_max_change_mm": 0.0,
+      "mean_rms_change_mm": 0.0,
+      "random_change_rms_mm": 0.0,
+      "weight_changes": {
+        "net.encoders": {
+          "changed": 34,
+          "tensors": 34,
+          "maximum": 0.00242544524371624
+        },
+        "net.decoders": {
+          "changed": 30,
+          "tensors": 30,
+          "maximum": 0.0024765394628047943
+        },
+        "net.output": {
+          "changed": 2,
+          "tensors": 2,
+          "maximum": 0.001304961508139968
+        }
+      },
+      "gradient_clipped_fraction": 0.6944444444444444
+    },
+    {
+      "fold": 0,
+      "arm": "gan",
+      "product": "joint",
+      "selected_step": 72,
+      "baseline_RMSE_mm": 8.442602751680795,
+      "RMSE_mm": 8.44353554318559,
+      "mean_max_change_mm": 0.240814208984375,
+      "mean_rms_change_mm": 0.0812973752617836,
+      "random_change_rms_mm": 0.005033425986766815,
+      "weight_changes": {
+        "net.encoders": {
+          "changed": 34,
+          "tensors": 34,
+          "maximum": 0.00242544524371624
+        },
+        "net.decoders": {
+          "changed": 30,
+          "tensors": 30,
+          "maximum": 0.0024765394628047943
+        },
+        "net.output": {
+          "changed": 2,
+          "tensors": 2,
+          "maximum": 0.001304961508139968
+        }
+      },
+      "gradient_clipped_fraction": 0.6944444444444444
+    },
+    {
+      "fold": 0,
+      "arm": "diffusion",
+      "product": "point",
+      "selected_step": 0,
+      "baseline_RMSE_mm": 8.442602751680795,
+      "RMSE_mm": 8.442602751680795,
+      "mean_max_change_mm": 0.0,
+      "mean_rms_change_mm": 0.0,
+      "random_change_rms_mm": 2.1323355667846045e-06,
+      "weight_changes": {
+        "net.encoders": {
+          "changed": 34,
+          "tensors": 34,
+          "maximum": 0.002633911557495594
+        },
+        "net.decoders": {
+          "changed": 30,
+          "tensors": 30,
+          "maximum": 0.002785198390483856
+        },
+        "net.output": {
+          "changed": 2,
+          "tensors": 2,
+          "maximum": 0.0012281393865123391
+        }
+      },
+      "gradient_clipped_fraction": 0.9166666666666666
+    },
+    {
+      "fold": 0,
+      "arm": "diffusion",
+      "product": "joint",
+      "selected_step": 72,
+      "baseline_RMSE_mm": 8.442602751680795,
+      "RMSE_mm": 8.441363726235831,
+      "mean_max_change_mm": 0.331787109375,
+      "mean_rms_change_mm": 0.09491977840662003,
+      "random_change_rms_mm": 0.0063483924604952335,
+      "weight_changes": {
+        "net.encoders": {
+          "changed": 34,
+          "tensors": 34,
+          "maximum": 0.002633911557495594
+        },
+        "net.decoders": {
+          "changed": 30,
+          "tensors": 30,
+          "maximum": 0.002785198390483856
+        },
+        "net.output": {
+          "changed": 2,
+          "tensors": 2,
+          "maximum": 0.0012281393865123391
+        }
+      },
+      "gradient_clipped_fraction": 0.9166666666666666
+    },
+    {
+      "fold": 1,
+      "arm": "gan",
+      "product": "point",
+      "selected_step": 72,
+      "baseline_RMSE_mm": 8.43680442968301,
+      "RMSE_mm": 8.436994122070612,
+      "mean_max_change_mm": 0.40766143798828125,
+      "mean_rms_change_mm": 0.05321979150176048,
+      "random_change_rms_mm": 0.003108026459813118,
+      "weight_changes": {
+        "net.encoders": {
+          "changed": 34,
+          "tensors": 34,
+          "maximum": 0.0026436857879161835
+        },
+        "net.decoders": {
+          "changed": 30,
+          "tensors": 30,
+          "maximum": 0.002782740630209446
+        },
+        "net.output": {
+          "changed": 2,
+          "tensors": 2,
+          "maximum": 0.001491969102062285
+        }
+      },
+      "gradient_clipped_fraction": 0.4861111111111111
+    },
+    {
+      "fold": 1,
+      "arm": "gan",
+      "product": "joint",
+      "selected_step": 72,
+      "baseline_RMSE_mm": 8.43680442968301,
+      "RMSE_mm": 8.436994122070612,
+      "mean_max_change_mm": 0.40766143798828125,
+      "mean_rms_change_mm": 0.05321979150176048,
+      "random_change_rms_mm": 0.003108026459813118,
+      "weight_changes": {
+        "net.encoders": {
+          "changed": 34,
+          "tensors": 34,
+          "maximum": 0.0026436857879161835
+        },
+        "net.decoders": {
+          "changed": 30,
+          "tensors": 30,
+          "maximum": 0.002782740630209446
+        },
+        "net.output": {
+          "changed": 2,
+          "tensors": 2,
+          "maximum": 0.001491969102062285
+        }
+      },
+      "gradient_clipped_fraction": 0.4861111111111111
+    },
+    {
+      "fold": 1,
+      "arm": "diffusion",
+      "product": "point",
+      "selected_step": 36,
+      "baseline_RMSE_mm": 8.43680442968301,
+      "RMSE_mm": 8.438117334481824,
+      "mean_max_change_mm": 0.3337249755859375,
+      "mean_rms_change_mm": 0.05725694075226784,
+      "random_change_rms_mm": 0.002652858616784215,
+      "weight_changes": {
+        "net.encoders": {
+          "changed": 34,
+          "tensors": 34,
+          "maximum": 0.003093831241130829
+        },
+        "net.decoders": {
+          "changed": 30,
+          "tensors": 30,
+          "maximum": 0.002699626609683037
+        },
+        "net.output": {
+          "changed": 2,
+          "tensors": 2,
+          "maximum": 0.00142150919418782
+        }
+      },
+      "gradient_clipped_fraction": 0.8055555555555556
+    },
+    {
+      "fold": 1,
+      "arm": "diffusion",
+      "product": "joint",
+      "selected_step": 72,
+      "baseline_RMSE_mm": 8.43680442968301,
+      "RMSE_mm": 8.438189507472833,
+      "mean_max_change_mm": 0.329559326171875,
+      "mean_rms_change_mm": 0.03987440466880798,
+      "random_change_rms_mm": 0.003078063949942589,
+      "weight_changes": {
+        "net.encoders": {
+          "changed": 34,
+          "tensors": 34,
+          "maximum": 0.003093831241130829
+        },
+        "net.decoders": {
+          "changed": 30,
+          "tensors": 30,
+          "maximum": 0.002699626609683037
+        },
+        "net.output": {
+          "changed": 2,
+          "tensors": 2,
+          "maximum": 0.00142150919418782
+        }
+      },
+      "gradient_clipped_fraction": 0.8055555555555556
+    }
+  ],
+  "gradient_checks": [
+    {
+      "arm": "gan",
+      "fitting_hour": 421436,
+      "fitting_stations": 194,
+      "objective": "ES only;fixed K4 noise;diagnostic copy of trained step72;8 updates at1e-4",
+      "gradients": {
+        "net.encoders": {
+          "nonzero": 34,
+          "parameters": 34,
+          "maximum": 0.12038905173540115
+        },
+        "net.decoders": {
+          "nonzero": 30,
+          "parameters": 30,
+          "maximum": 0.09017423540353775
+        },
+        "net.output": {
+          "nonzero": 2,
+          "parameters": 2,
+          "maximum": 3.2392961978912354
+        }
+      },
+      "before_ES_mm": 3.3042185306549072,
+      "after_ES_mm": 3.2139406204223633,
+      "before_MSE_standardized": 0.18549156188964844,
+      "after_MSE_standardized": 0.1830335408449173,
+      "after_mean_correction_rms_mm": 0.5786745548248291,
+      "seconds": 0.39100000000325963,
+      "curve": [
+        {
+          "step": 1,
+          "ES_mm": 3.3042185306549072,
+          "MSE_standardized": 0.18549156188964844,
+          "gradient_norm": 3.318535804748535
+        },
+        {
+          "step": 2,
+          "ES_mm": 3.2923715114593506,
+          "MSE_standardized": 0.18467798829078674,
+          "gradient_norm": 3.029982566833496
+        },
+        {
+          "step": 3,
+          "ES_mm": 3.284708261489868,
+          "MSE_standardized": 0.18437300622463226,
+          "gradient_norm": 4.96652889251709
+        },
+        {
+          "step": 4,
+          "ES_mm": 3.2774548530578613,
+          "MSE_standardized": 0.18423981964588165,
+          "gradient_norm": 6.8939433097839355
+        },
+        {
+          "step": 5,
+          "ES_mm": 3.269305467605591,
+          "MSE_standardized": 0.18405616283416748,
+          "gradient_norm": 8.633074760437012
+        },
+        {
+          "step": 6,
+          "ES_mm": 3.2592408657073975,
+          "MSE_standardized": 0.18378940224647522,
+          "gradient_norm": 10.283686637878418
+        },
+        {
+          "step": 7,
+          "ES_mm": 3.2477948665618896,
+          "MSE_standardized": 0.18352577090263367,
+          "gradient_norm": 11.765701293945312
+        },
+        {
+          "step": 8,
+          "ES_mm": 3.230203628540039,
+          "MSE_standardized": 0.18327166140079498,
+          "gradient_norm": 13.590080261230469
+        }
+      ]
+    },
+    {
+      "arm": "diffusion",
+      "fitting_hour": 421436,
+      "fitting_stations": 194,
+      "objective": "ES only;fixed K4 noise;diagnostic copy of trained step72;8 updates at1e-4",
+      "gradients": {
+        "net.encoders": {
+          "nonzero": 34,
+          "parameters": 34,
+          "maximum": 0.16019102931022644
+        },
+        "net.decoders": {
+          "nonzero": 30,
+          "parameters": 30,
+          "maximum": 0.16690592467784882
+        },
+        "net.output": {
+          "nonzero": 2,
+          "parameters": 2,
+          "maximum": 5.479575157165527
+        }
+      },
+      "before_ES_mm": 3.310678243637085,
+      "after_ES_mm": 3.237318515777588,
+      "before_MSE_standardized": 0.18569788336753845,
+      "after_MSE_standardized": 0.18237212300300598,
+      "after_mean_correction_rms_mm": 0.3809725344181061,
+      "seconds": 12.889999999984866,
+      "curve": [
+        {
+          "step": 1,
+          "ES_mm": 3.310678243637085,
+          "MSE_standardized": 0.18569788336753845,
+          "gradient_norm": 5.600708961486816
+        },
+        {
+          "step": 2,
+          "ES_mm": 3.2978601455688477,
+          "MSE_standardized": 0.1849280595779419,
+          "gradient_norm": 2.663747549057007
+        },
+        {
+          "step": 3,
+          "ES_mm": 3.2936418056488037,
+          "MSE_standardized": 0.1846960484981537,
+          "gradient_norm": 3.3602030277252197
+        },
+        {
+          "step": 4,
+          "ES_mm": 3.289558172225952,
+          "MSE_standardized": 0.1845039278268814,
+          "gradient_norm": 4.331676483154297
+        },
+        {
+          "step": 5,
+          "ES_mm": 3.283442497253418,
+          "MSE_standardized": 0.18420034646987915,
+          "gradient_norm": 5.993778228759766
+        },
+        {
+          "step": 6,
+          "ES_mm": 3.27506947517395,
+          "MSE_standardized": 0.18377457559108734,
+          "gradient_norm": 7.998669624328613
+        },
+        {
+          "step": 7,
+          "ES_mm": 3.2647945880889893,
+          "MSE_standardized": 0.1832801103591919,
+          "gradient_norm": 10.05180835723877
+        },
+        {
+          "step": 8,
+          "ES_mm": 3.252185821533203,
+          "MSE_standardized": 0.182769775390625,
+          "gradient_norm": 12.172720909118652
+        }
+      ]
+    }
+  ]
+}

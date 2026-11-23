@@ -1,0 +1,56 @@
+{
+  "archive_sha256": "691465478354eb5c946494d1634311c35f790e3eac52596c38e7cb6f3d4d2c7a",
+  "archive_crc_passed": true,
+  "release_files_verified": 65,
+  "tests_passed": 72,
+  "M0_sha256": "605650e000ce4a0ab31d3d85996fd16316c978547fe9f2821c65c346cd1b86f0",
+  "selected_checkpoints_verified": true,
+  "training_role": "B2018",
+  "evaluation_role": "C2019",
+  "D2020_included": false,
+  "server_jobs_submitted": false,
+  "local_portable_benchmark": {
+    "arm": "edm",
+    "bundle_manifest_sha256": "e619d04e6c6c64164624f8983db9e507803bab5501a6250e35f93010f3bc927d",
+    "development_seconds": 1.2030000000013388,
+    "engineering_only": true,
+    "formal_verification": false,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "maximum_initial_Gaussian_error_mm": 7.62939453125e-06,
+    "metrics": {
+      "joint": {
+        "members": 16,
+        "population": "B incremental weather development",
+        "value": 5.488537914223141
+      }
+    },
+    "model_sha256": "00d0bc96c7e3e9ed2f25198c310b633aebde7c31062ff12078da843a967765dd",
+    "model_sources_sha256": {
+      "edm": "00d0bc96c7e3e9ed2f25198c310b633aebde7c31062ff12078da843a967765dd",
+      "mean": "00441db71f7d3754b43d6996c771144abb374122c184600b94e1892ed5082b5d"
+    },
+    "no_scientific_selection": true,
+    "peak_memory_mb": 114.0283203125,
+    "platform": "Windows",
+    "real_100_plus100_equals200": true,
+    "runner_sha256": "4b1c08242ae6f037f166dffbf28dbb6c1e98d68e171be6ee9c97d60ef8b9f33c",
+    "seconds_per_update": 0.0757499999999709,
+    "total_engineering_updates": 420,
+    "updates": 20
+  },
+  "remaining_server_checks": [
+    "real Linux/A800 benchmark",
+    "Slurm signals and actual accounting",
+    "budget lock"
+  ],
+  "figures": [
+    "figures\\annual_attribution.png",
+    "figures\\annual_ES_intervals.png",
+    "figures\\training_curves.png"
+  ],
+  "extracted_source_compile_passed": true,
+  "slurm_scripts_LF_passed": true,
+  "extracted_entrypoint_help_passed": true,
+  "extracted_B2018_bundle_load_passed": true,
+  "figures_visually_checked": true
+}

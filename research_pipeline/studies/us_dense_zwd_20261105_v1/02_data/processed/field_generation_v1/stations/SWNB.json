@@ -1,0 +1,14 @@
+{
+  "station": "SWNB",
+  "source_sha256": "16d9d3eedf8a30e1647e720f7ca5d75f308bb5ac66992c6ab3a03c1a8d72d37d",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\swnb.pwv.gz",
+  "coverage": {
+    "2016": 0.9963570127504554,
+    "2017": 0.9157534246575343,
+    "2018": 0.9335616438356165,
+    "2019": 0.9457762557077626,
+    "2020": 0.9431921675774135
+  },
+  "valid_hours": 41522,
+  "cache_sha256": "5981dabc4d41d42ac606ef43fb750d7445dc0f5000ba1e3c32ca436b7056952f"
+}

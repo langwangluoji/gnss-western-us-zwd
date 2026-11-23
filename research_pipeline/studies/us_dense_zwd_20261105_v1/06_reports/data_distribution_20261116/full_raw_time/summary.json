@@ -1,0 +1,15 @@
+{
+  "files": 5084,
+  "passed": 5084,
+  "failures": [],
+  "first": "2000-10-30 00:00:00",
+  "last": "2021-12-30 23:00:00",
+  "total_records": 434058821,
+  "unique_station_hours": 434058821,
+  "global_internal_empty_hours": 43,
+  "stations_covering_2016_2020_endpoints": 2634,
+  "seconds": 374.0620503425598,
+  "scope": "Actual raw timestamp presence and gzip CRC; no numeric QC or UTC shift",
+  "parser_correction": "Accepted underscore in station names; LA_P and RVO_ rescanned successfully",
+  "header_bounds_mismatch": 280
+}

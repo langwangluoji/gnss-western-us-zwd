@@ -1,0 +1,1 @@
+{"sacct": {"returncode": 0, "stdout": "3644321|FAILED|1:0|131|billing=2,cpu=2,gres/gpu:a800=1,gres/gpu=1,mem=48G,node=1\n3645090|COMPLETED|0:0|11363|billing=2,cpu=2,gres/gpu:a800=1,gres/gpu=1,mem=48G,node=1\n", "stderr": ""}, "squeue": {"returncode": 0, "stdout": "3669804|wrf_seg_0003|RUNNING|cpua161\n", "stderr": ""}}

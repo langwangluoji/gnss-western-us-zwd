@@ -1,0 +1,38 @@
+{
+  "status": "proposal_and_math_checked_not_model_training_validation",
+  "parameter_counts": {
+    "gated_mean": 2738,
+    "free_mean": 2721,
+    "scale_skew": 2802
+  },
+  "math_passed": true,
+  "source_metrics_checked": true,
+  "production_tests_run_this_task": false,
+  "training_performance_validated": false,
+  "files": {
+    "MODEL_PLAN.md": {
+      "bytes": 18467,
+      "sha256": "810c39b3697d2311fddde40f38ce64ca0b491afde02766e7307d67892134552f"
+    },
+    "PRO_REVIEW.md": {
+      "bytes": 4486,
+      "sha256": "f3bc56e50a6360ad73c5eca7e5c9b55085bcef6425b6bc8dfd7356e8f56c8b31"
+    },
+    "NEW_EVIDENCE.md": {
+      "bytes": 2536,
+      "sha256": "3e16b1d09a87182007bd8bd3df25e2d45cd2f3afc8ee9dadb7be703e2a419d6c"
+    },
+    "study_design.json": {
+      "bytes": 1293,
+      "sha256": "09eec2241b9c1919083ea3daa4db49b673523401854f18ba05f4acfc8749e30b"
+    },
+    "carrier_math_verification.json": {
+      "bytes": 1836,
+      "sha256": "eecbec5a0bf72ed29dce2549c6b5504ff5471e543bed6269f9b7783b7c618a69"
+    },
+    "pro_final_review.jpg": {
+      "bytes": 95990,
+      "sha256": "840862e96584de0134ca2fe08a23ebd505f84b8c089311b0548263315b73404f"
+    }
+  }
+}

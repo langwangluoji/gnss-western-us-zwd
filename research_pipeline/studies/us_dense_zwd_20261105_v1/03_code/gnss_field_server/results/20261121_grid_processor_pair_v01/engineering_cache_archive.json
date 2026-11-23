@@ -1,0 +1,1 @@
+{"kind": "pre_review_engineering_only", "rows": 8, "archive": "engineering_cache_rows.npz", "checkpoints_retained": true, "discarded_files": "oversized pre-review engineering-only cache; never used by science queue"}

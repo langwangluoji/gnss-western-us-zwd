@@ -1,0 +1,14 @@
+{
+  "station": "CRGG",
+  "source_sha256": "01dba6b1c8c6d391ec5b00a42731d3a60ff631ae2e6fc7c921005f4e43adcfad",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\crgg.pwv.gz",
+  "coverage": {
+    "2016": 0.9724499089253188,
+    "2017": 0.978310502283105,
+    "2018": 0.9601598173515982,
+    "2019": 0.9957762557077625,
+    "2020": 0.9906648451730419
+  },
+  "valid_hours": 42948,
+  "cache_sha256": "f9c2bbc731c13551957d7631fd2206f7b12559171c33f46f94fb8d24b1ab3acf"
+}

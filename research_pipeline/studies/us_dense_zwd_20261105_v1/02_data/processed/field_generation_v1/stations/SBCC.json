@@ -1,0 +1,14 @@
+{
+  "station": "SBCC",
+  "source_sha256": "53d16fa64a867ab2350559c4f9b83a25a2720e4ae44b8f37147ebcb037db0ec0",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\sbcc.pwv.gz",
+  "coverage": {
+    "2016": 0.9939663023679417,
+    "2017": 0.9909817351598174,
+    "2018": 0.975,
+    "2019": 0.9928082191780822,
+    "2020": 0.9994307832422586
+  },
+  "valid_hours": 43429,
+  "cache_sha256": "42363e19f5a0d9e951f64e08d895e9c41ffbf1f0b764627f2393c468bfc65ce6"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "CRAM",
+  "source_sha256": "b8444e4de7cc3f38fd22830952034d2b801c21f44a034d6b5a76ed0d0cee91df",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\cram.pwv.gz",
+  "coverage": {
+    "2016": 0.944216757741348,
+    "2017": 0.9893835616438356,
+    "2018": 0.9751141552511415,
+    "2019": 0.656392694063927,
+    "2020": 0.667691256830601
+  },
+  "valid_hours": 37118,
+  "cache_sha256": "f5d0c676233b6765f07f12da498608c2d8d5b71d01c5e1799165a18e96019a0f"
+}

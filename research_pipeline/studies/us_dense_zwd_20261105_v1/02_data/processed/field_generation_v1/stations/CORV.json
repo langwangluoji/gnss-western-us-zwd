@@ -1,0 +1,14 @@
+{
+  "station": "CORV",
+  "source_sha256": "d78e45893bde9b31288c67520f24e0f59615d473730f33f62506e541f198e757",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\corv.pwv.gz",
+  "coverage": {
+    "2016": 0.9960154826958105,
+    "2017": 0.9938356164383562,
+    "2018": 0.9767123287671233,
+    "2019": 0.9807077625570776,
+    "2020": 0.998747723132969
+  },
+  "valid_hours": 43375,
+  "cache_sha256": "53a178a4a99e4a01ea487c6648682599f37e4f6d7e4130feb4286eb30fdec4a6"
+}

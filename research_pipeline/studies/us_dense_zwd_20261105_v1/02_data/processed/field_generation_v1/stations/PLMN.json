@@ -1,0 +1,14 @@
+{
+  "station": "PLMN",
+  "source_sha256": "ec5734a045d2e281be27ae80328dd83e604065b684b0affd44b41ae8fac1233c",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\plmn.pwv.gz",
+  "coverage": {
+    "2016": 0.9922586520947176,
+    "2017": 0.9648401826484019,
+    "2018": 0.9305936073059361,
+    "2019": 0.9746575342465753,
+    "2020": 0.9842896174863388
+  },
+  "valid_hours": 42504,
+  "cache_sha256": "44c599c36bb7420a068b244e5111b3a2ff38234caa301178c9f610bcf9755e4e"
+}

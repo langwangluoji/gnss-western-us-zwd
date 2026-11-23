@@ -1,0 +1,41 @@
+{
+  "scope": "2019 development subset; C stations; normal A support S0",
+  "data_fingerprint": "dd1cc505eae8a78644e2298ba8ac9f4179acce67d5a4d71181e13fd78db400f2",
+  "baseline_execution": "local CPU, original packed data and registered evaluator",
+  "model_execution": "server step3500 metrics imported; model inference not rerun locally",
+  "metrics": {
+    "coarse_bilinear": {
+      "bias_mm": -6.8396955012616605,
+      "micro_mae_mm": 10.659772169078579,
+      "micro_rmse_mm": 15.811040015389448,
+      "n_station_hours": 42540,
+      "n_stations": 76,
+      "p95_absolute_error_mm": 35.43409805297851,
+      "station_macro_bias_mm": -6.734884333659135,
+      "station_macro_mae_mm": 10.569064803524459,
+      "station_macro_rmse_mm": 12.998004810032546
+    },
+    "A_IDW": {
+      "bias_mm": -3.578246774044909,
+      "micro_mae_mm": 7.732802352255984,
+      "micro_rmse_mm": 10.920310545683165,
+      "n_station_hours": 42540,
+      "n_stations": 76,
+      "p95_absolute_error_mm": 23.07447319030758,
+      "station_macro_bias_mm": -3.53258937447994,
+      "station_macro_mae_mm": 7.70464240908035,
+      "station_macro_rmse_mm": 9.863853396988773
+    },
+    "M0_step3500": {
+      "bias_mm": -3.061625508210947,
+      "micro_mae_mm": 7.905928530762271,
+      "micro_rmse_mm": 10.98418895915951,
+      "n_station_hours": 42540,
+      "n_stations": 76,
+      "p95_absolute_error_mm": 22.39319915771481,
+      "station_macro_bias_mm": -3.0328962093936362,
+      "station_macro_mae_mm": 7.8694995982244285,
+      "station_macro_rmse_mm": 10.084350265017054
+    }
+  }
+}

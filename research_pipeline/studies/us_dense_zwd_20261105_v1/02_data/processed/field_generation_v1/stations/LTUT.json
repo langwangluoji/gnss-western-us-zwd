@@ -1,0 +1,14 @@
+{
+  "station": "LTUT",
+  "source_sha256": "8c5592125c02969b91449428bf8c4e209d28ac942919835524dd4cb4a521e7bb",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ltut.pwv.gz",
+  "coverage": {
+    "2016": 0.998747723132969,
+    "2017": 0.9864155251141552,
+    "2018": 0.989041095890411,
+    "2019": 0.9915525114155251,
+    "2020": 0.9994307832422586
+  },
+  "valid_hours": 43543,
+  "cache_sha256": "41ea5e92ce6660a2b47ef8eaedc9b47261b372039dbb74206f39cc0b5553ad26"
+}

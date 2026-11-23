@@ -1,0 +1,14 @@
+{
+  "station": "AZRY",
+  "source_sha256": "9795ddfeedf9967877113bc0e505aa65d1ee8bb86d9905deb544b8c0e1f269c9",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\azry.pwv.gz",
+  "coverage": {
+    "2016": 0.9948770491803278,
+    "2017": 0.978310502283105,
+    "2018": 0.9089041095890411,
+    "2019": 0.9942922374429224,
+    "2020": 0.9981785063752276
+  },
+  "valid_hours": 42749,
+  "cache_sha256": "8d23b5fb45cf9611930db43e507236079bdae7528edb4999b4d053f2ff672955"
+}

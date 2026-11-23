@@ -1,0 +1,14 @@
+{
+  "station": "UCSF",
+  "source_sha256": "9f9393e405ac7822894c31c2e0ec4b3045d9e4e74b27dac45917f12288ac0b0c",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\ucsf.pwv.gz",
+  "coverage": {
+    "2016": 0.9956739526411658,
+    "2017": 0.9800228310502284,
+    "2018": 0.9658675799086758,
+    "2019": 0.9907534246575342,
+    "2020": 0.9968123861566485
+  },
+  "valid_hours": 43227,
+  "cache_sha256": "a03d708eea622c4f1f7c6e0f8c786f7196614e8a42258020b75be9527b7d0835"
+}

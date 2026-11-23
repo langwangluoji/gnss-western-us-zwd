@@ -1,0 +1,14 @@
+{
+  "station": "KYVW",
+  "source_sha256": "b996dba85090b62f34858d2309acbacb2d874320c98766882c6397d92bebb788",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\kyvw.pwv.gz",
+  "coverage": {
+    "2016": 0.9585610200364298,
+    "2017": 0.967351598173516,
+    "2018": 0.9600456621004566,
+    "2019": 0.9149543378995434,
+    "2020": 0.8375455373406193
+  },
+  "valid_hours": 40676,
+  "cache_sha256": "9976895471442f3eb81f3fbbf3b15546f25e900d0025d41f1ced1ba36b00c700"
+}

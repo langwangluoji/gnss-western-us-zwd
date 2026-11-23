@@ -1,0 +1,14 @@
+{
+  "station": "LMID",
+  "source_sha256": "268127ac513670bb2c509ec08ac1f21e3701c97cb24130055a93fe3de54b2243",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\lmid.pwv.gz",
+  "coverage": {
+    "2016": 0.9215619307832422,
+    "2017": 0.9559360730593607,
+    "2018": 0.968607305936073,
+    "2019": 0.9860730593607306,
+    "2020": 0.99408014571949
+  },
+  "valid_hours": 42324,
+  "cache_sha256": "2cd1abedebab2901fe8070ffad22de6789403c8d4ba1a42e39703d461e208576"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "JOBO",
+  "source_sha256": "d29fc386d6dc6489cc5402ff721b75e141ba76978859a81bc0d77a9f165a1b22",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\jobo.pwv.gz",
+  "coverage": {
+    "2016": 0.9692622950819673,
+    "2017": 0.9622146118721461,
+    "2018": 0.9550228310502283,
+    "2019": 0.0,
+    "2020": 0.0
+  },
+  "valid_hours": 25309,
+  "cache_sha256": "33c927c04635d717bbbda25ac476702189bb53f42546d31f8c983bc15bdd000b"
+}

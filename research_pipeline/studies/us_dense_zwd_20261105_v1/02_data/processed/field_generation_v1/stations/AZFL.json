@@ -1,0 +1,14 @@
+{
+  "station": "AZFL",
+  "source_sha256": "da3284ba1d1f2a92c1b1c0b85077148038a1abff3f8c6f7dc12739d2c80574ab",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\azfl.pwv.gz",
+  "coverage": {
+    "2016": 0.9796220400728597,
+    "2017": 0.9837899543378995,
+    "2018": 0.9373287671232877,
+    "2019": 0.8799086757990867,
+    "2020": 0.9048269581056466
+  },
+  "valid_hours": 41090,
+  "cache_sha256": "04ec992f04aae7a617bf0063066669773431291ab61b62be91af0c1144586fe1"
+}

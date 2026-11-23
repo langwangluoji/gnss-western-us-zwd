@@ -1,0 +1,14 @@
+{
+  "station": "TIBB",
+  "source_sha256": "ce086f19285cb0eee9ca716996bc3bd2c6fbbc6896773bf9527e2d6883b93924",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\tibb.pwv.gz",
+  "coverage": {
+    "2016": 0.9935109289617486,
+    "2017": 0.980593607305936,
+    "2018": 0.9767123287671233,
+    "2019": 0.9591324200913242,
+    "2020": 0.9936247723132969
+  },
+  "valid_hours": 43003,
+  "cache_sha256": "47e67ed9f18ce07cfcc98296f9cd6ab4a59ac77403209899919ddb7a0aa50044"
+}

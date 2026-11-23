@@ -1,0 +1,14 @@
+{
+  "station": "DIXN",
+  "source_sha256": "b7178c33f9de84224a81eb9487d42705603e0f1f74ca8ca4b4ac4629ec22456e",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\dixn.pwv.gz",
+  "coverage": {
+    "2016": 0.9549180327868853,
+    "2017": 0.9498858447488584,
+    "2018": 0.9279680365296804,
+    "2019": 0.942351598173516,
+    "2020": 0.998747723132969
+  },
+  "valid_hours": 41866,
+  "cache_sha256": "7a2b973d19671361108e84dd86ff7f609714ab0ac15f834b100ee355eebb93b0"
+}

@@ -1,0 +1,14 @@
+{
+  "station": "CHZZ",
+  "source_sha256": "5c3c607067af74ffcbbc78942d1233b1ebbde2d64e281e8c20dfa4e17935fed2",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\chzz.pwv.gz",
+  "coverage": {
+    "2016": 0.9954462659380692,
+    "2017": 0.9751141552511415,
+    "2018": 0.9684931506849315,
+    "2019": 0.9844748858447488,
+    "2020": 0.7767531876138434
+  },
+  "valid_hours": 41217,
+  "cache_sha256": "f94e76527f9a27c6441a9e59f9716b203417f2985a4e1bd54d7483f84176d6d6"
+}

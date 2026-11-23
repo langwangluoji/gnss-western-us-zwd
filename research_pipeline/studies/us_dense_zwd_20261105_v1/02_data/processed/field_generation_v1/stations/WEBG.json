@@ -1,0 +1,14 @@
+{
+  "station": "WEBG",
+  "source_sha256": "8672474092848f8f344bf4e184609ca01b1de958a06035d31325dea057a73990",
+  "source_path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\data\\pwv_data\\webg.pwv.gz",
+  "coverage": {
+    "2016": 0.9173497267759563,
+    "2017": 0.9492009132420092,
+    "2018": 0.966324200913242,
+    "2019": 0.9931506849315068,
+    "2020": 0.9924863387978142
+  },
+  "valid_hours": 42256,
+  "cache_sha256": "05fe012a23e83661547e406988ed02527633e39abff2b4ac0754b148821d08f5"
+}

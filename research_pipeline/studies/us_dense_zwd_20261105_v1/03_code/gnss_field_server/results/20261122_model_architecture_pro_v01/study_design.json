@@ -1,0 +1,46 @@
+{
+  "status": "DESIGN_ONLY_NOT_EXECUTABLE",
+  "experiment_id": "20261122_model_architecture_pro_v01",
+  "production_modified": false,
+  "server_jobs_submitted": false,
+  "immediate_arms": [
+    "zero_mean_fallback",
+    "constant_innovation",
+    "gated_innovation",
+    "free_MSE"
+  ],
+  "after_mean_freeze": [
+    "Gaussian_field_scale_only",
+    "Gaussian_common_scale",
+    "Gaussian_two_scales"
+  ],
+  "conditional_later_arms": [
+    "deterministic_scale_vs_scale_skew",
+    "single_pass_ES",
+    "diffusion_ES_sampler",
+    "GAN"
+  ],
+  "mean_max_epochs": 2,
+  "conditional_generator_max_epochs": 4,
+  "effective_batch_hours": 8,
+  "seed": 42,
+  "next_training_hours_count": null,
+  "comment": "Recount and lock nested spatial/weather training eligibility before implementation; no assumption of 5472 hours.",
+  "new_GPU_budget_card_hours": null,
+  "old_batch_allocated_card_hours": 3.1928,
+  "maximum_simultaneous_A800": 1,
+  "hidden_widths": [
+    32,
+    64,
+    128,
+    128
+  ],
+  "point_head_parameter_counts": {
+    "gated_mean": 2738,
+    "free_mean": 2721,
+    "scale_skew": 2802
+  },
+  "selection": "nested spatial station groups x weather blocks; original outer remains exploratory",
+  "C2019": "development",
+  "D2020": "sealed"
+}
