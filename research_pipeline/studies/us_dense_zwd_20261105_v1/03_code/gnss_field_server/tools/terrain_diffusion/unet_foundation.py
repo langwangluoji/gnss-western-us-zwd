@@ -106,8 +106,8 @@ class Experiment:
         folder.mkdir(parents=True,exist_ok=False);torch.manual_seed(seed);model=(ResidualMLP() if kind=='mlp' else GridUNet(width)).cuda();opt=torch.optim.AdamW(model.parameters(),lr=3e-4,weight_decay=1e-4)
         rng=np.random.default_rng(seed);order=rng.permutation(len(self.fit));start=time.monotonic();last_eval=start;step=0;best=float('inf');bad=0;history=[];best_step=0
         while time.monotonic()-start<budget or step==0:
-            e=self.fit[order[step%len(order)]]
             if step and step%len(order)==0:order=rng.permutation(len(self.fit))
+            e=self.fit[order[step%len(order)]]
             model.train();opt.zero_grad(set_to_none=True);p=self.predict(model,e,kind);y=(self.raw['train'][e['row'],12+e['hour'],:,0]-self.data.mean[0])/self.data.std[0];mask=torch.as_tensor(e['target'],device='cuda')&torch.isfinite(y)
             loss=(p[mask]-y[mask]).square().mean();loss.backward();gn=nn.utils.clip_grad_norm_(model.parameters(),2.)
             if not torch.isfinite(loss) or not torch.isfinite(gn):raise FloatingPointError('training nonfinite')
@@ -142,7 +142,7 @@ class Experiment:
         return json.loads((folder/'expanded/metrics.json').read_text())
 
 def run():
-    parser=argparse.ArgumentParser();parser.add_argument('--budget',type=float,default=900);parser.add_argument('--patience',type=int,default=5);parser.add_argument('--smoke',action='store_true');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--budget',type=float,default=600);parser.add_argument('--patience',type=int,default=5);parser.add_argument('--smoke',action='store_true');args=parser.parse_args()
     import ctypes
     ctypes.windll.kernel32.SetThreadExecutionState(0x80000001)
     torch.set_num_threads(4);torch.backends.cudnn.benchmark=True

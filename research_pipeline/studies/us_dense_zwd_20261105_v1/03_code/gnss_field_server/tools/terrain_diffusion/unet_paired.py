@@ -7,7 +7,7 @@ from .data import write_json
 
 def run():
     rng=np.random.default_rng(1313);draws=rng.integers(0,12,(1000,12));weights=np.stack([np.bincount(x,minlength=12) for x in draws]);values={};means={}
-    for arm in sorted(ROOT.glob('E130[1-4]*')):
+    for arm in sorted(ROOT.glob('E130[1-5]*')):
         boot=[];original=[]
         for seed in (42,17):
             folder=arm/f's{seed}';p=load_pack(folder/'expanded/evaluation.npz');err=p['samples'][0].astype('f8')-p['truth'];ss=[];counts=[]

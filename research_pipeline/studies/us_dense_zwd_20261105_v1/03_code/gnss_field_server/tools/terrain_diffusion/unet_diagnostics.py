@@ -12,7 +12,7 @@ from .unet_hybrid import Hybrid,HybridExperiment
 
 
 def run():
-    torch.set_num_threads(4);data=Dataset(device='cpu');a=data.a;records=[];terrain=[];receipts=[]
+    torch.set_num_threads(4);data=Dataset(device='cpu');a=data.a;records=[];terrain=[];monthly=[];receipts=[]
     for folder in sorted(ROOT.glob('E130*/s[0-9]*')):
         p=load_pack(folder/'expanded/evaluation.npz');truth=a['val_y'][p['row'],12+p['hour']]
         np.testing.assert_allclose(p['truth'],truth,atol=3e-5,rtol=1e-6,equal_nan=True);pred=p['samples'][0];assert np.isfinite(pred).all();err=pred-truth
@@ -24,6 +24,9 @@ def run():
         for lo,hi,label in [(-1e6,500,'below500m'),(500,1500,'500to1500m'),(1500,1e6,'above1500m')]:
             ix=(a['val_geo'][:,2]*1000>=lo)&(a['val_geo'][:,2]*1000<hi);scores=[np.nanmean(np.sqrt(np.nanmean(err[p['layout']==li][:,ix]**2,axis=0))) for li in range(3)]
             terrain.append(dict(experiment=folder.parent.name,seed=int(folder.name[1:]),terrain=label,stations=int(ix.sum()),macro_rmse_mm=float(np.mean(scores))))
+        for month in range(12):
+            scores=[np.nanmean(np.sqrt(np.nanmean(err[(p['layout']==li)&(p['row']==month)]**2,axis=0))) for li in range(3)]
+            monthly.append(dict(experiment=folder.parent.name,seed=int(folder.name[1:]),month=month+1,macro_rmse_mm=float(np.mean(scores))))
         station=np.mean([np.sqrt(np.nanmean(err[p['layout']==li]**2,axis=0)) for li in range(3)],axis=0)
         fig,ax=plt.subplots(figsize=(5,6));sc=ax.scatter(a['val_geo'][:,0],a['val_geo'][:,1],c=station,vmin=0,vmax=25,cmap='viridis',s=22);fig.colorbar(sc,ax=ax,label='Station RMSE (mm)',extend='max');ax.set(xlabel='Projected x (km)',ylabel='Projected y (km)',title=folder.parent.name+' '+folder.name);ax.set_aspect('equal');fig.tight_layout();fig.savefig(folder/'station_rmse_map.png',dpi=140);plt.close(fig)
         ix=(p['layout']==0)&(p['row']==6);station_id=int(np.argmax(np.isfinite(truth[ix]).sum(0)));fig,ax=plt.subplots(figsize=(8,3));ax.plot(p['hour'][ix],truth[ix,station_id],label='GNSS');ax.plot(p['hour'][ix],pred[ix,station_id],label='Prediction');ax.set(xlabel='Hour (2018-07-01)',ylabel='ZWD (mm)',title=str(a['val_ids'][station_id]));ax.legend();fig.tight_layout();fig.savefig(folder/'example_sequence.png',dpi=140);plt.close(fig)
@@ -31,12 +34,16 @@ def run():
         if preview.exists():
             grid=np.load(preview).squeeze();g=np.load(GEOMETRY);fig,ax=plt.subplots(figsize=(5,6));im=ax.imshow(np.where(g['region']&g['land'],grid,np.nan),origin='lower',cmap='viridis',vmin=0,vmax=200);fig.colorbar(im,ax=ax,label='ZWD (mm)',extend='both');ax.set(title='2018-07-01 12h: '+folder.parent.name,xlabel='Grid column',ylabel='Grid row');fig.tight_layout();fig.savefig(folder/'example_field.png',dpi=140);plt.close(fig)
         done=json.loads((folder/'completion.json').read_text());assert sha(folder/'best.pt')==done['best_sha256'];receipts.append(dict(experiment=folder.parent.name,seed=int(folder.name[1:]),checkpoint_sha256=done['best_sha256'],canonical_truth_verified=True,macro_rmse_recomputed=True))
-    for name,rows in [('summary.csv',records),('terrain.csv',terrain)]:
+    for name,rows in [('summary.csv',records),('terrain.csv',terrain),('monthly.csv',monthly)]:
         with (ROOT/name).open('w',newline='') as f:w=csv.DictWriter(f,rows[0],lineterminator='\n');w.writeheader();w.writerows(rows)
-    fig,ax=plt.subplots(figsize=(8,4));labels=['MLP residual','U-Net16','U-Net24','Point + U-Net16']
+    fig,ax=plt.subplots(figsize=(8,4));labels=['MLP residual','U-Net16','U-Net24','Point + U-Net16','U-Net48']
     for i,eid in enumerate(sorted(set(r['experiment'] for r in records))):
-        vals=[r['macro_rmse_mm'] for r in records if r['experiment']==eid];ax.bar(i,np.mean(vals),color=['#64748b','#0f766e','#2563eb','#b45309'][i]);ax.scatter([i-.05,i+.05],vals,c='black',s=20,zorder=4)
+        vals=[r['macro_rmse_mm'] for r in records if r['experiment']==eid];ax.bar(i,np.mean(vals),color=['#64748b','#0f766e','#2563eb','#b45309','#7c3aed'][i]);ax.scatter([i-.05,i+.05],vals,c='black',s=20,zorder=4)
     ax.axhline(12.065729,color='black',ls='--',label='Fixed height-IDW (v12 same population)');ax.axhline(11.624845,color='#b45309',ls=':',label='v12 Gaussian analytic mean');ax.set_xticks(range(len(set(r['experiment'] for r in records))),labels[:len(set(r['experiment'] for r in records))]);ax.set(ylabel='Station macro RMSE (mm)',title='v13 same-input foundation comparison');ax.legend(fontsize=8);ax.grid(axis='y',alpha=.2);fig.tight_layout();fig.savefig(ROOT/'comparison.png',dpi=150);plt.close(fig)
+    fig,ax=plt.subplots(figsize=(9,4))
+    for eid in sorted(set(r['experiment'] for r in monthly)):
+        vals=[np.mean([r['macro_rmse_mm'] for r in monthly if r['experiment']==eid and r['month']==m]) for m in range(1,13)];ax.plot(range(1,13),vals,marker='.',label=eid)
+    ax.set(xlabel='Month (2018, first day only)',ylabel='Station macro RMSE (mm)',title='Matched calendar: two-seed mean');ax.set_xticks(range(1,13));ax.legend(fontsize=8);ax.grid(alpha=.2);fig.tight_layout();fig.savefig(ROOT/'monthly_comparison.png',dpi=150);plt.close(fig)
     # Source line-ending normalization after launch is verified explicitly.
     protocol=json.loads((ROOT/'protocol.json').read_text());receipt=json.loads((ROOT/'source_receipt.json').read_text());import subprocess;source=subprocess.check_output(['git','show',receipt['training_git_commit']+':'+receipt['training_source_path']]);normalized=source.replace(b'\r\n',b'\n');candidates=[hashlib.sha256(normalized).hexdigest(),hashlib.sha256(normalized.replace(b'\n',b'\r\n')).hexdigest()];assert protocol['code_sha256'] in candidates
     write_json(ROOT/'verification.json',dict(status='passed',evaluations=receipts,source_matches_up_to_line_endings=True,data_sha256=data.contract['data_sha256'],tests='tests/test_unet_foundation.py',note='Deterministic station losses; no dense pseudo-labels; validation reused for development, confirmation and original C/D unread'))
