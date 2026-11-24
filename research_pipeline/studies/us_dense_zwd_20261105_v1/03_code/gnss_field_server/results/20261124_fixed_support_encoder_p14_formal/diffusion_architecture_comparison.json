@@ -1,0 +1,10 @@
+{
+  "p14_fixed_support_base_mean_macro_rmse_mm": 10.806174596150715,
+  "v13_fusion_macro_rmse_mm": 10.828,
+  "v13_mlp_macro_rmse_mm": 11.175,
+  "fixed_high_alt_idw_macro_rmse_mm": 12.066,
+  "historical_v12_correlated_gaussian_macro_rmse_mm": 11.88,
+  "historical_v12_residual_diffusion_macro_rmse_mm": 12.055,
+  "historical_v11_direct_diffusion_expanded_macro_rmse_mm": 12.339,
+  "note": "Historical diffusion values are not retrained on the p14 base residuals."
+}

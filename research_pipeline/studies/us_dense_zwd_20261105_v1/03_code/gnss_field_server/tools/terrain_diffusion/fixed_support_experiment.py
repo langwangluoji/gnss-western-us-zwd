@@ -37,9 +37,10 @@ def predict(ex, model, event, validation=False):
 
 
 def fit(ex, seed: int, seconds: float, out: Path):
+    out.mkdir(parents=True, exist_ok=True)
     torch.manual_seed(seed); np.random.seed(seed)
     model = FixedSupportModel().cuda(); opt = torch.optim.AdamW(model.parameters(), lr=3e-4, weight_decay=1e-4)
-    rng = np.random.default_rng(seed); order = rng.permutation(len(ex.fit)); start = time.monotonic(); step = 0; best = float('inf'); best_step = 0
+    rng = np.random.default_rng(seed); order = rng.permutation(len(ex.fit)); start = time.monotonic(); step = 0; best = float('inf'); best_step = 0; history = []
     while time.monotonic() - start < seconds or step == 0:
         e = ex.fit[order[step % len(order)]]; model.train(); opt.zero_grad(set_to_none=True)
         pred = predict(ex, model, e); y = (ex.raw['train'][e['row'], 12 + e['hour'], :, 0] - ex.data.mean[0]) / ex.data.std[0]
@@ -53,9 +54,14 @@ def fit(ex, seed: int, seconds: float, out: Path):
                     mm = torch.as_tensor(m['target'], device='cuda') & torch.isfinite(yy)
                     vals.append(float(((predict(ex, model, m)[mm] - yy[mm]).square().mean().sqrt() * ex.data.std[0]).cpu()))
             score = float(np.mean(vals))
-            if score < best: best, best_step = score, step
+            history.append({'step': step, 'seconds': time.monotonic() - start, 'train_rmse_mm': float((loss.sqrt() * ex.data.std[0]).detach()), 'monitor_rmse_mm': score, 'gradient_norm': float(grad)})
+            if score < best:
+                best, best_step = score, step
+                torch.save(model.state_dict(), out / 'best.pt')
             print(json.dumps({'seed': seed, 'step': step, 'train_rmse_mm': float((loss.sqrt() * ex.data.std[0]).detach()), 'monitor_rmse_mm': score, 'grad': float(grad)}), flush=True)
-    out.mkdir(parents=True, exist_ok=True); torch.save(model.state_dict(), out / 'last.pt')
+    torch.save(model.state_dict(), out / 'last.pt')
+    (out / 'history.json').write_text(json.dumps(history, indent=2), encoding='utf-8')
+    model.load_state_dict(torch.load(out / 'best.pt', weights_only=True)); model.eval()
     with torch.no_grad():
         e = dict(row=0, hour=0, context=ex.data.layouts()[0].tolist()); pred = predict(ex, model.eval(), e, True)
         finite = bool(torch.isfinite(pred).all()); query_rms = float(torch.sqrt(torch.mean((pred[:10] - pred[:10]) ** 2)))

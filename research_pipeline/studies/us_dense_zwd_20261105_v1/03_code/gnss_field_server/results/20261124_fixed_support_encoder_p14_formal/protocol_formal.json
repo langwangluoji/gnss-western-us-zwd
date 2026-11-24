@@ -1,0 +1,28 @@
+{
+  "experiment": "20261124_fixed_support_encoder_p14_formal",
+  "status": "COMPLETE_BASE_FOUNDATION_2_SEEDS",
+  "budget_seconds_per_seed": 600,
+  "seeds": [
+    42,
+    17
+  ],
+  "train_sites": 410,
+  "validation_sites": 137,
+  "confirmation_sites_read": 0,
+  "CD_labels_read": false,
+  "allowed_inputs": [
+    "ZWD",
+    "T",
+    "P",
+    "geometry",
+    "terrain"
+  ],
+  "expanded_calendar": "12 months x 24 hours x 3 layouts",
+  "selection": "fixed temporal monitor only",
+  "weights": "local_only",
+  "evidence": {
+    "macro_rmse_mean_mm": 10.806174596150715,
+    "crps_mean_mm": 8.285651604334515,
+    "increment_macro_rmse_mean_mm": 5.809450387954712
+  }
+}
