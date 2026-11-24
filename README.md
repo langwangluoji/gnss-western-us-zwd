@@ -16,6 +16,7 @@
 | [项目架构](docs/PROJECT_ARCHITECTURE.md) | 研究层、数据层、模型层、评价层和产物边界 |
 | [方法验证规则](docs/METHOD_VALIDATION.md) | 结论等级、数据隔离和验收门槛 |
 | [实验运行手册](docs/EXPERIMENT_RUNBOOK.md) | 入口脚本、测试、轻量实验和结果记录规范 |
+| [优化路线](docs/OPTIMIZATION_ROADMAP.md) | 每个实验结束后的下一步、分支判断和验收门槛 |
 | [工程说明](research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/README.md) | PyTorch实现、本机运行与超算流程 |
 | [数据与权重说明](docs/LOCAL_ARTIFACTS.md) | 本地大文件、清单及Git边界 |
 | [整理记录](maintenance/cleanup_20261123/README.md) | 归档、删除、验证与复盘 |
