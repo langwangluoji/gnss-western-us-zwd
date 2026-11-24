@@ -1,0 +1,18 @@
+[
+  {
+    "seed": 42,
+    "steps": 663,
+    "best_monitor_rmse_mm": 7.361812591552734,
+    "best_step": 550,
+    "finite_validation": true,
+    "query_self_rms": 0.0
+  },
+  {
+    "seed": 17,
+    "steps": 700,
+    "best_monitor_rmse_mm": 7.5866751074790955,
+    "best_step": 450,
+    "finite_validation": true,
+    "query_self_rms": 0.0
+  }
+]
