@@ -1,0 +1,12 @@
+[
+  {
+    "seed": 42,
+    "steps": 6206,
+    "best_monitor_rmse_mm": 6.522619068622589
+  },
+  {
+    "seed": 17,
+    "steps": 6249,
+    "best_monitor_rmse_mm": 6.529371380805969
+  }
+]

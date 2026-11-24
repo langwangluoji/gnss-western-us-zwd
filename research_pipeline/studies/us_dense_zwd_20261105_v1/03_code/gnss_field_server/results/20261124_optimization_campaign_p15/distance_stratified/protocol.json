@@ -1,0 +1,10 @@
+{
+  "sampling": "distance_stratified",
+  "height_scale": "fixed3000",
+  "seconds": 120.0,
+  "seeds": [
+    42,
+    17
+  ],
+  "confirmation_C_D_read": false
+}

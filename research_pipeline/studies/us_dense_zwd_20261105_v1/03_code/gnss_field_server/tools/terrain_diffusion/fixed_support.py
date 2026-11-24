@@ -15,7 +15,8 @@ def height_transport(zwd: torch.Tensor, condition_height: torch.Tensor,
 def masked_multiscale_summary(query_xy: torch.Tensor, query_height: torch.Tensor,
                               condition_xy: torch.Tensor, condition_height: torch.Tensor,
                               values: torch.Tensor, mask: torch.Tensor,
-                              radii_km: tuple[float, ...] = (50.0, 150.0, 300.0)) -> torch.Tensor:
+                              radii_km: tuple[float, ...] = (50.0, 150.0, 300.0),
+                              scale_km: float = 3.0) -> torch.Tensor:
     """Return finite per-query summaries for masked station observations.
 
     ``values`` and ``mask`` are [time, station]; the latest valid value per
@@ -41,7 +42,7 @@ def masked_multiscale_summary(query_xy: torch.Tensor, query_height: torch.Tensor
         safe = den.clamp_min(1e-8)
         mean = (w * latest.reshape(1, -1)).sum(-1, keepdim=True) / safe
         var = ((w * (latest.reshape(1, -1) - mean).square()).sum(-1, keepdim=True) / safe).clamp_min(0)
-        transported = height_transport(latest.reshape(1, -1), ch, qh, 3.0)
+        transported = height_transport(latest.reshape(1, -1), ch, qh, scale_km)
         tmean = (w * transported).sum(-1, keepdim=True) / safe
         nearest = d.masked_fill(~valid, float('inf')).min(-1).values.clamp_max(600).reshape(-1, 1)
         support = (w > 0).sum(-1, keepdim=True).float()
