@@ -64,3 +64,5 @@
 | 20261118_us_dense_zwd_a800_m0_5k_evalfix_v02 | 见报告/锁文件 |  |
 
 实际全生成验收另保留在工程 `build/full_generative_real_check_v01/v02/v03`，含独立权重与恢复检查；这些目录不属于普通打包暂存。初次扩区划分修正及暂停记录保留在研究目录 `04_models/field_generation_v1`。
+
+- **P15 formal continuation (2026-11-24)**: monitor RMSE and formal expanded RMSE are now separated. After 600 s continuation, random = 11.042 mm and hole100 = 10.804 mm (mean of seeds 42/17) under the p14 contract; p14 = 10.806 mm. No material accuracy gain was established. See the P15 report and formal_summary.json files.
