@@ -1,0 +1,17 @@
+{
+  "unique_events_per_epoch": {
+    "original": [
+      2880,
+      2879,
+      2879
+    ],
+    "corrected": [
+      2880,
+      2880,
+      2880
+    ]
+  },
+  "events_per_epoch": 2880,
+  "primary_weights_keep_original_source": true,
+  "corrected_sampler_for": "E1304 own loop and E1305 inherited loop; original primary weights are unchanged"
+}

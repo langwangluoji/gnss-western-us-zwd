@@ -1,0 +1,7 @@
+{
+  "step": 89,
+  "seconds": 3.0310000000172295,
+  "train_batch_rmse_mm": 20.34235191345215,
+  "monitor_rmse_mm": 9.03671646118164,
+  "gradient_norm": 0.25965702533721924
+}

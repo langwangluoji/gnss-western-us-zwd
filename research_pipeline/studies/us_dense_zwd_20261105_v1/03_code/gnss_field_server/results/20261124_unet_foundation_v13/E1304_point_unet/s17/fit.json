@@ -1,0 +1,13 @@
+{
+  "kind": "hybrid",
+  "width": 16,
+  "seed": 17,
+  "parameters": 153842,
+  "steps": 25581,
+  "best_step": 23592,
+  "best_monitor_rmse_mm": 9.761125564575195,
+  "seconds": 601.4220000000205,
+  "budget_seconds": 600.0,
+  "early_stopped": false,
+  "epochs": 8.882291666666667
+}

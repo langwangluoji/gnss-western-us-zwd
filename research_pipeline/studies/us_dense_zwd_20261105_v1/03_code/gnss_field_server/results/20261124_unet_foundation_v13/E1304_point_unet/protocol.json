@@ -1,0 +1,11 @@
+{
+  "adaptive_followup": true,
+  "reason": "Preserve exact point features while adding a spatial U-Net branch; motivated by first pure-grid result",
+  "source_sha256": "de58c9d6eef68f385954795c3b0eff6dcc87fa880e7793c079352077b6af515b",
+  "foundation_source_sha256": "f7cc0447af615cff5fe502880ae08f65ec3fe778f66206372a6bda47cba6b9a1",
+  "same_events_sha256": "afb46c2e37cfd873f35c3ed72efdba4e3d34c8497e6e238daaa2abbedf4c448e",
+  "budget_seconds": 600.0,
+  "smoke": false,
+  "field_readout": "Native point-feature decoder plus bilinearly queried spatial correction; a coarse preview grid is not its exact arbitrary-point query operator",
+  "epoch_boundary": "Corrected one-event-per-epoch ordering issue; earlier arms retain their recorded executed source"
+}

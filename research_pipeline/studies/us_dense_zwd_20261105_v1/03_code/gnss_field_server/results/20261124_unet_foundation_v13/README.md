@@ -12,3 +12,7 @@
 - 格网监督由实际GNSS站点损失给出，未把插值图像当真值。无PWV/Tm教师；历史站队列完整率筛选限制沿用现有合同。
 
 protocol.json / events_receipt.json：运行与采样锁；data_usage.json：真实数据量；grid_feature_parity.json：原特征实现对照；support_distribution.json：训练/评价距离分布。权重、事件和预测数组保留本机，曲线与轻量结果同步GitHub。
+
+## 已完成与追加进展
+
+前四组双种子平均站宏RMSE：MLP11.175mm、U-Net16为11.745mm、U-Net24为11.400mm、点特征＋U-Net16为10.828mm（10.701/10.955）。用户追加E1305：U-Net48/96/192，1,086,673参数，同口径双种子串行训练中。完整结果将汇总至RESULTS.md。
