@@ -19,3 +19,12 @@ def test_grid_readout_and_gradient():
     torch.testing.assert_close(field.flatten(),f[:,52])
     a=ex.query(field,ex.train_features.geo);b=torch.cat([ex.query(field,g) for g in ex.train_features.geo.split(70)])
     torch.testing.assert_close(a,b,atol=1e-6,rtol=1e-6);a.square().mean().backward();assert torch.isfinite(net.head.weight.grad).all()
+
+def test_hybrid_keeps_point_features_and_query_independence():
+    from tools.terrain_diffusion.unet_hybrid import Hybrid
+    torch.set_num_threads(4);torch.manual_seed(13004);model=Hybrid();point=torch.randn(9,113);grid=torch.randn(1,113,16,16);uv=torch.rand(1,1,9,2)*2-1;hg=torch.zeros(1,1,16,16);hq=torch.rand(9)
+    out=model(point,grid,uv,hg,hq);torch.testing.assert_close(out,point[:,52])
+    with torch.no_grad():model.spatial.head.bias.fill_(.25);hg.fill_(1.)
+    out=model(point,grid,uv,hg,hq);torch.testing.assert_close(out,point[:,52]+.25*torch.exp((1.-hq)/3),atol=1e-6,rtol=1e-6)
+    split=torch.cat([model(point[:4],grid,uv[:,:,:4],hg,hq[:4]),model(point[4:],grid,uv[:,:,4:],hg,hq[4:])]);torch.testing.assert_close(out,split)
+    out.square().mean().backward();assert torch.isfinite(model.point.net[-1].weight.grad).all();assert torch.isfinite(model.spatial.head.weight.grad).all()

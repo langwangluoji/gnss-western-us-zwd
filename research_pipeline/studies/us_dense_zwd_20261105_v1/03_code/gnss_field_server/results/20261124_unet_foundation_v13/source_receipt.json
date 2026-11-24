@@ -1,0 +1,8 @@
+{
+  "training_git_commit": "019554185f8a982bd7a7cc2f836296887dff161a",
+  "training_source_path": "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/tools/terrain_diffusion/unet_foundation.py",
+  "executed_source_sha256": "6cd5a1f02df8b7e25bc467a0351d15c146cf15e0d0a33ff134d60afcf83f64f8",
+  "git_source_sha256": "f7cc0447af615cff5fe502880ae08f65ec3fe778f66206372a6bda47cba6b9a1",
+  "normalization": "CRLF execution source and LF committed source have identical text",
+  "note": "Preserve this training source. Epoch-boundary sampling correction is for subsequent runs, not a retroactive claim about these weights."
+}
