@@ -1,5 +1,9 @@
 # 当前研究进展：2026-11-24
 
+最新正式结果：[p14 固定支撑编码器](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_fixed_support_encoder_p14_formal/REPORT.md)。410 个训练站、137 个验证站、12 个月×24 小时×3 布局、两种子完成 600 秒训练；扩展宏 RMSE 为 **10.806 mm**，CRPS 为 8.286 mm，小时增量宏 RMSE 为 5.809 mm。相对 v13 点特征＋小 U-Net 的 10.828 mm 改善 0.022 mm，属于同一精度水平。`architecture_comparison.png` 和 `learning_curves.png` 已提供架构与训练曲线对比。p14 是确定性基础场，历史 diffusion 数值未在 p14 残差上重训。
+
+最新空间采样筛查：[p15 空间支撑采样](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_optimization_campaign_p15/REPORT.md)。在 120 秒固定时间监控中，random 6.286 mm、hole100 6.526 mm、hole150 7.155 mm、distance_stratified 7.782 mm；这些是内部筛查分数，不能与 p14 扩展宏 RMSE 混排。当前保留 random 控制并加入 hole100 空间外推臂，其他采样需完整扩展评价。
+
 最新完成：[v13 同输入 U-Net 基础场比较](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_unet_foundation_v13/RESULTS.md)。五组十次拟合全部完成，包含大宽度 U-Net48。双种子平均宏 RMSE：MLP11.175、U-Net16为11.745、U-Net24为11.400、点特征＋U-Net16为10.828、大U-Net48为11.800 mm。融合模型是优先候选；开发日历重采样区间跨零，下一步优先空间留出监控和天气日期覆盖。29项测试及22组预测核验通过，确认及C/D标签未读取。
 
 最新完成： [v12夜间残差场实验分析](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_residual_field_v12/ANALYSIS.md)。E1201–E1207七组、两个种子、32次拟合全部完成，主队列4小时12分34秒。K16扩展开发评价中，相关高斯残差宏RMSE为11.880 mm，残差扩散12.055 mm，扩散后XGBoost为12.386 mm；26项测试通过。基础场与残差分工有效，后期过拟合和空间联合分布是下一步重点。E1208冻结采样复核见同一报告；下列v11及历史结果使用各自评价口径。
