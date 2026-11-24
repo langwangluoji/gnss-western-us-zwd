@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "evaluations": [
+    {
+      "experiment": "E1301_mlp",
+      "seed": 17,
+      "checkpoint_sha256": "dd7b041c16ff225e81b8b9fef6672a8f57a766662746e75bb168d4ca6ec98ca3",
+      "canonical_truth_verified": true,
+      "macro_rmse_recomputed": true
+    },
+    {
+      "experiment": "E1301_mlp",
+      "seed": 42,
+      "checkpoint_sha256": "b252293eb565e2ad9164bc6eab84148f701664bc91182f1099bb858e9d5d91b6",
+      "canonical_truth_verified": true,
+      "macro_rmse_recomputed": true
+    },
+    {
+      "experiment": "E1302_unet16",
+      "seed": 17,
+      "checkpoint_sha256": "919fd4e2bde23de20c6bc88bf8f3dd47cd903cbee029ca02542183080cdda291",
+      "canonical_truth_verified": true,
+      "macro_rmse_recomputed": true
+    },
+    {
+      "experiment": "E1302_unet16",
+      "seed": 42,
+      "checkpoint_sha256": "836b0195c400d4610a7b840142b3a7c6e4c606ed7da6b8bb9564d4897be39b8e",
+      "canonical_truth_verified": true,
+      "macro_rmse_recomputed": true
+    },
+    {
+      "experiment": "E1303_unet24",
+      "seed": 17,
+      "checkpoint_sha256": "8ffbdb2c7eb4777bd9f25a09846f582577a87ef81b998a6ef65ba1c6dc192fc0",
+      "canonical_truth_verified": true,
+      "macro_rmse_recomputed": true
+    },
+    {
+      "experiment": "E1303_unet24",
+      "seed": 42,
+      "checkpoint_sha256": "5b513d5b42789d10dad03f9eadb8d3a86b2f98cee7c1f2b77a6aa31fdd0bdd7d",
+      "canonical_truth_verified": true,
+      "macro_rmse_recomputed": true
+    },
+    {
+      "experiment": "E1304_point_unet",
+      "seed": 17,
+      "checkpoint_sha256": "bfd3eecd55afcdbe8172524870e5b53144c920ef62a098b9731be10e4091183d",
+      "canonical_truth_verified": true,
+      "macro_rmse_recomputed": true
+    },
+    {
+      "experiment": "E1304_point_unet",
+      "seed": 42,
+      "checkpoint_sha256": "e209c8e487e562b556f252132eddbfde4cb02a14e60a28020d818ba1ed5807e5",
+      "canonical_truth_verified": true,
+      "macro_rmse_recomputed": true
+    },
+    {
+      "experiment": "E1305_unet48",
+      "seed": 17,
+      "checkpoint_sha256": "d7f9c3313ef80e9389e916842531cfb14dc0396f5a918783cd548fe4ee3e2405",
+      "canonical_truth_verified": true,
+      "macro_rmse_recomputed": true
+    },
+    {
+      "experiment": "E1305_unet48",
+      "seed": 42,
+      "checkpoint_sha256": "486741e2487182534213f68e6af911bc370abb67015b9d2e2a0080755a2cba26",
+      "canonical_truth_verified": true,
+      "macro_rmse_recomputed": true
+    }
+  ],
+  "source_matches_up_to_line_endings": true,
+  "data_sha256": "6a57285228b043b406ad033212f6d8dbbad2e4755338e74429b1f6a7ac6b5ac5",
+  "tests": "tests/test_unet_foundation.py",
+  "note": "Deterministic station losses; no dense pseudo-labels; validation reused for development, confirmation and original C/D unread"
+}

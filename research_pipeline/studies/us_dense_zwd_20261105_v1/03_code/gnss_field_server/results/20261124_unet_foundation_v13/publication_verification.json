@@ -1,0 +1,32 @@
+[
+  {
+    "experiment": "E1302_unet16",
+    "seed": 17,
+    "max_publication_query_error_mm": 7.62939453125e-06
+  },
+  {
+    "experiment": "E1302_unet16",
+    "seed": 42,
+    "max_publication_query_error_mm": 7.62939453125e-06
+  },
+  {
+    "experiment": "E1303_unet24",
+    "seed": 17,
+    "max_publication_query_error_mm": 1.52587890625e-05
+  },
+  {
+    "experiment": "E1303_unet24",
+    "seed": 42,
+    "max_publication_query_error_mm": 7.62939453125e-06
+  },
+  {
+    "experiment": "E1305_unet48",
+    "seed": 17,
+    "max_publication_query_error_mm": 7.62939453125e-06
+  },
+  {
+    "experiment": "E1305_unet48",
+    "seed": 42,
+    "max_publication_query_error_mm": 1.52587890625e-05
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "comparisons": [
+    {
+      "experiment": "E1302_unet16",
+      "macro_rmse_mm": 11.744699993055495,
+      "difference_from_mlp_mm": 0.5694779867348849,
+      "paired_development_interval95_mm": [
+        -0.17389812558286225,
+        1.298408450512553
+      ]
+    },
+    {
+      "experiment": "E1303_unet24",
+      "macro_rmse_mm": 11.399768109830436,
+      "difference_from_mlp_mm": 0.22454610350982662,
+      "paired_development_interval95_mm": [
+        -0.16967272216055726,
+        0.6551173523959649
+      ]
+    },
+    {
+      "experiment": "E1304_point_unet",
+      "macro_rmse_mm": 10.828256698277428,
+      "difference_from_mlp_mm": -0.34696530804318115,
+      "paired_development_interval95_mm": [
+        -0.7292657880641944,
+        0.1275020599737029
+      ]
+    },
+    {
+      "experiment": "E1305_unet48",
+      "macro_rmse_mm": 11.799734763902626,
+      "difference_from_mlp_mm": 0.624512757582016,
+      "paired_development_interval95_mm": [
+        -0.17587209835194376,
+        1.5718229710769025
+      ]
+    }
+  ],
+  "resamples": 1000,
+  "seed": 1313,
+  "unit": "12 sampled month-start days, shared across layouts and models; two model seeds averaged within each replicate",
+  "interpretation": "Exploratory paired development-calendar uncertainty, not blind/full-year confirmation; does not treat layouts, station-hours or two optimizer seeds as independent weather samples"
+}

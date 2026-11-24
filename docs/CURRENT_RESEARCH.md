@@ -1,6 +1,6 @@
 # 当前研究进展：2026-11-24
 
-进行中：v13同输入U-Net基础场探索，残差MLP与U-Net16/24各两个种子串行；保持当前允许变量和137验证站口径，增加现有72天气片段的站时利用率。设计见[协议](superpowers/specs/2026-11-24-unet-foundation-v13-design.md)。28项测试通过；最终成绩待正式评价。
+最新完成：[v13 同输入 U-Net 基础场比较](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_unet_foundation_v13/RESULTS.md)。五组十次拟合全部完成，包含大宽度 U-Net48。双种子平均宏 RMSE：MLP11.175、U-Net16为11.745、U-Net24为11.400、点特征＋U-Net16为10.828、大U-Net48为11.800 mm。融合模型是优先候选；开发日历重采样区间跨零，下一步优先空间留出监控和天气日期覆盖。29项测试及22组预测核验通过，确认及C/D标签未读取。
 
 最新完成： [v12夜间残差场实验分析](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_residual_field_v12/ANALYSIS.md)。E1201–E1207七组、两个种子、32次拟合全部完成，主队列4小时12分34秒。K16扩展开发评价中，相关高斯残差宏RMSE为11.880 mm，残差扩散12.055 mm，扩散后XGBoost为12.386 mm；26项测试通过。基础场与残差分工有效，后期过拟合和空间联合分布是下一步重点。E1208冻结采样复核见同一报告；下列v11及历史结果使用各自评价口径。
 

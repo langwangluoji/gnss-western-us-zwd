@@ -1,0 +1,10 @@
+[
+  {
+    "experiment": "E1300P_point_background",
+    "macro_rmse_mm": 13.617670377095541
+  },
+  {
+    "experiment": "E1300G_grid_background",
+    "macro_rmse_mm": 13.616856892903646
+  }
+]

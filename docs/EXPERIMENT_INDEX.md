@@ -4,7 +4,7 @@
 
 | 实验 | 已记录状态 | 证据入口 |
 |---|---|---|
-| 20261124_unet_foundation_v13 / E1301–E1305 | RUNNING_SERIAL_FOUNDATION_COMPARISON | [协议](superpowers/specs/2026-11-24-unet-foundation-v13-design.md)；[进展](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_unet_foundation_v13/README.md) |
+| 20261124_unet_foundation_v13 / E1301–E1305 | COMPLETE_5_ARMS_10_FITS | [协议](superpowers/specs/2026-11-24-unet-foundation-v13-design.md)；[结果](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_unet_foundation_v13/RESULTS.md) |
 | 20261124_residual_field_v12 / E1201–E1208 | COMPLETED_7_TRAINING_ARMS_AND_FROZEN_AUDIT | [协议与编号](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/tools/terrain_diffusion/V12.md)；[状态](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_residual_field_v12/status.json) |
 | 20261123_observation_transport_v11 | COMPLETE_A_B_C_GATE_FAILED | [RESULTS.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_observation_transport_v11/RESULTS.md)；[REVIEW.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_observation_transport_v11/REVIEW.md) |
 | 20261123_terrain_diffusion_v10_diagnosis | COMPLETE_FROZEN_DIAGNOSTICS | [ANALYSIS.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261123_terrain_diffusion_v10_diagnosis/ANALYSIS.md) |

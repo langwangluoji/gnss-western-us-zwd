@@ -1,0 +1,16 @@
+{
+  "user_requested_width_increase": true,
+  "widths": [
+    48,
+    96,
+    192
+  ],
+  "parameters": 1086673,
+  "budget_seconds": 3.0,
+  "smoke": true,
+  "inputs_and_events": "Same113 features,3456events/2880fit/96monitor,original validation calendar",
+  "events_sha256": "afb46c2e37cfd873f35c3ed72efdba4e3d34c8497e6e238daaa2abbedf4c448e",
+  "source_sha256": "9c785381483e4560af62916a8523271676b0e5977a83a0cc4e902cb4a8701748",
+  "foundation_source_sha256": "93560d63dfbd603503b4b98ffc6f0b38a5c689ba849bc0a0b628dc49cc688e31",
+  "sampler": "Corrected epoch boundary; prior primary weights and executed source remain preserved"
+}

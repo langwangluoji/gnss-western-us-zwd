@@ -1,0 +1,9 @@
+{
+  "state": "completed",
+  "training_runs": 10,
+  "primary_status": "status.json",
+  "extensions": [
+    "E1304_point_unet/status.json",
+    "E1305_unet48/status.json"
+  ]
+}

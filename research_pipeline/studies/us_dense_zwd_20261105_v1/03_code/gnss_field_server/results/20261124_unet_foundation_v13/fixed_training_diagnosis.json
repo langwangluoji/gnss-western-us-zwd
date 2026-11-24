@@ -1,0 +1,112 @@
+[
+  {
+    "experiment": "E1301_mlp",
+    "seed": 17,
+    "panel_events": 48,
+    "best_fixed_train_rmse_mm": 9.687746222994136,
+    "last_fixed_train_rmse_mm": 9.859592955710816,
+    "last_expanded_macro_rmse_mm": 11.666848182678223,
+    "last_checkpoint_sha256": "9396ff08dc4fa4fa7c38821845a60b307a4ac38add6803cc7fcc5679eb233dfc",
+    "best_monitor_rmse_mm": 9.935211181640625,
+    "last_monitor_rmse_mm": 9.952920913696289
+  },
+  {
+    "experiment": "E1301_mlp",
+    "seed": 42,
+    "panel_events": 48,
+    "best_fixed_train_rmse_mm": 9.34946831736904,
+    "last_fixed_train_rmse_mm": 9.34946831736904,
+    "last_expanded_macro_rmse_mm": 11.209219932556152,
+    "last_checkpoint_sha256": "b252293eb565e2ad9164bc6eab84148f701664bc91182f1099bb858e9d5d91b6",
+    "best_monitor_rmse_mm": 9.874740600585938,
+    "last_monitor_rmse_mm": 9.874740600585938
+  },
+  {
+    "experiment": "E1302_unet16",
+    "seed": 17,
+    "panel_events": 48,
+    "best_fixed_train_rmse_mm": 8.969194322922979,
+    "last_fixed_train_rmse_mm": 9.023234048061543,
+    "last_expanded_macro_rmse_mm": 12.038897832234701,
+    "last_checkpoint_sha256": "5bc148aec1485347ab411f81dcc6f293e5e1aa06bc174d8d1cfdc2129cf67d2c",
+    "best_monitor_rmse_mm": 10.014544486999512,
+    "last_monitor_rmse_mm": 10.182229042053223
+  },
+  {
+    "experiment": "E1302_unet16",
+    "seed": 42,
+    "panel_events": 48,
+    "best_fixed_train_rmse_mm": 9.2100687257577,
+    "last_fixed_train_rmse_mm": 8.68757032201822,
+    "last_expanded_macro_rmse_mm": 11.994369188944498,
+    "last_checkpoint_sha256": "427dd6373a7a9dc78496cdcc9dbf142a3ef028cdfff55d26fbdc43f323d890ff",
+    "best_monitor_rmse_mm": 10.020844459533691,
+    "last_monitor_rmse_mm": 10.049206733703613
+  },
+  {
+    "experiment": "E1303_unet24",
+    "seed": 17,
+    "panel_events": 48,
+    "best_fixed_train_rmse_mm": 8.79425627052732,
+    "last_fixed_train_rmse_mm": 8.565360398068384,
+    "last_expanded_macro_rmse_mm": 11.611199696858725,
+    "last_checkpoint_sha256": "fb2d472da0bdca330b049250ca18e5a6deac2758239a5e7c0e520b5880f4ec25",
+    "best_monitor_rmse_mm": 9.915352821350098,
+    "last_monitor_rmse_mm": 10.047350883483887
+  },
+  {
+    "experiment": "E1303_unet24",
+    "seed": 42,
+    "panel_events": 48,
+    "best_fixed_train_rmse_mm": 8.466928151980902,
+    "last_fixed_train_rmse_mm": 8.466928151980902,
+    "last_expanded_macro_rmse_mm": 11.53480339050293,
+    "last_checkpoint_sha256": "5b513d5b42789d10dad03f9eadb8d3a86b2f98cee7c1f2b77a6aa31fdd0bdd7d",
+    "best_monitor_rmse_mm": 9.907825469970703,
+    "last_monitor_rmse_mm": 9.907825469970703
+  },
+  {
+    "experiment": "E1304_point_unet",
+    "seed": 17,
+    "panel_events": 48,
+    "best_fixed_train_rmse_mm": 8.980576604875722,
+    "last_fixed_train_rmse_mm": 8.808202311006923,
+    "last_expanded_macro_rmse_mm": 10.804410616556803,
+    "last_checkpoint_sha256": "20b65f26a5942e26dd8f05ea8c4ea8369c80181dbffe7a2de47cb366ea4eb88b",
+    "best_monitor_rmse_mm": 9.761125564575195,
+    "last_monitor_rmse_mm": 9.958512306213379
+  },
+  {
+    "experiment": "E1304_point_unet",
+    "seed": 42,
+    "panel_events": 48,
+    "best_fixed_train_rmse_mm": 9.472129317224471,
+    "last_fixed_train_rmse_mm": 9.327114465646678,
+    "last_expanded_macro_rmse_mm": 11.28006394704183,
+    "last_checkpoint_sha256": "52dc6f02e452e777fdf14a8a20e87a0148dc4a1b40b65f377a272a589afe014e",
+    "best_monitor_rmse_mm": 9.980231285095215,
+    "last_monitor_rmse_mm": 9.999197959899902
+  },
+  {
+    "experiment": "E1305_unet48",
+    "seed": 17,
+    "panel_events": 48,
+    "best_fixed_train_rmse_mm": 8.812958769676046,
+    "last_fixed_train_rmse_mm": 8.812958769676046,
+    "last_expanded_macro_rmse_mm": 11.42395273844401,
+    "last_checkpoint_sha256": "d7f9c3313ef80e9389e916842531cfb14dc0396f5a918783cd548fe4ee3e2405",
+    "best_monitor_rmse_mm": 9.787434577941895,
+    "last_monitor_rmse_mm": 9.787434577941895
+  },
+  {
+    "experiment": "E1305_unet48",
+    "seed": 42,
+    "panel_events": 48,
+    "best_fixed_train_rmse_mm": 8.987870656906747,
+    "last_fixed_train_rmse_mm": 8.743866563754187,
+    "last_expanded_macro_rmse_mm": 11.859086036682129,
+    "last_checkpoint_sha256": "e4df409bdd8afd6747f3473dab28dc93f903408d604cd9aa8c186ddaca1b933c",
+    "best_monitor_rmse_mm": 9.936661720275879,
+    "last_monitor_rmse_mm": 10.085132598876953
+  }
+]
