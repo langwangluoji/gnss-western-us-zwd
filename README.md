@@ -1,6 +1,8 @@
 # 美国西部 GNSS 湿延迟场重建
 
-当前研究范围为 **25–50°N、125–110°W陆地域**，数据覆盖2016—2020年。发布格网为25 km、144×96；有效空间分辨能力通过未见站点及站间差值评价。
+本项目研究稀疏 GNSS 网下的高分辨率 ZWD（天顶湿延迟）场重建，目标是在不使用 PWV/IWV/TCWV/Tm 条件或教师的前提下，利用 GNSS 站点气象、ZWD 历史、地形和空间支撑信息，输出任意查询点的连续 ZWD 场与时序样本。
+
+当前区域为美国西部 **25–50°N、125–110°W 陆地域**，数据覆盖 2016—2020 年。25 km、144×96 是发布与区域上下文网格，不代表最终细节分辨率；细尺度能力通过未见站点、站间差值、空间空洞和时间增量评价。
 
 代码与轻量研究证据同步至公开仓库 [langwangluoji/gnss-western-us-zwd](https://github.com/langwangluoji/gnss-western-us-zwd)。Windows长路径检出建议使用 `git -c core.longpaths=true clone`。
 
@@ -10,6 +12,10 @@
 |---|---|
 | [当前研究进展](docs/CURRENT_RESEARCH.md) | 区域、数据角色、最新结果与证据范围 |
 | [实验索引](docs/EXPERIMENT_INDEX.md) | 当前区域实验、状态和报告 |
+| [快速上手](docs/GETTING_STARTED.md) | 新用户或其他 agent 的最短复现路径 |
+| [项目架构](docs/PROJECT_ARCHITECTURE.md) | 研究层、数据层、模型层、评价层和产物边界 |
+| [方法验证规则](docs/METHOD_VALIDATION.md) | 结论等级、数据隔离和验收门槛 |
+| [实验运行手册](docs/EXPERIMENT_RUNBOOK.md) | 入口脚本、测试、轻量实验和结果记录规范 |
 | [工程说明](research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/README.md) | PyTorch实现、本机运行与超算流程 |
 | [数据与权重说明](docs/LOCAL_ARTIFACTS.md) | 本地大文件、清单及Git边界 |
 | [整理记录](maintenance/cleanup_20261123/README.md) | 归档、删除、验证与复盘 |
@@ -39,6 +45,12 @@ research_pipeline/
 
 旧区域研究及历史汇报移至项目外同盘目录 `../GAN对流层_历史归档_20261123/`，原相对路径保留。当前工程依赖的少量早期代码作为上游支持留在原路径，不能作为最新排名依据。
 
+## 研究主线
+
+当前最强确定性基础场候选是 **点特征 MLP＋小型 U-Net 空间修正**（v13，双种子平均宏 RMSE 10.828 mm）。大宽度 U-Net 48/96/192 在同口径开发评价中为 11.800 mm，说明当前瓶颈是空间信息表达、天气日期覆盖和空间支撑分布，而不是单纯增加宽度。
+
+后续路线按以下顺序推进：连续天气窗口审计 → 点—图—查询编码 → 多尺度 U-Net 区域上下文 → 折外基础场残差 → 条件时空 diffusion。所有新方法先做真实本机配对试验，再讨论全量训练或论文结论。
+
 ## 运行
 
 需要Python≥3.11、PyTorch 2.8.x及工程声明的依赖。从项目根目录：
@@ -50,4 +62,4 @@ python -m gnss_field --help
 python -m pytest -q
 ```
 
-新机器先按[数据说明](docs/LOCAL_ARTIFACTS.md)恢复本地数据。Git克隆包含代码、配置、协议、轻量指标和报告；原始观测、权重、预测数组和缓存另行保留。
+新机器先按[快速上手](docs/GETTING_STARTED.md)和[数据与本地产物说明](docs/LOCAL_ARTIFACTS.md)恢复环境。Git 克隆包含代码、配置、协议、轻量指标和报告；原始观测、权重、预测数组和缓存另行保留。

@@ -1,3 +1,30 @@
+# GNSS ZWD 场重建工程
+
+> 当前主线入口：先读仓库根目录的 [快速上手](../../../../../docs/GETTING_STARTED.md)、[项目架构](../../../../../docs/PROJECT_ARCHITECTURE.md) 和 [方法验证规则](../../../../../docs/METHOD_VALIDATION.md)。
+
+## 当前实现状态
+
+本目录同时承载两类代码：`tools/terrain_diffusion/` 是 2026-11-23 之后的本机基础场、观测编码和残差场探索；`src/`、`configs/`、`slurm/` 及其余工具是早期服务器化生成式工程。两者共享数据合同和评价原则，但结果必须按实验目录和协议解释。当前最新基础场结果见 `results/20261124_unet_foundation_v13/RESULTS.md`。
+
+当前最强开发候选是点特征 MLP＋小型 U-Net 空间修正，双种子平均宏 RMSE 10.828 mm；大宽度 U-Net 实验已完成，平均 11.800 mm。后续先做连续数据审计和点—图—查询编码，不把增加 U-Net 宽度作为默认优化。
+
+## 当前工具入口
+
+| 目标 | 入口 | 产物 |
+|---|---|---|
+| 基础场训练/评价 | `tools/terrain_diffusion/unet_foundation.py` | `results/20261124_unet_foundation_v13/` |
+| 点—空间融合 | `tools/terrain_diffusion/unet_hybrid.py` | E1304 结果 |
+| 大宽度对照 | `tools/terrain_diffusion/unet_large.py` | E1305 结果 |
+| 诊断图表 | `tools/terrain_diffusion/unet_diagnostics.py` | terrain/month/spatial CSV 和 PNG |
+| 结果审计 | `tools/terrain_diffusion/unet_audit.py` | `final_audit.json` |
+| 历史扩散/图/序列 | `tools/` 下对应 `diffusion_*`、`graph_*`、`sequence_*` | 按实验索引定位 |
+
+## 运行边界
+
+训练前必须锁定数据版本、变量清单、站点角色、窗口、布局、种子、预算和评价日期。禁止把确认站或原 C/D 标签用于开发。禁止 PWV/IWV/TCWV/Tm 作为新模型输入或教师。权重、原始数据和大数组保留本机；轻量协议、指标、报告和哈希清单同步 GitHub。
+
+---
+
 > 当前科学进展请先读 [项目进展](../../../../../docs/CURRENT_RESEARCH.md) 和 [实验索引](../../../../../docs/EXPERIMENT_INDEX.md)。下文为2026-11-18的工程与迁移说明，历史验收项及服务器待办以对应记录为准；不代表11月23日最新模型排名。构建/发行暂存副本已外移，需使用源码重新打包。
 
 # GNSS高分辨率场：同济超算工程
