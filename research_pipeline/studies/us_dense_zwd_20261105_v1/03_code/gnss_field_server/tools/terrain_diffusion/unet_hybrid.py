@@ -28,6 +28,8 @@ class HybridExperiment(Experiment):
             for row in range(12):
                 for hour in range(24):
                     e=dict(row=row,hour=hour,context=c);preds.append((self.predict(model,e,validation=True)*self.data.std[0]+self.data.mean[0]).cpu().numpy())
+                    if li==0 and row==6 and hour==12:
+                        f=self.get_features(e,'unet',True);g=f.T.reshape(1,113,*self.shape);field=model.point(f).reshape(1,1,*self.shape)+model.spatial(g)-g[:,52:53];np.save(folder/'native_preview_field_mm.npy',(field*self.data.std[0]+self.data.mean[0]).cpu().numpy())
             print(json.dumps(dict(stage='hybrid_evaluation',layout=li)),flush=True)
         pack=load_pack(ROOT.parent/'20261124_residual_field_v12/cache/validation.npz');save_evaluation(folder/'expanded',np.stack(preds)[None],pack,self.data)
         return json.loads((folder/'expanded/metrics.json').read_text())
