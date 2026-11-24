@@ -1,0 +1,13 @@
+{
+  "data_path": "results\\20261124_terrain_diffusion_ab_full_data",
+  "train_sequences": 731,
+  "train_events": 29280,
+  "validation_sequences": 12,
+  "budget_per_seed": 600,
+  "seeds": [
+    42,
+    17
+  ],
+  "model": "GridUNet24",
+  "confirmation_C_D_read": false
+}

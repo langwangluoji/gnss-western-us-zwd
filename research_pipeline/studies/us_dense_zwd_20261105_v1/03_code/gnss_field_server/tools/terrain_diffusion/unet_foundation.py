@@ -64,8 +64,8 @@ class ResidualMLP(nn.Module):
     def forward(self,x):return x[:,52]+self.net(x).squeeze(-1)
 
 class Experiment:
-    def __init__(self):
-        self.data=Dataset(device='cpu');a=self.data.a;g=np.load(GEOMETRY);self.shape=g['height'].shape
+    def __init__(self,data_path=None):
+        self.data=Dataset(path=data_path,device='cpu') if data_path is not None else Dataset(device='cpu');a=self.data.a;g=np.load(GEOMETRY);self.shape=g['height'].shape
         static,geo=static_geometry(pd.DataFrame(dict(x=g['x'].ravel(),y=g['y'].ravel(),height=g['height'].ravel())))
         self.grid=Features(self.data,static,geo);self.train_features=Features(self.data,a['static'],a['geo']);self.val_features=Features(self.data,a['val_static'],a['val_geo'])
         self.raw={k:torch.as_tensor(a[k],device='cuda') for k in ('train','val_context')};self.valtruth=torch.as_tensor(a['val_y'],device='cuda')
@@ -73,7 +73,7 @@ class Experiment:
         self.events=self.make_events();self.fit=[e for e in self.events if e['row']%6!=5];self.monitor=[e for e in self.events if e['row']%6==5 and e['hour'] in (0,6,12,18)]
     def make_events(self):
         rng=np.random.default_rng(13024);a=self.data.a;events=[]
-        for row in range(72):
+        for row in range(len(a['train'])):
             for hour in range(24):
                 for layout in (0,1):
                     if layout:
@@ -142,11 +142,11 @@ class Experiment:
         return json.loads((folder/'expanded/metrics.json').read_text())
 
 def run():
-    parser=argparse.ArgumentParser();parser.add_argument('--budget',type=float,default=600);parser.add_argument('--patience',type=int,default=5);parser.add_argument('--smoke',action='store_true');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--budget',type=float,default=600);parser.add_argument('--patience',type=int,default=5);parser.add_argument('--smoke',action='store_true');parser.add_argument('--data-path',type=Path,default=None);args=parser.parse_args()
     import ctypes
     ctypes.windll.kernel32.SetThreadExecutionState(0x80000001)
     torch.set_num_threads(4);torch.backends.cudnn.benchmark=True
-    root=ROOT.with_name(ROOT.name+'_smoke') if args.smoke else ROOT;root.mkdir(parents=True,exist_ok=False);start=time.monotonic();exp=Experiment()
+    root=ROOT.with_name(ROOT.name+'_smoke') if args.smoke else ROOT;root.mkdir(parents=True,exist_ok=False);start=time.monotonic();exp=Experiment(args.data_path)
     if args.smoke:exp.monitor=exp.monitor[:2]
     write_json(root/'protocol.json',dict(inputs=['ZWD','T','P','existing terrain and coordinates','12h causal history'],features=113,data_sha256=exp.data.contract['data_sha256'],geometry_sha256=sha(GEOMETRY),code_sha256=sha(__file__),train_events=len(exp.fit),all_events=len(exp.events),monitor_events=len(exp.monitor),budget_per_seed=args.budget,patience=args.patience,seeds=[42,17],confirmation_C_D_read=False,smoke=args.smoke))
     np.savez_compressed(root/'events.npz',row=[e['row'] for e in exp.events],hour=[e['hour'] for e in exp.events],layout=[e['layout'] for e in exp.events],context=[e['context'] for e in exp.events],target=[e['target'] for e in exp.events]);write_json(root/'events_receipt.json',dict(sha256=sha(root/'events.npz'),events=len(exp.events),fit_events=len(exp.fit),monitor_events=len(exp.monitor)));results=[]

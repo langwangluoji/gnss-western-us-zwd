@@ -92,13 +92,22 @@ def static_geometry(frame):
     return static,geo
 
 
-def prepare(out=DEFAULT_DATA,workers=4):
+def prepare(out=DEFAULT_DATA,workers=4,train_days=(8,18,25)):
     out=Path(out);out.mkdir(parents=True,exist_ok=True)
     if (out/'contract.json').exists():raise FileExistsError('Use a new data directory; existing contract is immutable')
     allstations=pd.read_csv(ASSETS/'station_assignment_proposal.csv')
     tr=allstations[allstations.new_role=='training'].reset_index(drop=True)
     va=allstations[allstations.new_role=='validation'].reset_index(drop=True)
-    th=calendar_hours([2016,2017],[8,18,25]);vh=calendar_hours([2018],[1])
+    # The historical contract uses three anchor days.  The expanded A+B
+    # training pack uses every valid day while keeping the 2018 validation
+    # contract unchanged; this is controlled explicitly by train_days.
+    if train_days == 'all':
+        th=np.concatenate([np.array([int(np.datetime64(f'{y}-{m:02d}-{d:02d}','h').astype('i8'))+np.arange(-12,24)
+                                    for y in (2016,2017) for m in range(1,13)
+                                    for d in range(1,calendar.monthrange(y,m)[1]+1)])], axis=0)
+    else:
+        th=calendar_hours([2016,2017],train_days)
+    vh=calendar_hours([2018],[1])
     wanted=np.unique(np.r_[th.ravel(),vh.ravel()]);tidx=np.searchsorted(wanted,th);vidx=np.searchsorted(wanted,vh)
     train=np.full((*th.shape,len(tr),3),np.nan,dtype='f4')
     vc=np.full((*vh.shape,len(tr),3),np.nan,dtype='f4');vy=np.full((*vh.shape,len(va)),np.nan,dtype='f4')
@@ -186,4 +195,5 @@ class Dataset:
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--out',type=Path,default=DEFAULT_DATA);p.add_argument('--workers',type=int,default=4)
-    args=p.parse_args();prepare(args.out,args.workers)
+    p.add_argument('--all-train-days',action='store_true',help='expand A+B training windows to every valid day in 2016-2017')
+    args=p.parse_args();prepare(args.out,args.workers,'all' if args.all_train_days else (8,18,25))
