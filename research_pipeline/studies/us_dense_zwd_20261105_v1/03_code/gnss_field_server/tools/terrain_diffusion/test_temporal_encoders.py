@@ -7,6 +7,10 @@ def test_query_subset_and_reordering_do_not_change_predictions(kind):
     from .temporal_encoders import TemporalFoundation
     torch.manual_seed(7)
     model = TemporalFoundation(kind, length=12, channels=25, width=16, hidden=32).eval()
+    # Exercise learned spatial/temporal paths, not only zero-init persistence.
+    with torch.no_grad():
+        model.head.weight.normal_(0, .1)
+        model.query_head[-1].weight.normal_(0, .1)
     x = torch.randn(1, 12, 64, 25)
     uv = torch.rand(1, 9, 2)*2-1
     static = torch.randn(1, 9, 9)

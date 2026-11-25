@@ -5,6 +5,16 @@ import pandas as pd
 import pytest
 
 
+@pytest.fixture(autouse=True)
+def preserve_torch_determinism():
+    """Tests changing runtime policy must not alter later CUDA test behavior."""
+    import torch
+    enabled = torch.are_deterministic_algorithms_enabled()
+    warn_only = torch.is_deterministic_algorithms_warn_only_enabled()
+    yield
+    torch.use_deterministic_algorithms(enabled, warn_only=warn_only)
+
+
 @pytest.fixture
 def legacy_fixture(tmp_path):
     p = tmp_path / 'legacy'

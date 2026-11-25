@@ -1,0 +1,11 @@
+{
+  "kind": "mlp",
+  "length": 12,
+  "seed": 17,
+  "steps": 500,
+  "chosen_step": 500,
+  "elapsed_seconds": 4.328000000001339,
+  "parameters": 19756,
+  "trace": [],
+  "monitor": false
+}

@@ -1,0 +1,893 @@
+[
+  {
+    "kind": "spatial_persistence",
+    "length": 0,
+    "seed": 0,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.599434852600098
+  },
+  {
+    "kind": "spatial_persistence",
+    "length": 0,
+    "seed": 0,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 15.906805038452148
+  },
+  {
+    "kind": "spatial_persistence",
+    "length": 0,
+    "seed": 0,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 21.01811408996582
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 7.986454963684082
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.40328311920166
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 19.796430587768555
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.036486625671387
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.505026817321777
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 19.953550338745117
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 7.994275093078613
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.451201438903809
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 19.904735565185547
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.136893272399902
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.70694637298584
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 19.765411376953125
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.1668062210083
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.934938430786133
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 20.79490852355957
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.03711223602295
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.57919979095459
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 20.060733795166016
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.06190299987793
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.60012435913086
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 20.27695083618164
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.067134857177734
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.557178497314453
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 20.106842041015625
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.066770553588867
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.667851448059082
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 19.91664695739746
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.046989440917969
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.591249465942383
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 20.130239486694336
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.067001342773438
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.6690673828125
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 19.909875869750977
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.045931816101074
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.591845512390137
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 20.117900848388672
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.067034721374512
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.669158935546875
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 19.910024642944336
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.04593276977539
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.591853141784668
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 20.117849349975586
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.036626815795898
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.591358184814453
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 20.057170867919922
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.080802917480469
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.721866607666016
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 20.156448364257812
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.027938842773438
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.529679298400879
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 19.9517879486084
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.077293395996094
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.726546287536621
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 20.12371253967285
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.026779174804688
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.53027057647705
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 19.959184646606445
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.076492309570312
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.724405288696289
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 20.123310089111328
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.063465118408203
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.567692756652832
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 19.49318504333496
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.100135803222656
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.560837745666504
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 19.708284378051758
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.073259353637695
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.560807228088379
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 19.60346794128418
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.071645736694336
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.597028732299805
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 19.5825138092041
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.07353687286377
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.580537796020508
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 19.65424156188965
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "pair_difference_rmse_mm": 8.035759925842285
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "pair_difference_rmse_mm": 14.538500785827637
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "pair_difference_rmse_mm": 19.549604415893555
+  }
+]

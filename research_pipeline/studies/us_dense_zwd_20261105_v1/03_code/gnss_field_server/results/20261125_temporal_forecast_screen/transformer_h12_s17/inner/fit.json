@@ -1,0 +1,47 @@
+{
+  "kind": "transformer",
+  "length": 12,
+  "seed": 17,
+  "steps": 600,
+  "chosen_step": 500,
+  "elapsed_seconds": 9.31300000000192,
+  "parameters": 75436,
+  "trace": [
+    {
+      "step": 1,
+      "loss": 0.03094257414340973,
+      "inner_macro_rmse_mm": 14.989825433292694
+    },
+    {
+      "step": 100,
+      "loss": 0.027775917202234268,
+      "inner_macro_rmse_mm": 14.814108468269065
+    },
+    {
+      "step": 200,
+      "loss": 0.028225304558873177,
+      "inner_macro_rmse_mm": 14.939505406194414
+    },
+    {
+      "step": 300,
+      "loss": 0.016642143949866295,
+      "inner_macro_rmse_mm": 14.36712318680112
+    },
+    {
+      "step": 400,
+      "loss": 0.01461747009307146,
+      "inner_macro_rmse_mm": 14.40416188836428
+    },
+    {
+      "step": 500,
+      "loss": 0.022780179977416992,
+      "inner_macro_rmse_mm": 14.316386339231089
+    },
+    {
+      "step": 600,
+      "loss": 0.027345996350049973,
+      "inner_macro_rmse_mm": 14.33461424409885
+    }
+  ],
+  "monitor": true
+}

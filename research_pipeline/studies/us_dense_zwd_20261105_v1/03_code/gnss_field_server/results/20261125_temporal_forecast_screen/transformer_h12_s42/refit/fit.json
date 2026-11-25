@@ -1,0 +1,11 @@
+{
+  "kind": "transformer",
+  "length": 12,
+  "seed": 42,
+  "steps": 600,
+  "chosen_step": 600,
+  "elapsed_seconds": 7.9689999999973224,
+  "parameters": 75436,
+  "trace": [],
+  "monitor": false
+}

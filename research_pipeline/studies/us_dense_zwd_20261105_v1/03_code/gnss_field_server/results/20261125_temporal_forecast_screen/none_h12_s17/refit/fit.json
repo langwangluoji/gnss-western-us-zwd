@@ -1,0 +1,11 @@
+{
+  "kind": "none",
+  "length": 12,
+  "seed": 17,
+  "steps": 400,
+  "chosen_step": 400,
+  "elapsed_seconds": 3.1719999999986612,
+  "parameters": 8492,
+  "trace": [],
+  "monitor": false
+}

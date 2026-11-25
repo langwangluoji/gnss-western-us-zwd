@@ -1,0 +1,21 @@
+{
+  "kind": "lstm",
+  "length": 12,
+  "seed": 17,
+  "chosen_step": 400,
+  "metrics": {
+    "macro_rmse_mm": 14.290322441079878,
+    "micro_rmse_mm": 14.540963172912598,
+    "mae_mm": 10.912515640258789,
+    "bias_mm": 0.35632145404815674,
+    "p95_absolute_mm": 29.9472599029541,
+    "station_count": 135,
+    "valid_count": 108954,
+    "increment_macro_rmse_mm": 5.988934761108852,
+    "horizon_macro_rmse_mm": [
+      12.537643572915975,
+      13.691531284524238,
+      15.984336909311288
+    ]
+  }
+}

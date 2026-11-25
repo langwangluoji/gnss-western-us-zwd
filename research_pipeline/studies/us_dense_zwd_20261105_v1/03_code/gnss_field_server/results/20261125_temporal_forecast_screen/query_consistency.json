@@ -1,0 +1,9 @@
+{
+  "checkpoint": "transformer_h72_s42/refit/model.pt",
+  "queries": [
+    137,
+    64
+  ],
+  "rms_drift_mm": 8.569517149226158e-07,
+  "max_drift_mm": 5.9604644775390625e-06
+}

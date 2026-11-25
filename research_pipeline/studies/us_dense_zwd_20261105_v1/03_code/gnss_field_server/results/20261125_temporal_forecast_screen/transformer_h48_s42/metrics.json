@@ -1,0 +1,21 @@
+{
+  "kind": "transformer",
+  "length": 48,
+  "seed": 42,
+  "chosen_step": 600,
+  "metrics": {
+    "macro_rmse_mm": 13.918126245395596,
+    "micro_rmse_mm": 14.169957160949707,
+    "mae_mm": 10.603612899780273,
+    "bias_mm": 0.016292354092001915,
+    "p95_absolute_mm": 29.564712524414062,
+    "station_count": 135,
+    "valid_count": 108954,
+    "increment_macro_rmse_mm": 5.9918660757006315,
+    "horizon_macro_rmse_mm": [
+      12.279188435493037,
+      13.351045305395772,
+      15.544397485651926
+    ]
+  }
+}

@@ -1,0 +1,2918 @@
+[
+  {
+    "kind": "spatial_persistence",
+    "length": 0,
+    "seed": 0,
+    "group": "JJA",
+    "macro_rmse_mm": 18.12653301572292,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "spatial_persistence",
+    "length": 0,
+    "seed": 0,
+    "group": "DJF",
+    "macro_rmse_mm": 13.782682855445485,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "spatial_persistence",
+    "length": 0,
+    "seed": 0,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 15.906737497566429,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "spatial_persistence",
+    "length": 0,
+    "seed": 0,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 15.737229735218603,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "spatial_persistence",
+    "length": 0,
+    "seed": 0,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.577231753210036,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "spatial_persistence",
+    "length": 0,
+    "seed": 0,
+    "group": "height_0_500",
+    "macro_rmse_mm": 16.992630562752332,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "spatial_persistence",
+    "length": 0,
+    "seed": 0,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 14.492193337244125,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "spatial_persistence",
+    "length": 0,
+    "seed": 0,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.925028974584933,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "spatial_persistence",
+    "length": 0,
+    "seed": 0,
+    "group": "support_0_50",
+    "macro_rmse_mm": 13.118002856422342,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "spatial_persistence",
+    "length": 0,
+    "seed": 0,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.640274880420181,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "spatial_persistence",
+    "length": 0,
+    "seed": 0,
+    "group": "support_100_150",
+    "macro_rmse_mm": 14.687839399328812,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "spatial_persistence",
+    "length": 0,
+    "seed": 0,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 17.46433924097009,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 17.251252153566156,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 13.094353551322719,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 42,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.753647555137093,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 42,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.71497895874416,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 42,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.225905450648524,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 42,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.61837830791627,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 42,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.652374150601663,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 42,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.530633557694113,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 13.027531508089359,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 13.965788551297189,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 12.866266791941186,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.62964051652562,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 17.06197442166568,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 13.22433689315041,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 17,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.776215957572033,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 17,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.960443826209707,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 17,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 11.956052016222214,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 17,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.718332806810883,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 17,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.686054092939235,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 17,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.281021064339535,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.79669109977901,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 13.915796760151858,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 12.896682197247106,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "none",
+    "length": 12,
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.409015834654834,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 17.50624976254745,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 13.084884610173708,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 42,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.877521955132217,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 42,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.699909878616639,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 42,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.287831748612078,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 42,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.705190275135793,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 42,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.736218664054945,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 42,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.622765728623028,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 13.006720419852963,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 13.993259345680654,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.093176274383408,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.770096345919146,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 16.841373765956387,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 13.506123298189609,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 17,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.873640663978682,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 17,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 15.169997049863097,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 17,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 11.944485734800185,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 17,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.908226959212197,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 17,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.720234681664142,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 17,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.294932557546984,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.945860005603722,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.040741511643954,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 12.927515494479145,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "mlp",
+    "length": 12,
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.411837770610326,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 17.86653004222079,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 13.67877979396009,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 42,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 15.489544083514396,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 42,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 15.18189232076618,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 42,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.490544330915965,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 42,
+    "group": "height_0_500",
+    "macro_rmse_mm": 16.342475326207275,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 42,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 14.301955766586184,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 42,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.77025122117235,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 13.120487892541743,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.477125856999331,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.314936381067373,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 17.357669543463782,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 17.284887919219187,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 13.072844333222541,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 17,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.869544857709622,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 17,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.831923499154225,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 17,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.336097330201804,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 17,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.622074238731125,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 17,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.9123021640739,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 17,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.607469830413049,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.842976524763237,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.06024515574573,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.09759375221543,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "mlp",
+    "length": 48,
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.59997986830853,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 17.81625572895936,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 13.288688657432807,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 42,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 15.249142954714044,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 42,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.903815624988772,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 42,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.150213173096972,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 42,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.993952789111809,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 42,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 14.04312347432107,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 42,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.633307650620544,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 13.004888302995186,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.198898748936626,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.24121690888986,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.879019486514515,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 17.425826100296536,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 13.085020214519826,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 17,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.89779216852407,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 17,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.88994438155698,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 17,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.4580017558053,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 17,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.603355919484603,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 17,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.988435795497828,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 17,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.75537187783726,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.854744379837662,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.124494511317257,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.235492334389102,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "mlp",
+    "length": 72,
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.82065251919716,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 17.564455633746352,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 13.265657029012353,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 42,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.963978215918157,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 42,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 15.117820446116676,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 42,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.268083255814123,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 42,
+    "group": "height_0_500",
+    "macro_rmse_mm": 16.038772627290207,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 42,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.64913137577303,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 42,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.696847110362913,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 13.26763471359136,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.209625840902657,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.346503252231415,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.80915568684635,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 17.27266099593137,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 13.21006924641327,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 17,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.887518642040964,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 17,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.979579308162764,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 17,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.2058383179638,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 17,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.795884609272166,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 17,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.819176235765518,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 17,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.481040576661625,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.871477263170668,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.159020071962138,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.12918738950384,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "gru",
+    "length": 12,
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.663386744430497,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 17.560814336297337,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 13.258331458434814,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 42,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.951523233268416,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 42,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 15.106486098707098,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 42,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.243660692750963,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 42,
+    "group": "height_0_500",
+    "macro_rmse_mm": 16.02509729393515,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 42,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.635296628938754,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 42,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.678219536931628,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 13.257158410094684,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.195871737729707,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.336261686328106,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.82321119861415,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 17.27649941387095,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 13.193500209900394,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 17,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.874513800241282,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 17,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.961199418964878,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 17,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.203245106833572,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 17,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.776268893333492,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 17,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.812778134404844,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 17,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.475088143360267,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.862648878249889,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.148841053139625,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.121477540569265,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "gru",
+    "length": 48,
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.66300178449552,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 17.560265213564854,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 13.258575286606353,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 42,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.951393022109718,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 42,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 15.106368115189891,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 42,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.243772470958072,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 42,
+    "group": "height_0_500",
+    "macro_rmse_mm": 16.025045250285903,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 42,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.63515723038739,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 42,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.678204628572129,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 13.256995330563646,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.195688332287403,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.336367774014878,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.823251784354433,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 17.27649000589376,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 13.19347989452852,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 17,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.874456372863492,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 17,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.961185827924435,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 17,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.203273442714027,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 17,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.776254773810962,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 17,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.812733718530476,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 17,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.475046144750399,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.86264009888846,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.148817677152975,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.121438621698953,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "gru",
+    "length": 72,
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.662976823554867,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 17.625146066671338,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 13.175071320620004,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 42,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 15.012292256956906,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 42,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 15.002358687133054,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 42,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.35532620401056,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 42,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.89731361955701,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 42,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.914663468660095,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 42,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.643118151304975,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 13.170024401046499,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.209943842662808,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.307830580846009,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.747411202702644,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 17.237228191278458,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 13.206514347796581,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 17,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.892542469771358,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 17,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.957610804792187,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 17,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.037498484294504,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 17,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.754737172075945,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 17,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.774255923850841,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 17,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.465672962968817,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.80154434065236,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.078068197836076,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.144405603405437,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "lstm",
+    "length": 12,
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.630675423738143,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 17.362344462537216,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 13.149753489672706,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 42,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.800881502155143,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 42,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.879889910407845,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 42,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.164383225359673,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 42,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.704710827949802,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 42,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.707530848574443,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 42,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.478070272924215,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.988490981686196,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.02097880105629,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.136282531539967,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.625119606412856,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 17.24228761248762,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 13.187857572608058,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 17,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.878356445616241,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 17,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.94093564333273,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 17,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.029140108754522,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 17,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.74051044124761,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 17,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.767703546422995,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 17,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.442563878230452,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.803676414581302,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.059638923239064,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.120307834810413,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "lstm",
+    "length": 48,
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.610315510011663,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 17.37361049743201,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 13.142490162731876,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 42,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.797856921598028,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 42,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.879844081566722,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 42,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.187122046859368,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 42,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.701729144233909,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 42,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.708383675203638,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 42,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.495693034484855,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.988196237691845,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.023026011637349,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.135522613972144,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.638358220045482,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 17.249017127319558,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 13.185764100102046,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 17,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.883116851232403,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 17,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.939593249735788,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 17,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.032397085376944,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 17,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.740655753732577,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 17,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.773866993404582,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 17,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.447314758220775,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.80780019387831,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 14.06392908810266,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 13.123343133006607,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "lstm",
+    "length": 72,
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.615776929347653,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 16.87186571973581,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 12.799179908999667,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 42,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.346662778118004,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 42,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.552783820649767,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 42,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 11.974377528808544,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 42,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.20305890423325,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 42,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.309923030819075,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 42,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.369319850680135,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.718850282380153,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 13.564374873962123,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 12.682989023406265,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.203299323831093,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 16.850741913380997,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 13.259608089590055,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 17,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.620594377497733,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 17,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.882812460073904,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 17,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 11.901815727960681,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 17,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.658908653462593,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 17,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.53413435196923,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 17,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.10066608286558,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.727606084705783,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 13.760329872850072,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 12.71263167261673,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "transformer",
+    "length": 12,
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.416574045345264,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 16.79482573478026,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 13.100793204152058,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 42,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.396980215173077,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 42,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.677860473532485,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 42,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 11.945065323372171,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 42,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.344021857812457,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 42,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.327659223948885,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 42,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.288095991709202,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.777649397860268,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 13.627454760563323,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 12.49439952029818,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.160111664149003,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 16.875106137821554,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 13.166789287423644,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 17,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.566525389184056,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 17,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.823675380504493,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 17,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 11.844345180920826,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 17,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.602266668695865,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 17,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.504327656256573,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 17,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.003703390316087,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.657581841606799,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 13.694356554702109,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 12.698050271954793,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "transformer",
+    "length": 48,
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.112017501949754,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 16.898338430252622,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 13.129143951804277,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 42,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.386472584582487,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 42,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.741148596089488,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 42,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 12.032170771572314,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 42,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.370667202504508,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 42,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.314119019932255,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 42,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.365464915721368,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.769062565947905,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 13.620258126963671,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 12.660619122766663,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.353130240423564,
+    "stations": 55,
+    "station_hours": 13182
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 16.885860212397287,
+    "stations": 129,
+    "station_hours": 27168
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 12.915264069186401,
+    "stations": 135,
+    "station_hours": 27396
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 17,
+    "group": "coast_0_100",
+    "macro_rmse_mm": 14.401288087537095,
+    "stations": 83,
+    "station_hours": 68001
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 17,
+    "group": "coast_100_300",
+    "macro_rmse_mm": 14.507407980426782,
+    "stations": 23,
+    "station_hours": 17610
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 17,
+    "group": "coast_300_inf",
+    "macro_rmse_mm": 11.926179611815678,
+    "stations": 29,
+    "station_hours": 23343
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 17,
+    "group": "height_0_500",
+    "macro_rmse_mm": 15.294652698920485,
+    "stations": 55,
+    "station_hours": 44286
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 17,
+    "group": "height_500_1500",
+    "macro_rmse_mm": 13.437341645940846,
+    "stations": 50,
+    "station_hours": 40716
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 17,
+    "group": "height_1500_inf",
+    "macro_rmse_mm": 12.058784094012692,
+    "stations": 30,
+    "station_hours": 23952
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 12.597789554616648,
+    "stations": 39,
+    "station_hours": 17114
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 13.597686102565785,
+    "stations": 113,
+    "station_hours": 54582
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 12.645826746211885,
+    "stations": 87,
+    "station_hours": 24076
+  },
+  {
+    "kind": "transformer",
+    "length": 72,
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 16.118489165322504,
+    "stations": 55,
+    "station_hours": 13182
+  }
+]

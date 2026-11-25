@@ -50,6 +50,9 @@ class Events:
     def __init__(self, data, side=8, max_history=72):
         self.data, self.side, self.max_history = Path(data), side, max_history
         self.contract = json.loads((self.data/'contract.json').read_text(encoding='utf-8'))
+        for name, expected in self.contract['files'].items():
+            if sha(self.data/name) != expected:
+                raise ValueError(f'Data hash mismatch: {name}')
         self.hours = np.load(self.data/'hours.npy')
         self.dev_hours = np.load(self.data/'dev_hours.npy')
         self.values = np.load(self.data/'values.npy', mmap_mode='r')

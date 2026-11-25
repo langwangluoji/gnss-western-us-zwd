@@ -1,0 +1,34 @@
+{
+  "status": "LOCAL_FORECAST_SCREEN_NOT_ANNUAL",
+  "config": {
+    "data": "results\\20261125_temporal_continuous_data",
+    "out": "results\\20261125_temporal_forecast_screen",
+    "steps": 600,
+    "train_events": 384,
+    "histories": [
+      12,
+      48,
+      72
+    ],
+    "seeds": [
+      42,
+      17
+    ],
+    "kinds": [
+      "none",
+      "mlp",
+      "gru",
+      "lstm",
+      "transformer"
+    ]
+  },
+  "code_sha256": "1897e26dc266bf08a299ebcdf616383bd6ab74b061d483cb55b7b470417e9c90",
+  "data_contract_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+  "task": "6-hour forecast at unseen stations; no target history; dynamic inputs <= anchor",
+  "spatial": "8x8 carrier, 16-channel spatial convolution/downsample/skip; exact point IDW persistence skip",
+  "coast": "C1 query static only; C2 edge coast and terrain FiLM not yet activated",
+  "selection": "2016-2018 inner fit, 2019 selection; scratch refit 2016-2019 for chosen updates; frozen 2020 dev",
+  "differences_from_final_plan": "Local small-carrier screen; no diffusion or OOF residual claim; not p14 reproduction",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch_version": "2.8.0+cu129"
+}

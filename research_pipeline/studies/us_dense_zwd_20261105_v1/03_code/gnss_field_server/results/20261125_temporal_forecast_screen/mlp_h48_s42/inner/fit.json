@@ -1,0 +1,47 @@
+{
+  "kind": "mlp",
+  "length": 48,
+  "seed": 42,
+  "steps": 600,
+  "chosen_step": 300,
+  "elapsed_seconds": 5.921999999998661,
+  "parameters": 56620,
+  "trace": [
+    {
+      "step": 1,
+      "loss": 0.039753932505846024,
+      "inner_macro_rmse_mm": 15.116234340572388
+    },
+    {
+      "step": 100,
+      "loss": 0.03384541720151901,
+      "inner_macro_rmse_mm": 15.00531364256708
+    },
+    {
+      "step": 200,
+      "loss": 0.021522440016269684,
+      "inner_macro_rmse_mm": 14.836728499152068
+    },
+    {
+      "step": 300,
+      "loss": 0.026161059737205505,
+      "inner_macro_rmse_mm": 14.461581283623204
+    },
+    {
+      "step": 400,
+      "loss": 0.021803949028253555,
+      "inner_macro_rmse_mm": 14.786330560385128
+    },
+    {
+      "step": 500,
+      "loss": 0.020074129104614258,
+      "inner_macro_rmse_mm": 14.551982555209552
+    },
+    {
+      "step": 600,
+      "loss": 0.024547038599848747,
+      "inner_macro_rmse_mm": 14.46530914260168
+    }
+  ],
+  "monitor": true
+}

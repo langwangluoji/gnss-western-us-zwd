@@ -1,0 +1,21 @@
+{
+  "kind": "mlp",
+  "length": 12,
+  "seed": 42,
+  "chosen_step": 600,
+  "metrics": {
+    "macro_rmse_mm": 14.290958297732642,
+    "micro_rmse_mm": 14.552849769592285,
+    "mae_mm": 10.891585350036621,
+    "bias_mm": 1.594496250152588,
+    "p95_absolute_mm": 30.331432342529297,
+    "station_count": 135,
+    "valid_count": 108954,
+    "increment_macro_rmse_mm": 5.9841928267513795,
+    "horizon_macro_rmse_mm": [
+      12.3760026786494,
+      13.75146397883095,
+      16.114038405501297
+    ]
+  }
+}

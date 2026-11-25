@@ -1,0 +1,11 @@
+{
+  "kind": "gru",
+  "length": 72,
+  "seed": 42,
+  "steps": 600,
+  "chosen_step": 600,
+  "elapsed_seconds": 6.530999999995402,
+  "parameters": 48108,
+  "trace": [],
+  "monitor": false
+}

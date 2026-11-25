@@ -13,6 +13,7 @@
 | [下一阶段计划与审阅](docs/NEXT_STAGE.md) | 统一阅读入口、因果边界、尺度公式、阶段出口和待补项 |
 | [当前研究进展](docs/CURRENT_RESEARCH.md) | 区域、数据角色、最新结果与证据范围 |
 | [实验索引](docs/EXPERIMENT_INDEX.md) | 当前区域实验、状态和报告 |
+| [首轮时空预报实测](research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_temporal_forecast_screen/REPORT.md) | 26配置、GRU/LSTM/因果Transformer与12/48/72h历史对照 |
 | [快速上手](docs/GETTING_STARTED.md) | 新用户或其他 agent 的最短复现路径 |
 | [项目架构](docs/PROJECT_ARCHITECTURE.md) | 研究层、数据层、模型层、评价层和产物边界 |
 | [方法验证规则](docs/METHOD_VALIDATION.md) | 结论等级、数据隔离和验收门槛 |

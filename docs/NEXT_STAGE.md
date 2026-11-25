@@ -2,6 +2,8 @@
 
 2026-11-25。状态：方案整理完成；新时间分支尚未完成实现和训练。本页对下列早期草案中的冲突作出明确修订；旧实验锁和结果不变。
 
+实施更新：连续数据与首轮时间分支本机预报筛查已完成，见[实际结果](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_temporal_forecast_screen/REPORT.md)。26配置已跑完；完整空间编码、168h、多分辨率、折外残差与diffusion尚待后续阶段。
+
 ## 阅读顺序
 
 1. 本页：任务边界、数学修订和启动条件。

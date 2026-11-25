@@ -1,0 +1,21 @@
+{
+  "kind": "none",
+  "length": 12,
+  "seed": 17,
+  "chosen_step": 400,
+  "metrics": {
+    "macro_rmse_mm": 14.201789932975897,
+    "micro_rmse_mm": 14.459850311279297,
+    "mae_mm": 10.822806358337402,
+    "bias_mm": 0.16021820902824402,
+    "p95_absolute_mm": 30.07053565979004,
+    "station_count": 135,
+    "valid_count": 108954,
+    "increment_macro_rmse_mm": 5.975497244399842,
+    "horizon_macro_rmse_mm": [
+      12.49197141604875,
+      13.619595893173681,
+      15.856570488877326
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "kind": "lstm",
+  "length": 72,
+  "seed": 42,
+  "steps": 600,
+  "chosen_step": 600,
+  "elapsed_seconds": 6.5,
+  "parameters": 61676,
+  "trace": [],
+  "monitor": false
+}

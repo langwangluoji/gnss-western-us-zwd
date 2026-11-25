@@ -1,0 +1,47 @@
+{
+  "kind": "none",
+  "length": 12,
+  "seed": 17,
+  "steps": 600,
+  "chosen_step": 400,
+  "elapsed_seconds": 5.328000000001339,
+  "parameters": 8492,
+  "trace": [
+    {
+      "step": 1,
+      "loss": 0.03094257414340973,
+      "inner_macro_rmse_mm": 15.079333165968931
+    },
+    {
+      "step": 100,
+      "loss": 0.027189716696739197,
+      "inner_macro_rmse_mm": 14.694677329608403
+    },
+    {
+      "step": 200,
+      "loss": 0.02537941187620163,
+      "inner_macro_rmse_mm": 14.552980201801951
+    },
+    {
+      "step": 300,
+      "loss": 0.01683857850730419,
+      "inner_macro_rmse_mm": 14.514579612708221
+    },
+    {
+      "step": 400,
+      "loss": 0.014147271402180195,
+      "inner_macro_rmse_mm": 14.26590181674299
+    },
+    {
+      "step": 500,
+      "loss": 0.019416002556681633,
+      "inner_macro_rmse_mm": 14.337489125398486
+    },
+    {
+      "step": 600,
+      "loss": 0.026432618498802185,
+      "inner_macro_rmse_mm": 14.375340426837948
+    }
+  ],
+  "monitor": true
+}

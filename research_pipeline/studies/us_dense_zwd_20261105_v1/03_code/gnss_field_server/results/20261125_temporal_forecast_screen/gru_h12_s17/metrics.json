@@ -1,0 +1,21 @@
+{
+  "kind": "gru",
+  "length": 12,
+  "seed": 17,
+  "chosen_step": 400,
+  "metrics": {
+    "macro_rmse_mm": 14.327138389615508,
+    "micro_rmse_mm": 14.579387664794922,
+    "mae_mm": 10.99789810180664,
+    "bias_mm": 1.0821868181228638,
+    "p95_absolute_mm": 29.915132522583008,
+    "station_count": 135,
+    "valid_count": 108954,
+    "increment_macro_rmse_mm": 5.984209819763289,
+    "horizon_macro_rmse_mm": [
+      12.581165963104283,
+      13.76873132174681,
+      15.99009982837797
+    ]
+  }
+}
