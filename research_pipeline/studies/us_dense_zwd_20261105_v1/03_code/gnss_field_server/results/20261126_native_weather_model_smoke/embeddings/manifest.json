@@ -1,0 +1,13 @@
+{
+  "cache": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_smoke\\s42",
+  "cache_manifest_sha256": "947f1585da23f1e78e275e4173c74d193c8d3192a24d67b72f677f90ef9694d0",
+  "mean_protocol_sha256": "f5bc2d749433b84cafb49db926b3ef89440be9257e6f8ed8568504424badb310",
+  "mean_weights_sha256": "972a116c512b5038ee885d78abb2ff2a818e9cfd4ce461c6136a5fdbc8b61880",
+  "model_kind": "gru",
+  "weights": "ema",
+  "files": {
+    "embedding.npy": "a5a6fbb1fe96fa52292faca665328afea8a45f169f361e24d8833676cddda9e6",
+    "mean.npy": "eab42a4d570160862f5a30aae7737253f237b0b342d76335c39050c4e4272d49"
+  },
+  "complete": true
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "step": 1,
+    "loss": 1.1971925497055054,
+    "seconds": 0.5779999999940628,
+    "current_correction_rms_mm": 0.0,
+    "last_origin_hour": 403380
+  },
+  {
+    "step": 4,
+    "loss": 0.6624218821525574,
+    "seconds": 4.327999999994063,
+    "current_correction_rms_mm": 0.022717375308275223,
+    "last_origin_hour": 403392
+  }
+]

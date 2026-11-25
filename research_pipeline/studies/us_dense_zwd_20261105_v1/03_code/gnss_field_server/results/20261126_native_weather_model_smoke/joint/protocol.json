@@ -1,0 +1,51 @@
+{
+  "config": {
+    "phase": "probability",
+    "cache": "results\\20261126_native_weather_smoke\\s42",
+    "out": "results\\20261126_native_weather_model_smoke\\joint",
+    "kind": "transformer",
+    "length": 72,
+    "no_weather": false,
+    "seed": 42,
+    "steps": 4,
+    "lr": 0.0003,
+    "mean": null,
+    "weights": "ema",
+    "embeddings": "results\\20261126_native_weather_model_smoke\\embeddings",
+    "domain": "joint"
+  },
+  "embedding_manifest_sha256": "9a8120ef60f809203a873148bc7a3febd01e40a72f860a5a631af6c2bf3a046b",
+  "normalization": {
+    "bias_mm": [
+      -0.3116682345668475,
+      -0.6720707309432328,
+      -1.0679890002744894,
+      -1.6121557106574376,
+      -2.1604564118509493,
+      -2.658079554947714,
+      -3.1465552266066275
+    ],
+    "scale_mm": [
+      6.841758196589746,
+      7.8346206395220825,
+      8.613063738093244,
+      8.826480870652283,
+      9.058581526575345,
+      9.326187451941326,
+      9.447968261309002
+    ],
+    "count": [
+      3072.0,
+      3072.0,
+      3072.0,
+      3072.0,
+      3072.0,
+      3072.0,
+      3072.0
+    ],
+    "role": "training_only"
+  },
+  "code_sha256": "f318eb242ea86977524730a3bd6aa0c0df2d29676d1d4d92651210894a0d00f2",
+  "strict_oof": false,
+  "source_exposure": "frozen source fitted all2016-2019; development screen, not strict OOF"
+}

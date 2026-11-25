@@ -1,0 +1,16 @@
+{
+  "files": {
+    "condition.npy": "ffd2ae2401c58d956d9069f0f587b74e8d47b6791112893c14f9705046e736ec",
+    "context_ids.npy": "f442166f410c3728bf176b40b5564feef6c3e8046bc2e7d41eb722a429ca5502",
+    "history.npy": "f5bda6989151f655f567cfb211ee2e8b0b9a3cbe5aeaf7dfbe8957b43fdbd027",
+    "mean.npy": "f3caec7762fc170f217414080a588ada71c6c6fe0222ce9c4bb40a72d0770251",
+    "nearest.npy": "39441da00f0ee90ba2f760a2fee22364317931e71cb4e1bd1d4d36c88c9e426a",
+    "origins.npy": "a710b0dc6e9f68b9205a3828c678bead12d5c62a01983cbef498a0c1fab6c1ef",
+    "query_ids.npy": "2e43cc64d1c7c16afebe4dee2a4598d6517d635eaf8f6e39e23afb83f7cd95db",
+    "truth.npy": "5a4de26dd4c9e49dc2dcfb9cf0fe1470316f697f5afb61204793b0de7a1812dc",
+    "weights.npy": "1c4e67b4b99d3c0a62822bb7e1e05102a8da0ee4c9a14e3d0e0976a4bb61884d"
+  },
+  "protocol_sha256": "2b2f5afe2582e9096e0d915f2b1052c12035eb31249ed72deb330f6beb1f8b5e",
+  "source_exposure": "base source fitted2016-2019; not strict OOF",
+  "complete_blocks": 2
+}
