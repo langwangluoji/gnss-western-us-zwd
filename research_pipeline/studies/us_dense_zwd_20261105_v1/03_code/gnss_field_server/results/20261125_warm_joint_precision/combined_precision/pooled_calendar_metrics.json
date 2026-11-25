@@ -1,0 +1,148 @@
+{
+  "records": [
+    {
+      "case": "reference",
+      "seed": 42,
+      "macro_rmse_mm": 10.493006616440935,
+      "micro_rmse_mm": 10.995142739574396,
+      "mae_mm": 8.003069905496487,
+      "bias_mm": 0.36465169314484935,
+      "increment_macro_rmse_mm": 5.9979225484563425,
+      "valid_count": 654267,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": 0.0
+    },
+    {
+      "case": "I0_current",
+      "seed": 42,
+      "macro_rmse_mm": 10.392010181160154,
+      "micro_rmse_mm": 10.906894765986753,
+      "mae_mm": 7.918865322834995,
+      "bias_mm": 0.3371495380268505,
+      "increment_macro_rmse_mm": 6.172156136958428,
+      "valid_count": 654267,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.10099643528078062
+    },
+    {
+      "case": "I1_history",
+      "seed": 42,
+      "macro_rmse_mm": 10.358828715057259,
+      "micro_rmse_mm": 10.871769472981027,
+      "mae_mm": 7.890761643348515,
+      "bias_mm": 0.2666998958305761,
+      "increment_macro_rmse_mm": 5.984974159462318,
+      "valid_count": 654267,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.13417790138367636
+    },
+    {
+      "case": "I2_seasonal",
+      "seed": 42,
+      "macro_rmse_mm": 10.360953255951676,
+      "micro_rmse_mm": 10.873423322547671,
+      "mae_mm": 7.892937469661245,
+      "bias_mm": 0.2540632759697257,
+      "increment_macro_rmse_mm": 5.98476016706761,
+      "valid_count": 654267,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.13205336048925886
+    },
+    {
+      "case": "reference",
+      "seed": 17,
+      "macro_rmse_mm": 10.390515556487802,
+      "micro_rmse_mm": 10.884045323598768,
+      "mae_mm": 7.925095840400897,
+      "bias_mm": -0.021504186372702794,
+      "increment_macro_rmse_mm": 5.993262819231616,
+      "valid_count": 654267,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": 0.0
+    },
+    {
+      "case": "I0_current",
+      "seed": 17,
+      "macro_rmse_mm": 10.313108785779889,
+      "micro_rmse_mm": 10.818068172654414,
+      "mae_mm": 7.84516833949172,
+      "bias_mm": -0.021614938630745983,
+      "increment_macro_rmse_mm": 6.170597726540326,
+      "valid_count": 654267,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.07740677070791335
+    },
+    {
+      "case": "I1_history",
+      "seed": 17,
+      "macro_rmse_mm": 10.280779437343226,
+      "micro_rmse_mm": 10.784547505963076,
+      "mae_mm": 7.81565427879165,
+      "bias_mm": -0.08305554680584414,
+      "increment_macro_rmse_mm": 5.978449248515115,
+      "valid_count": 654267,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.1097361191445767
+    },
+    {
+      "case": "I2_seasonal",
+      "seed": 17,
+      "macro_rmse_mm": 10.27864249333186,
+      "micro_rmse_mm": 10.78246538755136,
+      "mae_mm": 7.814176660655392,
+      "bias_mm": -0.0952555611612215,
+      "increment_macro_rmse_mm": 5.9778717753506285,
+      "valid_count": 654267,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.11187306315594192
+    }
+  ],
+  "means": [
+    {
+      "case": "reference",
+      "macro_rmse_mm": 10.441761086464368,
+      "increment_macro_rmse_mm": 5.995592683843979,
+      "paired95_mm": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "I0_current",
+      "macro_rmse_mm": 10.35255948347002,
+      "increment_macro_rmse_mm": 6.171376931749377,
+      "paired95_mm": [
+        -0.1283901911593764,
+        -0.05169904554001908
+      ]
+    },
+    {
+      "case": "I1_history",
+      "macro_rmse_mm": 10.319804076200242,
+      "increment_macro_rmse_mm": 5.981711703988717,
+      "paired95_mm": [
+        -0.17453421092559337,
+        -0.07693059016170106
+      ]
+    },
+    {
+      "case": "I2_seasonal",
+      "macro_rmse_mm": 10.319797874641768,
+      "increment_macro_rmse_mm": 5.981315971209119,
+      "paired95_mm": [
+        -0.17458873291583238,
+        -0.07528126011132258
+      ]
+    }
+  ],
+  "grouping": "24 separate72h blocks; resample the two calendars jointly by month; no cross-gap increments",
+  "no_new_fitting": true
+}

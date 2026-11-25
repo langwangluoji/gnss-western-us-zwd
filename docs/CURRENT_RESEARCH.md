@@ -2,21 +2,21 @@
 
 **最新主评价：历史观测创新校正达到9.817064 mm。** 原GRU+p14为9.929151 mm；I1_history两种子9.867690/9.766438 mm，平均改善0.112086 mm，共同月份95%区间[−0.193456,−0.042281] mm；小时增量平均5.577307 mm，原参考5.583871 mm。I0仅当前创新会增加小时增量误差；I2年度交互相对I1的额外收益区间跨零，因此冻结9维I1作为补充验证的主候选。详见[设计、架构与训练记录](superpowers/plans/2026-11-25-observed-innovation-refinement.md)及[统一配对报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/REPORT.md)。I系列是3000个连续训练块的解析拟合，不是新增Transformer或diffusion训练；原14条神经训练轨迹各3000更新也已完成。
 
-主候选和六个系数哈希已在读取新增日期前锁定，正在以相同源权重评价2020每月15–17日。主队列夏季基本持平，海岸150–300 km档增加约0.104 mm，作为下一轮地形/海岸约束创新传播的重点；新diffusion尚未在此基础场上重训。
+主候选和六个系数哈希已在读取新增日期前锁定。冻结模型在2020每月15–17日由10.869282改善至10.740343 mm，两种子均改善，增量6.355685→6.334460 mm；合并72个抽样日后为10.441761→10.319804 mm，仍非完整年度。完整成果、六类误差、逐站地图与下一步见[结果和编码方案](research_notes/2026-11-25-precision-final.md)。主日历海岸150–300 km档增加0.104 mm，补充日历同档改善0.110 mm，后续需关注天气过程与地形的联合影响；新diffusion尚未在此基础场上重训。
 
 训练分布瓶颈已实测：[距离重平衡D对照](superpowers/specs/2026-11-25-distance-balanced-precision.md)。重放双种子各3000个连续块，随机训练目标59.4%距当前条件站<50 km，25%hole100仍58.7%；137个开发坐标×3布局的纯几何比例为16.3%。D双种子已完成，EMA平均9.916258 mm，相对同架构S平均改善0.008096 mm；相对原参考的seed17方向略增，未替换原参考。固定训练窗口容量探针14.007→11.235 mm说明新分支能够拟合残差，该探针不作开发精度排名。
 
 精度衔接实测：[既有约10 mm基础场上的继续优化](research_notes/2026-11-25-precision-continuation.md)。T2/T5、Q、S、A、D全部双种子3000步完成。新增神经分支未形成对原参考的双种子一致提升；当前推进上述I1历史观测创新候选。修正幅度和误差分层图已归档；原确认集及C/D标签保持隔离。
 
-精度优先级更新：[在既有约10mm基础场上的3000步正式衔接](superpowers/plans/2026-11-25-warm-joint-precision.md)。用户要求新结构必须建立在旧精度之上。已将最佳GRU+p14参考、原归一化与8×8历史完整接回新16×16Transformer；seed42复现9.99836mm，保存预测最大差7.63e-6mm。冻结参考T2、冻结参考T5、低学习率联合T5的双种子3000步队列正在训练，尚不声明新精度收益。
+精度优先级更新：[在既有约10mm基础场上的3000步正式衔接](superpowers/plans/2026-11-25-warm-joint-precision.md)。最佳GRU+p14参考、原归一化与8×8历史完整接回新16×16Transformer；seed42复现9.99836mm，保存预测最大差7.63e-6mm。冻结参考T2/T5与低学习率联合T5双种子3000步均已完成，未形成稳定晋级收益；后续I1结果见上。
 
-代码与实测：[时空融合与谱残差实验全流程及12张架构图](research_notes/2026-11-25-joint-spectral-implementation.md)。修正版T0–T5各60步、五折T5各60步、表示100步、九组概率及Gaussian各100步、四组v及Gaussian各100步已完成；[报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_joint_spectral_pilot_v2/REPORT.md)。规则256锚点自重构6.85/8.61mm，几何适应256诊断降至0.61/0.68mm，物理组留出仍20.21mm。A0同100步epsilon/v为344.63/33.13mm，支持先解决表示及高噪声端数值问题。该进展更新下列“尚未实现”设计状态，尚无新架构3000步双种子正式精度结论。
+代码与实测：[时空融合与谱残差实验全流程及12张架构图](research_notes/2026-11-25-joint-spectral-implementation.md)。修正版T0–T5各60步、五折T5各60步、表示100步、九组概率及Gaussian各100步、四组v及Gaussian各100步已完成；[报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_joint_spectral_pilot_v2/REPORT.md)。规则256锚点自重构6.85/8.61mm，几何适应256诊断降至0.61/0.68mm，物理组留出仍20.21mm。A0同100步epsilon/v为344.63/33.13mm，支持先解决表示及高噪声端数值问题。该进展更新下列“尚未实现”设计状态；随后基础场T2/T5、Q/S/A/D已完成双种子3000更新，概率分支仍为工程短训。
 
 频域探索：[Transformer与时空频域残差扩散可行性](research_notes/2026-11-25-spectral-diffusion-feasibility.md)。已归档时域/频域、空域/图谱及双频域架构、风险与分阶段对照；本机用已有p14开发残差完成1384个72小时站点窗的谱诊断和不规则Fourier/GFT代数核验。该结果不代表新频域网络训练收益。
 
 方法依据：[已有时序扩散与本项目的对照](research_notes/2026-11-25-temporal-diffusion-comparison.md)。核对TimeGrad、CSDI、TMDM、CorrDiff、GenCast等8项工作，明确当前固定AR创新方案与条件动态的差别；动态转移和条件尺度属于新增待验证消融。
 
-当前设计：[掩码Transformer时空融合与标准化残差场](superpowers/specs/2026-11-25-masked-transformer-fusion-residual-design.md)。保留p14与海岸/地形分支，以72小时、16×16因果时间状态接入两级残差空间解码器；基础场冻结后，构建折外残差与标准化创新扩散。架构流程图已导出PNG/SVG，新网络尚未训练。
+当前设计：[掩码Transformer时空融合与标准化残差场](superpowers/specs/2026-11-25-masked-transformer-fusion-residual-design.md)。保留p14与海岸/地形分支，以72小时、16×16因果时间状态接入两级残差空间解码器；基础场冻结后，构建折外残差与标准化创新扩散。架构流程图已导出PNG/SVG；随后T2/T5双种子3000更新已完成，见页首统一结果。
 
 下一步：[p14时空融合优化与残差扩散实验计划](superpowers/plans/2026-11-25-p14-fusion-next-stage.md)。以现有同条件实测为起点，先完成双种子，再分开检验训练策略、残差解码融合及长历史；固定基础场后比较高斯与diffusion。该增补是待执行计划，当前结果不代表新增架构或扩散已经训练。
 

@@ -1,0 +1,42 @@
+{
+  "overall_macro_identity_difference_mm": 1.1102230246251565e-16,
+  "station_count": 135,
+  "coastline_sha256": "271f1c4c1908312bac6b29d158ea1356544beafc129f260005300913aa5ea283",
+  "worst_stations": [
+    {
+      "station": "PLTX",
+      "longitude": -115.43089291574277,
+      "latitude": 31.816339243451544,
+      "I1_rmse_mm": 17.91086864624751,
+      "change_mm": -0.37793824636285933
+    },
+    {
+      "station": "P475",
+      "longitude": -117.2439341492425,
+      "latitude": 32.6663950182791,
+      "I1_rmse_mm": 17.424449467496125,
+      "change_mm": -0.5282047495490438
+    },
+    {
+      "station": "PTEX",
+      "longitude": -116.5212347979733,
+      "latitude": 32.2884518516126,
+      "I1_rmse_mm": 17.11051127245118,
+      "change_mm": -0.4431157744781089
+    },
+    {
+      "station": "P049",
+      "longitude": -110.90623240685022,
+      "latitude": 47.3499645224169,
+      "I1_rmse_mm": 16.267281945128065,
+      "change_mm": 0.13438764328833486
+    },
+    {
+      "station": "P786",
+      "longitude": -123.98078992373948,
+      "latitude": 41.84548454485695,
+      "I1_rmse_mm": 15.969450111912098,
+      "change_mm": -0.14474222627391775
+    }
+  ]
+}

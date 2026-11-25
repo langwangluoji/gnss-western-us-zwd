@@ -5,17 +5,18 @@
     "seconds": 342.33,
     "configured_testpaths": [
       "tests"
-    ]
+    ],
+    "note": "Retained verified run from completed campaign; final changes affect reports and verification only."
   },
   "research_suite": {
     "command": "python -m pytest tools/terrain_diffusion -q",
-    "passed": 71,
-    "seconds": 16.41
+    "passed": 74,
+    "seconds": 10.74
   },
   "matched_analysis_suite": {
     "command": "python -m pytest maintenance/joint_spectral_implementation_20261125/test_precision_analysis.py -q",
-    "passed": 3,
-    "seconds": 3.45
+    "passed": 5,
+    "seconds": 3.22
   },
   "model_sources": {
     "station_query.py": "c883e295d21fe9fd998bbe8363aff610c451a3aacd1c38e66eab4392abe71822",
@@ -23,5 +24,6 @@
     "station_weighting.py": "be112458ae29ca698974f5769958ce2a6a42b395da9943207d196f96e881590c"
   },
   "real_anomaly_initial_prediction_max_difference_mm": 7.62939453125e-06,
-  "confirmation_C_D_training_or_scoring": false
+  "confirmation_C_D_training_or_scoring": false,
+  "final_suite_refresh_date": "2026-11-26"
 }

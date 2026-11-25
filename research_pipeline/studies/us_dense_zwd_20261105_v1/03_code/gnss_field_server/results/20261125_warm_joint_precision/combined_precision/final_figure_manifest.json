@@ -1,0 +1,11 @@
+{
+  "script_sha256": "cff81c366cce1e2942c27d9507bd6a03bdebf9a04eb600aba1812b68e2e30839",
+  "primary_comparison_sha256": "65f68add142e0329893b0a5204ca77fb438c70304be1776e0c258c6eef178907",
+  "additional_results_sha256": "8cdda85a4c4fe699d818e7bd7fecbf6a6826121af09d282d9509b8b0d256a9ac",
+  "figures": {
+    "selected_regional_analysis.png": "dd2325405d07d0d98e6f944bbb079e2b1260b495749c2cb05fc1921a2c8baebc",
+    "selected_station_map.png": "03f7e9c5597377ee681a5e049ce5454923c15ccdb624f2033e999cf4b27d63ad"
+  },
+  "report_sha256": "ce9c189afbdb8823b94eb92b32585f7997a5de0d83c4c4dfeda82ea8896a07a0",
+  "station_csv_sha256": "6bb5e236fb5e87efee33d03e6e636af5bd875ad1d12091f65c8bbfddb0dfb824"
+}

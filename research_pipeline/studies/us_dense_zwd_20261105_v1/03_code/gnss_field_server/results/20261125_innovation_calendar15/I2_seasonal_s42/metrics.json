@@ -1,0 +1,14 @@
+{
+  "case": "I2_seasonal",
+  "seed": 42,
+  "macro_rmse_mm": 10.775789794484059,
+  "micro_rmse_mm": 11.327633557079231,
+  "mae_mm": 8.18614397790037,
+  "bias_mm": 0.2541385665601331,
+  "increment_macro_rmse_mm": 6.338848562004062,
+  "valid_count": 326937,
+  "effective_stations": 135,
+  "negative_prediction_fraction": 0.0,
+  "delta_macro_rmse_mm": -0.1284917775712433,
+  "delta_increment_macro_rmse_mm": -0.020753483883999557
+}

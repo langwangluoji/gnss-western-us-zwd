@@ -1,0 +1,183 @@
+{
+  "records": [
+    {
+      "case": "reference",
+      "seed": 42,
+      "macro_rmse_mm": 10.904281572055302,
+      "micro_rmse_mm": 11.444488125943856,
+      "mae_mm": 8.298581935207158,
+      "bias_mm": 0.451312904976959,
+      "increment_macro_rmse_mm": 6.359602045888062,
+      "valid_count": 326937,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": 0.0,
+      "delta_increment_macro_rmse_mm": 0.0
+    },
+    {
+      "case": "I0_current",
+      "seed": 42,
+      "macro_rmse_mm": 10.803222276457872,
+      "micro_rmse_mm": 11.360993259795466,
+      "mae_mm": 8.210458441661547,
+      "bias_mm": 0.33905212504071475,
+      "increment_macro_rmse_mm": 6.542777756556836,
+      "valid_count": 326937,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.10105929559743032,
+      "delta_increment_macro_rmse_mm": 0.18317571066877392
+    },
+    {
+      "case": "I1_history",
+      "seed": 42,
+      "macro_rmse_mm": 10.769970245978653,
+      "micro_rmse_mm": 11.323093910928026,
+      "mae_mm": 8.180544365967723,
+      "bias_mm": 0.27556971785404416,
+      "increment_macro_rmse_mm": 6.338458086242986,
+      "valid_count": 326937,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.13431132607664864,
+      "delta_increment_macro_rmse_mm": -0.02114395964507576
+    },
+    {
+      "case": "I2_seasonal",
+      "seed": 42,
+      "macro_rmse_mm": 10.775789794484059,
+      "micro_rmse_mm": 11.327633557079231,
+      "mae_mm": 8.18614397790037,
+      "bias_mm": 0.2541385665601331,
+      "increment_macro_rmse_mm": 6.338848562004062,
+      "valid_count": 326937,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.1284917775712433,
+      "delta_increment_macro_rmse_mm": -0.020753483883999557
+    },
+    {
+      "case": "reference",
+      "seed": 17,
+      "macro_rmse_mm": 10.834281523757925,
+      "micro_rmse_mm": 11.366972301803516,
+      "mae_mm": 8.240692339144788,
+      "bias_mm": -0.013080192978692763,
+      "increment_macro_rmse_mm": 6.3517679519106895,
+      "valid_count": 326937,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": 0.0,
+      "delta_increment_macro_rmse_mm": 0.0
+    },
+    {
+      "case": "I0_current",
+      "seed": 17,
+      "macro_rmse_mm": 10.746990104241242,
+      "micro_rmse_mm": 11.29769009174447,
+      "mae_mm": 8.151643649781397,
+      "bias_mm": -0.01946690948765132,
+      "increment_macro_rmse_mm": 6.539155941945093,
+      "valid_count": 326937,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.08729141951668318,
+      "delta_increment_macro_rmse_mm": 0.1873879900344031
+    },
+    {
+      "case": "I1_history",
+      "seed": 17,
+      "macro_rmse_mm": 10.710716473058486,
+      "micro_rmse_mm": 11.258488174051905,
+      "mae_mm": 8.11605661774301,
+      "bias_mm": -0.08301322702429356,
+      "increment_macro_rmse_mm": 6.330460947107287,
+      "valid_count": 326937,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.12356505069943857,
+      "delta_increment_macro_rmse_mm": -0.021307004803402307
+    },
+    {
+      "case": "I2_seasonal",
+      "seed": 17,
+      "macro_rmse_mm": 10.710100514380278,
+      "micro_rmse_mm": 11.25681813506458,
+      "mae_mm": 8.116235504740095,
+      "bias_mm": -0.0869588804694322,
+      "increment_macro_rmse_mm": 6.330804907700751,
+      "valid_count": 326937,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.1241810093776472,
+      "delta_increment_macro_rmse_mm": -0.020963044209938886
+    }
+  ],
+  "means": [
+    {
+      "case": "reference",
+      "macro_rmse_mm": 10.869281547906613,
+      "micro_rmse_mm": 11.405730213873685,
+      "mae_mm": 8.269637137175973,
+      "increment_macro_rmse_mm": 6.355684998899376,
+      "delta_macro_rmse_mm": 0.0,
+      "paired95_mm": [
+        0.0,
+        0.0
+      ],
+      "improves_both_seeds": false,
+      "max_seed_increment_change_mm": 0.0
+    },
+    {
+      "case": "I0_current",
+      "macro_rmse_mm": 10.775106190349558,
+      "micro_rmse_mm": 11.329341675769967,
+      "mae_mm": 8.181051045721471,
+      "increment_macro_rmse_mm": 6.540966849250964,
+      "delta_macro_rmse_mm": -0.09417535755705675,
+      "paired95_mm": [
+        -0.1643469619030766,
+        -0.03340175990608398
+      ],
+      "improves_both_seeds": true,
+      "max_seed_increment_change_mm": 0.1873879900344031
+    },
+    {
+      "case": "I1_history",
+      "macro_rmse_mm": 10.740343359518569,
+      "micro_rmse_mm": 11.290791042489966,
+      "mae_mm": 8.148300491855366,
+      "increment_macro_rmse_mm": 6.334459516675137,
+      "delta_macro_rmse_mm": -0.1289381883880436,
+      "paired95_mm": [
+        -0.2254850226900013,
+        -0.05435255268448858
+      ],
+      "improves_both_seeds": true,
+      "max_seed_increment_change_mm": -0.02114395964507576
+    },
+    {
+      "case": "I2_seasonal",
+      "macro_rmse_mm": 10.742945154432167,
+      "micro_rmse_mm": 11.292225846071906,
+      "mae_mm": 8.151189741320232,
+      "increment_macro_rmse_mm": 6.334826734852406,
+      "delta_macro_rmse_mm": -0.12633639347444525,
+      "paired95_mm": [
+        -0.2190100907836665,
+        -0.049899743684217956
+      ],
+      "improves_both_seeds": true,
+      "max_seed_increment_change_mm": -0.020753483883999557
+    }
+  ],
+  "coefficient_sha256": {
+    "I0_current_s42": "d4aa2474f660de30f7ca81c032e4f651edec120c17a1d2150deddd63efbf4a3f",
+    "I1_history_s42": "91afccab384f5909db2f2b53fc5046783f85c2c05313aa1b8229c084d28682fe",
+    "I2_seasonal_s42": "0570eba8eaddc83cdb21864e9424ebe72c2577cc49881e8b1c556b4fbcae5063",
+    "I0_current_s17": "fe54ba8c32fbd6e1b9cc49b87a0a2dc2698d49203d14fc50bf897728ded920bd",
+    "I1_history_s17": "5cfa1d6d1f8f003976169d9fa96d94a0968c5eff285eb4e929d0347ce06054e3",
+    "I2_seasonal_s17": "65906d2723f321c056ffe9011dfe9cab9443267e1108a9c34c8d34139a003a99"
+  },
+  "no_fitting": true
+}

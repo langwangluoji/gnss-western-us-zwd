@@ -1,0 +1,14 @@
+{
+  "case": "I0_current",
+  "seed": 17,
+  "macro_rmse_mm": 10.746990104241242,
+  "micro_rmse_mm": 11.29769009174447,
+  "mae_mm": 8.151643649781397,
+  "bias_mm": -0.01946690948765132,
+  "increment_macro_rmse_mm": 6.539155941945093,
+  "valid_count": 326937,
+  "effective_stations": 135,
+  "negative_prediction_fraction": 0.0,
+  "delta_macro_rmse_mm": -0.08729141951668318,
+  "delta_increment_macro_rmse_mm": 0.1873879900344031
+}

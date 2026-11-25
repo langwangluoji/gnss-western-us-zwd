@@ -1,0 +1,1482 @@
+{
+  "reference_s42": {
+    "nearest_current_condition_km": [
+      {
+        "lower": 0,
+        "upper": 50,
+        "count": 51917,
+        "macro_rmse_mm": 8.42890950035706,
+        "micro_rmse_mm": 8.873068725503177,
+        "mae_mm": 6.556138607594004,
+        "bias_mm": -0.03083128819565841
+      },
+      {
+        "lower": 50,
+        "upper": 100,
+        "count": 163475,
+        "macro_rmse_mm": 9.999426307619366,
+        "micro_rmse_mm": 10.240160072046475,
+        "mae_mm": 7.5704949585312935,
+        "bias_mm": -0.16542060234492334
+      },
+      {
+        "lower": 100,
+        "upper": 200,
+        "count": 98245,
+        "macro_rmse_mm": 16.27958505611669,
+        "micro_rmse_mm": 13.621099410826158,
+        "mae_mm": 9.94617120233454,
+        "bias_mm": 1.3664721899629821
+      },
+      {
+        "lower": 200,
+        "upper": null,
+        "count": 13300,
+        "macro_rmse_mm": 15.571726670424855,
+        "micro_rmse_mm": 15.902786726660866,
+        "mae_mm": 11.878960973015404,
+        "bias_mm": 3.1537314187315175
+      }
+    ],
+    "height_m": [
+      {
+        "lower": -1000,
+        "upper": 500,
+        "count": 132687,
+        "macro_rmse_mm": 11.919433863259572,
+        "micro_rmse_mm": 12.380107229686555,
+        "mae_mm": 9.02750441456414,
+        "bias_mm": 0.5192609446505873
+      },
+      {
+        "lower": 500,
+        "upper": 1500,
+        "count": 122070,
+        "macro_rmse_mm": 10.6925846228848,
+        "micro_rmse_mm": 11.052285120187916,
+        "mae_mm": 8.11249058701106,
+        "bias_mm": 0.7945554598315084
+      },
+      {
+        "lower": 1500,
+        "upper": null,
+        "count": 72180,
+        "macro_rmse_mm": 9.39599728679832,
+        "micro_rmse_mm": 10.24312253154229,
+        "mae_mm": 7.273334413121516,
+        "bias_mm": -0.2540824983379424
+      }
+    ],
+    "terrain_roughness_m": [
+      {
+        "lower": 0,
+        "upper": 100,
+        "count": 5115,
+        "macro_rmse_mm": 10.690666415277363,
+        "micro_rmse_mm": 10.855040828234955,
+        "mae_mm": 7.924090385250565,
+        "bias_mm": 2.2031218453236687
+      },
+      {
+        "lower": 100,
+        "upper": 300,
+        "count": 200103,
+        "macro_rmse_mm": 10.21506772835272,
+        "micro_rmse_mm": 10.602550241096589,
+        "mae_mm": 7.783857414988297,
+        "bias_mm": -0.02939908914223895
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "count": 121719,
+        "macro_rmse_mm": 12.020806385725262,
+        "micro_rmse_mm": 12.729671249424692,
+        "mae_mm": 9.160513473811509,
+        "bias_mm": 1.1679751305075698
+      }
+    ],
+    "coast_km": [
+      {
+        "lower": 0,
+        "upper": 50,
+        "count": 76446,
+        "macro_rmse_mm": 12.583960194499067,
+        "micro_rmse_mm": 13.02660056158202,
+        "mae_mm": 9.388549161325976,
+        "bias_mm": 1.241989836801219
+      },
+      {
+        "lower": 50,
+        "upper": 150,
+        "count": 145017,
+        "macro_rmse_mm": 10.583162994897808,
+        "micro_rmse_mm": 10.84887070504661,
+        "mae_mm": 8.012216732561614,
+        "bias_mm": 0.09111080698608999
+      },
+      {
+        "lower": 150,
+        "upper": 300,
+        "count": 35307,
+        "macro_rmse_mm": 11.317942679751468,
+        "micro_rmse_mm": 12.018082428948404,
+        "mae_mm": 8.911111832421344,
+        "bias_mm": 0.06709205082253132
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "count": 70167,
+        "macro_rmse_mm": 9.559183665788085,
+        "micro_rmse_mm": 10.46263345656612,
+        "mae_mm": 7.394703971823068,
+        "bias_mm": 0.5276596863946459
+      }
+    ],
+    "no_current_condition_count": 0,
+    "seasons": {
+      "winter": {
+        "macro_rmse_mm": 8.655622828902102,
+        "micro_rmse_mm": 8.965592916821643,
+        "count": 82104
+      },
+      "spring": {
+        "macro_rmse_mm": 10.004459348587856,
+        "micro_rmse_mm": 10.284697376939576,
+        "count": 82551
+      },
+      "summer": {
+        "macro_rmse_mm": 13.129532332055353,
+        "micro_rmse_mm": 13.83577479979489,
+        "count": 81228
+      },
+      "autumn": {
+        "macro_rmse_mm": 11.145473051777422,
+        "micro_rmse_mm": 12.137166194894943,
+        "count": 81054
+      }
+    },
+    "station_pairs": [
+      {
+        "distance_km": [
+          0,
+          50
+        ],
+        "count": 1578963,
+        "micro_rmse_mm": 7.800903739573824
+      },
+      {
+        "distance_km": [
+          50,
+          150
+        ],
+        "count": 1136412,
+        "micro_rmse_mm": 13.677368529902193
+      },
+      {
+        "distance_km": [
+          150,
+          300
+        ],
+        "count": 2080074,
+        "micro_rmse_mm": 14.93918729386111
+      }
+    ]
+  },
+  "I0_current_s42": {
+    "nearest_current_condition_km": [
+      {
+        "lower": 0,
+        "upper": 50,
+        "count": 51917,
+        "macro_rmse_mm": 8.124378405877943,
+        "micro_rmse_mm": 8.606278639669767,
+        "mae_mm": 6.301952594568832,
+        "bias_mm": -0.154964618709313
+      },
+      {
+        "lower": 50,
+        "upper": 100,
+        "count": 163475,
+        "macro_rmse_mm": 9.898655653168802,
+        "micro_rmse_mm": 10.175283567397102,
+        "mae_mm": 7.495652360250177,
+        "bias_mm": -0.3735816542501387
+      },
+      {
+        "lower": 100,
+        "upper": 200,
+        "count": 98245,
+        "macro_rmse_mm": 16.13673560610716,
+        "micro_rmse_mm": 13.532615385803783,
+        "mae_mm": 9.893324569776967,
+        "bias_mm": 1.3470992961247292
+      },
+      {
+        "lower": 200,
+        "upper": null,
+        "count": 13300,
+        "macro_rmse_mm": 15.517597602763674,
+        "micro_rmse_mm": 16.072423534868257,
+        "mae_mm": 12.015243363882366,
+        "bias_mm": 3.5804115259199216
+      }
+    ],
+    "height_m": [
+      {
+        "lower": -1000,
+        "upper": 500,
+        "count": 132687,
+        "macro_rmse_mm": 11.817720869721446,
+        "micro_rmse_mm": 12.282452144943726,
+        "mae_mm": 8.935318970901788,
+        "bias_mm": 0.2813006221901735
+      },
+      {
+        "lower": 500,
+        "upper": 1500,
+        "count": 122070,
+        "macro_rmse_mm": 10.66741487929686,
+        "micro_rmse_mm": 11.039365890508643,
+        "mae_mm": 8.083952481301164,
+        "bias_mm": 0.5136132951625356
+      },
+      {
+        "lower": 1500,
+        "upper": null,
+        "count": 72180,
+        "macro_rmse_mm": 9.169653850743007,
+        "micro_rmse_mm": 10.060161484159801,
+        "mae_mm": 7.091907784109484,
+        "bias_mm": 0.1499996398919076
+      }
+    ],
+    "terrain_roughness_m": [
+      {
+        "lower": 0,
+        "upper": 100,
+        "count": 5115,
+        "macro_rmse_mm": 10.281243916257722,
+        "micro_rmse_mm": 10.492192440146383,
+        "mae_mm": 7.586882325561166,
+        "bias_mm": 2.3288280214848522
+      },
+      {
+        "lower": 100,
+        "upper": 300,
+        "count": 200103,
+        "macro_rmse_mm": 10.153347488679906,
+        "micro_rmse_mm": 10.540703103308546,
+        "mae_mm": 7.70520574449501,
+        "bias_mm": -0.3105564539155733
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "count": 121719,
+        "macro_rmse_mm": 11.868588733677354,
+        "micro_rmse_mm": 12.625579506555514,
+        "mae_mm": 9.067285825183998,
+        "bias_mm": 1.323376033095976
+      }
+    ],
+    "coast_km": [
+      {
+        "lower": 0,
+        "upper": 50,
+        "count": 76446,
+        "macro_rmse_mm": 12.451050830281746,
+        "micro_rmse_mm": 12.922063356588819,
+        "mae_mm": 9.29273013863637,
+        "bias_mm": 1.2298831874140421
+      },
+      {
+        "lower": 50,
+        "upper": 150,
+        "count": 145017,
+        "macro_rmse_mm": 10.49276420504903,
+        "micro_rmse_mm": 10.756715656426362,
+        "mae_mm": 7.9227966344480585,
+        "bias_mm": -0.46086700671030717
+      },
+      {
+        "lower": 150,
+        "upper": 300,
+        "count": 35307,
+        "macro_rmse_mm": 11.222342975125212,
+        "micro_rmse_mm": 11.857453403821564,
+        "mae_mm": 8.80355639441091,
+        "bias_mm": 0.05022432536226933
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "count": 70167,
+        "macro_rmse_mm": 9.46729085011237,
+        "micro_rmse_mm": 10.468746096989108,
+        "mae_mm": 7.327422266992821,
+        "bias_mm": 1.1670630768869306
+      }
+    ],
+    "no_current_condition_count": 0,
+    "seasons": {
+      "winter": {
+        "macro_rmse_mm": 8.561745381402691,
+        "micro_rmse_mm": 8.889673045677316,
+        "count": 82104
+      },
+      "spring": {
+        "macro_rmse_mm": 10.01279622284515,
+        "micro_rmse_mm": 10.301304843064974,
+        "count": 82551
+      },
+      "summer": {
+        "macro_rmse_mm": 12.977810858268763,
+        "micro_rmse_mm": 13.721175709765358,
+        "count": 81228
+      },
+      "autumn": {
+        "macro_rmse_mm": 10.990018183821798,
+        "micro_rmse_mm": 11.992499053364542,
+        "count": 81054
+      }
+    },
+    "station_pairs": [
+      {
+        "distance_km": [
+          0,
+          50
+        ],
+        "count": 1578963,
+        "micro_rmse_mm": 7.793797941420962
+      },
+      {
+        "distance_km": [
+          50,
+          150
+        ],
+        "count": 1136412,
+        "micro_rmse_mm": 13.695538527682888
+      },
+      {
+        "distance_km": [
+          150,
+          300
+        ],
+        "count": 2080074,
+        "micro_rmse_mm": 14.86332595836645
+      }
+    ]
+  },
+  "I1_history_s42": {
+    "nearest_current_condition_km": [
+      {
+        "lower": 0,
+        "upper": 50,
+        "count": 51917,
+        "macro_rmse_mm": 8.101107597143493,
+        "micro_rmse_mm": 8.584203755079573,
+        "mae_mm": 6.275009787605965,
+        "bias_mm": -0.20218125847612697
+      },
+      {
+        "lower": 50,
+        "upper": 100,
+        "count": 163475,
+        "macro_rmse_mm": 9.825940883416147,
+        "micro_rmse_mm": 10.1554749202989,
+        "mae_mm": 7.472906563277091,
+        "bias_mm": -0.4436494940965069
+      },
+      {
+        "lower": 100,
+        "upper": 200,
+        "count": 98245,
+        "macro_rmse_mm": 15.748031391674164,
+        "micro_rmse_mm": 13.47601565602294,
+        "mae_mm": 9.855770322642403,
+        "bias_mm": 1.2905402163020394
+      },
+      {
+        "lower": 200,
+        "upper": null,
+        "count": 13300,
+        "macro_rmse_mm": 15.548400687850123,
+        "micro_rmse_mm": 15.965996745494065,
+        "mae_mm": 11.942059733347785,
+        "bias_mm": 3.4832374991868673
+      }
+    ],
+    "height_m": [
+      {
+        "lower": -1000,
+        "upper": 500,
+        "count": 132687,
+        "macro_rmse_mm": 11.786487266211827,
+        "micro_rmse_mm": 12.249272942786341,
+        "mae_mm": 8.910098068578677,
+        "bias_mm": 0.21314897036054162
+      },
+      {
+        "lower": 500,
+        "upper": 1500,
+        "count": 122070,
+        "macro_rmse_mm": 10.645129863632725,
+        "micro_rmse_mm": 11.00504054406162,
+        "mae_mm": 8.055586912661871,
+        "bias_mm": 0.406435139247394
+      },
+      {
+        "lower": 1500,
+        "upper": null,
+        "count": 72180,
+        "macro_rmse_mm": 9.114423012794381,
+        "micro_rmse_mm": 10.004436867631,
+        "mae_mm": 7.050747527324136,
+        "bias_mm": 0.16899836475324287
+      }
+    ],
+    "terrain_roughness_m": [
+      {
+        "lower": 0,
+        "upper": 100,
+        "count": 5115,
+        "macro_rmse_mm": 10.243416476748132,
+        "micro_rmse_mm": 10.46473728862339,
+        "mae_mm": 7.539334537882725,
+        "bias_mm": 2.2737874434723766
+      },
+      {
+        "lower": 100,
+        "upper": 300,
+        "count": 200103,
+        "macro_rmse_mm": 10.136559126996907,
+        "micro_rmse_mm": 10.516994743112148,
+        "mae_mm": 7.68308260469267,
+        "bias_mm": -0.4036324591201601
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "count": 121719,
+        "macro_rmse_mm": 11.809045134115207,
+        "micro_rmse_mm": 12.567457801808509,
+        "mae_mm": 9.025304667047068,
+        "bias_mm": 1.3081900117484355
+      }
+    ],
+    "coast_km": [
+      {
+        "lower": 0,
+        "upper": 50,
+        "count": 76446,
+        "macro_rmse_mm": 12.40453455445343,
+        "micro_rmse_mm": 12.87467881090076,
+        "mae_mm": 9.253083498484235,
+        "bias_mm": 1.2146547432238717
+      },
+      {
+        "lower": 50,
+        "upper": 150,
+        "count": 145017,
+        "macro_rmse_mm": 10.491251953781777,
+        "micro_rmse_mm": 10.745340995188489,
+        "mae_mm": 7.909838711892281,
+        "bias_mm": -0.6001136446327632
+      },
+      {
+        "lower": 150,
+        "upper": 300,
+        "count": 35307,
+        "macro_rmse_mm": 11.166271445814829,
+        "micro_rmse_mm": 11.808153550538561,
+        "mae_mm": 8.779220535365727,
+        "bias_mm": 0.022059054964478117
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "count": 70167,
+        "macro_rmse_mm": 9.394352520859746,
+        "micro_rmse_mm": 10.392939715935736,
+        "mae_mm": 7.270260839520333,
+        "bias_mm": 1.1898225903292734
+      }
+    ],
+    "no_current_condition_count": 0,
+    "seasons": {
+      "winter": {
+        "macro_rmse_mm": 8.518993433794632,
+        "micro_rmse_mm": 8.84887347281674,
+        "count": 82104
+      },
+      "spring": {
+        "macro_rmse_mm": 9.969165532672367,
+        "micro_rmse_mm": 10.256196514887456,
+        "count": 82551
+      },
+      "summer": {
+        "macro_rmse_mm": 12.973083612979115,
+        "micro_rmse_mm": 13.702338746816215,
+        "count": 81228
+      },
+      "autumn": {
+        "macro_rmse_mm": 10.932930784535069,
+        "micro_rmse_mm": 11.939327899793561,
+        "count": 81054
+      }
+    },
+    "station_pairs": [
+      {
+        "distance_km": [
+          0,
+          50
+        ],
+        "count": 1578963,
+        "micro_rmse_mm": 7.798331053471769
+      },
+      {
+        "distance_km": [
+          50,
+          150
+        ],
+        "count": 1136412,
+        "micro_rmse_mm": 13.662778460747083
+      },
+      {
+        "distance_km": [
+          150,
+          300
+        ],
+        "count": 2080074,
+        "micro_rmse_mm": 14.814109598482881
+      }
+    ]
+  },
+  "I2_seasonal_s42": {
+    "nearest_current_condition_km": [
+      {
+        "lower": 0,
+        "upper": 50,
+        "count": 51917,
+        "macro_rmse_mm": 8.107888798354901,
+        "micro_rmse_mm": 8.591232586493087,
+        "mae_mm": 6.2807689542351754,
+        "bias_mm": -0.22914642136552096
+      },
+      {
+        "lower": 50,
+        "upper": 100,
+        "count": 163475,
+        "macro_rmse_mm": 9.829737037263618,
+        "micro_rmse_mm": 10.164290691215971,
+        "mae_mm": 7.480917653809048,
+        "bias_mm": -0.46657794690401955
+      },
+      {
+        "lower": 100,
+        "upper": 200,
+        "count": 98245,
+        "macro_rmse_mm": 15.739856004305869,
+        "micro_rmse_mm": 13.477025689594221,
+        "mae_mm": 9.859158936720343,
+        "bias_mm": 1.2729919687210012
+      },
+      {
+        "lower": 200,
+        "upper": null,
+        "count": 13300,
+        "macro_rmse_mm": 15.552869192262655,
+        "micro_rmse_mm": 15.955141900092384,
+        "mae_mm": 11.933728474530959,
+        "bias_mm": 3.47313001478525
+      }
+    ],
+    "height_m": [
+      {
+        "lower": -1000,
+        "upper": 500,
+        "count": 132687,
+        "macro_rmse_mm": 11.794227631944137,
+        "micro_rmse_mm": 12.256237618649187,
+        "mae_mm": 8.918475247387523,
+        "bias_mm": 0.1900327094882183
+      },
+      {
+        "lower": 500,
+        "upper": 1500,
+        "count": 122070,
+        "macro_rmse_mm": 10.651066748341378,
+        "micro_rmse_mm": 11.009454450616003,
+        "mae_mm": 8.061215525262526,
+        "bias_mm": 0.38462151010372214
+      },
+      {
+        "lower": 1500,
+        "upper": null,
+        "count": 72180,
+        "macro_rmse_mm": 9.116525502711713,
+        "micro_rmse_mm": 10.003820680741397,
+        "mae_mm": 7.05119214995717,
+        "bias_mm": 0.15131175773407687
+      }
+    ],
+    "terrain_roughness_m": [
+      {
+        "lower": 0,
+        "upper": 100,
+        "count": 5115,
+        "macro_rmse_mm": 10.26257681556609,
+        "micro_rmse_mm": 10.479700295033503,
+        "mae_mm": 7.55139771850228,
+        "bias_mm": 2.263024896377459
+      },
+      {
+        "lower": 100,
+        "upper": 300,
+        "count": 200103,
+        "macro_rmse_mm": 10.145065756659015,
+        "micro_rmse_mm": 10.525319775442158,
+        "mae_mm": 7.691930277521771,
+        "bias_mm": -0.4291248919214956
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "count": 121719,
+        "macro_rmse_mm": 11.810021109376008,
+        "micro_rmse_mm": 12.566464457647045,
+        "mae_mm": 9.02529292920362,
+        "bias_mm": 1.2929871789832859
+      }
+    ],
+    "coast_km": [
+      {
+        "lower": 0,
+        "upper": 50,
+        "count": 76446,
+        "macro_rmse_mm": 12.408173418176334,
+        "micro_rmse_mm": 12.877751384780629,
+        "mae_mm": 9.25725241522398,
+        "bias_mm": 1.195003184987035
+      },
+      {
+        "lower": 50,
+        "upper": 150,
+        "count": 145017,
+        "macro_rmse_mm": 10.50269543999686,
+        "micro_rmse_mm": 10.757526605156121,
+        "mae_mm": 7.920600040591412,
+        "bias_mm": -0.6250509284556155
+      },
+      {
+        "lower": 150,
+        "upper": 300,
+        "count": 35307,
+        "macro_rmse_mm": 11.169615369766124,
+        "micro_rmse_mm": 11.80826371069966,
+        "mae_mm": 8.782679138185754,
+        "bias_mm": 0.00452405160456684
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "count": 70167,
+        "macro_rmse_mm": 9.392147908468209,
+        "micro_rmse_mm": 10.385723425595438,
+        "mae_mm": 7.267828568276135,
+        "bias_mm": 1.1717383792637124
+      }
+    ],
+    "no_current_condition_count": 0,
+    "seasons": {
+      "winter": {
+        "macro_rmse_mm": 8.520853250490685,
+        "micro_rmse_mm": 8.85146732083884,
+        "count": 82104
+      },
+      "spring": {
+        "macro_rmse_mm": 9.967640654085644,
+        "micro_rmse_mm": 10.254803134988837,
+        "count": 82551
+      },
+      "summer": {
+        "macro_rmse_mm": 12.995715950629172,
+        "micro_rmse_mm": 13.719738856501051,
+        "count": 81228
+      },
+      "autumn": {
+        "macro_rmse_mm": 10.930921235647247,
+        "micro_rmse_mm": 11.935943071061015,
+        "count": 81054
+      }
+    },
+    "station_pairs": [
+      {
+        "distance_km": [
+          0,
+          50
+        ],
+        "count": 1578963,
+        "micro_rmse_mm": 7.799578841076616
+      },
+      {
+        "distance_km": [
+          50,
+          150
+        ],
+        "count": 1136412,
+        "micro_rmse_mm": 13.667599487441588
+      },
+      {
+        "distance_km": [
+          150,
+          300
+        ],
+        "count": 2080074,
+        "micro_rmse_mm": 14.81857762928292
+      }
+    ]
+  },
+  "reference_s17": {
+    "nearest_current_condition_km": [
+      {
+        "lower": 0,
+        "upper": 50,
+        "count": 51917,
+        "macro_rmse_mm": 8.42075775286015,
+        "micro_rmse_mm": 8.880536480655831,
+        "mae_mm": 6.582073053446725,
+        "bias_mm": -0.6680541197590549
+      },
+      {
+        "lower": 50,
+        "upper": 100,
+        "count": 163475,
+        "macro_rmse_mm": 9.983799568818483,
+        "micro_rmse_mm": 10.200470995334332,
+        "mae_mm": 7.542810181677934,
+        "bias_mm": -0.3822771279626637
+      },
+      {
+        "lower": 100,
+        "upper": 200,
+        "count": 98245,
+        "macro_rmse_mm": 16.131799544066826,
+        "micro_rmse_mm": 13.430136153628162,
+        "mae_mm": 9.785465735814379,
+        "bias_mm": 0.6921421377396388
+      },
+      {
+        "lower": 200,
+        "upper": null,
+        "count": 13300,
+        "macro_rmse_mm": 15.812373478373345,
+        "micro_rmse_mm": 16.032622008005216,
+        "mae_mm": 11.882087887391112,
+        "bias_mm": 1.8721966808362114
+      }
+    ],
+    "height_m": [
+      {
+        "lower": -1000,
+        "upper": 500,
+        "count": 132687,
+        "macro_rmse_mm": 11.839580397168737,
+        "micro_rmse_mm": 12.325819903600147,
+        "mae_mm": 8.983166681933794,
+        "bias_mm": -0.27908907464416166
+      },
+      {
+        "lower": 500,
+        "upper": 1500,
+        "count": 122070,
+        "macro_rmse_mm": 10.553217477174325,
+        "micro_rmse_mm": 10.886589611032312,
+        "mae_mm": 7.9931031250354065,
+        "bias_mm": 0.46871648605873556
+      },
+      {
+        "lower": 1500,
+        "upper": null,
+        "count": 72180,
+        "macro_rmse_mm": 9.459673666810772,
+        "micro_rmse_mm": 10.27256683450419,
+        "mae_mm": 7.294537202606788,
+        "bias_mm": -0.33889066857515726
+      }
+    ],
+    "terrain_roughness_m": [
+      {
+        "lower": 0,
+        "upper": 100,
+        "count": 5115,
+        "macro_rmse_mm": 10.516967534997939,
+        "micro_rmse_mm": 10.723353595990856,
+        "mae_mm": 7.744943631079889,
+        "bias_mm": 0.4614663341294752
+      },
+      {
+        "lower": 100,
+        "upper": 300,
+        "count": 200103,
+        "macro_rmse_mm": 10.164406624697486,
+        "micro_rmse_mm": 10.56306898006409,
+        "mae_mm": 7.73941093255889,
+        "bias_mm": -0.2644420160720405
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "count": 121719,
+        "macro_rmse_mm": 11.923778968865296,
+        "micro_rmse_mm": 12.60111935317815,
+        "mae_mm": 9.085619326252878,
+        "bias_mm": 0.38021049623408326
+      }
+    ],
+    "coast_km": [
+      {
+        "lower": 0,
+        "upper": 50,
+        "count": 76446,
+        "macro_rmse_mm": 12.538772377162262,
+        "micro_rmse_mm": 13.015776154633505,
+        "mae_mm": 9.359585609134886,
+        "bias_mm": 0.2023359572273332
+      },
+      {
+        "lower": 50,
+        "upper": 150,
+        "count": 145017,
+        "macro_rmse_mm": 10.46029916867289,
+        "micro_rmse_mm": 10.697877354639555,
+        "mae_mm": 7.917662510309318,
+        "bias_mm": -0.30970616365528475
+      },
+      {
+        "lower": 150,
+        "upper": 300,
+        "count": 35307,
+        "macro_rmse_mm": 11.065251057507801,
+        "micro_rmse_mm": 11.708941173761762,
+        "mae_mm": 8.69724473438149,
+        "bias_mm": 0.044895999841568245
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "count": 70167,
+        "macro_rmse_mm": 9.666529173527563,
+        "micro_rmse_mm": 10.580626027352931,
+        "mae_mm": 7.459561698700531,
+        "bias_mm": 0.33610304032261024
+      }
+    ],
+    "no_current_condition_count": 0,
+    "seasons": {
+      "winter": {
+        "macro_rmse_mm": 8.5519887100987,
+        "micro_rmse_mm": 8.863891756130524,
+        "count": 82104
+      },
+      "spring": {
+        "macro_rmse_mm": 9.985128378208694,
+        "micro_rmse_mm": 10.237404485335668,
+        "count": 82551
+      },
+      "summer": {
+        "macro_rmse_mm": 13.03531671851311,
+        "micro_rmse_mm": 13.727257386270441,
+        "count": 81228
+      },
+      "autumn": {
+        "macro_rmse_mm": 11.06754574092409,
+        "micro_rmse_mm": 12.08309479990765,
+        "count": 81054
+      }
+    },
+    "station_pairs": [
+      {
+        "distance_km": [
+          0,
+          50
+        ],
+        "count": 1578963,
+        "micro_rmse_mm": 7.804818836342284
+      },
+      {
+        "distance_km": [
+          50,
+          150
+        ],
+        "count": 1136412,
+        "micro_rmse_mm": 13.493320155807396
+      },
+      {
+        "distance_km": [
+          150,
+          300
+        ],
+        "count": 2080074,
+        "micro_rmse_mm": 14.744447349384938
+      }
+    ]
+  },
+  "I0_current_s17": {
+    "nearest_current_condition_km": [
+      {
+        "lower": 0,
+        "upper": 50,
+        "count": 51917,
+        "macro_rmse_mm": 8.160025884138644,
+        "micro_rmse_mm": 8.646141728808287,
+        "mae_mm": 6.3659049590577155,
+        "bias_mm": -0.5777533624302494
+      },
+      {
+        "lower": 50,
+        "upper": 100,
+        "count": 163475,
+        "macro_rmse_mm": 9.870036004372325,
+        "micro_rmse_mm": 10.128811182064094,
+        "mae_mm": 7.458501967411556,
+        "bias_mm": -0.4715352109027649
+      },
+      {
+        "lower": 100,
+        "upper": 200,
+        "count": 98245,
+        "macro_rmse_mm": 15.953893175996969,
+        "micro_rmse_mm": 13.380066546133987,
+        "mae_mm": 9.730440617361786,
+        "bias_mm": 0.7232587212994236
+      },
+      {
+        "lower": 200,
+        "upper": null,
+        "count": 13300,
+        "macro_rmse_mm": 15.778950670549486,
+        "micro_rmse_mm": 16.195787567539202,
+        "mae_mm": 11.979660495779568,
+        "bias_mm": 2.2299574329620016
+      }
+    ],
+    "height_m": [
+      {
+        "lower": -1000,
+        "upper": 500,
+        "count": 132687,
+        "macro_rmse_mm": 11.759814587791668,
+        "micro_rmse_mm": 12.24552714367975,
+        "mae_mm": 8.88989358212548,
+        "bias_mm": -0.24871985610649924
+      },
+      {
+        "lower": 500,
+        "upper": 1500,
+        "count": 122070,
+        "macro_rmse_mm": 10.538121661577241,
+        "micro_rmse_mm": 10.890976236325049,
+        "mae_mm": 7.962621436514002,
+        "bias_mm": 0.32199344967041865
+      },
+      {
+        "lower": 1500,
+        "upper": null,
+        "count": 72180,
+        "macro_rmse_mm": 9.238259288838792,
+        "micro_rmse_mm": 10.093482091773017,
+        "mae_mm": 7.1142063098064945,
+        "bias_mm": -0.17550986202866722
+      }
+    ],
+    "terrain_roughness_m": [
+      {
+        "lower": 0,
+        "upper": 100,
+        "count": 5115,
+        "macro_rmse_mm": 10.15221100660908,
+        "micro_rmse_mm": 10.369044420590365,
+        "mae_mm": 7.4244208726482075,
+        "bias_mm": 0.7422768985304549
+      },
+      {
+        "lower": 100,
+        "upper": 300,
+        "count": 200103,
+        "macro_rmse_mm": 10.116180972825834,
+        "micro_rmse_mm": 10.521855127084265,
+        "mae_mm": 7.667931213387628,
+        "bias_mm": -0.4277250329219128
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "count": 121719,
+        "macro_rmse_mm": 11.784556907600612,
+        "micro_rmse_mm": 12.502525601604336,
+        "mae_mm": 8.977414927599474,
+        "bias_mm": 0.6196884869217294
+      }
+    ],
+    "coast_km": [
+      {
+        "lower": 0,
+        "upper": 50,
+        "count": 76446,
+        "macro_rmse_mm": 12.431793139328581,
+        "micro_rmse_mm": 12.927335911822912,
+        "mae_mm": 9.26254345418657,
+        "bias_mm": 0.5396837835561642
+      },
+      {
+        "lower": 50,
+        "upper": 150,
+        "count": 145017,
+        "macro_rmse_mm": 10.370419858119963,
+        "micro_rmse_mm": 10.60399023150561,
+        "mae_mm": 7.817254073124138,
+        "bias_mm": -0.6635577709161539
+      },
+      {
+        "lower": 150,
+        "upper": 300,
+        "count": 35307,
+        "macro_rmse_mm": 11.038173299405415,
+        "micro_rmse_mm": 11.65511407189585,
+        "mae_mm": 8.667241421154255,
+        "bias_mm": -0.05341126342312307
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "count": 70167,
+        "macro_rmse_mm": 9.574492612934574,
+        "micro_rmse_mm": 10.578238954919042,
+        "mae_mm": 7.372988673463276,
+        "bias_mm": 0.719595097948171
+      }
+    ],
+    "no_current_condition_count": 0,
+    "seasons": {
+      "winter": {
+        "macro_rmse_mm": 8.47804304319986,
+        "micro_rmse_mm": 8.80189937077705,
+        "count": 82104
+      },
+      "spring": {
+        "macro_rmse_mm": 9.955049855748573,
+        "micro_rmse_mm": 10.215268403930995,
+        "count": 82551
+      },
+      "summer": {
+        "macro_rmse_mm": 12.876409638461793,
+        "micro_rmse_mm": 13.618929856038156,
+        "count": 81228
+      },
+      "autumn": {
+        "macro_rmse_mm": 10.975187820684921,
+        "micro_rmse_mm": 12.00860416045063,
+        "count": 81054
+      }
+    },
+    "station_pairs": [
+      {
+        "distance_km": [
+          0,
+          50
+        ],
+        "count": 1578963,
+        "micro_rmse_mm": 7.788544310165855
+      },
+      {
+        "distance_km": [
+          50,
+          150
+        ],
+        "count": 1136412,
+        "micro_rmse_mm": 13.512422245604245
+      },
+      {
+        "distance_km": [
+          150,
+          300
+        ],
+        "count": 2080074,
+        "micro_rmse_mm": 14.708179221544553
+      }
+    ]
+  },
+  "I1_history_s17": {
+    "nearest_current_condition_km": [
+      {
+        "lower": 0,
+        "upper": 50,
+        "count": 51917,
+        "macro_rmse_mm": 8.13310073199146,
+        "micro_rmse_mm": 8.620029496418473,
+        "mae_mm": 6.335419957791216,
+        "bias_mm": -0.6032091891276284
+      },
+      {
+        "lower": 50,
+        "upper": 100,
+        "count": 163475,
+        "macro_rmse_mm": 9.796158555294525,
+        "micro_rmse_mm": 10.101104635949598,
+        "mae_mm": 7.426767763938173,
+        "bias_mm": -0.5446090528547153
+      },
+      {
+        "lower": 100,
+        "upper": 200,
+        "count": 98245,
+        "macro_rmse_mm": 15.635308920957609,
+        "micro_rmse_mm": 13.333145551879232,
+        "mae_mm": 9.691236313698377,
+        "bias_mm": 0.6552848774729518
+      },
+      {
+        "lower": 200,
+        "upper": null,
+        "count": 13300,
+        "macro_rmse_mm": 15.747933460212872,
+        "micro_rmse_mm": 16.07716565791458,
+        "mae_mm": 11.903521250925566,
+        "bias_mm": 2.167535202736245
+      }
+    ],
+    "height_m": [
+      {
+        "lower": -1000,
+        "upper": 500,
+        "count": 132687,
+        "macro_rmse_mm": 11.72691908117768,
+        "micro_rmse_mm": 12.211689168209519,
+        "mae_mm": 8.85987462502728,
+        "bias_mm": -0.31077401490527623
+      },
+      {
+        "lower": 500,
+        "upper": 1500,
+        "count": 122070,
+        "macro_rmse_mm": 10.511982235140547,
+        "micro_rmse_mm": 10.855449545761171,
+        "mae_mm": 7.929143720854019,
+        "bias_mm": 0.22220716456518505
+      },
+      {
+        "lower": 1500,
+        "upper": null,
+        "count": 72180,
+        "macro_rmse_mm": 9.178902088036534,
+        "micro_rmse_mm": 10.034994943274086,
+        "mae_mm": 7.064816348841808,
+        "bias_mm": -0.18051056063143822
+      }
+    ],
+    "terrain_roughness_m": [
+      {
+        "lower": 0,
+        "upper": 100,
+        "count": 5115,
+        "macro_rmse_mm": 10.105408695243172,
+        "micro_rmse_mm": 10.323292185719064,
+        "mae_mm": 7.37093182672853,
+        "bias_mm": 0.6298149798739108
+      },
+      {
+        "lower": 100,
+        "upper": 300,
+        "count": 200103,
+        "macro_rmse_mm": 10.09718143753452,
+        "micro_rmse_mm": 10.498995473050554,
+        "mae_mm": 7.641635626386342,
+        "bias_mm": -0.5174783517698808
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "count": 121719,
+        "macro_rmse_mm": 11.720922129305462,
+        "micro_rmse_mm": 12.440571820442136,
+        "mae_mm": 8.927305288365366,
+        "bias_mm": 0.6012814071633182
+      }
+    ],
+    "coast_km": [
+      {
+        "lower": 0,
+        "upper": 50,
+        "count": 76446,
+        "macro_rmse_mm": 12.385531383110557,
+        "micro_rmse_mm": 12.878196917076178,
+        "mae_mm": 9.220231385999861,
+        "bias_mm": 0.5511438026223131
+      },
+      {
+        "lower": 50,
+        "upper": 150,
+        "count": 145017,
+        "macro_rmse_mm": 10.362220705156094,
+        "micro_rmse_mm": 10.58774424777751,
+        "mae_mm": 7.792860499088736,
+        "bias_mm": -0.8027395307859488
+      },
+      {
+        "lower": 150,
+        "upper": 300,
+        "count": 35307,
+        "macro_rmse_mm": 10.997151907219747,
+        "micro_rmse_mm": 11.631155389748034,
+        "mae_mm": 8.658925055876784,
+        "bias_mm": -0.14576464197422062
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "count": 70167,
+        "macro_rmse_mm": 9.493266554096772,
+        "micro_rmse_mm": 10.49537407825928,
+        "mae_mm": 7.307872304027651,
+        "bias_mm": 0.7451445296401862
+      }
+    ],
+    "no_current_condition_count": 0,
+    "seasons": {
+      "winter": {
+        "macro_rmse_mm": 8.426620113704313,
+        "micro_rmse_mm": 8.752828933349619,
+        "count": 82104
+      },
+      "spring": {
+        "macro_rmse_mm": 9.90685017106174,
+        "micro_rmse_mm": 10.166455193269808,
+        "count": 82551
+      },
+      "summer": {
+        "macro_rmse_mm": 12.863521230434248,
+        "micro_rmse_mm": 13.593378554273382,
+        "count": 81228
+      },
+      "autumn": {
+        "macro_rmse_mm": 10.92453323185326,
+        "micro_rmse_mm": 11.967562822966405,
+        "count": 81054
+      }
+    },
+    "station_pairs": [
+      {
+        "distance_km": [
+          0,
+          50
+        ],
+        "count": 1578963,
+        "micro_rmse_mm": 7.7920453403162035
+      },
+      {
+        "distance_km": [
+          50,
+          150
+        ],
+        "count": 1136412,
+        "micro_rmse_mm": 13.477809420116763
+      },
+      {
+        "distance_km": [
+          150,
+          300
+        ],
+        "count": 2080074,
+        "micro_rmse_mm": 14.662209089831777
+      }
+    ]
+  },
+  "I2_seasonal_s17": {
+    "nearest_current_condition_km": [
+      {
+        "lower": 0,
+        "upper": 50,
+        "count": 51917,
+        "macro_rmse_mm": 8.135514268987261,
+        "micro_rmse_mm": 8.622595525889013,
+        "mae_mm": 6.33564661109287,
+        "bias_mm": -0.6112607169950826
+      },
+      {
+        "lower": 50,
+        "upper": 100,
+        "count": 163475,
+        "macro_rmse_mm": 9.78949169153185,
+        "micro_rmse_mm": 10.103333018095281,
+        "mae_mm": 7.429420758735187,
+        "bias_mm": -0.551484618690295
+      },
+      {
+        "lower": 100,
+        "upper": 200,
+        "count": 98245,
+        "macro_rmse_mm": 15.582083482936401,
+        "micro_rmse_mm": 13.323346409015356,
+        "mae_mm": 9.686296452094025,
+        "bias_mm": 0.656058901675488
+      },
+      {
+        "lower": 200,
+        "upper": null,
+        "count": 13300,
+        "macro_rmse_mm": 15.736453672037767,
+        "micro_rmse_mm": 16.085843514722086,
+        "mae_mm": 11.91091493495425,
+        "bias_mm": 2.1807660440215493
+      }
+    ],
+    "height_m": [
+      {
+        "lower": -1000,
+        "upper": 500,
+        "count": 132687,
+        "macro_rmse_mm": 11.7246639552479,
+        "micro_rmse_mm": 12.207798987721382,
+        "mae_mm": 8.859235007845186,
+        "bias_mm": -0.3137353990617153
+      },
+      {
+        "lower": 500,
+        "upper": 1500,
+        "count": 122070,
+        "macro_rmse_mm": 10.515713621728054,
+        "micro_rmse_mm": 10.858930747287209,
+        "mae_mm": 7.933055695099142,
+        "bias_mm": 0.21653197364997753
+      },
+      {
+        "lower": 1500,
+        "upper": null,
+        "count": 72180,
+        "macro_rmse_mm": 9.174045693876673,
+        "micro_rmse_mm": 10.02883831814633,
+        "mae_mm": 7.0601865201787986,
+        "bias_mm": -0.1833406017205001
+      }
+    ],
+    "terrain_roughness_m": [
+      {
+        "lower": 0,
+        "upper": 100,
+        "count": 5115,
+        "macro_rmse_mm": 10.096072159063743,
+        "micro_rmse_mm": 10.311306312121495,
+        "mae_mm": 7.363837429878183,
+        "bias_mm": 0.6521802184402302
+      },
+      {
+        "lower": 100,
+        "upper": 300,
+        "count": 200103,
+        "macro_rmse_mm": 10.097869155488633,
+        "micro_rmse_mm": 10.498237780782974,
+        "mae_mm": 7.642240034349753,
+        "bias_mm": -0.5238570765618561
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "count": 121719,
+        "macro_rmse_mm": 11.718552046532198,
+        "micro_rmse_mm": 12.437981260591064,
+        "mae_mm": 8.927090274861744,
+        "bias_mm": 0.6002299991776187
+      }
+    ],
+    "coast_km": [
+      {
+        "lower": 0,
+        "upper": 50,
+        "count": 76446,
+        "macro_rmse_mm": 12.380996649641268,
+        "micro_rmse_mm": 12.87242346528635,
+        "mae_mm": 9.217380804141431,
+        "bias_mm": 0.547661682476763
+      },
+      {
+        "lower": 50,
+        "upper": 150,
+        "count": 145017,
+        "macro_rmse_mm": 10.363325249258263,
+        "micro_rmse_mm": 10.587952627695065,
+        "mae_mm": 7.7948984971160185,
+        "bias_mm": -0.8099544644762682
+      },
+      {
+        "lower": 150,
+        "upper": 300,
+        "count": 35307,
+        "macro_rmse_mm": 10.993250902771276,
+        "micro_rmse_mm": 11.62271530452547,
+        "mae_mm": 8.654466663561774,
+        "bias_mm": -0.15208798426956754
+      },
+      {
+        "lower": 300,
+        "upper": null,
+        "count": 70167,
+        "macro_rmse_mm": 9.494979131220452,
+        "micro_rmse_mm": 10.499013674881391,
+        "mae_mm": 7.309842866492329,
+        "bias_mm": 0.7486470356849692
+      }
+    ],
+    "no_current_condition_count": 0,
+    "seasons": {
+      "winter": {
+        "macro_rmse_mm": 8.42211077991628,
+        "micro_rmse_mm": 8.749242717166656,
+        "count": 82104
+      },
+      "spring": {
+        "macro_rmse_mm": 9.905930466225337,
+        "micro_rmse_mm": 10.164625375506546,
+        "count": 82551
+      },
+      "summer": {
+        "macro_rmse_mm": 12.872130335243513,
+        "micro_rmse_mm": 13.597314382412518,
+        "count": 81228
+      },
+      "autumn": {
+        "macro_rmse_mm": 10.91832554167818,
+        "micro_rmse_mm": 11.96098293689178,
+        "count": 81054
+      }
+    },
+    "station_pairs": [
+      {
+        "distance_km": [
+          0,
+          50
+        ],
+        "count": 1578963,
+        "micro_rmse_mm": 7.793000406024682
+      },
+      {
+        "distance_km": [
+          50,
+          150
+        ],
+        "count": 1136412,
+        "micro_rmse_mm": 13.478631829278312
+      },
+      {
+        "distance_km": [
+          150,
+          300
+        ],
+        "count": 2080074,
+        "micro_rmse_mm": 14.663164392286607
+      }
+    ]
+  }
+}

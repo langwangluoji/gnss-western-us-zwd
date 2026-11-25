@@ -1,0 +1,14 @@
+{
+  "case": "I1_history",
+  "seed": 42,
+  "macro_rmse_mm": 10.769970245978653,
+  "micro_rmse_mm": 11.323093910928026,
+  "mae_mm": 8.180544365967723,
+  "bias_mm": 0.27556971785404416,
+  "increment_macro_rmse_mm": 6.338458086242986,
+  "valid_count": 326937,
+  "effective_stations": 135,
+  "negative_prediction_fraction": 0.0,
+  "delta_macro_rmse_mm": -0.13431132607664864,
+  "delta_increment_macro_rmse_mm": -0.02114395964507576
+}

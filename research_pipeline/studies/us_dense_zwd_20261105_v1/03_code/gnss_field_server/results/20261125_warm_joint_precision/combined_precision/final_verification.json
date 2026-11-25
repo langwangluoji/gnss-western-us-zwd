@@ -1,0 +1,194 @@
+{
+  "verified_utc": "2026-11-25T16:05:50.639006+00:00",
+  "script_sha256": "e601bb4c7c1772b55ed3117dcc8297292bd5b1744a0289da7bf3248cb3db5d2a",
+  "frozen_selection_sha256": "8951f0d159300564c25bca8946f10f3cfa326fb0a659474b77ea5d6cc137b011",
+  "frozen_source_code_and_data_hashes_match": true,
+  "coefficient_checks": [
+    {
+      "case": "I0_current",
+      "seed": 42,
+      "sha256": "d4aa2474f660de30f7ca81c032e4f651edec120c17a1d2150deddd63efbf4a3f",
+      "exact": true
+    },
+    {
+      "case": "I1_history",
+      "seed": 42,
+      "sha256": "91afccab384f5909db2f2b53fc5046783f85c2c05313aa1b8229c084d28682fe",
+      "exact": true
+    },
+    {
+      "case": "I2_seasonal",
+      "seed": 42,
+      "sha256": "0570eba8eaddc83cdb21864e9424ebe72c2577cc49881e8b1c556b4fbcae5063",
+      "exact": true
+    },
+    {
+      "case": "I0_current",
+      "seed": 17,
+      "sha256": "fe54ba8c32fbd6e1b9cc49b87a0a2dc2698d49203d14fc50bf897728ded920bd",
+      "exact": true
+    },
+    {
+      "case": "I1_history",
+      "seed": 17,
+      "sha256": "5cfa1d6d1f8f003976169d9fa96d94a0968c5eff285eb4e929d0347ce06054e3",
+      "exact": true
+    },
+    {
+      "case": "I2_seasonal",
+      "seed": 17,
+      "sha256": "65906d2723f321c056ffe9011dfe9cab9443267e1108a9c34c8d34139a003a99",
+      "exact": true
+    }
+  ],
+  "metric_checks": [
+    {
+      "calendar": "primary",
+      "case": "reference",
+      "seed": 42,
+      "prediction_sha256": "43a310d152cf1a0940af48bc4a3d1bc45a6f01682705740a68ce01ee94aab8a8",
+      "five_metric_max_difference_mm": 0.0,
+      "valid_count": 327330,
+      "truth_exact": true
+    },
+    {
+      "calendar": "primary",
+      "case": "I0_current",
+      "seed": 42,
+      "prediction_sha256": "7aaa099a298f22588bcdf0c94d8f88d4888369a6795f1825c5569b5bf3f61dae",
+      "five_metric_max_difference_mm": 0.0,
+      "valid_count": 327330,
+      "truth_exact": true
+    },
+    {
+      "calendar": "primary",
+      "case": "I1_history",
+      "seed": 42,
+      "prediction_sha256": "0386b403fd3f8407157a239d1c216ca73fe5a65a627d9b92ff051a8e0aea0ba3",
+      "five_metric_max_difference_mm": 0.0,
+      "valid_count": 327330,
+      "truth_exact": true
+    },
+    {
+      "calendar": "primary",
+      "case": "I2_seasonal",
+      "seed": 42,
+      "prediction_sha256": "55bedfc4608c9ef3a666a4a464b9ccb1c201519e17cbc29f96770e6da0a77c67",
+      "five_metric_max_difference_mm": 0.0,
+      "valid_count": 327330,
+      "truth_exact": true
+    },
+    {
+      "calendar": "supplementary",
+      "case": "reference",
+      "seed": 42,
+      "prediction_sha256": "aa7e9eba90a81d01c9ec86751fd85301487080fd32ec9da83bf283bcae8c378a",
+      "five_metric_max_difference_mm": 0.0,
+      "valid_count": 326937,
+      "truth_exact": true
+    },
+    {
+      "calendar": "supplementary",
+      "case": "I0_current",
+      "seed": 42,
+      "prediction_sha256": "28660eff350ac7327a5b46013ca7e66c81d597a2795635bc2ba96b89e9e91a90",
+      "five_metric_max_difference_mm": 0.0,
+      "valid_count": 326937,
+      "truth_exact": true
+    },
+    {
+      "calendar": "supplementary",
+      "case": "I1_history",
+      "seed": 42,
+      "prediction_sha256": "4862facd380e3886071db1c01a2086f5e2115d2df5bc46e0d430f05af595ca91",
+      "five_metric_max_difference_mm": 0.0,
+      "valid_count": 326937,
+      "truth_exact": true
+    },
+    {
+      "calendar": "supplementary",
+      "case": "I2_seasonal",
+      "seed": 42,
+      "prediction_sha256": "cf6eaed676373e066c008dd13c7cbfb9abd23d8766f191dbbc002e2680ee476d",
+      "five_metric_max_difference_mm": 0.0,
+      "valid_count": 326937,
+      "truth_exact": true
+    },
+    {
+      "calendar": "primary",
+      "case": "reference",
+      "seed": 17,
+      "prediction_sha256": "20bcf9611758283b516e9f8d75945efa046214a63cb7659dbafd9d3935106820",
+      "five_metric_max_difference_mm": 0.0,
+      "valid_count": 327330,
+      "truth_exact": true
+    },
+    {
+      "calendar": "primary",
+      "case": "I0_current",
+      "seed": 17,
+      "prediction_sha256": "f484e9bbc603969354cbf007b307e34f60a51d2e8a0e021e97c6424f0986b62d",
+      "five_metric_max_difference_mm": 0.0,
+      "valid_count": 327330,
+      "truth_exact": true
+    },
+    {
+      "calendar": "primary",
+      "case": "I1_history",
+      "seed": 17,
+      "prediction_sha256": "4de0b3d1ca8fa77fed0b7e3537b27d43522632eb6d9487bd7a091ce918524c7d",
+      "five_metric_max_difference_mm": 0.0,
+      "valid_count": 327330,
+      "truth_exact": true
+    },
+    {
+      "calendar": "primary",
+      "case": "I2_seasonal",
+      "seed": 17,
+      "prediction_sha256": "a66c0c219c29eab7e907379c0c59c1712daf2177eb6204c198f1fa41971b10d1",
+      "five_metric_max_difference_mm": 0.0,
+      "valid_count": 327330,
+      "truth_exact": true
+    },
+    {
+      "calendar": "supplementary",
+      "case": "reference",
+      "seed": 17,
+      "prediction_sha256": "3b250215806205a91e90656d3c0a4bc8382d34eb1a1823a2a48bc351991e57ea",
+      "five_metric_max_difference_mm": 0.0,
+      "valid_count": 326937,
+      "truth_exact": true
+    },
+    {
+      "calendar": "supplementary",
+      "case": "I0_current",
+      "seed": 17,
+      "prediction_sha256": "ef6e5e0fe9b1cfa55931b303b16863206ecedc6b4ebd09e7d1b89b9adad2a806",
+      "five_metric_max_difference_mm": 0.0,
+      "valid_count": 326937,
+      "truth_exact": true
+    },
+    {
+      "calendar": "supplementary",
+      "case": "I1_history",
+      "seed": 17,
+      "prediction_sha256": "7447c98dd8295b31b5e963c09ad4179e7dc6ce7e2ade2f4f1ccd2febcbeeeca5",
+      "five_metric_max_difference_mm": 0.0,
+      "valid_count": 326937,
+      "truth_exact": true
+    },
+    {
+      "calendar": "supplementary",
+      "case": "I2_seasonal",
+      "seed": 17,
+      "prediction_sha256": "3fe8b0b6f2fddac5d15987e0369d93f9d06cd293f2c589bff01c674476b16315",
+      "five_metric_max_difference_mm": 0.0,
+      "valid_count": 326937,
+      "truth_exact": true
+    }
+  ],
+  "report_relative_links_checked": 7,
+  "figure_manifest_matches": true,
+  "no_training_or_refitting": true,
+  "evaluation_scope": "2020 exposed development calendars; current-time spatial reconstruction"
+}

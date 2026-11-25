@@ -194,7 +194,7 @@ def main():
         '基准使用原GRU模型保存的2020预测，逐项核对真值与源权重哈希。所有结果为相同12个月×72小时×3布局，登记137站、135站有真值、327330个有效布局-小时-站记录。2020属于已暴露开发队列。','',
         '| 模型 | 种子 | 宏RMSE | 微RMSE | MAE | bias | 增量宏RMSE | 宏RMSE变化 |','|---|---:|---:|---:|---:|---:|---:|---:|']
     for r in records:lines.append(f"| {r['case']} | {r['seed']} | {r['macro_rmse_mm']:.6f} | {r['micro_rmse_mm']:.6f} | {r['mae_mm']:.6f} | {r['bias_mm']:.6f} | {r['increment_macro_rmse_mm']:.6f} | {r.get('delta_macro_rmse_mm',0):.6f} |")
-    lines+=['','单位均为mm。只纳入已完成最终3000步评价的结果；Qraw与Qema来自同一训练轨迹，不计为独立训练重复。T5_joint额外解冻旧时间模块原先固定为零的查询头518参数，应解释为“联合微调＋旧查询头激活”。','',
+    lines+=['','单位均为mm。神经候选均采用最终3000次梯度更新；I系列采用3000个连续块的解析拟合。Q/S/A/D各自的raw与EMA来自同一训练轨迹，不计为独立训练重复。T5_joint额外解冻旧时间模块原先固定为零的查询头518参数，应解释为“联合微调＋旧查询头激活”。','',
         '## 双种子及共同月份配对区间','', '| 模型 | 两种子均值RMSE/mm | 相对原参考变化/mm | 共同月份95%区间/mm |','|---|---:|---:|---|']
     for r in means:lines.append(f"| {r['case']} | {r['macro_rmse_mm']:.6f} | {r['delta_macro_rmse_mm']:.6f} | {r['common_month_two_seed_paired95_mm']} |")
     if any(r['case'].startswith('I') for r in records):

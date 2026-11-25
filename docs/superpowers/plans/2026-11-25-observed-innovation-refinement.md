@@ -1,6 +1,6 @@
 # 条件站模型误差与历史创新校正实施计划
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** 在原GRU+p14约9.929 mm基础场上，检验可见条件站的模型误差能否提供更有用的残差编码。
 
@@ -43,7 +43,7 @@ I0_current仅用当前三个尺度；I1_history增加1/3小时；I2_seasonal在9
 Files: `tools/terrain_diffusion/innovation_refinement.py`、`test_innovation_refinement.py`。
 
 - [x] 新测试验证高程输送、缺测退化、查询集合不变性、滞后因果性、零创新及正规方程已知解；先观察缺少实现时失败。
-- [x] 实现`innovation_fields`、`causal_features`、`normal_equations`、`solve_ridge`，核心3项测试通过，完整工程测试核验中。
+- [x] 实现`innovation_fields`、`causal_features`、`normal_equations`、`solve_ridge`，核心3项测试及完整研究算子74项测试通过；工程默认568项测试已通过。
 
 ## Task 2：连续训练和固定评价
 
@@ -51,13 +51,13 @@ Files: `tools/terrain_diffusion/innovation_experiment.py`。
 
 - [x] 每块在当前12小时及需要的过去3小时计算冻结基础场，提取同条件站创新；累计27维正规方程及增量项。每次背景输入72h，滞后3h使I1/I2总观测跨度达到75h；I0有效跨度72h。
 - [x] 实现协议、源权重/代码/数据哈希、每500块的安全Tensor统计检查点和曲线；最终拟合3/9/27维三组头。累计训练代理损失随训练数据前缀增长记录，包含0.1增量项，不当作固定总体的点RMSE。
-- [ ] 在相同2020队列评价，独立核对原参考与原保存预测，保存三组预测与原始真值。
+- [x] 在相同2020队列评价，独立核对原参考与原保存预测，保存三组预测与原始真值。
 
 ## Task 3：配对结论与归档
 
-- [ ] 接入统一float64指标、月份配对区间、距离/地形/海岸/季节/站对误差；I1−I0和I2−I1直接比较。
-- [ ] 核对小时增量和分层触发线；根据实测保留原参考或晋级开发候选。
-- [ ] 归档源代码、轻量证据和图件，提交、推送并核对远端提交；权重和大数组留本机。
+- [x] 接入统一float64指标、月份配对区间、距离/地形/海岸/季节/站对误差；I1−I0和I2−I1直接比较。
+- [x] 核对小时增量和分层触发线；根据实测保留原参考或晋级开发候选。
+- [x] 归档源代码、轻量证据和图件，提交、推送并核对远端提交；权重和大数组留本机。
 
 ## 真实小试及算子说明
 
@@ -68,3 +68,7 @@ Files: `tools/terrain_diffusion/innovation_experiment.py`。
 ## 冻结后的补充日历
 
 在第二种子完成之前登记：I0/I1/I2全部冻结后，追加2020每月15–17日72小时、3布局、137登记站的开发评价；同一源权重和系数，不重新拟合、不混入原8–10日主表。使用`maintenance/joint_spectral_implementation_20261125/innovation_additional_calendar.py`，原参考也在该新日历重算，逐种子/月配对，报告全部三组结果。它检查对其他日期的迁移，仍属2020开发评价；确认/C/D保持隔离。
+
+## 完成记录（2026-11-26归档）
+
+双种子及三组头、全部主评价和冻结补充评价均已完成。I1主日历9.929151→9.817064 mm，补充日历10.869282→10.740343 mm；72个抽样日合并10.441761→10.319804 mm。六组系数从最终统计独立重解均逐元素相等。详见[最终报告](../../research_notes/2026-11-25-precision-final.md)及其中的哈希与图件。归档同步状态以对应Git提交及远端核验为准。

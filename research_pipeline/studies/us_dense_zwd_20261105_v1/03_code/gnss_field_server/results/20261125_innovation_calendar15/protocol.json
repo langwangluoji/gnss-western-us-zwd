@@ -1,0 +1,26 @@
+{
+  "day": 15,
+  "hours": 72,
+  "months": 12,
+  "seeds": [
+    42,
+    17
+  ],
+  "purpose": "Supplementary development calendar, no coefficient fitting or model selection",
+  "training_protocol_sha256": "2d260c7bbdba7eace299ce336dfdee8507dfb5da3cf7919e40a1f7244f24edaa",
+  "coefficient_sha256": {
+    "I0_current_s42": "d4aa2474f660de30f7ca81c032e4f651edec120c17a1d2150deddd63efbf4a3f",
+    "I1_history_s42": "91afccab384f5909db2f2b53fc5046783f85c2c05313aa1b8229c084d28682fe",
+    "I2_seasonal_s42": "0570eba8eaddc83cdb21864e9424ebe72c2577cc49881e8b1c556b4fbcae5063",
+    "I0_current_s17": "fe54ba8c32fbd6e1b9cc49b87a0a2dc2698d49203d14fc50bf897728ded920bd",
+    "I1_history_s17": "5cfa1d6d1f8f003976169d9fa96d94a0968c5eff285eb4e929d0347ce06054e3",
+    "I2_seasonal_s17": "65906d2723f321c056ffe9011dfe9cab9443267e1108a9c34c8d34139a003a99"
+  },
+  "code_sha256": "88ed977861994288c148fdcf91fa926d276d06029ce580ca60bbcbdcd497d407",
+  "data_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+  "source_weights": {
+    "42": "d87223f76df74354dde4ad1f1ab18097880b4a0396b2d5b565bda10000385f3a",
+    "17": "0167bfb5c067adcfebe55b7ab58f850585d91573da9ecc8a8e1dead58017ca3a"
+  },
+  "confirmation_C_D_read": false
+}

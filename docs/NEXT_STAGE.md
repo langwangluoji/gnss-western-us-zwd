@@ -1,10 +1,10 @@
 # 下一阶段研究入口与执行审阅
 
-本轮主评价已得到[历史观测创新候选I1](superpowers/plans/2026-11-25-observed-innovation-refinement.md)：宏RMSE9.929151→9.817064 mm，小时增量5.583871→5.577307 mm。候选和系数已经冻结，追加15–17日开发日历评价中。后续Transformer优先编码可见站模型误差及历史状态，将地形和海岸约束放入创新传播；重点处理夏季、距条件站100–200 km及海岸150–300 km过渡区。概率阶段按严格空间折外来源重建残差，再比较Gaussian与diffusion。
+本轮得到[历史观测创新候选I1](superpowers/plans/2026-11-25-observed-innovation-refinement.md)：主日历宏RMSE9.929151→9.817064 mm；冻结后补充日历10.869282→10.740343 mm，两个种子的点值与小时增量均改善。[完整结果、架构、图和下一步数据组织](research_notes/2026-11-25-precision-final.md)已归档。后续Transformer优先编码可见站模型误差及历史状态，将天气、地形和海岸约束放入创新传播；概率阶段按严格空间折外来源重建残差，再比较Gaussian与diffusion。
 
-最新执行与判据见[约10 mm基础场继续优化](research_notes/2026-11-25-precision-continuation.md)：T2与查询级Q完成双种子3000步，当前保持原GRU+p14；下一项为原始条件站72小时编码与局地查询交叉注意力。以下“待实现/尚未训练”保留设计阶段语境，实际进度以当前研究入口与运行目录证据为准。
+最新执行与判据见[约10 mm基础场继续优化](research_notes/2026-11-25-precision-continuation.md)：T2/T5、Q、S、A、D及I系列均已完成；下列“待实现/尚未训练”是设计阶段语境，实际进度以本页首段和运行目录证据为准。
 
-当前优先任务：[既有10mm模型上的精度优化合同](superpowers/plans/2026-11-25-warm-joint-precision.md)。保持已有GRU+p14全部输出，再训练新Transformer空间融合。3000步、双种子与原2020队列配对，未改善则按诊断继续调整；下列60/100步结果不替代此精度要求。
+本轮基础场优化已完成，I1进入冻结补充验证并确认改善；下一阶段执行[总报告中的创新编码及折外残差方案](research_notes/2026-11-25-precision-final.md#下一步模型与实验)。本轮执行合同：[既有10mm模型上的精度优化合同](superpowers/plans/2026-11-25-warm-joint-precision.md)。保持已有GRU+p14全部输出，再训练新Transformer空间融合。3000步、双种子与原2020队列配对，未改善则按诊断继续调整；下列60/100步结果不替代此精度要求。
 
 实现入口：[代码、模块原理、12张流程图与运行步骤](research_notes/2026-11-25-joint-spectral-implementation.md)。T0–T5及L/A/B/J概率分支、四组v稳定性控制已完成本机工程短训；下列“待实现/尚未训练”是设计阶段记录。实测优先级更新为：几何适应支撑与局地残差读出→空间组外推→v稳定性→完整数据覆盖、3000步双种子及年度评价。原规则锚点未通过1mm表示门槛，继续保持正式概率阶段门控。
 
@@ -16,7 +16,7 @@
 
 最新执行增补：[p14融合实测后的优化与扩散计划](superpowers/plans/2026-11-25-p14-fusion-next-stage.md)。顺序为完成双种子→优化消融→时间特征进入空间解码→长历史→折外残差概率模型→年度开发评价。新实验尚未运行；当前3000步融合组结果见[阶段报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/REPORT.md)。下文保留先前设计与数据边界，具体新增实验配置以执行增补为准。
 
-2026-11-25。状态：方案整理完成；新时间分支尚未完成实现和训练。本页对下列早期草案中的冲突作出明确修订；旧实验锁和结果不变。
+以下为早期设计快照（2026-11-25），实现与实验状态已由页首完成记录更新。本页对下列早期草案中的冲突作出明确修订；旧实验锁和结果不变。
 
 实施更新：连续数据与首轮时间分支本机预报筛查已完成，见[实际结果](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_temporal_forecast_screen/REPORT.md)。26配置已跑完；完整空间编码、168h、多分辨率、折外残差与diffusion尚待后续阶段。
 
