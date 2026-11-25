@@ -8,7 +8,9 @@ import sys
 
 ROOT=Path(__file__).resolve().parents[2]
 ENGINE=ROOT/'research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server'
-RESULTS=ENGINE/'results'
+sys.path.insert(0,str(ENGINE))
+from tools.terrain_diffusion.native_paths import file_path
+RESULTS=file_path(ENGINE/'results')
 STOP=Path(__file__).with_name('STOP_NEW_JOBS')
 
 
@@ -40,7 +42,7 @@ def main():
     if args.phase=='calendar':
         command=['--out',f'results/20261126_native_weather_cache_v2/calendar8_s{seed}','--seed',seed,'--calendar-day',8]
         prefix=RESULTS/'20261126_native_weather_cache'/f'calendar8_s{seed}'
-        if (prefix/'status.json').exists():command+=['--prefix-cache',str(prefix.relative_to(ENGINE))]
+        if (prefix/'status.json').exists():command+=['--prefix-cache',str(prefix.relative_to(file_path(ENGINE)))]
         run('native_weather_cache',command,dev/'manifest.json');return
     for path in (train,dev):
         if not (path/'manifest.json').exists() or read(path/'status.json')['status']!='COMPLETE':raise ValueError(f'phase requires complete cache: {path}')

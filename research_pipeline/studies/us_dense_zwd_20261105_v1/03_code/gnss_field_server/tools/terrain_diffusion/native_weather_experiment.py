@@ -14,6 +14,7 @@ from .native_weather import graph_basis
 from .native_weather_cache import static
 from .native_frequency_tokens import probability_model
 from .native_physics_lm import mean_model,causal_station_loss
+from .native_paths import file_path
 
 
 def checkpoint(folder,step,model,optimizer,scheduler,ema=None):
@@ -247,7 +248,10 @@ def main():
     p.add_argument('--weights',choices=['last','ema'],default='ema');p.add_argument('--embeddings',type=Path)
     p.add_argument('--preconditioner',type=Path)
     p.add_argument('--domain',choices=['gaussian','spatial','graph','joint','frequency_tokens'],default='spatial')
-    args=p.parse_args();torch.set_num_threads(3);torch.cuda.set_per_process_memory_fraction(.35)
+    args=p.parse_args()
+    for name,value in vars(args).items():
+        if isinstance(value,Path):setattr(args,name,file_path(value))
+    torch.set_num_threads(3);torch.cuda.set_per_process_memory_fraction(.35)
     if args.phase=='mean':train_mean(args)
     elif args.phase=='embeddings':export_embeddings(args)
     else:train_probability(args)

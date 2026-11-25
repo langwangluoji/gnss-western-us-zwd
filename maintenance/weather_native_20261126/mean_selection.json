@@ -1,0 +1,101 @@
+{
+  "seed42_screen": [
+    {
+      "name": "gru72_physics_aux",
+      "R": 9.869018632458461,
+      "F6": 14.241079952706235,
+      "weights_sha256": "9a8c8be335c9e7f28986122bc6534023ffd7350078070960d974f0de026e711e",
+      "protocol_sha256": "53a655a7e93f5d456126c32ef94c58f72454496d2a3ac89d8cf02c43daeb7407"
+    },
+    {
+      "name": "gru72",
+      "R": 9.865684490772418,
+      "F6": 14.355184569290744,
+      "weights_sha256": "86fb38d92af6448039987f0c44e8b516bcdaf45a18458320246fdc2f32a1e654",
+      "protocol_sha256": "7cba5a4b9f1d2df04e1fd00fac6e66270187b5f68d027f41cbcde9af47e68ed9"
+    },
+    {
+      "name": "history_mlp",
+      "R": 9.871648333534813,
+      "F6": 14.537144279559811,
+      "weights_sha256": "78c5896b51261285bf0acb765fd1b31b14959c807cd06a0f86ae4ebb11cdffe5",
+      "protocol_sha256": "2ca3213fb576a6df5c9dc69b35693913735354fd8504c57dc782e5c2db8b8381"
+    },
+    {
+      "name": "lstm72_physics_aux",
+      "R": 9.858661368968848,
+      "F6": 14.326338968175532,
+      "weights_sha256": "5235531b3a6791ec528e84c208a1f389c554fd479a289c7db608bbc444918a0c",
+      "protocol_sha256": "036330f15ed047f9119d5185a07de803ecc3fba54cd1b1ef9bcbfb59f5d4558d"
+    },
+    {
+      "name": "lstm72",
+      "R": 9.864271904293302,
+      "F6": 14.36079509529528,
+      "weights_sha256": "3859cfdaf02e18125b24dcad51462950cf18effda6b4731cfdfd027fb8f1b019",
+      "protocol_sha256": "78b945640325e52906443a05c062471ea1d8b2632342252edce563e5f62c7c57"
+    },
+    {
+      "name": "transformer24",
+      "R": 9.86157447671854,
+      "F6": 14.379999538795312,
+      "weights_sha256": "92153ebd0daf4f3b127ef590458771727ec9835a2507d8c3ea9beebb6b484f73",
+      "protocol_sha256": "69afa2c5807acc1303a54fcbcbfdc5c6832322e5f12bc1ebbd28f86d40b83d5f"
+    },
+    {
+      "name": "transformer72_aux",
+      "R": 9.868836711210918,
+      "F6": 14.30425863073286,
+      "weights_sha256": "405c33c147204c60da04caa516a4713ea6609728bcca9064939b4faf53c7c49b",
+      "protocol_sha256": "ab805190b9a2b6a91dc8de64af90c977f48787990707518b80a267f4f4dbc41a"
+    },
+    {
+      "name": "transformer72_local",
+      "R": 9.874806551560255,
+      "F6": 14.36598043678171,
+      "weights_sha256": "1cb7ab9ab30e513a333b5a0568ec9566dc4d840c93e2d48e988ac4bf2e602ad3",
+      "protocol_sha256": "9fc1df0b318fde407c25e1a6e072aee17575eba04af929a872821812fcf63f1d"
+    },
+    {
+      "name": "transformer72_physics_aux",
+      "R": 9.865004122510516,
+      "F6": 14.174626365957165,
+      "weights_sha256": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508",
+      "protocol_sha256": "852e229ab224927ff03480272df25974c3d96ce9f0dc4a08dda4a5764a6bb021"
+    },
+    {
+      "name": "transformer72_physics",
+      "R": 9.865542227945946,
+      "F6": 14.286474879456417,
+      "weights_sha256": "9928e91c07c65cc25d20ff268a712d23f9e45a734958b9f30faad72d66cdf0a2",
+      "protocol_sha256": "e9341e3c6180b8fa33d88d212515581783c31ac8b300c794579049b6478ff08c"
+    },
+    {
+      "name": "transformer72",
+      "R": 9.86298830968887,
+      "F6": 14.373835848261413,
+      "weights_sha256": "8661cc3513b3f458412413f57fb8cbf22982c89b970681ef08afe49b7ff6d26d",
+      "protocol_sha256": "e8932b5936fcaa10c2f39ac47dcaf2602b4f83084158d9e2a24f2dbbcd7f1a86"
+    },
+    {
+      "name": "weather_mlp",
+      "R": 9.865021179158363,
+      "F6": 14.413849322987348,
+      "weights_sha256": "9914d364e71cc9a4ced1294fa2e31e4a91a50ae7205d6d194a2d544f5ece89b6",
+      "protocol_sha256": "3d11edeb3099c203a613fc25f2954b71027078c70486bfe352e9ba5cad18b49f"
+    }
+  ],
+  "selection": {
+    "name": "transformer72_physics_aux",
+    "R": 9.865004122510516,
+    "F6": 14.174626365957165,
+    "weights_sha256": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508",
+    "protocol_sha256": "852e229ab224927ff03480272df25974c3d96ce9f0dc4a08dda4a5764a6bb021"
+  },
+  "weights": "last",
+  "rule": "lowest seed42 raw F6 among completed 3000-block models with R <= I1 + 0.05mm; same architecture and weights policy fixed for seed17",
+  "reference_R": 9.867690559749349,
+  "confirmation_C_D_read": false,
+  "strict_oof": false,
+  "kind": "development probability candidate; I1 remains current-field precision reference"
+}

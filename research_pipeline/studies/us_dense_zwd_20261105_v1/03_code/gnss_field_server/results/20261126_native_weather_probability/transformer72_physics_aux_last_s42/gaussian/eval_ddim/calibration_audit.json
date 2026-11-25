@@ -1,0 +1,194 @@
+{
+  "members": 32,
+  "rank_interval": {
+    "coverage_by_horizon": [
+      0.7651483212660006,
+      0.7830256701679774,
+      0.7893678714049577,
+      0.7964740504414313,
+      0.8043507497814538,
+      0.8146959190911203,
+      0.8251025219952111
+    ],
+    "mean_width_mm_by_horizon": [
+      23.014405951180766,
+      25.845413771822088,
+      27.881154691085303,
+      30.4620711362921,
+      33.175332098471095,
+      36.17073901505424,
+      39.29178937196295
+    ],
+    "valid_count_by_horizon": [
+      327330,
+      327306,
+      327291,
+      327231,
+      327162,
+      327084,
+      327003
+    ]
+  },
+  "rank_order_one_based": [
+    3,
+    30
+  ],
+  "exact_calibrated_continuous_iid_rank_reference": 0.8181818181818182,
+  "interpretation": "Rank interval is assessed against its exact finite-K reference; default value-interpolated 10/90% sample quantiles are not exact population 80% bounds.",
+  "source_evaluation_sha256": "bcb2bb8f57b18dca7d65a9e86a537aa09121124fe74697f6c21e4ef8781b1835",
+  "strict_oof": false,
+  "confirmation_C_D_read": false,
+  "analytic_gaussian_80": {
+    "coverage_by_horizon": [
+      0.74703510219045,
+      0.7655466138720342,
+      0.7718024632513574,
+      0.7803019885035342,
+      0.7874722614484567,
+      0.7985104743735554,
+      0.8104176414283661
+    ],
+    "mean_width_mm_by_horizon": [
+      21.069244192420616,
+      23.669177968141764,
+      25.52568785156965,
+      27.885289837200848,
+      30.35813311524413,
+      33.11477106415729,
+      35.97722983411152
+    ],
+    "valid_count_by_horizon": [
+      327330,
+      327306,
+      327291,
+      327231,
+      327162,
+      327084,
+      327003
+    ]
+  },
+  "distance_calibration": [
+    {
+      "distance_lower_km": 0,
+      "distance_upper_km": 50,
+      "h0": {
+        "count": 51498,
+        "standardized_error_rms": 0.9598219853238261,
+        "error_rmse_mm": 7.8712286949157715,
+        "forecast_std_rms_mm": 8.383430933437097,
+        "analytic_coverage80": 0.8406540059808147
+      },
+      "h6": {
+        "count": 51493,
+        "standardized_error_rms": 0.9279516123820946,
+        "error_rmse_mm": 13.924992561340332,
+        "forecast_std_rms_mm": 15.23415915652939,
+        "analytic_coverage80": 0.8470471714601985
+      }
+    },
+    {
+      "distance_lower_km": 50,
+      "distance_upper_km": 100,
+      "h0": {
+        "count": 164208,
+        "standardized_error_rms": 1.1676724830431064,
+        "error_rmse_mm": 9.533308982849121,
+        "forecast_std_rms_mm": 8.40567686187629,
+        "analytic_coverage80": 0.7701695410698626
+      },
+      "h6": {
+        "count": 163906,
+        "standardized_error_rms": 0.9667239842795945,
+        "error_rmse_mm": 13.837759971618652,
+        "forecast_std_rms_mm": 14.696011328650188,
+        "analytic_coverage80": 0.8289019315949385
+      }
+    },
+    {
+      "distance_lower_km": 100,
+      "distance_upper_km": 150,
+      "h0": {
+        "count": 72543,
+        "standardized_error_rms": 1.3333350946683866,
+        "error_rmse_mm": 11.418600082397461,
+        "forecast_std_rms_mm": 8.826117420000381,
+        "analytic_coverage80": 0.7117571647160994
+      },
+      "h6": {
+        "count": 72507,
+        "standardized_error_rms": 1.0664846759079547,
+        "error_rmse_mm": 15.24074649810791,
+        "forecast_std_rms_mm": 14.661349354435464,
+        "analytic_coverage80": 0.7953714813742121
+      }
+    },
+    {
+      "distance_lower_km": 150,
+      "distance_upper_km": 300,
+      "h0": {
+        "count": 37126,
+        "standardized_error_rms": 1.7911831113813597,
+        "error_rmse_mm": 13.952527046203613,
+        "forecast_std_rms_mm": 8.40433310014957,
+        "analytic_coverage80": 0.5957011258955988
+      },
+      "h6": {
+        "count": 37143,
+        "standardized_error_rms": 1.292404977744294,
+        "error_rmse_mm": 16.477235794067383,
+        "forecast_std_rms_mm": 13.855105460041626,
+        "analytic_coverage80": 0.7152357106318822
+      }
+    },
+    {
+      "distance_lower_km": 300,
+      "distance_upper_km": null,
+      "h0": {
+        "count": 1955,
+        "standardized_error_rms": 1.8842015867472506,
+        "error_rmse_mm": 15.154586791992188,
+        "forecast_std_rms_mm": 8.410445380824264,
+        "analytic_coverage80": 0.5207161125319693
+      },
+      "h6": {
+        "count": 1954,
+        "standardized_error_rms": 1.3321564237054229,
+        "error_rmse_mm": 15.53502368927002,
+        "forecast_std_rms_mm": 12.628172241880987,
+        "analytic_coverage80": 0.6622313203684749
+      }
+    }
+  ],
+  "training_global_normalization": {
+    "bias_mm": [
+      -0.18208724374050447,
+      0.08582369715246142,
+      0.39398403823050154,
+      0.6452158673219606,
+      0.8442499068392654,
+      1.0042661034666491,
+      1.1351475027338613
+    ],
+    "scale_mm": [
+      9.820845495491572,
+      10.630630735588428,
+      11.593580157773715,
+      12.656472346066382,
+      13.81153593138061,
+      14.966359888233054,
+      16.07272898562415
+    ],
+    "count": [
+      4603770.0,
+      4603770.0,
+      4603770.0,
+      4603770.0,
+      4603770.0,
+      4603769.0,
+      4603767.0
+    ],
+    "role": "training_only"
+  },
+  "gaussian_weights_sha256": "6214acbd6baeaa4f2ed68472cfca2e078068f9a34d89a368386217b2b089bdb8",
+  "code_sha256": "05b78907df5ae2beaebbbfe47373fffbd4e135421cd540e2ec9043ab82a06e90"
+}

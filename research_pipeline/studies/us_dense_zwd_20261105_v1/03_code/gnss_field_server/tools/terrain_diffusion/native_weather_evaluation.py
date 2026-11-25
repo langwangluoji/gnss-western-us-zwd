@@ -10,6 +10,7 @@ from .native_weather_experiment import CachedData
 from .native_weather_models import NativeDiffusion,NativeGaussian
 from .native_copula import correlate_noise
 from .native_frequency_tokens import probability_model
+from .native_paths import file_path
 
 
 def safe_mean(x,axis):
@@ -57,7 +58,10 @@ def main():
     p.add_argument('--sample-steps',type=int,default=20);p.add_argument('--seed',type=int,default=261126)
     p.add_argument('--copula',type=Path)
     p.add_argument('--solver',choices=['ddim','heun'],default='ddim')
-    args=p.parse_args();torch.set_num_threads(3);torch.set_grad_enabled(False);torch.cuda.set_per_process_memory_fraction(.35)
+    args=p.parse_args()
+    for name,value in vars(args).items():
+        if isinstance(value,Path):setattr(args,name,file_path(value))
+    torch.set_num_threads(3);torch.set_grad_enabled(False);torch.cuda.set_per_process_memory_fraction(.35)
     data=CachedData(args.cache)
     if not data.development:raise ValueError('calendar evaluation expects a registered development calendar')
     manifest=json.loads((args.embeddings/'manifest.json').read_text(encoding='utf-8'))

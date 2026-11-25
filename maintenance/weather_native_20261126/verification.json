@@ -1,12 +1,15 @@
 {
   "research_suite": {
     "command": "python -m pytest tools/terrain_diffusion -q",
-    "passed": 111,
-    "seconds": 16.36
+    "passed": 112,
+    "seconds": 11.23
   },
   "real_gap_smoke_blocks": 3,
   "original_target_labels_preserved": true,
   "seed42_3000_block_mean_results_available": true,
   "paired_two_seed_probability_results_available": false,
-  "analysis_and_campaign_tests_passed": 6
+  "analysis_and_campaign_tests_passed": 10,
+  "seed17_train_and_calendar_labels_exact": true,
+  "seed42_all_12_mean_trajectories_complete": true,
+  "seed42_gaussian_and_copula_joint_metrics_available": true
 }

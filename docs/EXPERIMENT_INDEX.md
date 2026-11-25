@@ -6,7 +6,8 @@
 
 | 实验 | 已记录状态 | 证据入口 |
 |---|---|---|
-| 20261126_native_weather_means / native_mean_analysis | SEED42_BASELINE6_COMPLETE：各3000连续块；因果监督/值传递六臂执行中，第二种子待完成 | [架构与本轮结果](research_notes/2026-11-26-native-weather-diffusion.md)；[独立分层与曲线](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_mean_analysis/s42/REPORT.md) |
+| 20261126_native_weather_means / native_mean_analysis | SEED42_MEAN12_COMPLETE；SEED17_BASELINE6_COMPLETE：各3000连续块；seed17六臂机制复核执行中 | [架构与本轮结果](research_notes/2026-11-26-native-weather-diffusion.md)；[独立分层与曲线](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_mean_analysis/s42/REPORT.md) |
+| 20261126_native_weather_probability | SEED42_IN_PROGRESS：Gaussian、copula及部分v对照已完成；全频及预条件继续评价 | [概率与有限集合校准](research_notes/2026-11-26-native-weather-diffusion.md#概率对照进展)；[下一步信息直连实验](superpowers/specs/2026-11-26-uncertainty-context-bypass.md) |
 | 20261126_native_spectral_full_audit | COMPLETE_ENCODING_DIAGNOSTIC：48月12h快照；全GFT/DCT逆误差0.00010681mm，非模型精度 | [谱诊断JSON](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_spectral_full_audit/native_spectral_audit.json) |
 | 20261126_native_weather_cache_v2 | SEED42_CACHE_COMPLETE：3000连续12h块，主日历216块；旧1685块前缀保留哈希 | [新研究入口与架构](research_notes/2026-11-26-native-weather-diffusion.md)；[数据合同](superpowers/specs/2026-11-26-weather-native-diffusion-design.md) |
 | 20261126_native_gap_smoke / native_spectral_audit | ENGINEERING_AND_ENCODING_AUDIT：原生缺测块及完整谱验证；不作精度排名 | [实施与审阅记录](../maintenance/weather_native_20261126/progress.md) |
