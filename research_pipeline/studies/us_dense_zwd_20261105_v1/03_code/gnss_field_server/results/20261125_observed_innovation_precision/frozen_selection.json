@@ -1,0 +1,62 @@
+{
+  "created_utc": "2026-11-25T15:32:11.969708+00:00",
+  "primary_candidate": "I1_history",
+  "rule": "Require paired point/seed/increment gates; prefer I1 unless I2 has supported extra paired gain",
+  "primary_comparison_sha256": "65f68add142e0329893b0a5204ca77fb438c70304be1776e0c258c6eef178907",
+  "training_protocol_sha256": "2d260c7bbdba7eace299ce336dfdee8507dfb5da3cf7919e40a1f7244f24edaa",
+  "training_summary_sha256": "4e1e5bde1c5986c4e95cfa004fe928648b3bc6b72a5c11193e67c031ac2b5edd",
+  "coefficient_sha256": {
+    "I0_current_s42": "d4aa2474f660de30f7ca81c032e4f651edec120c17a1d2150deddd63efbf4a3f",
+    "I1_history_s42": "91afccab384f5909db2f2b53fc5046783f85c2c05313aa1b8229c084d28682fe",
+    "I2_seasonal_s42": "0570eba8eaddc83cdb21864e9424ebe72c2577cc49881e8b1c556b4fbcae5063",
+    "I0_current_s17": "fe54ba8c32fbd6e1b9cc49b87a0a2dc2698d49203d14fc50bf897728ded920bd",
+    "I1_history_s17": "5cfa1d6d1f8f003976169d9fa96d94a0968c5eff285eb4e929d0347ce06054e3",
+    "I2_seasonal_s17": "65906d2723f321c056ffe9011dfe9cab9443267e1108a9c34c8d34139a003a99"
+  },
+  "checks": [
+    {
+      "case": "I0_current",
+      "seed": 42,
+      "statistics_sha256": "27a6c02070b8986ce87a9446579028e9e1604fbfdb018b9c64334253082643d8",
+      "coefficients_exact": true,
+      "max_difference": 0.0
+    },
+    {
+      "case": "I1_history",
+      "seed": 42,
+      "statistics_sha256": "27a6c02070b8986ce87a9446579028e9e1604fbfdb018b9c64334253082643d8",
+      "coefficients_exact": true,
+      "max_difference": 0.0
+    },
+    {
+      "case": "I2_seasonal",
+      "seed": 42,
+      "statistics_sha256": "27a6c02070b8986ce87a9446579028e9e1604fbfdb018b9c64334253082643d8",
+      "coefficients_exact": true,
+      "max_difference": 0.0
+    },
+    {
+      "case": "I0_current",
+      "seed": 17,
+      "statistics_sha256": "00f223ea0ead028285229c7d32c673206756fafde0670a8a9578fe47447584dc",
+      "coefficients_exact": true,
+      "max_difference": 0.0
+    },
+    {
+      "case": "I1_history",
+      "seed": 17,
+      "statistics_sha256": "00f223ea0ead028285229c7d32c673206756fafde0670a8a9578fe47447584dc",
+      "coefficients_exact": true,
+      "max_difference": 0.0
+    },
+    {
+      "case": "I2_seasonal",
+      "seed": 17,
+      "statistics_sha256": "00f223ea0ead028285229c7d32c673206756fafde0670a8a9578fe47447584dc",
+      "coefficients_exact": true,
+      "max_difference": 0.0
+    }
+  ],
+  "additional_calendar_read_by_this_freezer": false,
+  "code_sha256": "a5d1c29c30f23b02741fd8976d8114938defc71f8b3bf8f2bf8f7825fdf9a5e4"
+}

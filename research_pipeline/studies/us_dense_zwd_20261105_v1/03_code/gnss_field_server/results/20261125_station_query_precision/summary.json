@@ -36,5 +36,43 @@
       "station_count": 135,
       "valid_count": 327330
     }
+  },
+  {
+    "seed": 17,
+    "case": "S_transformer_raw",
+    "steps": 3000,
+    "metrics": {
+      "macro_rmse_mm": 9.864521583871339,
+      "micro_rmse_mm": 10.38662052154541,
+      "mae_mm": 7.6126861572265625,
+      "bias_mm": -0.16372232139110565,
+      "increment_macro_rmse_mm": 5.586398564432551,
+      "layout_macro_rmse_mm": [
+        9.905401772675173,
+        10.039918130952069,
+        9.648244847986772
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  },
+  {
+    "seed": 17,
+    "case": "S_transformer_ema",
+    "steps": 3000,
+    "metrics": {
+      "macro_rmse_mm": 9.868489504202186,
+      "micro_rmse_mm": 10.38426685333252,
+      "mae_mm": 7.614433288574219,
+      "bias_mm": 0.09408975392580032,
+      "increment_macro_rmse_mm": 5.584569816807111,
+      "layout_macro_rmse_mm": [
+        9.90995944093054,
+        10.030969155700731,
+        9.66453991597529
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
   }
 ]

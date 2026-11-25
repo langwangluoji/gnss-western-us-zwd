@@ -1,0 +1,12 @@
+{
+  "step": 3000,
+  "seconds": 557.4220000000059,
+  "cumulative_surrogate_loss_mm2": {
+    "I0_current": 132.94373094164467,
+    "I1_history": 131.65069493429843,
+    "I2_seasonal": 131.5785722199236
+  },
+  "first_hour": 404279,
+  "last_hour": 404290,
+  "reference_batch_rmse_mm": 7.849366664886475
+}

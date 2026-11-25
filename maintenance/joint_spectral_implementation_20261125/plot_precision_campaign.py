@@ -76,6 +76,21 @@ def main():
                title='Training distance distribution changes little with 25% hole100 layouts')
         ax.grid(axis='y', alpha=.2); ax.legend(fontsize=8); ax.spines[['right', 'top']].set_visible(False)
         path = out/'support_distribution.png'; fig.savefig(path, dpi=170); plt.close(fig); figures.append(path)
+    innovation = root/'20261125_observed_innovation_precision'
+    if (innovation/'trajectory_s42/curve.json').exists():
+        fig, ax = plt.subplots(figsize=(10, 5), layout='constrained')
+        for seed, style in [(42, '-'), (17, '--')]:
+            path = innovation/f'trajectory_s{seed}/curve.json'
+            if not path.exists(): continue
+            rows = read(path); sources.append(path)
+            for case, color in [('I0_current', '#627b8d'), ('I1_history', '#35836c'), ('I2_seasonal', '#bd7545')]:
+                ax.plot([r['step'] for r in rows], [r['cumulative_surrogate_loss_mm2'][case] for r in rows],
+                        style, color=color, label=f'{case} seed{seed}', linewidth=1.2)
+        ax.set(xlabel='Continuous training blocks accumulated (not gradient updates)',
+               ylabel='Level + 0.1 increment data loss (mm squared)',
+               title='Analytic heads: ridge solution on an expanding training prefix')
+        ax.grid(alpha=.2); ax.legend(fontsize=8); ax.spines[['right', 'top']].set_visible(False)
+        path = out/'innovation_training_objective.png'; fig.savefig(path, dpi=170); plt.close(fig); figures.append(path)
     manifest = dict(script_sha256=sha(Path(__file__)),
         sources={str(p.relative_to(ENGINE)): sha(p) for p in sources},
         figures={p.name: sha(p) for p in figures},

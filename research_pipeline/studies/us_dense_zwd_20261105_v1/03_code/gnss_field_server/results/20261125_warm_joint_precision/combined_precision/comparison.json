@@ -37,6 +37,7 @@
       "valid_count": 327330,
       "effective_stations": 135,
       "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
       "delta_macro_rmse_mm": -0.0017811693044134103,
       "delta_micro_rmse_mm": -0.00515001746617294,
       "delta_mae_mm": -0.0029393074729755497,
@@ -60,6 +61,7 @@
       "valid_count": 327330,
       "effective_stations": 135,
       "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
       "delta_macro_rmse_mm": 0.00771078390193658,
       "delta_micro_rmse_mm": 0.005351415488263456,
       "delta_mae_mm": 0.003405843098492234,
@@ -83,6 +85,7 @@
       "valid_count": 327330,
       "effective_stations": 135,
       "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
       "delta_macro_rmse_mm": -0.008521431158472481,
       "delta_micro_rmse_mm": -0.009725532037414553,
       "delta_mae_mm": -0.006752825747692093,
@@ -106,6 +109,7 @@
       "valid_count": 327330,
       "effective_stations": 135,
       "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
       "delta_macro_rmse_mm": -7.035994205573104e-05,
       "delta_micro_rmse_mm": 0.004324177300267351,
       "delta_mae_mm": -0.000993942547954596,
@@ -129,6 +133,7 @@
       "valid_count": 327330,
       "effective_stations": 135,
       "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
       "delta_macro_rmse_mm": -0.00010150967615096818,
       "delta_micro_rmse_mm": 0.0003780637097730022,
       "delta_mae_mm": -0.0013343757048094318,
@@ -137,6 +142,30 @@
       "monthly_paired95_mm": [
         -0.0030009558443266026,
         0.0035750924545028704
+      ]
+    },
+    {
+      "case": "T5_joint",
+      "seed": 17,
+      "run": "warm",
+      "steps": 3000,
+      "macro_rmse_mm": 9.859740937248324,
+      "micro_rmse_mm": 10.380044132263999,
+      "mae_mm": 7.60774577787706,
+      "bias_mm": -0.18063919250394,
+      "increment_macro_rmse_mm": 5.586407506762387,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
+      "delta_macro_rmse_mm": -0.00020352373939402923,
+      "delta_micro_rmse_mm": 0.0007509318909697527,
+      "delta_mae_mm": -0.0021324762658370133,
+      "delta_bias_mm": -0.15072112677933713,
+      "delta_increment_macro_rmse_mm": 0.0028054108597421745,
+      "monthly_paired95_mm": [
+        -0.009800201732296454,
+        0.009528467287731778
       ]
     },
     {
@@ -152,6 +181,7 @@
       "valid_count": 327330,
       "effective_stations": 135,
       "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
       "delta_macro_rmse_mm": -0.0008282957333332064,
       "delta_micro_rmse_mm": -0.00021854301697032952,
       "delta_mae_mm": -0.000541568860756847,
@@ -175,6 +205,7 @@
       "valid_count": 327330,
       "effective_stations": 135,
       "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
       "delta_macro_rmse_mm": -0.016065671593796793,
       "delta_micro_rmse_mm": -0.017053973600583916,
       "delta_mae_mm": -0.009881665343685953,
@@ -198,6 +229,7 @@
       "valid_count": 327330,
       "effective_stations": 135,
       "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
       "delta_macro_rmse_mm": 0.0006925846276732983,
       "delta_micro_rmse_mm": 0.003779775743899094,
       "delta_mae_mm": 0.0003925633059740363,
@@ -221,6 +253,7 @@
       "valid_count": 327330,
       "effective_stations": 135,
       "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
       "delta_macro_rmse_mm": 0.0050110106834715396,
       "delta_micro_rmse_mm": 0.0013127420080412122,
       "delta_mae_mm": 0.002786255669456672,
@@ -244,6 +277,7 @@
       "valid_count": 327330,
       "effective_stations": 135,
       "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
       "delta_macro_rmse_mm": -0.002974471902520648,
       "delta_micro_rmse_mm": -0.0032163297398888346,
       "delta_mae_mm": -0.003022939629389043,
@@ -267,6 +301,7 @@
       "valid_count": 327330,
       "effective_stations": 135,
       "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
       "delta_macro_rmse_mm": -0.018138530746934833,
       "delta_micro_rmse_mm": -0.016974526303236814,
       "delta_mae_mm": -0.013984956659172987,
@@ -276,9 +311,477 @@
         -0.026782852828271732,
         -0.009451167329926237
       ]
+    },
+    {
+      "case": "S_transformer_raw",
+      "seed": 17,
+      "run": "station",
+      "steps": 3000,
+      "macro_rmse_mm": 9.864521592985255,
+      "micro_rmse_mm": 10.386619866878728,
+      "mae_mm": 7.612686250980646,
+      "bias_mm": -0.16372232121529443,
+      "increment_macro_rmse_mm": 5.58639864014112,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
+      "delta_macro_rmse_mm": 0.00457713199753762,
+      "delta_micro_rmse_mm": 0.007326666505699464,
+      "delta_mae_mm": 0.002807996837749016,
+      "delta_bias_mm": -0.13380425549069153,
+      "delta_increment_macro_rmse_mm": 0.002796544238474752,
+      "monthly_paired95_mm": [
+        -0.0029040328160905293,
+        0.010419062723802597
+      ]
+    },
+    {
+      "case": "S_transformer_ema",
+      "seed": 17,
+      "run": "station",
+      "steps": 3000,
+      "macro_rmse_mm": 9.868489518796112,
+      "micro_rmse_mm": 10.384266972527017,
+      "mae_mm": 7.614433353423519,
+      "bias_mm": 0.09408973939469852,
+      "increment_macro_rmse_mm": 5.584569778769314,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
+      "delta_macro_rmse_mm": 0.008545057808394318,
+      "delta_micro_rmse_mm": 0.0049737721539884205,
+      "delta_mae_mm": 0.0045550992806218105,
+      "delta_bias_mm": 0.1240078051193014,
+      "delta_increment_macro_rmse_mm": 0.0009676828666691506,
+      "monthly_paired95_mm": [
+        -0.005144215382010353,
+        0.020051108554661513
+      ]
+    },
+    {
+      "case": "A_transformer_raw",
+      "seed": 42,
+      "run": "station",
+      "steps": 3000,
+      "macro_rmse_mm": 10.007916298595278,
+      "micro_rmse_mm": 10.532613904957307,
+      "mae_mm": 7.7089834995989115,
+      "bias_mm": 0.12048476805474412,
+      "increment_macro_rmse_mm": 5.611177253407734,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
+      "delta_macro_rmse_mm": 0.009559483064599306,
+      "delta_micro_rmse_mm": 0.005405095403698823,
+      "delta_mae_mm": 0.0010708252071758295,
+      "delta_bias_mm": -0.15760976072156463,
+      "delta_increment_macro_rmse_mm": 0.027037011778483055,
+      "monthly_paired95_mm": [
+        -0.029136774320503767,
+        0.046737037015845695
+      ]
+    },
+    {
+      "case": "A_transformer_ema",
+      "seed": 42,
+      "run": "station",
+      "steps": 3000,
+      "macro_rmse_mm": 9.980834965376227,
+      "micro_rmse_mm": 10.512746268753599,
+      "mae_mm": 7.693690311150121,
+      "bias_mm": 0.1037618353434372,
+      "increment_macro_rmse_mm": 5.587075457683283,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
+      "delta_macro_rmse_mm": -0.017521850154452068,
+      "delta_micro_rmse_mm": -0.014462540800009194,
+      "delta_mae_mm": -0.014222363241614744,
+      "delta_bias_mm": -0.17433269343287155,
+      "delta_increment_macro_rmse_mm": 0.0029352160540314642,
+      "monthly_paired95_mm": [
+        -0.031279445714647025,
+        -0.00290515782024894
+      ]
+    },
+    {
+      "case": "A_transformer_raw",
+      "seed": 17,
+      "run": "station",
+      "steps": 3000,
+      "macro_rmse_mm": 9.8574332272586,
+      "micro_rmse_mm": 10.374238903546333,
+      "mae_mm": 7.600134391684589,
+      "bias_mm": -0.08557672355154114,
+      "increment_macro_rmse_mm": 5.633465946354383,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
+      "delta_macro_rmse_mm": -0.00251123372911799,
+      "delta_micro_rmse_mm": -0.005054296826696003,
+      "delta_mae_mm": -0.009743862458307717,
+      "delta_bias_mm": -0.055658657826938254,
+      "delta_increment_macro_rmse_mm": 0.04986385045173769,
+      "monthly_paired95_mm": [
+        -0.05207497697633769,
+        0.042053411962439106
+      ]
+    },
+    {
+      "case": "A_transformer_ema",
+      "seed": 17,
+      "run": "station",
+      "steps": 3000,
+      "macro_rmse_mm": 9.866892557269463,
+      "micro_rmse_mm": 10.379588401144241,
+      "mae_mm": 7.612040084281603,
+      "bias_mm": 0.10777284053376188,
+      "increment_macro_rmse_mm": 5.598707631291819,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
+      "delta_macro_rmse_mm": 0.006948096281744753,
+      "delta_micro_rmse_mm": 0.00029520077121247823,
+      "delta_mae_mm": 0.0021618301387063,
+      "delta_bias_mm": 0.13769090625836478,
+      "delta_increment_macro_rmse_mm": 0.01510553538917403,
+      "monthly_paired95_mm": [
+        -0.016880017558460515,
+        0.029783921251708895
+      ]
+    },
+    {
+      "case": "D_transformer_raw",
+      "seed": 42,
+      "run": "station",
+      "steps": 3000,
+      "macro_rmse_mm": 9.992833246286173,
+      "micro_rmse_mm": 10.520948966015538,
+      "mae_mm": 7.702835179735118,
+      "bias_mm": 0.23114733429326256,
+      "increment_macro_rmse_mm": 5.580756250137718,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
+      "delta_macro_rmse_mm": -0.0055235692445059215,
+      "delta_micro_rmse_mm": -0.0062598435380696316,
+      "delta_mae_mm": -0.005077494656617887,
+      "delta_bias_mm": -0.046947194483046184,
+      "delta_increment_macro_rmse_mm": -0.0033839914915336777,
+      "monthly_paired95_mm": [
+        -0.010592107093460123,
+        -0.0011152288127296742
+      ]
+    },
+    {
+      "case": "D_transformer_ema",
+      "seed": 42,
+      "run": "station",
+      "steps": 3000,
+      "macro_rmse_mm": 9.971834527534698,
+      "micro_rmse_mm": 10.5020171209421,
+      "mae_mm": 7.688011067654288,
+      "bias_mm": 0.11009171568454759,
+      "increment_macro_rmse_mm": 5.575319983838954,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
+      "delta_macro_rmse_mm": -0.026522287995980776,
+      "delta_micro_rmse_mm": -0.025191688611508667,
+      "delta_mae_mm": -0.019901606737447786,
+      "delta_bias_mm": -0.16800281309176116,
+      "delta_increment_macro_rmse_mm": -0.008820257790297603,
+      "monthly_paired95_mm": [
+        -0.03823124248327488,
+        -0.014039719445198618
+      ]
+    },
+    {
+      "case": "D_transformer_raw",
+      "seed": 17,
+      "run": "station",
+      "steps": 3000,
+      "macro_rmse_mm": 9.86014510866842,
+      "micro_rmse_mm": 10.38163193334612,
+      "mae_mm": 7.609795508249809,
+      "bias_mm": -0.23379398092749984,
+      "increment_macro_rmse_mm": 5.585299010441434,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
+      "delta_macro_rmse_mm": 0.00020064768070149341,
+      "delta_micro_rmse_mm": 0.002338732973090174,
+      "delta_mae_mm": -8.274589308765457e-05,
+      "delta_bias_mm": -0.20387591520289694,
+      "delta_increment_macro_rmse_mm": 0.0016969145387895068,
+      "monthly_paired95_mm": [
+        -0.007422237190976233,
+        0.006727464346815857
+      ]
+    },
+    {
+      "case": "D_transformer_ema",
+      "seed": 17,
+      "run": "station",
+      "steps": 3000,
+      "macro_rmse_mm": 9.86068174945177,
+      "micro_rmse_mm": 10.376061011721347,
+      "mae_mm": 7.607347777049824,
+      "bias_mm": 0.028313264214427668,
+      "increment_macro_rmse_mm": 5.582274964194325,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "AdamW gradient updates",
+      "delta_macro_rmse_mm": 0.0007372884640517441,
+      "delta_micro_rmse_mm": -0.0032321886516815113,
+      "delta_mae_mm": -0.002530477093072747,
+      "delta_bias_mm": 0.05823132993903055,
+      "delta_increment_macro_rmse_mm": -0.001327131708319662,
+      "monthly_paired95_mm": [
+        -0.014089465532911617,
+        0.015927000296191894
+      ]
+    },
+    {
+      "case": "I0_current",
+      "seed": 42,
+      "run": "innovation",
+      "steps": 3000,
+      "macro_rmse_mm": 9.902367083808986,
+      "micro_rmse_mm": 10.43363213376454,
+      "mae_mm": 7.6276222974789425,
+      "bias_mm": 0.33524923530314127,
+      "increment_macro_rmse_mm": 5.748931865906675,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "analytic_ridge_contiguous_blocks",
+      "delta_macro_rmse_mm": -0.09598973172169245,
+      "delta_micro_rmse_mm": -0.09357667578906792,
+      "delta_mae_mm": -0.08029037691279317,
+      "delta_bias_mm": 0.05715470652683252,
+      "delta_increment_macro_rmse_mm": 0.16479162427742367,
+      "monthly_paired95_mm": [
+        -0.17499870962159716,
+        -0.028367197299970975
+      ]
+    },
+    {
+      "case": "I1_history",
+      "seed": 42,
+      "run": "innovation",
+      "steps": 3000,
+      "macro_rmse_mm": 9.867690561424897,
+      "micro_rmse_mm": 10.401457300569447,
+      "mae_mm": 7.601326840596075,
+      "bias_mm": 0.2578407231214244,
+      "increment_macro_rmse_mm": 5.579523859247169,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "analytic_ridge_contiguous_blocks",
+      "delta_macro_rmse_mm": -0.13066625410578148,
+      "delta_micro_rmse_mm": -0.12575150898416076,
+      "delta_mae_mm": -0.10658583379566089,
+      "delta_bias_mm": -0.020253805654884327,
+      "delta_increment_macro_rmse_mm": -0.004616382382081952,
+      "monthly_paired95_mm": [
+        -0.21244815012811108,
+        -0.059867424973940396
+      ]
+    },
+    {
+      "case": "I2_seasonal",
+      "seed": 42,
+      "run": "innovation",
+      "steps": 3000,
+      "macro_rmse_mm": 9.865576939220562,
+      "micro_rmse_mm": 10.399975698069827,
+      "mae_mm": 7.600082991965418,
+      "bias_mm": 0.25398807577494975,
+      "increment_macro_rmse_mm": 5.578445231982218,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "analytic_ridge_contiguous_blocks",
+      "delta_macro_rmse_mm": -0.13277987631011712,
+      "delta_micro_rmse_mm": -0.1272331114837808,
+      "delta_mae_mm": -0.10782968242631785,
+      "delta_bias_mm": -0.024106453001358996,
+      "delta_increment_macro_rmse_mm": -0.005695009647033622,
+      "monthly_paired95_mm": [
+        -0.21294949255009482,
+        -0.06216679842578139
+      ]
+    },
+    {
+      "case": "I0_current",
+      "seed": 17,
+      "run": "innovation",
+      "steps": 3000,
+      "macro_rmse_mm": 9.796126097921059,
+      "micro_rmse_mm": 10.316788832813568,
+      "mae_mm": 7.539060990577242,
+      "bias_mm": -0.023760388800165042,
+      "increment_macro_rmse_mm": 5.750212192192532,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "analytic_ridge_contiguous_blocks",
+      "delta_macro_rmse_mm": -0.06381836306665889,
+      "delta_micro_rmse_mm": -0.06250436755946076,
+      "delta_mae_mm": -0.07081726356565543,
+      "delta_bias_mm": 0.006157676924437843,
+      "delta_increment_macro_rmse_mm": 0.16661009628988754,
+      "monthly_paired95_mm": [
+        -0.13606955029260068,
+        0.0014935789149503778
+      ]
+    },
+    {
+      "case": "I1_history",
+      "seed": 17,
+      "run": "innovation",
+      "steps": 3000,
+      "macro_rmse_mm": 9.76643790583139,
+      "micro_rmse_mm": 10.289407994225478,
+      "mae_mm": 7.515612609865059,
+      "bias_mm": -0.08309781577728213,
+      "increment_macro_rmse_mm": 5.575090705836515,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "analytic_ridge_contiguous_blocks",
+      "delta_macro_rmse_mm": -0.09350655515632766,
+      "delta_micro_rmse_mm": -0.08988520614755124,
+      "delta_mae_mm": -0.09426564427783823,
+      "delta_bias_mm": -0.05317975005267925,
+      "delta_increment_macro_rmse_mm": -0.008511390066129998,
+      "monthly_paired95_mm": [
+        -0.1724574647507703,
+        -0.02509687687540246
+      ]
+    },
+    {
+      "case": "I2_seasonal",
+      "seed": 17,
+      "run": "innovation",
+      "steps": 3000,
+      "macro_rmse_mm": 9.762795182482419,
+      "micro_rmse_mm": 10.286871095266555,
+      "mae_mm": 7.512480475433994,
+      "bias_mm": -0.10354228066548787,
+      "increment_macro_rmse_mm": 5.573327791500695,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "fit_method": "analytic_ridge_contiguous_blocks",
+      "delta_macro_rmse_mm": -0.09714927850529875,
+      "delta_micro_rmse_mm": -0.09242210510647375,
+      "delta_mae_mm": -0.09739777870890265,
+      "delta_bias_mm": -0.07362421494088499,
+      "delta_increment_macro_rmse_mm": -0.010274304401949763,
+      "monthly_paired95_mm": [
+        -0.1748561393316021,
+        -0.02762701295087573
+      ]
     }
   ],
   "two_seed_means": [
+    {
+      "case": "A_transformer_ema",
+      "macro_rmse_mm": 9.923863761322846,
+      "reference_macro_rmse_mm": 9.929150638259198,
+      "delta_macro_rmse_mm": -0.005286876936352769,
+      "common_month_two_seed_paired95_mm": [
+        -0.02085783566406325,
+        0.011907529269033379
+      ],
+      "improves_both_seeds": false,
+      "negative_interval_upper": false
+    },
+    {
+      "case": "A_transformer_raw",
+      "macro_rmse_mm": 9.93267476292694,
+      "reference_macro_rmse_mm": 9.929150638259198,
+      "delta_macro_rmse_mm": 0.003524124667741546,
+      "common_month_two_seed_paired95_mm": [
+        -0.03856077969500513,
+        0.04078572361231236
+      ],
+      "improves_both_seeds": false,
+      "negative_interval_upper": false
+    },
+    {
+      "case": "D_transformer_ema",
+      "macro_rmse_mm": 9.916258138493234,
+      "reference_macro_rmse_mm": 9.929150638259198,
+      "delta_macro_rmse_mm": -0.012892499765964516,
+      "common_month_two_seed_paired95_mm": [
+        -0.02401949142094866,
+        -0.002380307897366496
+      ],
+      "improves_both_seeds": false,
+      "negative_interval_upper": true
+    },
+    {
+      "case": "D_transformer_raw",
+      "macro_rmse_mm": 9.926489177477297,
+      "reference_macro_rmse_mm": 9.929150638259198,
+      "delta_macro_rmse_mm": -0.002661460781901326,
+      "common_month_two_seed_paired95_mm": [
+        -0.008135239361774982,
+        0.0015856677141289793
+      ],
+      "improves_both_seeds": false,
+      "negative_interval_upper": false
+    },
+    {
+      "case": "I0_current",
+      "macro_rmse_mm": 9.849246590865022,
+      "reference_macro_rmse_mm": 9.929150638259198,
+      "delta_macro_rmse_mm": -0.07990404739417656,
+      "common_month_two_seed_paired95_mm": [
+        -0.15457980574844038,
+        -0.013984957819080965
+      ],
+      "improves_both_seeds": true,
+      "negative_interval_upper": true
+    },
+    {
+      "case": "I1_history",
+      "macro_rmse_mm": 9.817064233628145,
+      "reference_macro_rmse_mm": 9.929150638259198,
+      "delta_macro_rmse_mm": -0.11208640463105368,
+      "common_month_two_seed_paired95_mm": [
+        -0.19345570819342467,
+        -0.04228108603874395
+      ],
+      "improves_both_seeds": true,
+      "negative_interval_upper": true
+    },
+    {
+      "case": "I2_seasonal",
+      "macro_rmse_mm": 9.81418606085149,
+      "reference_macro_rmse_mm": 9.929150638259198,
+      "delta_macro_rmse_mm": -0.11496457740770794,
+      "common_month_two_seed_paired95_mm": [
+        -0.1956421907571883,
+        -0.045858277710891446
+      ],
+      "improves_both_seeds": true,
+      "negative_interval_upper": true
+    },
     {
       "case": "Qema",
       "macro_rmse_mm": 9.923623307804036,
@@ -299,6 +802,30 @@
       "common_month_two_seed_paired95_mm": [
         -0.0037585430871505785,
         0.0033017762653252173
+      ],
+      "improves_both_seeds": false,
+      "negative_interval_upper": false
+    },
+    {
+      "case": "S_transformer_ema",
+      "macro_rmse_mm": 9.924353901789928,
+      "reference_macro_rmse_mm": 9.929150638259198,
+      "delta_macro_rmse_mm": -0.004796736469270257,
+      "common_month_two_seed_paired95_mm": [
+        -0.014489102098314421,
+        0.004126108579174103
+      ],
+      "improves_both_seeds": false,
+      "negative_interval_upper": false
+    },
+    {
+      "case": "S_transformer_raw",
+      "macro_rmse_mm": 9.929951968306707,
+      "reference_macro_rmse_mm": 9.929150638259198,
+      "delta_macro_rmse_mm": 0.0008013300475084861,
+      "common_month_two_seed_paired95_mm": [
+        -0.003379584794759127,
+        0.004181440237856782
       ],
       "improves_both_seeds": false,
       "negative_interval_upper": false
@@ -326,9 +853,216 @@
       ],
       "improves_both_seeds": false,
       "negative_interval_upper": false
+    },
+    {
+      "case": "T5_joint",
+      "macro_rmse_mm": 9.924788160810266,
+      "reference_macro_rmse_mm": 9.929150638259198,
+      "delta_macro_rmse_mm": -0.004362477448932367,
+      "common_month_two_seed_paired95_mm": [
+        -0.010723400096105461,
+        0.0015995211691106623
+      ],
+      "improves_both_seeds": true,
+      "negative_interval_upper": false
     }
   ],
-  "direct_representation_contrasts": [],
+  "direct_representation_contrasts": [
+    {
+      "candidate": "A_transformer_raw",
+      "control": "S_transformer_raw",
+      "delta_macro_rmse_mm": 0.0027227946202321718,
+      "common_month_two_seed_paired95_mm": [
+        -0.037853541640855526,
+        0.04057095653451521
+      ],
+      "improves_both_seeds": false,
+      "negative_interval_upper": false
+    },
+    {
+      "candidate": "A_transformer_ema",
+      "control": "S_transformer_ema",
+      "delta_macro_rmse_mm": -0.0004901404670833998,
+      "common_month_two_seed_paired95_mm": [
+        -0.015287427331848269,
+        0.01294533751399127
+      ],
+      "improves_both_seeds": false,
+      "negative_interval_upper": false
+    },
+    {
+      "candidate": "D_transformer_raw",
+      "control": "S_transformer_raw",
+      "delta_macro_rmse_mm": -0.0034627908294107,
+      "common_month_two_seed_paired95_mm": [
+        -0.005808888267002233,
+        -0.00035517164570395563
+      ],
+      "improves_both_seeds": true,
+      "negative_interval_upper": true
+    },
+    {
+      "candidate": "D_transformer_ema",
+      "control": "S_transformer_ema",
+      "delta_macro_rmse_mm": -0.008095763296694258,
+      "common_month_two_seed_paired95_mm": [
+        -0.011141822301188964,
+        -0.004750985834862088
+      ],
+      "improves_both_seeds": true,
+      "negative_interval_upper": true
+    },
+    {
+      "candidate": "I1_history",
+      "control": "I0_current",
+      "delta_macro_rmse_mm": -0.0321823572368789,
+      "common_month_two_seed_paired95_mm": [
+        -0.04961646609179193,
+        -0.017093220941732032
+      ],
+      "improves_both_seeds": true,
+      "negative_interval_upper": true
+    },
+    {
+      "candidate": "I2_seasonal",
+      "control": "I1_history",
+      "delta_macro_rmse_mm": -0.002878172776653365,
+      "common_month_two_seed_paired95_mm": [
+        -0.008966661883121941,
+        0.0023458151159267524
+      ],
+      "improves_both_seeds": true,
+      "negative_interval_upper": false
+    }
+  ],
+  "candidate_gates": [
+    {
+      "case": "A_transformer_ema",
+      "complete_seed_pair": true,
+      "paired_point_support": false,
+      "max_seed_increment_change_mm": 0.01510553538917403,
+      "increment_tolerance_mm": 0.01,
+      "increment_pass": false,
+      "eligible_for_next_validation": false
+    },
+    {
+      "case": "A_transformer_raw",
+      "complete_seed_pair": true,
+      "paired_point_support": false,
+      "max_seed_increment_change_mm": 0.04986385045173769,
+      "increment_tolerance_mm": 0.01,
+      "increment_pass": false,
+      "eligible_for_next_validation": false
+    },
+    {
+      "case": "D_transformer_ema",
+      "complete_seed_pair": true,
+      "paired_point_support": false,
+      "max_seed_increment_change_mm": -0.001327131708319662,
+      "increment_tolerance_mm": 0.01,
+      "increment_pass": true,
+      "eligible_for_next_validation": false
+    },
+    {
+      "case": "D_transformer_raw",
+      "complete_seed_pair": true,
+      "paired_point_support": false,
+      "max_seed_increment_change_mm": 0.0016969145387895068,
+      "increment_tolerance_mm": 0.01,
+      "increment_pass": true,
+      "eligible_for_next_validation": false
+    },
+    {
+      "case": "I0_current",
+      "complete_seed_pair": true,
+      "paired_point_support": true,
+      "max_seed_increment_change_mm": 0.16661009628988754,
+      "increment_tolerance_mm": 0.01,
+      "increment_pass": false,
+      "eligible_for_next_validation": false
+    },
+    {
+      "case": "I1_history",
+      "complete_seed_pair": true,
+      "paired_point_support": true,
+      "max_seed_increment_change_mm": -0.004616382382081952,
+      "increment_tolerance_mm": 0.01,
+      "increment_pass": true,
+      "eligible_for_next_validation": true
+    },
+    {
+      "case": "I2_seasonal",
+      "complete_seed_pair": true,
+      "paired_point_support": true,
+      "max_seed_increment_change_mm": -0.005695009647033622,
+      "increment_tolerance_mm": 0.01,
+      "increment_pass": true,
+      "eligible_for_next_validation": true
+    },
+    {
+      "case": "Qema",
+      "complete_seed_pair": true,
+      "paired_point_support": false,
+      "max_seed_increment_change_mm": 0.0007653641364191444,
+      "increment_tolerance_mm": 0.01,
+      "increment_pass": true,
+      "eligible_for_next_validation": false
+    },
+    {
+      "case": "Qraw",
+      "complete_seed_pair": true,
+      "paired_point_support": false,
+      "max_seed_increment_change_mm": 0.0003082967795249303,
+      "increment_tolerance_mm": 0.01,
+      "increment_pass": true,
+      "eligible_for_next_validation": false
+    },
+    {
+      "case": "S_transformer_ema",
+      "complete_seed_pair": true,
+      "paired_point_support": false,
+      "max_seed_increment_change_mm": 0.0009676828666691506,
+      "increment_tolerance_mm": 0.01,
+      "increment_pass": true,
+      "eligible_for_next_validation": false
+    },
+    {
+      "case": "S_transformer_raw",
+      "complete_seed_pair": true,
+      "paired_point_support": false,
+      "max_seed_increment_change_mm": 0.002796544238474752,
+      "increment_tolerance_mm": 0.01,
+      "increment_pass": true,
+      "eligible_for_next_validation": false
+    },
+    {
+      "case": "T2_frozen",
+      "complete_seed_pair": true,
+      "paired_point_support": false,
+      "max_seed_increment_change_mm": 0.0018128502236862687,
+      "increment_tolerance_mm": 0.01,
+      "increment_pass": true,
+      "eligible_for_next_validation": false
+    },
+    {
+      "case": "T5_frozen",
+      "complete_seed_pair": true,
+      "paired_point_support": false,
+      "max_seed_increment_change_mm": 0.0014267625444421839,
+      "increment_tolerance_mm": 0.01,
+      "increment_pass": true,
+      "eligible_for_next_validation": false
+    },
+    {
+      "case": "T5_joint",
+      "complete_seed_pair": true,
+      "paired_point_support": false,
+      "max_seed_increment_change_mm": 0.0028054108597421745,
+      "increment_tolerance_mm": 0.01,
+      "increment_pass": true,
+      "eligible_for_next_validation": false
+    }
+  ],
   "bootstrap": "1000 common month resamples shared across seeds/layouts; full72h block and station pairing",
   "source": "original saved GRU predictions, exact truth and source-weight hash matched",
   "current_development_exposed": true

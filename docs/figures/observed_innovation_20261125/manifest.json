@@ -1,0 +1,185 @@
+{
+  "id": "architecture",
+  "title": "可见站模型误差：基础场的时空创新编码",
+  "nodes": [
+    {
+      "id": "input",
+      "x": 50,
+      "y": 90,
+      "width": 90,
+      "height": 8,
+      "text": "同一组82个条件站：连续ZWD／T／P＋mask／age＋地形／海岸\n源背景每次读取72小时；加入3h历史创新后总跨度75小时",
+      "role": "neutral"
+    },
+    {
+      "id": "condition",
+      "x": 26,
+      "y": 75,
+      "width": 43.5,
+      "height": 15,
+      "text": "冻结源模型在条件站位置的预测\nr_i(t)＝可见观测z_i(t)−mu_i(t)\n当前、1h、3h均按各自过去时刻计算",
+      "role": "space"
+    },
+    {
+      "id": "query",
+      "x": 74,
+      "y": 75,
+      "width": 43.5,
+      "height": 15,
+      "text": "同一冻结源模型\np14点特征＋两级U-Net＋GRU\n在任意查询位置输出mu_q(t)",
+      "role": "space"
+    },
+    {
+      "id": "fields",
+      "x": 50,
+      "y": 54,
+      "width": 90,
+      "height": 13,
+      "text": "可见站模型误差 → 3 km高程输送 → 50／150／300 km软核查询\n历史由相同条件站集合独立重算；缺测不进入分子／分母\n50 km弱支持区按1e−8分母下限平滑回退",
+      "role": "time"
+    },
+    {
+      "id": "training",
+      "x": 26,
+      "y": 34,
+      "width": 43.5,
+      "height": 13,
+      "text": "仅训练：隐藏目标残差标签\nD距离权重＋0.1小时增量\n3000连续块累计正规方程＋岭项",
+      "role": "train"
+    },
+    {
+      "id": "heads",
+      "x": 74,
+      "y": 34,
+      "width": 43.5,
+      "height": 13,
+      "text": "I0：当前3维\nI1：当前＋1／3h，共9维\nI2：再加年度sin／cos交互，共27维",
+      "role": "time"
+    },
+    {
+      "id": "output",
+      "x": 50,
+      "y": 15,
+      "width": 90,
+      "height": 12,
+      "text": "原物理单位输出：ZWD＝mu_q＋clip(10 mm × beta^T × phi，−5 mm，＋5 mm)\n源权重冻结；beta只由2016–2019监督目标拟合\n2020固定12个月×72h×3布局开发评价，保持原始真值与源权重配对",
+      "role": "space"
+    }
+  ],
+  "edges": [
+    {
+      "points": [
+        [
+          26,
+          86
+        ],
+        [
+          26,
+          82.5
+        ]
+      ],
+      "dashed": false
+    },
+    {
+      "points": [
+        [
+          74,
+          86
+        ],
+        [
+          74,
+          82.5
+        ]
+      ],
+      "dashed": false
+    },
+    {
+      "points": [
+        [
+          26,
+          67.5
+        ],
+        [
+          26,
+          60.5
+        ]
+      ],
+      "dashed": false
+    },
+    {
+      "points": [
+        [
+          26,
+          47.5
+        ],
+        [
+          26,
+          40.5
+        ]
+      ],
+      "dashed": true
+    },
+    {
+      "points": [
+        [
+          74,
+          47.5
+        ],
+        [
+          74,
+          40.5
+        ]
+      ],
+      "dashed": false
+    },
+    {
+      "points": [
+        [
+          47.75,
+          34
+        ],
+        [
+          52.25,
+          34
+        ]
+      ],
+      "dashed": true
+    },
+    {
+      "points": [
+        [
+          74,
+          27.5
+        ],
+        [
+          74,
+          21
+        ]
+      ],
+      "dashed": false
+    },
+    {
+      "points": [
+        [
+          95.75,
+          75
+        ],
+        [
+          98,
+          75
+        ],
+        [
+          98,
+          15
+        ],
+        [
+          95,
+          15
+        ]
+      ],
+      "dashed": false
+    }
+  ],
+  "status": "IMPLEMENTED_DETERMINISTIC_INNOVATION_REFINEMENT",
+  "text_bounds": "PASS"
+}

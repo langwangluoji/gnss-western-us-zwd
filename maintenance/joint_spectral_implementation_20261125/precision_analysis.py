@@ -49,6 +49,17 @@ def matched_contrast(records,draws,candidate,control):
         negative_interval_upper=interval[1]<0)
 
 
+def candidate_gate(mean,records):
+    rows=[r for r in records if r['case']==mean['case']]
+    complete=len(rows)==2 and {r['seed'] for r in rows}=={42,17}
+    increment=max((r['delta_increment_macro_rmse_mm'] for r in rows),default=None)
+    point=mean['improves_both_seeds'] and mean['negative_interval_upper']
+    temporal=complete and increment<=.01
+    return dict(case=mean['case'],complete_seed_pair=complete,paired_point_support=bool(point),
+        max_seed_increment_change_mm=increment,increment_tolerance_mm=.01,
+        increment_pass=bool(temporal),eligible_for_next_validation=bool(complete and point and temporal))
+
+
 def stratify(error,values,bins):
     rows=[]
     for low,high in zip(bins[:-1],bins[1:]):
@@ -171,7 +182,9 @@ def main():
     for candidate,control in [('I1_history','I0_current'),('I2_seasonal','I1_history')]:
         contrast=matched_contrast(records,draws,candidate,control)
         if contrast is not None:contrasts.append(contrast)
+    gates=[candidate_gate(m,records) for m in means]
     write_json(out/'comparison.json',dict(records=records,two_seed_means=means,direct_representation_contrasts=contrasts,
+        candidate_gates=gates,
         bootstrap='1000 common month resamples shared across seeds/layouts; full72h block and station pairing',
         source='original saved GRU predictions, exact truth and source-weight hash matched',current_development_exposed=True))
     write_json(out/'geographic_and_pair_metrics.json',detailed)
@@ -191,6 +204,10 @@ def main():
             '| 候选−控制 | 两种子宏RMSE差/mm | 共同月份95%区间/mm | 两种子均改善 |',
             '|---|---:|---|---|']
         for r in contrasts:lines.append(f"| {r['candidate']}−{r['control']} | {r['delta_macro_rmse_mm']:.6f} | {r['common_month_two_seed_paired95_mm']} | {r['improves_both_seeds']} |")
+    lines+=['','## 配对点精度与小时增量门槛','',
+        '| 候选 | 双种子点改善且区间上限<0 | 最差种子增量变化/mm | 增量≤0.01 mm | 可进入下一验证 |',
+        '|---|---|---:|---|---|']
+    for r in gates:lines.append(f"| {r['case']} | {r['paired_point_support']} | {r['max_seed_increment_change_mm']:.6f} | {r['increment_pass']} | {r['eligible_for_next_validation']} |")
     lines+=['','负数为改善；区间同时保持月份、布局、站点及种子配对。跨零时不把该结果称为稳定提升。海岸、地形、高程、最近有效条件站距离、季节和站对差值详见[分层结果](geographic_and_pair_metrics.json)。',
         '连续块内的一小时增量独立评分，跨月份不连差。所有五项主指标采用float64独立复算。']
     (out/'REPORT.md').write_bytes(('\n'.join(lines)+'\n').encode('utf-8'))

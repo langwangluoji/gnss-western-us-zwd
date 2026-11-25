@@ -10,6 +10,10 @@
 
 **Spec:** 本文件同时记录该小型实验的设计；其总体信息合同与[10mm优化计划](2026-11-25-warm-joint-precision.md)一致。
 
+![可见站模型误差与时空创新编码全流程](../../figures/observed_innovation_20261125/architecture.png)
+
+[SVG架构图](../../figures/observed_innovation_20261125/architecture.svg)。虚线为训练标签与参数拟合路径。
+
 ## Global Constraints
 
 - 原始条件为ZWD/T/P、mask/age、地形和海岸；不使用PWV/IWV/TCWV。
@@ -60,3 +64,7 @@ Files: `tools/terrain_diffusion/innovation_experiment.py`。
 2块真实试运行完成三组头和三个开发布局，原参考复现最大差7.6294e-6 mm，真值完全一致。只读CPU审阅复算了首窗零历史和切换条件布局后的过去3h重算，均符合合同。
 
 软核分母下限为1e-8。支持很弱时，50 km核把远处创新衰减回零：实际影响2020有效记录1955/327330，均在200 km以上档，占该档1955/12594（约15.5%）；150/300 km核未受影响。该行为与信息探针一致，保留为远距离低支持的回退规则。
+
+## 冻结后的补充日历
+
+在第二种子完成之前登记：I0/I1/I2全部冻结后，追加2020每月15–17日72小时、3布局、137登记站的开发评价；同一源权重和系数，不重新拟合、不混入原8–10日主表。使用`maintenance/joint_spectral_implementation_20261125/innovation_additional_calendar.py`，原参考也在该新日历重算，逐种子/月配对，报告全部三组结果。它检查对其他日期的迁移，仍属2020开发评价；确认/C/D保持隔离。

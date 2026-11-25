@@ -6,6 +6,7 @@
 
 | 实验 | 已记录状态 | 证据入口 |
 |---|---|---|
+| 20261125_observed_innovation_precision | COMPLETE_OBSERVED_INNOVATION_RIDGE：2种子、3头、各累计3000连续块；I1主候选冻结 | [计划、架构及输入合同](superpowers/plans/2026-11-25-observed-innovation-refinement.md)；[统一配对评价](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/REPORT.md) |
 | 20261125_station_distance_precision | D：距离加权损失，3000步双种子排在warm队列之后；71项工程测试及3项分析测试通过 | [距离加权协议](superpowers/specs/2026-11-25-distance-balanced-precision.md)；[分布审计](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_support_distribution_audit/results.json) |
 | 20261125_warm_joint_precision / query_precision / query_precision_s17_retry | T2及Q最终3000步双种子已完成，保持原GRU参考；T5队列继续 | [统一配对报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/REPORT.md)；[诊断与优化判据](research_notes/2026-11-25-precision-continuation.md) |
 | 20261125_station_query_precision | 原始站点因果Transformer，双种子3000步运行中 | [完整网络](superpowers/specs/2026-11-25-direct-station-query-fusion.md) |

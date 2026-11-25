@@ -1,0 +1,122 @@
+[
+  {
+    "case": "I0_current",
+    "seed": 42,
+    "steps": 3000,
+    "fit_method": "analytic_ridge_contiguous_blocks",
+    "metrics": {
+      "macro_rmse_mm": 9.902367095210629,
+      "micro_rmse_mm": 10.433632850646973,
+      "mae_mm": 7.627622127532959,
+      "bias_mm": 0.3352492153644562,
+      "increment_macro_rmse_mm": 5.7489317766841435,
+      "layout_macro_rmse_mm": [
+        10.032549279297003,
+        9.996889158041544,
+        9.677662848293343
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  },
+  {
+    "case": "I1_history",
+    "seed": 42,
+    "steps": 3000,
+    "fit_method": "analytic_ridge_contiguous_blocks",
+    "metrics": {
+      "macro_rmse_mm": 9.867690465363765,
+      "micro_rmse_mm": 10.401457786560059,
+      "mae_mm": 7.6013264656066895,
+      "bias_mm": 0.25784072279930115,
+      "increment_macro_rmse_mm": 5.579523811320972,
+      "layout_macro_rmse_mm": [
+        9.98641076624147,
+        9.958585237823913,
+        9.658075392025909
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  },
+  {
+    "case": "I2_seasonal",
+    "seed": 42,
+    "steps": 3000,
+    "fit_method": "analytic_ridge_contiguous_blocks",
+    "metrics": {
+      "macro_rmse_mm": 9.865576776061276,
+      "micro_rmse_mm": 10.399975776672363,
+      "mae_mm": 7.600083351135254,
+      "bias_mm": 0.2539880573749542,
+      "increment_macro_rmse_mm": 5.578445207802742,
+      "layout_macro_rmse_mm": [
+        9.986320593886111,
+        9.960829785437275,
+        9.649579948860437
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  },
+  {
+    "case": "I0_current",
+    "seed": 17,
+    "steps": 3000,
+    "fit_method": "analytic_ridge_contiguous_blocks",
+    "metrics": {
+      "macro_rmse_mm": 9.796126069400326,
+      "micro_rmse_mm": 10.316788673400879,
+      "mae_mm": 7.539061546325684,
+      "bias_mm": -0.023760365322232246,
+      "increment_macro_rmse_mm": 5.750212155349078,
+      "layout_macro_rmse_mm": [
+        9.84856372380238,
+        9.95729825547352,
+        9.582516228925073
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  },
+  {
+    "case": "I1_history",
+    "seed": 17,
+    "steps": 3000,
+    "fit_method": "analytic_ridge_contiguous_blocks",
+    "metrics": {
+      "macro_rmse_mm": 9.766437923365899,
+      "micro_rmse_mm": 10.289407730102539,
+      "mae_mm": 7.515612602233887,
+      "bias_mm": -0.08309780806303024,
+      "increment_macro_rmse_mm": 5.575090606049344,
+      "layout_macro_rmse_mm": [
+        9.816508868672258,
+        9.919432961646406,
+        9.563371939779035
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  },
+  {
+    "case": "I2_seasonal",
+    "seed": 17,
+    "steps": 3000,
+    "fit_method": "analytic_ridge_contiguous_blocks",
+    "metrics": {
+      "macro_rmse_mm": 9.762795355316893,
+      "micro_rmse_mm": 10.286870956420898,
+      "mae_mm": 7.512480735778809,
+      "bias_mm": -0.1035422757267952,
+      "increment_macro_rmse_mm": 5.573327657619532,
+      "layout_macro_rmse_mm": [
+        9.812040203532113,
+        9.915652007134165,
+        9.5606938552844
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  }
+]

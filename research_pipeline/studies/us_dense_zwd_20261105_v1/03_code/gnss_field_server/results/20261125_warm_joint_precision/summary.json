@@ -131,5 +131,24 @@
       "station_count": 135,
       "valid_count": 327330
     }
+  },
+  {
+    "seed": 17,
+    "case": "T5_joint",
+    "steps": 3000,
+    "metrics": {
+      "macro_rmse_mm": 9.859740874081766,
+      "micro_rmse_mm": 10.380044937133789,
+      "mae_mm": 7.607746124267578,
+      "bias_mm": -0.18063920736312866,
+      "increment_macro_rmse_mm": 5.586407426907563,
+      "layout_macro_rmse_mm": [
+        9.893005673865845,
+        10.03794907649246,
+        9.648267871886992
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
   }
 ]
