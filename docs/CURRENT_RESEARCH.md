@@ -1,5 +1,7 @@
 # 当前研究进展：2026-11-25
 
+精度衔接实测：[既有约10 mm基础场上的继续优化](research_notes/2026-11-25-precision-continuation.md)。Q的seed17恢复队列已完成3000步；同队列原GRU双种子9.929151 mm，T2为9.928225 mm，Qraw为9.929083 mm，Qema为9.923623 mm，配对月份区间均跨零，继续保留原参考。原始站点72h因果Transformer＋连续查询注意力已开始双种子3000步验证，正式运行目录为`20261125_station_query_precision`。修正幅度和误差分层图已归档；原确认集及C/D标签保持隔离。
+
 精度优先级更新：[在既有约10mm基础场上的3000步正式衔接](superpowers/plans/2026-11-25-warm-joint-precision.md)。用户要求新结构必须建立在旧精度之上。已将最佳GRU+p14参考、原归一化与8×8历史完整接回新16×16Transformer；seed42复现9.99836mm，保存预测最大差7.63e-6mm。冻结参考T2、冻结参考T5、低学习率联合T5的双种子3000步队列正在训练，尚不声明新精度收益。
 
 代码与实测：[时空融合与谱残差实验全流程及12张架构图](research_notes/2026-11-25-joint-spectral-implementation.md)。修正版T0–T5各60步、五折T5各60步、表示100步、九组概率及Gaussian各100步、四组v及Gaussian各100步已完成；[报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_joint_spectral_pilot_v2/REPORT.md)。规则256锚点自重构6.85/8.61mm，几何适应256诊断降至0.61/0.68mm，物理组留出仍20.21mm。A0同100步epsilon/v为344.63/33.13mm，支持先解决表示及高噪声端数值问题。该进展更新下列“尚未实现”设计状态，尚无新架构3000步双种子正式精度结论。

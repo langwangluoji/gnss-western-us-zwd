@@ -161,9 +161,79 @@
         -0.024969214995842835,
         -0.004969490864040882
       ]
+    },
+    {
+      "case": "Qraw",
+      "seed": 17,
+      "run": "query",
+      "steps": 3000,
+      "macro_rmse_mm": 9.860637045615391,
+      "micro_rmse_mm": 10.383072976116928,
+      "mae_mm": 7.610270817448871,
+      "bias_mm": -0.21476231992938496,
+      "increment_macro_rmse_mm": 5.58391039268217,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": 0.0006925846276732983,
+      "delta_micro_rmse_mm": 0.003779775743899094,
+      "delta_mae_mm": 0.0003925633059740363,
+      "delta_bias_mm": -0.18484425420478207,
+      "delta_increment_macro_rmse_mm": 0.0003082967795249303,
+      "monthly_paired95_mm": [
+        -0.0048033866898788075,
+        0.005822548930829496
+      ]
+    },
+    {
+      "case": "Qema",
+      "seed": 17,
+      "run": "query",
+      "steps": 3000,
+      "macro_rmse_mm": 9.86495547167119,
+      "micro_rmse_mm": 10.38060594238107,
+      "mae_mm": 7.612664509812354,
+      "bias_mm": 0.131448049315559,
+      "increment_macro_rmse_mm": 5.584367460039064,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": 0.0050110106834715396,
+      "delta_micro_rmse_mm": 0.0013127420080412122,
+      "delta_mae_mm": 0.002786255669456672,
+      "delta_bias_mm": 0.1613661150401619,
+      "delta_increment_macro_rmse_mm": 0.0007653641364191444,
+      "monthly_paired95_mm": [
+        -0.005224601879128787,
+        0.014427824213762763
+      ]
     }
   ],
   "two_seed_means": [
+    {
+      "case": "Qema",
+      "macro_rmse_mm": 9.923623307804036,
+      "reference_macro_rmse_mm": 9.929150638259198,
+      "delta_macro_rmse_mm": -0.005527330455162627,
+      "common_month_two_seed_paired95_mm": [
+        -0.014112694187692187,
+        0.003366485616809544
+      ],
+      "improves_both_seeds": false,
+      "negative_interval_upper": false
+    },
+    {
+      "case": "Qraw",
+      "macro_rmse_mm": 9.929082782706368,
+      "reference_macro_rmse_mm": 9.929150638259198,
+      "delta_macro_rmse_mm": -6.785555282995404e-05,
+      "common_month_two_seed_paired95_mm": [
+        -0.0037585430871505785,
+        0.0033017762653252173
+      ],
+      "improves_both_seeds": false,
+      "negative_interval_upper": false
+    },
     {
       "case": "T2_frozen",
       "macro_rmse_mm": 9.928224873635964,

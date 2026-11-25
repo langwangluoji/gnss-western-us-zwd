@@ -1,0 +1,1 @@
+{"status":"CANCELLED_DUPLICATE_TRAJECTORY","reason":"Recovered existing identical station_query process PID27340 in results/20261125_station_query_precision; preserve earlier run and release duplicate GPU allocation","cancelled_pid":844,"authoritative_run":"results/20261125_station_query_precision","formal_result":false,"local_files_preserved":true}

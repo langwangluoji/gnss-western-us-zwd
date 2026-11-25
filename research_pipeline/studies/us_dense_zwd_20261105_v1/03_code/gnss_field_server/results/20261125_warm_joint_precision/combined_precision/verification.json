@@ -53,6 +53,24 @@
       "source_prediction_sha256": "43a310d152cf1a0940af48bc4a3d1bc45a6f01682705740a68ce01ee94aab8a8",
       "all_five_primary_metrics_max_difference_mm": 8.418423860234725e-07,
       "truth_exact": true
+    },
+    {
+      "case": "Qraw",
+      "seed": 17,
+      "prediction_sha256": "2444ee79f865a26dc8322f891df5aed96e1d62fcd55e952a70287e2f6a99e591",
+      "source_weight_sha256": "0167bfb5c067adcfebe55b7ab58f850585d91573da9ecc8a8e1dead58017ca3a",
+      "source_prediction_sha256": "20bcf9611758283b516e9f8d75945efa046214a63cb7659dbafd9d3935106820",
+      "all_five_primary_metrics_max_difference_mm": 1.595713925439668e-07,
+      "truth_exact": true
+    },
+    {
+      "case": "Qema",
+      "seed": 17,
+      "prediction_sha256": "d65f126975e2202aec66b4fbe0b88430be2817945caef66d9d120bc5387ca19f",
+      "source_weight_sha256": "0167bfb5c067adcfebe55b7ab58f850585d91573da9ecc8a8e1dead58017ca3a",
+      "source_prediction_sha256": "20bcf9611758283b516e9f8d75945efa046214a63cb7659dbafd9d3935106820",
+      "all_five_primary_metrics_max_difference_mm": 2.4474923421280437e-07,
+      "truth_exact": true
     }
   ],
   "computed_in_float64": true,

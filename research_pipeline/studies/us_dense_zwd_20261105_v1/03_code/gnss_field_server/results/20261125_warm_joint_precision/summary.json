@@ -112,5 +112,24 @@
       "station_count": 135,
       "valid_count": 327330
     }
+  },
+  {
+    "seed": 17,
+    "case": "T5_frozen",
+    "steps": 3000,
+    "metrics": {
+      "macro_rmse_mm": 9.859843068815914,
+      "micro_rmse_mm": 10.379671096801758,
+      "mae_mm": 7.60854434967041,
+      "bias_mm": -0.048745047301054,
+      "increment_macro_rmse_mm": 5.585028845143362,
+      "layout_macro_rmse_mm": [
+        9.89374784211165,
+        10.032906497115002,
+        9.65287486722109
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
   }
 ]

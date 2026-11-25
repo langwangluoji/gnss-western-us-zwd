@@ -1,0 +1,39 @@
+{
+  "code_sha256": "2d0dcf92fcfa4ad27f63678bf464a148d841cc705e0e072ae22b88eefefa5160",
+  "anomaly_code_sha256": "d61103542c4f48ef50dc12f433b4e2142974cca3c52b117328da961c9dfc35ab",
+  "source_sha256": "d87223f76df74354dde4ad1f1ab18097880b4a0396b2d5b565bda10000385f3a",
+  "data_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+  "records": [
+    {
+      "date": "2016-01-08",
+      "development": false,
+      "exact_initialized_reference": true,
+      "preserved_inputs_exact": true,
+      "history_shape": [
+        12,
+        72,
+        82,
+        11
+      ],
+      "anomaly_rms": 0.8733135461807251,
+      "valid_anomaly_fraction": 0.9942976832389832,
+      "saved_original_prediction_max_difference_mm": null
+    },
+    {
+      "date": "2020-01-08",
+      "development": true,
+      "exact_initialized_reference": true,
+      "preserved_inputs_exact": true,
+      "history_shape": [
+        12,
+        72,
+        82,
+        11
+      ],
+      "anomaly_rms": 0.8823196291923523,
+      "valid_anomaly_fraction": 0.9731961488723755,
+      "saved_original_prediction_max_difference_mm": 7.62939453125e-06
+    }
+  ],
+  "confirmation_C_D_labels_used": false
+}

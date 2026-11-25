@@ -139,17 +139,23 @@ def main():
     p.add_argument('--data',type=Path,default=PROJECT/'results/20261125_temporal_continuous_data')
     p.add_argument('--source',type=Path,default=PROJECT/'results/20261125_p14_continuous_fusion')
     p.add_argument('--steps',type=int,default=3000);p.add_argument('--seeds',type=int,nargs='+',default=[42,17])
-    p.add_argument('--kind',choices=['gru','lstm','transformer'],default='transformer');args=p.parse_args()
+    p.add_argument('--kind',choices=['gru','lstm','transformer'],default='transformer')
+    p.add_argument('--history-mode',choices=['raw','anomaly'],default='raw');args=p.parse_args()
     torch.set_num_threads(3);torch.cuda.set_per_process_memory_fraction(.32)
     args.out.mkdir(parents=True,exist_ok=False);out=args.out
     write_json(out/'protocol.json',dict(config={k:str(v) if isinstance(v,Path) else v for k,v in vars(args).items()},
         source_weights={str(s):sha(args.source/f'gru_s{s}/last.pt') for s in args.seeds},
         data_sha256=sha(args.data/'contract.json'),code_sha256={f:sha(Path(__file__).with_name(f)) for f in
-            ('station_query.py','warm_joint_experiment.py','p14_fusion.py','temporal_encoders.py','fixed_support.py','unet_foundation.py','data.py')},
+            ('station_query.py','station_anomaly.py','warm_joint_experiment.py','p14_fusion.py','temporal_encoders.py','fixed_support.py','unet_foundation.py','data.py')},
         source_kind='gru',training='continuous2016-2019,12h blocks,82station IDs only sampled;75%random/25%hole100',
         new_lr=1e-4,ema=.999,trust_region_mm=5,raw_and_ema_final_preregistered=True,
+        history_mode=args.history_mode,anomaly_scale_mm=10 if args.history_mode=='anomaly' else None,
         evaluation='same2020monthly72h x3layouts x137dev, exposed',strict_oof=False,confirmation_C_D_read=False))
-    data=StationData(args.data);e=data.events;stop=int(np.searchsorted(e.hours,np.datetime64('2020-01-01','h').astype('int64')))
+    if args.history_mode=='anomaly':
+        from .station_anomaly import AnomalyData
+        data=AnomalyData(args.data)
+    else:data=StationData(args.data)
+    e=data.events;stop=int(np.searchsorted(e.hours,np.datetime64('2020-01-01','h').astype('int64')))
     blocks=chronological_blocks(71,stop,12);summary=[];xy=e.geo['xy']
     for seed in args.seeds:
         torch.manual_seed(seed);rng=np.random.default_rng(seed+28011)
@@ -186,7 +192,8 @@ def main():
                     batch_rmse_mm=float((pred-b['target'])[mask].square().mean().sqrt().detach()*data.std[0]))
                 trace.append(row);write_json(folder/'curve.json',trace);write_json(folder/'progress.json',row)
                 print(json.dumps(dict(seed=seed,**row)),flush=True)
-        for label,net in [(f'S_{args.kind}_raw',model),(f'S_{args.kind}_ema',ema)]:
+        prefix='A' if args.history_mode=='anomaly' else 'S'
+        for label,net in [(f'{prefix}_{args.kind}_raw',model),(f'{prefix}_{args.kind}_ema',ema)]:
             dest=out/f'{label}_s{seed}';dest.mkdir();torch.save(net.state_dict(),dest/'last.pt')
             write_json(dest/'fit.json',dict(case=label,seed=seed,steps=args.steps,trace=trace,same_training_trajectory=True))
             metrics=evaluate(data,net,72,12,dest);row=dict(seed=seed,case=label,steps=args.steps,metrics=metrics)

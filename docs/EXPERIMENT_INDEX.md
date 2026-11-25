@@ -6,6 +6,9 @@
 
 | 实验 | 已记录状态 | 证据入口 |
 |---|---|---|
+| 20261125_warm_joint_precision / query_precision / query_precision_s17_retry | T2及Q最终3000步双种子已完成，保持原GRU参考；T5队列继续 | [统一配对报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/REPORT.md)；[诊断与优化判据](research_notes/2026-11-25-precision-continuation.md) |
+| 20261125_station_query_precision | 原始站点因果Transformer，双种子3000步运行中 | [完整网络](superpowers/specs/2026-11-25-direct-station-query-fusion.md) |
+| 20261125_station_anomaly_precision | 10 mm尺度空间异常编码：CPU合同及真实数据复现通过，正式实验启动 | [异常编码设计](superpowers/specs/2026-11-25-station-anomaly-precision.md)；[真实数据探针](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_station_anomaly_audit/verification.json) |
 | 20261125_joint_spectral_pilot_v2 | COMPLETE_ALL；另4组v稳定性控制完成；60/100步工程验证、正式表示门槛未过 | [结果与曲线](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_joint_spectral_pilot_v2/REPORT.md)；[12张架构图及代码说明](research_notes/2026-11-25-joint-spectral-implementation.md) |
 | 20261125_p14_continuous_fusion | COMPLETE_CONTINUOUS_P14_FUSION，14组含冻结对照 | [完成快照](../maintenance/transformer_architecture_20261125/evidence_snapshot.json)；[新架构及流程图](superpowers/specs/2026-11-25-masked-transformer-fusion-residual-design.md) |
 | 20261125_temporal_forecast_screen | COMPLETE_LOCAL_FORECAST_26_CONFIGURATIONS | [报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_temporal_forecast_screen/REPORT.md)；[分析](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_temporal_forecast_screen/ANALYSIS.md) |

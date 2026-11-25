@@ -1,0 +1,8 @@
+{
+  "actual_completed_seed_count": 1,
+  "seeds": [
+    17
+  ],
+  "raw_and_ema_from_same_trajectory": true,
+  "runner_status_label_is_hardcoded_for_two_seeds": true
+}
