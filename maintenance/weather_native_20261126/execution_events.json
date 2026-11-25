@@ -1,0 +1,16 @@
+{
+  "events": [
+    {
+      "operation": "CPU joint-score audit shell wrapper",
+      "outcome": "All reference/local/full scientific joint_metrics files completed; final PowerShell redirection syntax failed after the loop.",
+      "correction": "Later loop commands wrap the loop in a script block before redirecting output.",
+      "scientific_files_modified_by_failure": false
+    },
+    {
+      "operation": "manual GraphAffine training launch during delayed Git synchronization",
+      "outcome": "The registered campaign already owned the output directory. The duplicate launch stopped at the exist_ok=False directory guard before writing a protocol or updating weights.",
+      "correction": "Continue monitoring the original registered campaign; no duplicate training trajectory was created.",
+      "scientific_files_modified_by_failure": false
+    }
+  ]
+}

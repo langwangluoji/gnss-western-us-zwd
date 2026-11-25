@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-11-25T21:38:08.887677+00:00",
+  "sources": {
+    "42": {
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_gp_process\\s42\\full\\protocol.json": "f94e67dd4ba1b7fcc3dfa4d0dc9f98b907d847fed6cabee1716e83fbaa923161",
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_gp_process\\s42\\full\\last.pt": "0033dac8715d3d00f59960e042a75f9ef5d6c5fef42a3d70b9395791d5e19fed",
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_gp_process\\s42\\local\\protocol.json": "83484a9ec2edfb1c3ea25c231c84e35a0224ff3da8a029fd4ca011ae31e610f1",
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_gp_process\\s42\\local\\last.pt": "5161a0cc14adc40abbc13524f2847fe4a0b1a507c0257829f84a61c460ea49ee",
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_probability_context\\S175_s42\\protocol.json": "7d4d374e551d11706761353456fe899c0f63eb2936e7e4dd11378267ff4d03b1",
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_probability_context\\S175_s42\\last.pt": "de73760a315c0b5bd4967023365df156daeda5fa2cf4418b30342a367c4cf51c",
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_probability_context\\S175_s42\\copula.json": "baa8b467e363cbcd146674fd431cbc4a4a78737841aad4ad5ae35943fa1fd4bf",
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_means\\transformer72_physics_aux_s42\\protocol.json": "852e229ab224927ff03480272df25974c3d96ce9f0dc4a08dda4a5764a6bb021",
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_means\\transformer72_physics_aux_s42\\last.pt": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508"
+    },
+    "17": {
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_gp_process\\s17\\full\\protocol.json": "3d44b37c64951ee57189dd1205d1a7bce6909ca06a653193206ce67762997ec5",
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_gp_process\\s17\\full\\last.pt": "044a2b14f658e81bc25e30606e9aa01ebe7396bd486b9b2b9efaa0779342838f",
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_gp_process\\s17\\local\\protocol.json": "3ffa9814630500cf73c12fc0734bfb8bd6a15a17d117fa62318d5ec474034642",
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_gp_process\\s17\\local\\last.pt": "b151fe439b0c70329d7b52001e5638ef6e763c01e66efc85bfc3a2dbce05dcfb",
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_probability_context\\S175_s17\\protocol.json": "c1f1e011fdcece1a605515acdd507996067036e0570fed9cae7c8bcf6c2386f0",
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_probability_context\\S175_s17\\last.pt": "846d8e3af3bd25c4d827a80fa359a32865be059edd57168d0453e6217e64eb10",
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_probability_context\\S175_s17\\copula.json": "206c8bb2d915131f1e553e3442745f11abbe7ccfdb1da21da5168a618eede405",
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_means\\transformer72_physics_aux_s17\\protocol.json": "9130bf255eef638b4370bb60c451a8637996bf86b495bddbd8e9465b1f484ed0",
+      "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_means\\transformer72_physics_aux_s17\\last.pt": "68b8625b973897dba7ad89bd23d74ced2c6e123742a7889fdbc140bd5ac536e8"
+    }
+  },
+  "primary_candidates": [
+    "reference",
+    "full",
+    "local"
+  ],
+  "weights": "last",
+  "solver": "heun0",
+  "steps": 20,
+  "members": 32,
+  "additional_calendar": "2020 each month15-17,72continuous origin hours,3layouts,137registeredqueries",
+  "prespecified_spatial_pair_distance_km": [
+    [
+      0,
+      50
+    ],
+    [
+      50,
+      150
+    ],
+    [
+      150,
+      300
+    ],
+    [
+      300,
+      null
+    ]
+  ],
+  "primary_utility": "F6 station-pair fair CRPS; also report marginal CRPS, fair energy, current precision and trajectory increments",
+  "exposure": "Dates already examined by historical I1 model; frozen additional-calendar verification, not blind independent test",
+  "no_refitting_or_gate_selection_on_additional_calendar": true,
+  "strict_oof": false,
+  "confirmation_C_D_read": false,
+  "code_sha256": "d13ea088baa3f51c5e3a4f4120a47de3b407a4fc77e2ffd450e71391292caf8b"
+}
