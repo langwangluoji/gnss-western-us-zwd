@@ -24,7 +24,9 @@ def main():
     for label,months in [('DJF',[12,1,2]),('MAM',[3,4,5]),('JJA',[6,7,8]),('SON',[9,10,11])]:
         masks[label]=np.broadcast_to(np.isin(np.arange(1,13),months)[None,:,None,None],nearest.shape)
     rows=[];reference=None;source=None;hashes={}
-    for name in ('reference','full','local','affine'):
+    models=['reference','full','local','affine']
+    if (root/'graph_affine/eval_heun0/metrics.json').exists():models.append('graph_affine')
+    for name in models:
         folder=root/name if name=='reference' else root/name/'eval_heun0'
         lineage=read(folder/'lineage.json')
         if source is None:source=lineage['source']
@@ -48,7 +50,8 @@ def main():
     fig,axes=plt.subplots(1,3,figsize=(15,4.5),layout='constrained')
     for ax,labels,title in [(axes[0],[k for k in masks if k.startswith('distance')],'Nearest visible GNSS'),
         (axes[1],[k for k in masks if k.startswith('coast')],'Coast distance'),(axes[2],['DJF','MAM','JJA','SON'],'Season')]:
-        for model,color in [('full','#b27b55'),('local','#427f79'),('affine','#617da1')]:
+        for model,color in [('full','#b27b55'),('local','#427f79'),('affine','#617da1'),('graph_affine','#9b6498')]:
+            if model not in models:continue
             values=[next((r['gain_percent'] for r in rows if r['model']==model and r['stratum']==s and r['lead']==6),np.nan) for s in labels]
             ax.plot(range(len(labels)),values,'o-',color=color,label=model)
         ax.axhline(0,color='#888',lw=.8);ax.axhline(5,color='#888',ls='--')

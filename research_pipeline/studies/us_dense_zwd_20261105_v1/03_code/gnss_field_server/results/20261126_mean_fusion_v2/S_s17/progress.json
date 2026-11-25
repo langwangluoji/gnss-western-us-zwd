@@ -1,19 +1,19 @@
 {
-  "step": 1,
-  "supervised_updates": 1,
-  "loss": 1.3516387939453125,
-  "query_loss": 1.1537988185882568,
-  "causal_station_loss": 0.7913599014282227,
-  "auxiliary_label_cells": 1170735,
+  "step": 3000,
+  "supervised_updates": 3000,
+  "loss": 0.9443557262420654,
+  "query_loss": 0.7292747497558594,
+  "causal_station_loss": 0.8603238463401794,
+  "auxiliary_label_cells": 1133424,
   "finite_label_cells": 10752,
-  "cache_block": 0,
-  "last_origin_hour": 403380,
+  "cache_block": 2999,
+  "last_origin_hour": 404460,
   "group_lrs": [
-    9.999997532599125e-05,
-    0.0002999999259779737
+    1e-05,
+    2.9999999999999997e-05
   ],
-  "current_correction_rms_mm": 0.6722342371940613,
-  "future6_correction_rms_mm": 5.201108932495117,
-  "seconds": 0.5310000000026776,
-  "spatial_gate": -0.0002999982098117471
+  "current_correction_rms_mm": 0.7804276347160339,
+  "future6_correction_rms_mm": 2.1128597259521484,
+  "seconds": 853.5620000000054,
+  "spatial_gate": -0.09831523150205612
 }

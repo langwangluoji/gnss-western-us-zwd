@@ -1,0 +1,101 @@
+{
+  "config": {
+    "phase": "train",
+    "cache": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_gap_smoke\\cache_s42",
+    "embeddings": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_process_gap_smoke\\embeddings_s42",
+    "gaussian": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_probability_context\\S175_s42",
+    "copula": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_probability_context\\S175_s42\\copula.json",
+    "out": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_weather_gp_gap_metric\\c265_s42",
+    "model": null,
+    "view": 265,
+    "seed": 42,
+    "steps": 4,
+    "lr": 0.0003,
+    "smoke_cache": true,
+    "metric_lr": 0.001,
+    "members": 32,
+    "sample_seed": 261126,
+    "device": "cuda"
+  },
+  "source": {
+    "gaussian_protocol_sha256": "7d4d374e551d11706761353456fe899c0f63eb2936e7e4dd11378267ff4d03b1",
+    "gaussian_weights_sha256": "de73760a315c0b5bd4967023365df156daeda5fa2cf4418b30342a367c4cf51c",
+    "copula_sha256": "baa8b467e363cbcd146674fd431cbc4a4a78737841aad4ad5ae35943fa1fd4bf",
+    "training_embedding_manifest_sha256": "9a40d444992cb09fbb45b689ab42eb0cf39feb69b28ee71c4e75bf3e91445cf1",
+    "mean_weights_sha256": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508",
+    "normalization": {
+      "bias_mm": [
+        -0.18208724374050447,
+        0.08582369715246142,
+        0.39398403823050154,
+        0.6452158673219606,
+        0.8442499068392654,
+        1.0042661034666491,
+        1.1351475027338613
+      ],
+      "scale_mm": [
+        9.820845495491572,
+        10.630630735588428,
+        11.593580157773715,
+        12.656472346066382,
+        13.81153593138061,
+        14.966359888233054,
+        16.07272898562415
+      ],
+      "count": [
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603769.0,
+        4603767.0
+      ],
+      "role": "training_only"
+    }
+  },
+  "cache_manifest_sha256": "667f2126087f5cc5f8bfe13c96da4bb2287cfc708e00c938d0818ec4e8175634",
+  "embedding_manifest_sha256": "8e9c357a7253d590914cdf0d5db0461480764e126ef832e3fb72e22d9df09860",
+  "code_sha256": {
+    "native_process_experiment.py": "ef7ca45c89f1a7489510a12762ac3e335c98d3bec611e81c8d16e90abe661c6f",
+    "native_process_models.py": "74e614bedd3a6b0ac8ef2fdf689cf1b1a10fd81f8d73aac5974af30d3408bb19",
+    "native_process_ops.py": "2b3c017dd0d9c3ddefd0a2e5dd2f7625f320f5ab27d214270c1779f1e49372de",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_probability_context.py": "ab3aad752ed3b6ed886939cdffe823966032c6811cd4976cba30f421e9a3f898",
+    "native_copula.py": "95eade5fb6d732901662509a881c6efcf28e12f06d3193d408ac079dad577c19",
+    "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+    "native_weather_gp.py": "330643f915c4771f318760d9d7c22784b01d064b89251488c1ab8c86bfcf3271",
+    "native_weather_gp_experiment.py": "371ce3374f2bb8ecedc966bf43b0b9efebb135fdc409e3ab41412b69c8853234"
+  },
+  "parameters": 44027,
+  "warm_covariance_max_difference": 7.075147454016495e-08,
+  "covariance_precision": "float64 including Cholesky and NLL; neural parameters float32",
+  "marginals": "frozen S175 location and scale; diagonal correlation=1",
+  "rho_bounds": [
+    1e-05,
+    0.99
+  ],
+  "time_shrinkage": 0.05,
+  "spatial_range_multipliers": [
+    0.25,
+    4
+  ],
+  "spatial_range_base_km_km_m": [
+    300,
+    300,
+    1500
+  ],
+  "spatial_kernel": "normalized Gaussian convolution with lead-specific ranges; not independently rescaled coordinates",
+  "optimizer": {
+    "neural_lr": 0.0003,
+    "metric_lr": 0.001,
+    "eta_min_fraction": 0.1,
+    "scheduler": "matched per-group cosine factor"
+  },
+  "query_consistency": "kernel and global weather depend only on fixed visible history and each query; no query pooling",
+  "experimental_mode": "ENGINEERING_SMOKE_ONLY",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}

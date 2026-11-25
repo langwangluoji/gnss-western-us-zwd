@@ -1,0 +1,59 @@
+{
+  "config": {
+    "phase": "probability",
+    "cache": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_cache_v2\\train_s17",
+    "out": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_probability\\transformer72_physics_aux_last_s17\\joint",
+    "seed": 17,
+    "steps": 3000,
+    "lr": 0.0003,
+    "embeddings": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_embeddings\\transformer72_physics_aux_last_train_s17",
+    "preconditioner": null,
+    "domain": "joint",
+    "condition_view": "latent",
+    "width": 64
+  },
+  "embedding_manifest_sha256": "59a1a973c723df20b81bff18515539f58649eeba0b3c3c97f422451f1a36f1d9",
+  "normalization": {
+    "bias_mm": [
+      -0.3191206658246343,
+      -0.2356088196125176,
+      -0.06838680860587248,
+      0.06610386056868962,
+      0.17816621285081177,
+      0.2986640770915261,
+      0.4088863253034804
+    ],
+    "scale_mm": [
+      9.847583624875096,
+      10.649084493794433,
+      11.601293686841542,
+      12.66060461674355,
+      13.817742383047642,
+      14.969984847430231,
+      16.075119820156544
+    ],
+    "count": [
+      4603792.0,
+      4603779.0,
+      4603766.0,
+      4603753.0,
+      4603741.0,
+      4603728.0,
+      4603714.0
+    ],
+    "role": "training_only"
+  },
+  "condition_encoder_kind": "transformer",
+  "condition_encoder_weights_sha256": "68b8625b973897dba7ad89bd23d74ced2c6e123742a7889fdbc140bd5ac536e8",
+  "condition_encoder_variant": "physics_aux",
+  "code_sha256": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+  "strict_oof": false,
+  "extra_model_sources": {
+    "native_probability_context.py": "ab3aad752ed3b6ed886939cdffe823966032c6811cd4976cba30f421e9a3f898"
+  },
+  "condition_dimension": 64,
+  "model_class": "NativeDiffusion",
+  "parameters": 38535,
+  "preconditioner_sha256": null,
+  "source_exposure": "frozen source fitted all2016-2019; development screen, not strict OOF"
+}

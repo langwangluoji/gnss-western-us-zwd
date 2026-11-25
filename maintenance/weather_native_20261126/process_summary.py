@@ -26,6 +26,8 @@ def main():
     args=p.parse_args();root=RESULTS/'20261126_gp_process'/f's{args.seed}';out=root/'summary';out.mkdir(parents=True,exist_ok=True)
     folders=[('reference',root/'reference')]
     folders += [(f'{mode}_{solver}',root/mode/f'eval_{solver}') for mode in ('full','local','affine') for solver in ('heun0','ddim')]
+    if all((root/'graph_affine'/f'eval_{s}'/'metrics.json').exists() for s in ('heun0','ddim')):
+        folders += [(f'graph_affine_{s}',root/'graph_affine'/f'eval_{s}') for s in ('heun0','ddim')]
     rows=[];scores={};increments={};source=None;query_audits={}
     for label,folder in folders:
         lineage=read(folder/'lineage.json');metrics=read(folder/'metrics.json')
@@ -53,7 +55,7 @@ def main():
             row['analytic_gaussian_crps_mm']=metrics['analytic_gaussian_crps_mm_by_horizon']
             row['analytic_gaussian_80_coverage']=metrics['analytic_gaussian_80_coverage']
             row['analytic_gaussian_mean_R_F6_rmse_mm']=metrics['gaussian_distribution_mean']['horizon_macro_rmse_mm'][::6]
-        mode=lineage['mode']
+        mode='graph_affine' if label.startswith('graph_affine_') else lineage['mode']
         if mode!='reference':
             protocol=read(root/mode/'protocol.json');row['parameters']=protocol['parameters']
             row['training_seconds']=read(root/mode/'status.json')['seconds']
@@ -65,6 +67,11 @@ def main():
         comparisons[label+'_vs_affine_heun0']=dict(R_delta_ci95_mm=score_interval(scores[label],scores['affine_heun0'],0),
             F6_delta_ci95_mm=score_interval(scores[label],scores['affine_heun0'],6),
             increment_delta_ci95_mm=scalar_interval(*increments[label],*increments['affine_heun0']))
+    if 'graph_affine_heun0' in scores:
+        comparisons['full_heun0_vs_graph_affine_heun0']=dict(
+            R_delta_ci95_mm=score_interval(scores['full_heun0'],scores['graph_affine_heun0'],0),
+            F6_delta_ci95_mm=score_interval(scores['full_heun0'],scores['graph_affine_heun0'],6),
+            increment_delta_ci95_mm=scalar_interval(*increments['full_heun0'],*increments['graph_affine_heun0']))
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt

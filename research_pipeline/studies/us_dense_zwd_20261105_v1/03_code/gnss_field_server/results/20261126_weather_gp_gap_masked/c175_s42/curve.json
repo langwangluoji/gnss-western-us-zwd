@@ -1,0 +1,22 @@
+[
+  {
+    "step": 1,
+    "loss": -0.07379971667807357,
+    "supervised_updates": 1,
+    "complete_trajectories": 640,
+    "used_origins": 5,
+    "total_trajectories": 640,
+    "last_origin_hour": 423600,
+    "seconds": 0.4850000000005821
+  },
+  {
+    "step": 4,
+    "loss": -0.07412843785920181,
+    "supervised_updates": 4,
+    "complete_trajectories": 640,
+    "used_origins": 5,
+    "total_trajectories": 1435,
+    "last_origin_hour": 423600,
+    "seconds": 0.9529999999940628
+  }
+]

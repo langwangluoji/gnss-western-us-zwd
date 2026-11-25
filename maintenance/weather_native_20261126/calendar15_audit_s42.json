@@ -1,0 +1,17 @@
+{
+  "cache_protocol_sha256": "0d8a798e7d0c6e027ebdbc70365cf009de631452b76036d572088976939154f7",
+  "completed_blocks_audited": 216,
+  "cache_status": "COMPLETE",
+  "all_truth_values_exact": true,
+  "all_origins_hourly": true,
+  "training_group_isolation_verified": false,
+  "raw_state_blocks_checked": [
+    0,
+    215
+  ],
+  "max_float16_raw_state_quantization": 0.00048461914062492006,
+  "I1_reproduction_max_difference_mm": null,
+  "original_data_contract_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+  "code_sha256": "273cf37edf487cae79fe2d65371e68be9761dab2389cfdc1b03c6475ac4825ae",
+  "confirmation_C_D_labels_read": false
+}

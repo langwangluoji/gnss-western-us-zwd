@@ -1,0 +1,345 @@
+{
+  "rows": [
+    {
+      "distance": "0-50",
+      "lead": 0,
+      "valid_pair_hours": 1588653,
+      "observed_normalized_second_moment": 0.65694426100106,
+      "ci95": [
+        0.6181396561445314,
+        0.6905614350213527
+      ],
+      "reference_mean_unit_variance_correlation": 0.3382279912757223,
+      "pooled_standardized_rms": 0.9999131416030177
+    },
+    {
+      "distance": "0-50",
+      "lead": 1,
+      "valid_pair_hours": 1588272,
+      "observed_normalized_second_moment": 0.6997776553685112,
+      "ci95": [
+        0.6679014832938804,
+        0.7289755104018217
+      ],
+      "reference_mean_unit_variance_correlation": 0.33822744195189774,
+      "pooled_standardized_rms": 0.9235287921383422
+    },
+    {
+      "distance": "0-50",
+      "lead": 2,
+      "valid_pair_hours": 1587753,
+      "observed_normalized_second_moment": 0.7371602517718944,
+      "ci95": [
+        0.7021874433555246,
+        0.7662087614607717
+      ],
+      "reference_mean_unit_variance_correlation": 0.3382257732426173,
+      "pooled_standardized_rms": 0.9186715281209811
+    },
+    {
+      "distance": "0-50",
+      "lead": 3,
+      "valid_pair_hours": 1586784,
+      "observed_normalized_second_moment": 0.7608275903008234,
+      "ci95": [
+        0.7219358013118423,
+        0.7916620968667654
+      ],
+      "reference_mean_unit_variance_correlation": 0.3382230070808579,
+      "pooled_standardized_rms": 0.8874392643044255
+    },
+    {
+      "distance": "0-50",
+      "lead": 4,
+      "valid_pair_hours": 1585656,
+      "observed_normalized_second_moment": 0.784719936093893,
+      "ci95": [
+        0.7443184924831878,
+        0.8161245258655466
+      ],
+      "reference_mean_unit_variance_correlation": 0.33822020846319584,
+      "pooled_standardized_rms": 0.8833707455675082
+    },
+    {
+      "distance": "0-50",
+      "lead": 5,
+      "valid_pair_hours": 1584408,
+      "observed_normalized_second_moment": 0.8032221104096746,
+      "ci95": [
+        0.7630606602888146,
+        0.8347822212025594
+      ],
+      "reference_mean_unit_variance_correlation": 0.33821728599758494,
+      "pooled_standardized_rms": 0.8646155458007999
+    },
+    {
+      "distance": "0-50",
+      "lead": 6,
+      "valid_pair_hours": 1582950,
+      "observed_normalized_second_moment": 0.8194265574429791,
+      "ci95": [
+        0.7821202285551405,
+        0.8490086485093707
+      ],
+      "reference_mean_unit_variance_correlation": 0.33821346585369544,
+      "pooled_standardized_rms": 0.8509461701475922
+    },
+    {
+      "distance": "50-150",
+      "lead": 0,
+      "valid_pair_hours": 1130376,
+      "observed_normalized_second_moment": 0.2615527588213206,
+      "ci95": [
+        0.22166945924143563,
+        0.3025915626959862
+      ],
+      "reference_mean_unit_variance_correlation": 0.2975370566258492,
+      "pooled_standardized_rms": 1.053292439790993
+    },
+    {
+      "distance": "50-150",
+      "lead": 1,
+      "valid_pair_hours": 1129965,
+      "observed_normalized_second_moment": 0.32371813104967034,
+      "ci95": [
+        0.2871742290019418,
+        0.36713193789069276
+      ],
+      "reference_mean_unit_variance_correlation": 0.2975337722560154,
+      "pooled_standardized_rms": 0.9631444561422359
+    },
+    {
+      "distance": "50-150",
+      "lead": 2,
+      "valid_pair_hours": 1129764,
+      "observed_normalized_second_moment": 0.3712726042903628,
+      "ci95": [
+        0.332496712757137,
+        0.4150854638770152
+      ],
+      "reference_mean_unit_variance_correlation": 0.29753107185423266,
+      "pooled_standardized_rms": 0.9451674790758301
+    },
+    {
+      "distance": "50-150",
+      "lead": 3,
+      "valid_pair_hours": 1129356,
+      "observed_normalized_second_moment": 0.4131756265620721,
+      "ci95": [
+        0.37129085861719385,
+        0.4545849816889128
+      ],
+      "reference_mean_unit_variance_correlation": 0.2975282351712994,
+      "pooled_standardized_rms": 0.9197043142778225
+    },
+    {
+      "distance": "50-150",
+      "lead": 4,
+      "valid_pair_hours": 1128849,
+      "observed_normalized_second_moment": 0.45290118970291937,
+      "ci95": [
+        0.40787801071951224,
+        0.4951894271193976
+      ],
+      "reference_mean_unit_variance_correlation": 0.2975227101851435,
+      "pooled_standardized_rms": 0.9179430493035976
+    },
+    {
+      "distance": "50-150",
+      "lead": 5,
+      "valid_pair_hours": 1128222,
+      "observed_normalized_second_moment": 0.4896371072232806,
+      "ci95": [
+        0.4404890321890418,
+        0.533475319583162
+      ],
+      "reference_mean_unit_variance_correlation": 0.29751836220597333,
+      "pooled_standardized_rms": 0.9024321819674626
+    },
+    {
+      "distance": "50-150",
+      "lead": 6,
+      "valid_pair_hours": 1127589,
+      "observed_normalized_second_moment": 0.5207743822724087,
+      "ci95": [
+        0.4633761163402224,
+        0.5701896510294568
+      ],
+      "reference_mean_unit_variance_correlation": 0.29751118205326554,
+      "pooled_standardized_rms": 0.8890651094940303
+    },
+    {
+      "distance": "150-300",
+      "lead": 0,
+      "valid_pair_hours": 2094363,
+      "observed_normalized_second_moment": 0.07567943008771728,
+      "ci95": [
+        0.04037603876022848,
+        0.11626391653603196
+      ],
+      "reference_mean_unit_variance_correlation": 0.24221430899543214,
+      "pooled_standardized_rms": 1.0823117466836227
+    },
+    {
+      "distance": "150-300",
+      "lead": 1,
+      "valid_pair_hours": 2094165,
+      "observed_normalized_second_moment": 0.12280163971563017,
+      "ci95": [
+        0.08395599335881053,
+        0.16286237500973294
+      ],
+      "reference_mean_unit_variance_correlation": 0.2422095727028221,
+      "pooled_standardized_rms": 0.9853863212811824
+    },
+    {
+      "distance": "150-300",
+      "lead": 2,
+      "valid_pair_hours": 2094069,
+      "observed_normalized_second_moment": 0.13963835121801144,
+      "ci95": [
+        0.09559922877060109,
+        0.18585444745335392
+      ],
+      "reference_mean_unit_variance_correlation": 0.24220731687786864,
+      "pooled_standardized_rms": 0.9711378329156647
+    },
+    {
+      "distance": "150-300",
+      "lead": 3,
+      "valid_pair_hours": 2093607,
+      "observed_normalized_second_moment": 0.15256172583871863,
+      "ci95": [
+        0.1074680358970905,
+        0.19946224939424428
+      ],
+      "reference_mean_unit_variance_correlation": 0.2422031725549506,
+      "pooled_standardized_rms": 0.9471235319683433
+    },
+    {
+      "distance": "150-300",
+      "lead": 4,
+      "valid_pair_hours": 2092641,
+      "observed_normalized_second_moment": 0.1799754682426653,
+      "ci95": [
+        0.1319056197784332,
+        0.2243433282386624
+      ],
+      "reference_mean_unit_variance_correlation": 0.24219647475512887,
+      "pooled_standardized_rms": 0.9450916833976483
+    },
+    {
+      "distance": "150-300",
+      "lead": 5,
+      "valid_pair_hours": 2091765,
+      "observed_normalized_second_moment": 0.21534486668741376,
+      "ci95": [
+        0.16439315044510217,
+        0.26257337857484647
+      ],
+      "reference_mean_unit_variance_correlation": 0.24218819099707867,
+      "pooled_standardized_rms": 0.9318293035197674
+    },
+    {
+      "distance": "150-300",
+      "lead": 6,
+      "valid_pair_hours": 2090733,
+      "observed_normalized_second_moment": 0.24423236342445082,
+      "ci95": [
+        0.1821588423080017,
+        0.3002432779381861
+      ],
+      "reference_mean_unit_variance_correlation": 0.24217688196070317,
+      "pooled_standardized_rms": 0.9198699019249788
+    },
+    {
+      "distance": "300-inf",
+      "lead": 0,
+      "valid_pair_hours": 15702006,
+      "observed_normalized_second_moment": -0.00010502757562626284,
+      "ci95": [
+        -0.00971020109521323,
+        0.010927798039857143
+      ],
+      "reference_mean_unit_variance_correlation": 0.025534297252897135,
+      "pooled_standardized_rms": 1.1516057841680107
+    },
+    {
+      "distance": "300-inf",
+      "lead": 1,
+      "valid_pair_hours": 15700089,
+      "observed_normalized_second_moment": 0.030992674312832532,
+      "ci95": [
+        0.016576230257328996,
+        0.046511430849640295
+      ],
+      "reference_mean_unit_variance_correlation": 0.025533098581975958,
+      "pooled_standardized_rms": 1.0493377609794219
+    },
+    {
+      "distance": "300-inf",
+      "lead": 2,
+      "valid_pair_hours": 15699138,
+      "observed_normalized_second_moment": 0.04043402467035287,
+      "ci95": [
+        0.023272192043349328,
+        0.05816782383449362
+      ],
+      "reference_mean_unit_variance_correlation": 0.02553338712989806,
+      "pooled_standardized_rms": 1.037715063323537
+    },
+    {
+      "distance": "300-inf",
+      "lead": 3,
+      "valid_pair_hours": 15694338,
+      "observed_normalized_second_moment": 0.040579246057487604,
+      "ci95": [
+        0.0224255286173998,
+        0.059578016588038185
+      ],
+      "reference_mean_unit_variance_correlation": 0.025534313021102026,
+      "pooled_standardized_rms": 1.016781263475664
+    },
+    {
+      "distance": "300-inf",
+      "lead": 4,
+      "valid_pair_hours": 15689253,
+      "observed_normalized_second_moment": 0.040185372232956734,
+      "ci95": [
+        0.020485446519754487,
+        0.06152048122662076
+      ],
+      "reference_mean_unit_variance_correlation": 0.025533585510720214,
+      "pooled_standardized_rms": 1.0148356126431108
+    },
+    {
+      "distance": "300-inf",
+      "lead": 5,
+      "valid_pair_hours": 15683415,
+      "observed_normalized_second_moment": 0.040635372368997176,
+      "ci95": [
+        0.021706557922896098,
+        0.06099736285931927
+      ],
+      "reference_mean_unit_variance_correlation": 0.025534324777319095,
+      "pooled_standardized_rms": 1.000902459999677
+    },
+    {
+      "distance": "300-inf",
+      "lead": 6,
+      "valid_pair_hours": 15677670,
+      "observed_normalized_second_moment": 0.04236875719057111,
+      "ci95": [
+        0.020035377174906416,
+        0.06653847477939423
+      ],
+      "reference_mean_unit_variance_correlation": 0.02553537730507033,
+      "pooled_standardized_rms": 0.9889255223973694
+    }
+  ],
+  "source_prediction_sha256": "e45f14ddb9e19b7a1735a0031819738d6bb7c7a6a1078604a4ae79745ba4d835",
+  "code_sha256": "c88f574fc708e0d2ea730fb6f9c76490f0d31d81f4e73d68b19ee6be9d0a36cc",
+  "interpretation": "Uncentered standardized-error second moment normalized by pooled second moments; not a conditional Pearson-correlation estimate. Exposed-calendar diagnostic, shared12month bootstrap, not model inputs or a new accuracy result.",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}
