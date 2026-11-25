@@ -1,0 +1,41 @@
+{
+  "config": {
+    "out": "results\\20261125_warm_joint_precision",
+    "data": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261125_temporal_continuous_data",
+    "source": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261125_p14_continuous_fusion",
+    "source_kind": "gru",
+    "steps": 3000,
+    "seeds": [
+      42,
+      17
+    ],
+    "cases": [
+      "T2_frozen",
+      "T5_frozen",
+      "T5_joint"
+    ],
+    "eval_hours": 72,
+    "months": 12
+  },
+  "code_sha256": {
+    "warm_joint_experiment.py": "521150ff9e0ceab14d9c9306cff7b804b40a63593c7e06b6d40f6407882cbc94",
+    "joint_data.py": "e0acc3b65e68c41937fe1098b5b3174848c1f324a3b078aa7ef2602895f68806",
+    "masked_transformer_fusion.py": "f975c456fef9fd8fab417b73dcc9e387bdbb5d09782cca7bb24a916a9450be91",
+    "p14_fusion.py": "8c0e85ffd23829a1fc47d9bafec1fe6cd674d17b7333a308afbb6ed1a641a438",
+    "p14_fusion_experiment.py": "538a7aeaa3b79e1ec7ff8d485a3c1f1b7ea937a84b5a18404d208fea3bc15430"
+  },
+  "data_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+  "objective": "Improve matched ~10mm best p14 fusion; preserve exact initialized reference",
+  "source_weights": {
+    "42": "d87223f76df74354dde4ad1f1ab18097880b4a0396b2d5b565bda10000385f3a",
+    "17": "0167bfb5c067adcfebe55b7ab58f850585d91573da9ecc8a8e1dead58017ca3a"
+  },
+  "training": "2016-2019 continuous chronological12h blocks; only station IDs sampled; all target hours covered once before epoch restart",
+  "task": "R current field reconstruction; frozen full-history reference, not strict OOF or independent2019 selection",
+  "evaluation": "2020 monthlydays8-10 x3layouts x137dev; already development-exposed; final3000step primary",
+  "learning_rates": {
+    "new": 1e-05,
+    "reference_joint": 1e-06
+  },
+  "confirmation_C_D_read": false
+}
