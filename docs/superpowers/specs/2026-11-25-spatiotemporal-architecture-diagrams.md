@@ -172,23 +172,19 @@ flowchart TB
 ## 8. 训练与推理边界
 
 ```mermaid
-sequenceDiagram
-    participant H as 历史窗口
-    participant S as 空间编码器
-    participant T as 时间模块
-    participant D as Residual Diffusion
-    participant Y as 下一时刻输出
-
-    H->>S: t-11...t 的条件站与地形
-    S->>T: q_t-11...q_t
-    T->>D: h_t，只含过去信息
-    S->>D: μ_t+1 的空间条件
-    D->>D: 标准化残差前向加噪/反向采样
-    D->>Y: r̂_t+1
-    S->>Y: μ_t+1
-    Y->>Y: ZWD̂_t+1 = μ_t+1 + r̂_t+1
-    Y-->>H: 仅自由滚动模式下，将预测状态加入下一窗口
+graph LR
+    H["历史窗口<br/>t-11 到 t"] --> S["空间编码器"]
+    S --> T["时间模块"]
+    T --> D["残差 Diffusion"]
+    S --> MU["基础场均值 mu_t1"]
+    D --> R["生成残差 r_hat_t1"]
+    MU --> OUT["最终 ZWD_hat_t1"]
+    R --> OUT
+    OUT --> NEXT["自由滚动时更新下一历史窗口"]
+    NEXT --> H
 ```
+
+使用普通流程图表示训练与推理边界，避免 GitHub 不同 Mermaid 版本对 `sequenceDiagram` 的支持差异。
 
 ## 9. 需要生成的结果图
 
