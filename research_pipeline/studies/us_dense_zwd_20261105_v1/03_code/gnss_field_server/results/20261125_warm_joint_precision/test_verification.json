@@ -1,0 +1,8 @@
+{
+  "command": "python -m pytest -q tests tools/terrain_diffusion",
+  "result": "624 passed",
+  "seconds": 301.64,
+  "log_file": "pytest_final.log",
+  "warm_adapter_contract_tests": 2,
+  "reference_max_difference_mm": 7.62939453125E-06
+}

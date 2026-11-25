@@ -1,0 +1,14 @@
+{
+  "checks": [
+    {
+      "case": "reference",
+      "seed": 42,
+      "max_metric_difference_mm": 0.0,
+      "sha256": "9b6ced5546fa6dfe8056d2d50632779dd1b0466d3466f532b95f3753086973e9"
+    }
+  ],
+  "all_final_metrics_recomputed": true,
+  "source_replication": {
+    "42": 7.62939453125e-06
+  }
+}

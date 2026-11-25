@@ -6,7 +6,7 @@
 
 ## 各实验的全流程架构图
 
-共12张架构图，同时提供PNG和SVG，GitHub直接显示PNG。
+共13张架构图，同时提供PNG和SVG，GitHub直接显示PNG。
 
 | 模型 | 流程图 |
 |---|---|
@@ -16,6 +16,9 @@
 | B0控制／B1频带标准化 | [B0](../figures/joint_spectral_implementation_20261125/B0.png) · [B1](../figures/joint_spectral_implementation_20261125/B1.png) |
 | J0未来直接联合／J1双频域 | [J0](../figures/joint_spectral_implementation_20261125/J0.png) · [J1](../figures/joint_spectral_implementation_20261125/J1.png) |
 | 高噪声端v预测稳定性控制 | [v预测全流程](../figures/joint_spectral_implementation_20261125/velocity_control.png) |
+| 既有10mm模型上的正式精度衔接 | [旧GRU+p14＋新Transformer融合](../figures/joint_spectral_implementation_20261125/warm_10mm.png) |
+
+用户追加的精度要求对应[3000步配对优化计划](../superpowers/plans/2026-11-25-warm-joint-precision.md)：保留已完成的约10mm模型权重及所有分支，新增Transformer修正头严格零初始化；当前正在执行双种子T2/T5冻结与联合微调，未改善则继续调整。下文从头短训结果用于定位问题，不替代此性能要求。
 
 结果入口：[真实本机训练、表示审计与概率模型报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_joint_spectral_pilot_v2/REPORT.md)。完整九臂及四个v控制已经跑完，属于60/100步工程验证；尚无新架构3000步正式收益结论。
 

@@ -69,6 +69,15 @@ chain('velocity_control','高噪声端稳定性：同一网络的v预测对照',
     ('DDIM更新 → 相同表示与AR逆变换 → 均值＋残差\n逆变换中没有除以接近0的√a','sample'),
     ('比较数值幅度、RMSE、CRPS和覆盖率，保留负结果\n这是短训稳定性对照；完整收敛与校准另行评价','space')])
 
+chain('warm_10mm','精度主线：在既有约10mm模型上追加时空融合',[
+    ('复用原GRU＋p14＋地形海岸全部权重及原始归一化\n旧8×8历史与当前点特征保持原样；seed42复现9.99836mm','space'),
+    ('同一组条件站同时产生两套72小时观测历史\n旧8×8→保留GRU参考；新16×16→因果Transformer','time'),
+    ('新时间状态按投影坐标对齐p14两级空间特征\nT2：基本融合；T5：空间时间交替＋门控＋静态FiLM','time'),
+    ('旧参考输出＋零初始化新修正；初始化预测严格相等\n冻结旧参考T2／冻结旧参考T5／低学习率联合T5','space'),
+    ('2016–2019连续12小时批，3000步，种子42与17\n新lr1e-5；联合旧参数lr1e-6；MSE＋0.1增量MSE','train'),
+    ('原2020每月72小时×3布局×137登记开发站配对\n宏／微RMSE、增量、季节、距离、地形与海岸共同评价','neutral'),
+    ('候选优于旧模型后再进入新基础场残差生成\n未改善则按诊断继续调整；严格OOF另行交叉拟合','sample')],subtitle='已实现并启动3000步训练 · 既有精度作为比较基准 · 尚无新增正式收益结论')
+
 manifest=dict(status='IMPLEMENTED_MODELS_NOT_FORMAL_GAIN_CLAIM',figures=figures,
     generator_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
     outputs={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in draw.OUT.iterdir() if p.is_file()})
