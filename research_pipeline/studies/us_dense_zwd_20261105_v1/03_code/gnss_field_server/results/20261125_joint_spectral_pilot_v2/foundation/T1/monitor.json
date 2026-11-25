@@ -1,0 +1,8 @@
+{
+  "macro_rmse_mm": 32.87852112237085,
+  "micro_rmse_mm": 38.82685470581055,
+  "year": 2019,
+  "first_day": "January08",
+  "hours": 24,
+  "role": "training-pool hidden groups; inner diagnostic"
+}

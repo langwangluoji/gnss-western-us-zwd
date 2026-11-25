@@ -1,0 +1,40 @@
+{
+  "source_run": "research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261125_joint_spectral_pilot_v2",
+  "source_protocol_sha256": "3f7a76e268f43b1cb678368f1bb80b70a481bab75cc821a34fe8f50efd68ccce",
+  "source_revision": "d3c643b48f2562fa530bf53e541fd2bf0dfe0176",
+  "design": "post-pilot numerical stability comparison, same100-step budget; not a formal skill ranking",
+  "args": {
+    "seed": 42,
+    "diagnostic": true,
+    "probability_steps": 100,
+    "members": 16,
+    "ddim_steps": 20
+  },
+  "code_sha256": {
+    "joint_experiment.py": "748f169e359589667d75fda15a8bbf9b9dc5b4627a2c5741ce9920f3ed2bc2c5",
+    "joint_probability.py": "5a44e62fec12e85825e11125ca405a339da4a77370010c24fba200133f42759b",
+    "velocity_diffusion.py": "2fc12c3ec3d0b72c1dff038b8aaf3541c5d3faf93ce9dfb13d8d28ffb0555172"
+  },
+  "source_oof_hashes": {
+    "oof\\fold0\\future_inner_receipt.json": "a0de65bfae296008113d1da144384fbc944a08d96e0ea4cb739621964a659e4c",
+    "oof\\fold0\\future_train_receipt.json": "e0d48eb8e62781cd1599524018177762dd910dc64091ba4759607523fd04b6ef",
+    "oof\\fold0\\inner_receipt.json": "602701b3447175eaeb7bb235343bd73c1cb4cf2ac755860238ac6a67b5031cf6",
+    "oof\\fold0\\train_receipt.json": "f2d0f487af7c42c6ab884b01080ef759d4c043fcfd5ec76cd51aaff356f11e83",
+    "oof\\fold1\\future_inner_receipt.json": "3d173940079a183722ed0ca989e106aff28323da73f90cac5f0f798caa08ba41",
+    "oof\\fold1\\future_train_receipt.json": "43351d670a791b1e7e37996a5867cb54f21c13a762ffa1f6510772467efd3674",
+    "oof\\fold1\\inner_receipt.json": "a561c7aeef52d22a7f0b16f007f5ce077fe4b6ad4b0a7abf59310ede04c837fa",
+    "oof\\fold1\\train_receipt.json": "f3d611dcf07db2fafd38523f6865a00e1a1eabd66955f5a116b796448aa9eeca",
+    "oof\\fold2\\future_inner_receipt.json": "081fdaf269a17660aeb0f2d1bf58c0ae19f1f40d514abd2f166f6ba24843ab9f",
+    "oof\\fold2\\future_train_receipt.json": "46db0983b506566898e499e5917bbd652275ec89a1490184dffa570b82b48b4d",
+    "oof\\fold2\\inner_receipt.json": "33c1159ffeac7a7b5d118050c7aa93fa81da3a152cce251ead77825e4edc862b",
+    "oof\\fold2\\train_receipt.json": "ecffb2d69ce98ef44bc43bbab81c70df6f2b9eb267aa7bb5a7add61916916b5a",
+    "oof\\fold3\\future_inner_receipt.json": "84bde18e587a767521b51cd3147d690b2a7d6916e66dd2ede1cd219a64a3c9a3",
+    "oof\\fold3\\future_train_receipt.json": "1d11721fc6a627a49caf72e56de071764ccab20a86ccfdd182acba2863527c30",
+    "oof\\fold3\\inner_receipt.json": "88736a39774803dcdd872247e8290a17131b7743828e8f686665691e7ca72666",
+    "oof\\fold3\\train_receipt.json": "fe3229f093b9a3da880b1235acd213a7d4ed2850d1892d519f7d002bfc7e56a9",
+    "oof\\fold4\\future_inner_receipt.json": "28860feb4623ed8deb1b8871848684a9fc9e8e0af21d2730aa45c12f0c69d9e8",
+    "oof\\fold4\\future_train_receipt.json": "e99a6db8c18f2944b48a204bc344bce81ab3023233e3367edea92072475fbc05",
+    "oof\\fold4\\inner_receipt.json": "ca17fdfb7850d88c5427123c50976358dddb09e5b3f764cda4c4916c933737e5",
+    "oof\\fold4\\train_receipt.json": "5fea85740aea1b1110389b9d1ebbe68f23da79b16aa06f840a37742842bb99da"
+  }
+}

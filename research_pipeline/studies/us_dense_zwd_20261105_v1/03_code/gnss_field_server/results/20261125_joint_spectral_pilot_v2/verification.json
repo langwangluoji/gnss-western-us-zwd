@@ -1,0 +1,113 @@
+{
+  "saved_prediction_checks": [
+    {
+      "file": "A0\\diffusion_evaluation.npz",
+      "rmse_crps_max_difference_mm": 7.562486985079886e-06
+    },
+    {
+      "file": "A0\\gaussian_evaluation.npz",
+      "rmse_crps_max_difference_mm": 5.439727139844308e-07
+    },
+    {
+      "file": "A1\\diffusion_evaluation.npz",
+      "rmse_crps_max_difference_mm": 9.932971465786977e-06
+    },
+    {
+      "file": "A1\\gaussian_evaluation.npz",
+      "rmse_crps_max_difference_mm": 5.439727139844308e-07
+    },
+    {
+      "file": "A2\\diffusion_evaluation.npz",
+      "rmse_crps_max_difference_mm": 3.262606162479642e-05
+    },
+    {
+      "file": "A2\\gaussian_evaluation.npz",
+      "rmse_crps_max_difference_mm": 5.276727677028248e-07
+    },
+    {
+      "file": "B0\\diffusion_evaluation.npz",
+      "rmse_crps_max_difference_mm": 3.262606162479642e-05
+    },
+    {
+      "file": "B0\\gaussian_evaluation.npz",
+      "rmse_crps_max_difference_mm": 5.276727677028248e-07
+    },
+    {
+      "file": "B1\\diffusion_evaluation.npz",
+      "rmse_crps_max_difference_mm": 3.199395609954081e-05
+    },
+    {
+      "file": "B1\\gaussian_evaluation.npz",
+      "rmse_crps_max_difference_mm": 1.9622073565983555e-06
+    },
+    {
+      "file": "J0\\diffusion_evaluation.npz",
+      "rmse_crps_max_difference_mm": 3.776039534386655e-05
+    },
+    {
+      "file": "J0\\gaussian_evaluation.npz",
+      "rmse_crps_max_difference_mm": 1.142948828913859e-06
+    },
+    {
+      "file": "J1\\diffusion_evaluation.npz",
+      "rmse_crps_max_difference_mm": 3.7700245911764796e-05
+    },
+    {
+      "file": "J1\\gaussian_evaluation.npz",
+      "rmse_crps_max_difference_mm": 7.743483649846894e-07
+    },
+    {
+      "file": "L0\\diffusion_evaluation.npz",
+      "rmse_crps_max_difference_mm": 2.509025911479057e-07
+    },
+    {
+      "file": "L0\\gaussian_evaluation.npz",
+      "rmse_crps_max_difference_mm": 2.38221176473985e-06
+    },
+    {
+      "file": "L1\\diffusion_evaluation.npz",
+      "rmse_crps_max_difference_mm": 1.9942415221407828e-06
+    },
+    {
+      "file": "L1\\gaussian_evaluation.npz",
+      "rmse_crps_max_difference_mm": 9.307962329785369e-07
+    },
+    {
+      "file": "velocity_control\\A0\\diffusion_evaluation.npz",
+      "rmse_crps_max_difference_mm": 1.0666340592990764e-06
+    },
+    {
+      "file": "velocity_control\\A0\\gaussian_evaluation.npz",
+      "rmse_crps_max_difference_mm": 5.439727139844308e-07
+    },
+    {
+      "file": "velocity_control\\A2\\diffusion_evaluation.npz",
+      "rmse_crps_max_difference_mm": 3.1866823846371517e-06
+    },
+    {
+      "file": "velocity_control\\A2\\gaussian_evaluation.npz",
+      "rmse_crps_max_difference_mm": 5.276727677028248e-07
+    },
+    {
+      "file": "velocity_control\\B1\\diffusion_evaluation.npz",
+      "rmse_crps_max_difference_mm": 1.0938610124355819e-06
+    },
+    {
+      "file": "velocity_control\\B1\\gaussian_evaluation.npz",
+      "rmse_crps_max_difference_mm": 1.9622073565983555e-06
+    },
+    {
+      "file": "velocity_control\\J1\\diffusion_evaluation.npz",
+      "rmse_crps_max_difference_mm": 2.629665303288675e-06
+    },
+    {
+      "file": "velocity_control\\J1\\gaussian_evaluation.npz",
+      "rmse_crps_max_difference_mm": 7.743483649846894e-07
+    }
+  ],
+  "count": 26,
+  "all_predictions_finite": true,
+  "maximum_metric_difference_mm": 3.776039534386655e-05,
+  "formal_gates_passed": false,
+  "confirmation_C_D_read": false
+}

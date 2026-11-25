@@ -299,14 +299,15 @@ def representation(root,train,valid,args):
     return anchor_metrics
 
 
-def probability_run(root,train,valid,args,arm):
+def probability_run(root,train,valid,args,arm,diffusion_class=InnovationDiffusion,cache_root=None):
     folder=root/arm;folder.mkdir(exist_ok=False);rep=root/'representation'
     anchor=dict(np.load(rep/'anchor.npz'));latent=dict(np.load(rep/'latent.npz'))
     is_latent=arm.startswith('L');is_future=arm.startswith('J');spectral=arm=='L1'
     states=latent['train'] if is_latent else anchor['train'];test=latent['inner'] if is_latent else anchor['inner']
     if is_future:
         # Separate F labels and forecast-origin conditions. No R future mu.
-        ftrain=load_events(root/'oof','future_train');ftest=load_events(root/'oof','future_inner')
+        source=root if cache_root is None else cache_root
+        ftrain=load_events(source/'oof','future_train');ftest=load_events(source/'oof','future_inner')
         H=anchor['H'];field=AnchorField(anchor['xy'])
         states=field.encode((ftrain['residual']-anchor['bias'])/anchor['scale'],H)
         test=field.encode((ftest['residual']-anchor['bias'])/anchor['scale'],H)
@@ -337,7 +338,7 @@ def probability_run(root,train,valid,args,arm):
     domain='graph' if arm=='A1' else 'dual' if arm in ('A2','B0','B1') else 'spatial'
     effectiveU=U if dimension==256 else np.eye(dimension)
     M=np.diag(band_scale)@U.T if band else np.eye(dimension)
-    models={'diffusion':InnovationDiffusion(dimension,condition.output_dim,domain,effectiveU,state_to_space=M).cuda(),
+    models={'diffusion':diffusion_class(dimension,condition.output_dim,domain,effectiveU,state_to_space=M).cuda(),
             'gaussian':ConditionalGaussian(dimension,condition.output_dim).cuda()}
     # Both controls train the same G from their own loss, with identical seed
     # initialization. G is not optimized once using only the diffusion target.
@@ -389,7 +390,7 @@ def probability_run(root,train,valid,args,arm):
     write_json(folder/'contract.json',dict(arm=arm,domain=domain,dimension=dimension,forecast=is_future,
         diagnostic=args.diagnostic,seed=args.seed,normalization='training OOF only',
         standard_innovation_chain=True,shared_noise_state=True,stats_sha256=sha(folder/'transforms.npz'),
-        task='F six-hour origin-persistence mean' if is_future else 'R current-hour reconstruction'))
+        diffusion_class=diffusion_class.__name__,task='F six-hour origin-persistence mean' if is_future else 'R current-hour reconstruction'))
     write_json(folder/'results.json',results)
     return results
 

@@ -1,0 +1,13 @@
+{
+  "arm": "L1",
+  "domain": "spatial",
+  "dimension": 128,
+  "forecast": false,
+  "diagnostic": true,
+  "seed": 42,
+  "normalization": "training OOF only",
+  "standard_innovation_chain": true,
+  "shared_noise_state": true,
+  "stats_sha256": "b4161e770b0d49e0952bb77770d41fe84a78aaeb1814e176de043b08bfdc2cf8",
+  "task": "R current-hour reconstruction"
+}

@@ -1661,31 +1661,184 @@
       ],
       "status": "IMPLEMENTED_ENGINEERING_PILOT",
       "text_bounds": "PASS"
+    },
+    {
+      "id": "velocity_control",
+      "title": "高噪声端稳定性：同一网络的v预测对照",
+      "nodes": [
+        {
+          "id": "0",
+          "x": 50,
+          "y": 88,
+          "width": 90,
+          "height": 9,
+          "text": "复用原A0／A2／B1／J1的冻结均值、表示、训练统计与信息条件\n相同100步预算、seed42、K16与20步DDIM",
+          "role": "neutral"
+        },
+        {
+          "id": "1",
+          "x": 50,
+          "y": 76,
+          "width": 90,
+          "height": 9,
+          "text": "同一前向过程：x_k=√a·x0＋√(1−a)·epsilon\n状态已按训练创新标准化；x0为创新，不是原始ZWD",
+          "role": "train"
+        },
+        {
+          "id": "2",
+          "x": 50,
+          "y": 64,
+          "width": 90,
+          "height": 9,
+          "text": "新监督目标：v=√a·epsilon−√(1−a)·x0\n网络结构不变，回归v而非epsilon",
+          "role": "train"
+        },
+        {
+          "id": "3",
+          "x": 50,
+          "y": 52,
+          "width": 90,
+          "height": 9,
+          "text": "每8值token／两层四头／4×4空间memory cross-attention\nA2与B1仍使用同一个状态的空域／图谱双分支",
+          "role": "time"
+        },
+        {
+          "id": "4",
+          "x": 50,
+          "y": 40,
+          "width": 90,
+          "height": 9,
+          "text": "稳定旋转逆变换：x0_hat=√a·x_k−√(1−a)·v_hat\nepsilon_hat=√(1−a)·x_k＋√a·v_hat",
+          "role": "sample"
+        },
+        {
+          "id": "5",
+          "x": 50,
+          "y": 28,
+          "width": 90,
+          "height": 9,
+          "text": "DDIM更新 → 相同表示与AR逆变换 → 均值＋残差\n逆变换中没有除以接近0的√a",
+          "role": "sample"
+        },
+        {
+          "id": "6",
+          "x": 50,
+          "y": 16,
+          "width": 90,
+          "height": 9,
+          "text": "比较数值幅度、RMSE、CRPS和覆盖率，保留负结果\n这是短训稳定性对照；完整收敛与校准另行评价",
+          "role": "space"
+        }
+      ],
+      "edges": [
+        {
+          "points": [
+            [
+              50,
+              83.5
+            ],
+            [
+              50,
+              80.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              71.5
+            ],
+            [
+              50,
+              68.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              59.5
+            ],
+            [
+              50,
+              56.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              47.5
+            ],
+            [
+              50,
+              44.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              35.5
+            ],
+            [
+              50,
+              32.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              23.5
+            ],
+            [
+              50,
+              20.5
+            ]
+          ],
+          "dashed": false
+        }
+      ],
+      "status": "IMPLEMENTED_ENGINEERING_PILOT",
+      "text_bounds": "PASS"
     }
   ],
-  "generator_sha256": "e733492f76901baa5d7b6365e869d2b13834c6999f42221b0152ff1dd65a4fc3",
+  "generator_sha256": "4e0d6996223cdb67d2e502d1c4857411e807e0dc140e4c96714fc038c0ca58b7",
   "outputs": {
     "A0.png": "4ace52d71a7ffdcaf13097c6021ceb35be07ab5130bf6c2901ae97ea1c0a4d82",
-    "A0.svg": "a75717d6e184b3b8ff69d60c3e7ecf06faad5bf7d8af486b2f7e6b8152c681f6",
+    "A0.svg": "1362a2fb7a2a8063aa3cff215420ad78ff5e187d951b3c89dbe1c84fa216969e",
     "A1.png": "a9c5ba349d92c34b885f8d334795ed46366effef675ac477dd5683948db86610",
-    "A1.svg": "92090ad74cdc56d45273317a8069ce8d25c0060ff973a350b435ae601347f0fe",
+    "A1.svg": "80759fb633c2817059c69bb10803d62608e632f5058308981c0f446d8e4670e1",
     "A2.png": "1c61a67abe2b8fc31f6bdbb74e07e697f481ffd54d10be2aa6a60ce7a7f5aedb",
-    "A2.svg": "ea6a963055a204bc0cc3da96baf1f005d09981beda5d975d99b9252290b3d445",
+    "A2.svg": "d1695f34bf50a6cf2b780059dd944c31227c3456032bbde242c70e8c9b65ebb0",
     "B0.png": "c2e5c024012f14a5359e947fdeab72f27e062f6e93cc9baae543845650b880b8",
-    "B0.svg": "787364be7297aad5097a1cdcbab7cdcf776362a0fc2c70409f968d853be28f1b",
+    "B0.svg": "272aa4f278fd2f780940cfac060a2619f2ed6cdbfcf058ab5ba9bb24289831dc",
     "B1.png": "ea74e28a991114120db123c9c105628485d7afc7ead05667c64e65ba126a1c0f",
-    "B1.svg": "11c51a54a6754020fba8f6296ac2634a13b90fdefe88cf53d9232e5eaee7e1d9",
+    "B1.svg": "4479d6b3b988d53b8e41e28774a65703ddc9ef1aa4c65c27bac3e77f322e0b8f",
     "foundation.png": "246890717c68092794c99ab77618614ffd011277d407b224c80786a724202ab3",
-    "foundation.svg": "aeeb8807977b2c75b994dca052ee8169a8cb9e242c787f69be69d630d00bd013",
+    "foundation.svg": "1c3535242925724cad540e57dead66d6741953ec703ca7ba3c83ba08afb97d01",
     "J0.png": "bbe7efe1c89af22774efadd33ef3406d4138d1871ee9c303a4014557e7f9acb1",
-    "J0.svg": "e8f75a3e47d0dcf8d58814f9b5ab845a039a6dc4d6f363e803f1e573ad247d16",
+    "J0.svg": "965a0cdea27dfbfc826788a92022f83d7d4d6f9c200308741695b63dcf5f532e",
     "J1.png": "0866be933d7cb522905110b87bdad5806d0c316a014f0fd8cb368f8dae72938a",
-    "J1.svg": "f288407688ebdfa8fa2a57400eb631967f7dbc4b5fb4a7e04ec9405125adceca",
+    "J1.svg": "f61deb9267e98472b6c14728588059be07c33030dafda14dabb22253aaa329c9",
     "L0.png": "1f141d69bd3d883cea89f7071ddddd967441fd0c507350e978bc0618786b61bd",
-    "L0.svg": "0ce8fc3d3f58781c7d314612f93dc3fecefbb90de0a172c2ab4c7b96d61d194e",
+    "L0.svg": "8539337e74e8a343cf0f1e938a3bf3fcd1dcfdc19891c4272581844e008669ec",
     "L1.png": "803890ee8e1bec50a8649fa1ddde40a53b38c8ce2f8c56b94664ef214b2a155b",
-    "L1.svg": "3f5077c19d3c412627f8de5134d778a4c0ca87a01baf4899799d55728d76e965",
+    "L1.svg": "877a9110406e4228786768279c5ea52717f94d0d67da46e0eb4ea00dc947862c",
     "overview.png": "f89f280c6d5f25e119b06a4b8d618df7230759b8a3a23f5e29b2827aa0996c3f",
-    "overview.svg": "69149de4967727a8c0dbb49edabb9c80ea6e86e37f97c676b392bea247098c03"
+    "overview.svg": "6b80aa807d622cb79becd88e6e171a9845b2cfb41767c276f42e49176bddb155",
+    "velocity_control.png": "63ead0c5f29442c407554c7cd4bb877f30d940e4f56dbc4e6b59e21a83f75f6a",
+    "velocity_control.svg": "2aa1cdc5c36ec285a0b09b6a5e28e188ef7dfc1113d33f3633500bfba338531a"
   }
 }

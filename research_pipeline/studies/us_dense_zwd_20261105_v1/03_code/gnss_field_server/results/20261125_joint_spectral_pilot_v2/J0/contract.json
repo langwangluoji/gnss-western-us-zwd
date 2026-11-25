@@ -1,0 +1,13 @@
+{
+  "arm": "J0",
+  "domain": "spatial",
+  "dimension": 1536,
+  "forecast": true,
+  "diagnostic": true,
+  "seed": 42,
+  "normalization": "training OOF only",
+  "standard_innovation_chain": true,
+  "shared_noise_state": true,
+  "stats_sha256": "adf76f46d6ff9041394de813b415984e6aa1085590cfa3e9b05b7b0718a9d54b",
+  "task": "F six-hour origin-persistence mean"
+}

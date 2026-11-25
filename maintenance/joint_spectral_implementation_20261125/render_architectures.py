@@ -60,6 +60,15 @@ for arm,(title,representation,mechanism) in arms.items():
         ('100级余弦epsilon训练／20步DDIM；同条件Gaussian控制\n生成的每个成员独立AR递推，6小时块边界重置','sample'),
         ('逆频带／双频域 → AR逆变换 → latent或锚点读出\n残差反标准化＋冻结均值→ZWD集合→RMSE／fair CRPS等','space')])
 
+chain('velocity_control','高噪声端稳定性：同一网络的v预测对照',[
+    ('复用原A0／A2／B1／J1的冻结均值、表示、训练统计与信息条件\n相同100步预算、seed42、K16与20步DDIM','neutral'),
+    ('同一前向过程：x_k=√a·x0＋√(1−a)·epsilon\n状态已按训练创新标准化；x0为创新，不是原始ZWD','train'),
+    ('新监督目标：v=√a·epsilon−√(1−a)·x0\n网络结构不变，回归v而非epsilon','train'),
+    ('每8值token／两层四头／4×4空间memory cross-attention\nA2与B1仍使用同一个状态的空域／图谱双分支','time'),
+    ('稳定旋转逆变换：x0_hat=√a·x_k−√(1−a)·v_hat\nepsilon_hat=√(1−a)·x_k＋√a·v_hat','sample'),
+    ('DDIM更新 → 相同表示与AR逆变换 → 均值＋残差\n逆变换中没有除以接近0的√a','sample'),
+    ('比较数值幅度、RMSE、CRPS和覆盖率，保留负结果\n这是短训稳定性对照；完整收敛与校准另行评价','space')])
+
 manifest=dict(status='IMPLEMENTED_MODELS_NOT_FORMAL_GAIN_CLAIM',figures=figures,
     generator_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
     outputs={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in draw.OUT.iterdir() if p.is_file()})

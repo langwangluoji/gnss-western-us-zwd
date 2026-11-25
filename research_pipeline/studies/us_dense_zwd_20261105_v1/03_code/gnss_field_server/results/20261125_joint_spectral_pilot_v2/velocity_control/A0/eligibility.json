@@ -1,0 +1,14 @@
+{
+  "passed": false,
+  "diagnostic_override": true,
+  "threshold_mm": 1.0,
+  "metrics": {
+    "reconstruction_train_mm": 6.853703492167739,
+    "reconstruction_inner2019_mm": 8.61497143662287,
+    "masked_label_reconstruction_mm": 17.248660234941067,
+    "masked_events": 100,
+    "outside_hull_stations": 0,
+    "note": "Available OOF labels only, no dense truth; ridge=.01, smooth=.01 fixed before evaluation"
+  },
+  "spatial_rule": "finite held-out-label check with nonempty cohort; error reported separately"
+}

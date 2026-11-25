@@ -177,6 +177,24 @@ def test_incomplete_oof_cache_is_rejected_before_representation_fit(tmp_path):
         load_events(tmp_path,'train')
 
 
+def test_test_collection_keeps_standard_library_profile_unshadowed():
+    import importlib.util
+    spec=importlib.util.find_spec('profile')
+    assert 'terrain_diffusion' not in spec.origin
+
+
+def test_velocity_prediction_has_exact_clean_noise_inverse_and_finite_sampling():
+    from .velocity_diffusion import VelocityDiffusion,velocity_inverse
+    torch.manual_seed(15);x=torch.randn(3,8);eps=torch.randn(3,8);a=torch.tensor([[1e-5],[.2],[.9]])
+    noisy=a.sqrt()*x+(1-a).sqrt()*eps;v=a.sqrt()*eps-(1-a).sqrt()*x
+    clean,noise=velocity_inverse(noisy,v,a)
+    torch.testing.assert_close(clean,x);torch.testing.assert_close(noise,eps)
+    net=VelocityDiffusion(8,12,width=32);c=torch.randn(3,12)
+    loss=net.loss(x,c);loss.backward();assert torch.isfinite(loss)
+    samples=net.sample(c,eps,steps=20)
+    assert torch.isfinite(samples).all() and samples.abs().max()<20
+
+
 def test_representation_gate_uses_the_selected_family_and_spatial_check():
     from .joint_experiment import check_family_gate
     good=dict(reconstruction_train_mm=.5,reconstruction_inner2019_mm=.7,

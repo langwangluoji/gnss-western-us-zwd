@@ -1,0 +1,56 @@
+[
+  {
+    "kind": "T0",
+    "macro_rmse_mm": 32.18045775936117,
+    "micro_rmse_mm": 38.03862380981445,
+    "year": 2019,
+    "first_day": "January08",
+    "hours": 24,
+    "role": "training-pool hidden groups; inner diagnostic"
+  },
+  {
+    "kind": "T1",
+    "macro_rmse_mm": 32.87852112237085,
+    "micro_rmse_mm": 38.82685470581055,
+    "year": 2019,
+    "first_day": "January08",
+    "hours": 24,
+    "role": "training-pool hidden groups; inner diagnostic"
+  },
+  {
+    "kind": "T2",
+    "macro_rmse_mm": 28.21081705954316,
+    "micro_rmse_mm": 33.153648376464844,
+    "year": 2019,
+    "first_day": "January08",
+    "hours": 24,
+    "role": "training-pool hidden groups; inner diagnostic"
+  },
+  {
+    "kind": "T3",
+    "macro_rmse_mm": 29.732111387501373,
+    "micro_rmse_mm": 34.90364074707031,
+    "year": 2019,
+    "first_day": "January08",
+    "hours": 24,
+    "role": "training-pool hidden groups; inner diagnostic"
+  },
+  {
+    "kind": "T4",
+    "macro_rmse_mm": 29.36379326654229,
+    "micro_rmse_mm": 34.11241912841797,
+    "year": 2019,
+    "first_day": "January08",
+    "hours": 24,
+    "role": "training-pool hidden groups; inner diagnostic"
+  },
+  {
+    "kind": "T5",
+    "macro_rmse_mm": 29.339802780537553,
+    "micro_rmse_mm": 34.07708740234375,
+    "year": 2019,
+    "first_day": "January08",
+    "hours": 24,
+    "role": "training-pool hidden groups; inner diagnostic"
+  }
+]

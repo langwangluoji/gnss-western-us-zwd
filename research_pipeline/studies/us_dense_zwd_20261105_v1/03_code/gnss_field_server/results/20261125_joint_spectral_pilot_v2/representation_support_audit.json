@@ -1,0 +1,109 @@
+{
+  "results": [
+    {
+      "support": "regular256",
+      "anchors": 256,
+      "ridge": 0.01,
+      "smooth": 0.01,
+      "train_reconstruction_mm": 6.853703572251857,
+      "inner2019_reconstruction_mm": 8.614971742115975,
+      "spatial_group_masked_mm": 17.327094523753296,
+      "spatial_group_masked_count": 23994,
+      "outside_hull": 0
+    },
+    {
+      "support": "regular256",
+      "anchors": 256,
+      "ridge": 0.0001,
+      "smooth": 0.0001,
+      "train_reconstruction_mm": 5.455230579153802,
+      "inner2019_reconstruction_mm": 7.026137400757748,
+      "spatial_group_masked_mm": 30.18440824904829,
+      "spatial_group_masked_count": 23994,
+      "outside_hull": 0
+    },
+    {
+      "support": "regular256",
+      "anchors": 256,
+      "ridge": 1e-06,
+      "smooth": 0.0,
+      "train_reconstruction_mm": 5.344206671413439,
+      "inner2019_reconstruction_mm": 6.916155071939972,
+      "spatial_group_masked_mm": 45.64092343015982,
+      "spatial_group_masked_count": 23994,
+      "outside_hull": 0
+    },
+    {
+      "support": "farthest256",
+      "anchors": 256,
+      "ridge": 0.01,
+      "smooth": 0.01,
+      "train_reconstruction_mm": 2.4858910201976108,
+      "inner2019_reconstruction_mm": 3.064612695488462,
+      "spatial_group_masked_mm": 19.57456226700649,
+      "spatial_group_masked_count": 23994,
+      "outside_hull": 1
+    },
+    {
+      "support": "farthest256",
+      "anchors": 256,
+      "ridge": 0.0001,
+      "smooth": 0.0001,
+      "train_reconstruction_mm": 0.6091932903667867,
+      "inner2019_reconstruction_mm": 0.676923013265736,
+      "spatial_group_masked_mm": 20.208985586670643,
+      "spatial_group_masked_count": 23994,
+      "outside_hull": 1
+    },
+    {
+      "support": "farthest256",
+      "anchors": 256,
+      "ridge": 1e-06,
+      "smooth": 0.0,
+      "train_reconstruction_mm": 0.3678933602219796,
+      "inner2019_reconstruction_mm": 0.35485213971417373,
+      "spatial_group_masked_mm": 24.71377545258637,
+      "spatial_group_masked_count": 23994,
+      "outside_hull": 1
+    },
+    {
+      "support": "station410",
+      "anchors": 410,
+      "ridge": 0.01,
+      "smooth": 0.01,
+      "train_reconstruction_mm": 0.9007521881385488,
+      "inner2019_reconstruction_mm": 1.3579981602998454,
+      "spatial_group_masked_mm": 22.98294535499723,
+      "spatial_group_masked_count": 23994,
+      "outside_hull": 0
+    },
+    {
+      "support": "station410",
+      "anchors": 410,
+      "ridge": 0.0001,
+      "smooth": 0.0001,
+      "train_reconstruction_mm": 0.009492867010685158,
+      "inner2019_reconstruction_mm": 0.014236001049070215,
+      "spatial_group_masked_mm": 22.839651761328543,
+      "spatial_group_masked_count": 23994,
+      "outside_hull": 0
+    },
+    {
+      "support": "station410",
+      "anchors": 410,
+      "ridge": 1e-06,
+      "smooth": 0.0,
+      "train_reconstruction_mm": 2.7211314667065564e-05,
+      "inner2019_reconstruction_mm": 4.283297798677217e-05,
+      "spatial_group_masked_mm": 27.520766536768512,
+      "spatial_group_masked_count": 23994,
+      "outside_hull": 0
+    }
+  ],
+  "training": "fixed saved OOF residuals; encoder diagnostic only, no network retraining",
+  "mask": "same physical groups withheld from label reconstruction",
+  "label_scope": "2016Jan8-12 training fragment /2019Jan8 internal fragment",
+  "source_anchor_sha256": "98d2932dc61a3884c797172fadaf9667fc0c1b7a131ff970d6711777e9e4f0ff",
+  "code_sha256": "9497f0e4bb363dfbc552fd1fc931b4f271a2586590e44a57441afbb350802fca",
+  "selection": "post-pilot diagnostic; cannot retrospectively replace preregistered A0/A1/A2 representation"
+}

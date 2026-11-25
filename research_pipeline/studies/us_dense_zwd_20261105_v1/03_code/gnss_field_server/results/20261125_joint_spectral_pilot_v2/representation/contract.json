@@ -1,0 +1,9 @@
+{
+  "bias_mm": -16.4700870513916,
+  "scale_mm": 27.211341857910156,
+  "anchor_sha256": "98d2932dc61a3884c797172fadaf9667fc0c1b7a131ff970d6711777e9e4f0ff",
+  "latent_weights_sha256": "5e8789db82401dfd6f6ee49d453c341b50861be77485d8a0911af1b2207bd3f3",
+  "stats_role": "2016-2018 OOF training only",
+  "dense_reconstruction_claim": false,
+  "anchor_gate_passed": false
+}

@@ -1,6 +1,6 @@
 # 当前研究进展：2026-11-25
 
-代码实现：[时空融合与谱残差实验全流程](research_notes/2026-11-25-joint-spectral-implementation.md)。T0–T5、L0/L1、A0/A1/A2、B0/B1、J0/J1已有可执行模块及Gaussian控制；19项新增合同测试通过。本机正在按连续小时运行修正版工程短训，原支撑地理错位与缺测谱处理问题已修正，原小试保留。该进展更新下列“尚未实现”设计状态，正式精度结论仍以独立同口径评价为准。
+代码与实测：[时空融合与谱残差实验全流程及12张架构图](research_notes/2026-11-25-joint-spectral-implementation.md)。修正版T0–T5各60步、五折T5各60步、表示100步、九组概率及Gaussian各100步、四组v及Gaussian各100步已完成；[报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_joint_spectral_pilot_v2/REPORT.md)。规则256锚点自重构6.85/8.61mm，几何适应256诊断降至0.61/0.68mm，物理组留出仍20.21mm。A0同100步epsilon/v为344.63/33.13mm，支持先解决表示及高噪声端数值问题。该进展更新下列“尚未实现”设计状态，尚无新架构3000步双种子正式精度结论。
 
 频域探索：[Transformer与时空频域残差扩散可行性](research_notes/2026-11-25-spectral-diffusion-feasibility.md)。已归档时域/频域、空域/图谱及双频域架构、风险与分阶段对照；本机用已有p14开发残差完成1384个72小时站点窗的谱诊断和不规则Fourier/GFT代数核验。该结果不代表新频域网络训练收益。
 

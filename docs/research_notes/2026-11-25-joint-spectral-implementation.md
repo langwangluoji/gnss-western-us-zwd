@@ -6,7 +6,7 @@
 
 ## 各实验的全流程架构图
 
-共11张架构图，同时提供PNG和SVG，GitHub直接显示PNG。
+共12张架构图，同时提供PNG和SVG，GitHub直接显示PNG。
 
 | 模型 | 流程图 |
 |---|---|
@@ -15,6 +15,9 @@
 | A0空域／A1图谱／A2双域 | [A0](../figures/joint_spectral_implementation_20261125/A0.png) · [A1](../figures/joint_spectral_implementation_20261125/A1.png) · [A2](../figures/joint_spectral_implementation_20261125/A2.png) |
 | B0控制／B1频带标准化 | [B0](../figures/joint_spectral_implementation_20261125/B0.png) · [B1](../figures/joint_spectral_implementation_20261125/B1.png) |
 | J0未来直接联合／J1双频域 | [J0](../figures/joint_spectral_implementation_20261125/J0.png) · [J1](../figures/joint_spectral_implementation_20261125/J1.png) |
+| 高噪声端v预测稳定性控制 | [v预测全流程](../figures/joint_spectral_implementation_20261125/velocity_control.png) |
+
+结果入口：[真实本机训练、表示审计与概率模型报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_joint_spectral_pilot_v2/REPORT.md)。完整九臂及四个v控制已经跑完，属于60/100步工程验证；尚无新架构3000步正式收益结论。
 
 ## 数据与基础场
 
@@ -73,6 +76,12 @@ A表示：固定16×16、256个锚点；Delaunay重心读出H在锚点处为单�
 
 每个实验都训练同信息条件的对角Gaussian创新控制；其时序关联来自同一AR逆变换。它不是完整空间相关Gaussian上限。G的初始化相同，各自按Gaussian或diffusion损失训练。B1在频带标准化坐标中加标准白噪声，空间分支使用显式可逆线性变换；回写epsilon时使用相同逆变换，没有把各频带噪声倍数硬插入DDIM。
 
+## 实测后补充：表示几何与v预测
+
+原规则256锚点在当前稀疏残差上未通过1mm门槛。`audit_representation.py`固定同一残差、比较规则256、最远点256及站点410支撑。最远点256在正则1e-4时训练/2019自重构0.609/0.677mm，而物理组留出20.209mm；改善了已观测残差保真，尚未解决未知位置推断。这是后验诊断，原A/B/J成绩保留原表示。
+
+`velocity_diffusion.py`追加同网络的v参数化：`v=sqrt(a)*epsilon−sqrt(1−a)*x0`。反向恢复`x0_hat=sqrt(a)*xk−sqrt(1−a)*v_hat`，减少epsilon短训在高噪声端的除小量放大。A0同100步由344.626mm变成33.128mm，表明数值幅度得到控制；该数值仍是小试，不能解释为正式基础场精度。四组控制及Gaussian、来源哈希见`velocity_control/`。
+
 J组当前使用**起点基础场持久性**作为未来均值控制。所有未来动态条件复制起点72小时历史，未来真值仅用于标签；不能把此均值称为已经训练的Transformer未来均值。未来均值预报头和滚动跨块状态需要后续独立对照。
 
 ## 运行与产物
@@ -82,11 +91,10 @@ J组当前使用**起点基础场持久性**作为未来均值控制。所有未
 ```powershell
 $py = 'D:/anaconda3-2025.12-2/envs/pytorch/python.exe'
 & $py -m pytest tools/terrain_diffusion/test_joint_spectral.py -q
-& $py -m tools.terrain_diffusion.joint_experiment --out results/20261125_joint_spectral_pilot --phase foundation --diagnostic --steps 60 --eval-hours 24
-& $py -m tools.terrain_diffusion.joint_experiment --out results/20261125_joint_spectral_pilot --phase oof --diagnostic --oof-steps 60 --train-hours 120 --eval-hours 24
-& $py -m tools.terrain_diffusion.joint_experiment --out results/20261125_joint_spectral_pilot --phase representation --diagnostic --representation-steps 100
-& $py -m tools.terrain_diffusion.joint_experiment --out results/20261125_joint_spectral_pilot --phase probability --diagnostic --probability-steps 100 --members 16
+& $py -m tools.terrain_diffusion.joint_experiment --out results/joint_spectral_new_run --diagnostic --steps 60 --oof-steps 60 --representation-steps 100 --probability-steps 100 --train-hours 120 --eval-hours 24 --members 16
 ```
+
+既有v2使用提交`d3c643b`的原epsilon代码，后续v控制记录新增代码哈希，原始协议不改写。复现原epsilon结果可检出该提交；当前版本新目录运行提供同样的默认epsilon路径，附加的v控制由`maintenance/joint_spectral_implementation_20261125/velocity_control.py`读取新目录并登记独立来源。
 
 正式步数默认基础场/折模型/概率各3000，表示2000；仍需明确登记残差年份覆盖、布局、双种子和完整年度开发评价。单独把`--diagnostic`去掉并不自动完成这些研究合同。工程默认720小时残差缓存是一个连续训练子段，不代表2016–2018全覆盖。
 

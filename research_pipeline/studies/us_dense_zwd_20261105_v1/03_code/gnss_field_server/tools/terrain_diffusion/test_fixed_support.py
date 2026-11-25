@@ -1,11 +1,5 @@
-import sys
-from pathlib import Path
-
 import torch
-
-sys.path.insert(0, str(Path(__file__).parent))
-
-from terrain_diffusion.fixed_support import height_transport, masked_multiscale_summary, FixedSupportModel
+from .fixed_support import height_transport, masked_multiscale_summary, FixedSupportModel
 
 
 def test_masked_multiscale_summary_marks_empty_support_finite():

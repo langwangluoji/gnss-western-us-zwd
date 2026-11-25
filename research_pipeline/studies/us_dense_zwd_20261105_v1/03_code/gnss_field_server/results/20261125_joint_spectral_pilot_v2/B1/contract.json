@@ -1,0 +1,13 @@
+{
+  "arm": "B1",
+  "domain": "dual",
+  "dimension": 256,
+  "forecast": false,
+  "diagnostic": true,
+  "seed": 42,
+  "normalization": "training OOF only",
+  "standard_innovation_chain": true,
+  "shared_noise_state": true,
+  "stats_sha256": "7f54ca13a62942f22fefdf411a7887a47bf415a881b1cb0734c8059f7e302a42",
+  "task": "R current-hour reconstruction"
+}

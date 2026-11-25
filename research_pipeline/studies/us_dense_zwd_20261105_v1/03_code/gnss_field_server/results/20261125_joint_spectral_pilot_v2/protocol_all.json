@@ -1,0 +1,49 @@
+{
+  "config": {
+    "data": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261125_temporal_continuous_data",
+    "out": "results\\20261125_joint_spectral_pilot_v2",
+    "phase": "all",
+    "steps": 60,
+    "oof_steps": 60,
+    "representation_steps": 100,
+    "probability_steps": 100,
+    "train_hours": 120,
+    "eval_hours": 24,
+    "members": 16,
+    "ddim_steps": 20,
+    "seed": 42,
+    "kinds": [
+      "T0",
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "T5"
+    ],
+    "arms": [
+      "L0",
+      "L1",
+      "A0",
+      "A1",
+      "A2",
+      "B0",
+      "B1",
+      "J0",
+      "J1"
+    ],
+    "diagnostic": true
+  },
+  "data_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+  "code_sha256": {
+    "joint_experiment.py": "a58f9526558a0efbb0efd91cd7bb6e110ae280f453ab207c3307eafbdb8a2893",
+    "joint_data.py": "e0acc3b65e68c41937fe1098b5b3174848c1f324a3b078aa7ef2602895f68806",
+    "joint_probability.py": "5a44e62fec12e85825e11125ca405a339da4a77370010c24fba200133f42759b",
+    "spectral_operators.py": "227ddf356df62b5d75055eff0178324ed2a54acd876db60f1de6ec2e0bcce24c",
+    "masked_transformer_fusion.py": "f975c456fef9fd8fab417b73dcc9e387bdbb5d09782cca7bb24a916a9450be91"
+  },
+  "status": "diagnostic pilot",
+  "confirmation_C_D_read": false,
+  "training_time": "continuous chronological hours, station identities only sampled",
+  "inner": "2016-2018 fit /2019 diagnostic, no2020 selection",
+  "forecast_mean": "origin-persistence control, not trained F foundation"
+}

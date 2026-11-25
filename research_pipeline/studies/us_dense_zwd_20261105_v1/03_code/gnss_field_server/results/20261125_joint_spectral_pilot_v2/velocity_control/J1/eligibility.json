@@ -1,0 +1,12 @@
+{
+  "passed": false,
+  "diagnostic_override": true,
+  "threshold_mm": 1.0,
+  "metrics": {
+    "reconstruction_train_mm": 6.914042187392166,
+    "reconstruction_inner2019_mm": 8.623933135532619,
+    "masked_label_reconstruction_mm": 17.249214721964503,
+    "masked_events": 22832
+  },
+  "spatial_rule": "finite held-out-label check with nonempty cohort; error reported separately"
+}

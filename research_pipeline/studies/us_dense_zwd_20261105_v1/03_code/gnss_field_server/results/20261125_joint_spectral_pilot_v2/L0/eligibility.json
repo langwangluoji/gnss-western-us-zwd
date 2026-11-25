@@ -1,0 +1,39 @@
+{
+  "passed": false,
+  "diagnostic_override": true,
+  "threshold_mm": 1.0,
+  "metrics": {
+    "reconstruction_train_mm": 19.05474502093152,
+    "reconstruction_inner2019_mm": 30.7349937483655,
+    "masked_label_reconstruction_mm": 22.20898294529403,
+    "masked_events": 28862,
+    "steps": 100,
+    "trace": [
+      {
+        "step": 1,
+        "loss": 0.39996054768562317
+      },
+      {
+        "step": 20,
+        "loss": 1.9417145252227783
+      },
+      {
+        "step": 40,
+        "loss": 1.9800727367401123
+      },
+      {
+        "step": 60,
+        "loss": 1.1788458824157715
+      },
+      {
+        "step": 80,
+        "loss": 0.9824433326721191
+      },
+      {
+        "step": 100,
+        "loss": 1.0086325407028198
+      }
+    ]
+  },
+  "spatial_rule": "finite held-out-label check with nonempty cohort; error reported separately"
+}
