@@ -1,5 +1,7 @@
 # 下一阶段研究入口与执行审阅
 
+最新执行增补：[p14融合实测后的优化与扩散计划](superpowers/plans/2026-11-25-p14-fusion-next-stage.md)。顺序为完成双种子→优化消融→时间特征进入空间解码→长历史→折外残差概率模型→年度开发评价。新实验尚未运行；当前3000步融合组结果见[阶段报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/REPORT.md)。下文保留先前设计与数据边界，具体新增实验配置以执行增补为准。
+
 2026-11-25。状态：方案整理完成；新时间分支尚未完成实现和训练。本页对下列早期草案中的冲突作出明确修订；旧实验锁和结果不变。
 
 实施更新：连续数据与首轮时间分支本机预报筛查已完成，见[实际结果](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_temporal_forecast_screen/REPORT.md)。26配置已跑完；完整空间编码、168h、多分辨率、折外残差与diffusion尚待后续阶段。

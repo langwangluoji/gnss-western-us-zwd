@@ -1,0 +1,12 @@
+{
+  "status": "PASS_DOCUMENT_AND_EVIDENCE_CHECKS",
+  "local_links": 5,
+  "missing_links": [],
+  "snapshot_metric_checks": "PASS",
+  "source_hash_checks": "PASS",
+  "seed42_live_snapshot_match": "PASS",
+  "task_count": 6,
+  "entrypoint_links": "PASS",
+  "plan_sha256": "50b848318c0854ccefae3588a3320b9a58044777355aa47375a52f8785ea42ed",
+  "new_experiments_run": false
+}

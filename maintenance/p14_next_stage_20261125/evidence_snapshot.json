@@ -1,0 +1,190 @@
+{
+  "status": "READ_ONLY_EVIDENCE_SNAPSHOT_FOR_PLAN",
+  "captured_at": "2026-11-25T17:02:36.4393372+08:00",
+  "source_directory": "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion",
+  "source_sha256": {
+    "summary": "e972222b625566bcb85f5c98e24b5d066db89832a5ce2524f5016f8400d882e3",
+    "optimization_diagnostic": "7b371ce97c35313dbc0fdcde638f61c78753ab88ac937020e07169597f2bad2f",
+    "protocol": "0004eb453524aaa84655ba27330154f58d59a98e4ccf3e2877db36d79b62d47d"
+  },
+  "scope": "seed42 completed results; 2016-2019 fit, 2020 development reconstruction; not diffusion or blind evaluation",
+  "results": [
+    {
+      "kind": "frozen",
+      "seed": 42,
+      "steps": 0,
+      "metrics": {
+        "macro_rmse_mm": 10.103223802869541,
+        "micro_rmse_mm": 10.64453411102295,
+        "mae_mm": 7.792516708374023,
+        "bias_mm": 0.5416096448898315,
+        "increment_macro_rmse_mm": 5.570517107259961,
+        "layout_macro_rmse_mm": [
+          10.255820251058672,
+          10.200480784217877,
+          9.853370373332075
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "p14",
+      "seed": 42,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 10.019037963590538,
+        "micro_rmse_mm": 10.554058074951172,
+        "mae_mm": 7.720512866973877,
+        "bias_mm": 0.2955534756183624,
+        "increment_macro_rmse_mm": 5.589409847525695,
+        "layout_macro_rmse_mm": [
+          10.162757505639888,
+          10.136925060171048,
+          9.75743132496068
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "features",
+      "seed": 42,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 10.006562226384226,
+        "micro_rmse_mm": 10.538467407226562,
+        "mae_mm": 7.710068702697754,
+        "bias_mm": 0.23507046699523926,
+        "increment_macro_rmse_mm": 5.587002984544805,
+        "layout_macro_rmse_mm": [
+          10.137299715057578,
+          10.128518189802888,
+          9.753868774292213
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "mlp",
+      "seed": 42,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 9.997369769992764,
+        "micro_rmse_mm": 10.528258323669434,
+        "mae_mm": 7.707040309906006,
+        "bias_mm": 0.28811120986938477,
+        "increment_macro_rmse_mm": 5.58504904979726,
+        "layout_macro_rmse_mm": [
+          10.134787817893182,
+          10.105553528894774,
+          9.751767963190334
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 42,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 9.998356875772064,
+        "micro_rmse_mm": 10.527209281921387,
+        "mae_mm": 7.707912445068359,
+        "bias_mm": 0.2780945599079132,
+        "increment_macro_rmse_mm": 5.584140287518347,
+        "layout_macro_rmse_mm": [
+          10.118072670980292,
+          10.115906057740311,
+          9.76109189859559
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "lstm",
+      "seed": 42,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 10.002029880915446,
+        "micro_rmse_mm": 10.531279563903809,
+        "mae_mm": 7.70934534072876,
+        "bias_mm": 0.30606240034103394,
+        "increment_macro_rmse_mm": 5.584295893488781,
+        "layout_macro_rmse_mm": [
+          10.124597295177143,
+          10.121720908561318,
+          9.759771439007881
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "transformer",
+      "seed": 42,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 9.993783100945036,
+        "micro_rmse_mm": 10.524553298950195,
+        "mae_mm": 7.707129001617432,
+        "bias_mm": 0.27787816524505615,
+        "increment_macro_rmse_mm": 5.584600360754399,
+        "layout_macro_rmse_mm": [
+          10.123810203573601,
+          10.101483177862313,
+          9.756055921399197
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    }
+  ],
+  "diagnostic_overall": [
+    {
+      "step": 0,
+      "fixed_training_micro_rmse_mm": 9.892406791082891
+    },
+    {
+      "step": 1000,
+      "fixed_training_micro_rmse_mm": 9.705270804357244
+    },
+    {
+      "step": 2000,
+      "fixed_training_micro_rmse_mm": 9.721286806761496
+    },
+    {
+      "step": 3000,
+      "fixed_training_micro_rmse_mm": 9.77912546008662
+    }
+  ],
+  "gradient_diagnostic": [
+    {
+      "step": 0,
+      "jan_grad_norm": 0.6406142115592957,
+      "jul_grad_norm": 1.4364814758300781,
+      "jan_jul_grad_cosine": -0.8711891174316406
+    },
+    {
+      "step": 1000,
+      "jan_grad_norm": 0.8598989844322205,
+      "jul_grad_norm": 0.6305367350578308,
+      "jan_jul_grad_cosine": -0.8612381219863892
+    },
+    {
+      "step": 2000,
+      "jan_grad_norm": 0.8435295224189758,
+      "jul_grad_norm": 0.5405368804931641,
+      "jan_jul_grad_cosine": -0.8249351978302002
+    },
+    {
+      "step": 3000,
+      "jan_grad_norm": 0.7536665201187134,
+      "jul_grad_norm": 1.0989598035812378,
+      "jan_jul_grad_cosine": -0.8351030349731445
+    }
+  ]
+}
