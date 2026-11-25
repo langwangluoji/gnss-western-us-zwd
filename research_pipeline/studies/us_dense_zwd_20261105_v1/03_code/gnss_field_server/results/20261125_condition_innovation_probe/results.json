@@ -1,0 +1,351 @@
+{
+  "code_sha256": "afa8d91a00771a22090f6ff431f7cd3467375b12eaa6664b50dbd6c325b23d99",
+  "data_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+  "source_weights": {
+    "42": "d87223f76df74354dde4ad1f1ab18097880b4a0396b2d5b565bda10000385f3a",
+    "17": "0167bfb5c067adcfebe55b7ab58f850585d91573da9ecc8a8e1dead58017ca3a"
+  },
+  "mechanism": "visible ZWD minus frozen GRU+p14 prediction at the SAME visible station; transport errors to query height",
+  "diagnostic_only": true,
+  "no_corrector_fitted": true,
+  "no_development_coefficients_used_for_predictions": true,
+  "confirmation_C_D_labels_used": false,
+  "results": [
+    {
+      "seed": 42,
+      "date": "2016-01-08",
+      "role": "training_window_diagnostic",
+      "valid_targets": 3837,
+      "reference_micro_rmse_mm": 5.894037998040244,
+      "visible_innovation_rms_mm": 3.5614309310913086,
+      "features": [
+        {
+          "radius_km": 50,
+          "field_rms_mm": 1.9462214045363917,
+          "residual_correlation": 0.0729508855079133,
+          "oracle_scale_diagnostic_only": 0.41009953492769957
+        },
+        {
+          "radius_km": 150,
+          "field_rms_mm": 1.0857522792179002,
+          "residual_correlation": 0.17569400122923756,
+          "oracle_scale_diagnostic_only": 1.2260387394718597
+        },
+        {
+          "radius_km": 300,
+          "field_rms_mm": 0.9353821149210251,
+          "residual_correlation": 0.20485657260703374,
+          "oracle_scale_diagnostic_only": 1.4663271674648772
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "date": "2016-07-08",
+      "role": "training_window_diagnostic",
+      "valid_targets": 3921,
+      "reference_micro_rmse_mm": 12.132477677935382,
+      "visible_innovation_rms_mm": 5.986461162567139,
+      "features": [
+        {
+          "radius_km": 50,
+          "field_rms_mm": 3.017759460083443,
+          "residual_correlation": 0.15119755035380042,
+          "oracle_scale_diagnostic_only": 0.5957687036210818
+        },
+        {
+          "radius_km": 150,
+          "field_rms_mm": 1.4557615775710713,
+          "residual_correlation": 0.17974957453156132,
+          "oracle_scale_diagnostic_only": 1.4258865074166862
+        },
+        {
+          "radius_km": 300,
+          "field_rms_mm": 1.059446917075533,
+          "residual_correlation": 0.14042300829131116,
+          "oracle_scale_diagnostic_only": 1.4232192319157557
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "date": "2019-01-08",
+      "role": "training_window_diagnostic",
+      "valid_targets": 3906,
+      "reference_micro_rmse_mm": 7.1687820097120705,
+      "visible_innovation_rms_mm": 4.169233798980713,
+      "features": [
+        {
+          "radius_km": 50,
+          "field_rms_mm": 2.3590881140027147,
+          "residual_correlation": 0.2836993591910949,
+          "oracle_scale_diagnostic_only": 0.802764403874032
+        },
+        {
+          "radius_km": 150,
+          "field_rms_mm": 1.5845488565803199,
+          "residual_correlation": 0.20918064356824373,
+          "oracle_scale_diagnostic_only": 0.711660773785886
+        },
+        {
+          "radius_km": 300,
+          "field_rms_mm": 1.3530914914656897,
+          "residual_correlation": 0.09230996312533322,
+          "oracle_scale_diagnostic_only": 0.20020022417638997
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "date": "2019-07-08",
+      "role": "training_window_diagnostic",
+      "valid_targets": 3811,
+      "reference_micro_rmse_mm": 11.10803500568896,
+      "visible_innovation_rms_mm": 6.391824722290039,
+      "features": [
+        {
+          "radius_km": 50,
+          "field_rms_mm": 3.232351870759337,
+          "residual_correlation": 0.19220765107607007,
+          "oracle_scale_diagnostic_only": 0.6241394127955403
+        },
+        {
+          "radius_km": 150,
+          "field_rms_mm": 1.5929613215999607,
+          "residual_correlation": 0.09914739925232108,
+          "oracle_scale_diagnostic_only": 0.44589347279291025
+        },
+        {
+          "radius_km": 300,
+          "field_rms_mm": 1.055189780301589,
+          "residual_correlation": 0.04231041428214551,
+          "oracle_scale_diagnostic_only": -0.07982534368850512
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "date": "2020-01-08",
+      "role": "exposed_development",
+      "valid_targets": 1548,
+      "reference_micro_rmse_mm": 9.900544623252415,
+      "visible_innovation_rms_mm": 3.754786968231201,
+      "features": [
+        {
+          "radius_km": 50,
+          "field_rms_mm": 2.4565375138976853,
+          "residual_correlation": 0.0026286113022676596,
+          "oracle_scale_diagnostic_only": 0.03033663108882668
+        },
+        {
+          "radius_km": 150,
+          "field_rms_mm": 0.6426336818942772,
+          "residual_correlation": 0.007605943124460959,
+          "oracle_scale_diagnostic_only": 0.6662801742327393
+        },
+        {
+          "radius_km": 300,
+          "field_rms_mm": 0.27338949425177295,
+          "residual_correlation": 0.038465939792680114,
+          "oracle_scale_diagnostic_only": 2.772771276403371
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "date": "2020-07-08",
+      "role": "exposed_development",
+      "valid_targets": 1479,
+      "reference_micro_rmse_mm": 12.113971058653561,
+      "visible_innovation_rms_mm": 5.413320541381836,
+      "features": [
+        {
+          "radius_km": 50,
+          "field_rms_mm": 3.1682416904636588,
+          "residual_correlation": 0.18716459213678602,
+          "oracle_scale_diagnostic_only": 0.610188716305551
+        },
+        {
+          "radius_km": 150,
+          "field_rms_mm": 1.2605864795340098,
+          "residual_correlation": 0.1294307708215047,
+          "oracle_scale_diagnostic_only": 0.8535621061394345
+        },
+        {
+          "radius_km": 300,
+          "field_rms_mm": 1.0750861185669414,
+          "residual_correlation": 0.039617074329573274,
+          "oracle_scale_diagnostic_only": -0.1658693175988321
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "date": "2016-01-08",
+      "role": "training_window_diagnostic",
+      "valid_targets": 3837,
+      "reference_micro_rmse_mm": 5.8211501410112385,
+      "visible_innovation_rms_mm": 3.5265462398529053,
+      "features": [
+        {
+          "radius_km": 50,
+          "field_rms_mm": 1.780238380442829,
+          "residual_correlation": 0.041407677595751216,
+          "oracle_scale_diagnostic_only": 0.13822040194156052
+        },
+        {
+          "radius_km": 150,
+          "field_rms_mm": 0.7888335409127133,
+          "residual_correlation": 0.06014637189937577,
+          "oracle_scale_diagnostic_only": 0.3890853049619379
+        },
+        {
+          "radius_km": 300,
+          "field_rms_mm": 0.6402761301328437,
+          "residual_correlation": 0.06828297244679912,
+          "oracle_scale_diagnostic_only": 0.44572848709770785
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "date": "2016-07-08",
+      "role": "training_window_diagnostic",
+      "valid_targets": 3921,
+      "reference_micro_rmse_mm": 11.815327530878479,
+      "visible_innovation_rms_mm": 5.974410533905029,
+      "features": [
+        {
+          "radius_km": 50,
+          "field_rms_mm": 3.005376274065813,
+          "residual_correlation": 0.11790971681905571,
+          "oracle_scale_diagnostic_only": 0.4940357793228108
+        },
+        {
+          "radius_km": 150,
+          "field_rms_mm": 1.6295350218870925,
+          "residual_correlation": 0.1105856591142018,
+          "oracle_scale_diagnostic_only": 0.8157818865229054
+        },
+        {
+          "radius_km": 300,
+          "field_rms_mm": 1.347486827036332,
+          "residual_correlation": 0.05619688334058529,
+          "oracle_scale_diagnostic_only": 0.610940920185345
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "date": "2019-01-08",
+      "role": "training_window_diagnostic",
+      "valid_targets": 3906,
+      "reference_micro_rmse_mm": 7.263166474827958,
+      "visible_innovation_rms_mm": 4.100146770477295,
+      "features": [
+        {
+          "radius_km": 50,
+          "field_rms_mm": 2.351249358560635,
+          "residual_correlation": 0.27737003496324136,
+          "oracle_scale_diagnostic_only": 1.0012774092724719
+        },
+        {
+          "radius_km": 150,
+          "field_rms_mm": 1.2160741458914535,
+          "residual_correlation": 0.21570890748193092,
+          "oracle_scale_diagnostic_only": 1.6718608499837049
+        },
+        {
+          "radius_km": 300,
+          "field_rms_mm": 0.8042424413197448,
+          "residual_correlation": 0.07936476307533412,
+          "oracle_scale_diagnostic_only": 1.496535025724757
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "date": "2019-07-08",
+      "role": "training_window_diagnostic",
+      "valid_targets": 3811,
+      "reference_micro_rmse_mm": 11.217624522057513,
+      "visible_innovation_rms_mm": 6.530035018920898,
+      "features": [
+        {
+          "radius_km": 50,
+          "field_rms_mm": 3.2883251509471565,
+          "residual_correlation": 0.18403106397751529,
+          "oracle_scale_diagnostic_only": 0.6396725938449487
+        },
+        {
+          "radius_km": 150,
+          "field_rms_mm": 1.8449673708676073,
+          "residual_correlation": 0.06505383185570293,
+          "oracle_scale_diagnostic_only": 0.47006629164106056
+        },
+        {
+          "radius_km": 300,
+          "field_rms_mm": 1.3725039865215833,
+          "residual_correlation": 0.017410891121812953,
+          "oracle_scale_diagnostic_only": 0.3879883188276383
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "date": "2020-01-08",
+      "role": "exposed_development",
+      "valid_targets": 1548,
+      "reference_micro_rmse_mm": 9.71779814401973,
+      "visible_innovation_rms_mm": 3.847425937652588,
+      "features": [
+        {
+          "radius_km": 50,
+          "field_rms_mm": 2.3748946415778454,
+          "residual_correlation": 0.02670984597851046,
+          "oracle_scale_diagnostic_only": 0.1738401793561647
+        },
+        {
+          "radius_km": 150,
+          "field_rms_mm": 0.9621500711148083,
+          "residual_correlation": -0.03182635864937514,
+          "oracle_scale_diagnostic_only": 0.4656985760685911
+        },
+        {
+          "radius_km": 300,
+          "field_rms_mm": 0.7364799384406264,
+          "residual_correlation": -0.08025561940653556,
+          "oracle_scale_diagnostic_only": 0.6717104293913889
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "date": "2020-07-08",
+      "role": "exposed_development",
+      "valid_targets": 1479,
+      "reference_micro_rmse_mm": 11.274526705935855,
+      "visible_innovation_rms_mm": 5.443620204925537,
+      "features": [
+        {
+          "radius_km": 50,
+          "field_rms_mm": 3.0952093714377917,
+          "residual_correlation": 0.12002154003963998,
+          "oracle_scale_diagnostic_only": 0.4879632956220568
+        },
+        {
+          "radius_km": 150,
+          "field_rms_mm": 1.3962020435913993,
+          "residual_correlation": 0.015367247430011147,
+          "oracle_scale_diagnostic_only": 0.43228282552976444
+        },
+        {
+          "radius_km": 300,
+          "field_rms_mm": 1.3220394895324192,
+          "residual_correlation": -0.046622963518316365,
+          "oracle_scale_diagnostic_only": 0.23938503508399514
+        }
+      ]
+    }
+  ]
+}

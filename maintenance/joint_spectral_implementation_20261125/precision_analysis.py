@@ -87,6 +87,7 @@ def geography(pred,truth,nearest,geo):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--warm',type=Path,required=True);p.add_argument('--query',type=Path,nargs='+',required=True)
     p.add_argument('--station',type=Path,nargs='+')
+    p.add_argument('--innovation',type=Path)
     args=p.parse_args();out=args.warm/'combined_precision';out.mkdir(exist_ok=True)
     wprotocol=read(args.warm/'protocol.json');source=Path(wprotocol['config']['source'])
     data=Path(wprotocol['config']['data']);data_hash=sha(data/'contract.json')
@@ -120,6 +121,7 @@ def main():
         detailed[f'reference_s{seed}']=geography(a['prediction'],a['truth'],nearest,geo)
     runs=[('warm',args.warm)]+[('query',r) for r in args.query]
     if args.station is not None:runs.extend(('station',r) for r in args.station)
+    if args.innovation is not None:runs.append(('innovation',args.innovation))
     for kind,root in runs:
         if not (root/'summary.json').exists():continue
         protocol=read(root/'protocol.json')
@@ -141,6 +143,7 @@ def main():
             error=a['prediction'].astype('float64')-a['truth'][None];old=b['prediction'].astype('float64')-b['truth'][None]
             samples=bootstrap_macro(error,indices)-bootstrap_macro(old,indices);draws[(case,seed)]=samples
             record=dict(case=case,seed=seed,run=kind,steps=row['steps'],**metrics,
+                fit_method=row.get('fit_method','AdamW gradient updates'),
                 delta_macro_rmse_mm=metrics['macro_rmse_mm']-ref['macro_rmse_mm'],
                 delta_micro_rmse_mm=metrics['micro_rmse_mm']-ref['micro_rmse_mm'],
                 delta_mae_mm=metrics['mae_mm']-ref['mae_mm'],delta_bias_mm=metrics['bias_mm']-ref['bias_mm'],
@@ -165,6 +168,9 @@ def main():
         for mode in ('raw','ema'):
             contrast=matched_contrast(records,draws,f'{family}_transformer_{mode}',f'S_transformer_{mode}')
             if contrast is not None:contrasts.append(contrast)
+    for candidate,control in [('I1_history','I0_current'),('I2_seasonal','I1_history')]:
+        contrast=matched_contrast(records,draws,candidate,control)
+        if contrast is not None:contrasts.append(contrast)
     write_json(out/'comparison.json',dict(records=records,two_seed_means=means,direct_representation_contrasts=contrasts,
         bootstrap='1000 common month resamples shared across seeds/layouts; full72h block and station pairing',
         source='original saved GRU predictions, exact truth and source-weight hash matched',current_development_exposed=True))
@@ -178,8 +184,10 @@ def main():
     lines+=['','单位均为mm。只纳入已完成最终3000步评价的结果；Qraw与Qema来自同一训练轨迹，不计为独立训练重复。T5_joint额外解冻旧时间模块原先固定为零的查询头518参数，应解释为“联合微调＋旧查询头激活”。','',
         '## 双种子及共同月份配对区间','', '| 模型 | 两种子均值RMSE/mm | 相对原参考变化/mm | 共同月份95%区间/mm |','|---|---:|---:|---|']
     for r in means:lines.append(f"| {r['case']} | {r['macro_rmse_mm']:.6f} | {r['delta_macro_rmse_mm']:.6f} | {r['common_month_two_seed_paired95_mm']} |")
+    if any(r['case'].startswith('I') for r in records):
+        lines+=['','I0/I1/I2累计3000个连续12小时训练块，以解析岭回归拟合3/9/27维校正头；这些不是3000次新增神经网络梯度更新。固定源为同一GRU+p14。各头训练线性代理目标，最终修正限制±5 mm。']
     if contrasts:
-        lines+=['','## 异常表征及距离加权相对原始站点控制的直接配对','',
+        lines+=['','## 输入、损失及创新历史的直接配对','',
             '| 候选−控制 | 两种子宏RMSE差/mm | 共同月份95%区间/mm | 两种子均改善 |',
             '|---|---:|---|---|']
         for r in contrasts:lines.append(f"| {r['candidate']}−{r['control']} | {r['delta_macro_rmse_mm']:.6f} | {r['common_month_two_seed_paired95_mm']} | {r['improves_both_seeds']} |")

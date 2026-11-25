@@ -1,0 +1,43 @@
+{
+  "config": {
+    "out": "results\\20261125_innovation_smoke",
+    "data": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261125_temporal_continuous_data",
+    "source": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261125_p14_continuous_fusion",
+    "steps": 2,
+    "seeds": [
+      42
+    ],
+    "eval_hours": 12,
+    "months": 1
+  },
+  "source_weights": {
+    "42": "d87223f76df74354dde4ad1f1ab18097880b4a0396b2d5b565bda10000385f3a"
+  },
+  "data_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+  "code_sha256": {
+    "innovation_experiment.py": "3d3f2fa14742fd2a20f90e28a7e5b2dcb6053e9db7b61d84344e9819ba85233d",
+    "innovation_refinement.py": "8958dc83abcf2a97d1fb9e46bdc1ea868dae70221eb92a2a97fa7484e9d463af",
+    "p14_fusion.py": "8c0e85ffd23829a1fc47d9bafec1fe6cd674d17b7333a308afbb6ed1a641a438",
+    "temporal_encoders.py": "77a9efdc2b3081e22e234c22df45665808535cf897861a8687c9d9d2c1aa41e4",
+    "station_query.py": "c883e295d21fe9fd998bbe8363aff610c451a3aacd1c38e66eab4392abe71822",
+    "station_weighting.py": "be112458ae29ca698974f5769958ce2a6a42b395da9943207d196f96e881590c",
+    "unet_foundation.py": "45d78c96b858cfa82272cc68be24a701ccd602e6e874cb7dbe608cef0d1bb9db",
+    "data.py": "fa1413d7cc9f8ac592535053cd134698cceda0cfd495cb5758c62a7f206b6593"
+  },
+  "fit_method": "analytic normal equations from 3000 contiguous12h blocks, not SGD updates",
+  "innovation": "observed minus frozen source prediction at same visible station; causal lags0/1/3h",
+  "feature_scale_mm": 10,
+  "ridge_relative_diagonal": 0.01,
+  "inference_trust_region_mm": 5,
+  "linear_surrogate_fitted_before_output_clipping": true,
+  "distance_weights": [
+    0.278,
+    2.297,
+    1.922,
+    0.879
+  ],
+  "training": "2016-2019 chronological blocks,75%random/25%hole100,station IDs only sampled",
+  "evaluation": "2020 same monthly72h x3layouts x137dev, exposed; no checkpoint selection",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}
