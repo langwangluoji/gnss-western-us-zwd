@@ -34,6 +34,7 @@ def test_mean_head_initially_preserves_I1_and_station_order(kind):
 @pytest.mark.parametrize('domain',['spatial','graph','joint'])
 def test_velocity_diffusion_loss_sampling_and_graph_permutation(domain):
     torch.manual_seed(7);model=NativeDiffusion(16,width=16,domain=domain).eval()
+    torch.nn.init.normal_(model.output.weight,std=.1)
     _,U=graph_basis(torch.randn(5,2)*100,torch.zeros(5))
     eigen,U=graph_basis(torch.randn(5,2)*100,torch.zeros(5))
     c=torch.randn(2,5,16);x=torch.randn(2,5,7);time=torch.ones(2)*.5
@@ -45,3 +46,15 @@ def test_velocity_diffusion_loss_sampling_and_graph_permutation(domain):
     torch.testing.assert_close(a[:,order],z,atol=2e-5,rtol=2e-5)
     sample=model.sample(c,torch.randn_like(x),U,eigen,steps=4)
     assert sample.shape==x.shape and torch.isfinite(sample).all()
+
+
+def test_heun_probability_flow_preserves_the_reference_gaussian_exactly():
+    torch.manual_seed(91);model=NativeDiffusion(16,width=16,domain='spatial').eval()
+    torch.nn.init.zeros_(model.output.weight);torch.nn.init.zeros_(model.output.bias)
+    eigen,U=graph_basis(torch.randn(5,2)*100,torch.zeros(5))
+    c=torch.randn(2,5,16);noise=torch.randn(2,5,7)
+    result=model.sample(c,noise,U,eigen,steps=4,solver='heun')
+    torch.testing.assert_close(result,noise,atol=0,rtol=0)
+    ddim=model.sample(c,noise,U,eigen,steps=4,solver='ddim')
+    # Finite deterministic DDIM steps contract Gaussian reference variance.
+    assert ddim.square().mean()<noise.square().mean()

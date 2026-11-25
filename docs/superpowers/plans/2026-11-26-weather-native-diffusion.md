@@ -26,8 +26,8 @@
 
 Files: `tools/terrain_diffusion/native_weather.py`、`native_weather_cache.py`、`test_native_weather.py`。
 
-- [ ] RED：可逆DCT/GFT、缺测加权天气、历史因果和split边界测试。
-- [ ] GREEN：原生查询天气/创新/趋势编码，完整正交变换及图核。
+- [x] RED：可逆DCT/GFT、缺测加权天气、历史因果和split边界测试。
+- [x] GREEN：原生查询天气/创新/趋势编码，完整正交变换及图核。
 - [ ] 生成可恢复缓存，首先真实2块小试，再3000连续块、源seed42/17；核对I1保存预测和未来信息上界。
 
 ## Task 2：配对均值与概率模型
@@ -37,6 +37,7 @@ Files: `native_weather_models.py`、`native_weather_experiment.py`。
 - [ ] RED/GREEN：零初始化均值、v旋转恢复、采样有限值和图重排一致性。
 - [ ] 逐站模型误差＋原始ZWD/T/P＋mask/age＋身份/地形/海岸；GRU/LSTM/因果Transformer在同一72h历史、宽64和地形查询注意力下比较，各3000更新；24h作为历史范围控制。
 - [ ] W0/W1/W2及Gaussian/空域v/图谱v/双频v，同缓存与最终3000步。冻结主候选后补充日历。
+- [ ] 追加完整频率token P5/P6（局部频带交互，非单纯坐标旋转）、Gaussian预条件、DDIM40/Heun20同40网络调用；收益候选增加容量匹配Gaussian控制。
 - [ ] 根据拟合、泛化、尺度和条件敏感性实测，记录优化理由再继续。
 
 ## Task 3：评估、图件与归档

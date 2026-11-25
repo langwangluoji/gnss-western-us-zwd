@@ -1,0 +1,17 @@
+{
+  "files": {
+    "condition.npy": "51d1f74e4cceea6fc801fe4a51ada35cd9c16866fee5a644b9ff83407406ac3d",
+    "context_ids.npy": "888a7be867f6a81919e1b277d25a748f3dcdd5723b6d4b805986f24d104a2d49",
+    "history.npy": "17a57e5553438b83c6a9f1c1e2142a9d6b3447e069101c878e721d518b1943cc",
+    "mean.npy": "ea8bfee3fa4a026d104cc4136ac7acf97fea6e0d98ed34e3ec62a338ca36163a",
+    "nearest.npy": "314693d948c770e364a8a5bc705aeb45cba20da499115ef459e435e430415968",
+    "origins.npy": "088500a25d52f61bf62ccc40ade4deb6b241c04011d1b50608be093ce58c0e97",
+    "query_ids.npy": "0b002f8dd6dff862bd3b8b8e03495161d1718bde1c2af06ee781e0aa67867dbb",
+    "truth.npy": "ebbcfacb153c926902880bc4ecf5e9e86de9040da60d8d2dc5522cb6acb779a2",
+    "weights.npy": "22d448b9d61a98430d9ec9237e54b30750070a170eafcd1b7e2da6443f86cc92"
+  },
+  "protocol_sha256": "819e1a002e65f0cfdd938fa4d4303260c9818633be3bda64097a40ca292f3b90",
+  "geometry_sha256": "a28c0eea0206a5622b7a3b9edee0a06b33fa3707a5085a7cff3d04f4b45ced17",
+  "source_exposure": "base source fitted2016-2019; not strict OOF",
+  "complete_blocks": 216
+}

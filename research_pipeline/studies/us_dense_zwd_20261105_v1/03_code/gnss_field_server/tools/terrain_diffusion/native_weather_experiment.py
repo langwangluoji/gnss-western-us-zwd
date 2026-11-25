@@ -2,6 +2,7 @@
 import argparse
 import copy
 import json
+import os
 from pathlib import Path
 import time
 import numpy as np
@@ -10,6 +11,20 @@ import torch
 from .data import sha,write_json
 from .native_weather_models import NativeMean,NativeDiffusion,NativeGaussian
 from .native_weather import graph_basis
+from .native_weather_cache import static
+from .native_frequency_tokens import probability_model
+
+
+def checkpoint(folder,step,model,optimizer,scheduler,ema=None):
+    state=dict(step=step,model=model.state_dict(),optimizer=optimizer.state_dict(),
+        scheduler=scheduler.state_dict(),torch_rng=torch.get_rng_state(),cuda_rng=torch.cuda.get_rng_state_all())
+    if ema is not None:state['ema']=ema.state_dict()
+    torch.save(state,folder/f'checkpoint_{step}.pt')
+
+
+def stop_requested():
+    path=os.environ.get('GNSS_RESEARCH_STOP_FILE')
+    return bool(path and Path(path).exists())
 
 
 class CachedData:
@@ -17,6 +32,7 @@ class CachedData:
         self.path=Path(path);self.device=device
         self.protocol=json.loads((self.path/'protocol.json').read_text(encoding='utf-8'))
         self.manifest=json.loads((self.path/'manifest.json').read_text(encoding='utf-8'))
+        if sha(self.path/'protocol.json')!=self.manifest['protocol_sha256']:raise ValueError('cache protocol hash differs')
         status=json.loads((self.path/'status.json').read_text(encoding='utf-8'))
         if status['status']!='COMPLETE':raise ValueError('cache is incomplete')
         self.a={}
@@ -25,6 +41,13 @@ class CachedData:
             self.a[Path(name).stem]=np.load(self.path/name,mmap_mode='r')
         self.development=bool(self.protocol['config']['calendar_day'])
         geo=json.loads((self.path/'geometry.json').read_text(encoding='utf-8'))
+        source=Path(self.protocol['config']['data'])
+        if sha(source/'contract.json')!=self.protocol['data_sha256']:raise ValueError('source data protocol differs')
+        original=json.loads((source/'contract.json').read_text(encoding='utf-8'))
+        if sha(source/'geometry.npz')!=original['files']['geometry.npz']:raise ValueError('source geometry hash differs')
+        registered=dict(np.load(source/'geometry.npz'))
+        for name,prefix in [('train_static',''),('dev_static','dev_')]:
+            if not np.array_equal(np.asarray(geo[name],dtype='float32'),static(registered,prefix)):raise ValueError('cached geometry differs from frozen source')
         self.train_static=torch.tensor(geo['train_static'],device=device)
         self.query_static=torch.tensor(geo['dev_static' if self.development else 'train_static'],device=device)
 
@@ -57,39 +80,64 @@ def mean_loss(correction,truth,base,weights):
     return level+.1*increment
 
 
+def complete_trajectory_loss(model,target,condition,query_static):
+    eligible=torch.isfinite(target).all(-1)
+    patterns,inverse=torch.unique(eligible,dim=0,return_inverse=True)
+    total=0;used_origins=0;loss=next(model.parameters()).sum()*0
+    for group,pattern in enumerate(patterns):
+        if not pattern.any():continue
+        origins=torch.nonzero(inverse==group).flatten();queries=torch.nonzero(pattern).flatten()
+        x=target[origins][:,queries];c=condition[origins][:,queries];st=query_static[queries]
+        eigen,U=graph_basis(st[:,:2]*1000,st[:,2]*3000)
+        count=len(origins)*len(queries)
+        loss=loss+model.loss(x,c,U,eigen)*count;total+=count;used_origins+=len(origins)
+    return loss/max(total,1),total,used_origins
+
+
 def train_mean(args):
-    train=CachedData(args.cache);folder=args.out;folder.mkdir(parents=True,exist_ok=False)
+    train=CachedData(args.cache)
+    if train.development:raise ValueError('development cache cannot train a mean model')
+    if args.no_weather and args.kind!='weather':raise ValueError('explicit weather-summary ablation is defined for weather MLP only')
+    folder=args.out;folder.mkdir(parents=True,exist_ok=False)
     torch.manual_seed(args.seed);np.random.seed(args.seed)
     model=NativeMean(args.kind,64,args.length,weather=not args.no_weather).cuda()
     ema=copy.deepcopy(model);optimizer=torch.optim.AdamW(model.parameters(),lr=args.lr,weight_decay=.01)
     scheduler=torch.optim.lr_scheduler.CosineAnnealingLR(optimizer,args.steps,eta_min=args.lr*.1)
-    protocol=dict(config={k:str(v) if isinstance(v,Path) else v for k,v in vars(args).items()},
+    protocol=dict(config={k:str(v) if isinstance(v,Path) else v for k,v in vars(args).items()
+        if k in ('phase','cache','out','kind','length','no_weather','seed','steps','lr')},
         cache_manifest_sha256=sha(args.cache/'manifest.json'),source_protocol=train.protocol,
         model_code_sha256=sha(Path(__file__).with_name('native_weather_models.py')),runner_sha256=sha(Path(__file__)),
         parameters=sum(p.numel() for p in model.parameters()),ema_decay=.999,
         initialization='new mean head exactly zero, I1 current and origin-persistence forecast',strict_oof=False)
-    write_json(folder/'protocol.json',protocol);trace=[];start=time.monotonic()
+    write_json(folder/'protocol.json',protocol);trace=[];start=time.monotonic();updates=0
     for step in range(args.steps):
         inputs,truth,base,weights=train.batch(step%len(train),args.length)
         model.train();correction,_=model(**inputs);loss=mean_loss(correction,truth,base,weights)
         if not torch.isfinite(loss):raise FloatingPointError('nonfinite mean loss')
-        optimizer.zero_grad();loss.backward();torch.nn.utils.clip_grad_norm_(model.parameters(),1)
-        optimizer.step();scheduler.step()
-        with torch.no_grad():
-            for p,q in zip(ema.parameters(),model.parameters()):p.lerp_(q,.001)
+        supervised=bool(torch.isfinite(truth).any())
+        if supervised:
+            optimizer.zero_grad();loss.backward();torch.nn.utils.clip_grad_norm_(model.parameters(),1)
+            optimizer.step();scheduler.step();updates+=1
+            with torch.no_grad():
+                for p,q in zip(ema.parameters(),model.parameters()):p.lerp_(q,.001)
         if step==0 or (step+1)%100==0 or step+1==args.steps:
             row=dict(step=step+1,loss=float(loss.detach()),seconds=time.monotonic()-start,
                 current_correction_rms_mm=float(correction[:,:,0].detach().square().mean().sqrt()),
                 last_origin_hour=int(train.a['origins'][step%len(train),-1]))
+            row['supervised_updates']=updates;row['finite_label_cells']=int(torch.isfinite(truth).sum())
             trace.append(row);write_json(folder/'curve.json',trace);write_json(folder/'progress.json',row)
             print(json.dumps(dict(kind=args.kind,seed=args.seed,**row)),flush=True)
+        if (step+1)%500==0 or stop_requested():checkpoint(folder,step+1,model,optimizer,scheduler,ema)
+        if stop_requested():
+            write_json(folder/'status.json',dict(status='STOPPED_AT_BUDGET',steps=step+1));raise SystemExit(75)
     torch.save(model.state_dict(),folder/'last.pt');torch.save(ema.state_dict(),folder/'ema.pt')
-    write_json(folder/'status.json',dict(status='COMPLETE_MEAN',steps=args.steps,seconds=time.monotonic()-start))
+    write_json(folder/'status.json',dict(status='COMPLETE_MEAN',steps=args.steps,supervised_updates=updates,seconds=time.monotonic()-start))
 
 
 @torch.no_grad()
 def export_embeddings(args):
     data=CachedData(args.cache);protocol=json.loads((args.mean/'protocol.json').read_text(encoding='utf-8'))
+    if protocol['model_code_sha256']!=sha(Path(__file__).with_name('native_weather_models.py')):raise ValueError('frozen mean implementation changed')
     config=protocol['config'];model=NativeMean(config['kind'],64,config['length'],weather=not config['no_weather']).cuda().eval()
     model.load_state_dict(torch.load(args.mean/f'{args.weights}.pt',weights_only=True))
     folder=args.out;folder.mkdir(parents=True,exist_ok=False)
@@ -113,7 +161,9 @@ def export_embeddings(args):
 
 
 def train_probability(args):
-    data=CachedData(args.cache);folder=args.out;folder.mkdir(parents=True,exist_ok=False)
+    data=CachedData(args.cache)
+    if data.development:raise ValueError('development cache cannot train a probability model')
+    folder=args.out;folder.mkdir(parents=True,exist_ok=False)
     manifest=json.loads((args.embeddings/'manifest.json').read_text(encoding='utf-8'))
     if manifest['cache_manifest_sha256']!=sha(args.cache/'manifest.json'):raise ValueError('embedding cache source differs')
     for name,expected in manifest['files'].items():
@@ -123,28 +173,52 @@ def train_probability(args):
     condition=np.load(args.embeddings/'embedding.npy',mmap_mode='r');mean=np.load(args.embeddings/'mean.npy',mmap_mode='r')
     bias=torch.tensor(stats['bias_mm'],device='cuda');scale=torch.tensor(stats['scale_mm'],device='cuda')
     torch.manual_seed(args.seed)
-    model=(NativeGaussian() if args.domain=='gaussian' else NativeDiffusion(domain=args.domain)).cuda()
+    model=probability_model(args.domain).cuda()
+    preconditioner=None
+    if args.preconditioner:
+        if args.domain=='gaussian':raise ValueError('Gaussian is the preconditioner control')
+        pre_protocol=json.loads((args.preconditioner/'protocol.json').read_text(encoding='utf-8'))
+        if pre_protocol['embedding_manifest_sha256']!=sha(args.embeddings/'manifest.json'):raise ValueError('preconditioner information differs')
+        if pre_protocol['normalization']!=stats:raise ValueError('preconditioner normalization differs')
+        preconditioner=NativeGaussian().cuda().eval()
+        preconditioner.load_state_dict(torch.load(args.preconditioner/'last.pt',weights_only=True))
+        for param in preconditioner.parameters():param.requires_grad_(False)
     optimizer=torch.optim.AdamW(model.parameters(),lr=args.lr,weight_decay=.01)
     scheduler=torch.optim.lr_scheduler.CosineAnnealingLR(optimizer,args.steps,eta_min=args.lr*.1)
-    write_json(folder/'protocol.json',dict(config={k:str(v) if isinstance(v,Path) else v for k,v in vars(args).items()},
+    write_json(folder/'protocol.json',dict(config={k:str(v) if isinstance(v,Path) else v for k,v in vars(args).items()
+        if k in ('phase','cache','out','embeddings','domain','seed','steps','lr','preconditioner')},
         embedding_manifest_sha256=sha(args.embeddings/'manifest.json'),normalization=stats,
+        condition_encoder_kind=manifest['model_kind'],condition_encoder_weights_sha256=manifest['mean_weights_sha256'],
         code_sha256=sha(Path(__file__).with_name('native_weather_models.py')),strict_oof=False,
+        extra_model_sources={'native_frequency_tokens.py':sha(Path(__file__).with_name('native_frequency_tokens.py'))} if args.domain=='frequency_tokens' else {},
+        model_class=type(model).__name__,parameters=sum(p.numel() for p in model.parameters()),
+        preconditioner_sha256=sha(args.preconditioner/'last.pt') if args.preconditioner else None,
         source_exposure='frozen source fitted all2016-2019; development screen, not strict OOF'))
-    trace=[];start=time.monotonic()
+    trace=[];start=time.monotonic();updates=0;trajectory_count=0;origin_count=0
     for step in range(args.steps):
         i=step%len(data)
         truth=data.tensor(data.a['truth'][i]);mu=data.tensor(mean[i]);c=data.tensor(condition[i])
         target=(truth-mu-bias)/scale
-        if not torch.isfinite(target).all():raise ValueError('training native diffusion requires complete sampled target stations')
-        eigen,U=data.graph(i);loss=model.loss(target,c,U,eigen)
-        optimizer.zero_grad();loss.backward();torch.nn.utils.clip_grad_norm_(model.parameters(),1)
-        optimizer.step();scheduler.step()
+        if preconditioner is not None:
+            with torch.no_grad():location,logscale=preconditioner(c)
+            target=(target-location)*(-logscale).exp()
+        query=data.tensor(data.a['query_ids'][i],torch.long)
+        loss,count,origins=complete_trajectory_loss(model,target,c,data.query_static[query])
+        if count:
+            optimizer.zero_grad();loss.backward();torch.nn.utils.clip_grad_norm_(model.parameters(),1)
+            optimizer.step();scheduler.step();updates+=1
+        trajectory_count+=count;origin_count+=origins
         if step==0 or (step+1)%100==0 or step+1==args.steps:
             row=dict(step=step+1,loss=float(loss.detach()),seconds=time.monotonic()-start)
+            row.update(supervised_updates=updates,fully_observed_trajectories=trajectory_count,supervised_origins=origin_count)
             if not np.isfinite(row['loss']):raise FloatingPointError('nonfinite probability loss')
             trace.append(row);write_json(folder/'curve.json',trace);print(json.dumps(dict(domain=args.domain,**row)),flush=True)
+        if (step+1)%500==0 or stop_requested():checkpoint(folder,step+1,model,optimizer,scheduler)
+        if stop_requested():
+            write_json(folder/'status.json',dict(status='STOPPED_AT_BUDGET',steps=step+1));raise SystemExit(75)
     torch.save(model.state_dict(),folder/'last.pt')
-    write_json(folder/'status.json',dict(status='COMPLETE_PROBABILITY',steps=args.steps,seconds=time.monotonic()-start))
+    write_json(folder/'status.json',dict(status='COMPLETE_PROBABILITY',steps=args.steps,supervised_updates=updates,
+        fully_observed_trajectories=trajectory_count,supervised_origins=origin_count,seconds=time.monotonic()-start))
 
 
 def main():
@@ -155,7 +229,8 @@ def main():
     p.add_argument('--seed',type=int,default=42);p.add_argument('--steps',type=int,default=3000)
     p.add_argument('--lr',type=float,default=.0003);p.add_argument('--mean',type=Path)
     p.add_argument('--weights',choices=['last','ema'],default='ema');p.add_argument('--embeddings',type=Path)
-    p.add_argument('--domain',choices=['gaussian','spatial','graph','joint'],default='spatial')
+    p.add_argument('--preconditioner',type=Path)
+    p.add_argument('--domain',choices=['gaussian','spatial','graph','joint','frequency_tokens'],default='spatial')
     args=p.parse_args();torch.set_num_threads(3);torch.cuda.set_per_process_memory_fraction(.35)
     if args.phase=='mean':train_mean(args)
     elif args.phase=='embeddings':export_embeddings(args)

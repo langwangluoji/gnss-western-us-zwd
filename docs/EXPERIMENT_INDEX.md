@@ -6,6 +6,8 @@
 
 | 实验 | 已记录状态 | 证据入口 |
 |---|---|---|
+| 20261126_native_weather_cache_v2 | SEED42_CACHE_COMPLETE：3000连续12h块，主日历216块；旧1685块前缀保留哈希 | [新研究入口与架构](research_notes/2026-11-26-native-weather-diffusion.md)；[数据合同](superpowers/specs/2026-11-26-weather-native-diffusion-design.md) |
+| 20261126_native_gap_smoke / native_spectral_audit | ENGINEERING_AND_ENCODING_AUDIT：原生缺测块及完整谱验证；不作精度排名 | [实施与审阅记录](../maintenance/weather_native_20261126/progress.md) |
 | 20261125_observed_innovation_precision | COMPLETE_OBSERVED_INNOVATION_RIDGE：2种子、3头、各累计3000连续块；I1主候选冻结 | [计划、架构及输入合同](superpowers/plans/2026-11-25-observed-innovation-refinement.md)；[统一配对评价](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/REPORT.md) |
 | 20261125_innovation_calendar15 | COMPLETE_FROZEN_ADDITIONAL_CALENDAR；2种子、参考及3头；未重新拟合 | [补充评价](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_innovation_calendar15/REPORT.md)；[总结果与区域分析](research_notes/2026-11-25-precision-final.md) |
 | 20261125_station_distance_precision | COMPLETE_NATIVE_STATION_QUERY；3000步双种子、raw/EMA共4结果 | [距离加权协议](superpowers/specs/2026-11-25-distance-balanced-precision.md)；[分布审计](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_support_distribution_audit/results.json) |

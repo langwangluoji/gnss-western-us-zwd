@@ -1,0 +1,31 @@
+{
+  "script_sha256": "67361cadcd3fdb0f7ee489ddc63acadbf801e8c38ca397f942ed64a7ad333540",
+  "figures": {
+    "architecture.png": "884b54fee8a788aebc14128b90a0ce1992b4cc0679e2f1201a068ec60dd81af2",
+    "architecture.svg": "cfb181dd991546e1e25b09bf154ff109d3b4ebbd7860e599adf6508d0aae073f",
+    "reference_variance.png": "fccbc741944e65206b641feb98b2e72f83f7bf764f83b6684538e117b63fef63"
+  },
+  "zero_velocity_reference": {
+    "steps": [
+      4,
+      10,
+      20,
+      40,
+      100
+    ],
+    "ddim_variance_ratio": [
+      0.5320940499381536,
+      0.7812108902452267,
+      0.8841387297662491,
+      0.9380900343061293,
+      0.975624352528793
+    ],
+    "heun_variance_ratio": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

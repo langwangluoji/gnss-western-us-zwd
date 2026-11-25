@@ -1,0 +1,8 @@
+{
+  "status": "FAILED_TARGET_COMPLETENESS_ASSUMPTION",
+  "completed": 1685,
+  "exit_code": 1,
+  "source_gap": "2018-04-29 raw product absence",
+  "superseded_by": "20261126_native_weather_cache_v2/train_s42",
+  "original_progress_and_protocol_preserved": true
+}

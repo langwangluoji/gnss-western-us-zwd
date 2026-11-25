@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETE_PROBABILITY",
+  "steps": 4,
+  "supervised_updates": 4,
+  "fully_observed_trajectories": 1435,
+  "supervised_origins": 34,
+  "seconds": 0.6720000000059372
+}

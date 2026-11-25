@@ -1,6 +1,7 @@
 """Resumable chronological caches for native station encoders and R/F residuals."""
 import argparse
 import json
+import shutil
 from pathlib import Path
 import time
 import numpy as np
@@ -17,6 +18,18 @@ from .native_weather import weather_fields,history_features,validate_origin
 def static(geo,prefix=''):
     coast=geo[prefix+'coast']
     return np.c_[geo[prefix+'static'],np.log1p(coast)/6,coast/500].astype('float32')
+
+
+def select_targets(truth,hidden,count,rng):
+    complete=np.isfinite(truth).all((0,2))&hidden
+    if complete.sum()>=count:return np.sort(rng.choice(np.flatnonzero(complete),count,False)),False
+    # Preserve every calendar origin. Select station identities by label coverage;
+    # unavailable target values remain NaN and enter no supervised loss.
+    pool=rng.permutation(np.flatnonzero(hidden))
+    coverage=np.isfinite(truth[:,pool]).sum((0,2))
+    chosen=pool[np.argsort(-coverage,kind='stable')[:count]]
+    if len(chosen)!=count:raise ValueError('insufficient hidden station identities')
+    return np.sort(chosen),True
 
 
 @torch.no_grad()
@@ -84,6 +97,7 @@ def main():
     p.add_argument('--innovation',type=Path,default=PROJECT/'results/20261125_observed_innovation_precision')
     p.add_argument('--seed',type=int,default=42);p.add_argument('--blocks',type=int,default=3000)
     p.add_argument('--calendar-day',type=int,default=0);p.add_argument('--months',type=int,default=12)
+    p.add_argument('--prefix-cache',type=Path)
     args=p.parse_args();out=args.out;out.mkdir(parents=True,exist_ok=True)
     torch.set_num_threads(3);torch.set_grad_enabled(False);torch.cuda.set_per_process_memory_fraction(.65)
     protocol=dict(config={k:str(v) if isinstance(v,Path) else v for k,v in vars(args).items()},
@@ -91,11 +105,24 @@ def main():
         I1_sha256=sha(args.innovation/f'I1_history_s{args.seed}/coefficients.pt'),
         code_sha256={n:sha(Path(__file__).with_name(n)) for n in ('native_weather_cache.py','native_weather.py','innovation_refinement.py','p14_fusion.py')},
         strict_oof=False,confirmation_C_D_read=False,history_state_hours=72,raw_span_hours=146,
+        cache_schema='native_weather_v2_partial_targets',missing_target_policy='preserve clock andNaNs; select stations by coverage; no fabricated labels',
         time='continuous12h blocks, station identities only sampled; future0..6h labels only',
         training_years=[2016,2017,2018,2019],development_year=2020)
+    if args.prefix_cache:
+        parent=json.loads((args.prefix_cache/'protocol.json').read_text(encoding='utf-8'))
+        for name in ('data_sha256','source_sha256','I1_sha256'):
+            if parent[name]!=protocol[name]:raise ValueError('prefix source differs')
+        for name in ('seed','blocks','calendar_day','months'):
+            if parent['config'][name]!=protocol['config'][name]:raise ValueError('prefix population differs')
+        parent_status=json.loads((args.prefix_cache/'status.json').read_text(encoding='utf-8'))
+        protocol['reused_prefix']=dict(protocol_sha256=sha(args.prefix_cache/'protocol.json'),
+            completed_blocks=parent_status['completed'],files={p.name:sha(p) for p in args.prefix_cache.glob('*.npy')})
     if (out/'protocol.json').exists():
         if json.loads((out/'protocol.json').read_text(encoding='utf-8'))!=protocol:raise ValueError('immutable cache protocol differs')
     else:write_json(out/'protocol.json',protocol)
+    if args.prefix_cache and not (out/'status.json').exists():
+        for path in args.prefix_cache.glob('*.npy'):shutil.copyfile(path,out/path.name)
+        write_json(out/'status.json',dict(completed=parent_status['completed'],status='DERIVED_PREFIX_READY'))
     data=FusionData(args.data);e=data.events
     pos=torch.arange(len(data.values),device='cuda')[:,None,None]
     last=torch.cummax(torch.where(torch.isfinite(data.values),pos,-1),dim=0).values
@@ -116,6 +143,7 @@ def main():
         count=args.blocks;queries=128;holes=hole_schedule(count,args.seed)
     arrays=create_arrays(out,count,queries)
     status=json.loads((out/'status.json').read_text(encoding='utf-8')) if (out/'status.json').exists() else dict(completed=0)
+    fallback=json.loads((out/'selection_audit.json').read_text(encoding='utf-8')) if (out/'selection_audit.json').exists() else {}
     start_time=time.monotonic()
     for index in range(status['completed'],count):
         anchors=blocks[index if args.calendar_day else index%len(blocks)]
@@ -131,9 +159,12 @@ def main():
         if args.calendar_day:q=np.arange(137)
         else:
             hidden=~np.isin(e.geo['groups'],e.geo['groups'][c])
-            available=np.isfinite(row['truth']).all((0,2))&hidden
-            if available.sum()<queries:raise ValueError(f'only{available.sum()} complete hidden stations')
-            q=np.sort(rng.choice(np.flatnonzero(available),queries,False))
+            q,partial=select_targets(row['truth'],hidden,queries,rng)
+            if partial:
+                fallback[str(index)]=dict(first_origin=int(e.hours[anchors[0]]),
+                    fully_observed_trajectories=int(np.isfinite(row['truth'][:,q]).all(-1).sum()),
+                    finite_label_cells=int(np.isfinite(row['truth'][:,q]).sum()))
+                write_json(out/'selection_audit.json',fallback)
         for name in ('condition','mean','truth','weights','nearest'):arrays[name][index]=row[name][:,q]
         arrays['history'][index]=row['history'];arrays['context_ids'][index]=c
         arrays['query_ids'][index]=q;arrays['origins'][index]=e.hours[anchors]
@@ -145,6 +176,7 @@ def main():
             print(json.dumps(dict(stage='cache',seed=args.seed,completed=index+1,total=count,seconds=time.monotonic()-start_time)),flush=True)
     write_json(out/'geometry.json',dict(train_static=static(e.geo).tolist(),dev_static=static(e.geo,'dev_').tolist()))
     write_json(out/'manifest.json',dict(files={p.name:sha(p) for p in out.glob('*.npy')},protocol_sha256=sha(out/'protocol.json'),
+        geometry_sha256=sha(out/'geometry.json'),
         source_exposure='base source fitted2016-2019; not strict OOF',complete_blocks=count))
 
 

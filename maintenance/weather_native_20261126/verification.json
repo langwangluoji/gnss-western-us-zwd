@@ -1,0 +1,10 @@
+{
+  "research_suite": {
+    "command": "python -m pytest tools/terrain_diffusion -q",
+    "passed": 103,
+    "seconds": 9.51
+  },
+  "real_gap_smoke_blocks": 3,
+  "original_target_labels_preserved": true,
+  "final_sgd_precision_results_available": false
+}

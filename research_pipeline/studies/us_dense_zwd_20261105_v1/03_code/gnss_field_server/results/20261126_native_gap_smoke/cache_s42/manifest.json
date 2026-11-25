@@ -1,0 +1,16 @@
+{
+  "protocol_sha256": "ac87894e35ab1d27ad47f98cce5da24867791037fb1fbe52f5af37b76f900eea",
+  "geometry_sha256": "a28c0eea0206a5622b7a3b9edee0a06b33fa3707a5085a7cff3d04f4b45ced17",
+  "files": {
+    "condition.npy": "df5c9c8e4c654ebcd9aa6bdb9fed935f7f0b7324f3534ea4d4cc7766415f7134",
+    "context_ids.npy": "3db0abf48fc493fbd63a88cf65455671bf455dda83863a7a932d594624ede315",
+    "history.npy": "629732d9e5d610a17543c657c2db5410ffd8fcfb27b2a143a3f1677af4655851",
+    "mean.npy": "7abb60c7043f412d7946bdfdbaf01d1390f4bda5217b97e276d6c09a4caf84b7",
+    "nearest.npy": "ed2387b43d3dcd325dab1300c6562418317225e1a7b1202b42d5a46c5536addc",
+    "origins.npy": "4863ff32137eb85551a01066f8b5f033ba63fcb41ec85b945dc16917d919a0b6",
+    "query_ids.npy": "0bf690b0def3c7f72e5f831f07e79333e9ead04fc0c4394b77fb047f8baa6b85",
+    "truth.npy": "cb889343b86fbc6657ff5bebd5746b54e8e34fe99f39b94366a14737a70bb3b4",
+    "weights.npy": "c27d25ff9b722ac03ee7115e2728a0f2d450878443d901ec074020d0c0c38597"
+  },
+  "complete_blocks": 3
+}

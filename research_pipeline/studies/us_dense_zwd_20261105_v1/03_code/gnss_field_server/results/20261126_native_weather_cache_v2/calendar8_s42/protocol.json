@@ -1,0 +1,51 @@
+{
+  "config": {
+    "out": "results\\20261126_native_weather_cache_v2\\calendar8_s42",
+    "data": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261125_temporal_continuous_data",
+    "source": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261125_p14_continuous_fusion",
+    "innovation": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261125_observed_innovation_precision",
+    "seed": 42,
+    "blocks": 3000,
+    "calendar_day": 8,
+    "months": 12,
+    "prefix_cache": "results\\20261126_native_weather_cache\\calendar8_s42"
+  },
+  "data_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+  "source_sha256": "d87223f76df74354dde4ad1f1ab18097880b4a0396b2d5b565bda10000385f3a",
+  "I1_sha256": "91afccab384f5909db2f2b53fc5046783f85c2c05313aa1b8229c084d28682fe",
+  "code_sha256": {
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be",
+    "innovation_refinement.py": "8958dc83abcf2a97d1fb9e46bdc1ea868dae70221eb92a2a97fa7484e9d463af",
+    "p14_fusion.py": "8c0e85ffd23829a1fc47d9bafec1fe6cd674d17b7333a308afbb6ed1a641a438"
+  },
+  "strict_oof": false,
+  "confirmation_C_D_read": false,
+  "history_state_hours": 72,
+  "raw_span_hours": 146,
+  "cache_schema": "native_weather_v2_partial_targets",
+  "missing_target_policy": "preserve clock andNaNs; select stations by coverage; no fabricated labels",
+  "time": "continuous12h blocks, station identities only sampled; future0..6h labels only",
+  "training_years": [
+    2016,
+    2017,
+    2018,
+    2019
+  ],
+  "development_year": 2020,
+  "reused_prefix": {
+    "protocol_sha256": "f5180e2f93484f936398fa392cd35a06a491485c523a296562d109ff14e9078d",
+    "completed_blocks": 34,
+    "files": {
+      "condition.npy": "0e55ebdaa972a1b6ba86f1c20a468bbd206cf75d82995da65cb474d1a1296c92",
+      "context_ids.npy": "be96726f25a5fdfff153c9ebe186d5b292882fd90049fe91614aa847533f5293",
+      "history.npy": "46ebc97216c29bcf9e623893d215398bead181217df19e71512c6c6550e93977",
+      "mean.npy": "8c8c6bbb577d91c0ef160142716b34df658c59b607e88a1bc744356a7a4d3754",
+      "nearest.npy": "2e4d628ab3171a209aad3b5a7bb13889922719dedb1101a26de1f1aeffbdcf20",
+      "origins.npy": "22dbc4996620a16c41878e6dac0b7eb128125f7a9f6ed834340d6fa494ab524c",
+      "query_ids.npy": "daf1e2b4394fd4f9ab459044659f5609b952ff2f2ce02becb2eb034defb6104f",
+      "truth.npy": "28cd4db62dadbfe32654fcd048f0fc7a5225e2f9102fde2986a23058526fa2dd",
+      "weights.npy": "00465ef7e49c65df28ea84bb4653b5954e68b75e7ac321d2bb895d11f1e45acb"
+    }
+  }
+}

@@ -40,12 +40,15 @@ def main():
     covariance=torch.zeros(7,7,device='cuda',dtype=torch.float64);count=0;spatial_num=0.;spatial_den=0.
     for i in range(len(data)):
         mu,logstd=model(data.tensor(features[i]));target=(data.tensor(data.a['truth'][i])-data.tensor(mean[i])-bias)/scale
-        z=(target-mu)*(-logstd).exp();flat=z.reshape(-1,7).double()
+        z=(target-mu)*(-logstd).exp()
+        eligible=torch.isfinite(z).all(-1);flat=z[eligible].double()
         covariance+=flat.T@flat;count+=len(flat)
         query=data.tensor(data.a['query_ids'][i],torch.long);st=data.query_static[query]
         kernel=spatial_correlation(st,1);kernel.fill_diagonal_(0)
-        empirical=torch.einsum('bqh,brh->qr',z,z)/(z.shape[0]*7)
-        spatial_num+=float((kernel*empirical).sum());spatial_den+=float(kernel.square().sum())
+        clean=torch.where(eligible[:,:,None],z,0)
+        products=torch.einsum('bqh,brh->qr',clean,clean)
+        pair_count=torch.einsum('bq,br->qr',eligible.float(),eligible.float())*7
+        spatial_num+=float((kernel*products).sum());spatial_den+=float((kernel.square()*pair_count).sum())
         if i==0 or (i+1)%500==0:print(json.dumps(dict(stage='copula_fit',completed=i+1,total=len(data))),flush=True)
     covariance/=count;diagonal=covariance.diag().clamp_min(1e-8).sqrt()
     correlation=covariance/diagonal[:,None]/diagonal[None]

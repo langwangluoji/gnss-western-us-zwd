@@ -1,4 +1,6 @@
-# 当前研究进展：2026-11-25
+# 当前研究进展：2026-11-26
+
+新增执行：[原生站点天气编码、因果时序与残差扩散](research_notes/2026-11-26-native-weather-diffusion.md)。seed42已完成3000个连续训练数据块与2020主日历缓存，接下来配对GRU/LSTM/因果Transformer及完整频率token扩散。新架构正式精度尚待训练评价；当前已验证I1基础场仍为下述9.817064 mm。全系数GFT/DCT与真实缺测处理已验证，原始产品少量共同缺测保留NaN并按监督mask处理，未改时间轴和历史模型。
 
 **最新主评价：历史观测创新校正达到9.817064 mm。** 原GRU+p14为9.929151 mm；I1_history两种子9.867690/9.766438 mm，平均改善0.112086 mm，共同月份95%区间[−0.193456,−0.042281] mm；小时增量平均5.577307 mm，原参考5.583871 mm。I0仅当前创新会增加小时增量误差；I2年度交互相对I1的额外收益区间跨零，因此冻结9维I1作为补充验证的主候选。详见[设计、架构与训练记录](superpowers/plans/2026-11-25-observed-innovation-refinement.md)及[统一配对报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/REPORT.md)。I系列是3000个连续训练块的解析拟合，不是新增Transformer或diffusion训练；原14条神经训练轨迹各3000更新也已完成。
 

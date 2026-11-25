@@ -1,0 +1,42 @@
+{
+  "1685": {
+    "first_origin": 423589,
+    "fully_observed_trajectories": 640,
+    "finite_label_cells": 7168
+  },
+  "1686": {
+    "first_origin": 423601,
+    "fully_observed_trajectories": 12,
+    "finite_label_cells": 84
+  },
+  "1687": {
+    "first_origin": 423613,
+    "fully_observed_trajectories": 143,
+    "finite_label_cells": 3668
+  },
+  "1851": {
+    "first_origin": 425581,
+    "fully_observed_trajectories": 1523,
+    "finite_label_cells": 10736
+  },
+  "1853": {
+    "first_origin": 425605,
+    "fully_observed_trajectories": 1478,
+    "finite_label_cells": 10493
+  },
+  "2267": {
+    "first_origin": 430573,
+    "fully_observed_trajectories": 1534,
+    "finite_label_cells": 10750
+  },
+  "2852": {
+    "first_origin": 437593,
+    "fully_observed_trajectories": 1028,
+    "finite_label_cells": 9482
+  },
+  "2853": {
+    "first_origin": 437605,
+    "fully_observed_trajectories": 139,
+    "finite_label_cells": 4021
+  }
+}

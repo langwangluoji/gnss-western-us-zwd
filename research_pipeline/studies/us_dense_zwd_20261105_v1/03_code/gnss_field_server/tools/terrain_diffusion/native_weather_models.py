@@ -84,6 +84,7 @@ class NativeDiffusion(nn.Module):
         self.filters=nn.ModuleList([nn.ModuleList([nn.Linear(width,width,bias=False) for _ in range(3)]) for _ in range(2)])
         self.norm=nn.ModuleList([nn.LayerNorm(width) for _ in range(2)])
         self.output=nn.Linear(width,7)
+        nn.init.zeros_(self.output.weight);nn.init.zeros_(self.output.bias)
         t=torch.linspace(0,1,101);a=torch.cos((t+.008)/1.008*math.pi/2).square()
         self.register_buffer('alpha',(a/a[0]).clamp_min(1e-5))
         self.register_buffer('D',dct_matrix(7))
@@ -113,10 +114,19 @@ class NativeDiffusion(nn.Module):
         return (self.denoise(noisy,c,k/100,U,eigen)-velocity).square().mean()
 
     @torch.no_grad()
-    def sample(self,c,noise,U,eigen,steps=20):
+    def sample(self,c,noise,U,eigen,steps=20,solver='ddim'):
+        if solver not in ('ddim','heun'):raise ValueError(solver)
         x=noise.clone();schedule=torch.linspace(100,0,steps+1,device=x.device).round().long()
         for k,j in zip(schedule[:-1],schedule[1:]):
             v=self.denoise(x,c,torch.full((len(x),),float(k)/100,device=x.device),U,eigen)
+            if solver=='heun':
+                # Stochastic-interpolant probability flow: dX/dtheta=E[v|X,c],
+                # theta=acos(sqrt(alpha)). A zero velocity preserves N(0,I).
+                delta=self.alpha[j].sqrt().acos()-self.alpha[k].sqrt().acos()
+                proposal=x+delta*v
+                second=self.denoise(proposal,c,torch.full((len(x),),float(j)/100,device=x.device),U,eigen)
+                x=x+.5*delta*(v+second)
+                continue
             a=self.alpha[k];clean=a.sqrt()*x-(1-a).sqrt()*v
             eps=(1-a).sqrt()*x+a.sqrt()*v
             x=self.alpha[j].sqrt()*clean+(1-self.alpha[j]).sqrt()*eps
@@ -135,5 +145,5 @@ class NativeGaussian(nn.Module):
         mean,logstd=self(c)
         return (.5*((x-mean)*(-logstd).exp()).square()+logstd).mean()
 
-    def sample(self,c,noise,U=None,eigen=None,steps=20):
+    def sample(self,c,noise,U=None,eigen=None,steps=20,solver='ddim'):
         mean,logstd=self(c);return mean+logstd.exp()*noise

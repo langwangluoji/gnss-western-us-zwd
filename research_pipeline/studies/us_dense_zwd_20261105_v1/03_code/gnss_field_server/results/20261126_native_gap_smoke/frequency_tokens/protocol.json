@@ -1,0 +1,58 @@
+{
+  "config": {
+    "phase": "probability",
+    "cache": "results\\20261126_native_gap_smoke\\cache_s42",
+    "out": "results\\20261126_native_gap_smoke\\frequency_tokens",
+    "kind": "transformer",
+    "length": 72,
+    "no_weather": false,
+    "seed": 42,
+    "steps": 4,
+    "lr": 0.0003,
+    "mean": null,
+    "weights": "ema",
+    "embeddings": "results\\20261126_native_gap_smoke\\embeddings",
+    "preconditioner": null,
+    "domain": "frequency_tokens"
+  },
+  "embedding_manifest_sha256": "98b7b682ae00d65a43aef15eddbb259a79bc73907535a320949282a6446b8be0",
+  "normalization": {
+    "bias_mm": [
+      0.25733193931798404,
+      0.5376798975665603,
+      0.46290012193046465,
+      0.34955986921603865,
+      -0.12914395133271458,
+      -0.5672834744938245,
+      -1.456960859489318
+    ],
+    "scale_mm": [
+      9.014176822353743,
+      10.958425631917606,
+      12.837888514051045,
+      14.691896774113154,
+      16.368897899483816,
+      17.913542360283714,
+      19.315522388424295
+    ],
+    "count": [
+      1569.0,
+      1566.0,
+      1563.0,
+      1560.0,
+      1557.0,
+      1554.0,
+      1551.0
+    ],
+    "role": "training_only"
+  },
+  "code_sha256": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+  "strict_oof": false,
+  "extra_model_sources": {
+    "native_frequency_tokens.py": "f49df4ebfc6c328b7134faec6dca706bca14c39585b1e3a84a829648ef233ece"
+  },
+  "model_class": "NativeFrequencyTokens",
+  "parameters": 38401,
+  "preconditioner_sha256": null,
+  "source_exposure": "frozen source fitted all2016-2019; development screen, not strict OOF"
+}

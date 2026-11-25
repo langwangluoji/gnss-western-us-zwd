@@ -9,6 +9,7 @@ from .data import sha,write_json
 from .native_weather_experiment import CachedData
 from .native_weather_models import NativeDiffusion,NativeGaussian
 from .native_copula import correlate_noise
+from .native_frequency_tokens import probability_model
 
 
 def safe_mean(x,axis):
@@ -55,6 +56,7 @@ def main():
     p.add_argument('--probability',type=Path);p.add_argument('--members',type=int,default=32)
     p.add_argument('--sample-steps',type=int,default=20);p.add_argument('--seed',type=int,default=261126)
     p.add_argument('--copula',type=Path)
+    p.add_argument('--solver',choices=['ddim','heun'],default='ddim')
     args=p.parse_args();torch.set_num_threads(3);torch.set_grad_enabled(False);torch.cuda.set_per_process_memory_fraction(.35)
     data=CachedData(args.cache)
     if not data.development:raise ValueError('calendar evaluation expects a registered development calendar')
@@ -71,15 +73,23 @@ def main():
     artifacts=dict(prediction=deterministic,reference=reference,truth=truth)
     if args.probability:
         protocol=json.loads((args.probability/'protocol.json').read_text(encoding='utf-8'))
+        if protocol['code_sha256']!=sha(Path(__file__).with_name('native_weather_models.py')):raise ValueError('frozen probability implementation changed')
+        for name,expected in protocol.get('extra_model_sources',{}).items():
+            if sha(Path(__file__).with_name(name))!=expected:raise ValueError('frozen spectral implementation changed')
         training_manifest=json.loads((Path(protocol['config']['embeddings'])/'manifest.json').read_text(encoding='utf-8'))
         if training_manifest['mean_weights_sha256']!=manifest['mean_weights_sha256']:raise ValueError('evaluation and probability mean weights differ')
         domain=protocol['config']['domain'];stats=protocol['normalization']
         bias=torch.tensor(stats['bias_mm'],device='cuda');scale=torch.tensor(stats['scale_mm'],device='cuda')
-        model=(NativeGaussian() if domain=='gaussian' else NativeDiffusion(domain=domain)).cuda().eval()
+        model=probability_model(domain).cuda().eval()
         model.load_state_dict(torch.load(args.probability/'last.pt',weights_only=True))
+        preconditioner=None
+        if protocol.get('preconditioner_sha256'):
+            path=Path(protocol['config']['preconditioner'])/'last.pt'
+            if sha(path)!=protocol['preconditioner_sha256']:raise ValueError('Gaussian preconditioner changed')
+            preconditioner=NativeGaussian().cuda().eval();preconditioner.load_state_dict(torch.load(path,weights_only=True))
         copula=json.loads(args.copula.read_text(encoding='utf-8')) if args.copula else None
         if copula and (domain!='gaussian' or copula['gaussian_weights_sha256']!=sha(args.probability/'last.pt')):raise ValueError('copula source differs')
-        allsamples=[];analytic=[];torch.manual_seed(args.seed)
+        allsamples=[];analytic=[];gaussian_means=[];torch.manual_seed(args.seed)
         for i in range(len(data)):
             c=data.tensor(condition[i]);mu=data.tensor(mean[i]);eigen,U=data.graph(i)
             B,Q,_=c.shape;K=args.members
@@ -87,12 +97,16 @@ def main():
             if copula:
                 st=data.query_static[data.tensor(data.a['query_ids'][i],torch.long)]
                 noise=correlate_noise(noise,st,copula['spatial_rho'],torch.tensor(copula['time_correlation'],device='cuda',dtype=torch.float32))
-            samples=model.sample(c.repeat(K,1,1),noise,U,eigen,args.sample_steps)
+            samples=model.sample(c.repeat(K,1,1),noise,U,eigen,args.sample_steps,args.solver)
+            if preconditioner is not None:
+                location,logscale=preconditioner(c)
+                samples=samples*logscale.exp().repeat(K,1,1)+location.repeat(K,1,1)
             samples=(samples*scale+bias+mu.repeat(K,1,1)).reshape(K,B,Q,7)
             if not torch.isfinite(samples).all():raise FloatingPointError('nonfinite generated field')
             allsamples.append(samples.cpu().numpy())
             if domain=='gaussian':
                 delta,logstd=model(c)
+                gaussian_means.append((mu+bias+delta*scale).cpu().numpy())
                 analytic.append(gaussian_crps((mu+bias+delta*scale).cpu().numpy(),(logstd.exp()*scale).cpu().numpy(),data.a['truth'][i]))
             if i==0 or (i+1)%50==0:print(json.dumps(dict(stage='sampling',domain=domain,completed=i+1,total=len(data))),flush=True)
         samples=np.stack(allsamples,axis=1)
@@ -106,7 +120,10 @@ def main():
         payload['width80_mm_by_horizon']=safe_mean(np.where(valid,quantile[1]-quantile[0],np.nan),(0,1,2,3)).tolist()
         payload['forecast_increment_fair_crps_mm']=float(np.nanmean(fair_crps(np.diff(samples,axis=-1),np.diff(truth,axis=-1))))
         payload['negative_sample_fraction']=float((samples<0).mean())
-        if analytic:payload['analytic_gaussian_crps_mm_by_horizon']=safe_mean(calendar_shape(np.stack(analytic),months),(0,1,2,3)).tolist()
+        if analytic:
+            payload['analytic_gaussian_crps_mm_by_horizon']=safe_mean(calendar_shape(np.stack(analytic),months),(0,1,2,3)).tolist()
+            artifacts['gaussian_distribution_mean']=calendar_shape(np.stack(gaussian_means),months)
+            payload['gaussian_distribution_mean']=point_metrics(artifacts['gaussian_distribution_mean'],truth)
         artifacts.update(samples=samples,crps=crps.astype('float32'))
     np.savez_compressed(folder/'evaluation.npz',**artifacts)
     write_json(folder/'metrics.json',payload)
@@ -116,6 +133,7 @@ def main():
         members=args.members if args.probability else None,sampling_steps=args.sample_steps if args.probability else None,
         independent_iid_member_noise=True,seed=args.seed,code_sha256=sha(Path(__file__)),
         copula_sha256=sha(args.copula) if args.copula else None,
+        solver=args.solver,neural_evaluations_per_sample=(1 if domain=='gaussian' else args.sample_steps*(2 if args.solver=='heun' else 1)) if args.probability else None,
         prediction_sha256=sha(folder/'evaluation.npz'),strict_oof=False,confirmation_C_D_read=False))
     print(json.dumps(payload))
 
