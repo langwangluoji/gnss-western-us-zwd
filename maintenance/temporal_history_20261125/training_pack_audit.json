@@ -1,0 +1,104 @@
+{
+  "status": "TRAINING_PACK_DESCRIPTIVE_AUDIT_NOT_MODEL_VALIDATION",
+  "input_path": "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_terrain_diffusion_ab_full_data/data.npz",
+  "input_sha256": "a8b6be762c76c152dbab762874727f2e832c93d53919b07a2a56b475247a1b10",
+  "train_shape": [
+    731,
+    36,
+    410,
+    3
+  ],
+  "stored_hour_occurrences": 26316,
+  "unique_hours_before_boundary_filter": 17556,
+  "duplicate_hour_occurrences": 8760,
+  "duplicated_hour_values_consistent": true,
+  "hours_before_2016": 12,
+  "continuous_axis_gaps": 0,
+  "start": "2016-01-01T00",
+  "end": "2017-12-31T23",
+  "finite_fraction_by_variable": [
+    0.9825869173534416,
+    0.9825869173534416,
+    0.9825869173534416
+  ],
+  "candidate_history_coverage": [
+    {
+      "history_hours": 12,
+      "anchors": 17527,
+      "station_windows": 7186070,
+      "completely_observed_fraction": 0.9569929043274001,
+      "at_least_80pct_observed_fraction": 0.977525545952099
+    },
+    {
+      "history_hours": 24,
+      "anchors": 17515,
+      "station_windows": 7181150,
+      "completely_observed_fraction": 0.9331758840854181,
+      "at_least_80pct_observed_fraction": 0.9744485214763652
+    },
+    {
+      "history_hours": 48,
+      "anchors": 17491,
+      "station_windows": 7171310,
+      "completely_observed_fraction": 0.8931283126792734,
+      "at_least_80pct_observed_fraction": 0.9714133122121342
+    },
+    {
+      "history_hours": 72,
+      "anchors": 17467,
+      "station_windows": 7161470,
+      "completely_observed_fraction": 0.8568874825978465,
+      "at_least_80pct_observed_fraction": 0.9693156572603111
+    },
+    {
+      "history_hours": 168,
+      "anchors": 17371,
+      "station_windows": 7122110,
+      "completely_observed_fraction": 0.7359715028271117,
+      "at_least_80pct_observed_fraction": 0.9781893287242124
+    }
+  ],
+  "lag_correlations": [
+    {
+      "lag_hours": 1,
+      "station_median_zwd_corr": 0.9833596589860563,
+      "station_median_increment_corr": -0.00806383008092943
+    },
+    {
+      "lag_hours": 3,
+      "station_median_zwd_corr": 0.9483250622461701,
+      "station_median_increment_corr": 0.041894204684723164
+    },
+    {
+      "lag_hours": 6,
+      "station_median_zwd_corr": 0.8901138611451995,
+      "station_median_increment_corr": -0.01094781078621013
+    },
+    {
+      "lag_hours": 12,
+      "station_median_zwd_corr": 0.7862244162747103,
+      "station_median_increment_corr": -0.017225222699491637
+    },
+    {
+      "lag_hours": 24,
+      "station_median_zwd_corr": 0.6507411524964632,
+      "station_median_increment_corr": 0.058699809385551444
+    },
+    {
+      "lag_hours": 48,
+      "station_median_zwd_corr": 0.4940383869138647,
+      "station_median_increment_corr": 0.07445993791085925
+    },
+    {
+      "lag_hours": 72,
+      "station_median_zwd_corr": 0.3921525997032599,
+      "station_median_increment_corr": 0.06189623094180324
+    },
+    {
+      "lag_hours": 168,
+      "station_median_zwd_corr": 0.3233194982055321,
+      "station_median_increment_corr": 0.044040420334722
+    }
+  ],
+  "interpretation": "Raw ZWD correlation includes seasonality; not OOF residual predictability. Overlapping rows deduplicated by first occurrence; old pack unchanged. Availability pooled over training stations, not dynamic support layouts."
+}
