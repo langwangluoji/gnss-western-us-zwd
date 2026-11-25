@@ -6,6 +6,8 @@
 
 | 实验 | 已记录状态 | 证据入口 |
 |---|---|---|
+| 20261126_native_weather_means / native_mean_analysis | SEED42_BASELINE6_COMPLETE：各3000连续块；因果监督/值传递六臂执行中，第二种子待完成 | [架构与本轮结果](research_notes/2026-11-26-native-weather-diffusion.md)；[独立分层与曲线](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_mean_analysis/s42/REPORT.md) |
+| 20261126_native_spectral_full_audit | COMPLETE_ENCODING_DIAGNOSTIC：48月12h快照；全GFT/DCT逆误差0.00010681mm，非模型精度 | [谱诊断JSON](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_spectral_full_audit/native_spectral_audit.json) |
 | 20261126_native_weather_cache_v2 | SEED42_CACHE_COMPLETE：3000连续12h块，主日历216块；旧1685块前缀保留哈希 | [新研究入口与架构](research_notes/2026-11-26-native-weather-diffusion.md)；[数据合同](superpowers/specs/2026-11-26-weather-native-diffusion-design.md) |
 | 20261126_native_gap_smoke / native_spectral_audit | ENGINEERING_AND_ENCODING_AUDIT：原生缺测块及完整谱验证；不作精度排名 | [实施与审阅记录](../maintenance/weather_native_20261126/progress.md) |
 | 20261125_observed_innovation_precision | COMPLETE_OBSERVED_INNOVATION_RIDGE：2种子、3头、各累计3000连续块；I1主候选冻结 | [计划、架构及输入合同](superpowers/plans/2026-11-25-observed-innovation-refinement.md)；[统一配对评价](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/REPORT.md) |

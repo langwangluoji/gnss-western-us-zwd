@@ -1,10 +1,12 @@
 {
   "research_suite": {
     "command": "python -m pytest tools/terrain_diffusion -q",
-    "passed": 103,
-    "seconds": 9.51
+    "passed": 111,
+    "seconds": 16.36
   },
   "real_gap_smoke_blocks": 3,
   "original_target_labels_preserved": true,
-  "final_sgd_precision_results_available": false
+  "seed42_3000_block_mean_results_available": true,
+  "paired_two_seed_probability_results_available": false,
+  "analysis_and_campaign_tests_passed": 6
 }

@@ -16,9 +16,9 @@ R和F分开评价；F包含起点重建和未来1–6h联合轨迹，逐次起�
 
 ## 已完成的表示与采样诊断
 
-真实GNSS缓存的28个月度12h训练窗口中，完整GFT×DCT最大逆变换误差0.000118 mm；只保留128图频中的前16/32/64个时，平均编码重构RMSE为8.284/7.297/5.971 mm。前16图频约占55.2%能量，前两个时间频率约占89.0%。这是残差编码诊断，不能当作隐藏位置精度或扩散训练收益。完整缓存生成后按同一脚本更新。
+完整3000块缓存的48个月度12h训练窗口中，完整GFT×DCT最大逆变换误差0.00010681 mm；只保留128图频中的前16/32/64个时，平均编码重构RMSE为8.598/7.608/6.232 mm。前两个时间频率约占89.13%能量。这是残差编码诊断，不能当作隐藏位置精度或扩散训练收益；旧28窗口诊断保留原目录。
 
-![实际残差频谱与截断损失](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_spectral_audit/native_spectral_audit.png)
+![48个月实际残差频谱与截断损失](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_spectral_full_audit/native_spectral_audit.png)
 
 标准Gaussian参考下，零v模型的DDIM20输出方差比例为0.88414；Heun概率流保持参考样本不变。该差异说明有限步采样器本身会影响校准；真实模型比较使用DDIM40和Heun20各40次网络调用，并另报耗时。
 
@@ -45,6 +45,10 @@ seed42首轮六组均完成3000连续块。以下为最终raw权重；EMA另存�
 | Transformer24 | 9.861574 | 14.380000 |
 
 R基本持平，F6有约0.45–0.63 mm改善；原生时间模块对天气摘要MLP的额外收益较小。[下一轮因果状态监督与显式值传递](../superpowers/specs/2026-11-26-causal-innovation-value-transport.md)以2×2实验检验局地先验、前缀预测目标及物理值通道。未来标签按预测起点延伸6小时，R仍使用原主日历。
+
+[逐模型独立复算与六类误差](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_mean_analysis/s42/REPORT.md)提供raw/EMA、月份配对区间、距离/高程/地形/海岸分层、站对差值、小时增量及逐站重点图。区间按月份共同重采样，保留实际有效小时数；这是已暴露日历上的探索性比较，候选选择未作多重比较校正。
+
+第二轮先完成的seed42局地先验Transformer为R9.874807/F6 14.365980 mm；加因果历史内辅助监督为R9.868837/F6 14.304259 mm。当前场基本持平，辅助监督相对首轮Transformer的F6改善约0.070 mm；显式值通道及完整GRU/LSTM对照继续运行。
 
 - seed42连续训练缓存3000块、主日历216块均已完成；seed17随后使用同一协议。
 - 名义预算为每模型3000连续块，实际监督更新数与消耗时间单列；raw/EMA来自同一轨迹。

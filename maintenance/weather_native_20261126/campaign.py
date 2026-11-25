@@ -15,6 +15,12 @@ STOP=Path(__file__).with_name('STOP_NEW_JOBS')
 def read(p):return json.loads(p.read_text(encoding='utf-8'))
 
 
+def probability_variants():
+    return [(name,name,False,('ddim',)) for name in ('gaussian','spatial','graph','joint','frequency_tokens')]+[
+        ('preconditioned_joint','joint',True,('ddim','heun')),
+        ('preconditioned_frequency_tokens','frequency_tokens',True,('ddim','heun'))]
+
+
 def run(module,arguments,done=None):
     if STOP.exists():raise SystemExit(75)
     if done is not None and done.exists():
@@ -63,15 +69,14 @@ def main():
     train_embedding=emb/f'{name}_{weights}_train_s{seed}';dev_embedding=emb/f'{name}_{weights}_dev_s{seed}'
     run('native_weather_experiment',['--phase','embeddings','--cache',train,'--out',train_embedding,'--mean',folder,'--weights',weights],train_embedding/'manifest.json')
     probability=RESULTS/'20261126_native_weather_probability'/f'{name}_{weights}_s{seed}'
-    for domain in ('gaussian','spatial','graph','joint','preconditioned_joint'):
-        path=probability/domain;effective='joint' if domain=='preconditioned_joint' else domain
+    for domain,effective,preconditioned,solvers in probability_variants():
+        path=probability/domain
         command=['--phase','probability','--cache',train,'--embeddings',train_embedding,'--out',path,'--domain',effective,'--seed',seed,'--steps',3000]
-        if domain=='preconditioned_joint':command+=['--preconditioner',probability/'gaussian']
+        if preconditioned:command+=['--preconditioner',probability/'gaussian']
         run('native_weather_experiment',command,path/'status.json')
         if read(path/'status.json')['status']!='COMPLETE_PROBABILITY':raise ValueError('probability trajectory incomplete')
         if domain=='gaussian':
             run('native_copula',['--cache',train,'--embeddings',train_embedding,'--gaussian',path],path/'copula.json')
-        solvers=['ddim','heun'] if domain=='preconditioned_joint' else ['ddim']
         for solver in solvers:
             evaluation=path/f'eval_{solver}'
             run('native_weather_evaluation',['--cache',dev,'--embeddings',dev_embedding,'--probability',path,
