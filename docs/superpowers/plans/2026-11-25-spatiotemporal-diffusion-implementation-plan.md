@@ -1,5 +1,7 @@
 # 时空联合残差 Diffusion Implementation Plan
 
+> 执行前必读：[下一阶段入口与审阅修订](../../NEXT_STAGE.md)。本文件保留早期设计；时间边界、自适应尺度和执行路径以该入口修订为准。
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 在 2016–2019 训练、2020 验证合同下，实现带海岸距离、地形条件和因果历史状态的基础场 + 残差 diffusion，并公平比较 GRU、LSTM 与 causal Transformer。

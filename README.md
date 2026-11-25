@@ -10,6 +10,7 @@
 
 | 入口 | 内容 |
 |---|---|
+| [下一阶段计划与审阅](docs/NEXT_STAGE.md) | 统一阅读入口、因果边界、尺度公式、阶段出口和待补项 |
 | [当前研究进展](docs/CURRENT_RESEARCH.md) | 区域、数据角色、最新结果与证据范围 |
 | [实验索引](docs/EXPERIMENT_INDEX.md) | 当前区域实验、状态和报告 |
 | [快速上手](docs/GETTING_STARTED.md) | 新用户或其他 agent 的最短复现路径 |

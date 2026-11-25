@@ -1,5 +1,7 @@
 # 当前研究进展：2026-11-24
 
+下一阶段统一入口：[计划与审阅修订](NEXT_STAGE.md)。新时间分支处于设计阶段；历史重建指标与未来预报分开评价。
+
 最新正式结果：[p14 固定支撑编码器](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_fixed_support_encoder_p14_formal/REPORT.md)。410 个训练站、137 个验证站、12 个月×24 小时×3 布局、两种子完成 600 秒训练；扩展宏 RMSE 为 **10.806 mm**，CRPS 为 8.286 mm，小时增量宏 RMSE 为 5.809 mm。相对 v13 点特征＋小 U-Net 的 10.828 mm 改善 0.022 mm，属于同一精度水平。`architecture_comparison.png` 和 `learning_curves.png` 已提供架构与训练曲线对比。p14 是确定性基础场，历史 diffusion 数值未在 p14 残差上重训。
 
 最新空间采样筛查：[p15 空间支撑采样](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_optimization_campaign_p15/REPORT.md)。在 120 秒固定时间监控中，random 6.286 mm、hole100 6.526 mm、hole150 7.155 mm、distance_stratified 7.782 mm；这些是内部筛查分数，不能与 p14 扩展宏 RMSE 混排。当前保留 random 控制并加入 hole100 空间外推臂，其他采样需完整扩展评价。
