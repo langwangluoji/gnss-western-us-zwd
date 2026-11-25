@@ -1,0 +1,16 @@
+{
+  "cache_manifest_sha256": "fc9c336b1f016133bfbf7bb521738566af0758ab27865072a834432e65e06b39",
+  "embedding_manifest_sha256": "552ba4b2c15865ca075fd836a4e890147d2ded229cf899a05ec743d17d0e717a",
+  "probability_weights_sha256": null,
+  "members": null,
+  "sampling_steps": null,
+  "independent_iid_member_noise": true,
+  "seed": 261126,
+  "code_sha256": "26954a74aa111879f963d93337081b25f1e816a6135b64898e1aff3fcebad3ef",
+  "copula_sha256": null,
+  "solver": "ddim",
+  "neural_evaluations_per_sample": null,
+  "prediction_sha256": "89d22d0bd48ae6367dfad0be37f86b7144795f61297a706fbda6b29f31703d7d",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}

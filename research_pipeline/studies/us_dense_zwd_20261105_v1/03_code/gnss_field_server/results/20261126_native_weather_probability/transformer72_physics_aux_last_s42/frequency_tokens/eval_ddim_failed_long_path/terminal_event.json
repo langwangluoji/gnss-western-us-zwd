@@ -1,0 +1,9 @@
+{
+  "status": "EVALUATION_FAILED_BEFORE_ARRAY_WRITE",
+  "controller_session": 75503,
+  "controller_exit_code": 1,
+  "reason": "Old already-imported evaluator used ordinary Windows paths; evaluation.npz absolute path length261 crosses MAX_PATH. Extended path fix and real filesystem test now pass.",
+  "trained_weights_preserved": true,
+  "mean_and_cache_unchanged": true,
+  "resampling_policy": "same IID seed261126, K32, DDIM40, same frozen weights; pending rerun using corrected entrypoint"
+}

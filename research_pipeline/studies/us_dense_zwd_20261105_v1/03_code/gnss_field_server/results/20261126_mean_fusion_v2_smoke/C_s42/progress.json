@@ -1,0 +1,17 @@
+{
+  "step": 4,
+  "supervised_updates": 4,
+  "loss": 1.4953596591949463,
+  "query_loss": 1.3150177001953125,
+  "causal_station_loss": 0.7213678956031799,
+  "auxiliary_label_cells": 1178619,
+  "finite_label_cells": 7168,
+  "cache_block": 0,
+  "last_origin_hour": 423600,
+  "group_lrs": [
+    1e-05
+  ],
+  "current_correction_rms_mm": 0.8640604019165039,
+  "future6_correction_rms_mm": 4.610846996307373,
+  "seconds": 0.40600000000267755
+}

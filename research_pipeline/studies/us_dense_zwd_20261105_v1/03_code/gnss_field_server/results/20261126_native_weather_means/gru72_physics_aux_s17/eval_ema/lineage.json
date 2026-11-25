@@ -1,0 +1,18 @@
+{
+  "cache_manifest_sha256": "fc9c336b1f016133bfbf7bb521738566af0758ab27865072a834432e65e06b39",
+  "embedding_manifest_sha256": "902cd2ef0302e9ad39371480807a62a86275abead71c6b16bac77d4b4605ee9b",
+  "probability_weights_sha256": null,
+  "members": null,
+  "sampling_steps": null,
+  "independent_iid_member_noise": true,
+  "seed": 261126,
+  "code_sha256": "47992e1d544b500f1c48e2f104aa1e8fa29fed4ef225486482dfc65f397999d1",
+  "copula_sha256": null,
+  "solver": "ddim",
+  "neural_evaluations_per_sample": null,
+  "frequency_backend": "original",
+  "frequency_backend_sha256": null,
+  "prediction_sha256": "6b8a3be27f940459151b0e89f777b5733529fcaff7444db7d8eec39e18165239",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}

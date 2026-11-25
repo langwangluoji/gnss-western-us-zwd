@@ -1,0 +1,135 @@
+{
+  "config": {
+    "phase": "train",
+    "cache": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_gap_smoke\\cache_s42",
+    "out": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_mean_fusion_v2_smoke\\S_s42",
+    "source": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_means\\transformer72_physics_aux_s42",
+    "mean": null,
+    "embeddings": null,
+    "arm": "S",
+    "seed": 42,
+    "steps": 4,
+    "old_lr": 0.0001,
+    "new_lr": 0.0003,
+    "weights": "last",
+    "smoke_cache": true,
+    "device": "cuda"
+  },
+  "source_checkpoint_sha256": "2a985fc172e54810ead279e300c21c2c12f2e625fda44e2649eded9cd12e0fb9",
+  "source_protocol_sha256": "852e229ab224927ff03480272df25974c3d96ce9f0dc4a08dda4a5764a6bb021",
+  "source_final_weights_sha256": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508",
+  "source_step": 3000,
+  "cache_manifest_sha256": "667f2126087f5cc5f8bfe13c96da4bb2287cfc708e00c938d0818ec4e8175634",
+  "source_protocol": {
+    "config": {
+      "out": "research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_gap_smoke\\cache_s42",
+      "data": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261125_temporal_continuous_data",
+      "source": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261125_p14_continuous_fusion",
+      "innovation": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261125_observed_innovation_precision",
+      "seed": 42,
+      "blocks": 3,
+      "calendar_day": 0,
+      "months": 12,
+      "prefix_cache": "results\\20261126_native_weather_cache\\train_s42"
+    },
+    "data_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+    "source_sha256": "d87223f76df74354dde4ad1f1ab18097880b4a0396b2d5b565bda10000385f3a",
+    "I1_sha256": "91afccab384f5909db2f2b53fc5046783f85c2c05313aa1b8229c084d28682fe",
+    "code_sha256": {
+      "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+      "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be",
+      "innovation_refinement.py": "8958dc83abcf2a97d1fb9e46bdc1ea868dae70221eb92a2a97fa7484e9d463af",
+      "p14_fusion.py": "8c0e85ffd23829a1fc47d9bafec1fe6cd674d17b7333a308afbb6ed1a641a438"
+    },
+    "strict_oof": false,
+    "confirmation_C_D_read": false,
+    "history_state_hours": 72,
+    "raw_span_hours": 146,
+    "cache_schema": "native_weather_v2_partial_targets",
+    "missing_target_policy": "preserve clock andNaNs; select stations by coverage; no fabricated labels",
+    "time": "continuous12h blocks, station identities only sampled; future0..6h labels only",
+    "training_years": [
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "development_year": 2020,
+    "reused_prefix": {
+      "protocol_sha256": "ea8bdd4352b5150e7942aa0220e12add9538da99e844547b0d58ac53f8e67335",
+      "completed_blocks": 1685,
+      "files": {
+        "condition.npy": "d3671de5205fa8fa25f4648f85e26a3a1fab612f1a7732ddcf80d6ef67e91b2f",
+        "context_ids.npy": "8a9415aa6074d8ef4f549e245f42b6e66c9eb222910b5fb22e293d9cae5067a9",
+        "history.npy": "0dad02cbf9aea2d82390c8665e1759398710d730f41da43969a7b1e2dd320d71",
+        "mean.npy": "196ac7ff07dea5ed6f7ec838f513cd3b3bf813ecd4b9d1d76402bf230d34741f",
+        "nearest.npy": "8b422916d4cbb0e44b6cc600cea1f959d2a3e8ee68cb108ba032163f02811a3a",
+        "origins.npy": "5ac7d518ffd412d2510416c0118b03201ea6dadf3952141b1ac698a51c79c096",
+        "query_ids.npy": "0a8eb3aeb6a9c3de9818c4ca5449f0520870ef7629561e5ee81375adfd51d2af",
+        "truth.npy": "e8a77d58133ac24f091326561c1bea9f76bed913d1c04553afccb57bf8937dda",
+        "weights.npy": "c1e05d1fbf7536ddf41832a2f12451a4d24f63d321df5ee89c2657ee8c06d874"
+      }
+    },
+    "derived_smoke": {
+      "parent_protocol_sha256": "f0b174d06a1ef9cf42ef30f25f683955031225787be74fdcaa74e0cd2d7f8e44",
+      "rows": [
+        1685,
+        1686,
+        1687
+      ],
+      "method": "exact unmodified contiguous row copy",
+      "script_sha256": "eb9d7e9e99bedfe418729bb20d63691afe2ab3b2f725af0b18cc02460f73b04e"
+    }
+  },
+  "code_sha256": {
+    "native_mean_fusion_v2.py": "9c8bb43a97d65dd00fb0395ea680fc9a8f350c8dea446327c736ab6c98308a06",
+    "native_mean_fusion_v2_experiment.py": "ad7fbbfa5add66750b7973a893e0de3dc410794fc836f9a9adbdf69db0a12b4a",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_physics_lm.py": "1cc6e3450745548dfb1a86502402a95cf1c27370427e81884bee1cf353d71bd6",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be"
+  },
+  "new_parameter_names": [
+    "time.spatial.edge.0.bias",
+    "time.spatial.edge.0.weight",
+    "time.spatial.edge.2.bias",
+    "time.spatial.edge.2.weight",
+    "time.spatial.gate",
+    "time.spatial.key.weight",
+    "time.spatial.output.weight",
+    "time.spatial.query.weight",
+    "time.spatial.value.weight"
+  ],
+  "parameters": 111075,
+  "warm_start_max_difference": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "warm_source_correction_rms_mm": 2.9292993545532227,
+  "optimizer": {
+    "old_state": "source AdamW moments and steps restored by name; new parameters uninitialized",
+    "old_lr": 0.0001,
+    "new_lr": 0.0003,
+    "weight_decay": 0.01,
+    "scheduler": "explicit new cosine cycle; eta_min=0.1*group_initial_lr",
+    "cycle_updates": 4,
+    "initial_group_lrs": [
+      0.0001,
+      0.0003
+    ]
+  },
+  "cache_block_order": [
+    0,
+    1,
+    2,
+    0
+  ],
+  "experimental_mode": "ENGINEERING_SMOKE_ONLY",
+  "aux_weight": 0.25,
+  "ema_decay": 0.999,
+  "ema_initialization": "raw source, not historical EMA",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}

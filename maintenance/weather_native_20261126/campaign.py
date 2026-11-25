@@ -81,8 +81,10 @@ def main():
             run('native_copula',['--cache',train,'--embeddings',train_embedding,'--gaussian',path],path/'copula.json')
         for solver in solvers:
             evaluation=path/f'eval_{solver}'
-            run('native_weather_evaluation',['--cache',dev,'--embeddings',dev_embedding,'--probability',path,
-                '--out',evaluation,'--members',32,'--sample-steps',20 if solver=='heun' else 40,'--solver',solver],evaluation/'metrics.json')
+            command=['--cache',dev,'--embeddings',dev_embedding,'--probability',path,
+                '--out',evaluation,'--members',32,'--sample-steps',20 if solver=='heun' else 40,'--solver',solver]
+            if effective=='frequency_tokens':command+=['--frequency-backend','commuted']
+            run('native_weather_evaluation',command,evaluation/'metrics.json')
         if domain=='gaussian':
             evaluation=path/'eval_copula'
             run('native_weather_evaluation',['--cache',dev,'--embeddings',dev_embedding,'--probability',path,

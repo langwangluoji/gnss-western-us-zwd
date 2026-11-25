@@ -1,0 +1,62 @@
+{
+  "config": {
+    "phase": "mean",
+    "cache": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_cache_v2\\train_s17",
+    "out": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_means\\transformer72_local_s17",
+    "kind": "transformer",
+    "variant": "local",
+    "aux_weight": 0.25,
+    "length": 72,
+    "no_weather": false,
+    "seed": 17,
+    "steps": 3000,
+    "lr": 0.0003
+  },
+  "cache_manifest_sha256": "2e537ab2037ee5921176e5841ca940ae376929a32817a332d596773245a1e818",
+  "source_protocol": {
+    "config": {
+      "out": "results\\20261126_native_weather_cache_v2\\train_s17",
+      "data": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261125_temporal_continuous_data",
+      "source": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261125_p14_continuous_fusion",
+      "innovation": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261125_observed_innovation_precision",
+      "seed": 17,
+      "blocks": 3000,
+      "calendar_day": 0,
+      "months": 12,
+      "prefix_cache": null
+    },
+    "data_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+    "source_sha256": "0167bfb5c067adcfebe55b7ab58f850585d91573da9ecc8a8e1dead58017ca3a",
+    "I1_sha256": "5cfa1d6d1f8f003976169d9fa96d94a0968c5eff285eb4e929d0347ce06054e3",
+    "code_sha256": {
+      "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+      "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be",
+      "innovation_refinement.py": "8958dc83abcf2a97d1fb9e46bdc1ea868dae70221eb92a2a97fa7484e9d463af",
+      "p14_fusion.py": "8c0e85ffd23829a1fc47d9bafec1fe6cd674d17b7333a308afbb6ed1a641a438"
+    },
+    "strict_oof": false,
+    "confirmation_C_D_read": false,
+    "history_state_hours": 72,
+    "raw_span_hours": 146,
+    "cache_schema": "native_weather_v2_partial_targets",
+    "missing_target_policy": "preserve clock andNaNs; select stations by coverage; no fabricated labels",
+    "time": "continuous12h blocks, station identities only sampled; future0..6h labels only",
+    "training_years": [
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "development_year": 2020
+  },
+  "model_code_sha256": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+  "runner_sha256": "34661353d2732479e0b0d2829fd53b84c2571f10ca63f9460f2be73f11e45bae",
+  "parameters": 106833,
+  "ema_decay": 0.999,
+  "extra_model_sources": {
+    "native_physics_lm.py": "1cc6e3450745548dfb1a86502402a95cf1c27370427e81884bee1cf353d71bd6"
+  },
+  "causal_auxiliary_active": false,
+  "initialization": "new mean head exactly zero, I1 current and origin-persistence forecast",
+  "strict_oof": false
+}

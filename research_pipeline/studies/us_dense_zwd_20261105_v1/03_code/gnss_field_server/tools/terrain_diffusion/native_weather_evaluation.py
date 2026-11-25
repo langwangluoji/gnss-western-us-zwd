@@ -11,6 +11,7 @@ from .native_weather_models import NativeDiffusion,NativeGaussian
 from .native_copula import correlate_noise
 from .native_paths import file_path
 from .native_probability_context import condition_view,condition_dimension,make_probability,require_condition_view,gaussian_from_protocol
+from .native_spectral_fast import CommutedFrequencyTokens
 
 
 def safe_mean(x,axis):
@@ -58,6 +59,7 @@ def main():
     p.add_argument('--sample-steps',type=int,default=20);p.add_argument('--seed',type=int,default=261126)
     p.add_argument('--copula',type=Path)
     p.add_argument('--solver',choices=['ddim','heun'],default='ddim')
+    p.add_argument('--frequency-backend',choices=['original','commuted'],default='original')
     args=p.parse_args()
     for name,value in vars(args).items():
         if isinstance(value,Path):setattr(args,name,file_path(value))
@@ -85,7 +87,9 @@ def main():
         domain=protocol['config']['domain'];stats=protocol['normalization']
         bias=torch.tensor(stats['bias_mm'],device='cuda');scale=torch.tensor(stats['scale_mm'],device='cuda')
         view=protocol['config'].get('condition_view','latent')
-        model=make_probability(domain,condition_dimension(view),protocol['config'].get('width',64)).cuda().eval()
+        commuted=domain=='frequency_tokens' and args.frequency_backend=='commuted'
+        model=(CommutedFrequencyTokens(condition_dimension(view),protocol['config'].get('width',64)) if commuted
+            else make_probability(domain,condition_dimension(view),protocol['config'].get('width',64))).cuda().eval()
         model.load_state_dict(torch.load(args.probability/'last.pt',weights_only=True))
         preconditioner=None
         if protocol.get('preconditioner_sha256'):
@@ -142,6 +146,8 @@ def main():
         independent_iid_member_noise=True,seed=args.seed,code_sha256=sha(Path(__file__)),
         copula_sha256=sha(args.copula) if args.copula else None,
         solver=args.solver,neural_evaluations_per_sample=(1 if domain=='gaussian' else args.sample_steps*(2 if args.solver=='heun' else 1)) if args.probability else None,
+        frequency_backend='commuted' if args.probability and commuted else 'original',
+        frequency_backend_sha256=sha(Path(__file__).with_name('native_spectral_fast.py')) if args.probability and commuted else None,
         prediction_sha256=sha(folder/'evaluation.npz'),strict_oof=False,confirmation_C_D_read=False))
     print(json.dumps(payload))
 

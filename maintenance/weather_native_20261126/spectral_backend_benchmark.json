@@ -1,0 +1,20 @@
+{
+  "full_chain_max_difference_mm": 4.215240915073082e-05,
+  "full_chain_rms_difference_mm": 2.6776979211717844e-06,
+  "original_seconds": 6.825153099998715,
+  "commuted_seconds": 6.245972399992752,
+  "observed_speed_ratio": 1.0927286678382753,
+  "timing_context": "One actual 12h development block, K32, DDIM40; other research CUDA jobs concurrently active. Not isolated latency.",
+  "state_shape": [
+    384,
+    137,
+    7
+  ],
+  "weights_sha256": "8be599af3293f3cb41c30762d925543dcc35b4f715ac01d6c950de8f7aeca907",
+  "original_implementation_sha256": "f49df4ebfc6c328b7134faec6dca706bca14c39585b1e3a84a829648ef233ece",
+  "commuted_implementation_sha256": "1ac40fb2056ece02aca35f6fdcc7c74e39dd8cc74e7b531184e788b86f66ed1c",
+  "no_modes_truncated": true,
+  "no_retraining": true,
+  "accuracy_claim": false,
+  "script_sha256": "89443a13261c42500b0e5dfab8779189fffecba19a5990177b5727065642e9fb"
+}

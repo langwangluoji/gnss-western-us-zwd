@@ -1,0 +1,13 @@
+{
+  "step": 3000,
+  "loss": 0.9520560503005981,
+  "seconds": 357.375,
+  "current_correction_rms_mm": 0.4794723093509674,
+  "last_origin_hour": 404460,
+  "supervised_updates": 3000,
+  "finite_label_cells": 10752,
+  "query_loss": 0.7385810613632202,
+  "causal_station_loss": 0.8538998961448669,
+  "auxiliary_label_cells": 1133424,
+  "future6_correction_rms_mm": 2.3811657428741455
+}
