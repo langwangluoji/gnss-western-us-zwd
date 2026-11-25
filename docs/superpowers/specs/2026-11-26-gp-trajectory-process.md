@@ -45,7 +45,7 @@ D-local/G-local逐query运算，不含query间BatchNorm、注意力或池化；c
 
 D-local训练提供7维轨迹边际监督，空间耦合来自参考GP和局部映射；不把它称为真实联合score的反向动力学。D-full可以读取其他query条件，其与Local的差异同时包含坐标、结构与条件聚合能力，不把两者之差单独归因为projectivity。
 
-G-ref、D-full、D-local和G-local在零速度/零系数时对同一IID eta逐元素恢复同一Gaussian样本。学习后D-full没有查询子集分布一致性保证；固定Q1/64/128/137检查边际、CRPS、覆盖及条件CDF。Local用共同GP状态另做路径一致性工程检验。
+G-ref、D-full、D-local和G-local在Heun0零速度/零系数时对同一IID eta逐元素恢复同一Gaussian样本。学习后D-full没有查询子集分布一致性保证；固定Q1/64/128/137检查边际、CRPS、覆盖及条件CDF。Local用共同GP状态另做路径一致性工程检验。
 
 ## 采样与评价
 

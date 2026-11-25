@@ -24,20 +24,24 @@
 
 ## Task 1：矩阵、采样与局部模型
 
-- [ ] 新建`native_process_ops.py`、`native_process_models.py`和测试；RED验证缺模块。
-- [ ] 主值根/逆根、双向恢复、异方差、Q1/重复坐标/SPD测试GREEN。
-- [ ] Heun0拒绝k0神经调用、零速度保持参考；Local非零权重子集路径一致，Affine采样映射仿射。
-- [ ] 逐完整轨迹分组loss与手动计算一致，NaN不传播。
+- [x] 新建`native_process_ops.py`、`native_process_models.py`和测试；RED验证缺模块。
+- [x] 主值根/逆根、双向恢复、异方差、Q1/重复坐标/SPD测试GREEN。
+- [x] Heun0拒绝k0神经调用、零速度保持参考；Local非零权重子集路径一致，Affine采样映射仿射。
+- [x] 逐完整轨迹分组loss与手动计算一致，NaN不传播。
 
 ## Task 2：独立真实运行入口
 
-- [ ] 新建`native_process_experiment.py`，复用缓存/源embedding；训练角色、源权重、copula和归一化强核验。
-- [ ] 协议登记三臂参数、精确noise端点、共同k[B]/epsilon[B,Q,7]及初始化后噪声seed。
-- [ ] reference/evaluate固定全部137查询，无未来mask选点；保存同格式概率数组、指标及来源哈希。
-- [ ] 三臂真实缺测块各4更新、真实冻结S175 Gaussian小试通过后提交代码；代数正确不能替代精度验证。
+- [x] 新建`native_process_experiment.py`，复用缓存/源embedding；训练角色、源权重、copula和归一化强核验。
+- [x] 协议登记三臂参数、精确noise端点、共同k[B]/epsilon[B,Q,7]及初始化后噪声seed。
+- [x] reference/evaluate固定全部137查询，无未来mask选点；保存同格式概率数组、指标及来源哈希。
+- [x] 三臂真实缺测块各4更新、真实冻结S175 Gaussian小试通过后提交代码；代数正确不能替代精度验证。
 
 ## Task 3：配对3000块与区域证据
 
 - [ ] 先S175训练copula及G-ref对称根评价，再三臂seed42各3000块和Heun0/DDIM对照。
 - [ ] float64复算、共同月份区间、尾部/覆盖/站对/增量/energy、Q人口诊断。
 - [ ] 候选seed17及冻结补充日期；归档曲线/流程图/参数与来源；Git推送后核对远端一致。
+
+## 当前执行证据
+
+真实3块缺测缓存、完整TF冻结均值、完整训练S175 Gaussian归一化：Full/Local/Affine各4更新全部通过；每臂共1435条完整7h轨迹，mask只参与监督。新入口CPU测试先3项RED，再3项GREEN；相关代数与模型共10项通过。正式3000块及137查询评价由独立process_campaign.py执行，结果另行登记。
