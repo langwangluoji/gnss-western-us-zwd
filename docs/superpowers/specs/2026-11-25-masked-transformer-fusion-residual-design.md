@@ -182,3 +182,7 @@ T0/T1均重新运行并使用相同投影包围盒和查询定义；T0是旧网�
 建议新增`masked_transformer_fusion.py`提供`encode_history(history, static, hours, masks)`、`decode_correction(F0,F1,H,static,support)`与`forward(batch)`。`p14_oof_residuals.py`构造残差与fold清单，`p14_residual_probability.py`负责标准化、E/D和采样。以上为待实现接口；原实验代码继续保留复现。
 
 本轮交付为设计文档、3张PNG＋3张SVG、可复现绘图脚本、证据快照与核验清单。训练配置按本页逐阶段实现；此时没有新增架构权重或扩散实测分数。
+
+## 10. 与已有时序扩散的关系
+
+[文献对照与借鉴建议](../../research_notes/2026-11-25-temporal-diffusion-comparison.md)说明历史条件、残差扩散与标准化的已有先例。本页固定AR＋逐帧创新扩散作为V1控制保留；条件转移rho(c)与条件位置/尺度是后续单独消融，尚未替换本页架构或图件。

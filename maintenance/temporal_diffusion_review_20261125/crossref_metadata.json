@@ -1,0 +1,404 @@
+[
+  {
+    "doi": "10.1038/s43247-025-02042-5",
+    "status": "OK",
+    "title": [
+      "Residual corrective diffusion modeling for km-scale atmospheric downscaling"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0009-0006-1763-6832",
+        "authenticated-orcid": false,
+        "given": "Morteza",
+        "family": "Mardani",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Noah",
+        "family": "Brenowitz",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yair",
+        "family": "Cohen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jaideep",
+        "family": "Pathak",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0006-9104-2303",
+        "authenticated-orcid": false,
+        "given": "Chieh-Yu",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0003-4112-072X",
+        "authenticated-orcid": false,
+        "given": "Cheng-Chin",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Arash",
+        "family": "Vahdat",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mohammad Amin",
+        "family": "Nabian",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tao",
+        "family": "Ge",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Akshay",
+        "family": "Subramaniam",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Karthik",
+        "family": "Kashinath",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jan",
+        "family": "Kautz",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mike",
+        "family": "Pritchard",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "journal": [
+      "Communications Earth &amp; Environment"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          24
+        ]
+      ]
+    },
+    "published_online": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          24
+        ]
+      ]
+    },
+    "published_print": null,
+    "volume": "6",
+    "pages": null,
+    "article_number": "124",
+    "url": "https://doi.org/10.1038/s43247-025-02042-5"
+  },
+  {
+    "doi": "10.1038/s41586-024-08252-9",
+    "status": "OK",
+    "title": [
+      "Probabilistic weather forecasting with machine learning"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4765-2703",
+        "authenticated-orcid": false,
+        "given": "Ilan",
+        "family": "Price",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alvaro",
+        "family": "Sanchez-Gonzalez",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ferran",
+        "family": "Alet",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1556-9932",
+        "authenticated-orcid": false,
+        "given": "Tom R.",
+        "family": "Andersson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0009-6510-0831",
+        "authenticated-orcid": false,
+        "given": "Andrew",
+        "family": "El-Kadi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0000-6945-8325",
+        "authenticated-orcid": false,
+        "given": "Dominic",
+        "family": "Masters",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9693-7986",
+        "authenticated-orcid": false,
+        "given": "Timo",
+        "family": "Ewalds",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0004-7859-3384",
+        "authenticated-orcid": false,
+        "given": "Jacklynn",
+        "family": "Stott",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shakir",
+        "family": "Mohamed",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3622-7111",
+        "authenticated-orcid": false,
+        "given": "Peter",
+        "family": "Battaglia",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4222-5358",
+        "authenticated-orcid": false,
+        "given": "Remi",
+        "family": "Lam",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8730-1927",
+        "authenticated-orcid": false,
+        "given": "Matthew",
+        "family": "Willson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "journal": [
+      "Nature"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          4
+        ]
+      ]
+    },
+    "published_online": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          4
+        ]
+      ]
+    },
+    "published_print": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          2
+        ]
+      ]
+    },
+    "volume": "637",
+    "pages": "84-90",
+    "article_number": null,
+    "url": "https://doi.org/10.1038/s41586-024-08252-9"
+  }
+]

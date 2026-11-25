@@ -1,5 +1,7 @@
 # 当前研究进展：2026-11-25
 
+方法依据：[已有时序扩散与本项目的对照](research_notes/2026-11-25-temporal-diffusion-comparison.md)。核对TimeGrad、CSDI、TMDM、CorrDiff、GenCast等8项工作，明确当前固定AR创新方案与条件动态的差别；动态转移和条件尺度属于新增待验证消融。
+
 当前设计：[掩码Transformer时空融合与标准化残差场](superpowers/specs/2026-11-25-masked-transformer-fusion-residual-design.md)。保留p14与海岸/地形分支，以72小时、16×16因果时间状态接入两级残差空间解码器；基础场冻结后，构建折外残差与标准化创新扩散。架构流程图已导出PNG/SVG，新网络尚未训练。
 
 下一步：[p14时空融合优化与残差扩散实验计划](superpowers/plans/2026-11-25-p14-fusion-next-stage.md)。以现有同条件实测为起点，先完成双种子，再分开检验训练策略、残差解码融合及长历史；固定基础场后比较高斯与diffusion。该增补是待执行计划，当前结果不代表新增架构或扩散已经训练。
