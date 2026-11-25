@@ -1,0 +1,13 @@
+{
+  "cache": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_cache_v2\\calendar8_s42",
+  "cache_manifest_sha256": "9dd091b18d094e8b1cc2a614b74b9586d69bfba74d9be798d3c1ef1c26f2e819",
+  "mean_protocol_sha256": "7cba5a4b9f1d2df04e1fd00fac6e66270187b5f68d027f41cbcde9af47e68ed9",
+  "mean_weights_sha256": "86fb38d92af6448039987f0c44e8b516bcdaf45a18458320246fdc2f32a1e654",
+  "model_kind": "gru",
+  "weights": "last",
+  "files": {
+    "embedding.npy": "0cc76b4db043ca550d64ceb8ac28448a79cfc874caac6e75fc7043f5df455c35",
+    "mean.npy": "d3354bb0609fd8a66d6308019c112bd2b7eee9a45cc45506776c7086e74790cb"
+  },
+  "complete": true
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "step": 1,
+    "loss": 1.6935176849365234,
+    "seconds": 0.5160000000032596,
+    "current_correction_rms_mm": 0.0,
+    "last_origin_hour": 423600,
+    "supervised_updates": 1,
+    "finite_label_cells": 7168,
+    "query_loss": 1.4134196043014526,
+    "causal_station_loss": 1.1203923225402832,
+    "auxiliary_label_cells": 1178619,
+    "future6_correction_rms_mm": 0.0
+  },
+  {
+    "step": 4,
+    "loss": 1.6906158924102783,
+    "seconds": 0.7660000000032596,
+    "current_correction_rms_mm": 0.014861448667943478,
+    "last_origin_hour": 423600,
+    "supervised_updates": 4,
+    "finite_label_cells": 7168,
+    "query_loss": 1.4117405414581299,
+    "causal_station_loss": 1.1155014038085938,
+    "auxiliary_label_cells": 1178619,
+    "future6_correction_rms_mm": 0.10965156555175781
+  }
+]

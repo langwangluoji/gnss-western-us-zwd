@@ -1,0 +1,13 @@
+{
+  "cache": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_cache_v2\\calendar8_s42",
+  "cache_manifest_sha256": "9dd091b18d094e8b1cc2a614b74b9586d69bfba74d9be798d3c1ef1c26f2e819",
+  "mean_protocol_sha256": "78b945640325e52906443a05c062471ea1d8b2632342252edce563e5f62c7c57",
+  "mean_weights_sha256": "3859cfdaf02e18125b24dcad51462950cf18effda6b4731cfdfd027fb8f1b019",
+  "model_kind": "lstm",
+  "weights": "last",
+  "files": {
+    "embedding.npy": "acbc51633e11a4fe4e328960fa69df42f1a1e70ad66b1030a54d9983c38962dd",
+    "mean.npy": "89ba462641e6e4b95f5d85d5a368d072dd1c68733d6ca1d7fa596551a1fdf8a4"
+  },
+  "complete": true
+}

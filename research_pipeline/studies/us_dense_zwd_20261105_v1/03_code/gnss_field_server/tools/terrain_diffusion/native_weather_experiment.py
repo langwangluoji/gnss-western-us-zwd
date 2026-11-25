@@ -13,6 +13,7 @@ from .native_weather_models import NativeMean,NativeDiffusion,NativeGaussian
 from .native_weather import graph_basis
 from .native_weather_cache import static
 from .native_frequency_tokens import probability_model
+from .native_physics_lm import mean_model,causal_station_loss
 
 
 def checkpoint(folder,step,model,optimizer,scheduler,ema=None):
@@ -100,21 +101,28 @@ def train_mean(args):
     if args.no_weather and args.kind!='weather':raise ValueError('explicit weather-summary ablation is defined for weather MLP only')
     folder=args.out;folder.mkdir(parents=True,exist_ok=False)
     torch.manual_seed(args.seed);np.random.seed(args.seed)
-    model=NativeMean(args.kind,64,args.length,weather=not args.no_weather).cuda()
+    model=mean_model(args.kind,args.length,args.variant,weather=not args.no_weather).cuda()
     ema=copy.deepcopy(model);optimizer=torch.optim.AdamW(model.parameters(),lr=args.lr,weight_decay=.01)
     scheduler=torch.optim.lr_scheduler.CosineAnnealingLR(optimizer,args.steps,eta_min=args.lr*.1)
     protocol=dict(config={k:str(v) if isinstance(v,Path) else v for k,v in vars(args).items()
-        if k in ('phase','cache','out','kind','length','no_weather','seed','steps','lr')},
+        if k in ('phase','cache','out','kind','length','no_weather','seed','steps','lr','variant','aux_weight')},
         cache_manifest_sha256=sha(args.cache/'manifest.json'),source_protocol=train.protocol,
         model_code_sha256=sha(Path(__file__).with_name('native_weather_models.py')),runner_sha256=sha(Path(__file__)),
         parameters=sum(p.numel() for p in model.parameters()),ema_decay=.999,
+        extra_model_sources={'native_physics_lm.py':sha(Path(__file__).with_name('native_physics_lm.py'))} if args.variant!='baseline' else {},
+        causal_auxiliary_active=args.variant in ('aux','physics_aux'),
         initialization='new mean head exactly zero, I1 current and origin-persistence forecast',strict_oof=False)
     write_json(folder/'protocol.json',protocol);trace=[];start=time.monotonic();updates=0
     for step in range(args.steps):
         inputs,truth,base,weights=train.batch(step%len(train),args.length)
-        model.train();correction,_=model(**inputs);loss=mean_loss(correction,truth,base,weights)
+        model.train();aux_loss=torch.tensor(0.,device='cuda');aux_cells=0
+        if args.variant in ('aux','physics_aux'):
+            correction,_,aux=model(**inputs,return_aux=True)
+            aux_loss,aux_cells=causal_station_loss(aux,inputs['history'])
+        else:correction,_=model(**inputs)
+        query_loss=mean_loss(correction,truth,base,weights);loss=query_loss+args.aux_weight*aux_loss
         if not torch.isfinite(loss):raise FloatingPointError('nonfinite mean loss')
-        supervised=bool(torch.isfinite(truth).any())
+        supervised=bool(torch.isfinite(truth).any()) or aux_cells>0
         if supervised:
             optimizer.zero_grad();loss.backward();torch.nn.utils.clip_grad_norm_(model.parameters(),1)
             optimizer.step();scheduler.step();updates+=1
@@ -125,6 +133,8 @@ def train_mean(args):
                 current_correction_rms_mm=float(correction[:,:,0].detach().square().mean().sqrt()),
                 last_origin_hour=int(train.a['origins'][step%len(train),-1]))
             row['supervised_updates']=updates;row['finite_label_cells']=int(torch.isfinite(truth).sum())
+            row.update(query_loss=float(query_loss.detach()),causal_station_loss=float(aux_loss.detach()),auxiliary_label_cells=aux_cells,
+                future6_correction_rms_mm=float(correction[:,:,6].detach().square().mean().sqrt()))
             trace.append(row);write_json(folder/'curve.json',trace);write_json(folder/'progress.json',row)
             print(json.dumps(dict(kind=args.kind,seed=args.seed,**row)),flush=True)
         if (step+1)%500==0 or stop_requested():checkpoint(folder,step+1,model,optimizer,scheduler,ema)
@@ -138,7 +148,10 @@ def train_mean(args):
 def export_embeddings(args):
     data=CachedData(args.cache);protocol=json.loads((args.mean/'protocol.json').read_text(encoding='utf-8'))
     if protocol['model_code_sha256']!=sha(Path(__file__).with_name('native_weather_models.py')):raise ValueError('frozen mean implementation changed')
-    config=protocol['config'];model=NativeMean(config['kind'],64,config['length'],weather=not config['no_weather']).cuda().eval()
+    for name,expected in protocol.get('extra_model_sources',{}).items():
+        if sha(Path(__file__).with_name(name))!=expected:raise ValueError('frozen temporal variant changed')
+    config=protocol['config'];variant=config.get('variant','baseline')
+    model=mean_model(config['kind'],config['length'],variant,weather=not config['no_weather']).cuda().eval()
     model.load_state_dict(torch.load(args.mean/f'{args.weights}.pt',weights_only=True))
     folder=args.out;folder.mkdir(parents=True,exist_ok=False)
     n=len(data);B,Q=data.a['mean'].shape[1:]
@@ -157,7 +170,7 @@ def export_embeddings(args):
         role='descriptive_development_not_fit' if data.development else 'training_only'))
     write_json(folder/'manifest.json',dict(cache=str(args.cache.resolve()),cache_manifest_sha256=sha(args.cache/'manifest.json'),
         mean_protocol_sha256=sha(args.mean/'protocol.json'),mean_weights_sha256=sha(args.mean/f'{args.weights}.pt'),
-        model_kind=config['kind'],weights=args.weights,files={n:sha(folder/n) for n in ('embedding.npy','mean.npy')},complete=True))
+        model_kind=config['kind'],mean_variant=variant,weights=args.weights,files={n:sha(folder/n) for n in ('embedding.npy','mean.npy')},complete=True))
 
 
 def train_probability(args):
@@ -189,6 +202,7 @@ def train_probability(args):
         if k in ('phase','cache','out','embeddings','domain','seed','steps','lr','preconditioner')},
         embedding_manifest_sha256=sha(args.embeddings/'manifest.json'),normalization=stats,
         condition_encoder_kind=manifest['model_kind'],condition_encoder_weights_sha256=manifest['mean_weights_sha256'],
+        condition_encoder_variant=manifest.get('mean_variant','baseline'),
         code_sha256=sha(Path(__file__).with_name('native_weather_models.py')),strict_oof=False,
         extra_model_sources={'native_frequency_tokens.py':sha(Path(__file__).with_name('native_frequency_tokens.py'))} if args.domain=='frequency_tokens' else {},
         model_class=type(model).__name__,parameters=sum(p.numel() for p in model.parameters()),
@@ -225,6 +239,8 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--phase',choices=['mean','embeddings','probability'],required=True)
     p.add_argument('--cache',type=Path,required=True);p.add_argument('--out',type=Path,required=True)
     p.add_argument('--kind',choices=['weather','gru','lstm','transformer'],default='transformer')
+    p.add_argument('--variant',choices=['baseline','local','aux','physics','physics_aux'],default='baseline')
+    p.add_argument('--aux-weight',type=float,default=.25)
     p.add_argument('--length',type=int,choices=[24,72],default=72);p.add_argument('--no-weather',action='store_true')
     p.add_argument('--seed',type=int,default=42);p.add_argument('--steps',type=int,default=3000)
     p.add_argument('--lr',type=float,default=.0003);p.add_argument('--mean',type=Path)

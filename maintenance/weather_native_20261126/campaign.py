@@ -26,7 +26,7 @@ def run(module,arguments,done=None):
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--phase',choices=['calendar','means','probability'],required=True)
+    p=argparse.ArgumentParser();p.add_argument('--phase',choices=['calendar','means','physics','probability'],required=True)
     p.add_argument('--seed',type=int,choices=[42,17],default=42);p.add_argument('--mean-name',default='transformer72')
     p.add_argument('--mean-weights',choices=['last','ema'],default='ema');args=p.parse_args();seed=args.seed
     cache=RESULTS/'20261126_native_weather_cache_v2';train=cache/f'train_s{seed}';dev=cache/f'calendar8_s{seed}'
@@ -38,15 +38,21 @@ def main():
         run('native_weather_cache',command,dev/'manifest.json');return
     for path in (train,dev):
         if not (path/'manifest.json').exists() or read(path/'status.json')['status']!='COMPLETE':raise ValueError(f'phase requires complete cache: {path}')
-    if args.phase=='means':
-        configs=[('history_mlp','weather',72,True),('weather_mlp','weather',72,False),
-            ('gru72','gru',72,False),('lstm72','lstm',72,False),('transformer72','transformer',72,False),('transformer24','transformer',24,False)]
-        for name,kind,length,no_weather in configs:
+    if args.phase in ('means','physics'):
+        if args.phase=='means':
+            configs=[('history_mlp','weather',72,True,'baseline'),('weather_mlp','weather',72,False,'baseline'),
+                ('gru72','gru',72,False,'baseline'),('lstm72','lstm',72,False,'baseline'),
+                ('transformer72','transformer',72,False,'baseline'),('transformer24','transformer',24,False,'baseline')]
+        else:
+            configs=[(f'transformer72_{v}','transformer',72,False,v) for v in ('local','aux','physics','physics_aux')]
+            configs += [(f'{kind}72_physics_aux',kind,72,False,'physics_aux') for kind in ('gru','lstm')]
+        for name,kind,length,no_weather,variant in configs:
             folder=means/f'{name}_s{seed}'
             command=['--phase','mean','--cache',train,'--out',folder,'--kind',kind,'--length',length,'--seed',seed,'--steps',3000]
             if no_weather:command+=['--no-weather']
+            if variant!='baseline':command+=['--variant',variant]
             run('native_weather_experiment',command,folder/'status.json')
-            if read(folder/'status.json')['status']!='COMPLETE_MEAN':raise ValueError('mean trajectory is not complete')
+            if read(folder/'status.json')['status']!='COMPLETE_MEAN' or read(folder/'status.json')['steps']!=3000:raise ValueError('mean trajectory is not complete')
             for weights in ('last','ema'):
                 target=emb/f'{name}_{weights}_dev_s{seed}'
                 run('native_weather_experiment',['--phase','embeddings','--cache',dev,'--out',target,'--mean',folder,'--weights',weights],target/'manifest.json')
