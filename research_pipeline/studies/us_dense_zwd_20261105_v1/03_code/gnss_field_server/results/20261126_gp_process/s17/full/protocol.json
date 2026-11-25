@@ -1,0 +1,83 @@
+{
+  "config": {
+    "phase": "train",
+    "cache": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_cache_v2\\train_s17",
+    "embeddings": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_embeddings\\transformer72_physics_aux_last_train_s17",
+    "gaussian": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_probability_context\\S175_s17",
+    "copula": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_probability_context\\S175_s17\\copula.json",
+    "out": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_gp_process\\s17\\full",
+    "process": null,
+    "mode": "full",
+    "seed": 17,
+    "steps": 3000,
+    "lr": 0.0003,
+    "smoke_cache": false,
+    "members": 32,
+    "sample_steps": 20,
+    "sample_seed": 261126,
+    "solver": "heun0",
+    "device": "cuda"
+  },
+  "source": {
+    "gaussian_protocol_sha256": "c1f1e011fdcece1a605515acdd507996067036e0570fed9cae7c8bcf6c2386f0",
+    "gaussian_weights_sha256": "846d8e3af3bd25c4d827a80fa359a32865be059edd57168d0453e6217e64eb10",
+    "copula_sha256": "206c8bb2d915131f1e553e3442745f11abbe7ccfdb1da21da5168a618eede405",
+    "training_embedding_manifest_sha256": "59a1a973c723df20b81bff18515539f58649eeba0b3c3c97f422451f1a36f1d9",
+    "mean_weights_sha256": "68b8625b973897dba7ad89bd23d74ced2c6e123742a7889fdbc140bd5ac536e8",
+    "normalization": {
+      "bias_mm": [
+        -0.3191206658246343,
+        -0.2356088196125176,
+        -0.06838680860587248,
+        0.06610386056868962,
+        0.17816621285081177,
+        0.2986640770915261,
+        0.4088863253034804
+      ],
+      "scale_mm": [
+        9.847583624875096,
+        10.649084493794433,
+        11.601293686841542,
+        12.66060461674355,
+        13.817742383047642,
+        14.969984847430231,
+        16.075119820156544
+      ],
+      "count": [
+        4603792.0,
+        4603779.0,
+        4603766.0,
+        4603753.0,
+        4603741.0,
+        4603728.0,
+        4603714.0
+      ],
+      "role": "training_only"
+    }
+  },
+  "cache_manifest_sha256": "2e537ab2037ee5921176e5841ca940ae376929a32817a332d596773245a1e818",
+  "embedding_manifest_sha256": "59a1a973c723df20b81bff18515539f58649eeba0b3c3c97f422451f1a36f1d9",
+  "code_sha256": {
+    "native_process_experiment.py": "ef7ca45c89f1a7489510a12762ac3e335c98d3bec611e81c8d16e90abe661c6f",
+    "native_process_models.py": "74e614bedd3a6b0ac8ef2fdf689cf1b1a10fd81f8d73aac5974af30d3408bb19",
+    "native_process_ops.py": "2b3c017dd0d9c3ddefd0a2e5dd2f7625f320f5ab27d214270c1779f1e49372de",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_probability_context.py": "ab3aad752ed3b6ed886939cdffe823966032c6811cd4976cba30f421e9a3f898",
+    "native_copula.py": "95eade5fb6d732901662509a881c6efcf28e12f06d3193d408ac079dad577c19",
+    "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7"
+  },
+  "parameters": 45639,
+  "frozen_gaussian_parameters": 12174,
+  "initialization": "zero velocity; exact same GP sample under Heun0",
+  "noise_seed": 261143,
+  "forward_noise": "k per origin broadcast queries; iid epsilon; common group ordering",
+  "alpha_endpoints": [
+    1.0,
+    0.0
+  ],
+  "strict_oof": false,
+  "confirmation_C_D_read": false,
+  "experimental_mode": "MATCHED_3000_BLOCKS"
+}

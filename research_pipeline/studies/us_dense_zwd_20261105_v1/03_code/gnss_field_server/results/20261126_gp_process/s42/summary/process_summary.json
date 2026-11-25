@@ -1,0 +1,883 @@
+{
+  "seed": 42,
+  "rows": [
+    {
+      "name": "reference",
+      "fair_crps_mm": [
+        5.5016929442119835,
+        5.823202215152233,
+        6.169271203331946,
+        6.539932351799265,
+        6.945185268464548,
+        7.39416237377422,
+        7.817941733180431
+      ],
+      "increment_fair_crps_mm": 3.2724287421551086,
+      "sample_mean_R_F6_macro_rmse_mm": [
+        9.999129365301263,
+        14.359452042630249
+      ],
+      "coverage80": [
+        0.7386001894112975,
+        0.7714585128289735,
+        0.7753253221139598,
+        0.782025541589886,
+        0.7804482183138629,
+        0.7848412028714337,
+        0.7884025528817779
+      ],
+      "rank3_30_coverage": [
+        0.7985671951852871,
+        0.8286496428418666,
+        0.8323540824526187,
+        0.8381907582105608,
+        0.8381688582414828,
+        0.8420589206442382,
+        0.8448729828166714
+      ],
+      "NFE": 0,
+      "members": 32,
+      "R_delta_ci95_mm": [
+        0.0,
+        0.0
+      ],
+      "F6_delta_ci95_mm": [
+        0.0,
+        0.0
+      ],
+      "increment_delta_ci95_mm": [
+        0.0,
+        0.0
+      ],
+      "source_prediction_sha256": "e9dfbbe7e78b0b81ee8164633fdbdb9e97ae53f59009df375cf8dc62b61ee2dc",
+      "analytic_gaussian_crps_mm": [
+        5.507062469755427,
+        5.830124035222581,
+        6.172792754017903,
+        6.5394226939192315,
+        6.94907998160337,
+        7.399789544553439,
+        7.816224615491342
+      ],
+      "analytic_gaussian_80_coverage": [
+        0.7821617328078697,
+        0.8140730692379609,
+        0.8181587639134593,
+        0.8254749702809331,
+        0.8243989216351533,
+        0.8281450636533735,
+        0.8322828842548845
+      ],
+      "analytic_gaussian_mean_R_F6_rmse_mm": [
+        9.866215671011082,
+        14.08402968084696
+      ],
+      "parameters": 0
+    },
+    {
+      "name": "full_heun0",
+      "fair_crps_mm": [
+        5.51752461187526,
+        5.863188442203041,
+        6.314559167802113,
+        6.614252162169446,
+        7.031279164531043,
+        7.485932969482426,
+        7.917515533173158
+      ],
+      "increment_fair_crps_mm": 3.2162226989190343,
+      "sample_mean_R_F6_macro_rmse_mm": [
+        10.049655564087312,
+        14.406860482661582
+      ],
+      "coverage80": [
+        0.7542877218708948,
+        0.7527237508631067,
+        0.7356328160566591,
+        0.7329378940259328,
+        0.7189832560016138,
+        0.7099735847672157,
+        0.7025256649021568
+      ],
+      "rank3_30_coverage": [
+        0.8127669324534873,
+        0.8123804635417622,
+        0.797250764610087,
+        0.7950835953806332,
+        0.7824961334140274,
+        0.7747917966027076,
+        0.7669348599248325
+      ],
+      "NFE": 39,
+      "members": 32,
+      "R_delta_ci95_mm": [
+        -0.00526315909302828,
+        0.041230273118022034
+      ],
+      "F6_delta_ci95_mm": [
+        -0.016331792475001244,
+        0.211891770286442
+      ],
+      "increment_delta_ci95_mm": [
+        -0.08268563281421434,
+        -0.029976510847928732
+      ],
+      "source_prediction_sha256": "47719339730f7b07260c1d0a5d34cd70cec95a5779ca7d4ee2c04013a3cad94a",
+      "parameters": 45639,
+      "training_seconds": 250.125
+    },
+    {
+      "name": "full_ddim",
+      "fair_crps_mm": [
+        5.520144386217464,
+        5.865375941434975,
+        6.324025560340154,
+        6.624943253437034,
+        7.048110295332898,
+        7.506393749854701,
+        7.941971216802383
+      ],
+      "increment_fair_crps_mm": 3.21090670131205,
+      "sample_mean_R_F6_macro_rmse_mm": [
+        10.044251437153319,
+        14.408137383785519
+      ],
+      "coverage80": [
+        0.741536064522042,
+        0.7389354304534594,
+        0.7211991774903679,
+        0.7177620702195086,
+        0.7027130290192626,
+        0.6933784593560064,
+        0.6859478353409602
+      ],
+      "rank3_30_coverage": [
+        0.8013319891241255,
+        0.8001197656016082,
+        0.7838590123162568,
+        0.781001799951716,
+        0.7673660143904243,
+        0.7594257132724316,
+        0.7511460139509424
+      ],
+      "NFE": 40,
+      "members": 32,
+      "R_delta_ci95_mm": [
+        -0.004098827489169743,
+        0.04643428651026806
+      ],
+      "F6_delta_ci95_mm": [
+        -1.2891982811646083e-05,
+        0.24476015894804368
+      ],
+      "increment_delta_ci95_mm": [
+        -0.09307142937722787,
+        -0.03055776667891774
+      ],
+      "source_prediction_sha256": "9c7672d805f9aa71233df8d2e7faa8574a8341f6996ae468a2b2d97e1cba2ce1",
+      "parameters": 45639,
+      "training_seconds": 250.125
+    },
+    {
+      "name": "local_heun0",
+      "fair_crps_mm": [
+        5.496416680632156,
+        5.811121417517596,
+        6.153874551395936,
+        6.524972429781494,
+        6.938788533360306,
+        7.372979469606915,
+        7.79967661489745
+      ],
+      "increment_fair_crps_mm": 3.165536647567803,
+      "sample_mean_R_F6_macro_rmse_mm": [
+        10.011668717036914,
+        14.321913286630672
+      ],
+      "coverage80": [
+        0.7579293068157517,
+        0.7640984277709544,
+        0.7665716441943102,
+        0.7715864328257408,
+        0.7774344208679492,
+        0.7793777745166379,
+        0.7803200582257656
+      ],
+      "rank3_30_coverage": [
+        0.8159594293220909,
+        0.8223497277776759,
+        0.8242603676850265,
+        0.8289312442892024,
+        0.8354790593039534,
+        0.83754937569554,
+        0.8382002611596836
+      ],
+      "NFE": 39,
+      "members": 32,
+      "R_delta_ci95_mm": [
+        -0.009737456882566308,
+        -0.0013115121537435222
+      ],
+      "F6_delta_ci95_mm": [
+        -0.03314328317728492,
+        -0.0015308290555925879
+      ],
+      "increment_delta_ci95_mm": [
+        -0.1474307909259098,
+        -0.07306057199024295
+      ],
+      "source_prediction_sha256": "4de058987a04aa3024e2a1c872ece3beec335a9a4f12cc49aec0617812d39538",
+      "parameters": 44692,
+      "training_seconds": 61.062999999994645
+    },
+    {
+      "name": "local_ddim",
+      "fair_crps_mm": [
+        5.495893775949832,
+        5.809045209500735,
+        6.1505434676728035,
+        6.519318099208842,
+        6.931696637551402,
+        7.364434129389547,
+        7.790206820622355
+      ],
+      "increment_fair_crps_mm": 3.1507922631563785,
+      "sample_mean_R_F6_macro_rmse_mm": [
+        10.002884397188385,
+        14.30549947223205
+      ],
+      "coverage80": [
+        0.7460544404729172,
+        0.7511197472701386,
+        0.7534182119276118,
+        0.758723959527062,
+        0.7647831960924557,
+        0.7669344877768401,
+        0.7676229270067859
+      ],
+      "rank3_30_coverage": [
+        0.8048330431063453,
+        0.8109170012159875,
+        0.8129279448564122,
+        0.8176059114203728,
+        0.8243652991484341,
+        0.826157806557337,
+        0.8264297269444011
+      ],
+      "NFE": 40,
+      "members": 32,
+      "R_delta_ci95_mm": [
+        -0.010356500560927896,
+        -0.002188254775709057
+      ],
+      "F6_delta_ci95_mm": [
+        -0.04913144502387103,
+        -0.007414630610741473
+      ],
+      "increment_delta_ci95_mm": [
+        -0.16764018784121626,
+        -0.08297046574459964
+      ],
+      "source_prediction_sha256": "bfedb88ae1956fcb7caaf483df37c02e9ca0cbe9bd12d72e95089ddad86fbfe7",
+      "parameters": 44692,
+      "training_seconds": 61.062999999994645
+    },
+    {
+      "name": "affine_heun0",
+      "fair_crps_mm": [
+        5.49660437673812,
+        5.807585933226284,
+        6.147429850042215,
+        6.519332379932227,
+        6.935197170851666,
+        7.375507233657784,
+        7.797155577996001
+      ],
+      "increment_fair_crps_mm": 3.177446783810532,
+      "sample_mean_R_F6_macro_rmse_mm": [
+        10.011799291496834,
+        14.318042325915599
+      ],
+      "coverage80": [
+        0.7521553172639233,
+        0.7646636480846669,
+        0.771130278559447,
+        0.7794249322344154,
+        0.7834650723494783,
+        0.7855290995585232,
+        0.7870784060085075
+      ],
+      "rank3_30_coverage": [
+        0.8103656860049492,
+        0.822792738293829,
+        0.8288984420592073,
+        0.836338855426289,
+        0.8410603920993269,
+        0.8430770077411307,
+        0.8441940899624774
+      ],
+      "NFE": 39,
+      "members": 32,
+      "R_delta_ci95_mm": [
+        -0.011120594923661065,
+        0.000971910154944488
+      ],
+      "F6_delta_ci95_mm": [
+        -0.03359049191612713,
+        -0.007281643994487775
+      ],
+      "increment_delta_ci95_mm": [
+        -0.12637453651552127,
+        -0.06757601624794517
+      ],
+      "source_prediction_sha256": "4166e9b3eddd47a256fbefe20ce86c33c6ffab188b555793b2f11c138e13d4e5",
+      "analytic_gaussian_crps_mm": [
+        5.502050969849912,
+        5.814788315256327,
+        6.150410612281701,
+        6.518488617409618,
+        6.938436891885395,
+        7.380564910994863,
+        7.796332059404592
+      ],
+      "analytic_gaussian_80_coverage": [
+        0.7952433324168271,
+        0.8071315527365829,
+        0.8142784250101591,
+        0.8231952351702619,
+        0.8272782291341904,
+        0.8292304117596703,
+        0.831964844359226
+      ],
+      "analytic_gaussian_mean_R_F6_rmse_mm": [
+        9.872468080414897,
+        14.045030509736355
+      ],
+      "parameters": 44944,
+      "training_seconds": 71.53100000000268
+    },
+    {
+      "name": "affine_ddim",
+      "fair_crps_mm": [
+        5.497643449699469,
+        5.805682853407058,
+        6.143016678491022,
+        6.5115505884557425,
+        6.926214231327591,
+        7.36530557787732,
+        7.785353361570012
+      ],
+      "increment_fair_crps_mm": 3.161653559465236,
+      "sample_mean_R_F6_macro_rmse_mm": [
+        10.003213013491887,
+        14.301190970219192
+      ],
+      "coverage80": [
+        0.7397213820914673,
+        0.7515963654806206,
+        0.7585634802056885,
+        0.7670789136726044,
+        0.7712081476455089,
+        0.7731163860048184,
+        0.7746075724075926
+      ],
+      "rank3_30_coverage": [
+        0.799083493721932,
+        0.8112041942402523,
+        0.8176362930847472,
+        0.8251052009131165,
+        0.8299405187644042,
+        0.8320951192965721,
+        0.8330168224756348
+      ],
+      "NFE": 40,
+      "members": 32,
+      "R_delta_ci95_mm": [
+        -0.010613720841328389,
+        0.0035217669582347944
+      ],
+      "F6_delta_ci95_mm": [
+        -0.047516154627662364,
+        -0.0165137047682301
+      ],
+      "increment_delta_ci95_mm": [
+        -0.14776165950838344,
+        -0.07913730635599016
+      ],
+      "source_prediction_sha256": "afe51e63ca00191e07cda9d32bf5377f52b0c34699b33a66698433cdafc18622",
+      "analytic_gaussian_crps_mm": [
+        5.502982728928332,
+        5.812714368326122,
+        6.1459377777300315,
+        6.510674844107871,
+        6.929423865930122,
+        7.370248477252606,
+        7.7844693187840255
+      ],
+      "analytic_gaussian_80_coverage": [
+        0.7829193779977393,
+        0.7945347778531405,
+        0.8016474635721728,
+        0.8108369928276966,
+        0.815443113809061,
+        0.8166342590894082,
+        0.8193655715696798
+      ],
+      "analytic_gaussian_mean_R_F6_rmse_mm": [
+        9.872571700128354,
+        14.044646976461639
+      ],
+      "parameters": 44944,
+      "training_seconds": 71.53100000000268
+    }
+  ],
+  "nonlinear_vs_affine": {
+    "local_heun0_vs_affine_heun0": {
+      "R_delta_ci95_mm": [
+        -0.007725720554520898,
+        0.0067330809416920046
+      ],
+      "F6_delta_ci95_mm": [
+        -0.01049223013384699,
+        0.01381543427424887
+      ],
+      "increment_delta_ci95_mm": [
+        -0.025487642685571334,
+        -0.0011430459053779942
+      ]
+    },
+    "full_heun0_vs_affine_heun0": {
+      "R_delta_ci95_mm": [
+        0.00038378758875354816,
+        0.04425623781976106
+      ],
+      "F6_delta_ci95_mm": [
+        0.008541914780071847,
+        0.22772068313435664
+      ],
+      "increment_delta_ci95_mm": [
+        0.022504869571503903,
+        0.05447194518429911
+      ]
+    }
+  },
+  "query_audits": {
+    "full": {
+      "mode": "full",
+      "rows": [
+        {
+          "block": 0,
+          "query_count": 1,
+          "max_abs_path_difference_mm": 13.24956226348877,
+          "path_rms_difference_mm": 4.012408256530762
+        },
+        {
+          "block": 0,
+          "query_count": 64,
+          "max_abs_path_difference_mm": 8.68785572052002,
+          "path_rms_difference_mm": 0.9014024138450623
+        },
+        {
+          "block": 0,
+          "query_count": 128,
+          "max_abs_path_difference_mm": 1.6964198350906372,
+          "path_rms_difference_mm": 0.169664666056633
+        },
+        {
+          "block": 0,
+          "query_count": 137,
+          "max_abs_path_difference_mm": 3.8897454942343757e-05,
+          "path_rms_difference_mm": 2.5358258426422253e-06
+        },
+        {
+          "block": 6,
+          "query_count": 1,
+          "max_abs_path_difference_mm": 19.76587677001953,
+          "path_rms_difference_mm": 6.012293815612793
+        },
+        {
+          "block": 6,
+          "query_count": 64,
+          "max_abs_path_difference_mm": 10.084433555603027,
+          "path_rms_difference_mm": 1.051308035850525
+        },
+        {
+          "block": 6,
+          "query_count": 128,
+          "max_abs_path_difference_mm": 2.0511512756347656,
+          "path_rms_difference_mm": 0.19571611285209656
+        },
+        {
+          "block": 6,
+          "query_count": 137,
+          "max_abs_path_difference_mm": 3.871702210744843e-05,
+          "path_rms_difference_mm": 2.4880105229385663e-06
+        },
+        {
+          "block": 12,
+          "query_count": 1,
+          "max_abs_path_difference_mm": 10.296284675598145,
+          "path_rms_difference_mm": 2.924726963043213
+        },
+        {
+          "block": 12,
+          "query_count": 64,
+          "max_abs_path_difference_mm": 8.384403228759766,
+          "path_rms_difference_mm": 0.7564200758934021
+        },
+        {
+          "block": 12,
+          "query_count": 128,
+          "max_abs_path_difference_mm": 1.9119861125946045,
+          "path_rms_difference_mm": 0.16439101099967957
+        },
+        {
+          "block": 12,
+          "query_count": 137,
+          "max_abs_path_difference_mm": 3.610559360822663e-05,
+          "path_rms_difference_mm": 2.5908620955306105e-06
+        }
+      ],
+      "members": 32,
+      "origin_blocks": [
+        0,
+        6,
+        12
+      ],
+      "interpretation": "Common superset GP initial path, fixed visible information and same20-stepHeun0. Full path differences diagnose coupling sensitivity and do not alone prove a difference in marginal laws. Local/Affine paths should match to numerical precision.",
+      "process_weights_sha256": "0033dac8715d3d00f59960e042a75f9ef5d6c5fef42a3d70b9395791d5e19fed",
+      "source": {
+        "gaussian_protocol_sha256": "7d4d374e551d11706761353456fe899c0f63eb2936e7e4dd11378267ff4d03b1",
+        "gaussian_weights_sha256": "de73760a315c0b5bd4967023365df156daeda5fa2cf4418b30342a367c4cf51c",
+        "copula_sha256": "baa8b467e363cbcd146674fd431cbc4a4a78737841aad4ad5ae35943fa1fd4bf",
+        "training_embedding_manifest_sha256": "9a40d444992cb09fbb45b689ab42eb0cf39feb69b28ee71c4e75bf3e91445cf1",
+        "mean_weights_sha256": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508",
+        "normalization": {
+          "bias_mm": [
+            -0.18208724374050447,
+            0.08582369715246142,
+            0.39398403823050154,
+            0.6452158673219606,
+            0.8442499068392654,
+            1.0042661034666491,
+            1.1351475027338613
+          ],
+          "scale_mm": [
+            9.820845495491572,
+            10.630630735588428,
+            11.593580157773715,
+            12.656472346066382,
+            13.81153593138061,
+            14.966359888233054,
+            16.07272898562415
+          ],
+          "count": [
+            4603770.0,
+            4603770.0,
+            4603770.0,
+            4603770.0,
+            4603770.0,
+            4603769.0,
+            4603767.0
+          ],
+          "role": "training_only"
+        }
+      },
+      "code_sha256": "237c06497e403a771ad989323f282b9fd2caa94a7d195eba7a75d81088a79f82",
+      "strict_oof": false,
+      "confirmation_C_D_read": false
+    },
+    "local": {
+      "mode": "local",
+      "rows": [
+        {
+          "block": 0,
+          "query_count": 1,
+          "max_abs_path_difference_mm": 6.269547611736925e-06,
+          "path_rms_difference_mm": 1.067846710611775e-06
+        },
+        {
+          "block": 0,
+          "query_count": 64,
+          "max_abs_path_difference_mm": 8.337640792888124e-06,
+          "path_rms_difference_mm": 5.207073741075874e-07
+        },
+        {
+          "block": 0,
+          "query_count": 128,
+          "max_abs_path_difference_mm": 0.0,
+          "path_rms_difference_mm": 0.0
+        },
+        {
+          "block": 0,
+          "query_count": 137,
+          "max_abs_path_difference_mm": 0.0,
+          "path_rms_difference_mm": 0.0
+        },
+        {
+          "block": 6,
+          "query_count": 1,
+          "max_abs_path_difference_mm": 6.104382009652909e-06,
+          "path_rms_difference_mm": 1.0951556532745599e-06
+        },
+        {
+          "block": 6,
+          "query_count": 64,
+          "max_abs_path_difference_mm": 7.251168881339254e-06,
+          "path_rms_difference_mm": 5.083758196633426e-07
+        },
+        {
+          "block": 6,
+          "query_count": 128,
+          "max_abs_path_difference_mm": 0.0,
+          "path_rms_difference_mm": 0.0
+        },
+        {
+          "block": 6,
+          "query_count": 137,
+          "max_abs_path_difference_mm": 0.0,
+          "path_rms_difference_mm": 0.0
+        },
+        {
+          "block": 12,
+          "query_count": 1,
+          "max_abs_path_difference_mm": 4.915673798677744e-06,
+          "path_rms_difference_mm": 7.702134325882071e-07
+        },
+        {
+          "block": 12,
+          "query_count": 64,
+          "max_abs_path_difference_mm": 6.9538114075839985e-06,
+          "path_rms_difference_mm": 5.648456067319785e-07
+        },
+        {
+          "block": 12,
+          "query_count": 128,
+          "max_abs_path_difference_mm": 0.0,
+          "path_rms_difference_mm": 0.0
+        },
+        {
+          "block": 12,
+          "query_count": 137,
+          "max_abs_path_difference_mm": 0.0,
+          "path_rms_difference_mm": 0.0
+        }
+      ],
+      "members": 32,
+      "origin_blocks": [
+        0,
+        6,
+        12
+      ],
+      "interpretation": "Common superset GP initial path, fixed visible information and same20-stepHeun0. Full path differences diagnose coupling sensitivity and do not alone prove a difference in marginal laws. Local/Affine paths should match to numerical precision.",
+      "process_weights_sha256": "5161a0cc14adc40abbc13524f2847fe4a0b1a507c0257829f84a61c460ea49ee",
+      "source": {
+        "gaussian_protocol_sha256": "7d4d374e551d11706761353456fe899c0f63eb2936e7e4dd11378267ff4d03b1",
+        "gaussian_weights_sha256": "de73760a315c0b5bd4967023365df156daeda5fa2cf4418b30342a367c4cf51c",
+        "copula_sha256": "baa8b467e363cbcd146674fd431cbc4a4a78737841aad4ad5ae35943fa1fd4bf",
+        "training_embedding_manifest_sha256": "9a40d444992cb09fbb45b689ab42eb0cf39feb69b28ee71c4e75bf3e91445cf1",
+        "mean_weights_sha256": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508",
+        "normalization": {
+          "bias_mm": [
+            -0.18208724374050447,
+            0.08582369715246142,
+            0.39398403823050154,
+            0.6452158673219606,
+            0.8442499068392654,
+            1.0042661034666491,
+            1.1351475027338613
+          ],
+          "scale_mm": [
+            9.820845495491572,
+            10.630630735588428,
+            11.593580157773715,
+            12.656472346066382,
+            13.81153593138061,
+            14.966359888233054,
+            16.07272898562415
+          ],
+          "count": [
+            4603770.0,
+            4603770.0,
+            4603770.0,
+            4603770.0,
+            4603770.0,
+            4603769.0,
+            4603767.0
+          ],
+          "role": "training_only"
+        }
+      },
+      "code_sha256": "237c06497e403a771ad989323f282b9fd2caa94a7d195eba7a75d81088a79f82",
+      "strict_oof": false,
+      "confirmation_C_D_read": false
+    },
+    "affine": {
+      "mode": "affine",
+      "rows": [
+        {
+          "block": 0,
+          "query_count": 1,
+          "max_abs_path_difference_mm": 6.4346941144322045e-06,
+          "path_rms_difference_mm": 1.029138729791157e-06
+        },
+        {
+          "block": 0,
+          "query_count": 64,
+          "max_abs_path_difference_mm": 5.160632554179756e-06,
+          "path_rms_difference_mm": 5.30596082626289e-07
+        },
+        {
+          "block": 0,
+          "query_count": 128,
+          "max_abs_path_difference_mm": 0.0,
+          "path_rms_difference_mm": 0.0
+        },
+        {
+          "block": 0,
+          "query_count": 137,
+          "max_abs_path_difference_mm": 0.0,
+          "path_rms_difference_mm": 0.0
+        },
+        {
+          "block": 6,
+          "query_count": 1,
+          "max_abs_path_difference_mm": 7.505278972530505e-06,
+          "path_rms_difference_mm": 1.0716427141232998e-06
+        },
+        {
+          "block": 6,
+          "query_count": 64,
+          "max_abs_path_difference_mm": 7.251168881339254e-06,
+          "path_rms_difference_mm": 5.152709832145774e-07
+        },
+        {
+          "block": 6,
+          "query_count": 128,
+          "max_abs_path_difference_mm": 0.0,
+          "path_rms_difference_mm": 0.0
+        },
+        {
+          "block": 6,
+          "query_count": 137,
+          "max_abs_path_difference_mm": 0.0,
+          "path_rms_difference_mm": 0.0
+        },
+        {
+          "block": 12,
+          "query_count": 1,
+          "max_abs_path_difference_mm": 5.098502697364893e-06,
+          "path_rms_difference_mm": 8.255585726146819e-07
+        },
+        {
+          "block": 12,
+          "query_count": 64,
+          "max_abs_path_difference_mm": 7.976534107001498e-06,
+          "path_rms_difference_mm": 5.729083341066143e-07
+        },
+        {
+          "block": 12,
+          "query_count": 128,
+          "max_abs_path_difference_mm": 0.0,
+          "path_rms_difference_mm": 0.0
+        },
+        {
+          "block": 12,
+          "query_count": 137,
+          "max_abs_path_difference_mm": 0.0,
+          "path_rms_difference_mm": 0.0
+        }
+      ],
+      "members": 32,
+      "origin_blocks": [
+        0,
+        6,
+        12
+      ],
+      "interpretation": "Common superset GP initial path, fixed visible information and same20-stepHeun0. Full path differences diagnose coupling sensitivity and do not alone prove a difference in marginal laws. Local/Affine paths should match to numerical precision.",
+      "process_weights_sha256": "cd49fc5127165a1a53d7b74e80b245c937826b55afbdf193be391f31ad0d8af1",
+      "source": {
+        "gaussian_protocol_sha256": "7d4d374e551d11706761353456fe899c0f63eb2936e7e4dd11378267ff4d03b1",
+        "gaussian_weights_sha256": "de73760a315c0b5bd4967023365df156daeda5fa2cf4418b30342a367c4cf51c",
+        "copula_sha256": "baa8b467e363cbcd146674fd431cbc4a4a78737841aad4ad5ae35943fa1fd4bf",
+        "training_embedding_manifest_sha256": "9a40d444992cb09fbb45b689ab42eb0cf39feb69b28ee71c4e75bf3e91445cf1",
+        "mean_weights_sha256": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508",
+        "normalization": {
+          "bias_mm": [
+            -0.18208724374050447,
+            0.08582369715246142,
+            0.39398403823050154,
+            0.6452158673219606,
+            0.8442499068392654,
+            1.0042661034666491,
+            1.1351475027338613
+          ],
+          "scale_mm": [
+            9.820845495491572,
+            10.630630735588428,
+            11.593580157773715,
+            12.656472346066382,
+            13.81153593138061,
+            14.966359888233054,
+            16.07272898562415
+          ],
+          "count": [
+            4603770.0,
+            4603770.0,
+            4603770.0,
+            4603770.0,
+            4603770.0,
+            4603769.0,
+            4603767.0
+          ],
+          "role": "training_only"
+        }
+      },
+      "code_sha256": "237c06497e403a771ad989323f282b9fd2caa94a7d195eba7a75d81088a79f82",
+      "strict_oof": false,
+      "confirmation_C_D_read": false
+    }
+  },
+  "source": {
+    "gaussian_protocol_sha256": "7d4d374e551d11706761353456fe899c0f63eb2936e7e4dd11378267ff4d03b1",
+    "gaussian_weights_sha256": "de73760a315c0b5bd4967023365df156daeda5fa2cf4418b30342a367c4cf51c",
+    "copula_sha256": "baa8b467e363cbcd146674fd431cbc4a4a78737841aad4ad5ae35943fa1fd4bf",
+    "training_embedding_manifest_sha256": "9a40d444992cb09fbb45b689ab42eb0cf39feb69b28ee71c4e75bf3e91445cf1",
+    "mean_weights_sha256": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508",
+    "normalization": {
+      "bias_mm": [
+        -0.18208724374050447,
+        0.08582369715246142,
+        0.39398403823050154,
+        0.6452158673219606,
+        0.8442499068392654,
+        1.0042661034666491,
+        1.1351475027338613
+      ],
+      "scale_mm": [
+        9.820845495491572,
+        10.630630735588428,
+        11.593580157773715,
+        12.656472346066382,
+        13.81153593138061,
+        14.966359888233054,
+        16.07272898562415
+      ],
+      "count": [
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603769.0,
+        4603767.0
+      ],
+      "role": "training_only"
+    }
+  },
+  "interval": "2000 shared-month draws; exposed development, exploratory comparison",
+  "strict_oof": false,
+  "confirmation_C_D_read": false,
+  "code_sha256": "e37db7dd47562267fd82a2c016cc06903fcc1a29182a9c33f35dab8f8ee15027",
+  "figure_sha256": "10b72777c870f0983d1cf29aaafcfd519b765c683f8c9ce5171109da09694f59"
+}

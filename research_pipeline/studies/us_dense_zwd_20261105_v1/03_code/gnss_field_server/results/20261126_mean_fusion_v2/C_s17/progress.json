@@ -1,17 +1,17 @@
 {
-  "step": 1000,
-  "supervised_updates": 1000,
-  "loss": 1.6935786008834839,
-  "query_loss": 1.5591436624526978,
-  "causal_station_loss": 0.537739634513855,
-  "auxiliary_label_cells": 1210611,
+  "step": 3000,
+  "supervised_updates": 3000,
+  "loss": 0.9454094171524048,
+  "query_loss": 0.729832112789154,
+  "causal_station_loss": 0.8623093366622925,
+  "auxiliary_label_cells": 1133424,
   "finite_label_cells": 10752,
-  "cache_block": 999,
-  "last_origin_hour": 415368,
+  "cache_block": 2999,
+  "last_origin_hour": 404460,
   "group_lrs": [
-    7.75e-05
+    1e-05
   ],
-  "current_correction_rms_mm": 0.7982125878334045,
-  "future6_correction_rms_mm": 6.903454303741455,
-  "seconds": 194.14100000000326
+  "current_correction_rms_mm": 0.774034321308136,
+  "future6_correction_rms_mm": 2.0858566761016846,
+  "seconds": 432.06299999999464
 }

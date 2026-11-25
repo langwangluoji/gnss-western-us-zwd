@@ -1,0 +1,125 @@
+{
+  "mode": "local",
+  "rows": [
+    {
+      "block": 0,
+      "query_count": 1,
+      "max_abs_path_difference_mm": 6.269547611736925e-06,
+      "path_rms_difference_mm": 1.067846710611775e-06
+    },
+    {
+      "block": 0,
+      "query_count": 64,
+      "max_abs_path_difference_mm": 8.337640792888124e-06,
+      "path_rms_difference_mm": 5.207073741075874e-07
+    },
+    {
+      "block": 0,
+      "query_count": 128,
+      "max_abs_path_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 0,
+      "query_count": 137,
+      "max_abs_path_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 6,
+      "query_count": 1,
+      "max_abs_path_difference_mm": 6.104382009652909e-06,
+      "path_rms_difference_mm": 1.0951556532745599e-06
+    },
+    {
+      "block": 6,
+      "query_count": 64,
+      "max_abs_path_difference_mm": 7.251168881339254e-06,
+      "path_rms_difference_mm": 5.083758196633426e-07
+    },
+    {
+      "block": 6,
+      "query_count": 128,
+      "max_abs_path_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 6,
+      "query_count": 137,
+      "max_abs_path_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 12,
+      "query_count": 1,
+      "max_abs_path_difference_mm": 4.915673798677744e-06,
+      "path_rms_difference_mm": 7.702134325882071e-07
+    },
+    {
+      "block": 12,
+      "query_count": 64,
+      "max_abs_path_difference_mm": 6.9538114075839985e-06,
+      "path_rms_difference_mm": 5.648456067319785e-07
+    },
+    {
+      "block": 12,
+      "query_count": 128,
+      "max_abs_path_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 12,
+      "query_count": 137,
+      "max_abs_path_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    }
+  ],
+  "members": 32,
+  "origin_blocks": [
+    0,
+    6,
+    12
+  ],
+  "interpretation": "Common superset GP initial path, fixed visible information and same20-stepHeun0. Full path differences diagnose coupling sensitivity and do not alone prove a difference in marginal laws. Local/Affine paths should match to numerical precision.",
+  "process_weights_sha256": "5161a0cc14adc40abbc13524f2847fe4a0b1a507c0257829f84a61c460ea49ee",
+  "source": {
+    "gaussian_protocol_sha256": "7d4d374e551d11706761353456fe899c0f63eb2936e7e4dd11378267ff4d03b1",
+    "gaussian_weights_sha256": "de73760a315c0b5bd4967023365df156daeda5fa2cf4418b30342a367c4cf51c",
+    "copula_sha256": "baa8b467e363cbcd146674fd431cbc4a4a78737841aad4ad5ae35943fa1fd4bf",
+    "training_embedding_manifest_sha256": "9a40d444992cb09fbb45b689ab42eb0cf39feb69b28ee71c4e75bf3e91445cf1",
+    "mean_weights_sha256": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508",
+    "normalization": {
+      "bias_mm": [
+        -0.18208724374050447,
+        0.08582369715246142,
+        0.39398403823050154,
+        0.6452158673219606,
+        0.8442499068392654,
+        1.0042661034666491,
+        1.1351475027338613
+      ],
+      "scale_mm": [
+        9.820845495491572,
+        10.630630735588428,
+        11.593580157773715,
+        12.656472346066382,
+        13.81153593138061,
+        14.966359888233054,
+        16.07272898562415
+      ],
+      "count": [
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603769.0,
+        4603767.0
+      ],
+      "role": "training_only"
+    }
+  },
+  "code_sha256": "237c06497e403a771ad989323f282b9fd2caa94a7d195eba7a75d81088a79f82",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}
