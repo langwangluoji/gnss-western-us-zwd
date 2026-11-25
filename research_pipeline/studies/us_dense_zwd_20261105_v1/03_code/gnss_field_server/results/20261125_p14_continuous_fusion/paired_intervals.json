@@ -1,0 +1,26 @@
+{
+  "frozen": {
+    "delta_vs_continued_p14_ci95_mm": [
+      0.034540181800678395,
+      0.13411686816022123
+    ],
+    "replicates": 1000,
+    "blocks": 12
+  },
+  "p14": {
+    "delta_vs_continued_p14_ci95_mm": [
+      0.0,
+      0.0
+    ],
+    "replicates": 1000,
+    "blocks": 12
+  },
+  "features": {
+    "delta_vs_continued_p14_ci95_mm": [
+      -0.020065575617102826,
+      -0.005396022988755079
+    ],
+    "replicates": 1000,
+    "blocks": 12
+  }
+}

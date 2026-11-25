@@ -1,0 +1,11 @@
+{
+  "first_target": 403295,
+  "last_target": 438287,
+  "unique_target_hours": 34993,
+  "blocks_per_epoch": 2917,
+  "batch_hours": 12,
+  "chronological": true,
+  "time_random_sampling": false,
+  "history_length": 72,
+  "note": "After last block, next epoch restarts at the first; window state is recomputed, not carried across epoch boundary"
+}

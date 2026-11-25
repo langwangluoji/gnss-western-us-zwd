@@ -1,5 +1,7 @@
 # 当前研究进展：2026-11-25
 
+p14完整载体融合正在运行：[3000步连续训练计划](superpowers/plans/2026-11-25-p14-continuous-fusion.md)。恢复原最佳权重并精确复算2018旧合同；新组保留p14主干，训练2016–2019全连续时间，2020同条件当前重建评价。详见[阶段报告与训练诊断](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/REPORT.md)，运行中数据不作最终双种子结论。
+
 2026-11-25真实本机预报首轮完成：[结果与图件](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_temporal_forecast_screen/REPORT.md)及[分析与后续决策](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_temporal_forecast_screen/ANALYSIS.md)。26配置、双种子、12/48/72h；2016–2018内层拟合、2019选模、2016–2019重拟合、2020抽样开发。六小时宏RMSE：空间持久性15.163、当前帧14.203、Transformer72为13.914mm；小时增量尚未改善。本轮小型空间载体及C1海岸输入，尚非p14复现、完整年度或diffusion结果。
 
 下一阶段统一入口：[计划与审阅修订](NEXT_STAGE.md)。新时间分支处于设计阶段；历史重建指标与未来预报分开评价。

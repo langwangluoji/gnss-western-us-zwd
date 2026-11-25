@@ -1,0 +1,92 @@
+[
+  {
+    "kind": "frozen",
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "difference_rmse_mm": 7.077990531921387
+  },
+  {
+    "kind": "frozen",
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "difference_rmse_mm": 12.550875663757324
+  },
+  {
+    "kind": "frozen",
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "difference_rmse_mm": 15.159673690795898
+  },
+  {
+    "kind": "p14",
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "difference_rmse_mm": 7.074656009674072
+  },
+  {
+    "kind": "p14",
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "difference_rmse_mm": 12.454821586608887
+  },
+  {
+    "kind": "p14",
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "difference_rmse_mm": 15.009489059448242
+  },
+  {
+    "kind": "features",
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "difference_rmse_mm": 7.076335430145264
+  },
+  {
+    "kind": "features",
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "difference_rmse_mm": 12.44370174407959
+  },
+  {
+    "kind": "features",
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "difference_rmse_mm": 14.998666763305664
+  }
+]

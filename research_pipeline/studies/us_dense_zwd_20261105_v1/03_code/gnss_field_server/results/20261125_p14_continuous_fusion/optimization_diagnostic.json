@@ -1,0 +1,564 @@
+{
+  "status": "POSTHOC_TRAINING_DIAGNOSTIC_NOT_VALIDATION",
+  "seed": 42,
+  "dates": "Jan/Apr/Jul/Oct8,24 continuous hours each,2016-2019,layout0",
+  "overall": [
+    {
+      "step": 0,
+      "fixed_training_micro_rmse_mm": 9.892406791082891
+    },
+    {
+      "step": 1000,
+      "fixed_training_micro_rmse_mm": 9.705270804357244
+    },
+    {
+      "step": 2000,
+      "fixed_training_micro_rmse_mm": 9.721286806761496
+    },
+    {
+      "step": 3000,
+      "fixed_training_micro_rmse_mm": 9.77912546008662
+    }
+  ],
+  "by_year_season": [
+    {
+      "step": 0,
+      "year": 2016,
+      "season": "DJF",
+      "date": "2016-01-08",
+      "micro_rmse_mm": 5.838415599186111,
+      "valid_count": 7710
+    },
+    {
+      "step": 0,
+      "year": 2016,
+      "season": "MAM",
+      "date": "2016-04-08",
+      "micro_rmse_mm": 8.724098298231425,
+      "valid_count": 7841
+    },
+    {
+      "step": 0,
+      "year": 2016,
+      "season": "JJA",
+      "date": "2016-07-08",
+      "micro_rmse_mm": 13.343210329665736,
+      "valid_count": 7772
+    },
+    {
+      "step": 0,
+      "year": 2016,
+      "season": "SON",
+      "date": "2016-10-08",
+      "micro_rmse_mm": 9.73470533264803,
+      "valid_count": 7860
+    },
+    {
+      "step": 0,
+      "year": 2017,
+      "season": "DJF",
+      "date": "2017-01-08",
+      "micro_rmse_mm": 7.0401769932771465,
+      "valid_count": 7655
+    },
+    {
+      "step": 0,
+      "year": 2017,
+      "season": "MAM",
+      "date": "2017-04-08",
+      "micro_rmse_mm": 11.1988387042743,
+      "valid_count": 7794
+    },
+    {
+      "step": 0,
+      "year": 2017,
+      "season": "JJA",
+      "date": "2017-07-08",
+      "micro_rmse_mm": 10.838869287112765,
+      "valid_count": 7804
+    },
+    {
+      "step": 0,
+      "year": 2017,
+      "season": "SON",
+      "date": "2017-10-08",
+      "micro_rmse_mm": 7.820575376253417,
+      "valid_count": 7841
+    },
+    {
+      "step": 0,
+      "year": 2018,
+      "season": "DJF",
+      "date": "2018-01-08",
+      "micro_rmse_mm": 9.824415635849208,
+      "valid_count": 7769
+    },
+    {
+      "step": 0,
+      "year": 2018,
+      "season": "MAM",
+      "date": "2018-04-08",
+      "micro_rmse_mm": 12.168472080144143,
+      "valid_count": 7493
+    },
+    {
+      "step": 0,
+      "year": 2018,
+      "season": "JJA",
+      "date": "2018-07-08",
+      "micro_rmse_mm": 11.969046001932202,
+      "valid_count": 7822
+    },
+    {
+      "step": 0,
+      "year": 2018,
+      "season": "SON",
+      "date": "2018-10-08",
+      "micro_rmse_mm": 9.91198714309457,
+      "valid_count": 7816
+    },
+    {
+      "step": 0,
+      "year": 2019,
+      "season": "DJF",
+      "date": "2019-01-08",
+      "micro_rmse_mm": 7.339661739912852,
+      "valid_count": 7799
+    },
+    {
+      "step": 0,
+      "year": 2019,
+      "season": "MAM",
+      "date": "2019-04-08",
+      "micro_rmse_mm": 8.190698149804755,
+      "valid_count": 7687
+    },
+    {
+      "step": 0,
+      "year": 2019,
+      "season": "JJA",
+      "date": "2019-07-08",
+      "micro_rmse_mm": 10.65912124201896,
+      "valid_count": 7622
+    },
+    {
+      "step": 0,
+      "year": 2019,
+      "season": "SON",
+      "date": "2019-10-08",
+      "micro_rmse_mm": 10.47807348347287,
+      "valid_count": 7419
+    },
+    {
+      "step": 1000,
+      "year": 2016,
+      "season": "DJF",
+      "date": "2016-01-08",
+      "micro_rmse_mm": 5.754579236602553,
+      "valid_count": 7710
+    },
+    {
+      "step": 1000,
+      "year": 2016,
+      "season": "MAM",
+      "date": "2016-04-08",
+      "micro_rmse_mm": 8.497543546074596,
+      "valid_count": 7841
+    },
+    {
+      "step": 1000,
+      "year": 2016,
+      "season": "JJA",
+      "date": "2016-07-08",
+      "micro_rmse_mm": 13.188644918992985,
+      "valid_count": 7772
+    },
+    {
+      "step": 1000,
+      "year": 2016,
+      "season": "SON",
+      "date": "2016-10-08",
+      "micro_rmse_mm": 9.653899395420261,
+      "valid_count": 7860
+    },
+    {
+      "step": 1000,
+      "year": 2017,
+      "season": "DJF",
+      "date": "2017-01-08",
+      "micro_rmse_mm": 7.21582535916563,
+      "valid_count": 7655
+    },
+    {
+      "step": 1000,
+      "year": 2017,
+      "season": "MAM",
+      "date": "2017-04-08",
+      "micro_rmse_mm": 10.978979824155557,
+      "valid_count": 7794
+    },
+    {
+      "step": 1000,
+      "year": 2017,
+      "season": "JJA",
+      "date": "2017-07-08",
+      "micro_rmse_mm": 10.54465164763951,
+      "valid_count": 7804
+    },
+    {
+      "step": 1000,
+      "year": 2017,
+      "season": "SON",
+      "date": "2017-10-08",
+      "micro_rmse_mm": 7.783587137919116,
+      "valid_count": 7841
+    },
+    {
+      "step": 1000,
+      "year": 2018,
+      "season": "DJF",
+      "date": "2018-01-08",
+      "micro_rmse_mm": 9.874437764951292,
+      "valid_count": 7769
+    },
+    {
+      "step": 1000,
+      "year": 2018,
+      "season": "MAM",
+      "date": "2018-04-08",
+      "micro_rmse_mm": 11.757511349555479,
+      "valid_count": 7493
+    },
+    {
+      "step": 1000,
+      "year": 2018,
+      "season": "JJA",
+      "date": "2018-07-08",
+      "micro_rmse_mm": 11.259339251129598,
+      "valid_count": 7822
+    },
+    {
+      "step": 1000,
+      "year": 2018,
+      "season": "SON",
+      "date": "2018-10-08",
+      "micro_rmse_mm": 9.780588344320307,
+      "valid_count": 7816
+    },
+    {
+      "step": 1000,
+      "year": 2019,
+      "season": "DJF",
+      "date": "2019-01-08",
+      "micro_rmse_mm": 7.21637828329639,
+      "valid_count": 7799
+    },
+    {
+      "step": 1000,
+      "year": 2019,
+      "season": "MAM",
+      "date": "2019-04-08",
+      "micro_rmse_mm": 7.914404821481399,
+      "valid_count": 7687
+    },
+    {
+      "step": 1000,
+      "year": 2019,
+      "season": "JJA",
+      "date": "2019-07-08",
+      "micro_rmse_mm": 10.441072454381226,
+      "valid_count": 7622
+    },
+    {
+      "step": 1000,
+      "year": 2019,
+      "season": "SON",
+      "date": "2019-10-08",
+      "micro_rmse_mm": 10.474970408291833,
+      "valid_count": 7419
+    },
+    {
+      "step": 2000,
+      "year": 2016,
+      "season": "DJF",
+      "date": "2016-01-08",
+      "micro_rmse_mm": 5.714898782426966,
+      "valid_count": 7710
+    },
+    {
+      "step": 2000,
+      "year": 2016,
+      "season": "MAM",
+      "date": "2016-04-08",
+      "micro_rmse_mm": 8.552136154687627,
+      "valid_count": 7841
+    },
+    {
+      "step": 2000,
+      "year": 2016,
+      "season": "JJA",
+      "date": "2016-07-08",
+      "micro_rmse_mm": 13.142153888406455,
+      "valid_count": 7772
+    },
+    {
+      "step": 2000,
+      "year": 2016,
+      "season": "SON",
+      "date": "2016-10-08",
+      "micro_rmse_mm": 9.664786740294323,
+      "valid_count": 7860
+    },
+    {
+      "step": 2000,
+      "year": 2017,
+      "season": "DJF",
+      "date": "2017-01-08",
+      "micro_rmse_mm": 7.187961923929223,
+      "valid_count": 7655
+    },
+    {
+      "step": 2000,
+      "year": 2017,
+      "season": "MAM",
+      "date": "2017-04-08",
+      "micro_rmse_mm": 11.093361636954903,
+      "valid_count": 7794
+    },
+    {
+      "step": 2000,
+      "year": 2017,
+      "season": "JJA",
+      "date": "2017-07-08",
+      "micro_rmse_mm": 10.531653255956085,
+      "valid_count": 7804
+    },
+    {
+      "step": 2000,
+      "year": 2017,
+      "season": "SON",
+      "date": "2017-10-08",
+      "micro_rmse_mm": 7.859806176628439,
+      "valid_count": 7841
+    },
+    {
+      "step": 2000,
+      "year": 2018,
+      "season": "DJF",
+      "date": "2018-01-08",
+      "micro_rmse_mm": 9.877450099390755,
+      "valid_count": 7769
+    },
+    {
+      "step": 2000,
+      "year": 2018,
+      "season": "MAM",
+      "date": "2018-04-08",
+      "micro_rmse_mm": 11.780434594273165,
+      "valid_count": 7493
+    },
+    {
+      "step": 2000,
+      "year": 2018,
+      "season": "JJA",
+      "date": "2018-07-08",
+      "micro_rmse_mm": 11.314290785462902,
+      "valid_count": 7822
+    },
+    {
+      "step": 2000,
+      "year": 2018,
+      "season": "SON",
+      "date": "2018-10-08",
+      "micro_rmse_mm": 9.73724228816632,
+      "valid_count": 7816
+    },
+    {
+      "step": 2000,
+      "year": 2019,
+      "season": "DJF",
+      "date": "2019-01-08",
+      "micro_rmse_mm": 7.296042990309941,
+      "valid_count": 7799
+    },
+    {
+      "step": 2000,
+      "year": 2019,
+      "season": "MAM",
+      "date": "2019-04-08",
+      "micro_rmse_mm": 7.929536105492889,
+      "valid_count": 7687
+    },
+    {
+      "step": 2000,
+      "year": 2019,
+      "season": "JJA",
+      "date": "2019-07-08",
+      "micro_rmse_mm": 10.409624445396721,
+      "valid_count": 7622
+    },
+    {
+      "step": 2000,
+      "year": 2019,
+      "season": "SON",
+      "date": "2019-10-08",
+      "micro_rmse_mm": 10.508930590339876,
+      "valid_count": 7419
+    },
+    {
+      "step": 3000,
+      "year": 2016,
+      "season": "DJF",
+      "date": "2016-01-08",
+      "micro_rmse_mm": 5.674359204638748,
+      "valid_count": 7710
+    },
+    {
+      "step": 3000,
+      "year": 2016,
+      "season": "MAM",
+      "date": "2016-04-08",
+      "micro_rmse_mm": 8.589792199723716,
+      "valid_count": 7841
+    },
+    {
+      "step": 3000,
+      "year": 2016,
+      "season": "JJA",
+      "date": "2016-07-08",
+      "micro_rmse_mm": 13.103826388465421,
+      "valid_count": 7772
+    },
+    {
+      "step": 3000,
+      "year": 2016,
+      "season": "SON",
+      "date": "2016-10-08",
+      "micro_rmse_mm": 9.625542556004595,
+      "valid_count": 7860
+    },
+    {
+      "step": 3000,
+      "year": 2017,
+      "season": "DJF",
+      "date": "2017-01-08",
+      "micro_rmse_mm": 7.1080470274252425,
+      "valid_count": 7655
+    },
+    {
+      "step": 3000,
+      "year": 2017,
+      "season": "MAM",
+      "date": "2017-04-08",
+      "micro_rmse_mm": 11.1859548267546,
+      "valid_count": 7794
+    },
+    {
+      "step": 3000,
+      "year": 2017,
+      "season": "JJA",
+      "date": "2017-07-08",
+      "micro_rmse_mm": 10.687939955005557,
+      "valid_count": 7804
+    },
+    {
+      "step": 3000,
+      "year": 2017,
+      "season": "SON",
+      "date": "2017-10-08",
+      "micro_rmse_mm": 7.957606666449799,
+      "valid_count": 7841
+    },
+    {
+      "step": 3000,
+      "year": 2018,
+      "season": "DJF",
+      "date": "2018-01-08",
+      "micro_rmse_mm": 9.777495875823757,
+      "valid_count": 7769
+    },
+    {
+      "step": 3000,
+      "year": 2018,
+      "season": "MAM",
+      "date": "2018-04-08",
+      "micro_rmse_mm": 11.856352793395503,
+      "valid_count": 7493
+    },
+    {
+      "step": 3000,
+      "year": 2018,
+      "season": "JJA",
+      "date": "2018-07-08",
+      "micro_rmse_mm": 11.782260939472504,
+      "valid_count": 7822
+    },
+    {
+      "step": 3000,
+      "year": 2018,
+      "season": "SON",
+      "date": "2018-10-08",
+      "micro_rmse_mm": 9.643553123390468,
+      "valid_count": 7816
+    },
+    {
+      "step": 3000,
+      "year": 2019,
+      "season": "DJF",
+      "date": "2019-01-08",
+      "micro_rmse_mm": 7.294552881912561,
+      "valid_count": 7799
+    },
+    {
+      "step": 3000,
+      "year": 2019,
+      "season": "MAM",
+      "date": "2019-04-08",
+      "micro_rmse_mm": 8.062146688886331,
+      "valid_count": 7687
+    },
+    {
+      "step": 3000,
+      "year": 2019,
+      "season": "JJA",
+      "date": "2019-07-08",
+      "micro_rmse_mm": 10.54185832114187,
+      "valid_count": 7622
+    },
+    {
+      "step": 3000,
+      "year": 2019,
+      "season": "SON",
+      "date": "2019-10-08",
+      "micro_rmse_mm": 10.513182198202667,
+      "valid_count": 7419
+    }
+  ],
+  "gradients": [
+    {
+      "step": 0,
+      "jan_grad_norm": 0.6406142115592957,
+      "jul_grad_norm": 1.4364814758300781,
+      "jan_jul_grad_cosine": -0.8711891174316406
+    },
+    {
+      "step": 1000,
+      "jan_grad_norm": 0.8598989844322205,
+      "jul_grad_norm": 0.6305367350578308,
+      "jan_jul_grad_cosine": -0.8612381219863892
+    },
+    {
+      "step": 2000,
+      "jan_grad_norm": 0.8435295224189758,
+      "jul_grad_norm": 0.5405368804931641,
+      "jan_jul_grad_cosine": -0.8249351978302002
+    },
+    {
+      "step": 3000,
+      "jan_grad_norm": 0.7536665201187134,
+      "jul_grad_norm": 1.0989598035812378,
+      "jan_jul_grad_cosine": -0.8351030349731445
+    }
+  ],
+  "interpretation": "Local gradients and fixed training errors diagnose optimization; neither proves generalization or causal seasonal forgetting"
+}

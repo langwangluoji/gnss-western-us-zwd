@@ -1,0 +1,14 @@
+[
+  {
+    "seed": 42,
+    "macro_rmse_mm": 10.890196482340494,
+    "expected_mm": 10.890196482340494,
+    "weight_sha256": "ca28ac2dddc3747b35e3cf3c1a057e435d3e28803bb4240f55791d2f05872536"
+  },
+  {
+    "seed": 17,
+    "macro_rmse_mm": 10.722152709960938,
+    "expected_mm": 10.722152709960938,
+    "weight_sha256": "9ddb7cd7a8de39a569a3904eb52797c9a7a055aab657bca417ed76e631214efa"
+  }
+]

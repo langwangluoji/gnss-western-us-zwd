@@ -1,0 +1,49 @@
+{
+  "updated_protocol": {
+    "status": "RUNNING_MATCHED_CURRENT_FIELD_FUSION",
+    "config": {
+      "data": "results\\20261125_temporal_continuous_data",
+      "out": "results\\20261125_p14_continuous_fusion",
+      "weights": "results\\20261125_p14_continuous_fusion\\source_weights",
+      "steps": 3000,
+      "length": 72,
+      "batch_hours": 12,
+      "eval_hours": 72,
+      "months": 12,
+      "seeds": [
+        42,
+        17
+      ],
+      "kinds": [
+        "p14",
+        "features",
+        "mlp",
+        "gru",
+        "lstm",
+        "transformer"
+      ],
+      "resume": true
+    },
+    "training": "2016-2019 all consecutive target hours after history warmup; chronological blocks; no date sampling or shuffle",
+    "station_sampling": "82/410 condition stations fixed across all history and target hours in each block; physical groups held out",
+    "task": "Current-hour spatial reconstruction, not future forecast",
+    "evaluation": "2020 validation137, days8-10 continuous each month x3 layouts; already development-exposed",
+    "steps": "fixed 3000; final weights primary, no 2020 checkpoint selection",
+    "features": "actual p14 full carrier/point113 preserved; coast+terrain edge residual and FiLM; causal temporal 8x8 residual carrier",
+    "historical_units": "p14 support helper height convention preserved for checkpoint compatibility; new edges explicit scaled physical coordinates",
+    "time": "source nominal product hour; no guessed UTC/GPST conversion",
+    "dataset_contract_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+    "code_hashes": {
+      "p14_fusion.py": "8c0e85ffd23829a1fc47d9bafec1fe6cd674d17b7333a308afbb6ed1a641a438",
+      "p14_fusion_experiment.py": "538a7aeaa3b79e1ec7ff8d485a3c1f1b7ea937a84b5a18404d208fea3bc15430",
+      "fixed_support.py": "ef317e24d891ad23bf54fbd4b81a5ca4b73b6b495f99e4d644d72f0d6f2a659a",
+      "temporal_encoders.py": "77a9efdc2b3081e22e234c22df45665808535cf897861a8687c9d9d2c1aa41e4"
+    },
+    "weights": {
+      "42": "ca28ac2dddc3747b35e3cf3c1a057e435d3e28803bb4240f55791d2f05872536",
+      "17": "9ddb7cd7a8de39a569a3904eb52797c9a7a055aab657bca417ed76e631214efa"
+    },
+    "confirmation_C_D_read": false
+  },
+  "reason": "Full-axis causal observation age fix before temporal arms; completed non-temporal results unchanged"
+}

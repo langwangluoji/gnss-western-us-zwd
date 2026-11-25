@@ -1,0 +1,32 @@
+{
+  "status": "POSTHOC_TRAINING_DIAGNOSTIC_NOT_INDEPENDENT_VALIDATION",
+  "dates": [
+    "2018-01-08",
+    "2018-07-08"
+  ],
+  "consecutive_hours_per_date": 24,
+  "layout": 0,
+  "points": [
+    {
+      "step": 0,
+      "fixed_training_micro_rmse_mm": 10.952992489030352,
+      "weight_sha256": "ca28ac2dddc3747b35e3cf3c1a057e435d3e28803bb4240f55791d2f05872536"
+    },
+    {
+      "step": 1000,
+      "fixed_training_micro_rmse_mm": 10.591901051677429,
+      "weight_sha256": "fc814ea702f08c101425d3fa9f488d34bbbf898567906f26ac4ce563a080ede8"
+    },
+    {
+      "step": 2000,
+      "fixed_training_micro_rmse_mm": 10.622633976903913,
+      "weight_sha256": "fe382919bc76ee1217d884a5cbe800c7e9f48a4e89085fa0ef852f87a63b67a0"
+    },
+    {
+      "step": 3000,
+      "fixed_training_micro_rmse_mm": 10.829774421219287,
+      "weight_sha256": "41c12e1c21f3d326b79969b527d8d7e67676f93dcb78a1cf18e2f0e6c132704b"
+    }
+  ],
+  "note": "Same population at every checkpoint; final3000 is primary regardless of this curve"
+}

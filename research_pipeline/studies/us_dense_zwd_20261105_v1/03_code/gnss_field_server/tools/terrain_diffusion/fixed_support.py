@@ -81,5 +81,7 @@ class FixedSupportModel(nn.Module):
         low = self.down(F.avg_pool2d(x, 2))
         low = F.interpolate(low, size=x.shape[-2:], mode='bilinear', align_corners=False)
         correction = self.head(self.up(torch.cat([x, low], 1)))
-        sampled = F.grid_sample(correction, uv, mode='bilinear', padding_mode='border', align_corners=True).flatten()
+        sampled = F.grid_sample(correction, uv, mode='bilinear', padding_mode='border', align_corners=True).flatten(1)
+        if point.ndim == 2:
+            sampled = sampled[0]
         return self.point(point).squeeze(-1) + sampled

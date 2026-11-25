@@ -1,0 +1,20 @@
+{
+  "checked": [
+    {
+      "kind": "frozen",
+      "seed": 42,
+      "max_macro_difference_mm": 0.0
+    },
+    {
+      "kind": "p14",
+      "seed": 42,
+      "max_macro_difference_mm": 0.0
+    },
+    {
+      "kind": "features",
+      "seed": 42,
+      "max_macro_difference_mm": 0.0
+    }
+  ],
+  "all_predictions_finite": true
+}
