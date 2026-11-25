@@ -1,0 +1,187 @@
+[
+  {
+    "doi": "10.1145/3746252.3761050",
+    "status": "OK",
+    "title": [
+      "Frequency-Conditioned Diffusion Models for Time Series Generation"
+    ],
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0009-0000-2141-7399",
+        "authenticated-orcid": false,
+        "given": "Seungwoo",
+        "family": "Jeong",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Korea University, Seoul, Republic of Korea"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7669-7655",
+        "authenticated-orcid": false,
+        "given": "Junghyo",
+        "family": "Sohn",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Korea University, Seoul, Republic of Korea"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0007-0591-9875",
+        "authenticated-orcid": false,
+        "given": "Jaehyun",
+        "family": "Jeon",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Korea University, Seoul, Republic of Korea"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7019-8962",
+        "authenticated-orcid": false,
+        "given": "Heung-Il",
+        "family": "Suk",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Korea University, Seoul, Republic of Korea"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "Proceedings of the 34th ACM International Conference on Information and Knowledge Management"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          10
+        ]
+      ]
+    },
+    "online": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          10
+        ]
+      ]
+    },
+    "url": "https://doi.org/10.1145/3746252.3761050"
+  },
+  {
+    "doi": "10.1109/MSP.2012.2235192",
+    "status": "OK",
+    "title": [
+      "The emerging field of signal processing on graphs: Extending high-dimensional data analysis to networks and other irregular domains"
+    ],
+    "authors": [
+      {
+        "given": "D. I.",
+        "family": "Shuman",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "S. K.",
+        "family": "Narang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "P.",
+        "family": "Frossard",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "A.",
+        "family": "Ortega",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "P.",
+        "family": "Vandergheynst",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "venue": [
+      "IEEE Signal Processing Magazine"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          5
+        ]
+      ]
+    },
+    "online": null,
+    "url": "https://doi.org/10.1109/msp.2012.2235192"
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "date": "2026-11-25",
+  "scope": "Targeted narrative feasibility study, not exhaustive review",
+  "source_count": 7,
+  "queries": [
+    "frequency domain diffusion time series generation spectral diffusion Fourier model paper",
+    "graph Fourier diffusion model spatiotemporal forecasting graph signals spectral diffusion",
+    "non uniform Fourier transform diffusion generative model irregular point cloud",
+    "time frequency joint diffusion model time series forecasting",
+    "frequency diffusion time series FIDE Fourier diffusion imputation",
+    "Fast Graph Generation via Spectral Diffusion AISTATS 2023",
+    "FINUFFT type 1 type 2 inverse nonuniform Fourier documentation",
+    "spectral diffusion time series frequency domain noise covariance Fourier unitary",
+    "Shuman emerging field signal processing graphs extending high dimensional data 2013 Fourier Laplacian arxiv",
+    "SpecSTG spectral diffusion graph Fourier transform 2401.08119 equation"
+  ],
+  "retrieval_notes": [
+    "Search discovery spans conference proceedings, arXiv and official numerical documentation.",
+    "Unsupported PDF MIME types were replaced with arXiv HTML.",
+    "ACM DOI access denied; corresponding-author institution abstract used and depth recorded.",
+    "Graph topology generation titles not treated as evidence for fixed-graph signal forecasting.",
+    "No literature performance converted into GNSS millimeter gains."
+  ],
+  "sources": [
+    {
+      "id": "frequency_diffusion",
+      "title": "Time Series Diffusion in the Frequency Domain",
+      "year": 2024,
+      "venue": "ICML / PMLR 235",
+      "authors": [
+        "Jonathan Crabbé",
+        "Nicolas Huynh",
+        "Jan Pawel Stanczuk",
+        "Mihaela van der Schaar"
+      ],
+      "url": "https://proceedings.mlr.press/v235/crabbe24a.html",
+      "fulltext": "https://arxiv.org/html/2402.05933",
+      "depth": "Methods sections 2-3 and localization discussion",
+      "claim": "Frequency-domain diffusion with mirrored Fourier noise; representation bias, not guaranteed superiority on all signals."
+    },
+    {
+      "id": "specstg",
+      "title": "SpecSTG: A Fast Spectral Diffusion Framework for Probabilistic Spatio-Temporal Traffic Forecasting",
+      "year": 2024,
+      "status": "arXiv v3; preprint status used, not represented as main-conference publication",
+      "authors": [
+        "Lequan Lin",
+        "Dai Shi",
+        "Andi Han",
+        "Junbin Gao"
+      ],
+      "url": "https://arxiv.org/abs/2401.08119",
+      "fulltext": "https://arxiv.org/html/2401.08119v3",
+      "depth": "Sections 3-4 and appendix B",
+      "claim": "GFT of spatial node axis at each physical time; spectral recurrent encoder and conditional denoising."
+    },
+    {
+      "id": "lscd",
+      "title": "LSCD: Lomb–Scargle Conditioned Diffusion for Time series Imputation",
+      "year": 2025,
+      "venue": "ICML / PMLR 267",
+      "authors": [
+        "Elizabeth Fons",
+        "Alejandro Sztrajman",
+        "Yousef El-Laham",
+        "Luciana Ferrer",
+        "Svitlana Vyetrenko",
+        "Manuela Veloso"
+      ],
+      "url": "https://proceedings.mlr.press/v267/fons25a.html",
+      "fulltext": "https://arxiv.org/html/2506.17039",
+      "depth": "Sections 3-4 spectrum conditioning and spectral consistency",
+      "claim": "Lomb–Scargle conditions time-domain diffusion from irregular observations; power spectrum alone is not an invertible state."
+    },
+    {
+      "id": "frequency_conditioned",
+      "title": "Frequency-Conditioned Diffusion Models for Time Series Generation",
+      "year": 2025,
+      "venue": "CIKM",
+      "doi": "10.1145/3746252.3761050",
+      "authors": [
+        "Seungwoo Jeong",
+        "Junghyo Sohn",
+        "Jaehyun Jeon",
+        "Heung Il Suk"
+      ],
+      "url": "https://pure.korea.ac.kr/en/publications/frequency-conditioned-diffusion-models-for-time-series-generation/",
+      "depth": "Author-institution abstract and metadata only; ACM DOI page denied access",
+      "claim": "Frequency components modeled in the denoising backbone and fused with time-domain features."
+    },
+    {
+      "id": "fide",
+      "title": "FIDE: Frequency-Inflated Conditional Diffusion Model for Extreme-Aware Time Series Generation",
+      "year": 2024,
+      "venue": "NeurIPS 37",
+      "authors": [
+        "Asadullah Hill Galib",
+        "Pang-Ning Tan",
+        "Lifeng Luo"
+      ],
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/cfce727868dcaf5295c0125f9d6fbc0b-Abstract-Conference.html",
+      "depth": "Official conference abstract only",
+      "claim": "High-frequency inflation and block-maxima conditioning; true future block maxima excluded from GNSS forecast conditions."
+    },
+    {
+      "id": "graph_signal",
+      "title": "The Emerging Field of Signal Processing on Graphs: Extending High-Dimensional Data Analysis to Networks and Other Irregular Domains",
+      "year": 2013,
+      "doi": "10.1109/MSP.2012.2235192",
+      "authors": [
+        "David I Shuman",
+        "Sunil K Narang",
+        "Pascal Frossard",
+        "Antonio Ortega",
+        "Pierre Vandergheynst"
+      ],
+      "url": "https://arxiv.org/abs/1211.0053",
+      "depth": "Primary bibliographic record and graph Fourier definitions cross-checked against SpecSTG section 3",
+      "claim": "Graph Fourier generalizes signal analysis to irregular weighted graphs; graph frequency depends on graph structure."
+    },
+    {
+      "id": "finufft",
+      "title": "FINUFFT mathematical definitions and inverse tutorial",
+      "access_date": "2026-11-25",
+      "url": "https://finufft.readthedocs.io/en/latest/math.html",
+      "inverse_tutorial": "https://finufft.readthedocs.io/en/latest/tutorial/inv1d2.html",
+      "depth": "Official mathematical definitions and inverse-NUFFT tutorial",
+      "claim": "Nonuniform Fourier sums and adjoints do not by themselves solve or guarantee an identifiable inverse problem."
+    }
+  ]
+}

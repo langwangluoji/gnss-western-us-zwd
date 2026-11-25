@@ -1,0 +1,259 @@
+{
+  "status": "PROPOSED_ARCHITECTURE_NOT_TRAINING_RESULT",
+  "diagram": {
+    "id": "joint_architecture",
+    "title": "Transformer条件与空域／图频域统一去噪",
+    "nodes": [
+      {
+        "id": "input",
+        "x": 50,
+        "y": 90,
+        "width": 90,
+        "height": 8,
+        "text": "允许条件站历史≤t＋地形／海岸＋基础场物理输出\n真实目标站历史与未来观测不进入条件",
+        "role": "neutral"
+      },
+      {
+        "id": "time",
+        "x": 25,
+        "y": 77,
+        "width": 42,
+        "height": 9,
+        "text": "因果Transformer历史编码\n保留逐位置状态与时间顺序",
+        "role": "time"
+      },
+      {
+        "id": "history_spectrum",
+        "x": 75,
+        "y": 77,
+        "width": 42,
+        "height": 9,
+        "text": "过去频谱编码\n缺测用LS；完整窗用FFT／STFT",
+        "role": "time"
+      },
+      {
+        "id": "memory",
+        "x": 50,
+        "y": 64,
+        "width": 90,
+        "height": 9,
+        "text": "对齐的条件memory C_t\n每层cross-attention＋扩散步k调制；物理时间t保持因果",
+        "role": "time"
+      },
+      {
+        "id": "noisy",
+        "x": 50,
+        "y": 51,
+        "width": 90,
+        "height": 8,
+        "text": "同一个加噪锚点创新状态 x_k（x0为标准化AR创新）\nx_k = sqrt(abar)·x0 + sqrt(1-abar)·epsilon",
+        "role": "neutral"
+      },
+      {
+        "id": "spatial",
+        "x": 25,
+        "y": 38,
+        "width": 42,
+        "height": 10,
+        "text": "空域／图邻域分支\n局地天气变化与空间细节\n输入同一个x_k与条件C_t",
+        "role": "space"
+      },
+      {
+        "id": "spectral",
+        "x": 75,
+        "y": 38,
+        "width": 42,
+        "height": 10,
+        "text": "图频域分支\nGFT(x_k) → 谱处理 → inverse GFT\n固定图U、图频率标识Lambda",
+        "role": "sample"
+      },
+      {
+        "id": "fused",
+        "x": 50,
+        "y": 24,
+        "width": 90,
+        "height": 9,
+        "text": "跨域特征融合 → 同一个epsilon预测\n单一去噪损失；谱目标对应同一噪声的U^T·epsilon",
+        "role": "sample"
+      },
+      {
+        "id": "result",
+        "x": 50,
+        "y": 11,
+        "width": 90,
+        "height": 9,
+        "text": "反向采样 → 残差／创新逆变换 → 冻结基础场μ＋生成残差\n任意坐标读出；同时评价点值、区间、增量与站对联合分布",
+        "role": "space"
+      }
+    ],
+    "edges": [
+      {
+        "points": [
+          [
+            25,
+            86
+          ],
+          [
+            25,
+            81.5
+          ]
+        ],
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            75,
+            86
+          ],
+          [
+            75,
+            81.5
+          ]
+        ],
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            25,
+            72.5
+          ],
+          [
+            25,
+            68.5
+          ]
+        ],
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            75,
+            72.5
+          ],
+          [
+            75,
+            68.5
+          ]
+        ],
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            4.7,
+            64
+          ],
+          [
+            2,
+            64
+          ],
+          [
+            2,
+            38
+          ],
+          [
+            3.7,
+            38
+          ]
+        ],
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            95.3,
+            64
+          ],
+          [
+            98,
+            64
+          ],
+          [
+            98,
+            38
+          ],
+          [
+            96.3,
+            38
+          ]
+        ],
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            25,
+            47
+          ],
+          [
+            25,
+            43
+          ]
+        ],
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            75,
+            47
+          ],
+          [
+            75,
+            43
+          ]
+        ],
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            25,
+            33
+          ],
+          [
+            25,
+            28.5
+          ]
+        ],
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            75,
+            33
+          ],
+          [
+            75,
+            28.5
+          ]
+        ],
+        "dashed": false
+      },
+      {
+        "points": [
+          [
+            50,
+            19.5
+          ],
+          [
+            50,
+            15.5
+          ]
+        ],
+        "dashed": false
+      }
+    ],
+    "status": "PROPOSED_ARCHITECTURE_NOT_TRAINING_RESULT",
+    "text_bounds": "PASS"
+  },
+  "generator_sha256": "ca79c67784a1fab5dbf202037f9a553e1b98ab74dc47f6fac8cd2f6b5fe47d6b",
+  "renderer_sha256": "1cda9d69f089acdae8ecc85da0c0472e7177334b70fc4d2f38e6d59902bbdc32",
+  "outputs": {
+    "joint_architecture.png": "2f50b5551eeba36b4f65a9939766ebdc69b45f36b93b3b8c21f83d597b532857",
+    "joint_architecture.svg": "499bba58a731ae82bdf9728a9aa8ad8ebfbd2415a11b7f8f57f3bd8cda02cef7"
+  }
+}

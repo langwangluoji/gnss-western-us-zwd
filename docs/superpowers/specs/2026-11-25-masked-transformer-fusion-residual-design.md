@@ -186,3 +186,5 @@ T0/T1均重新运行并使用相同投影包围盒和查询定义；T0是旧网�
 ## 10. 与已有时序扩散的关系
 
 [文献对照与借鉴建议](../../research_notes/2026-11-25-temporal-diffusion-comparison.md)说明历史条件、残差扩散与标准化的已有先例。本页固定AR＋逐帧创新扩散作为V1控制保留；条件转移rho(c)与条件位置/尺度是后续单独消融，尚未替换本页架构或图件。
+
+频域扩展见[统一条件与空域/图谱去噪设计](../../research_notes/2026-11-25-spectral-diffusion-feasibility.md)。Transformer条件在每层去噪中融合；新锚点表示、图基、标准化创新和频域分支分别控制，不对任意128维latent直接宣称空间Fourier频率。

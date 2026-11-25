@@ -1,0 +1,262 @@
+{
+  "status": "LOCAL_TRANSFORM_AUDIT_NOT_MODEL_TRAINING",
+  "generator_sha256": "d61262342b80adcb56eaa8abc24ecafcc435429099d576bf72dad0ee93ecc5ae",
+  "data_roles": "Existing development137 residuals only; training410 static coordinates; no confirmation/C/D labels",
+  "source_hashes": {
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/p14_s42/evaluation.npz": "35e3b40a8ed7e0c629794e4196da8e983e92a5f5393ae267d600ad2dd0423139",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_temporal_continuous_data/geometry.npz": "1807a440d0b129e8e45d867124000141f7f7ddb1a3f360d6757b8f6637237647"
+  },
+  "temporal": {
+    "layout": 0,
+    "hours_per_window": 72,
+    "months": 12,
+    "complete_station_windows": 1384,
+    "preprocessing": "remove each station-window mean; no interpolation or zero fill; fully observed windows only",
+    "low_band": "period >=12 h; DC removed",
+    "pooled_low_frequency_energy_fraction": 0.7399184057912983,
+    "pooled_increment_low_frequency_energy_fraction": 0.08404791579004185,
+    "fft_inverse_max_error_mm": 2.842170943040401e-14,
+    "parseval_max_absolute_energy_error": 2.9103830456733704e-11,
+    "monthly": [
+      {
+        "month": 1,
+        "complete_station_windows": 121,
+        "residual_low_frequency_energy_fraction": 0.536388210421626,
+        "increment_low_frequency_energy_fraction": 0.04583136611860391
+      },
+      {
+        "month": 2,
+        "complete_station_windows": 124,
+        "residual_low_frequency_energy_fraction": 0.6390339699967565,
+        "increment_low_frequency_energy_fraction": 0.052463976284814716
+      },
+      {
+        "month": 3,
+        "complete_station_windows": 120,
+        "residual_low_frequency_energy_fraction": 0.7026457076564334,
+        "increment_low_frequency_energy_fraction": 0.05508565652776682
+      },
+      {
+        "month": 4,
+        "complete_station_windows": 119,
+        "residual_low_frequency_energy_fraction": 0.7624435632405254,
+        "increment_low_frequency_energy_fraction": 0.09975234783536005
+      },
+      {
+        "month": 5,
+        "complete_station_windows": 119,
+        "residual_low_frequency_energy_fraction": 0.8382475126093958,
+        "increment_low_frequency_energy_fraction": 0.15568820586923332
+      },
+      {
+        "month": 6,
+        "complete_station_windows": 122,
+        "residual_low_frequency_energy_fraction": 0.7285063050110822,
+        "increment_low_frequency_energy_fraction": 0.06592853882921483
+      },
+      {
+        "month": 7,
+        "complete_station_windows": 115,
+        "residual_low_frequency_energy_fraction": 0.7531612656993981,
+        "increment_low_frequency_energy_fraction": 0.09999341437069582
+      },
+      {
+        "month": 8,
+        "complete_station_windows": 117,
+        "residual_low_frequency_energy_fraction": 0.785454779702281,
+        "increment_low_frequency_energy_fraction": 0.1223148847133953
+      },
+      {
+        "month": 9,
+        "complete_station_windows": 101,
+        "residual_low_frequency_energy_fraction": 0.7633279214184696,
+        "increment_low_frequency_energy_fraction": 0.10385376701924319
+      },
+      {
+        "month": 10,
+        "complete_station_windows": 104,
+        "residual_low_frequency_energy_fraction": 0.7528313764360788,
+        "increment_low_frequency_energy_fraction": 0.08057098857908986
+      },
+      {
+        "month": 11,
+        "complete_station_windows": 120,
+        "residual_low_frequency_energy_fraction": 0.6398770942858621,
+        "increment_low_frequency_energy_fraction": 0.05001555839175418
+      },
+      {
+        "month": 12,
+        "complete_station_windows": 102,
+        "residual_low_frequency_energy_fraction": 0.7661172536261762,
+        "increment_low_frequency_energy_fraction": 0.08880132020364112
+      }
+    ]
+  },
+  "irregular_fourier": {
+    "scope": "Actual training410 coordinates; 3 fixed random82 subsets; direct Fourier matrices, not a FINUFFT runtime benchmark",
+    "rows": [
+      {
+        "order": 1,
+        "layout": 0,
+        "observations": 82,
+        "coefficients": 9,
+        "numerical_rank": 9,
+        "nullity": 0,
+        "condition_number": 5.04086478155063,
+        "gram_identity_relative_error": 1.03720601057035
+      },
+      {
+        "order": 1,
+        "layout": 1,
+        "observations": 82,
+        "coefficients": 9,
+        "numerical_rank": 9,
+        "nullity": 0,
+        "condition_number": 4.751056907299084,
+        "gram_identity_relative_error": 0.9169411795565852
+      },
+      {
+        "order": 1,
+        "layout": 2,
+        "observations": 82,
+        "coefficients": 9,
+        "numerical_rank": 9,
+        "nullity": 0,
+        "condition_number": 3.208573513681383,
+        "gram_identity_relative_error": 0.8632773550289164
+      },
+      {
+        "order": 2,
+        "layout": 0,
+        "observations": 82,
+        "coefficients": 25,
+        "numerical_rank": 25,
+        "nullity": 0,
+        "condition_number": 45.8889285336442,
+        "gram_identity_relative_error": 1.4877070162219526
+      },
+      {
+        "order": 2,
+        "layout": 1,
+        "observations": 82,
+        "coefficients": 25,
+        "numerical_rank": 25,
+        "nullity": 0,
+        "condition_number": 44.37633417168789,
+        "gram_identity_relative_error": 1.3712296663088988
+      },
+      {
+        "order": 2,
+        "layout": 2,
+        "observations": 82,
+        "coefficients": 25,
+        "numerical_rank": 25,
+        "nullity": 0,
+        "condition_number": 14.061177194404733,
+        "gram_identity_relative_error": 1.2765934269817167
+      },
+      {
+        "order": 3,
+        "layout": 0,
+        "observations": 82,
+        "coefficients": 49,
+        "numerical_rank": 49,
+        "nullity": 0,
+        "condition_number": 3915.263138431741,
+        "gram_identity_relative_error": 1.7934993884881973
+      },
+      {
+        "order": 3,
+        "layout": 1,
+        "observations": 82,
+        "coefficients": 49,
+        "numerical_rank": 49,
+        "nullity": 0,
+        "condition_number": 985.6715372715711,
+        "gram_identity_relative_error": 1.6745968535839402
+      },
+      {
+        "order": 3,
+        "layout": 2,
+        "observations": 82,
+        "coefficients": 49,
+        "numerical_rank": 49,
+        "nullity": 0,
+        "condition_number": 1519.0547082974958,
+        "gram_identity_relative_error": 1.5756493971250998
+      },
+      {
+        "order": 4,
+        "layout": 0,
+        "observations": 82,
+        "coefficients": 81,
+        "numerical_rank": 81,
+        "nullity": 0,
+        "condition_number": 70457850.07878807,
+        "gram_identity_relative_error": 2.0457635123542364
+      },
+      {
+        "order": 4,
+        "layout": 1,
+        "observations": 82,
+        "coefficients": 81,
+        "numerical_rank": 81,
+        "nullity": 0,
+        "condition_number": 40476231.362812586,
+        "gram_identity_relative_error": 1.9016509455558845
+      },
+      {
+        "order": 4,
+        "layout": 2,
+        "observations": 82,
+        "coefficients": 81,
+        "numerical_rank": 81,
+        "nullity": 0,
+        "condition_number": 68269530.07499954,
+        "gram_identity_relative_error": 1.831801657783006
+      },
+      {
+        "order": 5,
+        "layout": 0,
+        "observations": 82,
+        "coefficients": 121,
+        "numerical_rank": 82,
+        "nullity": 39,
+        "condition_number": null,
+        "gram_identity_relative_error": 2.2635995788026344
+      },
+      {
+        "order": 5,
+        "layout": 1,
+        "observations": 82,
+        "coefficients": 121,
+        "numerical_rank": 82,
+        "nullity": 39,
+        "condition_number": null,
+        "gram_identity_relative_error": 2.095642321272468
+      },
+      {
+        "order": 5,
+        "layout": 2,
+        "observations": 82,
+        "coefficients": 121,
+        "numerical_rank": 82,
+        "nullity": 39,
+        "condition_number": null,
+        "gram_identity_relative_error": 2.071550638165036
+      }
+    ]
+  },
+  "graph": {
+    "scope": "Fixed training410 geometry graph for algebra only; not the proposed anchor graph and no graph residual spectrum measured",
+    "neighbours": 8,
+    "radius_km": 150,
+    "normalized_laplacian": true,
+    "eigenvalue_min": 2.220446049250313e-16,
+    "eigenvalue_max": 1.4838405405941397,
+    "orthogonality_max_error": 2.3610193661260936e-13,
+    "full_inverse_max_error": 2.999822612537173e-13,
+    "transformed_diffusion_equivalence_max_error": 1.7763568394002505e-15
+  },
+  "new_network_trained": false
+}

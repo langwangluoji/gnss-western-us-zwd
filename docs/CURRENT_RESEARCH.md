@@ -1,5 +1,7 @@
 # 当前研究进展：2026-11-25
 
+频域探索：[Transformer与时空频域残差扩散可行性](research_notes/2026-11-25-spectral-diffusion-feasibility.md)。已归档时域/频域、空域/图谱及双频域架构、风险与分阶段对照；本机用已有p14开发残差完成1384个72小时站点窗的谱诊断和不规则Fourier/GFT代数核验。该结果不代表新频域网络训练收益。
+
 方法依据：[已有时序扩散与本项目的对照](research_notes/2026-11-25-temporal-diffusion-comparison.md)。核对TimeGrad、CSDI、TMDM、CorrDiff、GenCast等8项工作，明确当前固定AR创新方案与条件动态的差别；动态转移和条件尺度属于新增待验证消融。
 
 当前设计：[掩码Transformer时空融合与标准化残差场](superpowers/specs/2026-11-25-masked-transformer-fusion-residual-design.md)。保留p14与海岸/地形分支，以72小时、16×16因果时间状态接入两级残差空间解码器；基础场冻结后，构建折外残差与标准化创新扩散。架构流程图已导出PNG/SVG，新网络尚未训练。

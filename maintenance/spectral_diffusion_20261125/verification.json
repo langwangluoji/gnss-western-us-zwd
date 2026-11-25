@@ -1,0 +1,15 @@
+{
+  "status": "PASS_SPECTRAL_RESEARCH_ARTIFACT_CHECKS",
+  "source_records": 7,
+  "recorded_searches": 10,
+  "local_links": "PASS",
+  "source_hashes": "PASS",
+  "transform_algebra": "PASS",
+  "reported_numbers": "PASS",
+  "png_svg_integrity": "PASS",
+  "diagram_text_bounds": "PASS_FROM_RENDERER",
+  "independent_read_only_design_review": "COMPLETED",
+  "document_sha256": "917f06193326fb3376dac49975357b598d0ae2b3100c84fd36ec183278ac4105",
+  "scope": "Existing exposed development residual diagnostics plus algebra only; no new spectral network trained",
+  "new_model_precision_gain_verified": false
+}

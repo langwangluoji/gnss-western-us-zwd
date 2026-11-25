@@ -1,5 +1,7 @@
 # 下一阶段研究入口与执行审阅
 
+新增候选：[时空频域diffusion可行性与问题清单](research_notes/2026-11-25-spectral-diffusion-feasibility.md)。先完善基础场，再验证历史谱条件，随后在同一锚点创新表示上比较空域/GFT/双域去噪；时间频率×图频率的未来联合生成另立F合同。变换层本机核验已完成，频域网络尚未训练。
+
 已有方法与可借鉴机制见[时序扩散文献对照](research_notes/2026-11-25-temporal-diffusion-comparison.md)：先完成基础场融合与残差表示，再比较固定AR的Gaussian/diffusion；条件动态转移和位置/尺度头依次追加，均按待验证方案登记。
 
 用户已选定：[因果掩码Transformer融合与标准化残差场架构](superpowers/specs/2026-11-25-masked-transformer-fusion-residual-design.md)，含总流程、两级融合和残差训练/采样3张PNG及SVG。当前优先实现T0–T5融合消融，再构建按fold/布局/连续块组织的标准化残差；生成端使用逐帧创新diffusion＋因果潜状态递推，共享条件G，具体以该设计为准。旧连续融合已完成双种子，新架构仍为待实现设计。
