@@ -1,5 +1,7 @@
 # 原生站点天气编码、因果时序与残差扩散
 
+最新架构、已完成均值续训、空间概率证据及天气GP进展见[统一入口](2026-11-26-weather-projective-trajectory.md)。下文保留各阶段记录，执行状态以该入口及实验锁为准。
+
 最新双种子对照见[统一报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_mean_analysis/paired/REPORT.md)。各12组均值、每组3000块、raw/EMA评价全部完成。完整联合TF的双种子R/F6平均为9.818254/14.127401mm；联合GRU为9.821917/14.177009mm，LSTM为9.817636/14.251512mm。当前R与I1约9.817064mm处于同一水平；F6比较见配对区间。seed42冻结的概率候选政策不因seed17结果改变。
 
 S175直连相对近等参数Lwide的当前fair CRPS区间在两种子均低于零：seed42[−0.105165,−0.056684]mm，seed17[−0.081622,−0.032824]mm；F6两者均跨零。直连信息对当前概率校准有可复现作用，全局收益约1%，尚未达到5%概率门槛。

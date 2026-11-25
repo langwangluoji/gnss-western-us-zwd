@@ -1903,6 +1903,482 @@
         -0.049822064704705404,
         -0.014178252793456636
       ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "distance:0-50km",
+      "lead": 0,
+      "count": 51498,
+      "contributing_months": 12,
+      "fair_crps_mm": 4.180956555765167,
+      "reference_fair_crps_mm": 4.175128439425626,
+      "gain_percent": -0.13959130656932553,
+      "delta_ci95_mm": [
+        -0.02001203918284633,
+        0.031022558622120583
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "distance:0-50km",
+      "lead": 6,
+      "count": 51493,
+      "contributing_months": 12,
+      "fair_crps_mm": 7.428149907810464,
+      "reference_fair_crps_mm": 7.435012301830937,
+      "gain_percent": 0.09229835462119057,
+      "delta_ci95_mm": [
+        -0.15547000455983723,
+        0.15292268138107865
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "distance:50-100km",
+      "lead": 0,
+      "count": 164208,
+      "contributing_months": 12,
+      "fair_crps_mm": 5.082456530229783,
+      "reference_fair_crps_mm": 5.098206684944717,
+      "gain_percent": 0.3089351940447015,
+      "delta_ci95_mm": [
+        -0.03678403186823016,
+        0.006040492283303957
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "distance:50-100km",
+      "lead": 6,
+      "count": 163906,
+      "contributing_months": 12,
+      "fair_crps_mm": 7.502179266217237,
+      "reference_fair_crps_mm": 7.481758407902319,
+      "gain_percent": -0.272941963661226,
+      "delta_ci95_mm": [
+        -0.1255592128610387,
+        0.15012600279394034
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "distance:100-150km",
+      "lead": 0,
+      "count": 72543,
+      "contributing_months": 12,
+      "fair_crps_mm": 6.100364217610381,
+      "reference_fair_crps_mm": 6.1157276875457445,
+      "gain_percent": 0.25121245942081344,
+      "delta_ci95_mm": [
+        -0.03531677426093023,
+        0.006381674721953694
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "distance:100-150km",
+      "lead": 6,
+      "count": 72507,
+      "contributing_months": 12,
+      "fair_crps_mm": 8.186522095009922,
+      "reference_fair_crps_mm": 8.1608009326492,
+      "gain_percent": -0.3151793870846383,
+      "delta_ci95_mm": [
+        -0.06478870797582911,
+        0.11344866635639834
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "distance:150-300km",
+      "lead": 0,
+      "count": 37126,
+      "contributing_months": 12,
+      "fair_crps_mm": 7.75910676181981,
+      "reference_fair_crps_mm": 7.768232468288661,
+      "gain_percent": 0.11747468302608428,
+      "delta_ci95_mm": [
+        -0.03175587335308996,
+        0.014873253278231585
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "distance:150-300km",
+      "lead": 6,
+      "count": 37143,
+      "contributing_months": 12,
+      "fair_crps_mm": 9.202294731645306,
+      "reference_fair_crps_mm": 9.108935453923014,
+      "gain_percent": -1.0249197416596574,
+      "delta_ci95_mm": [
+        0.011721580606556392,
+        0.18063969025034593
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "distance:300-infkm",
+      "lead": 0,
+      "count": 1955,
+      "contributing_months": 12,
+      "fair_crps_mm": 8.442689201106196,
+      "reference_fair_crps_mm": 8.509172134936009,
+      "gain_percent": 0.7813090718526435,
+      "delta_ci95_mm": [
+        -0.15969897187750118,
+        0.014518261743478063
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "distance:300-infkm",
+      "lead": 6,
+      "count": 1954,
+      "contributing_months": 12,
+      "fair_crps_mm": 9.039981245872552,
+      "reference_fair_crps_mm": 8.846384735898082,
+      "gain_percent": -2.1884251675022286,
+      "delta_ci95_mm": [
+        -0.04624818087418938,
+        0.4158079828049455
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "coast:0-50",
+      "lead": 0,
+      "count": 76908,
+      "contributing_months": 12,
+      "fair_crps_mm": 6.086552646408502,
+      "reference_fair_crps_mm": 6.089819622739941,
+      "gain_percent": 0.05364652048542802,
+      "delta_ci95_mm": [
+        -0.03634072829615438,
+        0.024752594871770145
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "coast:0-50",
+      "lead": 6,
+      "count": 76902,
+      "contributing_months": 12,
+      "fair_crps_mm": 9.5551956103098,
+      "reference_fair_crps_mm": 9.272706076989158,
+      "gain_percent": -3.0464627151469785,
+      "delta_ci95_mm": [
+        0.0783045398123324,
+        0.5055533646618354
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "coast:50-150",
+      "lead": 0,
+      "count": 144690,
+      "contributing_months": 12,
+      "fair_crps_mm": 5.107474163782458,
+      "reference_fair_crps_mm": 5.134588064126142,
+      "gain_percent": 0.5280637902214756,
+      "delta_ci95_mm": [
+        -0.058868276995707715,
+        0.0033241769035460412
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "coast:50-150",
+      "lead": 6,
+      "count": 144357,
+      "contributing_months": 12,
+      "fair_crps_mm": 7.4922630934407515,
+      "reference_fair_crps_mm": 7.557464508162075,
+      "gain_percent": 0.862741924238023,
+      "delta_ci95_mm": [
+        -0.22654202690730155,
+        0.06217075661896236
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "coast:150-300",
+      "lead": 0,
+      "count": 35676,
+      "contributing_months": 12,
+      "fair_crps_mm": 5.8671424848751474,
+      "reference_fair_crps_mm": 5.872340921312988,
+      "gain_percent": 0.0885240912865505,
+      "delta_ci95_mm": [
+        -0.042612777363661404,
+        0.029691596118203004
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "coast:150-300",
+      "lead": 6,
+      "count": 35655,
+      "contributing_months": 12,
+      "fair_crps_mm": 7.662340021700131,
+      "reference_fair_crps_mm": 7.737457224463801,
+      "gain_percent": 0.9708254350818198,
+      "delta_ci95_mm": [
+        -0.186505184948784,
+        0.04425973221162102
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "coast:300-inf",
+      "lead": 0,
+      "count": 70056,
+      "contributing_months": 12,
+      "fair_crps_mm": 5.432489667013347,
+      "reference_fair_crps_mm": 5.4254899255053335,
+      "gain_percent": -0.12901584196309562,
+      "delta_ci95_mm": [
+        -0.020996428924078093,
+        0.027265234788959543
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "coast:300-inf",
+      "lead": 6,
+      "count": 70089,
+      "contributing_months": 12,
+      "fair_crps_mm": 6.785943906300825,
+      "reference_fair_crps_mm": 6.7991955449612815,
+      "gain_percent": 0.19490009623678037,
+      "delta_ci95_mm": [
+        -0.1341579697421022,
+        0.10665639459422754
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "height:-inf-500",
+      "lead": 0,
+      "count": 132981,
+      "contributing_months": 12,
+      "fair_crps_mm": 5.841427842908205,
+      "reference_fair_crps_mm": 5.847207352218392,
+      "gain_percent": 0.09884221581426607,
+      "delta_ci95_mm": [
+        -0.023956521016697496,
+        0.01303346262232909
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "height:-inf-500",
+      "lead": 6,
+      "count": 132813,
+      "contributing_months": 12,
+      "fair_crps_mm": 8.916411238274678,
+      "reference_fair_crps_mm": 8.797094541651266,
+      "gain_percent": -1.3563193626996792,
+      "delta_ci95_mm": [
+        -0.013702424926363931,
+        0.2512804654650631
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "height:500-1000",
+      "lead": 0,
+      "count": 77127,
+      "contributing_months": 12,
+      "fair_crps_mm": 5.076667884801677,
+      "reference_fair_crps_mm": 5.088249098820752,
+      "gain_percent": 0.22760705685103,
+      "delta_ci95_mm": [
+        -0.0475677221819248,
+        0.024776507464494148
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "height:500-1000",
+      "lead": 6,
+      "count": 76947,
+      "contributing_months": 12,
+      "fair_crps_mm": 7.207874755694412,
+      "reference_fair_crps_mm": 7.270113314645234,
+      "gain_percent": 0.8560878800258223,
+      "delta_ci95_mm": [
+        -0.24421895554130474,
+        0.09459308614418852
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "height:1000-2000",
+      "lead": 0,
+      "count": 104268,
+      "contributing_months": 12,
+      "fair_crps_mm": 5.576319030717387,
+      "reference_fair_crps_mm": 5.606861169152692,
+      "gain_percent": 0.5447279237684609,
+      "delta_ci95_mm": [
+        -0.04881702237077692,
+        -0.012052855770343363
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "height:1000-2000",
+      "lead": 6,
+      "count": 104283,
+      "contributing_months": 12,
+      "fair_crps_mm": 7.280614866531413,
+      "reference_fair_crps_mm": 7.303965999590893,
+      "gain_percent": 0.3197048433794544,
+      "delta_ci95_mm": [
+        -0.09375415459466592,
+        0.04221085860323102
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "height:2000-inf",
+      "lead": 0,
+      "count": 12954,
+      "contributing_months": 12,
+      "fair_crps_mm": 3.645282265450532,
+      "reference_fair_crps_mm": 3.569868916067901,
+      "gain_percent": -2.112496317251235,
+      "delta_ci95_mm": [
+        0.005491197143755522,
+        0.13013145502853302
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "height:2000-inf",
+      "lead": 6,
+      "count": 12960,
+      "contributing_months": 12,
+      "fair_crps_mm": 5.1783184710200185,
+      "reference_fair_crps_mm": 5.171989792341619,
+      "gain_percent": -0.12236448509180604,
+      "delta_ci95_mm": [
+        -0.1744576116152296,
+        0.19425507236387088
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "DJF",
+      "lead": 0,
+      "count": 82725,
+      "contributing_months": 3,
+      "fair_crps_mm": 4.54402119959903,
+      "reference_fair_crps_mm": 4.545199604223199,
+      "gain_percent": 0.025926355865081505,
+      "delta_ci95_mm": [
+        -0.009281009924303696,
+        0.009931335052124624
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "DJF",
+      "lead": 6,
+      "count": 82812,
+      "contributing_months": 3,
+      "fair_crps_mm": 7.007540166751576,
+      "reference_fair_crps_mm": 6.998688740249746,
+      "gain_percent": -0.12647264123812843,
+      "delta_ci95_mm": [
+        -0.05766676219967248,
+        0.08881712267079322
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "MAM",
+      "lead": 0,
+      "count": 82611,
+      "contributing_months": 3,
+      "fair_crps_mm": 5.172017351938101,
+      "reference_fair_crps_mm": 5.194807919235744,
+      "gain_percent": 0.43871819039261223,
+      "delta_ci95_mm": [
+        -0.05789276041182756,
+        0.010571231079635979
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "MAM",
+      "lead": 6,
+      "count": 82566,
+      "contributing_months": 3,
+      "fair_crps_mm": 7.524347917494714,
+      "reference_fair_crps_mm": 7.416663934631184,
+      "gain_percent": -1.4519194049053914,
+      "delta_ci95_mm": [
+        -0.02643646913110409,
+        0.3281321811481668
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "JJA",
+      "lead": 0,
+      "count": 80925,
+      "contributing_months": 3,
+      "fair_crps_mm": 6.425303825443823,
+      "reference_fair_crps_mm": 6.460203497775882,
+      "gain_percent": 0.5402255880031328,
+      "delta_ci95_mm": [
+        -0.07526240529780637,
+        -0.0010201011649577651
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "JJA",
+      "lead": 6,
+      "count": 80898,
+      "contributing_months": 3,
+      "fair_crps_mm": 8.672707229282402,
+      "reference_fair_crps_mm": 8.59552000819209,
+      "gain_percent": -0.8979936178002981,
+      "delta_ci95_mm": [
+        -0.1347701956300833,
+        0.2373818345346006
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "SON",
+      "lead": 0,
+      "count": 81069,
+      "contributing_months": 3,
+      "fair_crps_mm": 5.8451727271649085,
+      "reference_fair_crps_mm": 5.833638864932307,
+      "gain_percent": -0.1977129969757841,
+      "delta_ci95_mm": [
+        -0.01288743393321301,
+        0.0365730506284887
+      ]
+    },
+    {
+      "model": "graph_affine",
+      "stratum": "SON",
+      "lead": 6,
+      "count": 80727,
+      "contributing_months": 3,
+      "fair_crps_mm": 8.200808109392392,
+      "reference_fair_crps_mm": 8.289547940829923,
+      "gain_percent": 1.0705026627621672,
+      "delta_ci95_mm": [
+        -0.45348555004705293,
+        0.17313473620479058
+      ]
     }
   ],
   "source": {
@@ -1946,10 +2422,11 @@
     "reference": "e9dfbbe7e78b0b81ee8164633fdbdb9e97ae53f59009df375cf8dc62b61ee2dc",
     "full": "47719339730f7b07260c1d0a5d34cd70cec95a5779ca7d4ee2c04013a3cad94a",
     "local": "4de058987a04aa3024e2a1c872ece3beec335a9a4f12cc49aec0617812d39538",
-    "affine": "4166e9b3eddd47a256fbefe20ce86c33c6ffab188b555793b2f11c138e13d4e5"
+    "affine": "4166e9b3eddd47a256fbefe20ce86c33c6ffab188b555793b2f11c138e13d4e5",
+    "graph_affine": "a79d5380bbb7926c30b55b2b1d4aba6eb09b8beb175885e170c76aca8788e169"
   },
   "interpretation": "Prespecified distance/coast/height/season bins. Intervals resample common contributing months,2000 draws; no multiplicity correction. Seasonal intervals involve only3 months. Region discovery requires second seed and frozen additional-calendar verification.",
-  "code_sha256": "ac48089c8167df0c0f9d71c8738a4404216c7af1296f1c94b186bbadf9f0c168",
+  "code_sha256": "362feaec2cf0c2dbe8ce17e0bde298c3eec2d848cb44cd4446ea95388333b57a",
   "strict_oof": false,
   "confirmation_C_D_read": false
 }

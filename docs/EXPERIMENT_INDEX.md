@@ -6,11 +6,14 @@
 
 | 实验 | 已记录状态 | 证据入口 |
 |---|---|---|
-| 20261126_mean_fusion_v2 | IN_PROGRESS：C/H/S同3000步源各新增3000块；旧AdamW状态保留，三臂warm差均为0 | [独立均值续训设计](superpowers/specs/2026-11-26-native-mean-fusion-v2.md) |
-| 20261126_gp_process | IN_PROGRESS：S175 Gaussian对称根参考，Full/Local/Affine三臂；真实缺测4更新小试通过 | [轨迹过程合同](superpowers/specs/2026-11-26-gp-trajectory-process.md)；[架构图](figures/weather_native_20261126/gp_trajectory_process.png) |
+| 20261126_weather_projective_gp | TWO_SEED_IN_PROGRESS：G175/G265相关核各3000；冻结均值和尺度；masked/metric真实4更新通过 | [新架构与机制](research_notes/2026-11-26-weather-projective-trajectory.md)；[精确公式](superpowers/specs/2026-11-26-weather-projective-gp.md) |
+| 20261126_weather_transport_gap_metric | ENGINEERING_COMPLETE：Local/Affine各4更新1435轨迹；正式3000衔接待GP完成 | [实现与执行计划](superpowers/plans/2026-11-26-weather-projective-gp.md) |
+| 20261126_gp_process_calendar15 | SEED42_COMPLETE；SEED17_IN_PROGRESS：冻结Full/Local/参考补充开发日期，无训练 | [冻结验证合同](superpowers/plans/2026-11-26-frozen-spatial-dependence-verification.md) |
+| 20261126_mean_fusion_v2 | TWO_SEED_COMPLETE：C/H/S同源各新增3000块、raw/EMA；H当前R9.811031mm，H−C区间低于0 | [独立均值续训设计](superpowers/specs/2026-11-26-native-mean-fusion-v2.md) |
+| 20261126_gp_process | TWO_SEED_COMPLETE：Full/Local/Affine/GraphAffine各3000、两采样器；近邻收益分开归因 | [轨迹过程合同](superpowers/specs/2026-11-26-gp-trajectory-process.md)；[架构图](figures/weather_native_20261126/gp_trajectory_process.png) |
 | 20261126_probability_context | TWO_SEED_CONTEXT_COMPLETE：R111/S175/Lwide各3000；均值冻结；当前CRPS直连收益复现 | [seed42](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_probability_context/summary_s42/REPORT.md)；[seed17](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_probability_context/summary_s17/REPORT.md) |
 | 20261126_native_weather_means / native_mean_analysis | TWO_SEED_MEAN12_COMPLETE：各3000连续块，raw/EMA共48评价；共享月份配对分析完成 | [架构与本轮结果](research_notes/2026-11-26-native-weather-diffusion.md)；[独立分层与曲线](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_mean_analysis/s42/REPORT.md) |
-| 20261126_native_weather_probability | SEED42_COMPLETE；SEED17_IN_PROGRESS：七组概率对照，均值候选政策固定 | [概率与有限集合校准](research_notes/2026-11-26-native-weather-diffusion.md#概率对照进展)；[下一步信息直连实验](superpowers/specs/2026-11-26-uncertainty-context-bypass.md) |
+| 20261126_native_weather_probability | TWO_SEED_COMPLETE：七组概率对照，均值候选政策固定 | [概率与有限集合校准](research_notes/2026-11-26-native-weather-diffusion.md#概率对照进展)；[下一步信息直连实验](superpowers/specs/2026-11-26-uncertainty-context-bypass.md) |
 | 20261126_native_spectral_full_audit | COMPLETE_ENCODING_DIAGNOSTIC：48月12h快照；全GFT/DCT逆误差0.00010681mm，非模型精度 | [谱诊断JSON](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_spectral_full_audit/native_spectral_audit.json) |
 | 20261126_native_weather_cache_v2 | TWO_SEED_CACHE_COMPLETE：每种子3000连续12h块，主日历216块；旧1685块前缀保留哈希 | [新研究入口与架构](research_notes/2026-11-26-native-weather-diffusion.md)；[数据合同](superpowers/specs/2026-11-26-weather-native-diffusion-design.md) |
 | 20261126_native_gap_smoke / native_spectral_audit | ENGINEERING_AND_ENCODING_AUDIT：原生缺测块及完整谱验证；不作精度排名 | [实施与审阅记录](../maintenance/weather_native_20261126/progress.md) |

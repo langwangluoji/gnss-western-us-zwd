@@ -1,5 +1,8 @@
 # 下一阶段研究入口与执行审阅
 
+新增执行：[逐站因果编码、天气条件核与轨迹扩散](research_notes/2026-11-26-weather-projective-trajectory.md)。同历史12配置和C/H/S续训全部双种子完成；Full近邻站对F6差值CRPS改善13%–15%，同图Gaussian控制约11%，支持优先校准空间依赖。天气GP两臂双种子正式3000块训练进行中；其Local/Affine衔接已实现并通过真实缺测4更新，尚未正式训练。项目默认568测试、研究模块165测试通过。[全流程PNG/SVG](figures/weather_native_20261126/weather_projective_trajectory.png)与精确公式已归档。
+
+
 本轮得到[历史观测创新候选I1](superpowers/plans/2026-11-25-observed-innovation-refinement.md)：主日历宏RMSE9.929151→9.817064 mm；冻结后补充日历10.869282→10.740343 mm，两个种子的点值与小时增量均改善。[完整结果、架构、图和下一步数据组织](research_notes/2026-11-25-precision-final.md)已归档。后续Transformer优先编码可见站模型误差及历史状态，将天气、地形和海岸约束放入创新传播；概率阶段按严格空间折外来源重建残差，再比较Gaussian与diffusion。
 
 最新执行与判据见[约10 mm基础场继续优化](research_notes/2026-11-25-precision-continuation.md)：T2/T5、Q、S、A、D及I系列均已完成；下列“待实现/尚未训练”是设计阶段语境，实际进度以本页首段和运行目录证据为准。
