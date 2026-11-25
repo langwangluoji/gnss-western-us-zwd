@@ -1,0 +1,14 @@
+{
+  "cache": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_gap_smoke\\cache_s42",
+  "cache_manifest_sha256": "667f2126087f5cc5f8bfe13c96da4bb2287cfc708e00c938d0818ec4e8175634",
+  "mean_protocol_sha256": "852e229ab224927ff03480272df25974c3d96ce9f0dc4a08dda4a5764a6bb021",
+  "mean_weights_sha256": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508",
+  "model_kind": "transformer",
+  "mean_variant": "physics_aux",
+  "weights": "last",
+  "files": {
+    "embedding.npy": "171c1ab08f004c3d512d77639f8932828b178b19f22329e90622f17462a7aa12",
+    "mean.npy": "b65a88259b2bbc446b16314aa825bdb8e3d08fd1bda696cbc7f248ab7d2e8dbd"
+  },
+  "complete": true
+}

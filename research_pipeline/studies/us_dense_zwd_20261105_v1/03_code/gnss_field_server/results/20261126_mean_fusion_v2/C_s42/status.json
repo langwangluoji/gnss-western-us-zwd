@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE_MEAN",
+  "steps": 3000,
+  "blocks_consumed": 3000,
+  "supervised_updates": 3000,
+  "seconds": 190.45299999999406,
+  "final_group_lrs": [
+    1e-05
+  ]
+}
