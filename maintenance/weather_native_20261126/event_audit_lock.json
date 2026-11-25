@@ -1,0 +1,97 @@
+{
+  "status": "FROZEN_BEFORE_EVENT_SCORE_READ",
+  "event": "ZWD(q,+6h)-ZWD(q,current), within same fixed forecast origin",
+  "thresholds_mm": [
+    10,
+    20,
+    30
+  ],
+  "primary_threshold_mm": 20,
+  "sides": [
+    "increase",
+    "decrease"
+  ],
+  "metrics": [
+    "fair_brier",
+    "upper_or_lower_tail_weighted_fair_crps_mm"
+  ],
+  "primary_main_comparisons": [
+    "Full_vs_GraphAffine",
+    "Local_vs_Affine"
+  ],
+  "secondary": [
+    "Full_vs_GP",
+    "Local_vs_GP"
+  ],
+  "sources": {
+    "calendar8/s42/reference": {
+      "prediction_sha256": "e9dfbbe7e78b0b81ee8164633fdbdb9e97ae53f59009df375cf8dc62b61ee2dc",
+      "weights_sha256": null,
+      "members": 32
+    },
+    "calendar8/s42/full": {
+      "prediction_sha256": "47719339730f7b07260c1d0a5d34cd70cec95a5779ca7d4ee2c04013a3cad94a",
+      "weights_sha256": "0033dac8715d3d00f59960e042a75f9ef5d6c5fef42a3d70b9395791d5e19fed",
+      "members": 32
+    },
+    "calendar8/s42/local": {
+      "prediction_sha256": "4de058987a04aa3024e2a1c872ece3beec335a9a4f12cc49aec0617812d39538",
+      "weights_sha256": "5161a0cc14adc40abbc13524f2847fe4a0b1a507c0257829f84a61c460ea49ee",
+      "members": 32
+    },
+    "calendar8/s42/affine": {
+      "prediction_sha256": "4166e9b3eddd47a256fbefe20ce86c33c6ffab188b555793b2f11c138e13d4e5",
+      "weights_sha256": "cd49fc5127165a1a53d7b74e80b245c937826b55afbdf193be391f31ad0d8af1",
+      "members": 32
+    },
+    "calendar8/s42/graph_affine": {
+      "prediction_sha256": "a79d5380bbb7926c30b55b2b1d4aba6eb09b8beb175885e170c76aca8788e169",
+      "weights_sha256": "7130c83b04c4e73e9b8d9f433919add503f6f2b2dca2a71bb9f774bab1d8b80c",
+      "members": 32
+    },
+    "calendar8/s17/reference": {
+      "prediction_sha256": "c96af4a40e43c84153485bac2039f77b75d6a2567743c8d8dc060347f29e259a",
+      "weights_sha256": null,
+      "members": 32
+    },
+    "calendar8/s17/full": {
+      "prediction_sha256": "af815caa80feb2dbd256fd9bb2d442f4779f232aa33451023f22ebe2c12f7b3b",
+      "weights_sha256": "044a2b14f658e81bc25e30606e9aa01ebe7396bd486b9b2b9efaa0779342838f",
+      "members": 32
+    },
+    "calendar8/s17/local": {
+      "prediction_sha256": "6e5fbe683e91bb402167899708bb8be2dc2129f0b94ba74550ce7780181d0545",
+      "weights_sha256": "b151fe439b0c70329d7b52001e5638ef6e763c01e66efc85bfc3a2dbce05dcfb",
+      "members": 32
+    },
+    "calendar8/s17/affine": {
+      "prediction_sha256": "9db50bff90069168d3436ac8a7db66f5434ef8c52d848bbed8180c4f38e0340d",
+      "weights_sha256": "5b9bec41d8c5df6a18dfd9dca7aed17ddf1979178551e9f082ec97baa45708f3",
+      "members": 32
+    },
+    "calendar8/s17/graph_affine": {
+      "prediction_sha256": "b286bb9a9d98653f875af70015c5cd39b2c665cba21105178964d605b15058d3",
+      "weights_sha256": "c4e7ff30663f6294f85caff848bc9fc46f4d8acb0e8e9e2a04eb8f576c33c022",
+      "members": 32
+    },
+    "calendar15/s42/reference": {
+      "prediction_sha256": "b4237a92d429e4605c493af45982ec47b879e23389f8cb0804481afc49dce5d5",
+      "weights_sha256": null,
+      "members": 32
+    },
+    "calendar15/s42/full": {
+      "prediction_sha256": "cd1f71d9a9aae812403931bd4476eb9b0422b16f871847cab544e01e1acb24ef",
+      "weights_sha256": "0033dac8715d3d00f59960e042a75f9ef5d6c5fef42a3d70b9395791d5e19fed",
+      "members": 32
+    },
+    "calendar15/s42/local": {
+      "prediction_sha256": "aae9073dc0aca4d2e781abc230d79114b3a50c95d287f56dc7cf1df6ff50738b",
+      "weights_sha256": "5161a0cc14adc40abbc13524f2847fe4a0b1a507c0257829f84a61c460ea49ee",
+      "members": 32
+    }
+  },
+  "calendar15_policy": "frozen Full/Local/GP weights and extra dates from supplement_lock.json; seed17 artifacts may be unfinished; no refit",
+  "scope": "post-model-selection exposed-development diagnostic; all thresholds and signs retained; no multiplicity adjustment",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}
