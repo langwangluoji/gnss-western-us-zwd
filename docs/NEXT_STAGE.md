@@ -1,5 +1,7 @@
 # 下一阶段研究入口与执行审阅
 
+实现入口：[代码、模块原理与运行步骤](research_notes/2026-11-25-joint-spectral-implementation.md)。当前已实现T0–T5及L/A/B/J概率分支，修正版本机短训正在验证；下列“待实现/尚未训练”是设计阶段记录。全流程图与结果将从该入口关联，研究晋级仍需表示门槛、完整数据覆盖与3000步双种子评价。
+
 新增候选：[时空频域diffusion可行性与问题清单](research_notes/2026-11-25-spectral-diffusion-feasibility.md)。先完善基础场，再验证历史谱条件，随后在同一锚点创新表示上比较空域/GFT/双域去噪；时间频率×图频率的未来联合生成另立F合同。变换层本机核验已完成，频域网络尚未训练。
 
 已有方法与可借鉴机制见[时序扩散文献对照](research_notes/2026-11-25-temporal-diffusion-comparison.md)：先完成基础场融合与残差表示，再比较固定AR的Gaussian/diffusion；条件动态转移和位置/尺度头依次追加，均按待验证方案登记。

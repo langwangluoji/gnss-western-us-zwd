@@ -1,5 +1,7 @@
 # 当前研究进展：2026-11-25
 
+代码实现：[时空融合与谱残差实验全流程](research_notes/2026-11-25-joint-spectral-implementation.md)。T0–T5、L0/L1、A0/A1/A2、B0/B1、J0/J1已有可执行模块及Gaussian控制；19项新增合同测试通过。本机正在按连续小时运行修正版工程短训，原支撑地理错位与缺测谱处理问题已修正，原小试保留。该进展更新下列“尚未实现”设计状态，正式精度结论仍以独立同口径评价为准。
+
 频域探索：[Transformer与时空频域残差扩散可行性](research_notes/2026-11-25-spectral-diffusion-feasibility.md)。已归档时域/频域、空域/图谱及双频域架构、风险与分阶段对照；本机用已有p14开发残差完成1384个72小时站点窗的谱诊断和不规则Fourier/GFT代数核验。该结果不代表新频域网络训练收益。
 
 方法依据：[已有时序扩散与本项目的对照](research_notes/2026-11-25-temporal-diffusion-comparison.md)。核对TimeGrad、CSDI、TMDM、CorrDiff、GenCast等8项工作，明确当前固定AR创新方案与条件动态的差别；动态转移和条件尺度属于新增待验证消融。

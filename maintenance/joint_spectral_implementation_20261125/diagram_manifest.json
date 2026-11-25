@@ -1,0 +1,1691 @@
+{
+  "status": "IMPLEMENTED_MODELS_NOT_FORMAL_GAIN_CLAIM",
+  "figures": [
+    {
+      "id": "overview",
+      "title": "已实现的时空基础场与频域概率实验",
+      "nodes": [
+        {
+          "id": "0",
+          "x": 50,
+          "y": 88,
+          "width": 90,
+          "height": 9,
+          "text": "连续条件站ZWD／T／P＋mask／age＋地形／海岸距离\n2016–2018拟合；2019内部诊断；按物理组五折",
+          "role": "neutral"
+        },
+        {
+          "id": "1",
+          "x": 50,
+          "y": 76,
+          "width": 90,
+          "height": 9,
+          "text": "T0–T5：p14结构＋因果72小时Transformer\n16×16状态按物理投影坐标融入两级空间解码器",
+          "role": "time"
+        },
+        {
+          "id": "2",
+          "x": 50,
+          "y": 64,
+          "width": 90,
+          "height": 9,
+          "text": "冻结五折基础场 → 单折、单布局、连续6小时残差\n共享概率G：观测25＋冻结物理均值1＋静态8",
+          "role": "train"
+        },
+        {
+          "id": "3",
+          "x": 50,
+          "y": 52,
+          "width": 90,
+          "height": 9,
+          "text": "L：128维标签集合latent／线性Phi读出\nA：固定256锚点ridge编码／重心H读出；先检查表示门槛",
+          "role": "train"
+        },
+        {
+          "id": "4",
+          "x": 50,
+          "y": 40,
+          "width": 90,
+          "height": 9,
+          "text": "训练统计标准化 → 固定AR创新 → 再标准化\nL0／L1历史谱；A0／A1／A2空域与图谱；B0／B1频带尺度",
+          "role": "sample"
+        },
+        {
+          "id": "5",
+          "x": 50,
+          "y": 28,
+          "width": 90,
+          "height": 9,
+          "text": "J0／J1：独立未来6小时F协议，起点持久性均值\n直接联合／DCT时间×GFT空间；未来观测仅提供标签",
+          "role": "sample"
+        },
+        {
+          "id": "6",
+          "x": 50,
+          "y": 16,
+          "width": 90,
+          "height": 9,
+          "text": "每臂Gaussian控制＋DDIM采样 → AR／表示／物理单位逆变换\n最终场=冻结均值＋生成残差；点值、区间、增量和站对分析",
+          "role": "space"
+        }
+      ],
+      "edges": [
+        {
+          "points": [
+            [
+              50,
+              83.5
+            ],
+            [
+              50,
+              80.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              71.5
+            ],
+            [
+              50,
+              68.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              59.5
+            ],
+            [
+              50,
+              56.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              47.5
+            ],
+            [
+              50,
+              44.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              35.5
+            ],
+            [
+              50,
+              32.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              23.5
+            ],
+            [
+              50,
+              20.5
+            ]
+          ],
+          "dashed": false
+        }
+      ],
+      "status": "IMPLEMENTED_ENGINEERING_PILOT",
+      "text_bounds": "PASS"
+    },
+    {
+      "id": "foundation",
+      "title": "T0–T5：基础场端到端计算路径",
+      "nodes": [
+        {
+          "id": "0",
+          "x": 50,
+          "y": 88,
+          "width": 90,
+          "height": 9,
+          "text": "当前与历史条件站固定集合 → 113维点特征＋30通道大支撑\n参考场：p14＋海岸地形边消息／FiLM／点修正",
+          "role": "space"
+        },
+        {
+          "id": "1",
+          "x": 50,
+          "y": 76,
+          "width": 90,
+          "height": 9,
+          "text": "72h×16×16×25动态摘要，另有静态8\n25→64；两层逐帧3×3空间运算＋逐位置四头因果时间注意力",
+          "role": "time"
+        },
+        {
+          "id": "2",
+          "x": 50,
+          "y": 64,
+          "width": 90,
+          "height": 9,
+          "text": "T0旧8×8相加；T1新16×16直接相加\nT2双层融合；T3加门控；T4加空间时间交替；T5加静态FiLM",
+          "role": "time"
+        },
+        {
+          "id": "3",
+          "x": 50,
+          "y": 52,
+          "width": 90,
+          "height": 9,
+          "text": "T2–T5：按投影坐标查询时间状态，边界延拓\nF0(16)+T0(16)+S0(8)→40→16；低层72→32",
+          "role": "space"
+        },
+        {
+          "id": "4",
+          "x": 50,
+          "y": 40,
+          "width": 90,
+          "height": 9,
+          "text": "低层上采样＋高层skip：48→16；T5静态FiLM\n零初始化1×1头；门控42→16→1，初始偏置−2",
+          "role": "space"
+        },
+        {
+          "id": "5",
+          "x": 50,
+          "y": 28,
+          "width": 90,
+          "height": 9,
+          "text": "按固定支撑连续查询：mu=参考场＋g×时间修正\nsurface ZWD归一化单位；物理反归一化只做一次",
+          "role": "space"
+        },
+        {
+          "id": "6",
+          "x": 50,
+          "y": 16,
+          "width": 90,
+          "height": 9,
+          "text": "连续小时训练：MSE＋0.1×小时增量MSE\n折外模型从头训练，排除该折所有年份标签／条件／统计",
+          "role": "train"
+        }
+      ],
+      "edges": [
+        {
+          "points": [
+            [
+              50,
+              83.5
+            ],
+            [
+              50,
+              80.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              71.5
+            ],
+            [
+              50,
+              68.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              59.5
+            ],
+            [
+              50,
+              56.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              47.5
+            ],
+            [
+              50,
+              44.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              35.5
+            ],
+            [
+              50,
+              32.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              23.5
+            ],
+            [
+              50,
+              20.5
+            ]
+          ],
+          "dashed": false
+        }
+      ],
+      "status": "IMPLEMENTED_ENGINEERING_PILOT",
+      "text_bounds": "PASS"
+    },
+    {
+      "id": "L0",
+      "title": "L0：latent时间条件控制",
+      "nodes": [
+        {
+          "id": "0",
+          "x": 50,
+          "y": 88,
+          "width": 90,
+          "height": 9,
+          "text": "允许的条件站72小时连续历史＋地形与海岸\n每帧只使用该帧及过去信息，真实目标历史不进入G",
+          "role": "neutral"
+        },
+        {
+          "id": "1",
+          "x": 50,
+          "y": 76,
+          "width": 90,
+          "height": 9,
+          "text": "冻结折外基础场 → 残差mm → 训练b／s标准化\n128维集合latent，冻结Phi(q,c)线性读出",
+          "role": "train"
+        },
+        {
+          "id": "2",
+          "x": 50,
+          "y": 64,
+          "width": 90,
+          "height": 9,
+          "text": "编码状态逐通道标准化 → 固定AR创新 → 创新标准化\n对应家族训练／2019重构门槛＋遮标签空间检查",
+          "role": "train"
+        },
+        {
+          "id": "3",
+          "x": 50,
+          "y": 52,
+          "width": 90,
+          "height": 9,
+          "text": "空间token去噪；共享因果G，无额外谱条件\n一份x_k、一份epsilon、一条反向采样链",
+          "role": "sample"
+        },
+        {
+          "id": "4",
+          "x": 50,
+          "y": 40,
+          "width": 90,
+          "height": 9,
+          "text": "每8值一个token→128维；两层四头、FF256\n每层读4×4空间记忆cross-attention＋扩散步与小时标识",
+          "role": "time"
+        },
+        {
+          "id": "5",
+          "x": 50,
+          "y": 28,
+          "width": 90,
+          "height": 9,
+          "text": "100级余弦epsilon训练／20步DDIM；同条件Gaussian控制\n生成的每个成员独立AR递推，6小时块边界重置",
+          "role": "sample"
+        },
+        {
+          "id": "6",
+          "x": 50,
+          "y": 16,
+          "width": 90,
+          "height": 9,
+          "text": "逆频带／双频域 → AR逆变换 → latent或锚点读出\n残差反标准化＋冻结均值→ZWD集合→RMSE／fair CRPS等",
+          "role": "space"
+        }
+      ],
+      "edges": [
+        {
+          "points": [
+            [
+              50,
+              83.5
+            ],
+            [
+              50,
+              80.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              71.5
+            ],
+            [
+              50,
+              68.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              59.5
+            ],
+            [
+              50,
+              56.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              47.5
+            ],
+            [
+              50,
+              44.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              35.5
+            ],
+            [
+              50,
+              32.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              23.5
+            ],
+            [
+              50,
+              20.5
+            ]
+          ],
+          "dashed": false
+        }
+      ],
+      "status": "IMPLEMENTED_ENGINEERING_PILOT",
+      "text_bounds": "PASS"
+    },
+    {
+      "id": "L1",
+      "title": "L1：latent历史谱条件",
+      "nodes": [
+        {
+          "id": "0",
+          "x": 50,
+          "y": 88,
+          "width": 90,
+          "height": 9,
+          "text": "允许的条件站72小时连续历史＋地形与海岸\n每帧只使用该帧及过去信息，真实目标历史不进入G",
+          "role": "neutral"
+        },
+        {
+          "id": "1",
+          "x": 50,
+          "y": 76,
+          "width": 90,
+          "height": 9,
+          "text": "冻结折外基础场 → 残差mm → 训练b／s标准化\n同L0的128维集合latent与冻结Phi",
+          "role": "train"
+        },
+        {
+          "id": "2",
+          "x": 50,
+          "y": 64,
+          "width": 90,
+          "height": 9,
+          "text": "编码状态逐通道标准化 → 固定AR创新 → 创新标准化\n对应家族训练／2019重构门槛＋遮标签空间检查",
+          "role": "train"
+        },
+        {
+          "id": "3",
+          "x": 50,
+          "y": 52,
+          "width": 90,
+          "height": 9,
+          "text": "G＋过去72h缺测LS正余弦／功率／覆盖率\n一份x_k、一份epsilon、一条反向采样链",
+          "role": "sample"
+        },
+        {
+          "id": "4",
+          "x": 50,
+          "y": 40,
+          "width": 90,
+          "height": 9,
+          "text": "每8值一个token→128维；两层四头、FF256\n每层读4×4空间记忆cross-attention＋扩散步与小时标识",
+          "role": "time"
+        },
+        {
+          "id": "5",
+          "x": 50,
+          "y": 28,
+          "width": 90,
+          "height": 9,
+          "text": "100级余弦epsilon训练／20步DDIM；同条件Gaussian控制\n生成的每个成员独立AR递推，6小时块边界重置",
+          "role": "sample"
+        },
+        {
+          "id": "6",
+          "x": 50,
+          "y": 16,
+          "width": 90,
+          "height": 9,
+          "text": "逆频带／双频域 → AR逆变换 → latent或锚点读出\n残差反标准化＋冻结均值→ZWD集合→RMSE／fair CRPS等",
+          "role": "space"
+        }
+      ],
+      "edges": [
+        {
+          "points": [
+            [
+              50,
+              83.5
+            ],
+            [
+              50,
+              80.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              71.5
+            ],
+            [
+              50,
+              68.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              59.5
+            ],
+            [
+              50,
+              56.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              47.5
+            ],
+            [
+              50,
+              44.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              35.5
+            ],
+            [
+              50,
+              32.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              23.5
+            ],
+            [
+              50,
+              20.5
+            ]
+          ],
+          "dashed": false
+        }
+      ],
+      "status": "IMPLEMENTED_ENGINEERING_PILOT",
+      "text_bounds": "PASS"
+    },
+    {
+      "id": "A0",
+      "title": "A0：固定锚点空间域",
+      "nodes": [
+        {
+          "id": "0",
+          "x": 50,
+          "y": 88,
+          "width": 90,
+          "height": 9,
+          "text": "允许的条件站72小时连续历史＋地形与海岸\n每帧只使用该帧及过去信息，真实目标历史不进入G",
+          "role": "neutral"
+        },
+        {
+          "id": "1",
+          "x": 50,
+          "y": 76,
+          "width": 90,
+          "height": 9,
+          "text": "冻结折外基础场 → 残差mm → 训练b／s标准化\n256锚点同一H、ridge、标准化与AR",
+          "role": "train"
+        },
+        {
+          "id": "2",
+          "x": 50,
+          "y": 64,
+          "width": 90,
+          "height": 9,
+          "text": "编码状态逐通道标准化 → 固定AR创新 → 创新标准化\n对应家族训练／2019重构门槛＋遮标签空间检查",
+          "role": "train"
+        },
+        {
+          "id": "3",
+          "x": 50,
+          "y": 52,
+          "width": 90,
+          "height": 9,
+          "text": "空间token去噪；噪声状态仍为同一创新x_k\n一份x_k、一份epsilon、一条反向采样链",
+          "role": "sample"
+        },
+        {
+          "id": "4",
+          "x": 50,
+          "y": 40,
+          "width": 90,
+          "height": 9,
+          "text": "每8值一个token→128维；两层四头、FF256\n每层读4×4空间记忆cross-attention＋扩散步与小时标识",
+          "role": "time"
+        },
+        {
+          "id": "5",
+          "x": 50,
+          "y": 28,
+          "width": 90,
+          "height": 9,
+          "text": "100级余弦epsilon训练／20步DDIM；同条件Gaussian控制\n生成的每个成员独立AR递推，6小时块边界重置",
+          "role": "sample"
+        },
+        {
+          "id": "6",
+          "x": 50,
+          "y": 16,
+          "width": 90,
+          "height": 9,
+          "text": "逆频带／双频域 → AR逆变换 → latent或锚点读出\n残差反标准化＋冻结均值→ZWD集合→RMSE／fair CRPS等",
+          "role": "space"
+        }
+      ],
+      "edges": [
+        {
+          "points": [
+            [
+              50,
+              83.5
+            ],
+            [
+              50,
+              80.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              71.5
+            ],
+            [
+              50,
+              68.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              59.5
+            ],
+            [
+              50,
+              56.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              47.5
+            ],
+            [
+              50,
+              44.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              35.5
+            ],
+            [
+              50,
+              32.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              23.5
+            ],
+            [
+              50,
+              20.5
+            ]
+          ],
+          "dashed": false
+        }
+      ],
+      "status": "IMPLEMENTED_ENGINEERING_PILOT",
+      "text_bounds": "PASS"
+    },
+    {
+      "id": "A1",
+      "title": "A1：固定锚点图谱域",
+      "nodes": [
+        {
+          "id": "0",
+          "x": 50,
+          "y": 88,
+          "width": 90,
+          "height": 9,
+          "text": "允许的条件站72小时连续历史＋地形与海岸\n每帧只使用该帧及过去信息，真实目标历史不进入G",
+          "role": "neutral"
+        },
+        {
+          "id": "1",
+          "x": 50,
+          "y": 76,
+          "width": 90,
+          "height": 9,
+          "text": "冻结折外基础场 → 残差mm → 训练b／s标准化\n同A0的256锚点及完整正交U",
+          "role": "train"
+        },
+        {
+          "id": "2",
+          "x": 50,
+          "y": 64,
+          "width": 90,
+          "height": 9,
+          "text": "编码状态逐通道标准化 → 固定AR创新 → 创新标准化\n对应家族训练／2019重构门槛＋遮标签空间检查",
+          "role": "train"
+        },
+        {
+          "id": "3",
+          "x": 50,
+          "y": 52,
+          "width": 90,
+          "height": 9,
+          "text": "x_k→U转图谱→谱token去噪→U逆变换\n一份x_k、一份epsilon、一条反向采样链",
+          "role": "sample"
+        },
+        {
+          "id": "4",
+          "x": 50,
+          "y": 40,
+          "width": 90,
+          "height": 9,
+          "text": "每8值一个token→128维；两层四头、FF256\n每层读4×4空间记忆cross-attention＋扩散步与小时标识",
+          "role": "time"
+        },
+        {
+          "id": "5",
+          "x": 50,
+          "y": 28,
+          "width": 90,
+          "height": 9,
+          "text": "100级余弦epsilon训练／20步DDIM；同条件Gaussian控制\n生成的每个成员独立AR递推，6小时块边界重置",
+          "role": "sample"
+        },
+        {
+          "id": "6",
+          "x": 50,
+          "y": 16,
+          "width": 90,
+          "height": 9,
+          "text": "逆频带／双频域 → AR逆变换 → latent或锚点读出\n残差反标准化＋冻结均值→ZWD集合→RMSE／fair CRPS等",
+          "role": "space"
+        }
+      ],
+      "edges": [
+        {
+          "points": [
+            [
+              50,
+              83.5
+            ],
+            [
+              50,
+              80.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              71.5
+            ],
+            [
+              50,
+              68.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              59.5
+            ],
+            [
+              50,
+              56.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              47.5
+            ],
+            [
+              50,
+              44.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              35.5
+            ],
+            [
+              50,
+              32.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              23.5
+            ],
+            [
+              50,
+              20.5
+            ]
+          ],
+          "dashed": false
+        }
+      ],
+      "status": "IMPLEMENTED_ENGINEERING_PILOT",
+      "text_bounds": "PASS"
+    },
+    {
+      "id": "A2",
+      "title": "A2：固定锚点空间图谱联合",
+      "nodes": [
+        {
+          "id": "0",
+          "x": 50,
+          "y": 88,
+          "width": 90,
+          "height": 9,
+          "text": "允许的条件站72小时连续历史＋地形与海岸\n每帧只使用该帧及过去信息，真实目标历史不进入G",
+          "role": "neutral"
+        },
+        {
+          "id": "1",
+          "x": 50,
+          "y": 76,
+          "width": 90,
+          "height": 9,
+          "text": "冻结折外基础场 → 残差mm → 训练b／s标准化\n同A0的256锚点、H、统计、AR",
+          "role": "train"
+        },
+        {
+          "id": "2",
+          "x": 50,
+          "y": 64,
+          "width": 90,
+          "height": 9,
+          "text": "编码状态逐通道标准化 → 固定AR创新 → 创新标准化\n对应家族训练／2019重构门槛＋遮标签空间检查",
+          "role": "train"
+        },
+        {
+          "id": "3",
+          "x": 50,
+          "y": 52,
+          "width": 90,
+          "height": 9,
+          "text": "同一个x_k→空间／GFT两分支→共同坐标融合→一个epsilon\n一份x_k、一份epsilon、一条反向采样链",
+          "role": "sample"
+        },
+        {
+          "id": "4",
+          "x": 50,
+          "y": 40,
+          "width": 90,
+          "height": 9,
+          "text": "每8值一个token→128维；两层四头、FF256\n每层读4×4空间记忆cross-attention＋扩散步与小时标识",
+          "role": "time"
+        },
+        {
+          "id": "5",
+          "x": 50,
+          "y": 28,
+          "width": 90,
+          "height": 9,
+          "text": "100级余弦epsilon训练／20步DDIM；同条件Gaussian控制\n生成的每个成员独立AR递推，6小时块边界重置",
+          "role": "sample"
+        },
+        {
+          "id": "6",
+          "x": 50,
+          "y": 16,
+          "width": 90,
+          "height": 9,
+          "text": "逆频带／双频域 → AR逆变换 → latent或锚点读出\n残差反标准化＋冻结均值→ZWD集合→RMSE／fair CRPS等",
+          "role": "space"
+        }
+      ],
+      "edges": [
+        {
+          "points": [
+            [
+              50,
+              83.5
+            ],
+            [
+              50,
+              80.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              71.5
+            ],
+            [
+              50,
+              68.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              59.5
+            ],
+            [
+              50,
+              56.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              47.5
+            ],
+            [
+              50,
+              44.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              35.5
+            ],
+            [
+              50,
+              32.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              23.5
+            ],
+            [
+              50,
+              20.5
+            ]
+          ],
+          "dashed": false
+        }
+      ],
+      "status": "IMPLEMENTED_ENGINEERING_PILOT",
+      "text_bounds": "PASS"
+    },
+    {
+      "id": "B0",
+      "title": "B0：双域无频带缩放控制",
+      "nodes": [
+        {
+          "id": "0",
+          "x": 50,
+          "y": 88,
+          "width": 90,
+          "height": 9,
+          "text": "允许的条件站72小时连续历史＋地形与海岸\n每帧只使用该帧及过去信息，真实目标历史不进入G",
+          "role": "neutral"
+        },
+        {
+          "id": "1",
+          "x": 50,
+          "y": 76,
+          "width": 90,
+          "height": 9,
+          "text": "冻结折外基础场 → 残差mm → 训练b／s标准化\n与A2相同；作为可复算重复控制",
+          "role": "train"
+        },
+        {
+          "id": "2",
+          "x": 50,
+          "y": 64,
+          "width": 90,
+          "height": 9,
+          "text": "编码状态逐通道标准化 → 固定AR创新 → 创新标准化\n对应家族训练／2019重构门槛＋遮标签空间检查",
+          "role": "train"
+        },
+        {
+          "id": "3",
+          "x": 50,
+          "y": 52,
+          "width": 90,
+          "height": 9,
+          "text": "空间／图谱双分支；标准创新坐标加白噪声\n一份x_k、一份epsilon、一条反向采样链",
+          "role": "sample"
+        },
+        {
+          "id": "4",
+          "x": 50,
+          "y": 40,
+          "width": 90,
+          "height": 9,
+          "text": "每8值一个token→128维；两层四头、FF256\n每层读4×4空间记忆cross-attention＋扩散步与小时标识",
+          "role": "time"
+        },
+        {
+          "id": "5",
+          "x": 50,
+          "y": 28,
+          "width": 90,
+          "height": 9,
+          "text": "100级余弦epsilon训练／20步DDIM；同条件Gaussian控制\n生成的每个成员独立AR递推，6小时块边界重置",
+          "role": "sample"
+        },
+        {
+          "id": "6",
+          "x": 50,
+          "y": 16,
+          "width": 90,
+          "height": 9,
+          "text": "逆频带／双频域 → AR逆变换 → latent或锚点读出\n残差反标准化＋冻结均值→ZWD集合→RMSE／fair CRPS等",
+          "role": "space"
+        }
+      ],
+      "edges": [
+        {
+          "points": [
+            [
+              50,
+              83.5
+            ],
+            [
+              50,
+              80.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              71.5
+            ],
+            [
+              50,
+              68.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              59.5
+            ],
+            [
+              50,
+              56.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              47.5
+            ],
+            [
+              50,
+              44.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              35.5
+            ],
+            [
+              50,
+              32.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              23.5
+            ],
+            [
+              50,
+              20.5
+            ]
+          ],
+          "dashed": false
+        }
+      ],
+      "status": "IMPLEMENTED_ENGINEERING_PILOT",
+      "text_bounds": "PASS"
+    },
+    {
+      "id": "B1",
+      "title": "B1：双域频带标准化",
+      "nodes": [
+        {
+          "id": "0",
+          "x": 50,
+          "y": 88,
+          "width": 90,
+          "height": 9,
+          "text": "允许的条件站72小时连续历史＋地形与海岸\n每帧只使用该帧及过去信息，真实目标历史不进入G",
+          "role": "neutral"
+        },
+        {
+          "id": "1",
+          "x": 50,
+          "y": 76,
+          "width": 90,
+          "height": 9,
+          "text": "冻结折外基础场 → 残差mm → 训练b／s标准化\n图频创新按训练均值／尺度标准化，保存逆变换",
+          "role": "train"
+        },
+        {
+          "id": "2",
+          "x": 50,
+          "y": 64,
+          "width": 90,
+          "height": 9,
+          "text": "编码状态逐通道标准化 → 固定AR创新 → 创新标准化\n对应家族训练／2019重构门槛＋遮标签空间检查",
+          "role": "train"
+        },
+        {
+          "id": "3",
+          "x": 50,
+          "y": 52,
+          "width": 90,
+          "height": 9,
+          "text": "白噪声加在标准化频带状态；空间分支显式可逆映射\n一份x_k、一份epsilon、一条反向采样链",
+          "role": "sample"
+        },
+        {
+          "id": "4",
+          "x": 50,
+          "y": 40,
+          "width": 90,
+          "height": 9,
+          "text": "每8值一个token→128维；两层四头、FF256\n每层读4×4空间记忆cross-attention＋扩散步与小时标识",
+          "role": "time"
+        },
+        {
+          "id": "5",
+          "x": 50,
+          "y": 28,
+          "width": 90,
+          "height": 9,
+          "text": "100级余弦epsilon训练／20步DDIM；同条件Gaussian控制\n生成的每个成员独立AR递推，6小时块边界重置",
+          "role": "sample"
+        },
+        {
+          "id": "6",
+          "x": 50,
+          "y": 16,
+          "width": 90,
+          "height": 9,
+          "text": "逆频带／双频域 → AR逆变换 → latent或锚点读出\n残差反标准化＋冻结均值→ZWD集合→RMSE／fair CRPS等",
+          "role": "space"
+        }
+      ],
+      "edges": [
+        {
+          "points": [
+            [
+              50,
+              83.5
+            ],
+            [
+              50,
+              80.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              71.5
+            ],
+            [
+              50,
+              68.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              59.5
+            ],
+            [
+              50,
+              56.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              47.5
+            ],
+            [
+              50,
+              44.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              35.5
+            ],
+            [
+              50,
+              32.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              23.5
+            ],
+            [
+              50,
+              20.5
+            ]
+          ],
+          "dashed": false
+        }
+      ],
+      "status": "IMPLEMENTED_ENGINEERING_PILOT",
+      "text_bounds": "PASS"
+    },
+    {
+      "id": "J0",
+      "title": "J0：未来六小时直接联合",
+      "nodes": [
+        {
+          "id": "0",
+          "x": 50,
+          "y": 88,
+          "width": 90,
+          "height": 9,
+          "text": "允许的条件站72小时连续历史＋地形与海岸\n起点冻结，未来观测不进入G或未来均值",
+          "role": "neutral"
+        },
+        {
+          "id": "1",
+          "x": 50,
+          "y": 76,
+          "width": 90,
+          "height": 9,
+          "text": "冻结折外基础场 → 残差mm → 训练b／s标准化\n起点72h历史与起点持久性均值，未来标签仅在训练侧",
+          "role": "train"
+        },
+        {
+          "id": "2",
+          "x": 50,
+          "y": 64,
+          "width": 90,
+          "height": 9,
+          "text": "编码状态逐通道标准化 → 固定AR创新 → 创新标准化\n对应家族训练／2019重构门槛＋遮标签空间检查",
+          "role": "train"
+        },
+        {
+          "id": "3",
+          "x": 50,
+          "y": 52,
+          "width": 90,
+          "height": 9,
+          "text": "6×256创新展开1536维；联合去噪，起点条件不更新\n一份x_k、一份epsilon、一条反向采样链",
+          "role": "sample"
+        },
+        {
+          "id": "4",
+          "x": 50,
+          "y": 40,
+          "width": 90,
+          "height": 9,
+          "text": "每8值一个token→128维；两层四头、FF256\n每层读4×4空间记忆cross-attention＋扩散步与小时标识",
+          "role": "time"
+        },
+        {
+          "id": "5",
+          "x": 50,
+          "y": 28,
+          "width": 90,
+          "height": 9,
+          "text": "100级余弦epsilon训练／20步DDIM；同条件Gaussian控制\n生成的每个成员独立AR递推，6小时块边界重置",
+          "role": "sample"
+        },
+        {
+          "id": "6",
+          "x": 50,
+          "y": 16,
+          "width": 90,
+          "height": 9,
+          "text": "逆频带／双频域 → AR逆变换 → latent或锚点读出\n残差反标准化＋冻结均值→ZWD集合→RMSE／fair CRPS等",
+          "role": "space"
+        }
+      ],
+      "edges": [
+        {
+          "points": [
+            [
+              50,
+              83.5
+            ],
+            [
+              50,
+              80.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              71.5
+            ],
+            [
+              50,
+              68.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              59.5
+            ],
+            [
+              50,
+              56.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              47.5
+            ],
+            [
+              50,
+              44.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              35.5
+            ],
+            [
+              50,
+              32.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              23.5
+            ],
+            [
+              50,
+              20.5
+            ]
+          ],
+          "dashed": false
+        }
+      ],
+      "status": "IMPLEMENTED_ENGINEERING_PILOT",
+      "text_bounds": "PASS"
+    },
+    {
+      "id": "J1",
+      "title": "J1：未来六小时双频域联合",
+      "nodes": [
+        {
+          "id": "0",
+          "x": 50,
+          "y": 88,
+          "width": 90,
+          "height": 9,
+          "text": "允许的条件站72小时连续历史＋地形与海岸\n起点冻结，未来观测不进入G或未来均值",
+          "role": "neutral"
+        },
+        {
+          "id": "1",
+          "x": 50,
+          "y": 76,
+          "width": 90,
+          "height": 9,
+          "text": "冻结折外基础场 → 残差mm → 训练b／s标准化\n同J0的起点信息与1536维创新，完整可逆DCT×GFT",
+          "role": "train"
+        },
+        {
+          "id": "2",
+          "x": 50,
+          "y": 64,
+          "width": 90,
+          "height": 9,
+          "text": "编码状态逐通道标准化 → 固定AR创新 → 创新标准化\n对应家族训练／2019重构门槛＋遮标签空间检查",
+          "role": "train"
+        },
+        {
+          "id": "3",
+          "x": 50,
+          "y": 52,
+          "width": 90,
+          "height": 9,
+          "text": "DCT时间×GFT空间 → 联合去噪 → 双域逆变换\n一份x_k、一份epsilon、一条反向采样链",
+          "role": "sample"
+        },
+        {
+          "id": "4",
+          "x": 50,
+          "y": 40,
+          "width": 90,
+          "height": 9,
+          "text": "每8值一个token→128维；两层四头、FF256\n每层读4×4空间记忆cross-attention＋扩散步与小时标识",
+          "role": "time"
+        },
+        {
+          "id": "5",
+          "x": 50,
+          "y": 28,
+          "width": 90,
+          "height": 9,
+          "text": "100级余弦epsilon训练／20步DDIM；同条件Gaussian控制\n生成的每个成员独立AR递推，6小时块边界重置",
+          "role": "sample"
+        },
+        {
+          "id": "6",
+          "x": 50,
+          "y": 16,
+          "width": 90,
+          "height": 9,
+          "text": "逆频带／双频域 → AR逆变换 → latent或锚点读出\n残差反标准化＋冻结均值→ZWD集合→RMSE／fair CRPS等",
+          "role": "space"
+        }
+      ],
+      "edges": [
+        {
+          "points": [
+            [
+              50,
+              83.5
+            ],
+            [
+              50,
+              80.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              71.5
+            ],
+            [
+              50,
+              68.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              59.5
+            ],
+            [
+              50,
+              56.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              47.5
+            ],
+            [
+              50,
+              44.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              35.5
+            ],
+            [
+              50,
+              32.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              23.5
+            ],
+            [
+              50,
+              20.5
+            ]
+          ],
+          "dashed": false
+        }
+      ],
+      "status": "IMPLEMENTED_ENGINEERING_PILOT",
+      "text_bounds": "PASS"
+    }
+  ],
+  "generator_sha256": "e733492f76901baa5d7b6365e869d2b13834c6999f42221b0152ff1dd65a4fc3",
+  "outputs": {
+    "A0.png": "4ace52d71a7ffdcaf13097c6021ceb35be07ab5130bf6c2901ae97ea1c0a4d82",
+    "A0.svg": "a75717d6e184b3b8ff69d60c3e7ecf06faad5bf7d8af486b2f7e6b8152c681f6",
+    "A1.png": "a9c5ba349d92c34b885f8d334795ed46366effef675ac477dd5683948db86610",
+    "A1.svg": "92090ad74cdc56d45273317a8069ce8d25c0060ff973a350b435ae601347f0fe",
+    "A2.png": "1c61a67abe2b8fc31f6bdbb74e07e697f481ffd54d10be2aa6a60ce7a7f5aedb",
+    "A2.svg": "ea6a963055a204bc0cc3da96baf1f005d09981beda5d975d99b9252290b3d445",
+    "B0.png": "c2e5c024012f14a5359e947fdeab72f27e062f6e93cc9baae543845650b880b8",
+    "B0.svg": "787364be7297aad5097a1cdcbab7cdcf776362a0fc2c70409f968d853be28f1b",
+    "B1.png": "ea74e28a991114120db123c9c105628485d7afc7ead05667c64e65ba126a1c0f",
+    "B1.svg": "11c51a54a6754020fba8f6296ac2634a13b90fdefe88cf53d9232e5eaee7e1d9",
+    "foundation.png": "246890717c68092794c99ab77618614ffd011277d407b224c80786a724202ab3",
+    "foundation.svg": "aeeb8807977b2c75b994dca052ee8169a8cb9e242c787f69be69d630d00bd013",
+    "J0.png": "bbe7efe1c89af22774efadd33ef3406d4138d1871ee9c303a4014557e7f9acb1",
+    "J0.svg": "e8f75a3e47d0dcf8d58814f9b5ab845a039a6dc4d6f363e803f1e573ad247d16",
+    "J1.png": "0866be933d7cb522905110b87bdad5806d0c316a014f0fd8cb368f8dae72938a",
+    "J1.svg": "f288407688ebdfa8fa2a57400eb631967f7dbc4b5fb4a7e04ec9405125adceca",
+    "L0.png": "1f141d69bd3d883cea89f7071ddddd967441fd0c507350e978bc0618786b61bd",
+    "L0.svg": "0ce8fc3d3f58781c7d314612f93dc3fecefbb90de0a172c2ab4c7b96d61d194e",
+    "L1.png": "803890ee8e1bec50a8649fa1ddde40a53b38c8ce2f8c56b94664ef214b2a155b",
+    "L1.svg": "3f5077c19d3c412627f8de5134d778a4c0ca87a01baf4899799d55728d76e965",
+    "overview.png": "f89f280c6d5f25e119b06a4b8d618df7230759b8a3a23f5e29b2827aa0996c3f",
+    "overview.svg": "69149de4967727a8c0dbb49edabb9c80ea6e86e37f97c676b392bea247098c03"
+  }
+}

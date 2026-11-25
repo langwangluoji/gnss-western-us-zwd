@@ -1,6 +1,6 @@
 # 当前区域实验索引
 
-下一阶段设计与执行顺序见 [NEXT_STAGE.md](NEXT_STAGE.md)。首轮连续融合已完成，新掩码Transformer融合架构属于设计阶段，不加入已完成实验排名。
+下一阶段设计与执行顺序见 [NEXT_STAGE.md](NEXT_STAGE.md)。首轮连续融合已完成，新掩码Transformer及L/A/B/J已实现，修正版本机工程验证见[实现入口](research_notes/2026-11-25-joint-spectral-implementation.md)，不加入正式模型精度排名。
 
 以完整实验目录和锁文件定位。目录日期是实验标识，不代表评价数据年份；状态仅转录现有文件，不推断科学成功。最新主结论见 [CURRENT_RESEARCH.md](CURRENT_RESEARCH.md)。
 
