@@ -78,6 +78,15 @@ chain('warm_10mm','精度主线：在既有约10mm模型上追加时空融合',[
     ('原2020每月72小时×3布局×137登记开发站配对\n宏／微RMSE、增量、季节、距离、地形与海岸共同评价','neutral'),
     ('候选优于旧模型后再进入新基础场残差生成\n未改善则按诊断继续调整；严格OOF另行交叉拟合','sample')],subtitle='已实现并启动3000步训练 · 既有精度作为比较基准 · 尚无新增正式收益结论')
 
+chain('query_10mm','查询级时间融合：直接改进既有约10mm参考场',[
+    ('冻结旧GRU＋p14全部输出mu_ref，保留原8×8历史\n原归一化、点特征113、静态地形海岸9与条件站集合','space'),
+    ('同一条件站72小时×16×16动态25＋静态8\n两层空间时间交替／四头因果Transformer → H64','time'),
+    ('按每个真实查询坐标采样H(q)，64维LayerNorm\n采样与点解码不依赖其它查询，保持查询集合不变性','time'),
+    ('concat[点113，静态9，时间64，mu_ref1]＝187\n187→64→64→1查询残差MLP，末层严格零初始化','space'),
+    ('以物理5mm信赖范围约束修正：delta＝5·tanh(raw／5)\nmu(q,t)＝mu_ref＋delta；初始化严格复现旧模型','space'),
+    ('2016–2019连续12小时批／3000步／seed42、17\n新增lr1e-4；最终raw及EMA0.999从同一训练轨迹获得','train'),
+    ('原2020月度72h×3布局×137开发站配对\n检验宏微RMSE／增量及月份区间，未改善则继续调整','neutral')],subtitle='已实现并开始3000步训练 · raw／EMA预先登记 · 比较队列与旧10mm模型一致')
+
 manifest=dict(status='IMPLEMENTED_MODELS_NOT_FORMAL_GAIN_CLAIM',figures=figures,
     generator_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
     outputs={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in draw.OUT.iterdir() if p.is_file()})

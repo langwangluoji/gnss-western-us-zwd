@@ -17,5 +17,24 @@
       "station_count": 135,
       "valid_count": 327330
     }
+  },
+  {
+    "seed": 42,
+    "case": "T2_frozen",
+    "steps": 3000,
+    "metrics": {
+      "macro_rmse_mm": 9.996575646295726,
+      "micro_rmse_mm": 10.522058486938477,
+      "mae_mm": 7.7049736976623535,
+      "bias_mm": 0.43462976813316345,
+      "increment_macro_rmse_mm": 5.583300058473405,
+      "layout_macro_rmse_mm": [
+        10.118660647740462,
+        10.108654107321797,
+        9.762412183824923
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
   }
 ]

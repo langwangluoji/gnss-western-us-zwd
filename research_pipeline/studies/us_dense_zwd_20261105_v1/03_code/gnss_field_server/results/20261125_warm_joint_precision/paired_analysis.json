@@ -1,5 +1,18 @@
 {
-  "paired": [],
+  "paired": [
+    {
+      "case": "T2_frozen",
+      "seed": 42,
+      "delta_macro_rmse_mm": -0.0017812294763377423,
+      "monthly_paired_bootstrap95_mm": [
+        -0.010852978929249125,
+        0.0069303303186123415
+      ],
+      "delta_micro_rmse_mm": -0.005150794982910156,
+      "cohort": "same2020monthly72h x3layouts; development-exposed",
+      "resampling": "12 month blocks paired over layouts/hours/stations;1000replicates"
+    }
+  ],
   "seed_means": [],
   "reference_replication_max_mm": {
     "42": 7.62939453125e-06

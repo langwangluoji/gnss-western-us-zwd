@@ -5,6 +5,12 @@
       "seed": 42,
       "max_metric_difference_mm": 0.0,
       "sha256": "9b6ced5546fa6dfe8056d2d50632779dd1b0466d3466f532b95f3753086973e9"
+    },
+    {
+      "case": "T2_frozen",
+      "seed": 42,
+      "max_metric_difference_mm": 0.0,
+      "sha256": "2e7b4b702b082766972d8be37dcd43492119166eecd26e2f1e4f4e9017c1ed9f"
     }
   ],
   "all_final_metrics_recomputed": true,

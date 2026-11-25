@@ -1,0 +1,20 @@
+{
+  "data_contract_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+  "normalization_and_geometry": {
+    "python": "3.11.13",
+    "torch": "2.8.0+cu129",
+    "cuda": "12.9",
+    "numpy": "2.3.5",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "normalization_source": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261123_terrain_diffusion_v10_data\\data.npz",
+    "normalization_sha256": "6a57285228b043b406ad033212f6d8dbbad2e4755338e74429b1f6a7ac6b5ac5",
+    "dense_geometry_sha256": "a824bd4d6f61c686c1c8a717075f4d8498a95903bb4664c4a0e6f4f8419b7e5b",
+    "reference": "existing full GRU+p14 with exact legacy8x8 and original normalization",
+    "strict_oof": false,
+    "confirmation_C_D_labels_used": false
+  },
+  "zero_initialization_and_query_invariance_test": "1 passed in4.46sec",
+  "full_suite_before_query_addition": "624 passed",
+  "new_parameters_only_ema": true,
+  "formal_accuracy_gain_claim": false
+}
