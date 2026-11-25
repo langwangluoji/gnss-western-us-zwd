@@ -1,0 +1,113 @@
+{
+  "role": "Posthoc fixed-date diagnostics, never checkpoint selection or independent validation",
+  "code_sha256": "f30adf01a63ed0b4160315823bf765732e01668a834035d1293594df1aeb8662",
+  "weight_sha256": "77268a103d83b36345998a6e808e6760de8338ff6785f32d0c6cfdc1139f9372",
+  "source_sha256": "d87223f76df74354dde4ad1f1ab18097880b4a0396b2d5b565bda10000385f3a",
+  "data_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+  "layout": 0,
+  "hours_per_date": 24,
+  "batch_hours": 2,
+  "training_targets_exclude_condition_physical_groups": true,
+  "results": [
+    {
+      "date": "2016-01-08",
+      "role": "training_station_diagnostic",
+      "valid_count": 7710,
+      "reference_micro_rmse_mm": 5.636242608162346,
+      "candidate_micro_rmse_mm": 5.663340350378241,
+      "correction_rms_mm": 0.3528850806116018,
+      "correction_std_mm": 0.33870427405340137,
+      "correction_residual_correlation": -0.08190381269598904
+    },
+    {
+      "date": "2016-07-08",
+      "role": "training_station_diagnostic",
+      "valid_count": 7772,
+      "reference_micro_rmse_mm": 12.99996535594209,
+      "candidate_micro_rmse_mm": 13.019085125058128,
+      "correction_rms_mm": 0.5665874381759423,
+      "correction_std_mm": 0.5577598651636251,
+      "correction_residual_correlation": -0.009394813210070366
+    },
+    {
+      "date": "2017-01-08",
+      "role": "training_station_diagnostic",
+      "valid_count": 7655,
+      "reference_micro_rmse_mm": 7.074757429056742,
+      "candidate_micro_rmse_mm": 7.068989899948663,
+      "correction_rms_mm": 0.491572198731545,
+      "correction_std_mm": 0.46264912843393635,
+      "correction_residual_correlation": 0.09536105421168622
+    },
+    {
+      "date": "2017-07-08",
+      "role": "training_station_diagnostic",
+      "valid_count": 7804,
+      "reference_micro_rmse_mm": 10.65386211668447,
+      "candidate_micro_rmse_mm": 10.574930276004718,
+      "correction_rms_mm": 0.47884745106847315,
+      "correction_std_mm": 0.4616103363645032,
+      "correction_residual_correlation": 0.18390684777713176
+    },
+    {
+      "date": "2018-01-08",
+      "role": "training_station_diagnostic",
+      "valid_count": 7769,
+      "reference_micro_rmse_mm": 9.747836807059532,
+      "candidate_micro_rmse_mm": 9.775775109682394,
+      "correction_rms_mm": 0.49942334838638963,
+      "correction_std_mm": 0.4755905586109458,
+      "correction_residual_correlation": -0.016492753704834107
+    },
+    {
+      "date": "2018-07-08",
+      "role": "training_station_diagnostic",
+      "valid_count": 7822,
+      "reference_micro_rmse_mm": 11.674507992297118,
+      "candidate_micro_rmse_mm": 11.495643728803282,
+      "correction_rms_mm": 0.6005027226984314,
+      "correction_std_mm": 0.527030382835046,
+      "correction_residual_correlation": 0.28016530969220976
+    },
+    {
+      "date": "2019-01-08",
+      "role": "training_station_diagnostic",
+      "valid_count": 7799,
+      "reference_micro_rmse_mm": 7.338097754501497,
+      "candidate_micro_rmse_mm": 7.266618063109035,
+      "correction_rms_mm": 0.4185265613637115,
+      "correction_std_mm": 0.41581082079628107,
+      "correction_residual_correlation": 0.19129232193209195
+    },
+    {
+      "date": "2019-07-08",
+      "role": "training_station_diagnostic",
+      "valid_count": 7622,
+      "reference_micro_rmse_mm": 10.57451154822217,
+      "candidate_micro_rmse_mm": 10.496308885447402,
+      "correction_rms_mm": 0.45912682046376563,
+      "correction_std_mm": 0.45729055549810105,
+      "correction_residual_correlation": 0.18926869644885955
+    },
+    {
+      "date": "2020-01-08",
+      "role": "exposed_2020_development",
+      "valid_count": 3096,
+      "reference_micro_rmse_mm": 9.569044799558437,
+      "candidate_micro_rmse_mm": 9.539815089222497,
+      "correction_rms_mm": 0.24821674633018537,
+      "correction_std_mm": 0.24821288895677374,
+      "correction_residual_correlation": 0.1306030195881036
+    },
+    {
+      "date": "2020-07-08",
+      "role": "exposed_2020_development",
+      "valid_count": 2950,
+      "reference_micro_rmse_mm": 12.008567762886123,
+      "candidate_micro_rmse_mm": 11.996257221742649,
+      "correction_rms_mm": 0.3956994839161077,
+      "correction_std_mm": 0.3911370217465143,
+      "correction_residual_correlation": 0.03581006062552504
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "step": 3000,
+  "epoch": 1,
+  "first_hour": 404279,
+  "last_hour": 404290,
+  "training_block_rmse_mm": 8.767552375793457,
+  "loss": 0.038020845502614975,
+  "seconds": 549.9369999999981
+}

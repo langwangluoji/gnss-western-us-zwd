@@ -1,0 +1,40 @@
+[
+  {
+    "seed": 42,
+    "case": "S_transformer_raw",
+    "steps": 3000,
+    "metrics": {
+      "macro_rmse_mm": 9.995382352700037,
+      "micro_rmse_mm": 10.523992538452148,
+      "mae_mm": 7.70488977432251,
+      "bias_mm": 0.2742140591144562,
+      "increment_macro_rmse_mm": 5.58262840281363,
+      "layout_macro_rmse_mm": [
+        10.118255274118495,
+        10.11370421960186,
+        9.754187564379757
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  },
+  {
+    "seed": 42,
+    "case": "S_transformer_ema",
+    "steps": 3000,
+    "metrics": {
+      "macro_rmse_mm": 9.980218221087714,
+      "micro_rmse_mm": 10.510234832763672,
+      "mae_mm": 7.69392728805542,
+      "bias_mm": 0.1999676525592804,
+      "increment_macro_rmse_mm": 5.580545395577677,
+      "layout_macro_rmse_mm": [
+        10.084671655079303,
+        10.099631670471465,
+        9.756351337712372
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  }
+]

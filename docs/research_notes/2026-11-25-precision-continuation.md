@@ -25,6 +25,10 @@
 
 诊断脚本为`maintenance/joint_spectral_implementation_20261125/precision_diagnostics.py`。其中oracle幅度使用开发真值解释修正方向，属于事后诊断，不用于模型输出或成绩。
 
+原始站点S的seed42最终EMA宏RMSE为9.980218 mm，参考为9.998357 mm，第二种子继续训练。在2020年1月和7月各一个固定2小时窗口中，只移除新增分支的过去71小时信息，输出变化RMS为0.05146/0.02715 mm；原GRU的历史输入保持原样。该结果度量新增路径的输入敏感性，不替代完整时间消融。
+
+容量探针固定2016-07-08连续2小时、82个条件站和其余隐藏物理组，仅在同一训练窗口上优化新增分支200步。CPU上恢复误差由14.00696降至11.23480 mm，说明新增网络能拟合该窗口残差；±5 mm输出约束对应的逐点标签oracle下界为10.61885 mm。该探针使用lr1e-3，检验拟合能力，不进入正式精度表，也不据此判断开发泛化。记录见`results/20261125_native_capacity_probe`。
+
 ## 正在验证的原始站点编码
 
 下一项候选保留每站独立的72小时序列，经因果Transformer后再将局地状态传递给查询点。时间汇总之前保留站点坐标、方向、高差和海岸信息；原U-Net同时提供两个尺度的区域背景。模型最后输出相对原参考的±5 mm残差，零初始化时严格复现原模型。
@@ -34,6 +38,12 @@
 接续时新增的同配置副本`20261125_native_station_precision`在600步取消，以保留更早的正式运行并释放GPU资源。副本协议、曲线和中断记录保留，不计作独立结果。
 
 已追加[条件站空间异常编码对照](../superpowers/specs/2026-11-25-station-anomaly-precision.md)：将时间路径的ZWD输入替换为相对其他条件站的空间异常，按固定10 mm归一化，原始观测仍由基础场和空间边保留。网络和训练预算与S臂相同。该设计用于检验残差尺度与时序特征语义的对齐，尚未报告正式收益。
+
+进一步重放全部3000个训练块发现，随机布局训练目标59.4%距条件站不足50 km，75/25空洞布局仍为58.7%；开发坐标的纯几何比例为16.3%。[距离加权D对照](../superpowers/specs/2026-11-25-distance-balanced-precision.md)据此保持S的网络与输入，固定四档损失权重0.278/2.297/1.922/0.879，提高50–200 km目标的水平损失权重占比。权重由训练有效记录比例和开发坐标分布计算，开发真值不进入计算，属于已知开发几何下的适配。D排在warm队列完成后运行。
+
+![训练与开发坐标的条件距离分布](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/support_distribution.png)
+
+![固定连续窗口容量探针](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/native_capacity_curve.png)
 
 ## 后续判据
 

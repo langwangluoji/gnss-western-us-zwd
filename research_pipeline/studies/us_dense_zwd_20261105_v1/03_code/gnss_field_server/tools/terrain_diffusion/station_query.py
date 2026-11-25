@@ -140,16 +140,19 @@ def main():
     p.add_argument('--source',type=Path,default=PROJECT/'results/20261125_p14_continuous_fusion')
     p.add_argument('--steps',type=int,default=3000);p.add_argument('--seeds',type=int,nargs='+',default=[42,17])
     p.add_argument('--kind',choices=['gru','lstm','transformer'],default='transformer')
-    p.add_argument('--history-mode',choices=['raw','anomaly'],default='raw');args=p.parse_args()
+    p.add_argument('--history-mode',choices=['raw','anomaly'],default='raw')
+    p.add_argument('--loss-mode',choices=['uniform','distance'],default='uniform');args=p.parse_args()
+    if args.loss_mode=='distance' and args.history_mode!='raw':raise ValueError('distance contrast requires raw history')
     torch.set_num_threads(3);torch.cuda.set_per_process_memory_fraction(.32)
     args.out.mkdir(parents=True,exist_ok=False);out=args.out
     write_json(out/'protocol.json',dict(config={k:str(v) if isinstance(v,Path) else v for k,v in vars(args).items()},
         source_weights={str(s):sha(args.source/f'gru_s{s}/last.pt') for s in args.seeds},
         data_sha256=sha(args.data/'contract.json'),code_sha256={f:sha(Path(__file__).with_name(f)) for f in
-            ('station_query.py','station_anomaly.py','warm_joint_experiment.py','p14_fusion.py','temporal_encoders.py','fixed_support.py','unet_foundation.py','data.py')},
+            ('station_query.py','station_anomaly.py','station_weighting.py','warm_joint_experiment.py','p14_fusion.py','temporal_encoders.py','fixed_support.py','unet_foundation.py','data.py')},
         source_kind='gru',training='continuous2016-2019,12h blocks,82station IDs only sampled;75%random/25%hole100',
         new_lr=1e-4,ema=.999,trust_region_mm=5,raw_and_ema_final_preregistered=True,
         history_mode=args.history_mode,anomaly_scale_mm=10 if args.history_mode=='anomaly' else None,
+        loss_mode=args.loss_mode,distance_bin_weights=[.278,2.297,1.922,.879] if args.loss_mode=='distance' else None,
         evaluation='same2020monthly72h x3layouts x137dev, exposed',strict_oof=False,confirmation_C_D_read=False))
     if args.history_mode=='anomaly':
         from .station_anomaly import AnomalyData
@@ -178,8 +181,13 @@ def main():
                 center=int(rng.integers(410));pool=np.flatnonzero(np.linalg.norm(xy-xy[center],axis=1)>100)
             else:pool=np.arange(410)
             c=np.sort(rng.choice(pool,82,False));b=data.batch(anchors,c);pred=model(b);mask=b['mask']
-            loss=(pred-b['target'])[mask].square().mean();pair=mask[1:]&mask[:-1]
-            if pair.any():loss=loss+.1*((pred.diff(dim=0)-b['target'].diff(dim=0))[pair]).square().mean()
+            if args.loss_mode=='distance':
+                from .station_weighting import distance_weights,weighted_loss
+                weights=distance_weights(b['qxy'],b['cxy'],(b['age']==0)&b['available'])
+                loss=weighted_loss(pred,b['target'],mask,weights)
+            else:
+                loss=(pred-b['target'])[mask].square().mean();pair=mask[1:]&mask[:-1]
+                if pair.any():loss=loss+.1*((pred.diff(dim=0)-b['target'].diff(dim=0))[pair]).square().mean()
             opt.zero_grad(set_to_none=True);loss.backward();grad=nn.utils.clip_grad_norm_(model.parameters(),2.)
             if not torch.isfinite(grad):raise FloatingPointError('nonfinite station-query gradient')
             opt.step()
@@ -192,7 +200,7 @@ def main():
                     batch_rmse_mm=float((pred-b['target'])[mask].square().mean().sqrt().detach()*data.std[0]))
                 trace.append(row);write_json(folder/'curve.json',trace);write_json(folder/'progress.json',row)
                 print(json.dumps(dict(seed=seed,**row)),flush=True)
-        prefix='A' if args.history_mode=='anomaly' else 'S'
+        prefix='D' if args.loss_mode=='distance' else 'A' if args.history_mode=='anomaly' else 'S'
         for label,net in [(f'{prefix}_{args.kind}_raw',model),(f'{prefix}_{args.kind}_ema',ema)]:
             dest=out/f'{label}_s{seed}';dest.mkdir();torch.save(net.state_dict(),dest/'last.pt')
             write_json(dest/'fit.json',dict(case=label,seed=seed,steps=args.steps,trace=trace,same_training_trajectory=True))

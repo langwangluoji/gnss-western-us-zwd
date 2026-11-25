@@ -1,0 +1,28 @@
+{
+  "purpose": "Posthoc input sensitivity on two fixed development windows; not a retrained temporal ablation",
+  "source_and_legacy_temporal_inputs_held_fixed": true,
+  "code_sha256": "8984e6001b1dd4bcc4bcfe77a7f6cab3b354a65d1b26bb24008e70b871907e50",
+  "weight_sha256": "77268a103d83b36345998a6e808e6760de8338ff6785f32d0c6cfdc1139f9372",
+  "results": [
+    {
+      "date": "2020-01-08",
+      "evaluated_hours": 2,
+      "valid_count": 259,
+      "source_micro_rmse_mm": 8.792869853268542,
+      "candidate_micro_rmse_mm": 8.79235491953176,
+      "correction_rms_mm": 0.28179812770596513,
+      "added_branch_past_removal_change_rms_mm": 0.05145710870993403,
+      "added_branch_state_zero_change_rms_mm": 0.059712625702512234
+    },
+    {
+      "date": "2020-07-08",
+      "evaluated_hours": 2,
+      "valid_count": 247,
+      "source_micro_rmse_mm": 12.94113437768192,
+      "candidate_micro_rmse_mm": 12.946069273148737,
+      "correction_rms_mm": 0.4262567179662966,
+      "added_branch_past_removal_change_rms_mm": 0.02714579592734867,
+      "added_branch_state_zero_change_rms_mm": 0.11698245339252011
+    }
+  ]
+}

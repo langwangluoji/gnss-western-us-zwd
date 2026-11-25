@@ -1,0 +1,18 @@
+{
+  "script_sha256": "e3936c57bfa70ebf9fbdf5553d94020bb2b2d3e86d5309c3e2908bfa7c121fa1",
+  "sources": {
+    "results\\20261125_warm_joint_precision\\combined_precision\\comparison.json": "d55d07a394630e32839a1a6077cd3922a01e8fa8eb7774c6ee54c5e2bb85d6d3",
+    "results\\20261125_station_query_precision\\trajectory_s42\\curve.json": "fde15402d5e432ab650f0ff0fe184091cc021844c5b6368c4b5f1fa4f191ee69",
+    "results\\20261125_station_query_precision\\trajectory_s17\\curve.json": "4aedb065ae78561c0b2d61ee48cdc7476bc883b3a29b3b3ce05ed3f672d79d0a",
+    "results\\20261125_station_anomaly_precision\\trajectory_s42\\curve.json": "78f8614dfb14662aeb7a5c6350532413509e06b0610654fad22fe389072a5e89",
+    "results\\20261125_native_capacity_probe\\results.json": "4a5ec3fbeb51a31945ed4966df79361653c0bb513acb929072496e3d02dc439a",
+    "results\\20261125_support_distribution_audit\\results.json": "5b873c603bc2da9e51b38a5ffd5f69947614755876f7ff1e027c66b8116aa067"
+  },
+  "figures": {
+    "native_training_curves.png": "19cb71713cd7435b3e4f6b6f7ae38c466de9943091de270080fd7d5d23309575",
+    "matched_precision_changes.png": "41c9e757e9c42440e4b3347a93a501bb5c806dbc684a78bfb3dc335344e13371",
+    "native_capacity_curve.png": "2cbb0c567163879909685def3331665a477a25c36257d75a7c4558de3828e848",
+    "support_distribution.png": "67f5972624016816fa9d12c8fd7635732d5b5777b4f7b618a6a84b712f62c885"
+  },
+  "note": "Intervals resample paired months, not new spatial populations or random seeds"
+}

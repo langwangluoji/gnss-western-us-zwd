@@ -1,0 +1,82 @@
+[
+  {
+    "kind": "p14",
+    "seed": 42,
+    "queries": [
+      137,
+      64
+    ],
+    "rms_drift_mm": 2.4714076971577015e-06,
+    "max_drift_mm": 5.463487923407229e-06
+  },
+  {
+    "kind": "features",
+    "seed": 42,
+    "queries": [
+      137,
+      64
+    ],
+    "rms_drift_mm": 2.7002163278666558e-06,
+    "max_drift_mm": 1.0926975846814457e-05
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "queries": [
+      137,
+      64
+    ],
+    "rms_drift_mm": 2.3425911876984173e-06,
+    "max_drift_mm": 5.463487923407229e-06
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "queries": [
+      137,
+      64
+    ],
+    "rms_drift_mm": 2.708468855416868e-06,
+    "max_drift_mm": 1.0926975846814457e-05
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "queries": [
+      137,
+      64
+    ],
+    "rms_drift_mm": 2.638102614582749e-06,
+    "max_drift_mm": 5.463487923407229e-06
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "queries": [
+      137,
+      64
+    ],
+    "rms_drift_mm": 3.1631898309569806e-06,
+    "max_drift_mm": 1.0926975846814457e-05
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "queries": [
+      137,
+      64
+    ],
+    "rms_drift_mm": 2.530415258661378e-06,
+    "max_drift_mm": 1.0926975846814457e-05
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "queries": [
+      137,
+      64
+    ],
+    "rms_drift_mm": 2.516743506930652e-06,
+    "max_drift_mm": 5.463487923407229e-06
+  }
+]

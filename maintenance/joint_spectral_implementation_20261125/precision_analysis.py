@@ -37,6 +37,18 @@ def bootstrap_macro(error,indices):
     return np.array([macro(squares[:,i].sum(1),counts[:,i].sum(1)) for i in indices])
 
 
+def matched_contrast(records,draws,candidate,control):
+    keys=[(case,seed) for case in (candidate,control) for seed in (42,17)]
+    if not all(key in draws for key in keys):return None
+    values={(r['case'],r['seed']):r['macro_rmse_mm'] for r in records}
+    differences=[values[(candidate,s)]-values[(control,s)] for s in (42,17)]
+    paired=sum(draws[(candidate,s)]-draws[(control,s)] for s in (42,17))/2
+    interval=np.quantile(paired,[.025,.975]).tolist()
+    return dict(candidate=candidate,control=control,delta_macro_rmse_mm=float(np.mean(differences)),
+        common_month_two_seed_paired95_mm=interval,improves_both_seeds=all(d<0 for d in differences),
+        negative_interval_upper=interval[1]<0)
+
+
 def stratify(error,values,bins):
     rows=[]
     for low,high in zip(bins[:-1],bins[1:]):
@@ -74,7 +86,7 @@ def geography(pred,truth,nearest,geo):
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--warm',type=Path,required=True);p.add_argument('--query',type=Path,nargs='+',required=True)
-    p.add_argument('--station',type=Path)
+    p.add_argument('--station',type=Path,nargs='+')
     args=p.parse_args();out=args.warm/'combined_precision';out.mkdir(exist_ok=True)
     wprotocol=read(args.warm/'protocol.json');source=Path(wprotocol['config']['source'])
     data=Path(wprotocol['config']['data']);data_hash=sha(data/'contract.json')
@@ -82,6 +94,15 @@ def main():
     if wprotocol['data_sha256']!=data_hash or original['dataset_contract_sha256']!=data_hash:
         raise ValueError('original/warm/data contracts differ')
     geo=dict(np.load(data/'geometry.npz'));values=np.load(data/'values.npy',mmap_mode='r');hours=np.load(data/'hours.npy')
+    from tools.terrain_diffusion.data import DEFAULT_DATA
+    from tools.terrain_diffusion.unet_foundation import GEOMETRY
+    inherited=[DEFAULT_DATA/'data.npz',GEOMETRY,data/'p14_grid_coast.npy']
+    with np.load(inherited[0]) as old:
+        moments=dict(mean=old['mean'].tolist(),std=old['std'].tolist())
+    write_json(out/'inherited_input_lineage.json',dict(
+        capture='Posthoc inherited artifact receipt; original run protocols remain unchanged',
+        files=[dict(path=str(f),sha256=sha(f),size_bytes=f.stat().st_size) for f in inherited],
+        normalization=moments,labels_from_inherited_pack_used_for_this_capture=False))
     nearest=[]
     for layout_seed in (8120,8121,8122):
         c=np.sort(np.random.default_rng(layout_seed).choice(410,82,False))
@@ -98,7 +119,7 @@ def main():
         baseline[seed]=a;records.append(dict(case='reference',seed=seed,**metrics))
         detailed[f'reference_s{seed}']=geography(a['prediction'],a['truth'],nearest,geo)
     runs=[('warm',args.warm)]+[('query',r) for r in args.query]
-    if args.station is not None:runs.append(('station',args.station))
+    if args.station is not None:runs.extend(('station',r) for r in args.station)
     for kind,root in runs:
         if not (root/'summary.json').exists():continue
         protocol=read(root/'protocol.json')
@@ -139,7 +160,12 @@ def main():
         means.append(dict(case=case,macro_rmse_mm=mean,reference_macro_rmse_mm=ref,delta_macro_rmse_mm=mean-ref,
             common_month_two_seed_paired95_mm=interval,improves_both_seeds=all(r['delta_macro_rmse_mm']<0 for r in rows),
             negative_interval_upper=interval[1]<0))
-    write_json(out/'comparison.json',dict(records=records,two_seed_means=means,
+    contrasts=[]
+    for family in ('A','D'):
+        for mode in ('raw','ema'):
+            contrast=matched_contrast(records,draws,f'{family}_transformer_{mode}',f'S_transformer_{mode}')
+            if contrast is not None:contrasts.append(contrast)
+    write_json(out/'comparison.json',dict(records=records,two_seed_means=means,direct_representation_contrasts=contrasts,
         bootstrap='1000 common month resamples shared across seeds/layouts; full72h block and station pairing',
         source='original saved GRU predictions, exact truth and source-weight hash matched',current_development_exposed=True))
     write_json(out/'geographic_and_pair_metrics.json',detailed)
@@ -152,6 +178,11 @@ def main():
     lines+=['','单位均为mm。只纳入已完成最终3000步评价的结果；Qraw与Qema来自同一训练轨迹，不计为独立训练重复。T5_joint额外解冻旧时间模块原先固定为零的查询头518参数，应解释为“联合微调＋旧查询头激活”。','',
         '## 双种子及共同月份配对区间','', '| 模型 | 两种子均值RMSE/mm | 相对原参考变化/mm | 共同月份95%区间/mm |','|---|---:|---:|---|']
     for r in means:lines.append(f"| {r['case']} | {r['macro_rmse_mm']:.6f} | {r['delta_macro_rmse_mm']:.6f} | {r['common_month_two_seed_paired95_mm']} |")
+    if contrasts:
+        lines+=['','## 异常表征及距离加权相对原始站点控制的直接配对','',
+            '| 候选−控制 | 两种子宏RMSE差/mm | 共同月份95%区间/mm | 两种子均改善 |',
+            '|---|---:|---|---|']
+        for r in contrasts:lines.append(f"| {r['candidate']}−{r['control']} | {r['delta_macro_rmse_mm']:.6f} | {r['common_month_two_seed_paired95_mm']} | {r['improves_both_seeds']} |")
     lines+=['','负数为改善；区间同时保持月份、布局、站点及种子配对。跨零时不把该结果称为稳定提升。海岸、地形、高程、最近有效条件站距离、季节和站对差值详见[分层结果](geographic_and_pair_metrics.json)。',
         '连续块内的一小时增量独立评分，跨月份不连差。所有五项主指标采用float64独立复算。']
     (out/'REPORT.md').write_bytes(('\n'.join(lines)+'\n').encode('utf-8'))

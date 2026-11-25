@@ -1,0 +1,163 @@
+{
+  "id": "architecture",
+  "title": "保留约10 mm基础场的条件站异常时间编码",
+  "nodes": [
+    {
+      "id": "input",
+      "x": 50,
+      "y": 89,
+      "width": 90,
+      "height": 9,
+      "text": "82／410条件站连续72小时ZWD／T／P＋mask／age\n站点坐标、高程、地形与海岸距离；目标站标签只用于训练",
+      "role": "neutral"
+    },
+    {
+      "id": "base",
+      "x": 26,
+      "y": 71,
+      "width": 43,
+      "height": 15,
+      "text": "冻结原GRU＋p14基础场\n保留原始观测和8×8历史\n原权重、归一化及两级U-Net",
+      "role": "space"
+    },
+    {
+      "id": "anomaly",
+      "x": 74,
+      "y": 71,
+      "width": 43,
+      "height": 15,
+      "text": "逐小时剔除同一物理组\n条件站空间背景→地表异常\n异常／10 mm＋有效性mask",
+      "role": "train"
+    },
+    {
+      "id": "time",
+      "x": 74,
+      "y": 50,
+      "width": 43,
+      "height": 15,
+      "text": "每站独立72h×11通道\n宽32、2层4头因果Transformer\n保留T／P、年龄、日历与静态",
+      "role": "time"
+    },
+    {
+      "id": "query",
+      "x": 50,
+      "y": 30,
+      "width": 90,
+      "height": 15,
+      "text": "任意查询坐标：最多16邻站的方向、高差、海岸及物理创新\n32维时间状态＋局地边→查询交叉注意力\n融合113维点特征、静态9、参考1与U-Net两级16＋32",
+      "role": "space"
+    },
+    {
+      "id": "output",
+      "x": 50,
+      "y": 11,
+      "width": 90,
+      "height": 10,
+      "text": "204→64→64→1零初始化残差头；修正范围±5 mm\n最终ZWD＝冻结原参考＋新增修正；最终3000步raw与EMA同轨迹评价",
+      "role": "space"
+    }
+  ],
+  "edges": [
+    {
+      "points": [
+        [
+          26,
+          84.5
+        ],
+        [
+          26,
+          78.5
+        ]
+      ],
+      "dashed": false
+    },
+    {
+      "points": [
+        [
+          74,
+          84.5
+        ],
+        [
+          74,
+          78.5
+        ]
+      ],
+      "dashed": false
+    },
+    {
+      "points": [
+        [
+          74,
+          63.5
+        ],
+        [
+          74,
+          57.5
+        ]
+      ],
+      "dashed": false
+    },
+    {
+      "points": [
+        [
+          74,
+          42.5
+        ],
+        [
+          74,
+          37.5
+        ]
+      ],
+      "dashed": false
+    },
+    {
+      "points": [
+        [
+          26,
+          63.5
+        ],
+        [
+          26,
+          37.5
+        ]
+      ],
+      "dashed": false
+    },
+    {
+      "points": [
+        [
+          50,
+          22.5
+        ],
+        [
+          50,
+          16
+        ]
+      ],
+      "dashed": false
+    },
+    {
+      "points": [
+        [
+          95,
+          89
+        ],
+        [
+          98,
+          89
+        ],
+        [
+          98,
+          30
+        ],
+        [
+          95,
+          30
+        ]
+      ],
+      "dashed": true
+    }
+  ],
+  "status": "IMPLEMENTED_MATCHED_TRAINING_NOT_ACCURACY_CLAIM",
+  "text_bounds": "PASS"
+}

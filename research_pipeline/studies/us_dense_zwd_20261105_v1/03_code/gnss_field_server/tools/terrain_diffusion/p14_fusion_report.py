@@ -68,6 +68,8 @@ def report(out,data):
     write_json(out/'stratified_metrics.json',strata)
     write_json(out/'pair_metrics.json',pair_scores)
     write_json(out/'verification.json',dict(checked=checks,all_predictions_finite=True))
+    common_seeds=sorted(set.intersection(*[set(r['seed'] for r in rows) for rows in grouped.values()]))
+    comparable={kind:[r for r in rows if r['seed'] in common_seeds] for kind,rows in grouped.items()}
     # Resample complete three-day monthly blocks, matched for layouts and seed.
     weights=np.random.default_rng(1824).multinomial(truth.shape[0],np.full(truth.shape[0],1/truth.shape[0]),size=1000)
     def boot(pred):
@@ -75,14 +77,14 @@ def report(out,data):
         den=np.einsum('rm,lmn->rln',weights,count);num=np.einsum('rm,lmn->rln',weights,sse)
         return np.nanmean(np.sqrt(np.divide(num,den,out=np.full(num.shape,np.nan),where=den>0)),axis=(1,2))
     intervals={}
-    for kind,rows in grouped.items():
+    for kind,rows in comparable.items():
         deltas=[]
         for row in rows:
             key=('p14',row['seed'])
             if key in pred_by_key:deltas.append(boot(pred_by_key[kind,row['seed']])-boot(pred_by_key[key]))
         if deltas:intervals[kind]=dict(delta_vs_continued_p14_ci95_mm=np.quantile(np.mean(deltas,axis=0),[.025,.975]).tolist(),replicates=1000,blocks=truth.shape[0])
     write_json(out/'paired_intervals.json',intervals)
-    names=list(grouped);means=[np.mean([r['metrics']['macro_rmse_mm'] for r in grouped[n]]) for n in names]
+    names=list(grouped);means=[np.mean([r['metrics']['macro_rmse_mm'] for r in comparable[n]]) for n in names]
     fig,ax=plt.subplots(figsize=(9,4))
     ax.barh(names,means,color=['#86939c' if n=='frozen' else '#327d88' for n in names])
     for i,value in enumerate(means):ax.text(value+.03,i,f'{value:.3f}',va='center')
@@ -92,11 +94,22 @@ def report(out,data):
     for kind,rows in grouped.items():
         values=[]
         for season in ('DJF','MAM','JJA','SON'):
-            vals=[r['macro_rmse_mm'] for r in strata if r['kind']==kind and r['group']==season]
+            vals=[r['macro_rmse_mm'] for r in strata if r['kind']==kind and r['group']==season and r['seed'] in common_seeds]
             values.append(np.mean(vals) if vals else np.nan)
         ax.plot(range(4),values,marker='o',label=kind)
     ax.set_xticks(range(4),['DJF','MAM','JJA','SON']);ax.set_ylabel('Macro RMSE (mm)');ax.legend()
     fig.tight_layout();fig.savefig(out/'seasonal_comparison.png',dpi=180);plt.close(fig)
+    delta_names=[k for k in grouped if k not in ('p14','frozen') and k in intervals]
+    if delta_names:
+        fig,ax=plt.subplots(figsize=(9,4))
+        for i,kind in enumerate(delta_names):
+            delta=np.mean([r['metrics']['macro_rmse_mm']-next(v['metrics']['macro_rmse_mm'] for v in results
+                if v['kind']=='p14' and v['seed']==r['seed']) for r in comparable[kind]])
+            lo,hi=intervals[kind]['delta_vs_continued_p14_ci95_mm']
+            ax.hlines(i,lo,hi,color='#397d88',lw=2);ax.plot(delta,i,'o',color='#bd7545')
+        ax.axvline(0,color='#777',ls='--');ax.set_yticks(range(len(delta_names)),delta_names)
+        ax.set(xlabel='RMSE change vs continued p14 (mm); monthly-block 95% interval')
+        ax.invert_yaxis();fig.tight_layout();fig.savefig(out/'paired_changes.png',dpi=180);plt.close(fig)
     lines=['# p14与新空间特征及时间模块：连续3000步融合实验','',
         f"状态：{'全部完成' if complete else '运行中，仅列已完成配置'}。原p14最佳两种子权重已恢复，旧2018合同指标精确复现。",'',
         '任务为当前时刻空间重建；2016–2019按连续小时顺序训练，窗口内只抽样站点。每个配置固定3000步；主评价使用最终权重。',
@@ -104,14 +117,15 @@ def report(out,data):
         '新空间特征组合包含海岸距离差、高差、坡度/粗糙度与相对位置边消息和FiLM；该组检验组合贡献，不单独归因于海岸距离。',
         '无随机日期采样：34993个独立目标小时完整遍历一次，再重复开头996小时，共35989目标小时呈现。窗口历史72小时，块内12小时连续。',
         '旧p14 support helper高程约定为复现权重保持；新边消息使用明确物理尺度。新时间分支的age来自完整因果时间轴，单独与成批处理一致。','',
-        '| 组 | 已完成种子数 | 宏RMSE/mm | 微RMSE/mm | 小时增量宏RMSE/mm |','|---|---:|---:|---:|---:|']
+        f'下表与比较图仅汇总所有组共同完成的种子：{common_seeds}。完整逐种子结果见summary.json。',
+        '| 组 | 已完成/共同种子数 | 宏RMSE/mm | 微RMSE/mm | 小时增量宏RMSE/mm |','|---|---:|---:|---:|---:|']
     for kind,rows in grouped.items():
-        m=lambda key:np.mean([r['metrics'][key] for r in rows])
-        lines.append(f"| {kind} | {len(rows)} | {m('macro_rmse_mm'):.3f} | {m('micro_rmse_mm'):.3f} | {m('increment_macro_rmse_mm'):.3f} |")
+        m=lambda key:np.mean([r['metrics'][key] for r in comparable[kind]])
+        lines.append(f"| {kind} | {len(rows)}/{len(comparable[kind])} | {m('macro_rmse_mm'):.3f} | {m('micro_rmse_mm'):.3f} | {m('increment_macro_rmse_mm'):.3f} |")
     lines+=['','冻结基线与续训p14区分数据续训效应；features与续训p14比较新空间特征；时间组与features比较额外历史编码。',
         '固定训练诊断曲线为事后分析，不作检查点选择；2020已开发暴露，不称盲验证。该阶段尚未训练diffusion。',
         '指标复算、分季节/海岸/高程/地形、站对差值和配对区间分别见同目录JSON。权重和大型数组本地保留。','',
-        '![同条件模型对比](matched_model_comparison.png)','![季节对比](seasonal_comparison.png)',
+        '![同条件模型对比](matched_model_comparison.png)','![相对续训p14的配对差值](paired_changes.png)','![季节对比](seasonal_comparison.png)',
         '![p14训练曲线](p14_s42/training_curves.png)','![固定年份和季节诊断](optimization_diagnostic.png)']
     (out/'REPORT.md').write_bytes(('\n'.join(lines)+'\n').encode('utf-8'))
     write_json(out/'figure_manifest.json',{str(p.relative_to(out)):sha(p) for p in out.rglob('*.png')})

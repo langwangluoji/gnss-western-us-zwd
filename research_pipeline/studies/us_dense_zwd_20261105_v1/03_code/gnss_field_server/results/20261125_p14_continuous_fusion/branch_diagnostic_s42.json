@@ -1,0 +1,47 @@
+{
+  "status": "POSTHOC_FIXED_DEVELOPMENT_DIAGNOSTIC",
+  "dates": [
+    "2020-01-08",
+    "2020-07-08"
+  ],
+  "hours_per_date": 24,
+  "layout": 0,
+  "interpretation": "Trained base is from each joint model, not the frozen source; additive branch RMS is not net causal improvement",
+  "results": [
+    {
+      "kind": "features",
+      "seed": 42,
+      "feature_correction_rms_mm": 0.5408434867858887,
+      "temporal_correction_rms_mm": 0.0,
+      "trained_base_micro_rmse_mm": 10.903898239135742,
+      "full_micro_rmse_mm": 10.85435676574707
+    },
+    {
+      "kind": "mlp",
+      "seed": 42,
+      "feature_correction_rms_mm": 0.29633504152297974,
+      "temporal_correction_rms_mm": 0.7196933627128601,
+      "trained_base_micro_rmse_mm": 10.894899368286133,
+      "full_micro_rmse_mm": 10.878403663635254,
+      "temporal_vs_base_error_correlation": -0.08688633429297316
+    },
+    {
+      "kind": "gru",
+      "seed": 42,
+      "feature_correction_rms_mm": 0.2548162639141083,
+      "temporal_correction_rms_mm": 1.0356031656265259,
+      "trained_base_micro_rmse_mm": 10.929865837097168,
+      "full_micro_rmse_mm": 10.828227996826172,
+      "temporal_vs_base_error_correlation": 0.2808283526127219
+    },
+    {
+      "kind": "lstm",
+      "seed": 42,
+      "feature_correction_rms_mm": 0.24177657067775726,
+      "temporal_correction_rms_mm": 0.9937394857406616,
+      "trained_base_micro_rmse_mm": 10.930570602416992,
+      "full_micro_rmse_mm": 10.830015182495117,
+      "temporal_vs_base_error_correlation": 0.3087628989210961
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "reference_fixed_window_rmse_mm": 14.0069580078125,
+  "unattainable_pointwise_oracle_5mm_bound_floor": 10.61884880065918,
+  "final_fixed_window_rmse_mm": 11.234795585779125,
+  "reduction_mm": 2.772162422033375,
+  "trace": [
+    {
+      "step": 0,
+      "seconds": 0.11000000000058208,
+      "fixed_window_rmse_mm": 14.006957065268125,
+      "correction_rms_mm": 0.0
+    },
+    {
+      "step": 20,
+      "seconds": 3.5,
+      "fixed_window_rmse_mm": 12.769787103556041,
+      "correction_rms_mm": 3.8522322606434614
+    },
+    {
+      "step": 40,
+      "seconds": 6.8439999999973224,
+      "fixed_window_rmse_mm": 12.128960946299799,
+      "correction_rms_mm": 4.375583524974587
+    },
+    {
+      "step": 60,
+      "seconds": 10.125,
+      "fixed_window_rmse_mm": 11.70555975444347,
+      "correction_rms_mm": 4.684721330400777
+    },
+    {
+      "step": 80,
+      "seconds": 13.437999999994645,
+      "fixed_window_rmse_mm": 11.595839258221645,
+      "correction_rms_mm": 4.788233597001636
+    },
+    {
+      "step": 100,
+      "seconds": 16.64100000000326,
+      "fixed_window_rmse_mm": 11.529762469403977,
+      "correction_rms_mm": 4.752644778136556
+    },
+    {
+      "step": 120,
+      "seconds": 20.046999999991385,
+      "fixed_window_rmse_mm": 11.423019574100408,
+      "correction_rms_mm": 4.742086929192567
+    },
+    {
+      "step": 140,
+      "seconds": 23.453999999997905,
+      "fixed_window_rmse_mm": 11.374300286415405,
+      "correction_rms_mm": 4.833024636869709
+    },
+    {
+      "step": 160,
+      "seconds": 26.76600000000326,
+      "fixed_window_rmse_mm": 11.26347479976107,
+      "correction_rms_mm": 4.8235905590979655
+    },
+    {
+      "step": 180,
+      "seconds": 30.281999999991967,
+      "fixed_window_rmse_mm": 11.232856047566315,
+      "correction_rms_mm": 4.82542560810424
+    },
+    {
+      "step": 200,
+      "seconds": 33.562999999994645,
+      "fixed_window_rmse_mm": 11.234795585779125,
+      "correction_rms_mm": 4.840697422722144
+    }
+  ],
+  "interpretation": "Training capacity only; one repeated continuous2h window, no generalization conclusion"
+}

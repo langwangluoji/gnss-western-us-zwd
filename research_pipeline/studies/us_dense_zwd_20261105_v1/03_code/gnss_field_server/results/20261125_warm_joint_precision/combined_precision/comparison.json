@@ -117,6 +117,29 @@
       ]
     },
     {
+      "case": "T5_frozen",
+      "seed": 17,
+      "run": "warm",
+      "steps": 3000,
+      "macro_rmse_mm": 9.859842951311567,
+      "micro_rmse_mm": 10.379671264082802,
+      "mae_mm": 7.608543878438088,
+      "bias_mm": -0.04874505829105302,
+      "increment_macro_rmse_mm": 5.585028858447087,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.00010150967615096818,
+      "delta_micro_rmse_mm": 0.0003780637097730022,
+      "delta_mae_mm": -0.0013343757048094318,
+      "delta_bias_mm": -0.018826992566450138,
+      "delta_increment_macro_rmse_mm": 0.0014267625444421839,
+      "monthly_paired95_mm": [
+        -0.0030009558443266026,
+        0.0035750924545028704
+      ]
+    },
+    {
       "case": "Qraw",
       "seed": 42,
       "run": "query",
@@ -207,6 +230,52 @@
         -0.005224601879128787,
         0.014427824213762763
       ]
+    },
+    {
+      "case": "S_transformer_raw",
+      "seed": 42,
+      "run": "station",
+      "steps": 3000,
+      "macro_rmse_mm": 9.995382343628158,
+      "micro_rmse_mm": 10.52399247981372,
+      "mae_mm": 7.704889734762347,
+      "bias_mm": 0.27421411564991605,
+      "increment_macro_rmse_mm": 5.58262841077867,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.002974471902520648,
+      "delta_micro_rmse_mm": -0.0032163297398888346,
+      "delta_mae_mm": -0.003022939629389043,
+      "delta_bias_mm": -0.003880413126392701,
+      "delta_increment_macro_rmse_mm": -0.0015118308505810418,
+      "monthly_paired95_mm": [
+        -0.007389550778386322,
+        0.0006793536317259963
+      ]
+    },
+    {
+      "case": "S_transformer_ema",
+      "seed": 42,
+      "run": "station",
+      "steps": 3000,
+      "macro_rmse_mm": 9.980218284783744,
+      "micro_rmse_mm": 10.510234283250371,
+      "mae_mm": 7.693927717732563,
+      "bias_mm": 0.1999676505393179,
+      "increment_macro_rmse_mm": 5.580545440250534,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.018138530746934833,
+      "delta_micro_rmse_mm": -0.016974526303236814,
+      "delta_mae_mm": -0.013984956659172987,
+      "delta_bias_mm": -0.07812687823699085,
+      "delta_increment_macro_rmse_mm": -0.0035948013787177047,
+      "monthly_paired95_mm": [
+        -0.026782852828271732,
+        -0.009451167329926237
+      ]
     }
   ],
   "two_seed_means": [
@@ -245,8 +314,21 @@
       ],
       "improves_both_seeds": true,
       "negative_interval_upper": false
+    },
+    {
+      "case": "T5_frozen",
+      "macro_rmse_mm": 9.932955275372091,
+      "reference_macro_rmse_mm": 9.929150638259198,
+      "delta_macro_rmse_mm": 0.003804637112892806,
+      "common_month_two_seed_paired95_mm": [
+        0.0004631147195357955,
+        0.006897333345742052
+      ],
+      "improves_both_seeds": false,
+      "negative_interval_upper": false
     }
   ],
+  "direct_representation_contrasts": [],
   "bootstrap": "1000 common month resamples shared across seeds/layouts; full72h block and station pairing",
   "source": "original saved GRU predictions, exact truth and source-weight hash matched",
   "current_development_exposed": true

@@ -88,5 +88,335 @@
     ],
     "pairs": 8077,
     "difference_rmse_mm": 14.998666763305664
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "difference_rmse_mm": 7.076630592346191
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "difference_rmse_mm": 12.430736541748047
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "difference_rmse_mm": 15.00179386138916
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "difference_rmse_mm": 7.077641487121582
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "difference_rmse_mm": 12.425206184387207
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "difference_rmse_mm": 15.001121520996094
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "difference_rmse_mm": 7.07775354385376
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "difference_rmse_mm": 12.425163269042969
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "difference_rmse_mm": 14.999987602233887
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "difference_rmse_mm": 7.073949813842773
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "difference_rmse_mm": 12.421501159667969
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "difference_rmse_mm": 15.006791114807129
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "difference_rmse_mm": 7.055060386657715
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "difference_rmse_mm": 12.526754379272461
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "difference_rmse_mm": 15.00623893737793
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "difference_rmse_mm": 7.049707889556885
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "difference_rmse_mm": 12.304591178894043
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "difference_rmse_mm": 14.825028419494629
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "difference_rmse_mm": 7.052174091339111
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "difference_rmse_mm": 12.298134803771973
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "difference_rmse_mm": 14.809983253479004
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "difference_rmse_mm": 7.053913593292236
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "difference_rmse_mm": 12.298580169677734
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "difference_rmse_mm": 14.829843521118164
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "difference_rmse_mm": 7.05394983291626
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "difference_rmse_mm": 12.295759201049805
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "difference_rmse_mm": 14.810450553894043
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "difference_rmse_mm": 7.053924083709717
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "difference_rmse_mm": 12.292542457580566
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "difference_rmse_mm": 14.807175636291504
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "distance_km": [
+      0,
+      50
+    ],
+    "pairs": 720,
+    "difference_rmse_mm": 7.047919750213623
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "distance_km": [
+      50,
+      150
+    ],
+    "pairs": 519,
+    "difference_rmse_mm": 12.292375564575195
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "distance_km": [
+      150,
+      null
+    ],
+    "pairs": 8077,
+    "difference_rmse_mm": 14.828143119812012
   }
 ]

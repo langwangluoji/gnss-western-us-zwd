@@ -14,6 +14,61 @@
       "kind": "features",
       "seed": 42,
       "max_macro_difference_mm": 0.0
+    },
+    {
+      "kind": "mlp",
+      "seed": 42,
+      "max_macro_difference_mm": 0.0
+    },
+    {
+      "kind": "gru",
+      "seed": 42,
+      "max_macro_difference_mm": 0.0
+    },
+    {
+      "kind": "lstm",
+      "seed": 42,
+      "max_macro_difference_mm": 0.0
+    },
+    {
+      "kind": "transformer",
+      "seed": 42,
+      "max_macro_difference_mm": 0.0
+    },
+    {
+      "kind": "frozen",
+      "seed": 17,
+      "max_macro_difference_mm": 0.0
+    },
+    {
+      "kind": "p14",
+      "seed": 17,
+      "max_macro_difference_mm": 0.0
+    },
+    {
+      "kind": "features",
+      "seed": 17,
+      "max_macro_difference_mm": 0.0
+    },
+    {
+      "kind": "mlp",
+      "seed": 17,
+      "max_macro_difference_mm": 0.0
+    },
+    {
+      "kind": "gru",
+      "seed": 17,
+      "max_macro_difference_mm": 0.0
+    },
+    {
+      "kind": "lstm",
+      "seed": 17,
+      "max_macro_difference_mm": 0.0
+    },
+    {
+      "kind": "transformer",
+      "seed": 17,
+      "max_macro_difference_mm": 0.0
     }
   ],
   "all_predictions_finite": true

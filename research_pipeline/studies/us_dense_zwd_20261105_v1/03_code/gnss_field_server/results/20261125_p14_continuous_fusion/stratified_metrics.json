@@ -382,5 +382,1413 @@
     "macro_rmse_mm": 13.303940719565713,
     "stations": 60,
     "records": 39081
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 8.311186601071775,
+    "stations": 135,
+    "records": 82725
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "group": "MAM",
+    "macro_rmse_mm": 9.348771935378654,
+    "stations": 132,
+    "records": 82611
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 11.154173552952287,
+    "stations": 129,
+    "records": 80925
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "group": "SON",
+    "macro_rmse_mm": 10.696934678753896,
+    "stations": 128,
+    "records": 81069
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "group": "dev_coast_0_100",
+    "macro_rmse_mm": 9.970216269389388,
+    "stations": 83,
+    "records": 204282
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "group": "dev_coast_100_300",
+    "macro_rmse_mm": 10.571282278018206,
+    "stations": 23,
+    "records": 52992
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "group": "dev_coast_300_inf",
+    "macro_rmse_mm": 9.619912972251212,
+    "stations": 29,
+    "records": 70056
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "group": "dev_height_-100_500",
+    "macro_rmse_mm": 10.74203716235944,
+    "stations": 55,
+    "records": 132981
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "group": "dev_height_500_1500",
+    "macro_rmse_mm": 9.619322193595918,
+    "stations": 50,
+    "records": 122319
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "group": "dev_height_1500_inf",
+    "macro_rmse_mm": 9.26222551131527,
+    "stations": 30,
+    "records": 72030
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "group": "roughness_0_0.5",
+    "macro_rmse_mm": 9.359955841489146,
+    "stations": 71,
+    "records": 172638
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "group": "roughness_0.5_1.5",
+    "macro_rmse_mm": 10.704500846926464,
+    "stations": 64,
+    "records": 154692
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 7.820801323487303,
+    "stations": 39,
+    "records": 51498
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 9.488720476315779,
+    "stations": 113,
+    "records": 164208
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 10.724052120351098,
+    "stations": 87,
+    "records": 72543
+  },
+  {
+    "kind": "mlp",
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 13.283363424058246,
+    "stations": 60,
+    "records": 39081
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 8.31370354140059,
+    "stations": 135,
+    "records": 82725
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "group": "MAM",
+    "macro_rmse_mm": 9.347144686846033,
+    "stations": 132,
+    "records": 82611
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 11.157798895349465,
+    "stations": 129,
+    "records": 80925
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "group": "SON",
+    "macro_rmse_mm": 10.699128900660908,
+    "stations": 128,
+    "records": 81069
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "group": "dev_coast_0_100",
+    "macro_rmse_mm": 9.975010099318492,
+    "stations": 83,
+    "records": 204282
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "group": "dev_coast_100_300",
+    "macro_rmse_mm": 10.570700318083908,
+    "stations": 23,
+    "records": 52992
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "group": "dev_coast_300_inf",
+    "macro_rmse_mm": 9.6112494024091,
+    "stations": 29,
+    "records": 70056
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "group": "dev_height_-100_500",
+    "macro_rmse_mm": 10.737385617517418,
+    "stations": 55,
+    "records": 132981
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "group": "dev_height_500_1500",
+    "macro_rmse_mm": 9.62613845172495,
+    "stations": 50,
+    "records": 122319
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "group": "dev_height_1500_inf",
+    "macro_rmse_mm": 9.263834889317433,
+    "stations": 30,
+    "records": 72030
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "group": "roughness_0_0.5",
+    "macro_rmse_mm": 9.359806901819216,
+    "stations": 71,
+    "records": 172638
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "group": "roughness_0.5_1.5",
+    "macro_rmse_mm": 10.706748253126003,
+    "stations": 64,
+    "records": 154692
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 7.824933351085348,
+    "stations": 39,
+    "records": 51498
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 9.491078505290092,
+    "stations": 113,
+    "records": 164208
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 10.74417973974544,
+    "stations": 87,
+    "records": 72543
+  },
+  {
+    "kind": "gru",
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 13.284456656700396,
+    "stations": 60,
+    "records": 39081
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 8.306608004775414,
+    "stations": 135,
+    "records": 82725
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "group": "MAM",
+    "macro_rmse_mm": 9.346646851571151,
+    "stations": 132,
+    "records": 82611
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 11.166175588009189,
+    "stations": 129,
+    "records": 80925
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "group": "SON",
+    "macro_rmse_mm": 10.708708877736134,
+    "stations": 128,
+    "records": 81069
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "group": "dev_coast_0_100",
+    "macro_rmse_mm": 9.97932203338801,
+    "stations": 83,
+    "records": 204282
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "group": "dev_coast_100_300",
+    "macro_rmse_mm": 10.580746062420605,
+    "stations": 23,
+    "records": 52992
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "group": "dev_coast_300_inf",
+    "macro_rmse_mm": 9.608039507472634,
+    "stations": 29,
+    "records": 70056
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "group": "dev_height_-100_500",
+    "macro_rmse_mm": 10.744767270668277,
+    "stations": 55,
+    "records": 132981
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "group": "dev_height_500_1500",
+    "macro_rmse_mm": 9.628333182110968,
+    "stations": 50,
+    "records": 122319
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "group": "dev_height_1500_inf",
+    "macro_rmse_mm": 9.263172497709391,
+    "stations": 30,
+    "records": 72030
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "group": "roughness_0_0.5",
+    "macro_rmse_mm": 9.364491880442651,
+    "stations": 71,
+    "records": 172638
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "group": "roughness_0.5_1.5",
+    "macro_rmse_mm": 10.709298600189955,
+    "stations": 64,
+    "records": 154692
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 7.824468253202125,
+    "stations": 39,
+    "records": 51498
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 9.489963688637838,
+    "stations": 113,
+    "records": 164208
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 10.750567126687578,
+    "stations": 87,
+    "records": 72543
+  },
+  {
+    "kind": "lstm",
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 13.288740641855433,
+    "stations": 60,
+    "records": 39081
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "group": "DJF",
+    "macro_rmse_mm": 8.303470378544416,
+    "stations": 135,
+    "records": 82725
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "group": "MAM",
+    "macro_rmse_mm": 9.355999217799031,
+    "stations": 132,
+    "records": 82611
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "group": "JJA",
+    "macro_rmse_mm": 11.166214681807404,
+    "stations": 129,
+    "records": 80925
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "group": "SON",
+    "macro_rmse_mm": 10.683701375072786,
+    "stations": 128,
+    "records": 81069
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "group": "dev_coast_0_100",
+    "macro_rmse_mm": 9.969765203631203,
+    "stations": 83,
+    "records": 204282
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "group": "dev_coast_100_300",
+    "macro_rmse_mm": 10.558208211114847,
+    "stations": 23,
+    "records": 52992
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "group": "dev_coast_300_inf",
+    "macro_rmse_mm": 9.614876478294779,
+    "stations": 29,
+    "records": 70056
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "group": "dev_height_-100_500",
+    "macro_rmse_mm": 10.73502395399571,
+    "stations": 55,
+    "records": 132981
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "group": "dev_height_500_1500",
+    "macro_rmse_mm": 9.616936089374258,
+    "stations": 50,
+    "records": 122319
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "group": "dev_height_1500_inf",
+    "macro_rmse_mm": 9.262919889636768,
+    "stations": 30,
+    "records": 72030
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "group": "roughness_0_0.5",
+    "macro_rmse_mm": 9.355048112166275,
+    "stations": 71,
+    "records": 172638
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "group": "roughness_0.5_1.5",
+    "macro_rmse_mm": 10.702379729121475,
+    "stations": 64,
+    "records": 154692
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "group": "support_0_50",
+    "macro_rmse_mm": 7.809411571892083,
+    "stations": 39,
+    "records": 51498
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "group": "support_50_100",
+    "macro_rmse_mm": 9.500781587382505,
+    "stations": 113,
+    "records": 164208
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "group": "support_100_150",
+    "macro_rmse_mm": 10.72320655925984,
+    "stations": 87,
+    "records": 72543
+  },
+  {
+    "kind": "transformer",
+    "seed": 42,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 13.28354716112643,
+    "stations": 60,
+    "records": 39081
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 8.366065368296494,
+    "stations": 135,
+    "records": 82725
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "group": "MAM",
+    "macro_rmse_mm": 9.36734951215382,
+    "stations": 132,
+    "records": 82611
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 10.968922813908907,
+    "stations": 129,
+    "records": 80925
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "group": "SON",
+    "macro_rmse_mm": 10.75544992369199,
+    "stations": 128,
+    "records": 81069
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "group": "dev_coast_0_100",
+    "macro_rmse_mm": 9.966759029044669,
+    "stations": 83,
+    "records": 204282
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "group": "dev_coast_100_300",
+    "macro_rmse_mm": 10.351461004592077,
+    "stations": 23,
+    "records": 52992
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "group": "dev_coast_300_inf",
+    "macro_rmse_mm": 9.63982212869263,
+    "stations": 29,
+    "records": 70056
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "group": "dev_height_-100_500",
+    "macro_rmse_mm": 10.829929364517364,
+    "stations": 55,
+    "records": 132981
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "group": "dev_height_500_1500",
+    "macro_rmse_mm": 9.482000215194608,
+    "stations": 50,
+    "records": 122319
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "group": "dev_height_1500_inf",
+    "macro_rmse_mm": 9.171110614674204,
+    "stations": 30,
+    "records": 72030
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "group": "roughness_0_0.5",
+    "macro_rmse_mm": 9.348239110667437,
+    "stations": 71,
+    "records": 172638
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "group": "roughness_0.5_1.5",
+    "macro_rmse_mm": 10.643038552984743,
+    "stations": 64,
+    "records": 154692
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 7.79478853384919,
+    "stations": 39,
+    "records": 51498
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 9.573686663830285,
+    "stations": 113,
+    "records": 164208
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 10.610132543946065,
+    "stations": 87,
+    "records": 72543
+  },
+  {
+    "kind": "frozen",
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 13.675471603241482,
+    "stations": 60,
+    "records": 39081
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 8.225695233377596,
+    "stations": 135,
+    "records": 82725
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "group": "MAM",
+    "macro_rmse_mm": 9.2969628715961,
+    "stations": 132,
+    "records": 82611
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 10.865762264020855,
+    "stations": 129,
+    "records": 80925
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "group": "SON",
+    "macro_rmse_mm": 10.702636952406465,
+    "stations": 128,
+    "records": 81069
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "group": "dev_coast_0_100",
+    "macro_rmse_mm": 9.8439272434737,
+    "stations": 83,
+    "records": 204282
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "group": "dev_coast_100_300",
+    "macro_rmse_mm": 10.338358022066217,
+    "stations": 23,
+    "records": 52992
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "group": "dev_coast_300_inf",
+    "macro_rmse_mm": 9.59911160323982,
+    "stations": 29,
+    "records": 70056
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "group": "dev_height_-100_500",
+    "macro_rmse_mm": 10.623951209190098,
+    "stations": 55,
+    "records": 132981
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "group": "dev_height_500_1500",
+    "macro_rmse_mm": 9.491903628351917,
+    "stations": 50,
+    "records": 122319
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "group": "dev_height_1500_inf",
+    "macro_rmse_mm": 9.142997809558121,
+    "stations": 30,
+    "records": 72030
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "group": "roughness_0_0.5",
+    "macro_rmse_mm": 9.252895345118962,
+    "stations": 71,
+    "records": 172638
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "group": "roughness_0.5_1.5",
+    "macro_rmse_mm": 10.566357229786696,
+    "stations": 64,
+    "records": 154692
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 7.7365154188201855,
+    "stations": 39,
+    "records": 51498
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 9.47414027055658,
+    "stations": 113,
+    "records": 164208
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 10.577021593276722,
+    "stations": 87,
+    "records": 72543
+  },
+  {
+    "kind": "p14",
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 13.34036368818351,
+    "stations": 60,
+    "records": 39081
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 8.215163164350864,
+    "stations": 135,
+    "records": 82725
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "group": "MAM",
+    "macro_rmse_mm": 9.293321280858587,
+    "stations": 132,
+    "records": 82611
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 10.877146114578455,
+    "stations": 129,
+    "records": 80925
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "group": "SON",
+    "macro_rmse_mm": 10.67036162163037,
+    "stations": 128,
+    "records": 81069
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "group": "dev_coast_0_100",
+    "macro_rmse_mm": 9.839947552103373,
+    "stations": 83,
+    "records": 204282
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "group": "dev_coast_100_300",
+    "macro_rmse_mm": 10.315912462995806,
+    "stations": 23,
+    "records": 52992
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "group": "dev_coast_300_inf",
+    "macro_rmse_mm": 9.58343347134861,
+    "stations": 29,
+    "records": 70056
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "group": "dev_height_-100_500",
+    "macro_rmse_mm": 10.607356724224797,
+    "stations": 55,
+    "records": 132981
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "group": "dev_height_500_1500",
+    "macro_rmse_mm": 9.492065539999452,
+    "stations": 50,
+    "records": 122319
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "group": "dev_height_1500_inf",
+    "macro_rmse_mm": 9.129776910341896,
+    "stations": 30,
+    "records": 72030
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "group": "roughness_0_0.5",
+    "macro_rmse_mm": 9.252313823368826,
+    "stations": 71,
+    "records": 172638
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "group": "roughness_0.5_1.5",
+    "macro_rmse_mm": 10.546670666928227,
+    "stations": 64,
+    "records": 154692
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 7.732362967120415,
+    "stations": 39,
+    "records": 51498
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 9.471194833701711,
+    "stations": 113,
+    "records": 164208
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 10.552263466886115,
+    "stations": 87,
+    "records": 72543
+  },
+  {
+    "kind": "features",
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 13.300399716012459,
+    "stations": 60,
+    "records": 39081
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 8.244906783201962,
+    "stations": 135,
+    "records": 82725
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "group": "MAM",
+    "macro_rmse_mm": 9.298896901712466,
+    "stations": 132,
+    "records": 82611
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 10.880008915032269,
+    "stations": 129,
+    "records": 80925
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "group": "SON",
+    "macro_rmse_mm": 10.676580864561894,
+    "stations": 128,
+    "records": 81069
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "group": "dev_coast_0_100",
+    "macro_rmse_mm": 9.851476789238792,
+    "stations": 83,
+    "records": 204282
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "group": "dev_coast_100_300",
+    "macro_rmse_mm": 10.316103708696382,
+    "stations": 23,
+    "records": 52992
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "group": "dev_coast_300_inf",
+    "macro_rmse_mm": 9.601280422703422,
+    "stations": 29,
+    "records": 70056
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "group": "dev_height_-100_500",
+    "macro_rmse_mm": 10.62720853326528,
+    "stations": 55,
+    "records": 132981
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "group": "dev_height_500_1500",
+    "macro_rmse_mm": 9.495218437356183,
+    "stations": 50,
+    "records": 122319
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "group": "dev_height_1500_inf",
+    "macro_rmse_mm": 9.137423328927873,
+    "stations": 30,
+    "records": 72030
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "group": "roughness_0_0.5",
+    "macro_rmse_mm": 9.260871505463708,
+    "stations": 71,
+    "records": 172638
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "group": "roughness_0.5_1.5",
+    "macro_rmse_mm": 10.560284596520507,
+    "stations": 64,
+    "records": 154692
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 7.749840507569663,
+    "stations": 39,
+    "records": 51498
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 9.484288903319472,
+    "stations": 113,
+    "records": 164208
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 10.522517555172184,
+    "stations": 87,
+    "records": 72543
+  },
+  {
+    "kind": "mlp",
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 13.32201668256046,
+    "stations": 60,
+    "records": 39081
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 8.230625115642624,
+    "stations": 135,
+    "records": 82725
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "group": "MAM",
+    "macro_rmse_mm": 9.28337810088299,
+    "stations": 132,
+    "records": 82611
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 10.854841578060945,
+    "stations": 129,
+    "records": 80925
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "group": "SON",
+    "macro_rmse_mm": 10.659123291831607,
+    "stations": 128,
+    "records": 81069
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "group": "dev_coast_0_100",
+    "macro_rmse_mm": 9.82477886767464,
+    "stations": 83,
+    "records": 204282
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "group": "dev_coast_100_300",
+    "macro_rmse_mm": 10.32217948741899,
+    "stations": 23,
+    "records": 52992
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "group": "dev_coast_300_inf",
+    "macro_rmse_mm": 9.593990737485909,
+    "stations": 29,
+    "records": 70056
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "group": "dev_height_-100_500",
+    "macro_rmse_mm": 10.608707500913694,
+    "stations": 55,
+    "records": 132981
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "group": "dev_height_500_1500",
+    "macro_rmse_mm": 9.472545790008141,
+    "stations": 50,
+    "records": 122319
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "group": "dev_height_1500_inf",
+    "macro_rmse_mm": 9.132876785468767,
+    "stations": 30,
+    "records": 72030
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "group": "roughness_0_0.5",
+    "macro_rmse_mm": 9.236256568299837,
+    "stations": 71,
+    "records": 172638
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "group": "roughness_0.5_1.5",
+    "macro_rmse_mm": 10.55184826977242,
+    "stations": 64,
+    "records": 154692
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 7.726686920000661,
+    "stations": 39,
+    "records": 51498
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 9.462771934382392,
+    "stations": 113,
+    "records": 164208
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 10.549320375603621,
+    "stations": 87,
+    "records": 72543
+  },
+  {
+    "kind": "gru",
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 13.330906190611662,
+    "stations": 60,
+    "records": 39081
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 8.224723818614406,
+    "stations": 135,
+    "records": 82725
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "group": "MAM",
+    "macro_rmse_mm": 9.285199697026178,
+    "stations": 132,
+    "records": 82611
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 10.853062725005502,
+    "stations": 129,
+    "records": 80925
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "group": "SON",
+    "macro_rmse_mm": 10.660538801020948,
+    "stations": 128,
+    "records": 81069
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "group": "dev_coast_0_100",
+    "macro_rmse_mm": 9.822721474288578,
+    "stations": 83,
+    "records": 204282
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "group": "dev_coast_100_300",
+    "macro_rmse_mm": 10.324459046046137,
+    "stations": 23,
+    "records": 52992
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "group": "dev_coast_300_inf",
+    "macro_rmse_mm": 9.592677281776355,
+    "stations": 29,
+    "records": 70056
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "group": "dev_height_-100_500",
+    "macro_rmse_mm": 10.605745020227658,
+    "stations": 55,
+    "records": 132981
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "group": "dev_height_500_1500",
+    "macro_rmse_mm": 9.472495512683459,
+    "stations": 50,
+    "records": 122319
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "group": "dev_height_1500_inf",
+    "macro_rmse_mm": 9.13317766166111,
+    "stations": 30,
+    "records": 72030
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "group": "roughness_0_0.5",
+    "macro_rmse_mm": 9.235071050076472,
+    "stations": 71,
+    "records": 172638
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "group": "roughness_0.5_1.5",
+    "macro_rmse_mm": 10.550719328767153,
+    "stations": 64,
+    "records": 154692
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 7.722167875592485,
+    "stations": 39,
+    "records": 51498
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 9.46079963645183,
+    "stations": 113,
+    "records": 164208
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 10.56095600109287,
+    "stations": 87,
+    "records": 72543
+  },
+  {
+    "kind": "lstm",
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 13.326657796893505,
+    "stations": 60,
+    "records": 39081
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "group": "DJF",
+    "macro_rmse_mm": 8.323719920619054,
+    "stations": 135,
+    "records": 82725
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "group": "MAM",
+    "macro_rmse_mm": 9.321923673430037,
+    "stations": 132,
+    "records": 82611
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "group": "JJA",
+    "macro_rmse_mm": 10.861616982335216,
+    "stations": 129,
+    "records": 80925
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "group": "SON",
+    "macro_rmse_mm": 10.712022096371092,
+    "stations": 128,
+    "records": 81069
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "group": "dev_coast_0_100",
+    "macro_rmse_mm": 9.900493203085016,
+    "stations": 83,
+    "records": 204282
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "group": "dev_coast_100_300",
+    "macro_rmse_mm": 10.301821590244241,
+    "stations": 23,
+    "records": 52992
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "group": "dev_coast_300_inf",
+    "macro_rmse_mm": 9.609454568764955,
+    "stations": 29,
+    "records": 70056
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "group": "dev_height_-100_500",
+    "macro_rmse_mm": 10.643249776222445,
+    "stations": 55,
+    "records": 132981
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "group": "dev_height_500_1500",
+    "macro_rmse_mm": 9.565082123302679,
+    "stations": 50,
+    "records": 122319
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "group": "dev_height_1500_inf",
+    "macro_rmse_mm": 9.124139035616308,
+    "stations": 30,
+    "records": 72030
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "group": "roughness_0_0.5",
+    "macro_rmse_mm": 9.323364503696462,
+    "stations": 71,
+    "records": 172638
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "group": "roughness_0.5_1.5",
+    "macro_rmse_mm": 10.553095861928265,
+    "stations": 64,
+    "records": 154692
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "group": "support_0_50",
+    "macro_rmse_mm": 7.785225829521257,
+    "stations": 39,
+    "records": 51498
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "group": "support_50_100",
+    "macro_rmse_mm": 9.512864525678017,
+    "stations": 113,
+    "records": 164208
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "group": "support_100_150",
+    "macro_rmse_mm": 10.526752693254119,
+    "stations": 87,
+    "records": 72543
+  },
+  {
+    "kind": "transformer",
+    "seed": 17,
+    "group": "support_150_inf",
+    "macro_rmse_mm": 13.32871229483875,
+    "stations": 60,
+    "records": 39081
   }
 ]

@@ -1,0 +1,33 @@
+{
+  "capture": "Posthoc inherited artifact receipt; original run protocols remain unchanged",
+  "files": [
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261123_terrain_diffusion_v10_data\\data.npz",
+      "sha256": "6a57285228b043b406ad033212f6d8dbbad2e4755338e74429b1f6a7ac6b5ac5",
+      "size_bytes": 7599421
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\02_data\\processed\\gnss_field_server_v1\\geometry.npz",
+      "sha256": "a824bd4d6f61c686c1c8a717075f4d8498a95903bb4664c4a0e6f4f8419b7e5b",
+      "size_bytes": 184658
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261125_temporal_continuous_data\\p14_grid_coast.npy",
+      "sha256": "5c44d911808e9eca9bdda51a922ac31f54a6875fc877f69a24f23590589a7aea",
+      "size_bytes": 55424
+    }
+  ],
+  "normalization": {
+    "mean": [
+      79.76289367675781,
+      287.9574890136719,
+      916.6582641601562
+    ],
+    "std": [
+      45.831058502197266,
+      9.926286697387695,
+      81.20382690429688
+    ]
+  },
+  "labels_from_inherited_pack_used_for_this_capture": false
+}

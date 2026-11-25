@@ -37,6 +37,15 @@
       "truth_exact": true
     },
     {
+      "case": "T5_frozen",
+      "seed": 17,
+      "prediction_sha256": "c4c90fb0d7c9b39f739c868cbe9f93c963f9b6fadd9ae4c7a3fd230495561a83",
+      "source_weight_sha256": "0167bfb5c067adcfebe55b7ab58f850585d91573da9ecc8a8e1dead58017ca3a",
+      "source_prediction_sha256": "20bcf9611758283b516e9f8d75945efa046214a63cb7659dbafd9d3935106820",
+      "all_five_primary_metrics_max_difference_mm": 4.712323224964621e-07,
+      "truth_exact": true
+    },
+    {
       "case": "Qraw",
       "seed": 42,
       "prediction_sha256": "7fd4fc96613b997fd0549b1584f525f0981a137c5cf15808c7efeb71058ad321",
@@ -70,6 +79,24 @@
       "source_weight_sha256": "0167bfb5c067adcfebe55b7ab58f850585d91573da9ecc8a8e1dead58017ca3a",
       "source_prediction_sha256": "20bcf9611758283b516e9f8d75945efa046214a63cb7659dbafd9d3935106820",
       "all_five_primary_metrics_max_difference_mm": 2.4474923421280437e-07,
+      "truth_exact": true
+    },
+    {
+      "case": "S_transformer_raw",
+      "seed": 42,
+      "prediction_sha256": "963dd3b475187e125b56655182a8247919a5cb5843732b347f087439d902ec76",
+      "source_weight_sha256": "d87223f76df74354dde4ad1f1ab18097880b4a0396b2d5b565bda10000385f3a",
+      "source_prediction_sha256": "43a310d152cf1a0940af48bc4a3d1bc45a6f01682705740a68ce01ee94aab8a8",
+      "all_five_primary_metrics_max_difference_mm": 5.863842922337881e-08,
+      "truth_exact": true
+    },
+    {
+      "case": "S_transformer_ema",
+      "seed": 42,
+      "prediction_sha256": "8f106e63ef40fb187939e9c3a5b6391c987ac213f9aec9bca0f2523495549001",
+      "source_weight_sha256": "d87223f76df74354dde4ad1f1ab18097880b4a0396b2d5b565bda10000385f3a",
+      "source_prediction_sha256": "43a310d152cf1a0940af48bc4a3d1bc45a6f01682705740a68ce01ee94aab8a8",
+      "all_five_primary_metrics_max_difference_mm": 5.495133006405695e-07,
       "truth_exact": true
     }
   ],

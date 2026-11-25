@@ -1,0 +1,17 @@
+{
+  "purpose": "Fixed-window capacity probe, never a formal precision score",
+  "date": "2016-07-08",
+  "consecutive_hours": 2,
+  "condition_layout": 0,
+  "seed": 42,
+  "steps": 200,
+  "lr": 0.001,
+  "device": "cpu",
+  "source_sha256": "d87223f76df74354dde4ad1f1ab18097880b4a0396b2d5b565bda10000385f3a",
+  "data_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+  "code_sha256": "82efc6b53b3a3f4ae3089601866eb8967d76275ffe6dc3f6c221e92f7e17d4c6",
+  "reference_frozen": true,
+  "trust_region_mm": 5,
+  "formal_training_contract": false,
+  "no_development_or_confirmation_labels": true
+}

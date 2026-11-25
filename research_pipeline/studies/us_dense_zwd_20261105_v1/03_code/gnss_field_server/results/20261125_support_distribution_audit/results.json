@@ -1,0 +1,147 @@
+{
+  "code_sha256": "b3d920f10ba1bd04342dc34081b187ff737ee8a3a8889cce95fb704d2ef6545f",
+  "data_contract_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+  "distance_bins_km": [
+    "0-50",
+    "50-100",
+    "100-200",
+    "200+"
+  ],
+  "population": "Exact 3000 continuous12h training blocks, hidden physical groups, finite training truth",
+  "no_model_fitting": true,
+  "results": [
+    {
+      "regime": "random",
+      "seed": 42,
+      "hole_blocks": 0,
+      "valid_targets_by_distance": [
+        6831555,
+        2512575,
+        1698725,
+        455477
+      ],
+      "record_fractions": [
+        0.5941344361947455,
+        0.21851647699857685,
+        0.14773664562825287,
+        0.039612441178424836
+      ],
+      "station_macro_fractions": [
+        0.5931765874929631,
+        0.21886756977126104,
+        0.1478970701063385,
+        0.040058772629437904
+      ],
+      "no_current_condition_targets": 33,
+      "missing_current_condition_records": 74738
+    },
+    {
+      "regime": "quarter_hole100",
+      "seed": 42,
+      "hole_blocks": 750,
+      "valid_targets_by_distance": [
+        6756069,
+        2568219,
+        1728390,
+        446647
+      ],
+      "record_fractions": [
+        0.5875187456655064,
+        0.22333650018588047,
+        0.15030360477680213,
+        0.038841149371810955
+      ],
+      "station_macro_fractions": [
+        0.5854506653890619,
+        0.22415967156776961,
+        0.15097474444215322,
+        0.03941491860101574
+      ],
+      "no_current_condition_targets": 24,
+      "missing_current_condition_records": 75722
+    },
+    {
+      "regime": "random",
+      "seed": 17,
+      "hole_blocks": 0,
+      "valid_targets_by_distance": [
+        6835816,
+        2524859,
+        1687135,
+        451250
+      ],
+      "record_fractions": [
+        0.5944673738549064,
+        0.21957090405650548,
+        0.14671938401921547,
+        0.03924233806937263
+      ],
+      "station_macro_fractions": [
+        0.5930455430909233,
+        0.2201596591488285,
+        0.1470640773068403,
+        0.03973072045340776
+      ],
+      "no_current_condition_targets": 25,
+      "missing_current_condition_records": 75458
+    },
+    {
+      "regime": "quarter_hole100",
+      "seed": 17,
+      "hole_blocks": 750,
+      "valid_targets_by_distance": [
+        6745844,
+        2572339,
+        1736987,
+        444321
+      ],
+      "record_fractions": [
+        0.5866210947945435,
+        0.2236915529565613,
+        0.1510490333876517,
+        0.03863831886124351
+      ],
+      "station_macro_fractions": [
+        0.5845201598706349,
+        0.22441722465019837,
+        0.15187498218994475,
+        0.03918763328922235
+      ],
+      "no_current_condition_targets": 31,
+      "missing_current_condition_records": 75895
+    }
+  ],
+  "distance_weight_derivation": {
+    "target": "137 registered development coordinates x3 condition layouts; geometry only, no truth or validity mask",
+    "metadata_counts": [
+      67,
+      211,
+      119,
+      14
+    ],
+    "target_fractions": [
+      0.1630170316301703,
+      0.51338199513382,
+      0.2895377128953771,
+      0.0340632603406326
+    ],
+    "training_quarter_hole_fractions": [
+      0.5870699202300249,
+      0.22351402657122088,
+      0.1506763190822269,
+      0.03873973411652723
+    ],
+    "ratio": [
+      0.2776790736720035,
+      2.2968670155035444,
+      1.9215873778902903,
+      0.8792848251919329
+    ],
+    "rounded_fixed_weights": [
+      0.278,
+      2.297,
+      1.922,
+      0.879
+    ]
+  }
+}

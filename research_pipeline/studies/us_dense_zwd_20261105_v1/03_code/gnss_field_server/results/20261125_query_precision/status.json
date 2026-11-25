@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETE_QUERY_WITH_EXTERNAL_SEED17_RECOVERY",
+  "original_seed17_failed_and_preserved": true,
+  "completed_seed42_run": "results\\20261125_query_precision",
+  "completed_seed17_run": "results\\20261125_query_precision_s17_retry",
+  "completed_seeds": [
+    42,
+    17
+  ],
+  "recovery_summary_sha256": "1c3462ced66bcad486f2f110d2b2f827087c0410adad4b66cd2fba001ae3e7fb",
+  "new_recovery_source_model_class_unchanged": true
+}
