@@ -12,6 +12,7 @@ from tools.terrain_diffusion.native_paths import file_path
 from tools.terrain_diffusion.native_weather_gp_diffusion_experiment import WeatherSources,codes
 from tools.terrain_diffusion.native_weather_gp_diffusion import make_model,trajectory_factors,transform_gp_path
 from tools.terrain_diffusion.data import sha,write_json
+from tools.terrain_diffusion.native_model_seal import validate_model_seal
 
 
 @torch.no_grad()
@@ -30,6 +31,9 @@ def main():
         args.transport=file_path(args.transport);protocol=read(args.transport/'protocol.json');status=read(args.transport/'status.json')
         expected='ENGINEERING_SMOKE_COMPLETE' if args.smoke else 'COMPLETE_WEATHER_TRANSPORT'
         if status['status']!=expected or protocol['source']!=source.receipt or protocol['code_sha256']!=codes():raise ValueError('transport source changed')
+        if args.smoke:
+            if sha(args.transport/'last.pt')!=status['last_weights_sha256']:raise ValueError('engineering weights changed')
+        else:validate_model_seal(args.transport,'COMPLETE_WEATHER_TRANSPORT',codes())
         model=make_model(protocol['config']['mode']).cuda().eval()
         model.load_state_dict(torch.load(args.transport/'last.pt',map_location='cuda',weights_only=True))
     rows=[];torch.manual_seed(261126)

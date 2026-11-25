@@ -8,6 +8,8 @@ from campaign import RESULTS,ROOT,read
 ENGINE=ROOT/'research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server'
 sys.path.insert(0,str(ENGINE))
 from tools.terrain_diffusion.data import sha,write_json
+from tools.terrain_diffusion.native_model_seal import seal_completed_model,evaluation_marker
+from tools.terrain_diffusion.native_weather_gp_experiment import codes
 
 
 def interval(pairs):
@@ -31,6 +33,8 @@ def main():
         for mode in ('reference','c175','c265'):
             folder=root/f's{seed}'/mode
             if mode!='reference':folder=folder/'eval'
+            seal=seal_completed_model(folder.parent,'COMPLETE_WEATHER_GP',codes()) if mode!='reference' else None
+            evaluation_marker(folder,seal)
             metrics=read(folder/'metrics.json');joint=read(folder/'joint_metrics.json');lineage=read(folder/'lineage.json')
             if sha(folder/'evaluation.npz')!=lineage['prediction_sha256']:raise ValueError('saved Gaussian arrays changed')
             with np.load(folder/'evaluation.npz') as data:

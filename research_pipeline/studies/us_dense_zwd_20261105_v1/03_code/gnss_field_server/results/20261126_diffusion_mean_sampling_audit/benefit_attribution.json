@@ -1,0 +1,132 @@
+{
+  "rows": [
+    {
+      "seed": 42,
+      "Full_F6_station_pair": {
+        "0-50": {
+          "reference_mm": 5.244663714589588,
+          "Full_mm": 4.46403120066124,
+          "gain_percent": 14.884319689683569
+        },
+        "50-150": {
+          "reference_mm": 7.925228709225688,
+          "Full_mm": 7.385957330404456,
+          "gain_percent": 6.804489795902931
+        },
+        "150-300": {
+          "reference_mm": 9.364163605398932,
+          "Full_mm": 8.994568063939855,
+          "gain_percent": 3.946914610141858
+        },
+        "300-inf": {
+          "reference_mm": 11.17148912996248,
+          "Full_mm": 11.321530638469378,
+          "gain_percent": -1.3430752763700948
+        }
+      },
+      "Full_current_station_pair": {
+        "0-50": {
+          "reference_mm": 4.066762261136384,
+          "Full_mm": 4.14613151470129,
+          "gain_percent": -1.9516570792295942
+        },
+        "50-150": {
+          "reference_mm": 6.793983435915988,
+          "Full_mm": 6.764605448375924,
+          "gain_percent": 0.43241182168267134
+        },
+        "150-300": {
+          "reference_mm": 7.113361886127716,
+          "Full_mm": 7.072142576836773,
+          "gain_percent": 0.5794631279947635
+        },
+        "300-inf": {
+          "reference_mm": 8.126616732432911,
+          "Full_mm": 8.139347213006106,
+          "gain_percent": -0.15665166689094895
+        }
+      },
+      "Local_increment_gain_percent": 3.2664452921566234,
+      "source_joint_sha256": {
+        "reference": "f2568952f3b003578d3e55e3f32a2a22bb17e33e573084417122317fe0372d8f",
+        "full": "a4081876cda1a4446f6251bfbe48d075d2c4ffd93402d3ca969a531b2c1b30fc",
+        "local": "c5a3c971e9942374de32f732279fea8523092ea341c82f003e737c1670bb0f04",
+        "affine": "07559a096ea81f11f3f6f5a2a990a74562fd9df0a4fc01d17a066db3a2616436",
+        "graph_affine": "8ab2a2b4d7777cd7a255adba74855d962a84e6002d31e3c81d133d44418fa3b3"
+      },
+      "Full_vs_GraphAffine_near_F6": {
+        "gain_percent": 4.136729068809398,
+        "delta_ci95_mm": [
+          -0.22287009270016428,
+          -0.16312333384942157
+        ]
+      }
+    },
+    {
+      "seed": 17,
+      "Full_F6_station_pair": {
+        "0-50": {
+          "reference_mm": 5.103244714308617,
+          "Full_mm": 4.440258332509595,
+          "gain_percent": 12.99146756455011
+        },
+        "50-150": {
+          "reference_mm": 7.789733519395069,
+          "Full_mm": 7.3353672772549094,
+          "gain_percent": 5.832885566738164
+        },
+        "150-300": {
+          "reference_mm": 9.33717053036529,
+          "Full_mm": 9.023235084850704,
+          "gain_percent": 3.3622117588367977
+        },
+        "300-inf": {
+          "reference_mm": 11.118088269263271,
+          "Full_mm": 11.247577899542915,
+          "gain_percent": -1.1646753213646108
+        }
+      },
+      "Full_current_station_pair": {
+        "0-50": {
+          "reference_mm": 4.015664134619206,
+          "Full_mm": 4.094327547121996,
+          "gain_percent": -1.9589141388750675
+        },
+        "50-150": {
+          "reference_mm": 6.730089590800299,
+          "Full_mm": 6.698756923658203,
+          "gain_percent": 0.4655609218772713
+        },
+        "150-300": {
+          "reference_mm": 7.060487095377647,
+          "Full_mm": 7.004309991807649,
+          "gain_percent": 0.7956547871431802
+        },
+        "300-inf": {
+          "reference_mm": 8.042641734717735,
+          "Full_mm": 8.073684020851548,
+          "gain_percent": -0.3859712661302865
+        }
+      },
+      "Local_increment_gain_percent": 2.7155656654602107,
+      "source_joint_sha256": {
+        "reference": "d26ae6524ebfd0c1a71cd21a295c8a976372c2337dc1bdc1ed764fc884fcf633",
+        "full": "88309a29b990fd57c4c559a1af3978b4bc2d98dbca18d88ca046432418569679",
+        "local": "e18447ae627f9c4a5913458348b738367ea08994e499d622469706022d2a7221",
+        "affine": "b56e0bec86268029c6c0064b3c02c35c9c0fdc495568facd56bf30abf64394c8",
+        "graph_affine": "781e83d55b6b6ea4f783f4802f1e704c5a225c0fdf1f3ead410057a8c74f7e46"
+      },
+      "Full_vs_GraphAffine_near_F6": {
+        "gain_percent": 2.074940453355411,
+        "delta_ci95_mm": [
+          -0.12114635244784158,
+          -0.0706386347781761
+        ]
+      }
+    }
+  ],
+  "code_sha256": "487dfd9ce263a7bfb83e16c67070f2529dd0f22fe2b2402357f39c188136e777",
+  "scope": "Exposed2020 main calendar; common-month exploratory intervals; no multiplicity correction",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}

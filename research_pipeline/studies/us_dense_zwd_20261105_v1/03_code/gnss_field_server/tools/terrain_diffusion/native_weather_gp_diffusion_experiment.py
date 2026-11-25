@@ -11,6 +11,7 @@ from .native_paths import file_path
 from .native_process_experiment import Sources,validate_training
 from .native_weather_gp_experiment import codes as gp_codes
 from .native_weather_gp import WeatherProjectiveGP
+from .native_model_seal import validate_model_seal,seal_completed_model
 from .native_weather_gp_diffusion import condition265,make_model,trajectory_factors,masked_loss,transform_gp_path,affine_marginals
 from .native_weather_experiment import checkpoint,stop_requested
 from .native_weather_evaluation import calendar_shape,point_metrics,fair_crps,gaussian_crps,safe_mean
@@ -21,7 +22,7 @@ def read(path):return json.loads(path.read_text(encoding='utf-8'))
 
 def codes():
     return {**gp_codes(),**{name:sha(Path(__file__).with_name(name)) for name in
-        ('native_weather_gp_diffusion.py','native_weather_gp_diffusion_experiment.py')}}
+        ('native_weather_gp_diffusion.py','native_weather_gp_diffusion_experiment.py','native_model_seal.py')}}
 
 
 def validate_gp(protocol,status,source,expected_codes,smoke):
@@ -31,16 +32,24 @@ def validate_gp(protocol,status,source,expected_codes,smoke):
     if protocol['source']!=source or protocol['code_sha256']!=expected_codes:raise ValueError('frozen GP source changed')
 
 
+def validate_transport_gp(protocol,seed):
+    if protocol['config']['view']!=265 or protocol['config']['seed']!=seed:
+        raise ValueError('registered transport requires G265 with matching seed')
+
+
 class WeatherSources(Sources):
     def __init__(self,args):
         super().__init__(args)
         protocol=read(args.gp/'protocol.json');status=read(args.gp/'status.json')
         validate_gp(protocol,status,self.receipt,gp_codes(),args.smoke_cache)
+        if protocol['config']['seed']!=args.seed:raise ValueError('GP seed differs from requested experiment')
+        seal=None if args.smoke_cache else validate_model_seal(args.gp,'COMPLETE_WEATHER_GP',gp_codes())
         self.weather_gp=WeatherProjectiveGP(protocol['config']['view'],self.copula).to(args.device).eval()
         self.weather_gp.load_state_dict(torch.load(args.gp/'last.pt',map_location=args.device,weights_only=True))
         self.weather_gp.requires_grad_(False)
         self.receipt={**self.receipt,'weather_gp_protocol_sha256':sha(args.gp/'protocol.json'),
             'weather_gp_weights_sha256':sha(args.gp/'last.pt')}
+        if seal is not None:self.receipt['weather_gp_seal_sha256']=sha(args.gp/'model_artifact_seal.json')
 
     @torch.no_grad()
     def weather_batch(self,i,full=False):
@@ -54,6 +63,7 @@ class WeatherSources(Sources):
 
 def train(args):
     source=WeatherSources(args);data=source.data
+    validate_transport_gp(read(args.gp/'protocol.json'),args.seed)
     same=sha(args.cache/'manifest.json')==sha(source.training_cache/'manifest.json')
     validate_training(data.development,len(data),args.steps,args.smoke_cache,same,data.protocol,source.training_protocol)
     if not args.smoke_cache and sha(args.embeddings/'manifest.json')!=source.gp['embedding_manifest_sha256']:
@@ -89,17 +99,20 @@ def train(args):
             write_json(args.out/'status.json',dict(status='STOPPED_AT_BUDGET',steps=step+1));raise SystemExit(75)
     torch.save(model.state_dict(),args.out/'last.pt')
     write_json(args.out/'status.json',dict(status='ENGINEERING_SMOKE_COMPLETE' if args.smoke_cache else 'COMPLETE_WEATHER_TRANSPORT',
-        steps=args.steps,supervised_updates=updates,seconds=time.monotonic()-start))
+        steps=args.steps,supervised_updates=updates,seconds=time.monotonic()-start,last_weights_sha256=sha(args.out/'last.pt')))
+    if not args.smoke_cache:seal_completed_model(args.out,'COMPLETE_WEATHER_TRANSPORT',codes())
 
 
 @torch.no_grad()
 def evaluate(args):
     if args.smoke_cache:raise ValueError('formal evaluation rejects engineering smoke')
     source=WeatherSources(args);data=source.data
+    validate_transport_gp(read(args.gp/'protocol.json'),args.seed)
     if not data.development:raise ValueError('registered development calendar required')
     protocol=read(args.process/'protocol.json');status=read(args.process/'status.json')
     if status['status']!='COMPLETE_WEATHER_TRANSPORT' or status['steps']!=3000:raise ValueError('transport training incomplete')
     if protocol['source']!=source.receipt or protocol['code_sha256']!=codes():raise ValueError('transport source changed')
+    validate_model_seal(args.process,'COMPLETE_WEATHER_TRANSPORT',codes())
     mode=protocol['config']['mode'];model=make_model(mode).to(args.device).eval()
     model.load_state_dict(torch.load(args.process/'last.pt',map_location=args.device,weights_only=True))
     if args.members<2:raise ValueError('IID fair scores require at least2 members')

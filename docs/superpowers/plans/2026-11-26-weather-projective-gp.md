@@ -13,7 +13,7 @@
 ## Global Constraints
 
 - 不修改已运行的native_process、GraphAffine或均值v2源码/科学锁；只新增模块和独立runner。
-- 同3000连续12h块、72h状态、146h原始跨度；未来mask仅用于监督；推断137查询。
+- 同3000连续12h块、72h状态、146h原始跨度；未来可用性参与既有缓存目标站抽样，给定查询后仅用于监督子集；推断137查询。
 - 输入仅GNSS/T/P、mask/age、身份、时钟、地形/海岸及历史误差。禁止PWV/IWV/TCWV/Tm。
 - 2020已暴露、strict_oof=false；确认138及原C/D隔离；75%预算停止线；轻量证据Git同步。
 
@@ -73,3 +73,9 @@
 初版真实缺测两臂各4更新通过；随后mask-poison回归测试RED→GREEN，先按mask清理全局摘要，再重跑两臂各4更新，每臂1435条完整轨迹，warm covariance最大差7.07515e-8。初版与mask版源码按协议哈希分别保存在engineering_snapshots。主日历参考137查询、K32完整采样与解析站对/增量已真实通过。
 
 lead依赖诊断显示固定300km/1500m尺度无法同时匹配当前与6h依赖，新增21个按lead的基础长度参数；归一化Gaussian卷积核及平移不变性测试RED→GREEN。新参数量43893/44027，后续正式训练使用最后核验的metric版本，不混用早期小试权重。metric学习率1e-3，其余3e-4；每组最低率为初值0.1倍。
+
+## 独立审阅修订
+
+CPU独立14合同通过，另以激活Affine直接映射核验Heun0/DDIM最大差5.02e-7/1.37e-6。新增G265/配对seed正式守卫、最终checkpoint权重seal、完整评价工件标记（3项RED→GREEN）。旧GP训练正在执行，计算源码不改；封装/正式消费者核验seal。已有4更新扩散源码按协议SHA归档于engineering_snapshots/weather_transport_v1；新守卫版本另目录weather_transport_gap_sealed重跑。
+
+训练数据描述区分整块未来标签可用性引导的128目标身份抽样与逐起点完整7h监督。推断和固定查询的天气条件不使用未来标签。计分模块native_weather_evaluation.py尚未进入旧GP codes指纹，记为minor后续绑定；本轮评分实现未更改，结果与保存数组核验。

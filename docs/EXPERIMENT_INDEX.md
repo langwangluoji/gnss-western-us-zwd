@@ -6,6 +6,7 @@
 
 | 实验 | 已记录状态 | 证据入口 |
 |---|---|---|
+| 20261126_diffusion_mean_sampling_audit | COMPLETE_READ_ONLY：双种子五模型K32，MSE方差扣除与共同月份区间；原数组/基础场不改 | [收益与均值误差](research_notes/2026-11-26-diffusion-benefits-and-mean-error.md)；[分析报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_diffusion_mean_sampling_audit/REPORT.md) |
 | 20261126_weather_projective_gp | TWO_SEED_IN_PROGRESS：G175/G265相关核各3000；冻结均值和尺度；masked/metric真实4更新通过 | [新架构与机制](research_notes/2026-11-26-weather-projective-trajectory.md)；[精确公式](superpowers/specs/2026-11-26-weather-projective-gp.md) |
 | 20261126_weather_transport_gap_metric | ENGINEERING_COMPLETE：Local/Affine各4更新1435轨迹；正式3000衔接待GP完成 | [实现与执行计划](superpowers/plans/2026-11-26-weather-projective-gp.md) |
 | 20261126_gp_process_calendar15 | SEED42_COMPLETE；SEED17_IN_PROGRESS：冻结Full/Local/参考补充开发日期，无训练 | [冻结验证合同](superpowers/plans/2026-11-26-frozen-spatial-dependence-verification.md) |

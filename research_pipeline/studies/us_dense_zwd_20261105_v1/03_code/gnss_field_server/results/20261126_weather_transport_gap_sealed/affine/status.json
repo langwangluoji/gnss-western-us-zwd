@@ -1,0 +1,7 @@
+{
+  "status": "ENGINEERING_SMOKE_COMPLETE",
+  "steps": 4,
+  "supervised_updates": 4,
+  "seconds": 4.547000000005937,
+  "last_weights_sha256": "03b560d1faa7ef909efbe84bd2922a94096a4814b10759194090cb2ed4a8b837"
+}

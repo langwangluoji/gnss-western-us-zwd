@@ -4,6 +4,8 @@ import subprocess
 import sys
 from pathlib import Path
 from campaign import ROOT,RESULTS,STOP,read,run
+from tools.terrain_diffusion.native_model_seal import seal_completed_model,evaluation_marker
+from tools.terrain_diffusion.native_weather_gp_experiment import codes
 
 
 def main():
@@ -15,7 +17,8 @@ def main():
     common=['--gaussian',gaussian,'--copula',gaussian/'copula.json','--seed',seed]
     reference=root/'reference'
     run('native_weather_gp_experiment',['--phase','reference','--cache',cache/f'calendar8_s{seed}',
-        '--embeddings',embedding/f'{name}_dev_s{seed}','--out',reference,*common],reference/'metrics.json')
+        '--embeddings',embedding/f'{name}_dev_s{seed}','--out',reference,*common],evaluation_marker(reference))
+    evaluation_marker(reference)
     targets=[reference]
     for view in (175,265):
         folder=root/f'c{view}'
@@ -23,9 +26,11 @@ def main():
             '--embeddings',embedding/f'{name}_train_s{seed}','--out',folder,'--view',view,
             '--steps',3000,'--lr',3e-4,'--metric-lr',1e-3,*common],folder/'status.json')
         if read(folder/'status.json')['status']!='COMPLETE_WEATHER_GP':raise ValueError('weather covariance training incomplete')
+        seal=seal_completed_model(folder,'COMPLETE_WEATHER_GP',codes())
         evaluation=folder/'eval'
         run('native_weather_gp_experiment',['--phase','evaluate','--cache',cache/f'calendar8_s{seed}',
-            '--embeddings',embedding/f'{name}_dev_s{seed}','--model',folder,'--out',evaluation,*common],evaluation/'metrics.json')
+            '--embeddings',embedding/f'{name}_dev_s{seed}','--model',folder,'--out',evaluation,*common],evaluation_marker(evaluation,seal))
+        evaluation_marker(evaluation,seal)
         targets.append(evaluation)
     for target in targets:
         if not (target/'joint_metrics.json').exists():

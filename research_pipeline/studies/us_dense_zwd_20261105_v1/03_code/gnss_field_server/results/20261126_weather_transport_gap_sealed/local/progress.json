@@ -1,0 +1,10 @@
+{
+  "step": 4,
+  "loss": 0.8961392641067505,
+  "supervised_updates": 4,
+  "complete_trajectories": 640,
+  "used_origins": 5,
+  "total_trajectories": 1435,
+  "last_origin_hour": 423600,
+  "seconds": 4.813000000009197
+}

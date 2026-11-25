@@ -1,5 +1,9 @@
 # 下一阶段研究入口与执行审阅
 
+本轮下一步的统一优先级、未解问题和突破候选见[证据驱动研究路线](research_notes/2026-11-26-next-breakthrough-directions.md)。新增候选尚未训练，当前GP/Local/Affine合同保持原样。
+
+最新问题核验：[扩散收益与均值误差分离](research_notes/2026-11-26-diffusion-benefits-and-mean-error.md)。Full改善未来近邻差值CRPS13%–15%，当前/远距离及全场评分有代价；扣除有限成员方差后，Full当前均值MSE相对基础场的差值区间仍为正。点预测继续保留9.818mm基础场，天气相关核及Local/Affine衔接继续按固定方案验证。
+
 新增执行：[逐站因果编码、天气条件核与轨迹扩散](research_notes/2026-11-26-weather-projective-trajectory.md)。同历史12配置和C/H/S续训全部双种子完成；Full近邻站对F6差值CRPS改善13%–15%，同图Gaussian控制约11%，支持优先校准空间依赖。天气GP两臂双种子正式3000块训练进行中；其Local/Affine衔接已实现并通过真实缺测4更新，尚未正式训练。项目默认568测试、研究模块165测试通过。[全流程PNG/SVG](figures/weather_native_20261126/weather_projective_trajectory.png)与精确公式已归档。
 
 
