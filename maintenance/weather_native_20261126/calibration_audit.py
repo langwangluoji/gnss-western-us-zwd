@@ -45,7 +45,7 @@ def main():
         source_evaluation_sha256=lineage['prediction_sha256'],strict_oof=False,confirmation_C_D_read=False)
     if args.gaussian:
         import torch
-        from tools.terrain_diffusion.native_weather_models import NativeGaussian
+        from tools.terrain_diffusion.native_probability_context import condition_view,gaussian_from_protocol
         torch.set_num_threads(3);torch.set_grad_enabled(False)
         protocol=json.loads((args.gaussian/'protocol.json').read_text(encoding='utf-8'))
         if protocol['config']['domain']!='gaussian' or sha(args.gaussian/'last.pt')!=lineage['probability_weights_sha256']:raise ValueError('Gaussian source differs')
@@ -53,10 +53,12 @@ def main():
         manifest=json.loads((args.embeddings/'manifest.json').read_text(encoding='utf-8'))
         if sha(args.embeddings/'manifest.json')!=lineage['embedding_manifest_sha256']:raise ValueError('Gaussian embeddings differ')
         embedding=np.load(args.embeddings/'embedding.npy',mmap_mode='r');sigmas=[]
-        model=NativeGaussian().eval();model.load_state_dict(torch.load(args.gaussian/'last.pt',map_location='cpu',weights_only=True))
+        model=gaussian_from_protocol(protocol).eval();model.load_state_dict(torch.load(args.gaussian/'last.pt',map_location='cpu',weights_only=True))
         scale=np.array(protocol['normalization']['scale_mm'])
-        for c in embedding:
-            _,logstd=model(torch.tensor(np.array(c),dtype=torch.float32));sigmas.append(logstd.exp().numpy()*scale)
+        raw_condition=np.load(args.cache/'condition.npy',mmap_mode='r')
+        for i,c in enumerate(embedding):
+            c=condition_view(torch.tensor(np.array(c),dtype=torch.float32),torch.tensor(np.array(raw_condition[i]),dtype=torch.float32),protocol['config'].get('condition_view','latent'))
+            _,logstd=model(c);sigmas.append(logstd.exp().numpy()*scale)
         sigma=calendar_shape(np.stack(sigmas),truth.shape[1]);quantile=1.2815515655446004
         result['analytic_gaussian_80']=coverage(analytic_mean-quantile*sigma,analytic_mean+quantile*sigma,truth)
         expected=json.loads((args.evaluation/'metrics.json').read_text(encoding='utf-8'))['analytic_gaussian_crps_mm_by_horizon']

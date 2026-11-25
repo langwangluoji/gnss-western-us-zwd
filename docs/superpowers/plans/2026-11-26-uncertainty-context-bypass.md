@@ -26,18 +26,18 @@
 
 Files: `tools/terrain_diffusion/native_probability_context.py`、`test_native_probability_context.py`。
 
-- [ ] RED：缺视图/工厂时测试失败；验证concat逐值保持、query重排一致、构造默认与旧模型等同。
-- [ ] GREEN：只实现latent/raw/skip及显式condition_dim/width工厂；不添加未验证天气变量。
-- [ ] 核对Gaussian参数5070/8078/12174/12180及四类模型非默认条件维度的有限前向/采样。
+- [x] RED：缺视图/工厂时测试失败；验证concat逐值保持、query重排一致、构造默认与旧模型等同。
+- [x] GREEN：只实现latent/raw/skip及显式condition_dim/width工厂；不添加未验证天气变量。
+- [x] 核对Gaussian参数5070/8078/12174/12180及四类模型非默认条件维度的有限前向/采样。
 
 ## Task 2：训练、采样和预条件协议
 
 Files: `native_weather_experiment.py`、`native_weather_evaluation.py`、`native_copula.py`及校准审计入口。
 
-- [ ] RED：条件视图不一致时拒绝预条件；旧latent协议可读取。
-- [ ] 接入`--condition-view`和`--width`，按块构造条件；登记来源/工厂哈希。
-- [ ] 预条件器按其协议宽度构造，score按自身协议构造，条件维度必须一致。
-- [ ] 全研究测试及真实缺测块小试通过后提交，再运行seed42 R111/S175/Lwide各3000块。
+- [x] RED：条件视图不一致时拒绝预条件；旧latent协议可读取。
+- [x] 接入`--condition-view`和`--width`，按块构造条件；登记来源/工厂哈希。
+- [x] 预条件器按其协议宽度构造，score按自身协议构造，条件维度必须一致。
+- [x] 全研究测试及真实缺测块小试通过后提交，再运行seed42 R111/S175/Lwide各3000块。
 
 ## Task 3：配对证据与晋级
 

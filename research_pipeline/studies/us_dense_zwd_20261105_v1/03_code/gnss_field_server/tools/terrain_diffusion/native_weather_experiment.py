@@ -12,9 +12,9 @@ from .data import sha,write_json
 from .native_weather_models import NativeMean,NativeDiffusion,NativeGaussian
 from .native_weather import graph_basis
 from .native_weather_cache import static
-from .native_frequency_tokens import probability_model
 from .native_physics_lm import mean_model,causal_station_loss
 from .native_paths import file_path
+from .native_probability_context import condition_view,condition_dimension,make_probability,require_condition_view,gaussian_from_protocol
 
 
 def checkpoint(folder,step,model,optimizer,scheduler,ema=None):
@@ -187,25 +187,28 @@ def train_probability(args):
     condition=np.load(args.embeddings/'embedding.npy',mmap_mode='r');mean=np.load(args.embeddings/'mean.npy',mmap_mode='r')
     bias=torch.tensor(stats['bias_mm'],device='cuda');scale=torch.tensor(stats['scale_mm'],device='cuda')
     torch.manual_seed(args.seed)
-    model=probability_model(args.domain).cuda()
+    model=make_probability(args.domain,condition_dimension(args.condition_view),args.width).cuda()
     preconditioner=None
     if args.preconditioner:
         if args.domain=='gaussian':raise ValueError('Gaussian is the preconditioner control')
         pre_protocol=json.loads((args.preconditioner/'protocol.json').read_text(encoding='utf-8'))
         if pre_protocol['embedding_manifest_sha256']!=sha(args.embeddings/'manifest.json'):raise ValueError('preconditioner information differs')
         if pre_protocol['normalization']!=stats:raise ValueError('preconditioner normalization differs')
-        preconditioner=NativeGaussian().cuda().eval()
+        require_condition_view(pre_protocol,args.condition_view)
+        preconditioner=gaussian_from_protocol(pre_protocol).cuda().eval()
         preconditioner.load_state_dict(torch.load(args.preconditioner/'last.pt',weights_only=True))
         for param in preconditioner.parameters():param.requires_grad_(False)
     optimizer=torch.optim.AdamW(model.parameters(),lr=args.lr,weight_decay=.01)
     scheduler=torch.optim.lr_scheduler.CosineAnnealingLR(optimizer,args.steps,eta_min=args.lr*.1)
     write_json(folder/'protocol.json',dict(config={k:str(v) if isinstance(v,Path) else v for k,v in vars(args).items()
-        if k in ('phase','cache','out','embeddings','domain','seed','steps','lr','preconditioner')},
+        if k in ('phase','cache','out','embeddings','domain','seed','steps','lr','preconditioner','condition_view','width')},
         embedding_manifest_sha256=sha(args.embeddings/'manifest.json'),normalization=stats,
         condition_encoder_kind=manifest['model_kind'],condition_encoder_weights_sha256=manifest['mean_weights_sha256'],
         condition_encoder_variant=manifest.get('mean_variant','baseline'),
         code_sha256=sha(Path(__file__).with_name('native_weather_models.py')),strict_oof=False,
-        extra_model_sources={'native_frequency_tokens.py':sha(Path(__file__).with_name('native_frequency_tokens.py'))} if args.domain=='frequency_tokens' else {},
+        extra_model_sources={name:sha(Path(__file__).with_name(name)) for name in
+            ['native_probability_context.py']+(['native_frequency_tokens.py'] if args.domain=='frequency_tokens' else [])},
+        condition_dimension=condition_dimension(args.condition_view),
         model_class=type(model).__name__,parameters=sum(p.numel() for p in model.parameters()),
         preconditioner_sha256=sha(args.preconditioner/'last.pt') if args.preconditioner else None,
         source_exposure='frozen source fitted all2016-2019; development screen, not strict OOF'))
@@ -213,6 +216,7 @@ def train_probability(args):
     for step in range(args.steps):
         i=step%len(data)
         truth=data.tensor(data.a['truth'][i]);mu=data.tensor(mean[i]);c=data.tensor(condition[i])
+        c=condition_view(c,data.tensor(data.a['condition'][i]),args.condition_view)
         target=(truth-mu-bias)/scale
         if preconditioner is not None:
             with torch.no_grad():location,logscale=preconditioner(c)
@@ -248,6 +252,8 @@ def main():
     p.add_argument('--weights',choices=['last','ema'],default='ema');p.add_argument('--embeddings',type=Path)
     p.add_argument('--preconditioner',type=Path)
     p.add_argument('--domain',choices=['gaussian','spatial','graph','joint','frequency_tokens'],default='spatial')
+    p.add_argument('--condition-view',choices=['latent','raw','skip'],default='latent')
+    p.add_argument('--width',type=int,default=64)
     args=p.parse_args()
     for name,value in vars(args).items():
         if isinstance(value,Path):setattr(args,name,file_path(value))

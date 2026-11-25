@@ -9,8 +9,8 @@ from .data import sha,write_json
 from .native_weather_experiment import CachedData
 from .native_weather_models import NativeDiffusion,NativeGaussian
 from .native_copula import correlate_noise
-from .native_frequency_tokens import probability_model
 from .native_paths import file_path
+from .native_probability_context import condition_view,condition_dimension,make_probability,require_condition_view,gaussian_from_protocol
 
 
 def safe_mean(x,axis):
@@ -84,18 +84,22 @@ def main():
         if training_manifest['mean_weights_sha256']!=manifest['mean_weights_sha256']:raise ValueError('evaluation and probability mean weights differ')
         domain=protocol['config']['domain'];stats=protocol['normalization']
         bias=torch.tensor(stats['bias_mm'],device='cuda');scale=torch.tensor(stats['scale_mm'],device='cuda')
-        model=probability_model(domain).cuda().eval()
+        view=protocol['config'].get('condition_view','latent')
+        model=make_probability(domain,condition_dimension(view),protocol['config'].get('width',64)).cuda().eval()
         model.load_state_dict(torch.load(args.probability/'last.pt',weights_only=True))
         preconditioner=None
         if protocol.get('preconditioner_sha256'):
             path=Path(protocol['config']['preconditioner'])/'last.pt'
             if sha(path)!=protocol['preconditioner_sha256']:raise ValueError('Gaussian preconditioner changed')
-            preconditioner=NativeGaussian().cuda().eval();preconditioner.load_state_dict(torch.load(path,weights_only=True))
+            pre_protocol=json.loads((path.parent/'protocol.json').read_text(encoding='utf-8'))
+            require_condition_view(pre_protocol,view)
+            preconditioner=gaussian_from_protocol(pre_protocol).cuda().eval();preconditioner.load_state_dict(torch.load(path,weights_only=True))
         copula=json.loads(args.copula.read_text(encoding='utf-8')) if args.copula else None
         if copula and (domain!='gaussian' or copula['gaussian_weights_sha256']!=sha(args.probability/'last.pt')):raise ValueError('copula source differs')
         allsamples=[];analytic=[];gaussian_means=[];torch.manual_seed(args.seed)
         for i in range(len(data)):
             c=data.tensor(condition[i]);mu=data.tensor(mean[i]);eigen,U=data.graph(i)
+            c=condition_view(c,data.tensor(data.a['condition'][i]),view)
             B,Q,_=c.shape;K=args.members
             noise=torch.randn(K*B,Q,7,device='cuda')
             if copula:

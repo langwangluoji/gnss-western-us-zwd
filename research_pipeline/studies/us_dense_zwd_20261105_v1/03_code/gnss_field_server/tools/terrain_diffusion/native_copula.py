@@ -6,7 +6,8 @@ import numpy as np
 import torch
 from .data import sha,write_json
 from .native_weather_experiment import CachedData
-from .native_weather_models import NativeGaussian
+from .native_probability_context import condition_view,gaussian_from_protocol
+from .native_paths import file_path
 
 
 def spatial_correlation(static,rho):
@@ -27,7 +28,10 @@ def correlate_noise(noise,static,rho,time_correlation):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--cache',type=Path,required=True)
     p.add_argument('--embeddings',type=Path,required=True);p.add_argument('--gaussian',type=Path,required=True)
-    args=p.parse_args();torch.set_num_threads(3);torch.cuda.set_per_process_memory_fraction(.25)
+    args=p.parse_args()
+    for name,value in vars(args).items():
+        if isinstance(value,Path):setattr(args,name,file_path(value))
+    torch.set_num_threads(3);torch.cuda.set_per_process_memory_fraction(.25)
     data=CachedData(args.cache)
     protocol=json.loads((args.gaussian/'protocol.json').read_text(encoding='utf-8'))
     if data.development or protocol['config']['domain']!='gaussian':raise ValueError('requires training Gaussian source')
@@ -35,11 +39,12 @@ def main():
     destination=args.gaussian/'copula.json'
     if destination.exists():raise FileExistsError('copula already frozen')
     stats=protocol['normalization'];bias=data.tensor(stats['bias_mm']);scale=data.tensor(stats['scale_mm'])
-    model=NativeGaussian().cuda().eval();model.load_state_dict(torch.load(args.gaussian/'last.pt',weights_only=True))
+    model=gaussian_from_protocol(protocol).cuda().eval();model.load_state_dict(torch.load(args.gaussian/'last.pt',weights_only=True))
     mean=np.load(args.embeddings/'mean.npy',mmap_mode='r');features=np.load(args.embeddings/'embedding.npy',mmap_mode='r')
     covariance=torch.zeros(7,7,device='cuda',dtype=torch.float64);count=0;spatial_num=0.;spatial_den=0.
     for i in range(len(data)):
-        mu,logstd=model(data.tensor(features[i]));target=(data.tensor(data.a['truth'][i])-data.tensor(mean[i])-bias)/scale
+        c=condition_view(data.tensor(features[i]),data.tensor(data.a['condition'][i]),protocol['config'].get('condition_view','latent'))
+        mu,logstd=model(c);target=(data.tensor(data.a['truth'][i])-data.tensor(mean[i])-bias)/scale
         z=(target-mu)*(-logstd).exp()
         eligible=torch.isfinite(z).all(-1);flat=z[eligible].double()
         covariance+=flat.T@flat;count+=len(flat)
