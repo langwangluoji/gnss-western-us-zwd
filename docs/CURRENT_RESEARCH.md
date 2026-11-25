@@ -88,3 +88,7 @@ P15 原始 6.29/6.53 mm 等数字是固定时间 monitor RMSE，仅用于采样�
 
 ### 下一阶段方案（2026-11-25）
 详细的 2016–2019 训练 / 2020 验证、边消息空间编码、基础场与残差 diffusion 配对方案见 [下一阶段优化方案](superpowers/specs/2026-11-25-next-optimization-plan.md)。网页 Pro 协作会话已打开，但本轮正文回收未完成；方案仅使用本机已核验的 p14/V15/扩展 U-Net 结果。
+
+### 执行计划入口（2026-11-25）
+下一阶段每一步的文件、接口、测试、停止条件和提交节奏见 [时空联合 Diffusion 实施计划](superpowers/plans/2026-11-25-spatiotemporal-diffusion-implementation-plan.md)。
+Karpathy 指南已落实为：先锁合同、先写失败测试、最小改动、每步独立验证、每步单独提交。
