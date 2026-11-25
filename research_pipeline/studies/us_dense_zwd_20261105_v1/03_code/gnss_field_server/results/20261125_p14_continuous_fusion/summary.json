@@ -1,0 +1,59 @@
+[
+  {
+    "kind": "frozen",
+    "seed": 42,
+    "steps": 0,
+    "metrics": {
+      "macro_rmse_mm": 10.103223802869541,
+      "micro_rmse_mm": 10.64453411102295,
+      "mae_mm": 7.792516708374023,
+      "bias_mm": 0.5416096448898315,
+      "increment_macro_rmse_mm": 5.570517107259961,
+      "layout_macro_rmse_mm": [
+        10.255820251058672,
+        10.200480784217877,
+        9.853370373332075
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  },
+  {
+    "kind": "p14",
+    "seed": 42,
+    "steps": 3000,
+    "metrics": {
+      "macro_rmse_mm": 10.019037963590538,
+      "micro_rmse_mm": 10.554058074951172,
+      "mae_mm": 7.720512866973877,
+      "bias_mm": 0.2955534756183624,
+      "increment_macro_rmse_mm": 5.589409847525695,
+      "layout_macro_rmse_mm": [
+        10.162757505639888,
+        10.136925060171048,
+        9.75743132496068
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  },
+  {
+    "kind": "features",
+    "seed": 42,
+    "steps": 3000,
+    "metrics": {
+      "macro_rmse_mm": 10.006562226384226,
+      "micro_rmse_mm": 10.538467407226562,
+      "mae_mm": 7.710068702697754,
+      "bias_mm": 0.23507046699523926,
+      "increment_macro_rmse_mm": 5.587002984544805,
+      "layout_macro_rmse_mm": [
+        10.137299715057578,
+        10.128518189802888,
+        9.753868774292213
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  }
+]
