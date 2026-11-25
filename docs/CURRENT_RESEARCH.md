@@ -92,3 +92,6 @@ P15 原始 6.29/6.53 mm 等数字是固定时间 monitor RMSE，仅用于采样�
 ### 执行计划入口（2026-11-25）
 下一阶段每一步的文件、接口、测试、停止条件和提交节奏见 [时空联合 Diffusion 实施计划](superpowers/plans/2026-11-25-spatiotemporal-diffusion-implementation-plan.md)。
 Karpathy 指南已落实为：先锁合同、先写失败测试、最小改动、每步独立验证、每步单独提交。
+
+### 完整实验协议（2026-11-25）
+新阶段的实验原理、数据合同、模型分支、训练步骤、评价图件、停止规则和归档格式见 [完整实验协议](superpowers/specs/2026-11-25-spatiotemporal-experiment-protocol.md)。
