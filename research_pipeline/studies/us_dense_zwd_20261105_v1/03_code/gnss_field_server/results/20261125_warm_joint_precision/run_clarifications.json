@@ -1,0 +1,13 @@
+{
+  "case": "T5_joint",
+  "interpretation": "joint fine-tuning plus activation of the previously frozen zero static query head",
+  "old_query_head_reactivated_parameters": 518,
+  "old_query_head_lr": 1e-06,
+  "new_temporal_fusion_lr": 1e-05,
+  "registered_before_joint_training": true,
+  "at_registration_other_case": "T5_frozen_s42",
+  "not_pure_original_trainability_ablation": true,
+  "strict_oof": false,
+  "uninterrupted_code_and_protocol_preserved": true,
+  "final_analysis": "combined_precision/REPORT.md includesQraw/Qema,original reference hashes,allfive metrics and common-month two-seed paired bootstrap"
+}

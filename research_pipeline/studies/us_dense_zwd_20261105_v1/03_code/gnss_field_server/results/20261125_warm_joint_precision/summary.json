@@ -36,5 +36,81 @@
       "station_count": 135,
       "valid_count": 327330
     }
+  },
+  {
+    "seed": 42,
+    "case": "T5_frozen",
+    "steps": 3000,
+    "metrics": {
+      "macro_rmse_mm": 10.006067359983712,
+      "micro_rmse_mm": 10.532560348510742,
+      "mae_mm": 7.711318016052246,
+      "bias_mm": 0.4477258324623108,
+      "increment_macro_rmse_mm": 5.584701788494653,
+      "layout_macro_rmse_mm": [
+        10.131646252161305,
+        10.115370704936531,
+        9.771185122853296
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  },
+  {
+    "seed": 42,
+    "case": "T5_joint",
+    "steps": 3000,
+    "metrics": {
+      "macro_rmse_mm": 9.989835296941864,
+      "micro_rmse_mm": 10.517483711242676,
+      "mae_mm": 7.701159477233887,
+      "bias_mm": 0.3699658513069153,
+      "increment_macro_rmse_mm": 5.583016098433194,
+      "layout_macro_rmse_mm": [
+        10.108761875553112,
+        10.102792407313457,
+        9.757951607959024
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  },
+  {
+    "seed": 17,
+    "case": "reference",
+    "steps": 0,
+    "metrics": {
+      "macro_rmse_mm": 9.85994449111523,
+      "micro_rmse_mm": 10.379293441772461,
+      "mae_mm": 7.6098785400390625,
+      "bias_mm": -0.029918057844042778,
+      "increment_macro_rmse_mm": 5.583602171822608,
+      "layout_macro_rmse_mm": [
+        9.896252621861164,
+        10.030924829346707,
+        9.65265602213782
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  },
+  {
+    "seed": 17,
+    "case": "T2_frozen",
+    "steps": 3000,
+    "metrics": {
+      "macro_rmse_mm": 9.859874039115356,
+      "micro_rmse_mm": 10.383617401123047,
+      "mae_mm": 7.608884811401367,
+      "bias_mm": -0.326351135969162,
+      "increment_macro_rmse_mm": 5.5854149426732445,
+      "layout_macro_rmse_mm": [
+        9.878334575550134,
+        10.043726488103154,
+        9.657561053692781
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
   }
 ]

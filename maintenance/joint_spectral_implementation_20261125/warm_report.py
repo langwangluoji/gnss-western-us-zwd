@@ -29,7 +29,7 @@ def main():
     for row in summary:
         folder=run/f"{row['case']}_s{row['seed']}";a=dict(np.load(folder/'evaluation.npz'))
         actual=reconstruction_scores(a['prediction'],a['truth'])
-        error=max(abs(actual[k]-row['metrics'][k]) for k in ('macro_rmse_mm','micro_rmse_mm','increment_macro_rmse_mm'))
+        error=max(abs(actual[k]-row['metrics'][k]) for k in ('macro_rmse_mm','micro_rmse_mm','mae_mm','bias_mm','increment_macro_rmse_mm'))
         assert error<1e-5
         checks.append(dict(case=row['case'],seed=row['seed'],max_metric_difference_mm=error,sha256=sha(folder/'evaluation.npz')))
         if row['case']=='reference':

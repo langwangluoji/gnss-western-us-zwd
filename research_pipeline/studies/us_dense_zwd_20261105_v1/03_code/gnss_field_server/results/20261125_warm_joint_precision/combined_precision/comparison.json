@@ -1,0 +1,183 @@
+{
+  "records": [
+    {
+      "case": "reference",
+      "seed": 42,
+      "macro_rmse_mm": 9.998356815530679,
+      "micro_rmse_mm": 10.527208809553608,
+      "mae_mm": 7.707912674391736,
+      "bias_mm": 0.27809452877630875,
+      "increment_macro_rmse_mm": 5.584140241629251,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0
+    },
+    {
+      "case": "reference",
+      "seed": 17,
+      "macro_rmse_mm": 9.859944460987718,
+      "micro_rmse_mm": 10.379293200373029,
+      "mae_mm": 7.609878254142897,
+      "bias_mm": -0.029918065724602885,
+      "increment_macro_rmse_mm": 5.583602095902645,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0
+    },
+    {
+      "case": "T2_frozen",
+      "seed": 42,
+      "run": "warm",
+      "steps": 3000,
+      "macro_rmse_mm": 9.996575646226265,
+      "micro_rmse_mm": 10.522058792087435,
+      "mae_mm": 7.70497336691876,
+      "bias_mm": 0.43462975740731374,
+      "increment_macro_rmse_mm": 5.583300048095072,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.0017811693044134103,
+      "delta_micro_rmse_mm": -0.00515001746617294,
+      "delta_mae_mm": -0.0029393074729755497,
+      "delta_bias_mm": 0.156535228631005,
+      "delta_increment_macro_rmse_mm": -0.0008401935341790789,
+      "monthly_paired95_mm": [
+        -0.010853001028767828,
+        0.006930563221306983
+      ]
+    },
+    {
+      "case": "T5_frozen",
+      "seed": 42,
+      "run": "warm",
+      "steps": 3000,
+      "macro_rmse_mm": 10.006067599432615,
+      "micro_rmse_mm": 10.532560225041872,
+      "mae_mm": 7.711318517490228,
+      "bias_mm": 0.4477258540895483,
+      "increment_macro_rmse_mm": 5.584701829368391,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": 0.00771078390193658,
+      "delta_micro_rmse_mm": 0.005351415488263456,
+      "delta_mae_mm": 0.003405843098492234,
+      "delta_bias_mm": 0.16963132531323954,
+      "delta_increment_macro_rmse_mm": 0.0005615877391393909,
+      "monthly_paired95_mm": [
+        0.001127122572335182,
+        0.013557940614757768
+      ]
+    },
+    {
+      "case": "T5_joint",
+      "seed": 42,
+      "run": "warm",
+      "steps": 3000,
+      "macro_rmse_mm": 9.989835384372206,
+      "micro_rmse_mm": 10.517483277516193,
+      "mae_mm": 7.701159848644044,
+      "bias_mm": 0.36996585622962924,
+      "increment_macro_rmse_mm": 5.58301615094526,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.008521431158472481,
+      "delta_micro_rmse_mm": -0.009725532037414553,
+      "delta_mae_mm": -0.006752825747692093,
+      "delta_bias_mm": 0.0918713274533205,
+      "delta_increment_macro_rmse_mm": -0.0011240906839917741,
+      "monthly_paired95_mm": [
+        -0.016846166847117594,
+        -0.0009157927581936679
+      ]
+    },
+    {
+      "case": "T2_frozen",
+      "seed": 17,
+      "run": "warm",
+      "steps": 3000,
+      "macro_rmse_mm": 9.859874101045662,
+      "micro_rmse_mm": 10.383617377673296,
+      "mae_mm": 7.6088843115949425,
+      "bias_mm": -0.3263511254305043,
+      "increment_macro_rmse_mm": 5.585414946126331,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -7.035994205573104e-05,
+      "delta_micro_rmse_mm": 0.004324177300267351,
+      "delta_mae_mm": -0.000993942547954596,
+      "delta_bias_mm": -0.29643305970590145,
+      "delta_increment_macro_rmse_mm": 0.0018128502236862687,
+      "monthly_paired95_mm": [
+        -0.008768269628852021,
+        0.007104264455610787
+      ]
+    },
+    {
+      "case": "Qraw",
+      "seed": 42,
+      "run": "query",
+      "steps": 3000,
+      "macro_rmse_mm": 9.997528519797346,
+      "micro_rmse_mm": 10.526990266536638,
+      "mae_mm": 7.707371105530979,
+      "bias_mm": 0.19193933627616583,
+      "increment_macro_rmse_mm": 5.58401757634608,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.0008282957333332064,
+      "delta_micro_rmse_mm": -0.00021854301697032952,
+      "delta_mae_mm": -0.000541568860756847,
+      "delta_bias_mm": -0.08615519250014292,
+      "delta_increment_macro_rmse_mm": -0.00012266528317095293,
+      "monthly_paired95_mm": [
+        -0.0030507367737070633,
+        0.0012139121302003897
+      ]
+    },
+    {
+      "case": "Qema",
+      "seed": 42,
+      "run": "query",
+      "steps": 3000,
+      "macro_rmse_mm": 9.982291143936882,
+      "micro_rmse_mm": 10.510154835953024,
+      "mae_mm": 7.69803100904805,
+      "bias_mm": 0.3458769426028837,
+      "increment_macro_rmse_mm": 5.581894507475799,
+      "valid_count": 327330,
+      "effective_stations": 135,
+      "negative_prediction_fraction": 0.0,
+      "delta_macro_rmse_mm": -0.016065671593796793,
+      "delta_micro_rmse_mm": -0.017053973600583916,
+      "delta_mae_mm": -0.009881665343685953,
+      "delta_bias_mm": 0.06778241382657496,
+      "delta_increment_macro_rmse_mm": -0.0022457341534520836,
+      "monthly_paired95_mm": [
+        -0.024969214995842835,
+        -0.004969490864040882
+      ]
+    }
+  ],
+  "two_seed_means": [
+    {
+      "case": "T2_frozen",
+      "macro_rmse_mm": 9.928224873635964,
+      "reference_macro_rmse_mm": 9.929150638259198,
+      "delta_macro_rmse_mm": -0.0009257646232345706,
+      "common_month_two_seed_paired95_mm": [
+        -0.004922655731789516,
+        0.003386563154667654
+      ],
+      "improves_both_seeds": true,
+      "negative_interval_upper": false
+    }
+  ],
+  "bootstrap": "1000 common month resamples shared across seeds/layouts; full72h block and station pairing",
+  "source": "original saved GRU predictions, exact truth and source-weight hash matched",
+  "current_development_exposed": true
+}

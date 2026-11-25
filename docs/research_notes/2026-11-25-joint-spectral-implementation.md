@@ -6,7 +6,7 @@
 
 ## 各实验的全流程架构图
 
-共14张架构图，同时提供PNG和SVG，GitHub直接显示PNG。
+共15张架构图，同时提供PNG和SVG，GitHub直接显示PNG。
 
 | 模型 | 流程图 |
 |---|---|
@@ -18,6 +18,9 @@
 | 高噪声端v预测稳定性控制 | [v预测全流程](../figures/joint_spectral_implementation_20261125/velocity_control.png) |
 | 既有10mm模型上的正式精度衔接 | [旧GRU+p14＋新Transformer融合](../figures/joint_spectral_implementation_20261125/warm_10mm.png) |
 | 查询级时间融合与raw／EMA | [直接查询点残差解码](../figures/joint_spectral_implementation_20261125/query_10mm.png) |
+| 原始站点时间编码＋连续查询＋U-Net背景 | [原始站点序列融合](../figures/joint_spectral_implementation_20261125/station_10mm.png) |
+
+进一步的[原始站点编码方案](../superpowers/specs/2026-11-25-direct-station-query-fusion.md)已实现，并通过5项CPU合同测试，真实训练排队等待Q完成。该分支保留每站原始72小时序列，将条件方向、高差、海岸及物理创新直接用于查询注意力，再融合原U-Net两级特征。尚未据此报告精度提升。
 
 用户追加的精度要求对应[3000步配对优化计划](../superpowers/plans/2026-11-25-warm-joint-precision.md)：保留已完成的约10mm模型权重及所有分支，新增Transformer修正头严格零初始化；当前正在执行双种子T2/T5冻结与联合微调，未改善则继续调整。下文从头短训结果用于定位问题，不替代此性能要求。
 

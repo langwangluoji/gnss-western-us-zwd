@@ -1,0 +1,19 @@
+{
+  "seed": 17,
+  "last_logged_step": 2900,
+  "final3000_evaluation_completed": false,
+  "error": "CUDA memory reservation quota exceeded; requested386MiB, allocated1.82GiB, reserved603MiB, quota2.56GiB, devicefree1.29GiB",
+  "source_seed42_completed_and_preserved": true,
+  "recovery_run": "20261125_query_precision_s17_retry",
+  "recovery_cuda_fraction": 0.38,
+  "query_residual_class_ast_unchanged": true,
+  "source_revision": "2436f9a",
+  "recovery_changes": [
+    "memory quota",
+    "EMA RNN flatten",
+    "checkpoint every500 with optimizer and RNG",
+    "cache release every500"
+  ],
+  "interpretation": "replay same architecture/data/loss/seed; partial failed seed is not included in scoring",
+  "status_handoff": "original status marker created only after recovery completes"
+}

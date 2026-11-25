@@ -2114,37 +2114,190 @@
       ],
       "status": "IMPLEMENTED_ENGINEERING_PILOT",
       "text_bounds": "PASS"
+    },
+    {
+      "id": "station_10mm",
+      "title": "原始站点序列：连续查询与U-Net多尺度背景融合",
+      "nodes": [
+        {
+          "id": "0",
+          "x": 50,
+          "y": 88,
+          "width": 90,
+          "height": 9,
+          "text": "冻结原GRU＋p14，保留约10mm参考mu_ref\n同时提供两级U-Net查询特征16＋32，分别归一化",
+          "role": "space"
+        },
+        {
+          "id": "1",
+          "x": 50,
+          "y": 76,
+          "width": 90,
+          "height": 9,
+          "text": "82条件站各自72小时原始序列：11动态＋8静态\n每站独立因果Transformer32；GRU／LSTM实现作备用",
+          "role": "time"
+        },
+        {
+          "id": "2",
+          "x": 50,
+          "y": 64,
+          "width": 90,
+          "height": 9,
+          "text": "每个真实查询选择最多16个有效邻站，保留方向和高差\n站点状态32＋几何／海岸／age／物理创新10＝消息42",
+          "role": "time"
+        },
+        {
+          "id": "3",
+          "x": 50,
+          "y": 52,
+          "width": 90,
+          "height": 9,
+          "text": "查询输入：原点113＋静态9＋参考1＋多尺度48＝171\n归一化查询／键注意力＋距离先验 → 聚合状态32和创新1",
+          "role": "space"
+        },
+        {
+          "id": "4",
+          "x": 50,
+          "y": 40,
+          "width": 90,
+          "height": 9,
+          "text": "204→64→64→1，末层零初始化，物理修正限制±5mm\n新增站点分支直接按坐标解码；无有效邻站退回原参考",
+          "role": "space"
+        },
+        {
+          "id": "5",
+          "x": 50,
+          "y": 28,
+          "width": 90,
+          "height": 9,
+          "text": "3000步、连续12h批、双种子，新增lr1e-4\n站点布局75%随机／25%hole100；最终raw及EMA0.999",
+          "role": "train"
+        },
+        {
+          "id": "6",
+          "x": 50,
+          "y": 16,
+          "width": 90,
+          "height": 9,
+          "text": "原2020相同队列配对、共同月份bootstrap\n分开报告海岸／高程／地形／条件距离／站对／增量误差",
+          "role": "neutral"
+        }
+      ],
+      "edges": [
+        {
+          "points": [
+            [
+              50,
+              83.5
+            ],
+            [
+              50,
+              80.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              71.5
+            ],
+            [
+              50,
+              68.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              59.5
+            ],
+            [
+              50,
+              56.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              47.5
+            ],
+            [
+              50,
+              44.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              35.5
+            ],
+            [
+              50,
+              32.5
+            ]
+          ],
+          "dashed": false
+        },
+        {
+          "points": [
+            [
+              50,
+              23.5
+            ],
+            [
+              50,
+              20.5
+            ]
+          ],
+          "dashed": false
+        }
+      ],
+      "status": "IMPLEMENTED_ENGINEERING_PILOT",
+      "text_bounds": "PASS"
     }
   ],
-  "generator_sha256": "57095bfafd3df427d9b69af53e1d5f2207188ee4ad159cbcef926a2becb9ca3d",
+  "generator_sha256": "93889bee457887983c206adf66c964242c71f33db596f34b781dca79551c012b",
   "outputs": {
     "A0.png": "4ace52d71a7ffdcaf13097c6021ceb35be07ab5130bf6c2901ae97ea1c0a4d82",
-    "A0.svg": "98290ce36d6c0983c1b2b4b1fc32342c1bcad89326c0eebdfba3714f0d6e095a",
+    "A0.svg": "860936e58b328ce074daf67363996ef5902a7754d3665f8cec23fdc129bd7e06",
     "A1.png": "a9c5ba349d92c34b885f8d334795ed46366effef675ac477dd5683948db86610",
-    "A1.svg": "6b677c22dc5215364dca6f6ec960ac8193a29c59fc44828ced36cea78993dded",
+    "A1.svg": "482992272e7957ad9c32ea04f1a4a40c2ededbf2ddb06844f03ad2184417b00a",
     "A2.png": "1c61a67abe2b8fc31f6bdbb74e07e697f481ffd54d10be2aa6a60ce7a7f5aedb",
-    "A2.svg": "b3bb4be748e78973b318e89874a08e61fd8c43d855fd781b1a880b5d58273308",
+    "A2.svg": "b80c08fe313cbd8ec9d54277cbc1df9647f689efa0535708affd30130947d05d",
     "B0.png": "c2e5c024012f14a5359e947fdeab72f27e062f6e93cc9baae543845650b880b8",
-    "B0.svg": "dda6a659ded700fe89f92b59f74fff38d005ec0d468978a941c34acc692185b5",
+    "B0.svg": "b0c060ba9890741409858bd8309c370dcbd4f9c4d4de44d44c04e9ba44f63e1c",
     "B1.png": "ea74e28a991114120db123c9c105628485d7afc7ead05667c64e65ba126a1c0f",
-    "B1.svg": "5244a93ec4997b1435e4b4c35644df92a1e5f4df36ce7733b6f2aca0992f61e4",
+    "B1.svg": "965e1280136a85aa4a179650356ebcacf47712ab651c5b7c8e43429da5ccbc18",
     "foundation.png": "246890717c68092794c99ab77618614ffd011277d407b224c80786a724202ab3",
-    "foundation.svg": "d6eb0337fa738196f42b8892433ad69185c1db149d5aa2ca9c7842cb72fb206f",
+    "foundation.svg": "59d286777bf2995c114264e9ca86283cebabab16536555ee21b4d97d2a80c5d0",
     "J0.png": "bbe7efe1c89af22774efadd33ef3406d4138d1871ee9c303a4014557e7f9acb1",
-    "J0.svg": "e105c386fd22a1e41380aa7feaf7b6cd94ba3c071035a3c54f9143449477503e",
+    "J0.svg": "dd748fc88699e0a98eacbbec2d7f1fc35846cb008b594e907905e677263b735a",
     "J1.png": "0866be933d7cb522905110b87bdad5806d0c316a014f0fd8cb368f8dae72938a",
-    "J1.svg": "983e7ceeb2799465ef7e8189c7815ecdcb2419b1aba221f9c86c4004a03ebdb5",
+    "J1.svg": "c8ae8d4de33a42b5949b6fc8439744d53cc126bd347549d17b83008f6d4e0c0c",
     "L0.png": "1f141d69bd3d883cea89f7071ddddd967441fd0c507350e978bc0618786b61bd",
-    "L0.svg": "bad9b8b004886d7806befa82c1de6d0e25e856f7a8b0a486e0706b134a1f8f8b",
+    "L0.svg": "c94b2cff4766bb2d7ba08da518dca92b7599db2ecf3756ff27ef518ad7eff993",
     "L1.png": "803890ee8e1bec50a8649fa1ddde40a53b38c8ce2f8c56b94664ef214b2a155b",
-    "L1.svg": "0f5d9d3d21a9beb24ee936dce7e8119f305ffd9c69cf92a1d16937b1e5e984b8",
+    "L1.svg": "b7d42106c345a9d35900ff099fbea1cbc7d58cdbfb62bfe7890be9254b8273ab",
     "overview.png": "f89f280c6d5f25e119b06a4b8d618df7230759b8a3a23f5e29b2827aa0996c3f",
-    "overview.svg": "78d8db1eb68681847d8cbcac87fc88369b2d0bebb61dd9fb0d95c9223e7e04eb",
+    "overview.svg": "5975b9b4b9556a1798b6d0128c96ca4d52910c89bd994ebe7d63c8d27dc88e5b",
     "query_10mm.png": "6a6ffe9adea623eb5f73902bef83dba42ea9750d4e7fa546a02e34a074d786b2",
-    "query_10mm.svg": "b21f054213b929effe4c70d9bc2a9f8ea55ba1c5fb7fb6f8efc293cafecaf806",
+    "query_10mm.svg": "3588e820b707e4f77aefd56f31b2fd50d84179f3a5c1ca5d8f74c34a4be75d47",
+    "station_10mm.png": "c15afe490d94c193c2b6c2350021d15556bd15b604ba5a3e301048541c8edd88",
+    "station_10mm.svg": "c7e77c3ee8b931758c313a7cb3208b7a8b62c0bcfd1342b08c212519c2632e92",
     "velocity_control.png": "63ead0c5f29442c407554c7cd4bb877f30d940e4f56dbc4e6b59e21a83f75f6a",
-    "velocity_control.svg": "3f76dcc059b9e6f83c93c7f5334a73356457c58861c61f5a8323719c5194d221",
+    "velocity_control.svg": "fb58cd38ecda3d524096336113f516ad7592db0e44609e93fef9d2f52bcbf1cc",
     "warm_10mm.png": "b6e5f7a80c2c7e112eb5cfab28be744ef888e2b254965288a341c4ebb8e25f50",
-    "warm_10mm.svg": "ac1e8d39543eea2cb209fe519b1f20eee6c0f23b1a40901ab50008d5a043dd61"
+    "warm_10mm.svg": "9eac0e45c6b6d3597b34bdcf94a087c31df033080a14256ff9ad8a916970741e"
   }
 }

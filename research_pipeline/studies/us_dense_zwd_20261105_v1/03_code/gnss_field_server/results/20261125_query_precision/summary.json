@@ -1,0 +1,40 @@
+[
+  {
+    "seed": 42,
+    "case": "Qraw",
+    "steps": 3000,
+    "metrics": {
+      "macro_rmse_mm": 9.997528360269323,
+      "micro_rmse_mm": 10.52699089050293,
+      "mae_mm": 7.707370281219482,
+      "bias_mm": 0.1919393241405487,
+      "increment_macro_rmse_mm": 5.584017496077923,
+      "layout_macro_rmse_mm": [
+        10.114615602125056,
+        10.119539677736075,
+        9.758429800946837
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  },
+  {
+    "seed": 42,
+    "case": "Qema",
+    "steps": 3000,
+    "metrics": {
+      "macro_rmse_mm": 9.982291310183527,
+      "micro_rmse_mm": 10.51015567779541,
+      "mae_mm": 7.698030948638916,
+      "bias_mm": 0.34587693214416504,
+      "increment_macro_rmse_mm": 5.5818944824408545,
+      "layout_macro_rmse_mm": [
+        10.09602703189839,
+        10.095084218601265,
+        9.755762680050923
+      ],
+      "station_count": 135,
+      "valid_count": 327330
+    }
+  }
+]

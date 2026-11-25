@@ -87,6 +87,15 @@ chain('query_10mm','查询级时间融合：直接改进既有约10mm参考场',
     ('2016–2019连续12小时批／3000步／seed42、17\n新增lr1e-4；最终raw及EMA0.999从同一训练轨迹获得','train'),
     ('原2020月度72h×3布局×137开发站配对\n检验宏微RMSE／增量及月份区间，未改善则继续调整','neutral')],subtitle='已实现并开始3000步训练 · raw／EMA预先登记 · 比较队列与旧10mm模型一致')
 
+chain('station_10mm','原始站点序列：连续查询与U-Net多尺度背景融合',[
+    ('冻结原GRU＋p14，保留约10mm参考mu_ref\n同时提供两级U-Net查询特征16＋32，分别归一化','space'),
+    ('82条件站各自72小时原始序列：11动态＋8静态\n每站独立因果Transformer32；GRU／LSTM实现作备用','time'),
+    ('每个真实查询选择最多16个有效邻站，保留方向和高差\n站点状态32＋几何／海岸／age／物理创新10＝消息42','time'),
+    ('查询输入：原点113＋静态9＋参考1＋多尺度48＝171\n归一化查询／键注意力＋距离先验 → 聚合状态32和创新1','space'),
+    ('204→64→64→1，末层零初始化，物理修正限制±5mm\n新增站点分支直接按坐标解码；无有效邻站退回原参考','space'),
+    ('3000步、连续12h批、双种子，新增lr1e-4\n站点布局75%随机／25%hole100；最终raw及EMA0.999','train'),
+    ('原2020相同队列配对、共同月份bootstrap\n分开报告海岸／高程／地形／条件距离／站对／增量误差','neutral')],subtitle='代码与5项CPU合同测试完成 · 等待当前Q队列后启动真实3000步训练')
+
 manifest=dict(status='IMPLEMENTED_MODELS_NOT_FORMAL_GAIN_CLAIM',figures=figures,
     generator_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
     outputs={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in draw.OUT.iterdir() if p.is_file()})

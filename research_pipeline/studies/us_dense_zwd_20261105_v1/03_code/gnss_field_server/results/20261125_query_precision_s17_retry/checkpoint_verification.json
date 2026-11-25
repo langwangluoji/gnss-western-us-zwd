@@ -1,0 +1,11 @@
+{
+  "file": "checkpoint_500.pt",
+  "step": 500,
+  "seed": 17,
+  "weights_only_safe_load": true,
+  "model_and_ema_frozen_reference_exact": true,
+  "optimizer_states": 40,
+  "numpy_rng_restorable": true,
+  "cpu_rng_dtype": "torch.uint8",
+  "cuda_rng_states": 1
+}
