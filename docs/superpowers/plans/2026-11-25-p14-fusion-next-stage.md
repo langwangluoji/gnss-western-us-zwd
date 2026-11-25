@@ -1,5 +1,7 @@
 # p14时空融合优化与残差扩散实验计划
 
+2026-11-25用户选定Transformer路线，执行细化见[新架构与流程图](../specs/2026-11-25-masked-transformer-fusion-residual-design.md)。当前原训练队列已完成，N0配对评价与归档仍按清单核验；新结构按T0–T5消融。下文N4的条件表示、事件组织和去噪概率定义由新设计替代：共享条件G、单fold事件、标准化创新逐帧扩散及AR递推，保留其余数据边界与评价约束。
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox syntax for tracking.
 
 **Goal:** 在连续时间训练下，分开验证优化策略、时空融合和长历史的收益，确定基础场后完成同条件残差概率模型比较。

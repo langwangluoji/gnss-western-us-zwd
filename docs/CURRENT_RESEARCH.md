@@ -1,8 +1,10 @@
 # 当前研究进展：2026-11-25
 
+当前设计：[掩码Transformer时空融合与标准化残差场](superpowers/specs/2026-11-25-masked-transformer-fusion-residual-design.md)。保留p14与海岸/地形分支，以72小时、16×16因果时间状态接入两级残差空间解码器；基础场冻结后，构建折外残差与标准化创新扩散。架构流程图已导出PNG/SVG，新网络尚未训练。
+
 下一步：[p14时空融合优化与残差扩散实验计划](superpowers/plans/2026-11-25-p14-fusion-next-stage.md)。以现有同条件实测为起点，先完成双种子，再分开检验训练策略、残差解码融合及长历史；固定基础场后比较高斯与diffusion。该增补是待执行计划，当前结果不代表新增架构或扩散已经训练。
 
-p14完整载体融合正在运行：[3000步连续训练计划](superpowers/plans/2026-11-25-p14-continuous-fusion.md)。恢复原最佳权重并精确复算2018旧合同；新组保留p14主干，训练2016–2019全连续时间，2020同条件当前重建评价。详见[阶段报告与训练诊断](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/REPORT.md)，运行中数据不作最终双种子结论。
+p14完整载体融合已完成12个3000步训练配置与2个冻结对照：[连续训练计划](superpowers/plans/2026-11-25-p14-continuous-fusion.md)。训练2016–2019连续小时、2020每月72小时×3布局开发评价，双种子站宏RMSE：p14续训9.947306、空间特征9.936249、Transformer9.950066 mm；来源见[完成快照](../maintenance/transformer_architecture_20261125/evidence_snapshot.json)。新Transformer架构着重检验时间特征与空间场的融合机制，尚无新增结构成绩。
 
 2026-11-25真实本机预报首轮完成：[结果与图件](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_temporal_forecast_screen/REPORT.md)及[分析与后续决策](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_temporal_forecast_screen/ANALYSIS.md)。26配置、双种子、12/48/72h；2016–2018内层拟合、2019选模、2016–2019重拟合、2020抽样开发。六小时宏RMSE：空间持久性15.163、当前帧14.203、Transformer72为13.914mm；小时增量尚未改善。本轮小型空间载体及C1海岸输入，尚非p14复现、完整年度或diffusion结果。
 

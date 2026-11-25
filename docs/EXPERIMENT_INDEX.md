@@ -1,11 +1,12 @@
 # 当前区域实验索引
 
-下一阶段设计与执行顺序见 [NEXT_STAGE.md](NEXT_STAGE.md)，新时间分支尚未训练，不加入已完成实验排名。
+下一阶段设计与执行顺序见 [NEXT_STAGE.md](NEXT_STAGE.md)。首轮连续融合已完成，新掩码Transformer融合架构属于设计阶段，不加入已完成实验排名。
 
 以完整实验目录和锁文件定位。目录日期是实验标识，不代表评价数据年份；状态仅转录现有文件，不推断科学成功。最新主结论见 [CURRENT_RESEARCH.md](CURRENT_RESEARCH.md)。
 
 | 实验 | 已记录状态 | 证据入口 |
 |---|---|---|
+| 20261125_p14_continuous_fusion | COMPLETE_CONTINUOUS_P14_FUSION，14组含冻结对照 | [完成快照](../maintenance/transformer_architecture_20261125/evidence_snapshot.json)；[新架构及流程图](superpowers/specs/2026-11-25-masked-transformer-fusion-residual-design.md) |
 | 20261125_temporal_forecast_screen | COMPLETE_LOCAL_FORECAST_26_CONFIGURATIONS | [报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_temporal_forecast_screen/REPORT.md)；[分析](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_temporal_forecast_screen/ANALYSIS.md) |
 | 20261124_fixed_support_encoder_p14_formal | COMPLETE_FORMAL_2_SEEDS | [REPORT.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_fixed_support_encoder_p14_formal/REPORT.md)；[架构对比图](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_fixed_support_encoder_p14_formal/architecture_comparison.png)；[训练曲线](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_fixed_support_encoder_p14_formal/learning_curves.png) |
 | 20261124_optimization_campaign_p15 | COMPLETE_SCREEN_ONLY | [REPORT.md](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_optimization_campaign_p15/REPORT.md)；[采样筛查图](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_optimization_campaign_p15/p1_sampling_screen.png) |

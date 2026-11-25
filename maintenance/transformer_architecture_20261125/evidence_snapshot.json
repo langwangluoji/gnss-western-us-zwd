@@ -1,0 +1,294 @@
+{
+  "status": "READ_ONLY_COMPLETED_OLD_ARCHITECTURE_EVIDENCE",
+  "captured_at": "2026-11-25T17:36:12.615592+08:00",
+  "scope": "2020 development reconstruction; old additive architecture; new architecture untrained",
+  "source_hashes": {
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/summary.json": "e972222b625566bcb85f5c98e24b5d066db89832a5ce2524f5016f8400d882e3",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/status.json": "3cf9013870f709c6efeac79e7d80924f61b869c5704b85796cbacb0619b3f1fe",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/protocol.json": "0004eb453524aaa84655ba27330154f58d59a98e4ccf3e2877db36d79b62d47d",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/tools/terrain_diffusion/p14_fusion.py": "8c0e85ffd23829a1fc47d9bafec1fe6cd674d17b7333a308afbb6ed1a641a438",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/tools/terrain_diffusion/fixed_support.py": "ef317e24d891ad23bf54fbd4b81a5ca4b73b6b495f99e4d644d72f0d6f2a659a",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/tools/terrain_diffusion/temporal_encoders.py": "77a9efdc2b3081e22e234c22df45665808535cf897861a8687c9d9d2c1aa41e4"
+  },
+  "completed_run": {
+    "status": "COMPLETE_CONTINUOUS_P14_FUSION",
+    "results": 14
+  },
+  "mean_macro_rmse_mm": {
+    "features": 9.936248535942457,
+    "frozen": 10.032646880132592,
+    "gru": 9.929150680903525,
+    "lstm": 9.930407835259677,
+    "mlp": 9.937129666719478,
+    "p14": 9.947305767757472,
+    "transformer": 9.950065679827546
+  },
+  "results": [
+    {
+      "kind": "frozen",
+      "seed": 42,
+      "steps": 0,
+      "metrics": {
+        "macro_rmse_mm": 10.103223802869541,
+        "micro_rmse_mm": 10.64453411102295,
+        "mae_mm": 7.792516708374023,
+        "bias_mm": 0.5416096448898315,
+        "increment_macro_rmse_mm": 5.570517107259961,
+        "layout_macro_rmse_mm": [
+          10.255820251058672,
+          10.200480784217877,
+          9.853370373332075
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "p14",
+      "seed": 42,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 10.019037963590538,
+        "micro_rmse_mm": 10.554058074951172,
+        "mae_mm": 7.720512866973877,
+        "bias_mm": 0.2955534756183624,
+        "increment_macro_rmse_mm": 5.589409847525695,
+        "layout_macro_rmse_mm": [
+          10.162757505639888,
+          10.136925060171048,
+          9.75743132496068
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "features",
+      "seed": 42,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 10.006562226384226,
+        "micro_rmse_mm": 10.538467407226562,
+        "mae_mm": 7.710068702697754,
+        "bias_mm": 0.23507046699523926,
+        "increment_macro_rmse_mm": 5.587002984544805,
+        "layout_macro_rmse_mm": [
+          10.137299715057578,
+          10.128518189802888,
+          9.753868774292213
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "mlp",
+      "seed": 42,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 9.997369769992764,
+        "micro_rmse_mm": 10.528258323669434,
+        "mae_mm": 7.707040309906006,
+        "bias_mm": 0.28811120986938477,
+        "increment_macro_rmse_mm": 5.58504904979726,
+        "layout_macro_rmse_mm": [
+          10.134787817893182,
+          10.105553528894774,
+          9.751767963190334
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 42,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 9.998356875772064,
+        "micro_rmse_mm": 10.527209281921387,
+        "mae_mm": 7.707912445068359,
+        "bias_mm": 0.2780945599079132,
+        "increment_macro_rmse_mm": 5.584140287518347,
+        "layout_macro_rmse_mm": [
+          10.118072670980292,
+          10.115906057740311,
+          9.76109189859559
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "lstm",
+      "seed": 42,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 10.002029880915446,
+        "micro_rmse_mm": 10.531279563903809,
+        "mae_mm": 7.70934534072876,
+        "bias_mm": 0.30606240034103394,
+        "increment_macro_rmse_mm": 5.584295893488781,
+        "layout_macro_rmse_mm": [
+          10.124597295177143,
+          10.121720908561318,
+          9.759771439007881
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "transformer",
+      "seed": 42,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 9.993783100945036,
+        "micro_rmse_mm": 10.524553298950195,
+        "mae_mm": 7.707129001617432,
+        "bias_mm": 0.27787816524505615,
+        "increment_macro_rmse_mm": 5.584600360754399,
+        "layout_macro_rmse_mm": [
+          10.123810203573601,
+          10.101483177862313,
+          9.756055921399197
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "frozen",
+      "seed": 17,
+      "steps": 0,
+      "metrics": {
+        "macro_rmse_mm": 9.962069957395641,
+        "micro_rmse_mm": 10.52429485321045,
+        "mae_mm": 7.696150779724121,
+        "bias_mm": -0.5527642369270325,
+        "increment_macro_rmse_mm": 5.581581550682306,
+        "layout_macro_rmse_mm": [
+          9.961604874870694,
+          10.143267337527433,
+          9.781337659788795
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "p14",
+      "seed": 17,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 9.875573571924406,
+        "micro_rmse_mm": 10.398210525512695,
+        "mae_mm": 7.622251033782959,
+        "bias_mm": -0.08680805563926697,
+        "increment_macro_rmse_mm": 5.588084615760429,
+        "layout_macro_rmse_mm": [
+          9.918643857318457,
+          10.051779915722362,
+          9.6562969427324
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "features",
+      "seed": 17,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 9.865934845500691,
+        "micro_rmse_mm": 10.38683032989502,
+        "mae_mm": 7.612888336181641,
+        "bias_mm": -0.11406907439231873,
+        "increment_macro_rmse_mm": 5.586719654381248,
+        "layout_macro_rmse_mm": [
+          9.895074176455928,
+          10.046587799658127,
+          9.656142560388016
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "mlp",
+      "seed": 17,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 9.876889563446191,
+        "micro_rmse_mm": 10.395190238952637,
+        "mae_mm": 7.625165939331055,
+        "bias_mm": 0.1235857903957367,
+        "increment_macro_rmse_mm": 5.585921847821517,
+        "layout_macro_rmse_mm": [
+          9.925015482037853,
+          10.044274341082254,
+          9.661378867218465
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "gru",
+      "seed": 17,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 9.859944486034987,
+        "micro_rmse_mm": 10.379293441772461,
+        "mae_mm": 7.6098785400390625,
+        "bias_mm": -0.029918070882558823,
+        "increment_macro_rmse_mm": 5.583602173849763,
+        "layout_macro_rmse_mm": [
+          9.896252627097853,
+          10.03092480872667,
+          9.652656022280436
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "lstm",
+      "seed": 17,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 9.858785789603909,
+        "micro_rmse_mm": 10.378395080566406,
+        "mae_mm": 7.608763217926025,
+        "bias_mm": -0.03488470986485481,
+        "increment_macro_rmse_mm": 5.583805629009029,
+        "layout_macro_rmse_mm": [
+          9.892363471184206,
+          10.031795595150356,
+          9.652198302477162
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    },
+    {
+      "kind": "transformer",
+      "seed": 17,
+      "steps": 3000,
+      "metrics": {
+        "macro_rmse_mm": 9.906348258710057,
+        "micro_rmse_mm": 10.411885261535645,
+        "mae_mm": 7.653928756713867,
+        "bias_mm": 0.6216539740562439,
+        "increment_macro_rmse_mm": 5.585787527361377,
+        "layout_macro_rmse_mm": [
+          9.960008367744773,
+          10.0611535992898,
+          9.697882809095601
+        ],
+        "station_count": 135,
+        "valid_count": 327330
+      }
+    }
+  ]
+}

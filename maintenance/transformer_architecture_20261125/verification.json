@@ -1,0 +1,14 @@
+{
+  "status": "PASS_DESIGN_ARTIFACT_CHECKS",
+  "local_links": 8,
+  "missing_links": [],
+  "evidence_hashes": "PASS",
+  "figures": 3,
+  "exports": 6,
+  "png_svg_integrity": "PASS",
+  "text_bounds": "PASS_FROM_RENDERER",
+  "normalization_and_ar_roundtrip_max_error": 6.661338147750939e-16,
+  "scope": "Algebra and design artifacts only; no model performance or network causality claim",
+  "new_network_trained": false,
+  "design_sha256": "be8ee57562e24087f87e0793b5ba0f043fecc2f386c0570a3cd35b4a871b0692"
+}
