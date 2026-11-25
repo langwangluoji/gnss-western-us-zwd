@@ -77,5 +77,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
     result = audit(args.pack)
     args.out.parent.mkdir(parents=True, exist_ok=True)
-    args.out.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    args.out.write_bytes((json.dumps(result, ensure_ascii=False, indent=2) + '\n').encode('utf-8'))
     print(json.dumps(result, ensure_ascii=False, indent=2))
