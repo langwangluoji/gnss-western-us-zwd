@@ -1,0 +1,59 @@
+{
+  "config": {
+    "phase": "probability",
+    "cache": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_cache_v2\\train_s17",
+    "out": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_best_base_diffusion_fusion\\s17\\S175",
+    "seed": 17,
+    "steps": 3000,
+    "lr": 0.0003,
+    "embeddings": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_best_base_diffusion_fusion\\embedding_train_s17",
+    "preconditioner": null,
+    "domain": "gaussian",
+    "condition_view": "skip",
+    "width": 64
+  },
+  "embedding_manifest_sha256": "0a80294f81baa62c00c858ff752b8dd8764caf46cc592bbba04a8996028d39aa",
+  "normalization": {
+    "bias_mm": [
+      -0.13157702359494702,
+      0.014127126982320635,
+      0.182472609112439,
+      0.31311387928131246,
+      0.4190772129158956,
+      0.5160021115025442,
+      0.5671730878990995
+    ],
+    "scale_mm": [
+      9.782709711101738,
+      10.562142119453194,
+      11.479541442279714,
+      12.482088410950054,
+      13.579309208971733,
+      14.6729159907374,
+      15.723269378405409
+    ],
+    "count": [
+      4603792.0,
+      4603779.0,
+      4603766.0,
+      4603753.0,
+      4603741.0,
+      4603728.0,
+      4603714.0
+    ],
+    "role": "training_only"
+  },
+  "condition_encoder_kind": "transformer",
+  "condition_encoder_weights_sha256": "634da56475401a0e19c4356b1b7e5e19f4af2370eb8a2652b4d5b2225c20c4f7",
+  "condition_encoder_variant": "directed_v2_joint",
+  "code_sha256": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+  "strict_oof": false,
+  "extra_model_sources": {
+    "native_probability_context.py": "ab3aad752ed3b6ed886939cdffe823966032c6811cd4976cba30f421e9a3f898"
+  },
+  "condition_dimension": 175,
+  "model_class": "NativeGaussian",
+  "parameters": 12174,
+  "preconditioner_sha256": null,
+  "source_exposure": "frozen source fitted all2016-2019; development screen, not strict OOF"
+}

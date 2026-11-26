@@ -1,0 +1,30 @@
+[
+  {
+    "step": 1,
+    "loss": -0.1452703300055678,
+    "supervised_updates": 1,
+    "complete_trajectories": 1536,
+    "used_origins": 12,
+    "total_trajectories": 1536,
+    "group_lrs": [
+      0.0002604594154601839,
+      0.0008681980515339464
+    ],
+    "last_origin_hour": 403380,
+    "seconds": 0.6410000000032596
+  },
+  {
+    "step": 4,
+    "loss": -0.18202782575860924,
+    "supervised_updates": 4,
+    "complete_trajectories": 1536,
+    "used_origins": 12,
+    "total_trajectories": 6144,
+    "group_lrs": [
+      2.9999999999999997e-05,
+      0.0001
+    ],
+    "last_origin_hour": 403416,
+    "seconds": 3.2809999999881256
+  }
+]

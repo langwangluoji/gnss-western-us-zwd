@@ -1,0 +1,250 @@
+[
+  {
+    "step": 1,
+    "loss": 0.2430468499660492,
+    "seconds": 0.375,
+    "supervised_updates": 1,
+    "fully_observed_trajectories": 1536,
+    "supervised_origins": 12
+  },
+  {
+    "step": 100,
+    "loss": -0.006958687677979469,
+    "seconds": 1.6410000000032596,
+    "supervised_updates": 100,
+    "fully_observed_trajectories": 153600,
+    "supervised_origins": 1200
+  },
+  {
+    "step": 200,
+    "loss": 0.09234867990016937,
+    "seconds": 2.9839999999967404,
+    "supervised_updates": 200,
+    "fully_observed_trajectories": 307200,
+    "supervised_origins": 2400
+  },
+  {
+    "step": 300,
+    "loss": 0.34274083375930786,
+    "seconds": 4.26600000000326,
+    "supervised_updates": 300,
+    "fully_observed_trajectories": 460800,
+    "supervised_origins": 3600
+  },
+  {
+    "step": 400,
+    "loss": 0.5077437162399292,
+    "seconds": 5.594000000011874,
+    "supervised_updates": 400,
+    "fully_observed_trajectories": 614400,
+    "supervised_origins": 4800
+  },
+  {
+    "step": 500,
+    "loss": 0.4698147773742676,
+    "seconds": 6.921999999991385,
+    "supervised_updates": 500,
+    "fully_observed_trajectories": 768000,
+    "supervised_origins": 6000
+  },
+  {
+    "step": 600,
+    "loss": 0.3721531629562378,
+    "seconds": 8.312000000005355,
+    "supervised_updates": 600,
+    "fully_observed_trajectories": 921600,
+    "supervised_origins": 7200
+  },
+  {
+    "step": 700,
+    "loss": 0.572221040725708,
+    "seconds": 9.625,
+    "supervised_updates": 700,
+    "fully_observed_trajectories": 1075200,
+    "supervised_origins": 8400
+  },
+  {
+    "step": 800,
+    "loss": 0.5329380035400391,
+    "seconds": 11.0,
+    "supervised_updates": 800,
+    "fully_observed_trajectories": 1228800,
+    "supervised_origins": 9600
+  },
+  {
+    "step": 900,
+    "loss": 0.1427275389432907,
+    "seconds": 12.328000000008615,
+    "supervised_updates": 900,
+    "fully_observed_trajectories": 1382400,
+    "supervised_origins": 10800
+  },
+  {
+    "step": 1000,
+    "loss": 0.22442570328712463,
+    "seconds": 13.703000000008615,
+    "supervised_updates": 1000,
+    "fully_observed_trajectories": 1536000,
+    "supervised_origins": 12000
+  },
+  {
+    "step": 1100,
+    "loss": 0.7963600158691406,
+    "seconds": 15.03100000001723,
+    "supervised_updates": 1100,
+    "fully_observed_trajectories": 1689600,
+    "supervised_origins": 13200
+  },
+  {
+    "step": 1200,
+    "loss": 0.5861301422119141,
+    "seconds": 16.344000000011874,
+    "supervised_updates": 1200,
+    "fully_observed_trajectories": 1843200,
+    "supervised_origins": 14400
+  },
+  {
+    "step": 1300,
+    "loss": 0.6561248302459717,
+    "seconds": 17.65600000001723,
+    "supervised_updates": 1300,
+    "fully_observed_trajectories": 1996800,
+    "supervised_origins": 15600
+  },
+  {
+    "step": 1400,
+    "loss": 0.10906513780355453,
+    "seconds": 18.953000000008615,
+    "supervised_updates": 1400,
+    "fully_observed_trajectories": 2150400,
+    "supervised_origins": 16800
+  },
+  {
+    "step": 1500,
+    "loss": 0.3828522562980652,
+    "seconds": 20.26600000000326,
+    "supervised_updates": 1500,
+    "fully_observed_trajectories": 2304000,
+    "supervised_origins": 18000
+  },
+  {
+    "step": 1600,
+    "loss": 0.09302236884832382,
+    "seconds": 21.594000000011874,
+    "supervised_updates": 1600,
+    "fully_observed_trajectories": 2457600,
+    "supervised_origins": 19200
+  },
+  {
+    "step": 1700,
+    "loss": 0.19381439685821533,
+    "seconds": 22.969000000011874,
+    "supervised_updates": 1700,
+    "fully_observed_trajectories": 2607376,
+    "supervised_origins": 20387
+  },
+  {
+    "step": 1800,
+    "loss": 0.4114677906036377,
+    "seconds": 24.28100000001723,
+    "supervised_updates": 1800,
+    "fully_observed_trajectories": 2760976,
+    "supervised_origins": 21587
+  },
+  {
+    "step": 1900,
+    "loss": 0.5319122076034546,
+    "seconds": 25.60899999999674,
+    "supervised_updates": 1900,
+    "fully_observed_trajectories": 2914481,
+    "supervised_origins": 22787
+  },
+  {
+    "step": 2000,
+    "loss": 0.7247101664543152,
+    "seconds": 26.921999999991385,
+    "supervised_updates": 2000,
+    "fully_observed_trajectories": 3068081,
+    "supervised_origins": 23987
+  },
+  {
+    "step": 2100,
+    "loss": 0.4054805636405945,
+    "seconds": 28.26600000000326,
+    "supervised_updates": 2100,
+    "fully_observed_trajectories": 3221681,
+    "supervised_origins": 25187
+  },
+  {
+    "step": 2200,
+    "loss": 0.14852893352508545,
+    "seconds": 29.687000000005355,
+    "supervised_updates": 2200,
+    "fully_observed_trajectories": 3375281,
+    "supervised_origins": 26387
+  },
+  {
+    "step": 2300,
+    "loss": 0.6230449080467224,
+    "seconds": 31.03100000001723,
+    "supervised_updates": 2300,
+    "fully_observed_trajectories": 3528880,
+    "supervised_origins": 27587
+  },
+  {
+    "step": 2400,
+    "loss": 0.8241462111473083,
+    "seconds": 32.421999999991385,
+    "supervised_updates": 2400,
+    "fully_observed_trajectories": 3682480,
+    "supervised_origins": 28787
+  },
+  {
+    "step": 2500,
+    "loss": 0.194913849234581,
+    "seconds": 33.75,
+    "supervised_updates": 2500,
+    "fully_observed_trajectories": 3836080,
+    "supervised_origins": 29987
+  },
+  {
+    "step": 2600,
+    "loss": 0.5684837102890015,
+    "seconds": 35.03100000001723,
+    "supervised_updates": 2600,
+    "fully_observed_trajectories": 3989680,
+    "supervised_origins": 31187
+  },
+  {
+    "step": 2700,
+    "loss": 0.6398519277572632,
+    "seconds": 36.375,
+    "supervised_updates": 2700,
+    "fully_observed_trajectories": 4143280,
+    "supervised_origins": 32387
+  },
+  {
+    "step": 2800,
+    "loss": 0.06291104853153229,
+    "seconds": 37.703000000008615,
+    "supervised_updates": 2800,
+    "fully_observed_trajectories": 4296880,
+    "supervised_origins": 33587
+  },
+  {
+    "step": 2900,
+    "loss": 0.06295566260814667,
+    "seconds": 39.046999999991385,
+    "supervised_updates": 2900,
+    "fully_observed_trajectories": 4448575,
+    "supervised_origins": 34787
+  },
+  {
+    "step": 3000,
+    "loss": -0.08214455842971802,
+    "seconds": 40.35899999999674,
+    "supervised_updates": 3000,
+    "fully_observed_trajectories": 4602175,
+    "supervised_origins": 35987
+  }
+]

@@ -15,3 +15,7 @@ Ruling: 首锁v1在正式训练前保留为lock_v1_before_review.json；审阅�
 Task 1: complete — 当前锁SHA256=138d8fadd91dcbaf8a4a3681b5b18c8164cd8b7da6349cdec1d37a9ab92075bf；7项测试通过；双方训练导出完整，源joint开发导出身份与哈希通过。独立预审无数值/兼容性阻碍。GP和两种传输的真实四更新安排在各自冻结上游正式拟合之后，保留工程状态，不伪造3000步。
 
 Ruling: 独立审阅提出的K16秩覆盖、原joint数组直接核对、几何/nearest复验、重点站和训练曲线作为同实验只读补充交付，不改训练合同或主评分。正式队列启动前源码/来源提交推送。
+
+Task 2: in progress — 140bd62已推送并核对远端后启动两个原队列。S175双种子3000/3000完整监督均完成，来源/训练掩码/全部最终Adam时钟通过；copula均仅使用训练残差拟合。G265真实4更新6144完整轨迹通过，双种子正式G265在运行。RTX4060 Laptop运行正常，主要计算量为float64完整协方差分解。
+
+Task 3 preparation — 新增只读diagnostics.py，直接核对原joint NPZ、几何/nearest与K16/K32覆盖，保留137站及五重点站；两项秩覆盖测试RED→GREEN。render_delivery.py准备完整融合图、曲线与报告；这些后处理不改已封存训练或主评分源码。

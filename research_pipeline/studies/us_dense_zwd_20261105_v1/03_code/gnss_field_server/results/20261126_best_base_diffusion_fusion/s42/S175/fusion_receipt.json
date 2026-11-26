@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "kind": "gaussian",
+  "lock_sha256": "138d8fadd91dcbaf8a4a3681b5b18c8164cd8b7da6349cdec1d37a9ab92075bf",
+  "protocol_sha256": "faa9c2cc1d3f23cddecbe122320e34edc6ac390225048bbdda1d3c325ff5027f",
+  "weights_sha256": "db2ab955ecf115ddf17613973ee44414e3b6c16502fb53785d801e61eae06244",
+  "checkpoint_sha256": "7f25f33f791b3b05a792ba6e9467202c4228cd71cb2cc161d95fa4e3ad2f236b",
+  "status_sha256": "288eabdd0b277f2f8023bcc1ecdfa063fe9f3be02e3dabe3fb1ea6b21094303f",
+  "supervised_updates": 3000,
+  "optimizer_states": 4,
+  "optimizer_parameters": 4,
+  "actual_label_clock": {
+    "supervised_updates": 3000,
+    "complete_trajectories": 4602209
+  }
+}
