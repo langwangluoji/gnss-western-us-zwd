@@ -1,0 +1,2 @@
+# Historical Windows text retains its bytes; CRLF is a valid line ending.
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

@@ -29,9 +29,9 @@
 
 分层中近海、低地与近邻站对六小时MSE有小幅收益，实际幅度仍小；远条件站档的额外收益区间跨零。完整分层保留于JSON，季节只有三个有效月份，原共同月份bootstrap若产生空总体，区间记NA，描述值保留。
 
-![主日历正式结果和连续训练曲线](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/paired_calendar8/increment_comparison.png)
+![主日历正式结果和连续训练曲线](../../experiments/us/20261126_within_forecast_increment/paired_calendar8/increment_comparison.png)
 
-![冻结补充日历](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/paired_calendar15/increment_comparison.png)
+![冻结补充日历](../../experiments/us/20261126_within_forecast_increment/paired_calendar15/increment_comparison.png)
 
 ## 对后续架构的含义
 
@@ -57,7 +57,7 @@
 
 - [冻结实验原理和合同](../superpowers/specs/2026-11-26-within-forecast-increment.md)
 - [实现计划与执行记录](../superpowers/plans/2026-11-26-within-forecast-increment.md)
-- [主日历完整报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/paired_calendar8/REPORT.md)
-- [补充日历完整报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/paired_calendar15/REPORT.md)
-- [四更新全状态等价](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_increment_smoke/equivalence.json)
-- [当前有效距离审计](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_condition_distance_audit/audit.json)
+- [主日历完整报告](../../experiments/us/20261126_within_forecast_increment/paired_calendar8/REPORT.md)
+- [补充日历完整报告](../../experiments/us/20261126_within_forecast_increment/paired_calendar15/REPORT.md)
+- [四更新全状态等价](../../experiments/us/20261126_increment_smoke/equivalence.json)
+- [当前有效距离审计](../../experiments/us/20261126_condition_distance_audit/audit.json)

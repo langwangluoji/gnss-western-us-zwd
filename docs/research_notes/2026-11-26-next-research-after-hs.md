@@ -50,7 +50,7 @@ G265之后Local相对Affine的额外六小时边际CRPS改善0.165%、近邻差�
 | 夏季JJA | 15.541 | 过程强度、变化速度与校准 |
 | 秋季SON | 15.555 | 与夏季共同纳入困难天气过程 |
 
-这些分层互相重叠，描述值不能单独证明地形或季节因果。距离口径经后续[实数组审计](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_condition_distance_audit/audit.json)补充核实：nearest.npy按当前GNSS有效mask取最近条件站，逐位置重算一致，具有逐时有效观测含义；本页初版“仅几何距离”的说明据此更正，原分层数值不变。季节/稀疏分层的月份bootstrap若产生空总体，区间保留NA，不填零或删除空抽样。
+这些分层互相重叠，描述值不能单独证明地形或季节因果。距离口径经后续[实数组审计](../../experiments/us/20261126_condition_distance_audit/audit.json)补充核实：nearest.npy按当前GNSS有效mask取最近条件站，逐位置重算一致，具有逐时有效观测含义；本页初版“仅几何距离”的说明据此更正，原分层数值不变。季节/稀疏分层的月份bootstrap若产生空总体，区间保留NA，不填零或删除空抽样。
 
 此前TF/G175逐站诊断中的PLTX、P475、PTEX六小时约22–25 mm；P510距条件站较近但六小时约21.5 mm。它们适合作为固定案例，拆分当前偏差、变化误差、历史缺测和站点质量；这些是旧诊断，不当作HS逐站新成绩。
 
@@ -139,8 +139,8 @@ H/HS成为新均值时，旧TF条件embedding与新残差来源需分别锁定�
 
 ## 证据与复现入口
 
-- [HS正式训练、配对区间、曲线和分层](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_mean_hs/paired/REPORT.md)
-- [HS完整指标及来源哈希](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_mean_hs/paired/summary.json)
+- [HS正式训练、配对区间、曲线和分层](../../experiments/us/20261126_mean_hs/paired/REPORT.md)
+- [HS完整指标及来源哈希](../../experiments/us/20261126_mean_hs/paired/summary.json)
 - [H＋S架构和训练合同](../superpowers/specs/2026-11-26-combined-mean-hs.md)
 - [天气相关核与非Gaussian完整归因](2026-11-26-weather-controls-final.md)
 - [中心路径与内部增量诊断](2026-11-26-lead-mean-results.md)

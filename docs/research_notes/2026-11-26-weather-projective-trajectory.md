@@ -16,7 +16,7 @@
 | LSTM联合机制 | 9.817636 | 14.251512 |
 | 因果Transformer联合机制 | 9.818254 | 14.127401 |
 
-联合机制包括局地查询、历史内部的前缀预测辅助监督，以及创新值/未来增量显式传递。Transformer相对原Transformer的F6共同月份95%区间为[−0.288695,−0.110130]mm；相对联合GRU为[−0.094287,−0.002653]mm。当前R差异区间跨零。结果为已暴露开发比较，未做多重比较校正。完整raw/EMA、曲线及来源见[同历史配对报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_mean_analysis/paired/REPORT.md)。
+联合机制包括局地查询、历史内部的前缀预测辅助监督，以及创新值/未来增量显式传递。Transformer相对原Transformer的F6共同月份95%区间为[−0.288695,−0.110130]mm；相对联合GRU为[−0.094287,−0.002653]mm。当前R差异区间跨零。结果为已暴露开发比较，未做多重比较校正。完整raw/EMA、曲线及来源见[同历史配对报告](../../experiments/us/20261126_native_mean_analysis/paired/REPORT.md)。
 
 ## 同起点续训：机制与预算分开
 
@@ -29,7 +29,7 @@
 | H创新读出 | 9.811031 | 13.977705 | 5.545044 |
 | S空间消息 | 9.827246 | 13.977733 | 5.535277 |
 
-H−C的当前R区间为[−0.026155,−0.004700]mm，F6区间跨零；H的小时增量高于C。S−C的F6区间为[−0.008950,−0.002752]mm，增益幅度很小。C相对源模型已经明显改善F6，因此续训预算的贡献要单列。H+S为后续独立组合，当前概率实验仍冻结源Transformer3000，没有接入这三条续训权重。详见[续训配对报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_mean_fusion_v2/paired/REPORT.md)。
+H−C的当前R区间为[−0.026155,−0.004700]mm，F6区间跨零；H的小时增量高于C。S−C的F6区间为[−0.008950,−0.002752]mm，增益幅度很小。C相对源模型已经明显改善F6，因此续训预算的贡献要单列。H+S为后续独立组合，当前概率实验仍冻结源Transformer3000，没有接入这三条续训权重。详见[续训配对报告](../../experiments/us/20261126_mean_fusion_v2/paired/REPORT.md)。
 
 ## 空间联合依赖：已有的明显局地收益
 
@@ -45,7 +45,7 @@ H−C的当前R区间为[−0.026155,−0.004700]mm，F6区间跨零；H的小�
 
 Full近邻改善14.9%/13.0%，GraphAffine约11%。GraphAffine在固定条件和图时对全场严格仿射，属于Gaussian控制；其结果表明，大部分收益可以由更好的空间Gaussian依赖解释。Full对≥300km站对、边际分数及全场fair energy存在代价，当前方向是把近邻收益转化为受约束、查询集合一致的相关核。
 
-主日历0–50km档包含720个站对，其他三档分别519/950/7127对；区间按共同月份重采样，不将站对数视为相互独立重复。Full共同路径随查询集合改变；这项路径诊断本身不能证明边际分布随查询改变。Local有逐查询结构保障。详见[seed42](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_gp_process/s42/summary/REPORT.md)与[seed17](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_gp_process/s17/summary/REPORT.md)。
+主日历0–50km档包含720个站对，其他三档分别519/950/7127对；区间按共同月份重采样，不将站对数视为相互独立重复。Full共同路径随查询集合改变；这项路径诊断本身不能证明边际分布随查询改变。Local有逐查询结构保障。详见[seed42](../../experiments/us/20261126_gp_process/s42/summary/REPORT.md)与[seed17](../../experiments/us/20261126_gp_process/s17/summary/REPORT.md)。
 
 冻结补充日期验证不重新拟合。seed42每月15–17日，原GP/Full/Local的近邻F6差值fair CRPS为6.001020/5.094155/5.890182mm，Full约15.1%改善；对应energy为9.540595/9.623988/9.540285mm。该日期源确定性模型R/F6为10.807612/16.500546mm。补充日期曾用于历史I1开发，属于冻结补充开发验证；它与主日历共同说明约9.8mm成绩的适用日期，不能推广为全年精度。第二种子补充验证正在执行。
 

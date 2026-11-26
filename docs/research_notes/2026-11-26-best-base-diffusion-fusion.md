@@ -62,11 +62,11 @@ K16表中的方差扣除均值MSE是单次噪声流的Monte Carlo诊断，可能
 
 后续可用同预算消融检验最终预测/有向修正的显式条件接口，再比较固定中心下重拟合尺度和扩散。这里记录具体可检验的接口，未据此继续启动新训练，也不将其写成已取得收益。
 
-[完整数值、点预测与采样均值表](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/paired/REPORT.md) · [全部区间与分层JSON](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/paired/summary.json) · [覆盖和重点站](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/paired/DIAGNOSTICS.md)
+[完整数值、点预测与采样均值表](../../experiments/us/20261126_best_base_diffusion_fusion/paired/REPORT.md) · [全部区间与分层JSON](../../experiments/us/20261126_best_base_diffusion_fusion/paired/summary.json) · [覆盖和重点站](../../experiments/us/20261126_best_base_diffusion_fusion/paired/DIAGNOSTICS.md)
 
 ![概率性能](../figures/best_base_diffusion_fusion_20261126/performance.png)
 
-![配对收益与区间](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/paired/fusion_effects.png)
+![配对收益与区间](../../experiments/us/20261126_best_base_diffusion_fusion/paired/fusion_effects.png)
 
 ## 训练与核验
 
@@ -80,4 +80,4 @@ K16表中的方差扣除均值MSE是单次噪声流的Monte Carlo诊断，可能
 
 新模型不使用PWV/IWV/TCWV/Tm条件或教师。原始数据、权重、大数组留本机；Git同步代码、协议、指标、图和哈希。本实验的概率成绩来自重新拟合的新joint残差，不与旧TF3000概率成绩混用。
 
-[冻结科学合同](../superpowers/specs/2026-11-26-best-base-diffusion-fusion.md) · [实施计划](../superpowers/plans/2026-11-26-best-base-diffusion-fusion.md) · [逐步执行与纠错记录](../../maintenance/joint_fusion_20261126/progress.md)
+[冻结科学合同](../superpowers/specs/2026-11-26-best-base-diffusion-fusion.md) · [实施计划](../superpowers/plans/2026-11-26-best-base-diffusion-fusion.md) · [逐步执行与纠错记录](../../research/joint_fusion_20261126/progress.md)

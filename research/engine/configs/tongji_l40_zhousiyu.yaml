@@ -1,0 +1,20 @@
+science:
+  rank: 128
+runtime:
+  data_root: /share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/data/gnss_field_server_v1
+  run_root: /share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/runs
+  cache_root: /share/home/u23114/tj23114/packages/dachuang_ztd/ZhouSiyu_DF_GAN_20261117/cache
+  device: cuda
+  partition: L40
+  cpu_partition: intel
+  gres: gpu:l40:1
+  cpus: 7
+  memory_gb: 64
+  wall_hours: 24
+  max_parallel: 2
+  patch_chunk: 8
+  micro_hours: 1
+campaign:
+  name: ZhouSiyu_DF_GAN_20261117
+  environment: ZhouSiyu
+  benchmark_card_hours: 4

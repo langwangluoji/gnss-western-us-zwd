@@ -30,7 +30,7 @@
 
 joint主/补跨起点当前小时增量站宏RMSE为5.494/6.254mm，同起点内部增量microRMSE为5.790/6.580mm。F6 MAE为10.679/12.225mm，绝对误差P95为29.093/33.963mm；这些指标与站宏RMSE各自保留口径。
 
-[完整点指标与区间](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_final_research_summary/point_metrics.json) · [有向时滞结果](2026-11-26-directed-lag-v2-results.md)
+[完整点指标与区间](../../experiments/us/20261126_final_research_summary/point_metrics.json) · [有向时滞结果](2026-11-26-directed-lag-v2-results.md)
 
 ## 3. 已形成的最佳架构
 
@@ -74,9 +74,9 @@ Local相对G265的F6 CRPS改善0.230%/0.243%、内部增量改善2.295%/2.366%�
 
 完整新方案相对旧TF3000＋G265＋Local，主F6 CRPS由7.760754变为7.657557mm，描述性改善1.330%，包含基础场/编码升级与概率重训的共同作用。
 
-![最新配对收益及代价](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/paired/fusion_effects.png)
+![最新配对收益及代价](../../experiments/us/20261126_best_base_diffusion_fusion/paired/fusion_effects.png)
 
-[最新融合完整报告](2026-11-26-best-base-diffusion-fusion.md) · [全部评分与分层](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/paired/summary.json)
+[最新融合完整报告](2026-11-26-best-base-diffusion-fusion.md) · [全部评分与分层](../../experiments/us/20261126_best_base_diffusion_fusion/paired/summary.json)
 
 ## 5. 均值保持、重尾与频域成果
 
@@ -90,7 +90,7 @@ Local相对G265的F6 CRPS改善0.230%/0.243%、内部增量改善2.295%/2.366%�
 
 旧C64频率token相对近同容量joint扩散，F6 CRPS改善约1.53%–1.96%，超过强Gaussian的额外收益不稳定。共享诱导创新流的频域非线性也未建立额外收益；白化eta的DCT不直接等于真实ZWD物理频谱。
 
-[重尾结果](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_scale_tail/paired/REPORT.md) · [频域结果](2026-11-26-spectral-and-mean-centering.md) · [共享创新流](2026-11-26-inducing-flow-results.md)
+[重尾结果](../../experiments/us/20261126_weather_scale_tail/paired/REPORT.md) · [频域结果](2026-11-26-spectral-and-mean-centering.md) · [共享创新流](2026-11-26-inducing-flow-results.md)
 
 ## 6. 已完成的研究资产与实验路线
 

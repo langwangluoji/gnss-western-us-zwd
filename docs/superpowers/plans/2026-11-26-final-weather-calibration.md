@@ -6,7 +6,7 @@
 
 双种子三臂训练与六输出共12份K32评价全部完成；实际监督每臂2999/3000。封存来源、完整Adam/scheduler、点场/真值、严格匹配协方差与Gamma采样均通过核验。独立只读审阅重算SciPy密度与2000次共同月份区间一致，未发现阻断问题。
 
-天气t对天气G六小时CRPS减少0.011290mm，区间[-0.019208,-0.005174]；对额外Gaussian减少0.010759mm。相对常数t额外收益区间跨零；原Affine time仍保持本轮最低F6 CRPS7.809858mm。详见[末轮报告](../../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_scale_tail/paired/REPORT.md)。
+天气t对天气G六小时CRPS减少0.011290mm，区间[-0.019208,-0.005174]；对额外Gaussian减少0.010759mm。相对常数t额外收益区间跨零；原Affine time仍保持本轮最低F6 CRPS7.809858mm。详见[末轮报告](../../../experiments/us/20261126_weather_scale_tail/paired/REPORT.md)。
 
 已生成[全部研究总报告](../../research_notes/2026-11-26-final-research-summary.md)、两日历合并点指标、最佳架构与精度/训练曲线PNG/SVG。以下待执行列表作为启动前历史保留，各项已完成；当前停止新增实验，候选后续方向只归档不启动。
 

@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "scope": "current-project cleanup and evidence organization; new formal training deferred",
+  "source_commit": "b7287371ab198d03e7a0700995f1afcca04016ee",
+  "backup_tag": "archive/pre-paper-restructure-20261126",
+  "public_experiments": 147,
+  "public_us_runs": 137,
+  "research_campaigns": 10,
+  "local_only_archived_runs": 34,
+  "deleted_duplicate_bytes": 225534208,
+  "protected_files_verified": 16164,
+  "protected_bytes_verified": 92250828293,
+  "main_tests": {
+    "passed": 604,
+    "skipped": 0,
+    "log_sha256": "68e3b5b603b1f932a3fcbab51daaee49a6eb08fe0b05ced65236dd7bc07d93b1"
+  },
+  "clean_checkout_tests": {
+    "passed": 602,
+    "skipped": 2,
+    "skip_reason": "local observational CUDA packs deliberately absent",
+    "log_sha256": "8ab5411d3c5e8492811a17735f1ff32cb0603240529084111fdb886e99b96620"
+  },
+  "wheel": {
+    "file": "gnss_field-0.1.2-py3-none-any.whl",
+    "sha256": "342758a0436a43176021ef7b6ebb8f1f76fbdc47eaba204d78c8b845fbd23f0c",
+    "isolated_install_cli": "passed"
+  },
+  "scientific_json_unchanged": 5098,
+  "training_started": false,
+  "confirmation_labels_parsed": false,
+  "rebuildable_install_metadata_excluded": 6,
+  "recursive_temp_cache_delete": "automatic approval rejected; ignored build/pytest caches retained"
+}

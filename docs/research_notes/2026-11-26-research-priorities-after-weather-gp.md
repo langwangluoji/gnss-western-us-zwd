@@ -89,8 +89,8 @@ $$Y=\mu_{\mathrm{base}}+\Delta\mu_{\mathrm{history}}+\sigma(c)\,Z(c).$$
 
 ## 证据入口
 
-- [Gaussian核双种子报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_projective_gp/paired/REPORT.md)
-- [细距离和逐站误差报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_projective_gp/g175_locality/REPORT.md)
+- [Gaussian核双种子报告](../../experiments/us/20261126_weather_projective_gp/paired/REPORT.md)
+- [细距离和逐站误差报告](../../experiments/us/20261126_weather_projective_gp/g175_locality/REPORT.md)
 - [扩散均值与有限成员误差](2026-11-26-diffusion-benefits-and-mean-error.md)
-- [冻结事件诊断](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_frozen_event_audit_v2/calendar8/REPORT.md)
+- [冻结事件诊断](../../experiments/us/20261126_frozen_event_audit_v2/calendar8/REPORT.md)
 - [早前方向与架构细节](2026-11-26-next-breakthrough-directions.md)

@@ -28,7 +28,7 @@ I0只用当前创新，点精度改善而小时增量增加；I1加入1h/3h创�
 
 神经分支T2/T5、查询融合Q、原始站点Transformer S、IDW空间异常A和距离加权D均已完成两种子3000更新，共14条成功轨迹、42000次梯度更新。D对S的EMA改善约0.008096 mm且两种子同方向，但相对原GRU参考的seed17仍略增。I系列另累计每种子3000个连续训练块，以解析岭回归拟合三组头，不计作新增神经梯度更新。
 
-[完整30组记录（28候选＋2参考）、指标及配对门槛](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/REPORT.md)｜[补充日历逐项结果](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_innovation_calendar15/REPORT.md)
+[完整30组记录（28候选＋2参考）、指标及配对门槛](../../experiments/us/20261125_warm_joint_precision/combined_precision/REPORT.md)｜[补充日历逐项结果](../../experiments/us/20261125_innovation_calendar15/REPORT.md)
 
 ## 当前架构
 
@@ -42,7 +42,7 @@ I0只用当前创新，点精度改善而小时增量增加；I1加入1h/3h创�
 
 时间留出使用2020年，空间留出使用137个登记开发站；训练监督只来自410站池中不属于条件物理组的目标。小时增量在每个72小时连续段内部评价，包含12小时计算批的边界。站对差值采用micro RMSE，其他分层采用站宏RMSE，所有表中数值为双种子均值。
 
-![六类分层比较](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/selected_regional_analysis.png)
+![六类分层比较](../../experiments/us/20261125_warm_joint_precision/combined_precision/selected_regional_analysis.png)
 
 | 分层 | 主参考/mm | 主I1/mm | 主变化/mm | 补充参考/mm | 补充I1/mm | 补充变化/mm |
 |---|---:|---:|---:|---:|---:|---:|
@@ -70,15 +70,15 @@ I0只用当前创新，点精度改善而小时增量增加；I1加入1h/3h创�
 
 主日历海岸150–300 km档增加0.104 mm，触发重点审阅；补充日历同档改善0.110 mm。距条件站100–200 km档也从主日历增加0.051 mm转为补充改善0.514 mm，说明固定地理分档内仍有明显天气过程差异。夏季主日历基本持平，补充改善0.164 mm；远条件站200 km以上仍约14–16 mm。后续应同时利用天气状态与地形约束创新传递，而不是按主日历的局部误差直接设置固定地理开关。
 
-![逐站误差与变化](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/selected_station_map.png)
+![逐站误差与变化](../../experiments/us/20261125_warm_joint_precision/combined_precision/selected_station_map.png)
 
-[逐站经纬度、高程、海岸距离、粗糙度与误差表](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/station_changes.csv)。主日历最大剩余误差站依次为：PLTX 17.91 mm, P475 17.42 mm, PTEX 17.11 mm, P049 16.27 mm, P786 15.97 mm。这些站点用于下一轮天气过程和空间支撑诊断。
+[逐站经纬度、高程、海岸距离、粗糙度与误差表](../../experiments/us/20261125_warm_joint_precision/combined_precision/station_changes.csv)。主日历最大剩余误差站依次为：PLTX 17.91 mm, P475 17.42 mm, PTEX 17.11 mm, P049 16.27 mm, P786 15.97 mm。这些站点用于下一轮天气过程和空间支撑诊断。
 
 其中PLTX/P475/PTEX位于美墨边境及下加利福尼亚一带，改善后仍约17–18 mm；研究域东北侧P049约16.27 mm且增加0.134 mm，北加州近海P786约15.97 mm。后续须分别核对这些站点的天气过程、条件站方向/距离及高差，而不把单一日历的分档变化解释为固定地理规律。
 
 ## 曲线、验证与来源
 
-![创新头累计训练目标](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/innovation_training_objective.png)
+![创新头累计训练目标](../../experiments/us/20261125_warm_joint_precision/combined_precision/innovation_training_objective.png)
 
 I曲线是岭解在逐渐扩大的连续训练前缀上的水平＋0.1增量数据目标，既不是随机批点RMSE，也不是固定总体的收敛曲线。原始数据、预测大数组、训练统计张量和系数留本机；Git同步代码、协议、指标、哈希与图件。六组系数均由最终训练统计独立重解，逐元素完全一致；主候选及系数哈希在读取补充日期前锁定。
 

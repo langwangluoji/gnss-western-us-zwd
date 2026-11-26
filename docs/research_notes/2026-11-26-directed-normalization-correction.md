@@ -8,9 +8,9 @@
 
 v2保留相同参数创建顺序、H前向、全部输入与实验比较，仅替换有问题的数值池化。真实4更新重新核验disabled共同H_delta权重、EMA、AdamW、scheduler与RNG精确等价，两启用模式新参数有梯度。新的正式任务将从原TF3000重新完整训练，不续用v1中间权重。架构PNG/SVG仍对应相同数学合同。
 
-- [v1工程停止记录](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag/engineering_stop.json)
+- [v1工程停止记录](../../experiments/us/20261126_directed_lag/engineering_stop.json)
 - [v2原理、版本与来源](../superpowers/specs/2026-11-26-directed-lag-v2.md)
 - [v2执行记录](../superpowers/plans/2026-11-26-directed-lag-v2.md)
-- [v2真实4更新等价与显存](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2_smoke/equivalence.json)
+- [v2真实4更新等价与显存](../../experiments/us/20261126_directed_lag_v2_smoke/equivalence.json)
 
 旧科学文件、数组与权重保留本机，Git同步复现代码、轻量证据和修正原理；确认及原C/D未读取。

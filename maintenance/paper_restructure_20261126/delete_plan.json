@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "path": "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261122_local_coverage_expansion_v01/cache/features.npy",
+      "size": 218996864,
+      "sha256": "bbea985f55eb1a75231e70fd282f1e8f90e71696fd3f821904fe4284a6e8c694",
+      "surviving_npz": "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261122_local_coverage_expansion_v01/data.npz",
+      "member": "features.npy",
+      "npz_sha256": "7252ac763014ac77c147d1983081ccfa250cf47513c4fb195dacf87d643d32e6",
+      "reason": "byte-identical NPY member retained inside verified data.npz"
+    },
+    {
+      "path": "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261122_local_coverage_expansion_v01/cache/innovation.npy",
+      "size": 6537344,
+      "sha256": "253c5e5308c5f798b9a550108f6f542410001d51dc71e73e99633b5f97726dc2",
+      "surviving_npz": "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261122_local_coverage_expansion_v01/data.npz",
+      "member": "innovation.npy",
+      "npz_sha256": "7252ac763014ac77c147d1983081ccfa250cf47513c4fb195dacf87d643d32e6",
+      "reason": "byte-identical NPY member retained inside verified data.npz"
+    }
+  ],
+  "total_bytes": 225534208,
+  "rebuild": "Extract named NPY member from surviving data.npz using zipfile; no training required."
+}

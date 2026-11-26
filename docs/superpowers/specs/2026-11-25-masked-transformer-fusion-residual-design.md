@@ -20,7 +20,7 @@
 - `fixed_support.py`：p14的113维点特征、30通道支撑摘要和两级U-Net。
 - `temporal_encoders.py`：逐位置时间Transformer，宽度64、4头、2层；已有上三角未来掩码。
 
-最新旧结构已完成12个3000步训练配置、2个冻结对照。2020每月连续72小时、3布局的站宏RMSE双种子均值：p14续训9.947306 mm、空间特征9.936249 mm、Transformer9.950066 mm。Transformer两种子为9.993783/9.906348 mm，额外收益尚不稳定。新设计检验融合机制，现有结果不作为新结构有效的证明。来源见[本轮固定快照](../../../maintenance/transformer_architecture_20261125/evidence_snapshot.json)。
+最新旧结构已完成12个3000步训练配置、2个冻结对照。2020每月连续72小时、3布局的站宏RMSE双种子均值：p14续训9.947306 mm、空间特征9.936249 mm、Transformer9.950066 mm。Transformer两种子为9.993783/9.906348 mm，额外收益尚不稳定。新设计检验融合机制，现有结果不作为新结构有效的证明。来源见[本轮固定快照](../../../research/transformer_architecture_20261125/evidence_snapshot.json)。
 
 | 环节 | 现有实现 | 新设计 |
 |---|---|---|

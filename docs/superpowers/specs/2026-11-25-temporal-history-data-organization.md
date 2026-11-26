@@ -20,7 +20,7 @@ GRU、LSTM 和 causal Transformer 都可以进入共享时空架构。现在最�
 
 ## 2. 本机训练数据核验
 
-审阅源：`tools/terrain_diffusion/data.py`、`fixed_support.py`；数值来源：[训练包审计 JSON](../../../maintenance/temporal_history_20261125/training_pack_audit.json)。审计只访问 `train` 和 `train_hours`，未加载验证标签或确认人口。
+审阅源：`tools/terrain_diffusion/data.py`、`fixed_support.py`；数值来源：[训练包审计 JSON](../../../research/temporal_history_20261125/training_pack_audit.json)。审计只访问 `train` 和 `train_hours`，未加载验证标签或确认人口。
 
 现有全日历训练包为 `[731,36,410,3]`，覆盖 2016–2017 每日的前 12 小时和当天 24 小时。展开有 26,316 个时间位置，去重得到 17,556 个小时，重复出现 8,760 次；重复小时数值一致。时间轴连续，开头还含 2015-12-31 的 12 个历史小时。新合同应显式决定边界历史是否允许，不能把它混入归一化统计。本方案在首轮完整切除训练期外历史。
 

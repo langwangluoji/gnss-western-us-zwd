@@ -55,8 +55,8 @@ Local由原前16成员变为配对场后，六小时边际CRPS增加约0.823%，
 
 ## 证据入口
 
-- [七组频域/时空域完整双种子结果与图](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_probability/paired_spectral/REPORT.md)
-- [独立双场配对结果与图](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_independent_pair_centering/paired/REPORT.md)
+- [七组频域/时空域完整双种子结果与图](../../experiments/us/20261126_native_weather_probability/paired_spectral/REPORT.md)
+- [独立双场配对结果与图](../../experiments/us/20261126_independent_pair_centering/paired/REPORT.md)
 - [配对数学、数据合同与预先冻结规则](../superpowers/specs/2026-11-26-independent-pair-centering.md)
 - [天气、尺度与形状对照](2026-11-26-weather-controls-final.md)
 

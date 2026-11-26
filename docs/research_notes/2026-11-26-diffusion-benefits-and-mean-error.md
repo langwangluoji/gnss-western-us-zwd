@@ -56,9 +56,9 @@ $$E[(\bar Y_K-y)^2]=(m-y)^2+v/K.$$
 
 开平方后的估计量本身不具无偏性，也保留K32的统计波动。正式判断使用micro MSE差值：Full相对基础场当前增加1.112595mm²，共同月份95%区间[0.169655,2.188010]mm²；相对原GP增加0.851137mm²，区间[0.081915,1.732681]。因此当前Full的损失包含有害均值修正。Local相对基础场当前差值区间跨零，F6相对基础场也跨零；相对原GP的F6 MSE改善区间为[−2.011758,−0.546280]mm²，Affine给出相近改善。
 
-![有限成员均值曲线](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_diffusion_mean_sampling_audit/finite_ensemble_mean.png)
+![有限成员均值曲线](../../experiments/us/20261126_diffusion_mean_sampling_audit/finite_ensemble_mean.png)
 
-完整推导、嵌套K曲线说明、各类指标、来源哈希和区间见[均值采样分析](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_diffusion_mean_sampling_audit/REPORT.md)及[收益归因JSON](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_diffusion_mean_sampling_audit/benefit_attribution.json)。分析不训练模型，确认138及原C/D标签保持隔离。
+完整推导、嵌套K曲线说明、各类指标、来源哈希和区间见[均值采样分析](../../experiments/us/20261126_diffusion_mean_sampling_audit/REPORT.md)及[收益归因JSON](../../experiments/us/20261126_diffusion_mean_sampling_audit/benefit_attribution.json)。分析不训练模型，确认138及原C/D标签保持隔离。
 
 ## 下一步如何使用这些收益
 

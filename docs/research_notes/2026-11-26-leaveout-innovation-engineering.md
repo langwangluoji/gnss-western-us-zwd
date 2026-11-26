@@ -18,7 +18,7 @@
 
 - [实验原理和合同](../superpowers/specs/2026-11-26-leaveout-innovation-audit.md)
 - [执行计划](../superpowers/plans/2026-11-26-leaveout-innovation-audit.md)
-- [源哈希、扰动核验及完整耗时](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_leaveout_innovation_audit/b0000_o02_s42/summary.json)
+- [源哈希、扰动核验及完整耗时](../../experiments/us/20261126_leaveout_innovation_audit/b0000_o02_s42/summary.json)
 
 几何折和留出集合2项测试通过；实际源背景核验已完成。原数组本机保留，Git同步代码、协议和轻量证据。
 
@@ -28,5 +28,5 @@
 
 2016–2018的36个月块完成后，两种子的六组有参数探针已单独封存于各自`probe_fit_release.json`；none为零修正无需系数。后续汇总重拟合仅作一致性复核，须与释放的系数、训练归一化和有效标签数核对。单独后处理报告中心化目标残差的预测R²及相对TF的残差能量减少率，不改冻结拟合源码。
 
-- [seed42先行封存的探针系数](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_leaveout_innovation_panel/s42/probe_fit_release.json)
-- [seed17先行封存的探针系数](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_leaveout_innovation_panel/s17/probe_fit_release.json)
+- [seed42先行封存的探针系数](../../experiments/us/20261126_leaveout_innovation_panel/s42/probe_fit_release.json)
+- [seed17先行封存的探针系数](../../experiments/us/20261126_leaveout_innovation_panel/s17/probe_fit_release.json)

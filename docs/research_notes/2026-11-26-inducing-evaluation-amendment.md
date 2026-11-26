@@ -28,6 +28,6 @@ Gaussian参照六小时随机化覆盖率为82.654%/81.310%，解析80%区间为
 
 ## 逐站与尾部证据
 
-[有向时滞逐站报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/station_tail_audit/REPORT.md)补齐MAE、Bias和P90/P95。F6 P95由29.379降至29.092mm，补充由34.252降至33.963mm。P475主日历F6只改善0.006mm、补充增加0.068mm，仍是重点；PLTX主F6约24.745mm、P95约53.847mm，P786补充F6约27.999mm。全局收益之外，这些站点继续约束下一步的地形/海岸与天气过程建模。
+[有向时滞逐站报告](../../experiments/us/20261126_directed_lag_v2/station_tail_audit/REPORT.md)补齐MAE、Bias和P90/P95。F6 P95由29.379降至29.092mm，补充由34.252降至33.963mm。P475主日历F6只改善0.006mm、补充增加0.068mm，仍是重点；PLTX主F6约24.745mm、P95约53.847mm，P786补充F6约27.999mm。全局收益之外，这些站点继续约束下一步的地形/海岸与天气过程建模。
 
 上述仍是已暴露2020抽样开发、固定两种子、strict_oof=false。确认及原C/D标签未读取，原未来可用性选站与历史PWV筛选限制保留。

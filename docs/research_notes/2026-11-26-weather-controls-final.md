@@ -71,10 +71,10 @@ Local相对G265的主阈值增湿/减湿Brier改善约0.631%/0.964%；相对Affi
 
 ## 完整证据
 
-- [主日历天气GP](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_projective_gp/paired/REPORT.md)
-- [补充日期天气GP](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_gp_calendar15_cpu/paired/REPORT.md)
-- [Local/Affine及两采样器](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_transport/paired/REPORT.md)
-- [固定均值尺度/形状三臂](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_centered_shape/paired/REPORT.md)
-- [旧模型补充日期事件](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_frozen_event_audit_v2/calendar15/REPORT.md)
+- [主日历天气GP](../../experiments/us/20261126_weather_projective_gp/paired/REPORT.md)
+- [补充日期天气GP](../../experiments/us/20261126_weather_gp_calendar15_cpu/paired/REPORT.md)
+- [Local/Affine及两采样器](../../experiments/us/20261126_weather_transport/paired/REPORT.md)
+- [固定均值尺度/形状三臂](../../experiments/us/20261126_centered_shape/paired/REPORT.md)
+- [旧模型补充日期事件](../../experiments/us/20261126_frozen_event_audit_v2/calendar15/REPORT.md)
 
 本轮新增评分汇总通过缺测计数、同总体配对、fair均值MSE及事件缺测测试；维护脚本测试23项通过。独立审阅复算共同月份区间，并补强事件阈值/计分实现、日历小时与查询顺序来源验收。原始数组、权重和缓存保留本机，Git仅同步代码与轻量证据。

@@ -18,7 +18,7 @@
 
 ## 1. 起点与研究问题
 
-已完成seed42的同条件结果如下。2016–2019连续训练3000步；2020每月8–10日72小时、3布局、137登记验证站，评价当前时刻空间重建R。数值来自[结果目录](../../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/REPORT.md)，固定证据快照见[证据JSON](../../../maintenance/p14_next_stage_20261125/evidence_snapshot.json)。
+已完成seed42的同条件结果如下。2016–2019连续训练3000步；2020每月8–10日72小时、3布局、137登记验证站，评价当前时刻空间重建R。数值来自[结果目录](../../../experiments/us/20261125_p14_continuous_fusion/REPORT.md)，固定证据快照见[证据JSON](../../../research/p14_next_stage_20261125/evidence_snapshot.json)。
 
 | 模型 | 站宏RMSE/mm | 小时增量宏RMSE/mm |
 |---|---:|---:|

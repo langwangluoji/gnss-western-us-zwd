@@ -34,7 +34,7 @@ lambda=0.5，双种子42/17各3000，连续训练块，raw主/EMA并列，保持
 
 2026-11-26：从已核验H＋S结果推进E3；GPU无Python计算进程，额度剩80%。原位在codex研究分支实施，避免复制大型缓存和改变历史源路径。协议先于新增训练结果固定。
 
-真实4更新：lambda0与原H的model/EMA/optimizer/scheduler/CPU和CUDA RNG/step全部精确相同；lambda0.5改变权重，每步10752个有限查询标签，warm三项为零。新损失及原H/HS回归共28项通过。[等价证据](../../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_increment_smoke/equivalence.json)。
+真实4更新：lambda0与原H的model/EMA/optimizer/scheduler/CPU和CUDA RNG/step全部精确相同；lambda0.5改变权重，每步10752个有限查询标签，warm三项为零。新损失及原H/HS回归共28项通过。[等价证据](../../../experiments/us/20261126_increment_smoke/equivalence.json)。
 
 正式两种子各3000完成，约388秒/种子，raw/EMA主日历及冻结补充日历全部完成。内部增量微小改善，两日历六小时改善约0.003–0.005mm，补充区间跨零。维护35项通过，最终只读审阅主日历代码/权重/区间无Critical/Important/需处理Minor；补充结果沿同一核验器复算完成。协议spec及其预训练hash保持不变，实际状态写本计划及结果页。
 

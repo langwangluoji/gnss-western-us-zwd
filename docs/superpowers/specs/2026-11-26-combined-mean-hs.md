@@ -1,6 +1,6 @@
 # H＋S：同起点时空融合的组合检验
 
-状态：双种子42/17各3000更新及raw/EMA评价已完成。[正式配对结果](../../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_mean_hs/paired/REPORT.md)中，HS当前/六小时站宏RMSE为9.811297/13.972726mm。相对H六小时改善0.004979mm，相对C的六小时区间跨零；当前增量有代价，风险交互未支持超加性互补。[后续方向](../../research_notes/2026-11-26-next-research-after-hs.md)据此转向创新传递和内部增量监督。以下为原设计合同，保持不变。
+状态：双种子42/17各3000更新及raw/EMA评价已完成。[正式配对结果](../../../experiments/us/20261126_mean_hs/paired/REPORT.md)中，HS当前/六小时站宏RMSE为9.811297/13.972726mm。相对H六小时改善0.004979mm，相对C的六小时区间跨零；当前增量有代价，风险交互未支持超加性互补。[后续方向](../../research_notes/2026-11-26-next-research-after-hs.md)据此转向创新传递和内部增量监督。以下为原设计合同，保持不变。
 
 ![H＋S全流程架构](../../figures/weather_native_20261126/mean_hs_architecture.png)
 

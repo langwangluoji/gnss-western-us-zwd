@@ -1,0 +1,19 @@
+science:
+  rank: 128
+runtime:
+  data_root: /ssdfs/datahome/${USER}/gnss_field/data
+  run_root: ~/data/gnss_field/runs
+  cache_root: /ssdfs/datahome/${USER}/gnss_field/cache
+  device: cuda
+  partition: L40
+  gres: gpu:l40:1
+  cpus: 7
+  memory_gb: 64
+  wall_hours: 24
+  max_parallel: 2
+  patch_chunk: 8
+  micro_hours: 1
+campaign:
+  name: tongji_field_v2
+  environment: gnss-field
+  benchmark_card_hours: 4

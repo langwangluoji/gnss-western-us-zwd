@@ -1,0 +1,16 @@
+{
+  "python": "3.11.13",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "packages": {
+    "torch": "2.8.0+cu129",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "pandas": "2.3.3",
+    "pyproj": "3.7.2",
+    "h5py": "3.14.0",
+    "matplotlib": "3.10.7",
+    "pytest": "9.0.3",
+    "setuptools": "78.1.1"
+  },
+  "scope": "environment used for cleanup, migration tests and wheel validation; not a new training result"
+}

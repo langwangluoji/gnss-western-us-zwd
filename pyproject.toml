@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gnss-field"
+version = "0.1.2"
+description = "Reproducible sparse GNSS field experiments for Tongji Slurm"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0", "scipy>=1.14", "pandas>=2.2", "torch>=2.8,<2.9", "PyYAML>=6", "pyproj>=3.6", "optuna>=4.0,<5"]
+
+[project.scripts]
+gnss-field = "gnss_field.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "h5py>=3.10", "matplotlib>=3.8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+gnss_field = ["resources/*.json", "resources/*.html"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", ".", "research/engine", "research/engine/tools"]
+testpaths = ["research/engine/tests", "research/europe_transfer_20261126", "research/europe_vmf3_20261126", "maintenance/paper_restructure_20261126"]
+markers = ["cuda: requires a CUDA device", "real_data: requires the prepared project data"]

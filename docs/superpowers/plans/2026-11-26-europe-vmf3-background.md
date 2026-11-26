@@ -8,7 +8,7 @@
 
 **Tech Stack:** 本机Anaconda pytorch、NumPy、h5py、原Model4 VMF3模块、XGBoost、Matplotlib。
 
-**Spec:** [冻结合同](../../../maintenance/europe_vmf3_20261126/README.md)
+**Spec:** [冻结合同](../../../research/europe_vmf3_20261126/README.md)
 
 ## Global Constraints
 

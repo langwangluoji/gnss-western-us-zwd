@@ -24,7 +24,7 @@
 
 用户追加的精度要求对应[3000步配对优化计划](../superpowers/plans/2026-11-25-warm-joint-precision.md)：保留已完成的约10mm模型权重及所有分支，新增Transformer修正头严格零初始化；当前正在执行双种子T2/T5冻结与联合微调，未改善则继续调整。下文从头短训结果用于定位问题，不替代此性能要求。
 
-结果入口：[真实本机训练、表示审计与概率模型报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_joint_spectral_pilot_v2/REPORT.md)。完整九臂及四个v控制已经跑完，属于60/100步工程验证；尚无新架构3000步正式收益结论。
+结果入口：[真实本机训练、表示审计与概率模型报告](../../experiments/us/20261125_joint_spectral_pilot_v2/REPORT.md)。完整九臂及四个v控制已经跑完，属于60/100步工程验证；尚无新架构3000步正式收益结论。
 
 ## 数据与基础场
 

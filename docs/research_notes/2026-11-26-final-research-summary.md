@@ -32,7 +32,7 @@ joint是当前已测候选中六小时预报的推荐架构。合并F6相对H_de
 
 ![精度总览](../figures/final_research_20261126/performance_overview.png)
 
-[合并精确数值、区间与源哈希](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_final_research_summary/point_metrics.json)｜[有向时滞完整结果](2026-11-26-directed-lag-v2-results.md)｜[逐站尾部指标](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/station_tail_audit/REPORT.md)
+[合并精确数值、区间与源哈希](../../experiments/us/20261126_final_research_summary/point_metrics.json)｜[有向时滞完整结果](2026-11-26-directed-lag-v2-results.md)｜[逐站尾部指标](../../experiments/us/20261126_directed_lag_v2/station_tail_audit/REPORT.md)
 
 ## 2. 当前最佳确定性架构
 
@@ -120,7 +120,7 @@ Student-t的shape矩阵与总体协方差不同；乘(ν−2)/ν使总体均值/
 
 曲线是每100块记录的当前块NLL，不是固定验证集曲线；不同天气块自然波动，不能将末点高低单独作为收敛或晋级判断。正式选择依据冻结开发评价。
 
-[末轮完整报告与配对图](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_scale_tail/paired/REPORT.md)｜[全部事件、覆盖、区间和哈希](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_scale_tail/paired/summary.json)｜[冻结合同](../superpowers/specs/2026-11-26-weather-scale-tail-final.md)
+[末轮完整报告与配对图](../../experiments/us/20261126_weather_scale_tail/paired/REPORT.md)｜[全部事件、覆盖、区间和哈希](../../experiments/us/20261126_weather_scale_tail/paired/summary.json)｜[冻结合同](../superpowers/specs/2026-11-26-weather-scale-tail-final.md)
 
 ## 5. 频域研究的结论
 
@@ -145,7 +145,7 @@ Student-t的shape矩阵与总体协方差不同；乘(ν−2)/ν使总体均值/
 
 重点站中，主日历PLTX F6为24.745mm、P95为53.847mm，P475为22.309mm、PTEX为22.138mm；补充P786 F6为27.999mm、P95为55.804mm。这些站的局地天气、边缘支撑与未来增量需要区别诊断。例如P510共同标签上的当前误差RMS10.605mm、未来增量误差RMS21.397mm，提示未来变化本身是重要误差源；该RMS口径与站宏RMSE分开。
 
-[逐站误差地图](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/station_tail_audit/station_tail_maps.png)｜[精确误差分解](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/station_tail_audit/ERROR_COMPONENTS.md)｜[I1六类分层表](2026-11-25-precision-final.md)
+[逐站误差地图](../../experiments/us/20261126_directed_lag_v2/station_tail_audit/station_tail_maps.png)｜[精确误差分解](../../experiments/us/20261126_directed_lag_v2/station_tail_audit/ERROR_COMPONENTS.md)｜[I1六类分层表](2026-11-25-precision-final.md)
 
 ## 7. 已完成研究的总台账
 
@@ -153,9 +153,9 @@ Student-t的shape矩阵与总体协方差不同；乘(ν−2)/ν使总体均值/
 
 | 研究部分 | 完成内容与所得结论 | 证据入口 |
 |---|---|---|
-| v13 U-Net | 五组双种子；点特征＋UNet16为10.828mm，MLP11.175mm，大UNet48为11.800mm | [早期比较](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_unet_foundation_v13/RESULTS.md) |
-| p14固定支撑 | 双种子扩展评价10.806mm；建立坐标查询基础场 | [p14报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_fixed_support_encoder_p14_formal/REPORT.md) |
-| p15空间采样 | random/hole/距离分层真实筛查；短时分数不与正式队列混排 | [p15报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261124_optimization_campaign_p15/REPORT.md) |
+| v13 U-Net | 五组双种子；点特征＋UNet16为10.828mm，MLP11.175mm，大UNet48为11.800mm | [早期比较](../../experiments/us/20261124_unet_foundation_v13/RESULTS.md) |
+| p14固定支撑 | 双种子扩展评价10.806mm；建立坐标查询基础场 | [p14报告](../../experiments/us/20261124_fixed_support_encoder_p14_formal/REPORT.md) |
+| p15空间采样 | random/hole/距离分层真实筛查；短时分数不与正式队列混排 | [p15报告](../../experiments/us/20261124_optimization_campaign_p15/REPORT.md) |
 | 连续数据、长历史 | 唯一小时轴、真实缺测、条件集合、mask/age与历史跨度核验 | [数据组织](../superpowers/specs/2026-11-25-temporal-history-data-organization.md) |
 | p14完整融合 | 海岸/地形、GRU/LSTM/Transformer与约3000步载体融合 | [连续融合](../superpowers/plans/2026-11-25-p14-continuous-fusion.md) |
 | T/Q/S/A/D续训 | 14条双种子神经训练轨迹；检验查询、原站、异常与距离重平衡 | [精度衔接](2026-11-25-precision-continuation.md) |
@@ -171,7 +171,7 @@ Student-t的shape矩阵与总体协方差不同；乘(ν−2)/ν使总体均值/
 | 固定均值与中心消融 | shape/scale/both、独立双场配对与42组lead中心诊断 | [中心消融](2026-11-26-lead-mean-results.md) |
 | 共享诱导创新流 | 双种子四臂3000、终端联合评分、非线性代理诊断 | [创新流结果](2026-11-26-inducing-flow-results.md) |
 | 完整场尾部P0 | 两种子96固定块、2019探针迁移、Gaussian生成自检 | [尾部探针](2026-11-26-full-field-tail-probe-results.md) |
-| 天气尺度/尾部P1 | 六个训练模型、十二组评价、同协方差与同预算对照、独立复算 | [最终报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_scale_tail/paired/REPORT.md) |
+| 天气尺度/尾部P1 | 六个训练模型、十二组评价、同协方差与同预算对照、独立复算 | [最终报告](../../experiments/us/20261126_weather_scale_tail/paired/REPORT.md) |
 | 收束与归档 | 两日历点指标合并、最佳架构PNG/SVG、来源清单和Git核验 | 本文与[绘图来源](../figures/final_research_20261126/manifest.json) |
 
 早期v13/p14主要用2016/17稀疏片段、12个月24h扩展评价；后期使用连续2016–2019与2020每月72h日期。10.8→9.8的数值同时涉及数据与任务变化，不能写成单一架构的提升百分比。

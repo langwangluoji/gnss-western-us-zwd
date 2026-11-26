@@ -140,7 +140,7 @@ loss = MSE(epsilon_hat, epsilon)
 
 ## 8. 本机真实数据变换核验
 
-来源：已开发暴露的p14 seed42续训3000步预测，2020每月8–10日72小时、layout0、登记验证137站。仅读取已有预测/真值及训练410站静态坐标，未读确认/C/D标签。[核验JSON](../../maintenance/spectral_diffusion_20261125/transform_audit.json)、[可复现脚本](../../maintenance/spectral_diffusion_20261125/audit_transforms.py)。
+来源：已开发暴露的p14 seed42续训3000步预测，2020每月8–10日72小时、layout0、登记验证137站。仅读取已有预测/真值及训练410站静态坐标，未读确认/C/D标签。[核验JSON](../../research/spectral_diffusion_20261125/transform_audit.json)、[可复现脚本](../../research/spectral_diffusion_20261125/audit_transforms.py)。
 
 ![已有p14残差的变换诊断](../figures/spectral_diffusion_20261125/transform_audit.png)
 

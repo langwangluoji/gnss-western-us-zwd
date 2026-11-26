@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "protected_files_verified": 16164,
+  "protected_bytes": 92250828293,
+  "approved_duplicate_deletions": [
+    {
+      "path": "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261122_local_coverage_expansion_v01/cache/features.npy",
+      "size": 218996864,
+      "sha256": "bbea985f55eb1a75231e70fd282f1e8f90e71696fd3f821904fe4284a6e8c694",
+      "surviving_npz": "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261122_local_coverage_expansion_v01/data.npz",
+      "member": "features.npy",
+      "npz_sha256": "7252ac763014ac77c147d1983081ccfa250cf47513c4fb195dacf87d643d32e6",
+      "reason": "byte-identical NPY member retained inside verified data.npz"
+    },
+    {
+      "path": "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261122_local_coverage_expansion_v01/cache/innovation.npy",
+      "size": 6537344,
+      "sha256": "253c5e5308c5f798b9a550108f6f542410001d51dc71e73e99633b5f97726dc2",
+      "surviving_npz": "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261122_local_coverage_expansion_v01/data.npz",
+      "member": "innovation.npy",
+      "npz_sha256": "7252ac763014ac77c147d1983081ccfa250cf47513c4fb195dacf87d643d32e6",
+      "reason": "byte-identical NPY member retained inside verified data.npz"
+    }
+  ],
+  "link_only_markdown_originals_in_git_tag": [
+    "README.md",
+    "docs/CURRENT_RESEARCH.md",
+    "docs/EXPERIMENT_INDEX.md",
+    "docs/GETTING_STARTED.md",
+    "docs/NEXT_STAGE.md",
+    "docs/research_notes/2026-11-25-joint-spectral-implementation.md",
+    "docs/research_notes/2026-11-25-precision-continuation.md",
+    "docs/research_notes/2026-11-25-precision-final.md",
+    "docs/research_notes/2026-11-25-spectral-diffusion-feasibility.md",
+    "docs/research_notes/2026-11-25-temporal-diffusion-comparison.md",
+    "docs/research_notes/2026-11-26-best-base-diffusion-fusion.md",
+    "docs/research_notes/2026-11-26-diffusion-benefits-and-mean-error.md",
+    "docs/research_notes/2026-11-26-directed-lag-v2-results.md",
+    "docs/research_notes/2026-11-26-directed-normalization-correction.md",
+    "docs/research_notes/2026-11-26-final-research-summary.md",
+    "docs/research_notes/2026-11-26-full-field-tail-probe-results.md",
+    "docs/research_notes/2026-11-26-increment-supervision-results.md",
+    "docs/research_notes/2026-11-26-inducing-evaluation-amendment.md",
+    "docs/research_notes/2026-11-26-inducing-flow-results.md",
+    "docs/research_notes/2026-11-26-lead-mean-results.md",
+    "docs/research_notes/2026-11-26-leaveout-innovation-engineering.md",
+    "docs/research_notes/2026-11-26-leaveout-innovation-panel-results.md",
+    "docs/research_notes/2026-11-26-native-weather-diffusion.md",
+    "docs/research_notes/2026-11-26-next-research-after-hs.md",
+    "docs/research_notes/2026-11-26-research-achievements-overview.md",
+    "docs/research_notes/2026-11-26-research-priorities-after-weather-gp.md",
+    "docs/research_notes/2026-11-26-spectral-and-mean-centering.md",
+    "docs/research_notes/2026-11-26-weather-controls-final.md",
+    "docs/research_notes/2026-11-26-weather-projective-trajectory.md",
+    "docs/superpowers/plans/2026-11-25-p14-fusion-next-stage.md",
+    "docs/superpowers/plans/2026-11-26-europe-model4-transfer.md",
+    "docs/superpowers/plans/2026-11-26-europe-vmf3-background.md",
+    "docs/superpowers/plans/2026-11-26-final-weather-calibration.md",
+    "docs/superpowers/plans/2026-11-26-within-forecast-increment.md",
+    "docs/superpowers/specs/2026-11-25-masked-transformer-fusion-residual-design.md",
+    "docs/superpowers/specs/2026-11-25-temporal-history-data-organization.md",
+    "docs/superpowers/specs/2026-11-26-combined-mean-hs.md",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/README.md",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/tools/terrain_diffusion/V12.md"
+  ],
+  "failures": [],
+  "regenerable_install_metadata": [
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/src/gnss_field.egg-info/PKG-INFO",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/src/gnss_field.egg-info/SOURCES.txt",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/src/gnss_field.egg-info/dependency_links.txt",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/src/gnss_field.egg-info/entry_points.txt",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/src/gnss_field.egg-info/requires.txt",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/src/gnss_field.egg-info/top_level.txt"
+  ],
+  "confirmation_labels_parsed": false,
+  "training_started": false,
+  "source_inventory_sha256": "913d4b42bbaf93f5cd8c4bd265a963d8f01ff34d22d0cbe67fb3bcf7ed362eb4",
+  "mutable_task_documents_excluded": [
+    {
+      "path": "docs/superpowers/plans/2026-11-26-paper-ready-restructure.md",
+      "before_sha256": "491cdb2b1b2c37c348682a796ea9b18699bbe2da1e5c8a6483441afeaaaba6d4",
+      "current_sha256": "9ddde93c6949eb375939946a1a31ac2216195618f8aaced80148303fddeb3a07",
+      "reason": "task-owned implementation plan created before the inventory and updated during execution; not a historical scientific record"
+    }
+  ],
+  "verification_note": "Latest full byte-hash run matched every protected file; only this mutable task plan was reclassified after the run. Six regenerated installer metadata files excluded explicitly."
+}

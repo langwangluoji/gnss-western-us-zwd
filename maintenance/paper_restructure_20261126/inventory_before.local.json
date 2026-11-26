@@ -1,0 +1,7 @@
+{
+  "files": 16178,
+  "bytes": 92476392705,
+  "manifest_sha256": "913d4b42bbaf93f5cd8c4bd265a963d8f01ff34d22d0cbe67fb3bcf7ed362eb4",
+  "seconds": 165,
+  "policy": "read-only byte hashing; no label parsing; Python/test caches and git internals excluded"
+}

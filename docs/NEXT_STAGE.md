@@ -21,11 +21,11 @@
 
 用户已选定：[因果掩码Transformer融合与标准化残差场架构](superpowers/specs/2026-11-25-masked-transformer-fusion-residual-design.md)，含总流程、两级融合和残差训练/采样3张PNG及SVG。当前优先实现T0–T5融合消融，再构建按fold/布局/连续块组织的标准化残差；生成端使用逐帧创新diffusion＋因果潜状态递推，共享条件G，具体以该设计为准。旧连续融合已完成双种子，新架构仍为待实现设计。
 
-最新执行增补：[p14融合实测后的优化与扩散计划](superpowers/plans/2026-11-25-p14-fusion-next-stage.md)。顺序为完成双种子→优化消融→时间特征进入空间解码→长历史→折外残差概率模型→年度开发评价。新实验尚未运行；当前3000步融合组结果见[阶段报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/REPORT.md)。下文保留先前设计与数据边界，具体新增实验配置以执行增补为准。
+最新执行增补：[p14融合实测后的优化与扩散计划](superpowers/plans/2026-11-25-p14-fusion-next-stage.md)。顺序为完成双种子→优化消融→时间特征进入空间解码→长历史→折外残差概率模型→年度开发评价。新实验尚未运行；当前3000步融合组结果见[阶段报告](../experiments/us/20261125_p14_continuous_fusion/REPORT.md)。下文保留先前设计与数据边界，具体新增实验配置以执行增补为准。
 
 以下为早期设计快照（2026-11-25），实现与实验状态已由页首完成记录更新。本页对下列早期草案中的冲突作出明确修订；旧实验锁和结果不变。
 
-实施更新：连续数据与首轮时间分支本机预报筛查已完成，见[实际结果](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_temporal_forecast_screen/REPORT.md)。26配置已跑完；完整空间编码、168h、多分辨率、折外残差与diffusion尚待后续阶段。
+实施更新：连续数据与首轮时间分支本机预报筛查已完成，见[实际结果](../experiments/us/20261125_temporal_forecast_screen/REPORT.md)。26配置已跑完；完整空间编码、168h、多分辨率、折外残差与diffusion尚待后续阶段。
 
 ## 阅读顺序
 

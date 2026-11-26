@@ -1,0 +1,33 @@
+{
+  "status": "approved_after_fixes",
+  "reviewer": "independent read-only audit_cleanup_dependencies",
+  "critical": [],
+  "important": [],
+  "closed_issues": [
+    "Extended-length Windows existence checks; all protected SHA256 verified",
+    "Optional Model4 import delayed until actual preprocessing",
+    "New-layout release identity covers relocated tools/configs/slurm",
+    "Existing junction target identity checked; repeat migration guarded",
+    "Historical parity source fallback checks model.py rather than an empty directory",
+    "Public clone marks two observational CUDA tests as requiring restored local data"
+  ],
+  "scientific_json": {
+    "checked": 5098,
+    "changed": 0,
+    "missing": 0
+  },
+  "historical_parity": "5 passed in independent checkout",
+  "note": "No training, scientific lock mutation or model optimization in cleanup.",
+  "whole_branch_final_review": {
+    "reviewer": "final_cleanup_review",
+    "read_only": true,
+    "critical": 0,
+    "important": 0,
+    "minor_blocking": 0,
+    "decision": "ready to publish",
+    "verified_main_document_links": 75,
+    "largest_staged_file_below_mib": 10,
+    "remote_main_is_ancestor": true,
+    "notes": "Integrity exclusions, test-log SHA, scientific figures and staged source reviewed; no new training represented as completed."
+  }
+}

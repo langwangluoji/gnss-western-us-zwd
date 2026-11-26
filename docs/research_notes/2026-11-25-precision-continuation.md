@@ -17,7 +17,7 @@
 
 各候选均为最终3000步，不按2020评价挑选中间检查点。Qraw与Qema共享训练轨迹。T2的共同月份配对95%区间为[−0.004923, 0.003387] mm，Qema为[−0.014113, 0.003366] mm；该组对照保留原GRU+p14；本轮最终选择见上方I1。查询分支seed17重跑已完成，原中断目录及检查点核验记录保留。
 
-逐项指标、源权重哈希和真值核验见[统一配对报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/REPORT.md)。双种子平均指各次独立拟合分数的平均，与预测集合平均分开解释。
+逐项指标、源权重哈希和真值核验见[统一配对报告](../../experiments/us/20261125_warm_joint_precision/combined_precision/REPORT.md)。双种子平均指各次独立拟合分数的平均，与预测集合平均分开解释。
 
 ## 从误差定位编码问题
 
@@ -25,7 +25,7 @@
 
 已有新分支输出修正的RMS约0.10–0.38 mm。Qraw修正与参考残差的相关系数为−0.027/−0.012，Qema为0.083/0.003。该现象支持进一步检查新增表示中的有效局地信息；目前不能将它归因为训练未收敛或Transformer模型本身的上限。
 
-![修正幅度、逐月变化与空间稀疏分层](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/precision_diagnostics.png)
+![修正幅度、逐月变化与空间稀疏分层](../../experiments/us/20261125_warm_joint_precision/combined_precision/precision_diagnostics.png)
 
 诊断脚本为`maintenance/joint_spectral_implementation_20261125/precision_diagnostics.py`。其中oracle幅度使用开发真值解释修正方向，属于事后诊断，不用于模型输出或成绩。
 
@@ -45,9 +45,9 @@ S候选保留每站独立的72小时序列，经因果Transformer后再将局地
 
 进一步重放全部3000个训练块发现，随机布局训练目标59.4%距条件站不足50 km，75/25空洞布局仍为58.7%；开发坐标的纯几何比例为16.3%。[距离加权D对照](../superpowers/specs/2026-11-25-distance-balanced-precision.md)据此保持S的网络与输入，固定四档损失权重0.278/2.297/1.922/0.879，提高50–200 km目标的水平损失权重占比。权重由训练有效记录比例和开发坐标分布计算，开发真值不进入计算，属于已知开发几何下的适配。D已完成双种子3000更新，EMA对S平均改善0.008096 mm；相对原参考的seed17略增，故未晋级。
 
-![训练与开发坐标的条件距离分布](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/support_distribution.png)
+![训练与开发坐标的条件距离分布](../../experiments/us/20261125_warm_joint_precision/combined_precision/support_distribution.png)
 
-![固定连续窗口容量探针](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_warm_joint_precision/combined_precision/native_capacity_curve.png)
+![固定连续窗口容量探针](../../experiments/us/20261125_warm_joint_precision/combined_precision/native_capacity_curve.png)
 
 ## 后续判据
 

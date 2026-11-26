@@ -28,9 +28,9 @@ G265、TF3000均值和S175输入尺度冻结。8个几何锚点将原Gaussian过
 
 预注册主比较odd_frequency−affine_frequency的六小时差值+0.002953mm，95%区间[-0.000659,+0.007846]mm；内部增量增加0.000416mm、20mm增湿Brier增加0.000089。Odd time同样没有稳定额外六小时收益。非线性不是本轮改善所必需的因素。
 
-主指标未满足补充触发，本轮不评价15–17日；不以其他模型的最好点值替代注册触发。原始精确数值、事件、季节、高程、海岸、距离和所有比较保留在[完整配对汇总](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_inducing_latent_flow/paired_calendar8_v2/summary.json)。
+主指标未满足补充触发，本轮不评价15–17日；不以其他模型的最好点值替代注册触发。原始精确数值、事件、季节、高程、海岸、距离和所有比较保留在[完整配对汇总](../../experiments/us/20261126_inducing_latent_flow/paired_calendar8_v2/summary.json)。
 
-![配对收益与月份区间](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_inducing_latent_flow/paired_calendar8_v2/paired_effects.png)
+![配对收益与月份区间](../../experiments/us/20261126_inducing_latent_flow/paired_calendar8_v2/paired_effects.png)
 
 ## 校准与物理支撑
 

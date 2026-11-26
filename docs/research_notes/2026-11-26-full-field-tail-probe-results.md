@@ -36,7 +36,7 @@ t20改善径向诊断，但尚未达到校准参考。偏离可能同时来自�
 
 另以四个固定源状态、各4096个实际Gaussian成员做自校验。生成q/d均值0.9996–1.0011，PIT>95%比例约4.76%–5.32%，符合预期。这将真实联合误差信号与明显的协方差计算错误区分开；该生成自检不计作大气预测验证。
 
-![完整场径向与对数评分](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_full_field_tail_probe/paired/tail_probe.png)
+![完整场径向与对数评分](../../experiments/us/20261126_full_field_tail_probe/paired/tail_probe.png)
 
 ## 下一步的重点
 
@@ -50,6 +50,6 @@ t20改善径向诊断，但尚未达到校准参考。偏离可能同时来自�
 
 strict_oof=false、旧Q128未来可用性筛选、历史PWV质控来源限制保留；该探针无神经3000更新或完整年度成绩。权重、大数组保留本机，代码与轻量证据同步GitHub。
 
-- [完整配对记录与来源](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_full_field_tail_probe/paired/summary.json)
+- [完整配对记录与来源](../../experiments/us/20261126_full_field_tail_probe/paired/summary.json)
 - [执行计划与方法公式](../superpowers/plans/2026-11-26-full-field-tail-next.md)
 - [上一项诱导创新流结果](2026-11-26-inducing-flow-results.md)

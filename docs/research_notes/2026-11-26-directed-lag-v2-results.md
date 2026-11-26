@@ -43,13 +43,13 @@ joint相对H_delta主/补充六小时两种子差值分别为[-0.132235,-0.10957
 
 训练2016–2019；2020每月8–10日和15–17日均三布局，137注册/135当前和F6有标签查询，均为已暴露开发。strict_oof=false、原未来可用性选站、历史PWV筛选来源和末91块复用限制保留，未经多重探索校正；确认及原C/D未读。
 
-![主日历训练与精度](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/paired_calendar8/directed_comparison.png)
+![主日历训练与精度](../../experiments/us/20261126_directed_lag_v2/paired_calendar8/directed_comparison.png)
 
-![补充日历](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/paired_calendar15/directed_comparison.png)
+![补充日历](../../experiments/us/20261126_directed_lag_v2/paired_calendar15/directed_comparison.png)
 
 ## 复现入口
 
 - [完整架构与修正合同](../superpowers/specs/2026-11-26-directed-lag-v2.md)
-- [主日历报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/paired_calendar8/REPORT.md)
-- [补充日历报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/paired_calendar15/REPORT.md)
+- [主日历报告](../../experiments/us/20261126_directed_lag_v2/paired_calendar8/REPORT.md)
+- [补充日历报告](../../experiments/us/20261126_directed_lag_v2/paired_calendar15/REPORT.md)
 - [下一步研究排序](2026-11-26-next-research-checkpoint.md)

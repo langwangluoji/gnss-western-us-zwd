@@ -1,41 +1,20 @@
 # 快速上手
 
-## 先读什么
-
-1. [项目架构](PROJECT_ARCHITECTURE.md)：理解目录和研究主线。
-2. [当前研究进展](CURRENT_RESEARCH.md)：确认最新实验、数据角色和证据范围。
-3. [实验索引](EXPERIMENT_INDEX.md)：按实验编号找到报告、协议和状态。
-4. [方法验证规则](METHOD_VALIDATION.md)：判断一个结果能支持什么结论。
-5. [本地产物说明](LOCAL_ARTIFACTS.md)：恢复原始数据、权重和缓存的位置。
-
-## 最短路径
+在仓库根目录运行。需要Python≥3.11、PyTorch2.8.x；本机环境为Anaconda的`pytorch`。
 
 ```powershell
-Set-Location research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server
-python -m pip install -e .
+python -m pip install -e ".[dev]"
+python -m research.layout
+python -m gnss_field --help
 python -m pytest -q
 ```
 
-当前 v13 结果入口：
+`research.layout`建立可重建的本地兼容目录：旧研究路径映射到新源代码和本地产物；Windows使用目录junction，其他平台使用相对符号链接。它不会训练、改实验锁或复制大数据。公开克隆只含轻量证据，完整数据回放还需要恢复artifacts。
 
-`results/20261124_unet_foundation_v13/RESULTS.md`
+主包在`src/gnss_field`，研究工具和568项工程测试在`research/engine`；欧洲研究及其30项测试在`research/europe_*`。根pytest显式收集这些测试与整理回归测试，避免扫描历史运行中保存的多份源码快照。
 
-当前代码入口：
+完整本机套件为604项。公开克隆缺少观测数据时，两项标记为`real_data`的CUDA观测检查会明确跳过；其余602项可执行。四项历史模型一致性检查使用随仓库保留的兼容源，正常克隆也应执行。
 
-- `tools/terrain_diffusion/unet_foundation.py`：113 维特征、网格 U-Net、训练与评价基础实现；
-- `tools/terrain_diffusion/unet_hybrid.py`：点特征 MLP＋空间 U-Net 融合；
-- `tools/terrain_diffusion/unet_large.py`：大宽度 U-Net 实验；
-- `tools/terrain_diffusion/unet_diagnostics.py`：地形、月份、空间差值和训练末轮诊断；
-- `tools/terrain_diffusion/unet_audit.py`：预测、真值、指标和权重哈希审计。
+先读[结果指南](../paper/README.md)、[模块贡献](../paper/MODULE_CONTRIBUTIONS.md)、[架构](../paper/ARCHITECTURE.md)和[实验目录](../experiments/README.md)。本地数据恢复见[产物说明](../artifacts/README.md)。
 
-## 如何运行新实验
-
-先复制一个已有实验协议，建立新的实验编号和独立结果目录；不要覆盖旧结果。训练前完成数据合同、输入变量、站点角色、随机种子、预算和评价日期锁定。训练后至少保存协议、状态、指标、曲线、审计清单和结果报告。大型权重、NPZ/NPY、原始数据和缓存只保留本机。
-
-## 需要避免的误读
-
-- 25 km 是发布网格间距，不是已经证明的空间精度；
-- 2018 月首日开发评价不是全年盲测；
-- 历史约 9 mm 结果使用不同输入、区域或划分，不能直接替代当前结果；
-- 架构说明、网页建议和短训收益都不能单独构成方法有效性结论；
-- 新研究禁止把 PWV、IWV、TCWV 或 Tm 作为输入或教师。
+历史版本复现先检出`archive/pre-paper-restructure-20261126`到独立目录，再恢复登记的数据与权重；不要将新路径写回旧实验锁。

@@ -1,6 +1,6 @@
 # 已有时序扩散与本项目：差异、可借鉴机制和下一步验证
 
-日期：2026-11-25。性质：围绕现有架构的定向方法对照，选取8项代表工作，非完整系统综述。论文机制以原始论文/会议页面核查，本项目建议标为待验证。检索与来源记录见[来源清单](../../maintenance/temporal_diffusion_review_20261125/sources.json)。
+日期：2026-11-25。性质：围绕现有架构的定向方法对照，选取8项代表工作，非完整系统综述。论文机制以原始论文/会议页面核查，本项目建议标为待验证。检索与来源记录见[来源清单](../../research/temporal_diffusion_review_20261125/sources.json)。
 
 ## 1. 判断
 
@@ -23,7 +23,7 @@
 | [Diffusion-TS，ICLR 2024](https://proceedings.iclr.cc/paper_files/paper/2024/hash/b5b66077d016c037576cc56a82f97f66-Abstract-Conference.html) | Transformer分解趋势、季节与误差，采用样本重构目标及频域损失 | 可启发慢变背景与天气扰动分工；频域指标先用于诊断。频域拟合不能替代小时增量或站对评分，趋势季节项只在训练/过去条件上估计 |
 | [Score-based Data Assimilation，NeurIPS 2023](https://proceedings.neurips.cc/paper_files/paper/2023/hash/7f7fa581cc8a1970a4332920cdf87395-Abstract.html) | 轨迹生成先验与观测模型分离，推断时由带噪/不完整观测引导轨迹后验 | 对变化站网和观测一致性有价值。本项目可研究观测算子与噪声协方差，但须先有可信场先验，不能将未知格点插值当成真场 |
 
-CorrDiff正式发表于Communications Earth & Environment，2025-02-24；GenCast在线发表于2024-12-04、Nature卷期为2025。书目日期已用[Crossref元数据](../../maintenance/temporal_diffusion_review_20261125/crossref_metadata.json)核验；不按搜索页“距今多久”推断论文年份。
+CorrDiff正式发表于Communications Earth & Environment，2025-02-24；GenCast在线发表于2024-12-04、Nature卷期为2025。书目日期已用[Crossref元数据](../../research/temporal_diffusion_review_20261125/crossref_metadata.json)核验；不按搜索页“距今多久”推断论文年份。
 
 ## 3. 本项目更具体的任务差异
 

@@ -34,7 +34,7 @@
 
 self自身相对none，六小时描述值改善0.063804mm，但区间[-0.149533,0.018614]mm跨零；当前误差增加，区间[0.010271,0.085210]mm为正。当前基础场已经吸收部分可预测历史信息，额外线性校正需同时检查当前场代价，不能按六小时最低点值直接替换模型。
 
-![完整七组候选与创新尺度](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_leaveout_innovation_panel/paired/innovation_panel.png)
+![完整七组候选与创新尺度](../../experiments/us/20261126_leaveout_innovation_panel/paired/innovation_panel.png)
 
 ## 重点区域与可预测残差
 
@@ -62,10 +62,10 @@ LOSO相对self在近海0–50km的六小时MSE描述性改善约1.40%，区间�
 
 ## 可复核入口
 
-- [主报告与全部指标、分层、系数](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_leaveout_innovation_panel/paired/REPORT.md)
-- [预测R²及残差能量](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_leaveout_innovation_panel/paired/RESIDUAL_ENERGY.md)
-- [先行系数精确等价核验](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_leaveout_innovation_panel/paired/probe_release_equivalence.json)
-- [96块self字段与缓存等价](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_leaveout_innovation_panel/paired/feature_equivalence.json)
+- [主报告与全部指标、分层、系数](../../experiments/us/20261126_leaveout_innovation_panel/paired/REPORT.md)
+- [预测R²及残差能量](../../experiments/us/20261126_leaveout_innovation_panel/paired/RESIDUAL_ENERGY.md)
+- [先行系数精确等价核验](../../experiments/us/20261126_leaveout_innovation_panel/paired/probe_release_equivalence.json)
+- [96块self字段与缓存等价](../../experiments/us/20261126_leaveout_innovation_panel/paired/feature_equivalence.json)
 - [冻结面板合同](../superpowers/specs/2026-11-26-leaveout-innovation-panel.md)
 - [真实首块与输入隔离](2026-11-26-leaveout-innovation-engineering.md)
 

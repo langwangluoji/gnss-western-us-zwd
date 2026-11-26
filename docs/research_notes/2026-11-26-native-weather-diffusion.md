@@ -2,13 +2,13 @@
 
 最新架构、已完成均值续训、空间概率证据及天气GP进展见[统一入口](2026-11-26-weather-projective-trajectory.md)。下文保留各阶段记录，执行状态以该入口及实验锁为准。
 
-最新双种子对照见[统一报告](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_mean_analysis/paired/REPORT.md)。各12组均值、每组3000块、raw/EMA评价全部完成。完整联合TF的双种子R/F6平均为9.818254/14.127401mm；联合GRU为9.821917/14.177009mm，LSTM为9.817636/14.251512mm。当前R与I1约9.817064mm处于同一水平；F6比较见配对区间。seed42冻结的概率候选政策不因seed17结果改变。
+最新双种子对照见[统一报告](../../experiments/us/20261126_native_mean_analysis/paired/REPORT.md)。各12组均值、每组3000块、raw/EMA评价全部完成。完整联合TF的双种子R/F6平均为9.818254/14.127401mm；联合GRU为9.821917/14.177009mm，LSTM为9.817636/14.251512mm。当前R与I1约9.817064mm处于同一水平；F6比较见配对区间。seed42冻结的概率候选政策不因seed17结果改变。
 
 S175直连相对近等参数Lwide的当前fair CRPS区间在两种子均低于零：seed42[−0.105165,−0.056684]mm，seed17[−0.081622,−0.032824]mm；F6两者均跨零。直连信息对当前概率校准有可复现作用，全局收益约1%，尚未达到5%概率门槛。
 
 [最新目标合同](2026-11-26-goal-update.md)固定逐站误差、GNSS/T/P、mask/age、身份、方向及地形/海岸查询。72h是新编码器的状态窗口，底层原始依赖跨度146h；训练缓存有34908个唯一起点小时，2016-01-07T01至2019-12-31T12。第2909块后按时间顺序重放起点，3000块包含一次历遍回绕；各窗口历史与未来标签仍严格在2016–2019内，跨回绕不拼接时间历史。
 
-[地形路径审计](../../maintenance/terrain_path_audit_20261126/REPORT.md)显示，在距离/月/高程共同支撑上，TF高−低屏障RMSE差+0.377mm、95%区间[−0.601,1.670]mm；控制既有特征后的空间块诊断ΔR²为负。因此先完成均值C/H/S及GP参考轨迹过程，暂不新增屏障独立训练臂。
+[地形路径审计](../../research/terrain_path_audit_20261126/REPORT.md)显示，在距离/月/高程共同支撑上，TF高−低屏障RMSE差+0.377mm、95%区间[−0.601,1.670]mm；控制既有特征后的空间块诊断ΔR²为负。因此先完成均值C/H/S及GP参考轨迹过程，暂不新增屏障独立训练臂。
 
 ![GP参考轨迹过程与独立均值续训](../figures/weather_native_20261126/gp_trajectory_process.png)
 
@@ -18,7 +18,7 @@ C/H/S均值续训与本轮GP过程是两条独立对照：GP过程仍使用原30
 
 ![本轮完整架构](../figures/weather_native_20261126/architecture.png)
 
-[详细设计与数学原理](../superpowers/specs/2026-11-26-weather-native-diffusion-design.md)｜[逐步实施计划](../superpowers/plans/2026-11-26-weather-native-diffusion.md)｜[执行与审阅记录](../../maintenance/weather_native_20261126/progress.md)
+[详细设计与数学原理](../superpowers/specs/2026-11-26-weather-native-diffusion-design.md)｜[逐步实施计划](../superpowers/plans/2026-11-26-weather-native-diffusion.md)｜[执行与审阅记录](../../research/weather_native_20261126/progress.md)
 
 ## 研究问题与模型
 
@@ -32,7 +32,7 @@ R和F分开评价；F包含起点重建和未来1–6h联合轨迹，逐次起�
 
 完整3000块缓存的48个月度12h训练窗口中，完整GFT×DCT最大逆变换误差0.00010681 mm；只保留128图频中的前16/32/64个时，平均编码重构RMSE为8.598/7.608/6.232 mm。前两个时间频率约占89.13%能量。这是残差编码诊断，不能当作隐藏位置精度或扩散训练收益；旧28窗口诊断保留原目录。
 
-![48个月实际残差频谱与截断损失](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_spectral_full_audit/native_spectral_audit.png)
+![48个月实际残差频谱与截断损失](../../experiments/us/20261126_native_spectral_full_audit/native_spectral_audit.png)
 
 标准Gaussian参考下，零v模型的DDIM20输出方差比例为0.88414；Heun概率流保持参考样本不变。该差异说明有限步采样器本身会影响校准；真实模型比较使用DDIM40和Heun20各40次网络调用，并另报耗时。
 
@@ -60,7 +60,7 @@ seed42首轮六组均完成3000连续块。以下为最终raw权重；EMA另存�
 
 R基本持平，F6有约0.45–0.63 mm改善；原生时间模块对天气摘要MLP的额外收益较小。[下一轮因果状态监督与显式值传递](../superpowers/specs/2026-11-26-causal-innovation-value-transport.md)以2×2实验检验局地先验、前缀预测目标及物理值通道。未来标签按预测起点延伸6小时，R仍使用原主日历。
 
-[逐模型独立复算与六类误差](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_mean_analysis/s42/REPORT.md)提供raw/EMA、月份配对区间、距离/高程/地形/海岸分层、站对差值、小时增量及逐站重点图。区间按月份共同重采样，保留实际有效小时数；这是已暴露日历上的探索性比较，候选选择未作多重比较校正。
+[逐模型独立复算与六类误差](../../experiments/us/20261126_native_mean_analysis/s42/REPORT.md)提供raw/EMA、月份配对区间、距离/高程/地形/海岸分层、站对差值、小时增量及逐站重点图。区间按月份共同重采样，保留实际有效小时数；这是已暴露日历上的探索性比较，候选选择未作多重比较校正。
 
 第二轮seed42六臂各3000块已完成，局地先验Transformer为R9.874807/F6 14.365980 mm；加因果历史内辅助监督为R9.868837/F6 14.304259 mm；仅显式值通道为R9.865542/F6 14.286475 mm。两种机制合用后，TF的F6进一步降至14.174626 mm。
 
@@ -70,9 +70,9 @@ R基本持平，F6有约0.45–0.63 mm改善；原生时间模块对天气摘要
 | LSTM | 106,449 | 9.858661 | 14.326339 |
 | 因果Transformer | 106,833 | 9.865004 | 14.174626 |
 
-三者同输入、同宽度、同历史及训练块；参数量如表，并非严格等参数预算。以seed42的raw F6最小、R相对I1增加不超过0.05 mm为选择规则，冻结联合Transformer的last权重作为概率候选；同架构/权重政策固定用于seed17。[候选选择与权重哈希](../../maintenance/weather_native_20261126/mean_selection.json)已归档。当前R差异较小，I1仍保留为当前场精度参考。
+三者同输入、同宽度、同历史及训练块；参数量如表，并非严格等参数预算。以seed42的raw F6最小、R相对I1增加不超过0.05 mm为选择规则，冻结联合Transformer的last权重作为概率候选；同架构/权重政策固定用于seed17。[候选选择与权重哈希](../../research/weather_native_20261126/mean_selection.json)已归档。当前R差异较小，I1仍保留为当前场精度参考。
 
-节点诊断使用2020可见站未来观测作为标签，区分时间预测与空间输送：联合TF的可见站6h ZWD增量RMSE为14.257 mm，持久性为15.159 mm；仅aux为14.208，仅physics为15.931 mm。没有辅助监督的中间物理头尚不构成校准站点预报器。原始GNSS/T/P物理单位、有效标签数量及每个时效见[只读诊断](../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_station_forecast_audit/s42/station_forecast_audit.json)。
+节点诊断使用2020可见站未来观测作为标签，区分时间预测与空间输送：联合TF的可见站6h ZWD增量RMSE为14.257 mm，持久性为15.159 mm；仅aux为14.208，仅physics为15.931 mm。没有辅助监督的中间物理头尚不构成校准站点预报器。原始GNSS/T/P物理单位、有效标签数量及每个时效见[只读诊断](../../experiments/us/20261126_native_station_forecast_audit/s42/station_forecast_audit.json)。
 
 ## 概率对照进展
 
