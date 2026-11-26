@@ -1,5 +1,7 @@
 # 当前区域实验索引
 
+2026-11-26完成：[留站创新96块真实诊断](research_notes/2026-11-26-leaveout-innovation-panel-results.md)、[七组探针完整指标与分层](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_leaveout_innovation_panel/paired/REPORT.md)、[R²及能量分析](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_leaveout_innovation_panel/paired/RESIDUAL_ENERGY.md)。双种子各48个月块，LOSO创新尺度增大但额外线性收益区间跨零；原基础模型已拟合2019，这是训练池探针迁移，不与2020约9.8mm排名混用。
+
 2026-11-26完成：[内部增量监督双种子及两日历结果](research_notes/2026-11-26-increment-supervision-results.md)、[主日历配对](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/paired_calendar8/REPORT.md)、[补充日历配对](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/paired_calendar15/REPORT.md)。固定H仅改变query损失，内部增量分别改善0.001279/0.001513mm；六小时额外改善微小，未新增扩散训练。新增[逐时有效距离实数组审计](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_condition_distance_audit/audit.json)。
 
 2026-11-26完成：[H＋S正式双种子、raw/EMA与曲线](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_mean_hs/paired/REPORT.md)、[来源/分层完整JSON](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_mean_hs/paired/summary.json)、[下一步重点与E1–E5研究建议](research_notes/2026-11-26-next-research-after-hs.md)。HS当前/六小时为9.811297/13.972726mm；同预算续训和增量代价并列，新增架构方案仍待实测。

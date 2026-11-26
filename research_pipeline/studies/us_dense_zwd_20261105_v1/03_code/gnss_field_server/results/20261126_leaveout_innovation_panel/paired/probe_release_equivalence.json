@@ -1,0 +1,11 @@
+{
+  "exact_all_coefficients_normalization_counts": true,
+  "released_fit_sha256": {
+    "42": "4b89c42fe05c2d2d30654034996bbc2faf86c8c51d6ffe30d3b68380c41ba5e8",
+    "17": "ee8913c36ff69be1166fdbf1104d5c4573e16ace5883b9ba4561b452a585d650"
+  },
+  "summary_sha256": "831ef7c958e31cbdb4fe8a477aea52eede9a3c61974d5689353494e0e02a7d68",
+  "frozen_lock_sha256": "c823af1172d3169d7a0d2da9ee15adc6349596309df74c4f91801eca6344d2c0",
+  "verification": "all six probes per seed equal pre-score fit release exactly; no2019 refit influence",
+  "confirmation_C_D_read": false
+}

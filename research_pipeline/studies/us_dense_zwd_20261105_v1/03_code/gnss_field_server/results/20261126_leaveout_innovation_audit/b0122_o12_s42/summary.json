@@ -1,0 +1,55 @@
+{
+  "complete": true,
+  "kind": "ENGINEERING_INFORMATION_AUDIT_ONLY",
+  "seed": 42,
+  "cache_index": 122,
+  "origins": 12,
+  "source_hours": 15,
+  "history_span_hours": 86,
+  "context_stations": 82,
+  "spatial_groups": 8,
+  "self_cache_max_difference_mm": 0.0092926025390625,
+  "withheld_input_perturbation_max_difference_mm": 0.0,
+  "innovation_rms_mm": {
+    "self": 3.986542159886546,
+    "LOSO": 5.686671612601523,
+    "LOGO": 14.445094317024324
+  },
+  "rms_ratio_to_self": {
+    "self": 1.0,
+    "LOSO": 1.426467195009763,
+    "LOGO": 3.623464581003057
+  },
+  "calls": {
+    "self": 1,
+    "LOSO": 82,
+    "LOGO": 8
+  },
+  "seconds": {
+    "self": 0.46799999999348074,
+    "LOSO": 16.094000000011874,
+    "LOGO": 1.5159999999741558
+  },
+  "total_seconds": 20.312000000005355,
+  "code_sha256": {
+    "native_innovation_audit.py": "987cc84659e1856d21d272ac3bdd1fbd6aa7a7cdee6ec69e1c4337cfc779200e",
+    "p14_fusion.py": "8c0e85ffd23829a1fc47d9bafec1fe6cd674d17b7333a308afbb6ed1a641a438",
+    "innovation_refinement.py": "8958dc83abcf2a97d1fb9e46bdc1ea868dae70221eb92a2a97fa7484e9d463af",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+    "unet_foundation.py": "45d78c96b858cfa82272cc68be24a701ccd602e6e874cb7dbe608cef0d1bb9db",
+    "fixed_support.py": "ef317e24d891ad23bf54fbd4b81a5ca4b73b6b495f99e4d644d72f0d6f2a659a",
+    "temporal_encoders.py": "77a9efdc2b3081e22e234c22df45665808535cf897861a8687c9d9d2c1aa41e4",
+    "temporal_experiment.py": "5c35aa7ca6d65230033b2c888130fde18f2f9c840524db684fb156157080bacb"
+  },
+  "cache_manifest_sha256": "cf672eed77e2b45c964b298404fcc731ce3e2232dafb69908a819359ff527baf",
+  "cache_protocol_sha256": "f0b174d06a1ef9cf42ef30f25f683955031225787be74fdcaa74e0cd2d7f8e44",
+  "mean_manifest_sha256": "9a40d444992cb09fbb45b689ab42eb0cf39feb69b28ee71c4e75bf3e91445cf1",
+  "mean_array_sha256": "5cc5d08e1ca86b211e05e89db05980244be0143a74c34d62c544e0ec57f5f9cc",
+  "p14_source_weights_sha256": "d87223f76df74354dde4ad1f1ab18097880b4a0396b2d5b565bda10000385f3a",
+  "source_data_contract_sha256": "81dbee318116756212d5759966b0e0aabcdd4687540f583d050814659c7a202a",
+  "arrays_sha256": "c4b88b29e2b15de4a098093867a6e308a86f4d7b7e4e9ebab498c92c854c55e2",
+  "strict_oof": false,
+  "confirmation_C_D_read": false,
+  "note": "station leave-out removes all its GNSS/T/P across source history; background weights still fitted2016-2019; raw RMS is not predictive gain"
+}
