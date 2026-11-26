@@ -46,7 +46,9 @@ def main():
     ax.add_patch(FancyArrowPatch((11.2,1.275),(10.95,1.275),arrowstyle='-|>',mutation_scale=13,color='#526a76',lw=1.2,linestyle='--'))
     ax.text(.25,.23,'Same visible information and effective history as C/H/S. The new HS branch is evaluated separately from probability-center postprocessing.',fontsize=10,color='#526a76')
     folder=ROOT/'docs/figures/weather_native_20261126';folder.mkdir(parents=True,exist_ok=True)
-    for suffix in ('png','svg'):fig.savefig(folder/f'mean_hs_architecture.{suffix}',dpi=170)
+    for suffix in ('png','svg'):
+        path=folder/f'mean_hs_architecture.{suffix}';fig.savefig(path,dpi=170)
+        if suffix=='svg':path.write_bytes(b'\n'.join(line.rstrip() for line in path.read_bytes().splitlines())+b'\n')
     plt.close(fig)
 
 
