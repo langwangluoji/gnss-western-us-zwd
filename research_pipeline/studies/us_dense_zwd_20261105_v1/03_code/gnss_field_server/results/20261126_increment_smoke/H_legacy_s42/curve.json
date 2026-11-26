@@ -1,0 +1,38 @@
+[
+  {
+    "step": 1,
+    "supervised_updates": 1,
+    "loss": 1.2092400789260864,
+    "query_loss": 1.0325541496276855,
+    "causal_station_loss": 0.7067435383796692,
+    "auxiliary_label_cells": 1189131,
+    "finite_label_cells": 10752,
+    "cache_block": 0,
+    "last_origin_hour": 403380,
+    "group_lrs": [
+      8.681980515339464e-05,
+      0.0002604594154601839
+    ],
+    "current_correction_rms_mm": 0.8321739435195923,
+    "future6_correction_rms_mm": 5.521764278411865,
+    "seconds": 0.20399999999790452
+  },
+  {
+    "step": 4,
+    "supervised_updates": 4,
+    "loss": 0.9406962394714355,
+    "query_loss": 0.793315052986145,
+    "causal_station_loss": 0.5895246863365173,
+    "auxiliary_label_cells": 1166526,
+    "finite_label_cells": 10752,
+    "cache_block": 3,
+    "last_origin_hour": 403416,
+    "group_lrs": [
+      1e-05,
+      2.9999999999999997e-05
+    ],
+    "current_correction_rms_mm": 0.6396284699440002,
+    "future6_correction_rms_mm": 2.5805861949920654,
+    "seconds": 0.40699999999196734
+  }
+]

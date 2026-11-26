@@ -1,0 +1,185 @@
+{
+  "complete": true,
+  "zero_vs_legacy_all_checkpoint_state_exact": true,
+  "new_objective_changes_weights": true,
+  "matched_fields": [
+    "model",
+    "ema",
+    "optimizer",
+    "scheduler",
+    "torch_rng",
+    "cuda_rng",
+    "step"
+  ],
+  "source_checkpoint_sha256": "2a985fc172e54810ead279e300c21c2c12f2e625fda44e2649eded9cd12e0fb9",
+  "cache_manifest_sha256": "cf672eed77e2b45c964b298404fcc731ce3e2232dafb69908a819359ff527baf",
+  "checkpoint_sha256": {
+    "H_legacy": "05b60946349d7cc9a0d236333ab7aaa0fecf5751449182aa2ef9e714c94b19c7",
+    "H_zero": "05b60946349d7cc9a0d236333ab7aaa0fecf5751449182aa2ef9e714c94b19c7",
+    "H_delta": "fbd90ebf8d736f955216fb0b547e1ace64cf797dfeec16801926a2d7536dbc12"
+  },
+  "code_sha256": {
+    "H_legacy": {
+      "native_mean_fusion_v2.py": "9c8bb43a97d65dd00fb0395ea680fc9a8f350c8dea446327c736ab6c98308a06",
+      "native_mean_fusion_v2_experiment.py": "ad7fbbfa5add66750b7973a893e0de3dc410794fc836f9a9adbdf69db0a12b4a",
+      "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+      "native_physics_lm.py": "1cc6e3450745548dfb1a86502402a95cf1c27370427e81884bee1cf353d71bd6",
+      "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+      "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+      "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be"
+    },
+    "H_zero": {
+      "native_increment_loss.py": "add00a4631a39247b399ed024e3a2be5d7712c1bf1a55e1f35635a9c0df56fe6",
+      "native_increment_experiment.py": "d46b52c718b254c17c479bee0f08c578a68cdba2f001dd0cddf278aba924c07b",
+      "native_model_seal.py": "6a286fbbcf58926118a4228881f629b99596ca70ec1cd7031f77904b03c68fe5",
+      "native_mean_fusion_v2.py": "9c8bb43a97d65dd00fb0395ea680fc9a8f350c8dea446327c736ab6c98308a06",
+      "native_mean_fusion_v2_experiment.py": "ad7fbbfa5add66750b7973a893e0de3dc410794fc836f9a9adbdf69db0a12b4a",
+      "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+      "native_physics_lm.py": "1cc6e3450745548dfb1a86502402a95cf1c27370427e81884bee1cf353d71bd6",
+      "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+      "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+      "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be"
+    },
+    "H_delta": {
+      "native_increment_loss.py": "add00a4631a39247b399ed024e3a2be5d7712c1bf1a55e1f35635a9c0df56fe6",
+      "native_increment_experiment.py": "d46b52c718b254c17c479bee0f08c578a68cdba2f001dd0cddf278aba924c07b",
+      "native_model_seal.py": "6a286fbbcf58926118a4228881f629b99596ca70ec1cd7031f77904b03c68fe5",
+      "native_mean_fusion_v2.py": "9c8bb43a97d65dd00fb0395ea680fc9a8f350c8dea446327c736ab6c98308a06",
+      "native_mean_fusion_v2_experiment.py": "ad7fbbfa5add66750b7973a893e0de3dc410794fc836f9a9adbdf69db0a12b4a",
+      "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+      "native_physics_lm.py": "1cc6e3450745548dfb1a86502402a95cf1c27370427e81884bee1cf353d71bd6",
+      "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+      "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+      "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be"
+    }
+  },
+  "per_arm_curves": {
+    "H_legacy": [
+      {
+        "step": 1,
+        "supervised_updates": 1,
+        "loss": 1.2092400789260864,
+        "query_loss": 1.0325541496276855,
+        "causal_station_loss": 0.7067435383796692,
+        "auxiliary_label_cells": 1189131,
+        "finite_label_cells": 10752,
+        "cache_block": 0,
+        "last_origin_hour": 403380,
+        "group_lrs": [
+          8.681980515339464e-05,
+          0.0002604594154601839
+        ],
+        "current_correction_rms_mm": 0.8321739435195923,
+        "future6_correction_rms_mm": 5.521764278411865,
+        "seconds": 0.20399999999790452
+      },
+      {
+        "step": 4,
+        "supervised_updates": 4,
+        "loss": 0.9406962394714355,
+        "query_loss": 0.793315052986145,
+        "causal_station_loss": 0.5895246863365173,
+        "auxiliary_label_cells": 1166526,
+        "finite_label_cells": 10752,
+        "cache_block": 3,
+        "last_origin_hour": 403416,
+        "group_lrs": [
+          1e-05,
+          2.9999999999999997e-05
+        ],
+        "current_correction_rms_mm": 0.6396284699440002,
+        "future6_correction_rms_mm": 2.5805861949920654,
+        "seconds": 0.40699999999196734
+      }
+    ],
+    "H_zero": [
+      {
+        "step": 1,
+        "supervised_updates": 1,
+        "loss": 1.2092400789260864,
+        "query_loss": 1.0325541496276855,
+        "within_forecast_increment_loss": 0.3052904009819031,
+        "causal_station_loss": 0.7067435383796692,
+        "auxiliary_label_cells": 1189131,
+        "finite_label_cells": 10752,
+        "cache_block": 0,
+        "last_origin_hour": 403380,
+        "group_lrs": [
+          8.681980515339464e-05,
+          0.0002604594154601839
+        ],
+        "current_correction_rms_mm": 0.8321739435195923,
+        "future6_correction_rms_mm": 5.521764278411865,
+        "seconds": 0.20300000000861473,
+        "current_readout_weight_norm": 0.011757392436265945,
+        "current_readout_bias_norm": 0.0014696888392791152
+      },
+      {
+        "step": 4,
+        "supervised_updates": 4,
+        "loss": 0.9406962394714355,
+        "query_loss": 0.793315052986145,
+        "within_forecast_increment_loss": 0.2351551055908203,
+        "causal_station_loss": 0.5895246863365173,
+        "auxiliary_label_cells": 1166526,
+        "finite_label_cells": 10752,
+        "cache_block": 3,
+        "last_origin_hour": 403416,
+        "group_lrs": [
+          1e-05,
+          2.9999999999999997e-05
+        ],
+        "current_correction_rms_mm": 0.6396284699440002,
+        "future6_correction_rms_mm": 2.5805861949920654,
+        "seconds": 0.40700000000651926,
+        "current_readout_weight_norm": 0.022184014320373535,
+        "current_readout_bias_norm": 0.002947920234873891
+      }
+    ],
+    "H_delta": [
+      {
+        "step": 1,
+        "supervised_updates": 1,
+        "loss": 1.3618853092193604,
+        "query_loss": 1.1851993799209595,
+        "within_forecast_increment_loss": 0.3052904009819031,
+        "causal_station_loss": 0.7067435383796692,
+        "auxiliary_label_cells": 1189131,
+        "finite_label_cells": 10752,
+        "cache_block": 0,
+        "last_origin_hour": 403380,
+        "group_lrs": [
+          8.681980515339464e-05,
+          0.0002604594154601839
+        ],
+        "current_correction_rms_mm": 0.8321739435195923,
+        "future6_correction_rms_mm": 5.521764278411865,
+        "seconds": 0.21799999999348074,
+        "current_readout_weight_norm": 0.011757412925362587,
+        "current_readout_bias_norm": 0.0014696888392791152
+      },
+      {
+        "step": 4,
+        "supervised_updates": 4,
+        "loss": 1.0582867860794067,
+        "query_loss": 0.9109042882919312,
+        "within_forecast_increment_loss": 0.23515629768371582,
+        "causal_station_loss": 0.589529812335968,
+        "auxiliary_label_cells": 1166526,
+        "finite_label_cells": 10752,
+        "cache_block": 3,
+        "last_origin_hour": 403416,
+        "group_lrs": [
+          1e-05,
+          2.9999999999999997e-05
+        ],
+        "current_correction_rms_mm": 0.6395844221115112,
+        "future6_correction_rms_mm": 2.580298662185669,
+        "seconds": 0.4210000000020955,
+        "current_readout_weight_norm": 0.022185958921909332,
+        "current_readout_bias_norm": 0.002948836423456669
+      }
+    ]
+  },
+  "engineering_only": true
+}
