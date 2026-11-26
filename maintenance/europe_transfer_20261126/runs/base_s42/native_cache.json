@@ -1,0 +1,282 @@
+{
+  "base_sha256": "9b3ffd3c5f9bebf2a9871d819afe242c63b42505df5b16472b48c890a94d7887",
+  "i1_coefficient": [
+    3.9625307708438013,
+    -0.023428428164768055,
+    2.2977961214908564,
+    -0.08489098789824494,
+    5.676398898739339,
+    1.4624747408427903,
+    -0.47196940063045023,
+    0.6927101823694534,
+    0.5781846451399388
+  ],
+  "i1_fit_records": 357854,
+  "segments": [
+    {
+      "file": "train_00.npz",
+      "start": 48,
+      "stop": 176,
+      "context": 96,
+      "targets": 159
+    },
+    {
+      "file": "train_01.npz",
+      "start": 176,
+      "stop": 304,
+      "context": 160,
+      "targets": 91
+    },
+    {
+      "file": "train_02.npz",
+      "start": 304,
+      "stop": 432,
+      "context": 224,
+      "targets": 42
+    },
+    {
+      "file": "train_03.npz",
+      "start": 432,
+      "stop": 560,
+      "context": 96,
+      "targets": 161
+    },
+    {
+      "file": "train_04.npz",
+      "start": 560,
+      "stop": 688,
+      "context": 160,
+      "targets": 94
+    },
+    {
+      "file": "train_05.npz",
+      "start": 688,
+      "stop": 816,
+      "context": 160,
+      "targets": 92
+    },
+    {
+      "file": "train_06.npz",
+      "start": 816,
+      "stop": 944,
+      "context": 160,
+      "targets": 104
+    },
+    {
+      "file": "train_07.npz",
+      "start": 944,
+      "stop": 1072,
+      "context": 224,
+      "targets": 40
+    },
+    {
+      "file": "train_08.npz",
+      "start": 1072,
+      "stop": 1200,
+      "context": 160,
+      "targets": 94
+    },
+    {
+      "file": "train_09.npz",
+      "start": 1200,
+      "stop": 1328,
+      "context": 96,
+      "targets": 164
+    },
+    {
+      "file": "train_10.npz",
+      "start": 1328,
+      "stop": 1456,
+      "context": 96,
+      "targets": 157
+    },
+    {
+      "file": "train_11.npz",
+      "start": 1456,
+      "stop": 1584,
+      "context": 160,
+      "targets": 99
+    },
+    {
+      "file": "train_12.npz",
+      "start": 1584,
+      "stop": 1712,
+      "context": 224,
+      "targets": 41
+    },
+    {
+      "file": "train_13.npz",
+      "start": 1712,
+      "stop": 1840,
+      "context": 96,
+      "targets": 159
+    },
+    {
+      "file": "train_14.npz",
+      "start": 1840,
+      "stop": 1968,
+      "context": 224,
+      "targets": 40
+    },
+    {
+      "file": "train_15.npz",
+      "start": 1968,
+      "stop": 2096,
+      "context": 96,
+      "targets": 159
+    },
+    {
+      "file": "train_16.npz",
+      "start": 2096,
+      "stop": 2224,
+      "context": 224,
+      "targets": 41
+    },
+    {
+      "file": "train_17.npz",
+      "start": 2224,
+      "stop": 2352,
+      "context": 96,
+      "targets": 162
+    },
+    {
+      "file": "train_18.npz",
+      "start": 2352,
+      "stop": 2480,
+      "context": 160,
+      "targets": 97
+    },
+    {
+      "file": "train_19.npz",
+      "start": 2480,
+      "stop": 2608,
+      "context": 160,
+      "targets": 92
+    },
+    {
+      "file": "train_20.npz",
+      "start": 2608,
+      "stop": 2736,
+      "context": 96,
+      "targets": 158
+    },
+    {
+      "file": "train_21.npz",
+      "start": 2736,
+      "stop": 2864,
+      "context": 160,
+      "targets": 96
+    },
+    {
+      "file": "train_22.npz",
+      "start": 2864,
+      "stop": 2992,
+      "context": 224,
+      "targets": 39
+    },
+    {
+      "file": "train_23.npz",
+      "start": 2992,
+      "stop": 3120,
+      "context": 96,
+      "targets": 161
+    },
+    {
+      "file": "train_24.npz",
+      "start": 3120,
+      "stop": 3248,
+      "context": 96,
+      "targets": 163
+    },
+    {
+      "file": "train_25.npz",
+      "start": 3248,
+      "stop": 3376,
+      "context": 96,
+      "targets": 161
+    },
+    {
+      "file": "train_26.npz",
+      "start": 3376,
+      "stop": 3504,
+      "context": 160,
+      "targets": 91
+    },
+    {
+      "file": "train_27.npz",
+      "start": 3504,
+      "stop": 3632,
+      "context": 160,
+      "targets": 97
+    },
+    {
+      "file": "train_28.npz",
+      "start": 3632,
+      "stop": 3760,
+      "context": 160,
+      "targets": 98
+    },
+    {
+      "file": "train_29.npz",
+      "start": 3760,
+      "stop": 3888,
+      "context": 160,
+      "targets": 97
+    },
+    {
+      "file": "train_30.npz",
+      "start": 3888,
+      "stop": 4016,
+      "context": 160,
+      "targets": 100
+    },
+    {
+      "file": "train_31.npz",
+      "start": 4016,
+      "stop": 4144,
+      "context": 160,
+      "targets": 98
+    },
+    {
+      "file": "train_32.npz",
+      "start": 4144,
+      "stop": 4272,
+      "context": 160,
+      "targets": 100
+    },
+    {
+      "file": "train_33.npz",
+      "start": 4272,
+      "stop": 4378,
+      "context": 96,
+      "targets": 162
+    }
+  ],
+  "history_records": 16,
+  "lag_hours": [
+    0,
+    6,
+    18,
+    36,
+    72
+  ],
+  "query_lag_hours": [
+    0,
+    6,
+    12,
+    24,
+    48,
+    72
+  ],
+  "output_hours": [
+    0,
+    6,
+    12,
+    18,
+    24,
+    30,
+    36
+  ],
+  "context_fixed_within_continuous_segment": true,
+  "training_targets_hide_entire_1km_site_group": true
+}

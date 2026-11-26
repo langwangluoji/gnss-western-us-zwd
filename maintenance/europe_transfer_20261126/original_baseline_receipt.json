@@ -1,0 +1,13 @@
+{
+  "train_h5_sha256": "f524f0a65f1f8a4b580ebd9b38b9dfeedaa9b344d42eb1515aa2a4c013b07857",
+  "model_sha256": "2de03273ee114344910ee8d05120a81a65afcdfa6a0035de3514744daa188d38",
+  "original_baseline_code_sha256": "c84dfde56e7491e7577f8859806c53e43cd6610d1da2f6fe8472ef330fcec724",
+  "stations": 273,
+  "years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "spatial_method": "original SCHA default with spatial CV"
+}
