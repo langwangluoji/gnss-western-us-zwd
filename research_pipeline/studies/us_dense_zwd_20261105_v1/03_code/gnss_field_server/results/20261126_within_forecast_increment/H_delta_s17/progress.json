@@ -1,0 +1,21 @@
+{
+  "step": 3000,
+  "supervised_updates": 3000,
+  "loss": 1.0476032495498657,
+  "query_loss": 0.832927942276001,
+  "within_forecast_increment_loss": 0.2016628235578537,
+  "causal_station_loss": 0.8587014079093933,
+  "auxiliary_label_cells": 1133424,
+  "finite_label_cells": 10752,
+  "cache_block": 2999,
+  "last_origin_hour": 404460,
+  "group_lrs": [
+    1e-05,
+    2.9999999999999997e-05
+  ],
+  "current_correction_rms_mm": 0.755179226398468,
+  "future6_correction_rms_mm": 2.1385154724121094,
+  "seconds": 387.70299999999406,
+  "current_readout_weight_norm": 0.3806925415992737,
+  "current_readout_bias_norm": 0.04118698835372925
+}

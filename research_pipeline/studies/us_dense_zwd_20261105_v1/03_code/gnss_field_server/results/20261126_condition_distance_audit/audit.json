@@ -1,0 +1,57 @@
+{
+  "rows": [
+    {
+      "calendar_day": 8,
+      "seed": 42,
+      "total_query_origin_cells": 355104,
+      "current_gnss_mask_distance_mismatch_over_1m": 0,
+      "geometric_only_mismatch_over_1m": 13680,
+      "mask_changes_nearest_cells": 13680,
+      "max_current_mask_difference_km": 7.552119015485914e-05,
+      "max_geometric_only_difference_km": 248.59669118313948,
+      "cache_manifest_sha256": "9dd091b18d094e8b1cc2a614b74b9586d69bfba74d9be798d3c1ef1c26f2e819",
+      "geometry_sha256": "a28c0eea0206a5622b7a3b9edee0a06b33fa3707a5085a7cff3d04f4b45ced17"
+    },
+    {
+      "calendar_day": 8,
+      "seed": 17,
+      "total_query_origin_cells": 355104,
+      "current_gnss_mask_distance_mismatch_over_1m": 0,
+      "geometric_only_mismatch_over_1m": 13680,
+      "mask_changes_nearest_cells": 13680,
+      "max_current_mask_difference_km": 7.552119015485914e-05,
+      "max_geometric_only_difference_km": 248.59669118313948,
+      "cache_manifest_sha256": "fc9c336b1f016133bfbf7bb521738566af0758ab27865072a834432e65e06b39",
+      "geometry_sha256": "a28c0eea0206a5622b7a3b9edee0a06b33fa3707a5085a7cff3d04f4b45ced17"
+    },
+    {
+      "calendar_day": 15,
+      "seed": 42,
+      "total_query_origin_cells": 355104,
+      "current_gnss_mask_distance_mismatch_over_1m": 0,
+      "geometric_only_mismatch_over_1m": 15011,
+      "mask_changes_nearest_cells": 15011,
+      "max_current_mask_difference_km": 7.552119015485914e-05,
+      "max_geometric_only_difference_km": 345.6327324429051,
+      "cache_manifest_sha256": "c25c24c56cde147ead8e029b406a57cbc39a2e0638c03e83c4f50d68e41f28e5",
+      "geometry_sha256": "a28c0eea0206a5622b7a3b9edee0a06b33fa3707a5085a7cff3d04f4b45ced17"
+    },
+    {
+      "calendar_day": 15,
+      "seed": 17,
+      "total_query_origin_cells": 355104,
+      "current_gnss_mask_distance_mismatch_over_1m": 0,
+      "geometric_only_mismatch_over_1m": 15011,
+      "mask_changes_nearest_cells": 15011,
+      "max_current_mask_difference_km": 7.552119015485914e-05,
+      "max_geometric_only_difference_km": 345.6327324429051,
+      "cache_manifest_sha256": "4d9dce850b72e561bad8bd6451738859aff3aa214c7547858a01fe69769c7aa2",
+      "geometry_sha256": "a28c0eea0206a5622b7a3b9edee0a06b33fa3707a5085a7cff3d04f4b45ced17"
+    }
+  ],
+  "code_sha256": "90f06e5ab424c432c602a6fcbfdd533529c0d4e354337cee4776c6eb941b919e",
+  "tolerance_km": 0.001,
+  "conclusion": "nearest.npy is distance to nearest context station with valid current GNSS, reconstructed from cached history mask; not geometry-only",
+  "no_training_or_label_role_change": true,
+  "confirmation_C_D_read": false
+}
