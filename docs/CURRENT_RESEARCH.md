@@ -1,5 +1,7 @@
 # 当前研究进展：2026-11-26
 
+新增[频域正式汇总与均值保持诊断](research_notes/2026-11-26-spectral-and-mean-centering.md)：七组同C64双种子3000步完成，频域相对近同参数joint的六小时CRPS改善1.53%–1.96%，但对Gaussian copula的额外边际收益区间跨零，当前有代价。新冻结独立双场32→16配对保持解析基础场均值及总体协方差，Local相对配对Affine近邻收益0.471%，边际收益区间跨零、增量有代价。下一项应分离按时效中心与非Gaussian形状，尚未执行新中心消融。
+
 最新完整归因：[天气相关核、Local/Affine与固定均值三臂](research_notes/2026-11-26-weather-controls-final.md)。三组双种子配对汇总和事件诊断已完成；G265近邻六小时差值解析CRPS在主/补充日期改善20.76%/22.42%。新Local相对Affine的六小时边际额外收益0.165%、近邻0.454%，内部增量收益-0.397%；DDIM方向一致。固定基础场均值的scale/shape/both均完成，非Gaussian相对scale的额外边际收益区间跨零。当前场继续保留约9.818mm基础场。下文旧执行状态按阶段保留，以本段及锁定结果为准。
 
 最新G175/G265双种子各3000块完成：[天气相关核完整配对报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_projective_gp/paired/REPORT.md)。近邻F6差值解析CRPS分别改善20.29%/20.76%，G265相对G175额外改善0.59%；基础场点预测与S175解析均值/标准差逐值不变。G265→Local/Affine以及[固定基础场均值的形状/尺度三臂](superpowers/specs/2026-11-26-centered-nongaussian-control.md)均完成双种子各3000更新，完整配对汇总尚待完成。阶段旧状态见下文，当前以本段和实际实验锁为准。
