@@ -1,0 +1,15 @@
+{
+  "seed": 20261126,
+  "source_metadata": [
+    "7ea9ee5f408cac3925d438762774933fc6d126be0b468175fd70944b7fd65ea3",
+    "43c145ed311d6f94bef1908cecf00f42b1d8da5c288b7222788c1c1c00117f30"
+  ],
+  "stations_sha256": "fce583aa082cbb6967cbf9d3a931adb90ef98d5fc5d418c3bdcf89668440707e",
+  "roles": {
+    "train": 280,
+    "dev": 60,
+    "confirm": 60,
+    "new2024": 11
+  },
+  "label_read_before_split": false
+}

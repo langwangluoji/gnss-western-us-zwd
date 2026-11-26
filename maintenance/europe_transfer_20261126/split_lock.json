@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "seed": 20261126,
+  "source_metadata": [
+    "7ea9ee5f408cac3925d438762774933fc6d126be0b468175fd70944b7fd65ea3",
+    "43c145ed311d6f94bef1908cecf00f42b1d8da5c288b7222788c1c1c00117f30"
+  ],
+  "stations_sha256": "3ec17063466b6ca07f98b841312f10779c9e5acdf04fd9fc7203f5c5736a41d5",
+  "roles": {
+    "train": 273,
+    "dev": 64,
+    "confirm": 63,
+    "new2024": 11
+  },
+  "split_uses_labels": false,
+  "labels_previously_loaded_for_audit": true,
+  "site_group_radius_km": 1
+}

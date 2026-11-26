@@ -1,0 +1,57 @@
+{
+  "sources": [
+    {
+      "rows": 1893356,
+      "epochs": 5844,
+      "source": "E:\\Document\\FILE_package\\Research\\SITP\\联合信号分析与深度学习的高精度对流层建模\\Data\\model\\Model4\\Model4_FFT_SH_Patent\\data\\euref_train_2020_2023.h5",
+      "sha256": "7ea9ee5f408cac3925d438762774933fc6d126be0b468175fd70944b7fd65ea3"
+    },
+    {
+      "rows": 514526,
+      "epochs": 1464,
+      "source": "E:\\Document\\FILE_package\\Research\\SITP\\联合信号分析与深度学习的高精度对流层建模\\Data\\model\\Model4\\Model4_FFT_SH_Patent\\data\\euref_test_2024.h5",
+      "sha256": "43c145ed311d6f94bef1908cecf00f42b1d8da5c288b7222788c1c1c00117f30"
+    }
+  ],
+  "stations": 411,
+  "shared_stations": 374,
+  "roles": {
+    "train": 273,
+    "dev": 64,
+    "confirm": 63,
+    "new2024": 11
+  },
+  "coast": {
+    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_coastline.geojson",
+    "sha256": "271f1c4c1908312bac6b29d158ea1356544beafc129f260005300913aa5ea283",
+    "crs": "EPSG:3035",
+    "distance": "minimum projected segment km",
+    "license": "Natural Earth public domain"
+  },
+  "terrain": "ERA5 static orography sampled at stations, RBF20-neighbor smoothing1000 on32x32; coarse, not SRTM",
+  "source_label": "Model4 zwd[m] converted to mm; inherits humidity-informed label preparation and row selection",
+  "allowed_columns": [
+    "zwd",
+    "temperature",
+    "surface_pressure_era5_hpa",
+    "height_diff_m",
+    "station_phys",
+    "datetime",
+    "Latitude",
+    "Longitude",
+    "Height",
+    "era5_orography_m"
+  ],
+  "pressure": "dry static exp(-g*dz/Rd/T) without WVP",
+  "temperature": "C+273.15",
+  "hours": 6,
+  "history_span_hours": 90,
+  "nearest_station_min_km": 0.0,
+  "close_pairs_under1km": 75,
+  "pack_sha256": "ffd911ccf2367c7f653fcc7440e4404ae777b9b4444cf428d0162dc4dfd58c74",
+  "missing_fraction": [
+    0.19833146223783021,
+    0.19833146223783021,
+    0.19833146223783021
+  ]
+}
