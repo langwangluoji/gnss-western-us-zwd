@@ -8,7 +8,7 @@ import numpy as np
 import torch
 from torch import nn
 
-from .data import HERE,CACHE,sha,write_json
+from .data import HERE,CACHE,sha,write_json,neural_cutoff
 from .field import FieldData,EuropeBase
 from tools.terrain_diffusion.innovation_refinement import innovation_fields
 from tools.terrain_diffusion.native_weather import weather_fields
@@ -45,8 +45,8 @@ def inputs(cache,a,positions,query,coef):
         age=np.minimum((loc-last)*6,10000)
     fx=i1_features(cache['innovation']);correction=fx@coef
     bkg=cache['base']+correction
-    old_error=cache['self_error'][ix]
-    new_error=old_error-correction[ix[:,:,None],c[None,None]]
+    old_error=np.where(valid[...,0],cache['self_error'][ix],0)
+    new_error=np.where(valid[...,0],old_error-correction[ix[:,:,None],c[None,None]],0)
     clock=clocks(a['hours'][global_ix]);B=len(p);C=len(c)
     history=np.concatenate([norm,valid.astype('f4'),np.log1p(age)/5,old_error[...,None]/10,new_error[...,None]/10,np.broadcast_to(clock[:,:,None],(B,16,C,4))],-1).astype('f4')
     innov=np.concatenate([cache['innovation'][p-lag][:,q] for lag in (0,1,2,4,8,12)],-1)/10
@@ -76,12 +76,13 @@ def cache_segment(d,model,a,start,stop,context,path):
     np.savez_compressed(path,base=np.concatenate(base),innovation=np.concatenate(innov),weather=np.concatenate(met),self_error=np.concatenate(error),context=context,start=begin,fit_start=start-begin,stop=stop)
 
 
-def prepare(seed):
+def prepare(seed,version=1):
     torch.set_num_threads(4);torch.backends.cudnn.benchmark=True
     a=dict(np.load(CACHE/'data.npz'));d=FieldData(a)
-    model=EuropeBase().cuda();model.load_state_dict(torch.load(HERE/f'runs/base_s{seed}/best.pt',weights_only=True));model.eval();model.carrier.time.temporal.flatten_parameters()
-    out=CACHE/f'native_s{seed}';out.mkdir(exist_ok=False);train=np.flatnonzero(a['role']=='train');rng=np.random.default_rng(seed)
-    cut=int(np.searchsorted(a['hours'],np.datetime64('2023-01-01','h').astype('i8')));stop=int(np.searchsorted(a['hours'],np.datetime64('2024-01-01','h').astype('i8')))
+    suffix='_v2' if version==2 else '';basepath=HERE/f'runs/base{suffix}_s{seed}/best.pt'
+    model=EuropeBase().cuda();model.load_state_dict(torch.load(basepath,weights_only=True));model.eval();model.carrier.time.temporal.flatten_parameters()
+    out=CACHE/f'native{suffix}_s{seed}';out.mkdir(exist_ok=False);train=np.flatnonzero(a['role']=='train');rng=np.random.default_rng(seed)
+    devstart=int(np.searchsorted(a['hours'],np.datetime64('2023-01-01','h').astype('i8')));stop=int(np.searchsorted(a['hours'],np.datetime64('2024-01-01','h').astype('i8')));cut=neural_cutoff(a['hours'],version)
     matrix=np.zeros((9,9));rhs=np.zeros(9);total=0;records=[]
     for i,start in enumerate(range(48,cut-6,128)):
         end=min(start+128,cut-6);c=np.sort(rng.choice(train,int(rng.choice([96,160,224])),replace=False));path=out/f'train_{i:02d}.npz'
@@ -95,9 +96,9 @@ def prepare(seed):
     coef=np.linalg.solve(matrix+.01*np.diag(np.maximum(np.diag(matrix),1e-8)),rhs)
     np.save(out/'i1.npy',coef)
     # The entire2023 monitoring year and2024 evaluation year use the same273 references.
-    for name,start,end in [('dev',cut,stop),('test',stop,len(a['hours']))]:
+    for name,start,end in [('dev',devstart,stop),('test',stop,len(a['hours']))]:
         cache_segment(d,model,a,start,end,train,out/f'{name}.npz')
-    write_json(HERE/f'runs/base_s{seed}/native_cache.json',dict(base_sha256=sha(HERE/f'runs/base_s{seed}/best.pt'),i1_coefficient=coef.tolist(),i1_fit_records=total,segments=records,history_records=16,lag_hours=[0,6,18,36,72],query_lag_hours=[0,6,12,24,48,72],output_hours=[0,6,12,18,24,30,36],context_fixed_within_continuous_segment=True,training_targets_hide_entire_1km_site_group=True))
+    write_json(HERE/f'runs/base{suffix}_s{seed}/native_cache.json',dict(version=version,base_sha256=sha(basepath),i1_coefficient=coef.tolist(),i1_fit_records=total,segments=records,history_records=16,lag_hours=[0,6,18,36,72],query_lag_hours=[0,6,12,24,48,72],output_hours=[0,6,12,18,24,30,36],context_fixed_within_continuous_segment=True,training_targets_hide_entire_1km_site_group=True))
 
 
 def full_test_cache(seed):
@@ -136,16 +137,16 @@ def monitor(model,cache,a,coef):
     return [float(np.sqrt(square[:,i][count[:,i]>0]/count[:,i][count[:,i]>0]).mean()) for i in range(2)]
 
 
-def train(seed,steps=3000,smoke=False):
+def train(seed,steps=3000,smoke=False,version=1):
     torch.set_num_threads(4);torch.manual_seed(seed);rng=np.random.default_rng(seed)
     a=dict(np.load(CACHE/'data.npz'));positions=np.arange(len(a['values']))[:,None,None]
     a['ages']=np.minimum((positions-np.maximum.accumulate(np.where(np.isfinite(a['values']),positions,-100000),0))*6,10000).astype('f4')
-    root=CACHE/f'native_s{seed}';coef=np.load(root/'i1.npy');dev=dict(np.load(root/'dev.npz'))
+    suffix='_v2' if version==2 else '';root=CACHE/f'native{suffix}_s{seed}';coef=np.load(root/'i1.npy');dev=dict(np.load(root/'dev.npz'))
     files=sorted(root.glob('train_*.npz'));caches=[dict(np.load(f)) for f in files]
     blocks=training_blocks(caches)
     model=make_model(len(a['static'])).cuda();ema=copy.deepcopy(model);opt=torch.optim.AdamW(model.parameters(),lr=3e-4,weight_decay=1e-4)
-    out=HERE/('smoke' if smoke else 'runs')/f'joint_s{seed}';out.mkdir(parents=True,exist_ok=False);start=time.monotonic();best=float('inf')
-    write_json(out/'lock.json',dict(seed=seed,steps=steps,base_sha256=sha(HERE/f'runs/base_s{seed}/best.pt'),native_code_sha256=sha(__file__),class_name='NativeDirectedLagV2',length_records=16,identity_count=len(a['static']),train_blocks=len(blocks),order='chronological per complete pass; no time sampling',supervised_leads_hours=[0,6,12,18,24,30,36],selection='2023 dev current station macro RMSE',test_2024_used_for_selection=False))
+    out=HERE/('smoke' if smoke else 'runs')/f'joint{suffix}_s{seed}';out.mkdir(parents=True,exist_ok=False);start=time.monotonic();best=float('inf')
+    write_json(out/'lock.json',dict(version=version,seed=seed,steps=steps,base_sha256=sha(HERE/f'runs/base{suffix}_s{seed}/best.pt'),native_code_sha256=sha(__file__),class_name='NativeDirectedLagV2',length_records=16,identity_count=len(a['static']),train_blocks=len(blocks),order='chronological per complete pass; no time sampling',supervised_leads_hours=[0,6,12,18,24,30,36],selection='2023 dev current station macro RMSE; spatial holdout for v2',test_2024_used_for_selection=False))
     for step in range(1,steps+1):
         i,j=blocks[(step-1)%len(blocks)];cache=caches[i];c=cache['context'];pool=np.flatnonzero(a['role']=='train');q=pool[~np.isin(a['groups'][pool],a['groups'][c])]
         pos=np.arange(j,j+4);b=tensor_inputs(cache,a,pos,q,coef)
@@ -175,7 +176,7 @@ def train(seed,steps=3000,smoke=False):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--seed',type=int,default=42);p.add_argument('--prepare',action='store_true');p.add_argument('--full-test-cache',action='store_true');p.add_argument('--steps',type=int,default=3000);p.add_argument('--smoke',action='store_true');args=p.parse_args()
-    if args.prepare:prepare(args.seed)
+    p=argparse.ArgumentParser();p.add_argument('--seed',type=int,default=42);p.add_argument('--prepare',action='store_true');p.add_argument('--full-test-cache',action='store_true');p.add_argument('--steps',type=int,default=3000);p.add_argument('--smoke',action='store_true');p.add_argument('--version',type=int,choices=[1,2],default=1);args=p.parse_args()
+    if args.prepare:prepare(args.seed,args.version)
     elif args.full_test_cache:full_test_cache(args.seed)
-    else:train(args.seed,args.steps,args.smoke)
+    else:train(args.seed,args.steps,args.smoke,args.version)

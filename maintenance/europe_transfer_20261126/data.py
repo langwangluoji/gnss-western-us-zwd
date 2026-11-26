@@ -34,6 +34,12 @@ def dry_pressure(pressure_hpa,temperature_kelvin,height_difference_m):
     return pressure_hpa*np.exp(-9.80665*height_difference_m/(287.05*temperature_kelvin))
 
 
+def neural_cutoff(hours,version=2):
+    if version not in (1,2):raise ValueError('unknown training protocol')
+    end=np.datetime64('2024-01-01' if version==2 else '2023-01-01','h').astype('i8')
+    return int(np.searchsorted(hours,end))
+
+
 def dense_values(hours,station_index,values,nstations):
     hours=np.asarray(hours,dtype=np.int64)
     if np.any(hours%6):raise ValueError('off six-hour UTC grid')

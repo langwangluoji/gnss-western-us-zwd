@@ -36,3 +36,12 @@ def test_colocated_alias_stations_never_cross_split():
     roles,groups=data.site_roles(xy,np.ones(400,dtype=bool))
     assert groups[0]==groups[1]
     assert roles[0]==roles[1]
+
+
+def test_full_pool_protocol_includes_2023_and_stops_before_2024():
+    hours=np.arange(np.datetime64('2020-01-01','h').astype('i8'),np.datetime64('2025-01-01','h').astype('i8'),6)
+    stop=data.neural_cutoff(hours,version=2)
+    assert hours[stop-1]==np.datetime64('2023-12-31T18','h').astype('i8')
+    assert hours[stop]==np.datetime64('2024-01-01','h').astype('i8')
+    oldstop=data.neural_cutoff(hours,version=1)
+    assert hours[oldstop-1]==np.datetime64('2022-12-31T18','h').astype('i8')

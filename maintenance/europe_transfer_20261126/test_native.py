@@ -31,3 +31,12 @@ def test_layout_boundaries_keep_training_clock_consecutive():
     assert absolute[0]==48
     assert np.all(np.diff(absolute)==4)
     assert absolute[-1]==300
+
+
+def test_missing_gnss_masks_both_innovation_channels():
+    cache=dict(base=np.zeros((40,4),dtype='f4'),innovation=np.ones((40,4,3),dtype='f4'),weather=np.zeros((40,4,18),dtype='f4'),context=np.array([0,1]),start=10,self_error=np.ones((40,2),dtype='f4'))
+    values=np.ones((60,4,3),dtype='f4');values[20,0,0]=np.nan
+    a=dict(values=values,hours=np.arange(60)*6,static=np.zeros((4,9),dtype='f4'),xy=np.zeros((4,2),dtype='f4'))
+    result=native.inputs(cache,a,np.array([25]),np.array([2,3]),np.ones(9))
+    assert result['history'][0,0,0,3]==0
+    np.testing.assert_array_equal(result['history'][0,0,0,9:11],[0,0])
