@@ -1,6 +1,10 @@
 # 欧洲基础场引入VMF3-FC背景特征
 
-**当前授权修订**：用户明确重点是把VMF3-FC引入新的“基础场＋扩散”模型，既有CNN不再训练。CNN seed17已立即停止；seed42在澄清前完成的试验保留归档，不作为本轮新对照任务。下方早期CNN重训安排已被本段及[扩散实施合同](../../docs/superpowers/plans/2026-11-26-europe-vmf3-diffusion.md)替代。
+**正式结果已完成**：[完整报告、模型架构与7组结果图](REPORT.md)。双种子基础场和14组概率模型训练、14组完整年度K32评价均已结束。同59有效确认站/63494共同键，新基础场RMSE由15.9279降至11.4064mm（降低28.39%）；Local的+6h CRPS为9.82785mm，相对同条件GP改善0.96%，对Affine的额外差异区间跨零。点场改进与概率收益分别报告。
+
+[最终交付核验](delivery_verification.json) · [独立数值及图件审阅](review_receipt.json) · [概率模型结果](probability_results.json)。复核命令：`python -m maintenance.europe_vmf3_20261126.verify_delivery`。
+
+**当前授权修订**：用户明确重点是把VMF3-FC引入新的“基础场＋扩散”模型，既有CNN不再训练。CNN seed17已立即停止；seed42在澄清前完成的试验保留归档，不作为本轮新对照任务。早期计划中的CNN重训安排已被本段及[扩散实施合同](../../docs/superpowers/plans/2026-11-26-europe-vmf3-diffusion.md)替代。
 
 用户2026-11-26要求：给本模型引入VMF3背景场特征，接法参考原CNN模型，继续训练比较最终RMSE。
 
@@ -21,7 +25,7 @@
 - control：同结构，将全部VMF3输入置零，检验新增校正器本身收益。
 - vmf3：输入当前与历史VMF3三特征及有效mask，检验VMF3额外收益。
 
-另重训原CNN-LSTM-XGBoost＋VMF3两个种子，保留原50epoch/早停及XGB参数；保留既有无VMF3结果。VMF3 native和aligned自身作为直接背景基线。主评价对齐上轮确认站63494共同键，并给所有新增模型共同有效键敏感性检查。所有选择只用2023开发站；2024新结果用于评价。
+原CNN-LSTM-XGBoost保留上轮固定预测，不再训练；澄清前完成的seed42试验及停止的seed17试验本地归档。VMF3 native和aligned自身作为直接背景基线。主评价对齐上轮确认站63494共同键。所有基础场选择只用2023开发站；2024新结果用于历史暴露年度回看。
 
 当前是冻结强基础场后的背景特征融合试验，尚非全骨干联合再训练；不把概率/扩散收益混入点RMSE。
 

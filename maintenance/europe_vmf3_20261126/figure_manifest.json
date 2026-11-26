@@ -1,0 +1,16 @@
+{
+  "01_architecture.png": "d19c5b4ef66069d7f55b477d0643128034f833a540e01d1a0fd3ec6af4c89aa1",
+  "01_architecture.svg": "27ab7320702a9d1b27b25a0c3d29ac96edf2393c4de1f5bf12221f8f5119bcc3",
+  "02_point_rmse.png": "39b58c1d4833631e4efa0d9f203bf89cc3be78d9a5860353950f5d0a1024b759",
+  "02_point_rmse.svg": "ddbc8188ce722d0c7aedd402da6f4a69e56d013914a81d5c8c6ef5bf3acc3dc6",
+  "03_monthly_point.png": "78cebeed4d60be73c9f1d0963d09dd3e2ae630acd795b42801f4a8d6865355e6",
+  "03_monthly_point.svg": "69a756e3a089247ae1ea8ed2f8864df471ceaad14712d34103a8c448e064af91",
+  "04_probability_performance.png": "b241f30a9c99f0f0102c58636171f410b84636cac0d6772d7341a9046ed62fee",
+  "04_probability_performance.svg": "c83b9775b42e5391f2201a23eca15b06c08ece35be20f10818a98148c5f748b6",
+  "05_attribution_intervals.png": "11dcf2d1413705629c268c85f9d1ffcf66ccb1403b6b7960635512c05533ace1",
+  "05_attribution_intervals.svg": "e8546326a03b40cbcaab31cc08b541346e9971f9b363d8ce6f0ad704b190d53a",
+  "06_training_curves.png": "ceea158302463e3d14c8e18982ae236190adb4de15ad2b2347514e6dead8b202",
+  "06_training_curves.svg": "8268c54c28052d08b8f938cc2007ecf7188e9df0d9d7f3bdb2b70530534a0b70",
+  "07_station_maps.png": "6788bd4a6174a4cff5db5da3f80207c6dbc3e9b41c28712aa2d07817001945f3",
+  "07_station_maps.svg": "27f87ede019a195bf3bbcabc1cb99032d3aaefab95e2cd732021359b4bfe9325"
+}

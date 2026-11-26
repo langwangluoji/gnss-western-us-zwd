@@ -1,0 +1,16 @@
+{
+  "probability_lock_sha256": "6c571dde788d950f775a858a811ec2b013e12549e4f9651968d245832677c553",
+  "source_sha256": "b1d5e74e3ccd9014d3eab01570845d0ab5321cd1fd4ca63828ac5ed2c27b85c3",
+  "sample_seed": 261126,
+  "members": 32,
+  "solver": "heun0",
+  "steps": 20,
+  "independent_iid_member_noise": true,
+  "weights": {
+    "weight_sha256": "7e1865c47db9c7e07325b30dfaa03d8b0b3ad819c6b97c1ec234a01141e940b3",
+    "protocol_sha256": "0ea6dfbebaa1b77f2aeb914ef7b9dbb71b1e479095076b06433574bfcb2d7f18"
+  },
+  "prediction_sha256": "72844bf89e7b12875aa61749be6acfdaefd57334a89adbf465cdb86c0d5612ba",
+  "scores_sha256": "5eb2ef049797c5fbb61d0f43156bc723f12f83696db72f287c415bcc1f4593f5",
+  "deterministic_mean_preserved": true
+}

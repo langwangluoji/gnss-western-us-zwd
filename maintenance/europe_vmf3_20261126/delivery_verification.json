@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "original_hdf5_sources": [
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\联合信号分析与深度学习的高精度对流层建模\\Data\\model\\Model4\\Model4_FFT_SH_Patent\\data\\euref_train_2020_2023.h5",
+      "sha256": "7ea9ee5f408cac3925d438762774933fc6d126be0b468175fd70944b7fd65ea3"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\联合信号分析与深度学习的高精度对流层建模\\Data\\model\\Model4\\Model4_FFT_SH_Patent\\data\\euref_test_2024.h5",
+      "sha256": "43c145ed311d6f94bef1908cecf00f42b1d8da5c288b7222788c1c1c00117f30"
+    }
+  ],
+  "vmf3_source_files_verified": 29,
+  "mean_selection_and_probability_locks_unchanged": true,
+  "probability_evaluations_verified": [
+    "42/base/gaussian",
+    "42/base/gp",
+    "42/base/local",
+    "42/vmf/gaussian",
+    "42/vmf/gp",
+    "42/vmf/affine",
+    "42/vmf/local",
+    "17/base/gaussian",
+    "17/base/gp",
+    "17/base/local",
+    "17/vmf/gaussian",
+    "17/vmf/gp",
+    "17/vmf/affine",
+    "17/vmf/local"
+  ],
+  "fixed_old_cnn_and_I1_predictions_unchanged": true,
+  "confirm_records": 63494,
+  "confirm_active_stations": 59,
+  "float64_rmse_recalculated": {
+    "old_cnn": 17.147244442943926,
+    "old_I1": 15.927922306229155,
+    "control": 15.82580030693205,
+    "vmf_field": 11.40642240650199,
+    "vmf_native": 16.09323189423192,
+    "vmf_aligned": 12.666135482727757
+  },
+  "figure_files_verified": 14,
+  "report_links_exist": true,
+  "delivery_tests": "30 passed",
+  "full_engine_tests": "568 passed; earlier same-run local log retained",
+  "local_test_log_sha256": "39b479a146fddd791254133c2380c78fa4329a9d30b8ee3478701b79b7ce5019"
+}

@@ -1,0 +1,159 @@
+{
+  "cohorts": {
+    "confirm": {
+      "old_cnn": {
+        "records": 63494,
+        "stations": 59,
+        "micro_rmse_mm": 17.147244442943926,
+        "station_macro_rmse_mm": 16.65654700629731
+      },
+      "old_I1": {
+        "records": 63494,
+        "stations": 59,
+        "micro_rmse_mm": 15.927922306229155,
+        "station_macro_rmse_mm": 14.379103433932684
+      },
+      "control": {
+        "records": 63494,
+        "stations": 59,
+        "micro_rmse_mm": 15.82580030693205,
+        "station_macro_rmse_mm": 14.286537047266345
+      },
+      "vmf_field": {
+        "records": 63494,
+        "stations": 59,
+        "micro_rmse_mm": 11.40642240650199,
+        "station_macro_rmse_mm": 10.741901337717879
+      },
+      "vmf_native": {
+        "records": 63494,
+        "stations": 59,
+        "micro_rmse_mm": 16.09323189423192,
+        "station_macro_rmse_mm": 15.262737923160076
+      },
+      "vmf_aligned": {
+        "records": 63494,
+        "stations": 59,
+        "micro_rmse_mm": 12.666135482727757,
+        "station_macro_rmse_mm": 12.290312079239799
+      }
+    },
+    "dev": {
+      "old_cnn": {
+        "records": 67574,
+        "stations": 61,
+        "micro_rmse_mm": 16.04625174176239,
+        "station_macro_rmse_mm": 15.956043436173596
+      },
+      "old_I1": {
+        "records": 67574,
+        "stations": 61,
+        "micro_rmse_mm": 13.984261277665002,
+        "station_macro_rmse_mm": 13.233207210055038
+      },
+      "control": {
+        "records": 67574,
+        "stations": 61,
+        "micro_rmse_mm": 13.838788150945359,
+        "station_macro_rmse_mm": 13.153890813128143
+      },
+      "vmf_field": {
+        "records": 67574,
+        "stations": 61,
+        "micro_rmse_mm": 10.606603116278908,
+        "station_macro_rmse_mm": 10.487346779263023
+      },
+      "vmf_native": {
+        "records": 67574,
+        "stations": 61,
+        "micro_rmse_mm": 15.189667301057751,
+        "station_macro_rmse_mm": 14.980658539336138
+      },
+      "vmf_aligned": {
+        "records": 67574,
+        "stations": 61,
+        "micro_rmse_mm": 12.383588401364714,
+        "station_macro_rmse_mm": 12.16868240162883
+      }
+    },
+    "new": {
+      "old_cnn": {
+        "records": 5390,
+        "stations": 11,
+        "micro_rmse_mm": 15.956440819599631,
+        "station_macro_rmse_mm": 16.55211884674128
+      },
+      "old_I1": {
+        "records": 5390,
+        "stations": 11,
+        "micro_rmse_mm": 13.79550415469954,
+        "station_macro_rmse_mm": 13.768644542806591
+      },
+      "control": {
+        "records": 5390,
+        "stations": 11,
+        "micro_rmse_mm": 13.778530736611508,
+        "station_macro_rmse_mm": 13.731274057190848
+      },
+      "vmf_field": {
+        "records": 5390,
+        "stations": 11,
+        "micro_rmse_mm": 12.569256410473244,
+        "station_macro_rmse_mm": 12.802134670558132
+      },
+      "vmf_native": {
+        "records": 5390,
+        "stations": 11,
+        "micro_rmse_mm": 16.588111178008585,
+        "station_macro_rmse_mm": 16.738000097367305
+      },
+      "vmf_aligned": {
+        "records": 5390,
+        "stations": 11,
+        "micro_rmse_mm": 14.786913741395729,
+        "station_macro_rmse_mm": 15.257363739531657
+      }
+    },
+    "all_holdout": {
+      "old_cnn": {
+        "records": 136458,
+        "stations": 131,
+        "micro_rmse_mm": 16.56422200030132,
+        "station_macro_rmse_mm": 16.321589544215914
+      },
+      "old_I1": {
+        "records": 136458,
+        "stations": 131,
+        "micro_rmse_mm": 14.91323665434808,
+        "station_macro_rmse_mm": 13.79425826249052
+      },
+      "control": {
+        "records": 136458,
+        "stations": 131,
+        "micro_rmse_mm": 14.794355694613994,
+        "station_macro_rmse_mm": 13.712496488691835
+      },
+      "vmf_field": {
+        "records": 136458,
+        "stations": 131,
+        "micro_rmse_mm": 11.067474551380645,
+        "station_macro_rmse_mm": 10.796364991118615
+      },
+      "vmf_native": {
+        "records": 136458,
+        "stations": 131,
+        "micro_rmse_mm": 15.672701292621715,
+        "station_macro_rmse_mm": 15.25526495753427
+      },
+      "vmf_aligned": {
+        "records": 136458,
+        "stations": 131,
+        "micro_rmse_mm": 12.618471440942146,
+        "station_macro_rmse_mm": 12.482817101598132
+      }
+    }
+  },
+  "mean_model": "new frozen VMF3 field; before diffusion samples",
+  "cnn_reference": "previous fixed273-station CNN; no continued training",
+  "source_probability_lock_sha256": "6c571dde788d950f775a858a811ec2b013e12549e4f9651968d245832677c553"
+}

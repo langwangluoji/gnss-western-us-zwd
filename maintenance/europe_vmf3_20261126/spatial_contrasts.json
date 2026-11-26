@@ -1,0 +1,251 @@
+{
+  "models": {
+    "base_gaussian": {
+      "0-50": {
+        "registered_pairs": 4,
+        "fair_crps_mm_by_now_f6": [
+          3.008430070053904,
+          4.15951932995016
+        ],
+        "valid_pairs_by_now_f6": [
+          7236,
+          7200
+        ]
+      },
+      "50-150": {
+        "registered_pairs": 10,
+        "fair_crps_mm_by_now_f6": [
+          6.668230966204525,
+          8.359457413020923
+        ],
+        "valid_pairs_by_now_f6": [
+          16872,
+          16736
+        ]
+      },
+      "150-300": {
+        "registered_pairs": 38,
+        "fair_crps_mm_by_now_f6": [
+          7.982827850041263,
+          12.194252846976836
+        ],
+        "valid_pairs_by_now_f6": [
+          58314,
+          57768
+        ]
+      }
+    },
+    "base_gp": {
+      "0-50": {
+        "registered_pairs": 4,
+        "fair_crps_mm_by_now_f6": [
+          2.485942458409841,
+          2.861799988556281
+        ],
+        "valid_pairs_by_now_f6": [
+          7236,
+          7200
+        ]
+      },
+      "50-150": {
+        "registered_pairs": 10,
+        "fair_crps_mm_by_now_f6": [
+          6.621296093589673,
+          8.370794127473646
+        ],
+        "valid_pairs_by_now_f6": [
+          16872,
+          16736
+        ]
+      },
+      "150-300": {
+        "registered_pairs": 38,
+        "fair_crps_mm_by_now_f6": [
+          7.952137458232599,
+          12.207069731548536
+        ],
+        "valid_pairs_by_now_f6": [
+          58314,
+          57768
+        ]
+      }
+    },
+    "base_local": {
+      "0-50": {
+        "registered_pairs": 4,
+        "fair_crps_mm_by_now_f6": [
+          2.493241747509989,
+          2.762125297685481
+        ],
+        "valid_pairs_by_now_f6": [
+          7236,
+          7200
+        ]
+      },
+      "50-150": {
+        "registered_pairs": 10,
+        "fair_crps_mm_by_now_f6": [
+          6.65145907304555,
+          8.301713212841106
+        ],
+        "valid_pairs_by_now_f6": [
+          16872,
+          16736
+        ]
+      },
+      "150-300": {
+        "registered_pairs": 38,
+        "fair_crps_mm_by_now_f6": [
+          7.931081515269699,
+          12.110518057526077
+        ],
+        "valid_pairs_by_now_f6": [
+          58314,
+          57768
+        ]
+      }
+    },
+    "vmf_gaussian": {
+      "0-50": {
+        "registered_pairs": 4,
+        "fair_crps_mm_by_now_f6": [
+          2.9618054583248083,
+          4.0302585100253046
+        ],
+        "valid_pairs_by_now_f6": [
+          7236,
+          7200
+        ]
+      },
+      "50-150": {
+        "registered_pairs": 10,
+        "fair_crps_mm_by_now_f6": [
+          6.721713776718246,
+          8.258154358357581
+        ],
+        "valid_pairs_by_now_f6": [
+          16872,
+          16736
+        ]
+      },
+      "150-300": {
+        "registered_pairs": 38,
+        "fair_crps_mm_by_now_f6": [
+          7.975154543090056,
+          12.176893132788848
+        ],
+        "valid_pairs_by_now_f6": [
+          58314,
+          57768
+        ]
+      }
+    },
+    "vmf_gp": {
+      "0-50": {
+        "registered_pairs": 4,
+        "fair_crps_mm_by_now_f6": [
+          2.438518942028465,
+          2.7835702373107103
+        ],
+        "valid_pairs_by_now_f6": [
+          7236,
+          7200
+        ]
+      },
+      "50-150": {
+        "registered_pairs": 10,
+        "fair_crps_mm_by_now_f6": [
+          6.659359968084974,
+          8.293299702665818
+        ],
+        "valid_pairs_by_now_f6": [
+          16872,
+          16736
+        ]
+      },
+      "150-300": {
+        "registered_pairs": 38,
+        "fair_crps_mm_by_now_f6": [
+          7.93339196263094,
+          12.175211287344005
+        ],
+        "valid_pairs_by_now_f6": [
+          58314,
+          57768
+        ]
+      }
+    },
+    "vmf_affine": {
+      "0-50": {
+        "registered_pairs": 4,
+        "fair_crps_mm_by_now_f6": [
+          2.415232147990038,
+          2.697201757548914
+        ],
+        "valid_pairs_by_now_f6": [
+          7236,
+          7200
+        ]
+      },
+      "50-150": {
+        "registered_pairs": 10,
+        "fair_crps_mm_by_now_f6": [
+          6.669191775494014,
+          8.237652453079164
+        ],
+        "valid_pairs_by_now_f6": [
+          16872,
+          16736
+        ]
+      },
+      "150-300": {
+        "registered_pairs": 38,
+        "fair_crps_mm_by_now_f6": [
+          7.905871489822459,
+          12.10331044945176
+        ],
+        "valid_pairs_by_now_f6": [
+          58314,
+          57768
+        ]
+      }
+    },
+    "vmf_local": {
+      "0-50": {
+        "registered_pairs": 4,
+        "fair_crps_mm_by_now_f6": [
+          2.4408100344683485,
+          2.7117221966126137
+        ],
+        "valid_pairs_by_now_f6": [
+          7236,
+          7200
+        ]
+      },
+      "50-150": {
+        "registered_pairs": 10,
+        "fair_crps_mm_by_now_f6": [
+          6.682612457176077,
+          8.262100669457743
+        ],
+        "valid_pairs_by_now_f6": [
+          16872,
+          16736
+        ]
+      },
+      "150-300": {
+        "registered_pairs": 38,
+        "fair_crps_mm_by_now_f6": [
+          7.924737705349596,
+          12.10375708144491
+        ],
+        "valid_pairs_by_now_f6": [
+          58314,
+          57768
+        ]
+      }
+    }
+  },
+  "pair_selection": "at most64fixed seeded geometry-only registered confirm pairs per distance bin",
+  "no_future_mask_used_for_pair_selection": true
+}

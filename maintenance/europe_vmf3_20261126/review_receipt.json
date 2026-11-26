@@ -1,0 +1,29 @@
+{
+  "reviewer": "independent read-only review_vmf3_diffusion agent",
+  "critical": [],
+  "important": [],
+  "minor_resolved": [
+    "Sampling description distinguishes direct Gaussian/GP draws from Local/Affine Heun0 integration.",
+    "Training-curve title identifies 2023 spatial development monitoring.",
+    "Report opening names the same-condition weather GP as the 0.96-percent comparator."
+  ],
+  "numerical_review": {
+    "cache_lineage_site_isolation_and_lead_alignment": "passed",
+    "training_bias_scale_recalculation_max_error": "below 1e-12",
+    "gp_psd_unit_diagonal_and_query_subset_consistency": "passed",
+    "lead_fair_crps_recalculation": "98 values, max absolute error 3.38e-13 mm",
+    "month_interval_recalculation_max_error_mm": 7.52e-9,
+    "cpu_cuda_flow_replay_max_error_mm": 1.53e-5,
+    "fixed_old_cnn_reference_unchanged": true,
+    "point_metric_precision_note": "Main point table uses float64. Auxiliary probability-evaluation point RMSE uses float32 reductions; independent discrepancy up to 0.000338 mm."
+  },
+  "report_and_figure_review": {
+    "png_groups_visually_reviewed": 7,
+    "figure_sha256_verified": 14,
+    "svg_xml_parsing": "7 passed",
+    "report_relative_links": "passed",
+    "layout": "No material clipping or overlap.",
+    "claim_scope": "VMF information gain, probability transport gain, affine control and fixed CNN reference are distinguished."
+  },
+  "review_actions": "No training, file mutation or experiment-lock alteration by reviewer."
+}
