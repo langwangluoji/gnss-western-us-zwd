@@ -1,0 +1,31 @@
+{"step": 1, "seconds": 0.25, "batch_rmse_mm": 9.328276634216309, "global_origin": 48, "gradient_norm": 0.2369883805513382}
+{"step": 100, "seconds": 0.9059999999881256, "batch_rmse_mm": 9.521697998046875, "global_origin": 444, "gradient_norm": 1.3923885822296143}
+{"step": 200, "seconds": 1.6089999999967404, "batch_rmse_mm": 14.55390453338623, "global_origin": 844, "gradient_norm": 3.795335531234741}
+{"step": 300, "seconds": 2.39000000001397, "batch_rmse_mm": 10.351478576660156, "global_origin": 1244, "gradient_norm": 3.0243325233459473}
+{"step": 400, "seconds": 3.0780000000086147, "batch_rmse_mm": 9.71274185180664, "global_origin": 1644, "gradient_norm": 3.679492712020874}
+{"step": 500, "seconds": 3.7339999999967404, "batch_rmse_mm": 10.300281524658203, "global_origin": 2044, "gradient_norm": 0.6520578861236572, "dev_station_macro_rmse_mm": 10.414669399172865}
+{"step": 600, "seconds": 4.453000000008615, "batch_rmse_mm": 13.112663269042969, "global_origin": 2444, "gradient_norm": 12.086577415466309}
+{"step": 700, "seconds": 5.187000000005355, "batch_rmse_mm": 8.27198314666748, "global_origin": 2844, "gradient_norm": 1.2254778146743774}
+{"step": 800, "seconds": 5.842999999993481, "batch_rmse_mm": 7.99991512298584, "global_origin": 3244, "gradient_norm": 0.6696509122848511}
+{"step": 900, "seconds": 6.530999999988126, "batch_rmse_mm": 15.279525756835938, "global_origin": 3644, "gradient_norm": 5.802396297454834}
+{"step": 1000, "seconds": 7.280999999988126, "batch_rmse_mm": 10.284980773925781, "global_origin": 4044, "gradient_norm": 2.9873571395874023, "dev_station_macro_rmse_mm": 10.48060906554273}
+{"step": 1100, "seconds": 8.062000000005355, "batch_rmse_mm": 7.332281112670898, "global_origin": 4444, "gradient_norm": 2.2277257442474365}
+{"step": 1200, "seconds": 8.75, "batch_rmse_mm": 8.731461524963379, "global_origin": 4844, "gradient_norm": 6.409191608428955}
+{"step": 1300, "seconds": 9.421000000002095, "batch_rmse_mm": 14.412437438964844, "global_origin": 5244, "gradient_norm": 2.7381021976470947}
+{"step": 1400, "seconds": 10.35899999999674, "batch_rmse_mm": 8.635780334472656, "global_origin": 5644, "gradient_norm": 5.505614280700684}
+{"step": 1500, "seconds": 11.155999999988126, "batch_rmse_mm": 8.805220603942871, "global_origin": 256, "gradient_norm": 7.667747974395752, "dev_station_macro_rmse_mm": 10.0931965613313}
+{"step": 1600, "seconds": 11.96799999999348, "batch_rmse_mm": 14.23776626586914, "global_origin": 656, "gradient_norm": 9.647249221801758}
+{"step": 1700, "seconds": 12.671000000002095, "batch_rmse_mm": 14.01595687866211, "global_origin": 1056, "gradient_norm": 25.733022689819336}
+{"step": 1800, "seconds": 13.39000000001397, "batch_rmse_mm": 8.590402603149414, "global_origin": 1456, "gradient_norm": 1.9631357192993164}
+{"step": 1900, "seconds": 14.14000000001397, "batch_rmse_mm": 8.035375595092773, "global_origin": 1856, "gradient_norm": 1.8353257179260254}
+{"step": 2000, "seconds": 14.84299999999348, "batch_rmse_mm": 16.36130142211914, "global_origin": 2256, "gradient_norm": 10.437512397766113, "dev_station_macro_rmse_mm": 10.084476327107781}
+{"step": 2100, "seconds": 15.64000000001397, "batch_rmse_mm": 12.08460807800293, "global_origin": 2656, "gradient_norm": 3.59369158744812}
+{"step": 2200, "seconds": 16.51500000001397, "batch_rmse_mm": 7.486595630645752, "global_origin": 3056, "gradient_norm": 5.833132743835449}
+{"step": 2300, "seconds": 17.26500000001397, "batch_rmse_mm": 10.84546184539795, "global_origin": 3456, "gradient_norm": 6.907575607299805}
+{"step": 2400, "seconds": 17.98399999999674, "batch_rmse_mm": 13.972536087036133, "global_origin": 3856, "gradient_norm": 11.214750289916992}
+{"step": 2500, "seconds": 18.671000000002095, "batch_rmse_mm": 7.631201267242432, "global_origin": 4256, "gradient_norm": 6.534081935882568, "dev_station_macro_rmse_mm": 10.192154318135369}
+{"step": 2600, "seconds": 19.437000000005355, "batch_rmse_mm": 7.063172340393066, "global_origin": 4656, "gradient_norm": 1.4407081604003906}
+{"step": 2700, "seconds": 20.125, "batch_rmse_mm": 11.616211891174316, "global_origin": 5056, "gradient_norm": 20.073190689086914}
+{"step": 2800, "seconds": 20.84299999999348, "batch_rmse_mm": 12.103004455566406, "global_origin": 5456, "gradient_norm": 3.802607536315918}
+{"step": 2900, "seconds": 21.530999999988126, "batch_rmse_mm": 8.163421630859375, "global_origin": 68, "gradient_norm": 4.032698631286621}
+{"step": 3000, "seconds": 22.280999999988126, "batch_rmse_mm": 7.798661231994629, "global_origin": 468, "gradient_norm": 1.1253899335861206, "dev_station_macro_rmse_mm": 9.927412473833286}

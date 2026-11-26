@@ -1,0 +1,33 @@
+{
+  "selected_mean": "vmf3",
+  "rule": "VMF3 branch for requested fusion; fixed2023 spatial-dev monitoring",
+  "records": [
+    {
+      "seed": 42,
+      "scores": {
+        "control": 12.32735224941282,
+        "vmf3": 9.9469791058926
+      },
+      "weights": {
+        "control": "c7593ad43b4e30cd812cd989ecab43d8117a10c8a7dd616f58fe21801ef01e35",
+        "vmf3": "01351700e7ee9bca4b1fc3ad5a45450d0655f93a6d638e93bf2466542e851567"
+      },
+      "joint_weights_sha256": "2f9dc42ebc9a802a8aa6acb9775e28297db10191b2f5e2b83db24f89a4c84c14"
+    },
+    {
+      "seed": 17,
+      "scores": {
+        "control": 12.296429747786592,
+        "vmf3": 9.927412473833286
+      },
+      "weights": {
+        "control": "bac46af78ac6d80b6ea98661668eaf49d71908d8ee045c99ca10f64f261cb0b2",
+        "vmf3": "60f4d3f5863b804854f244965d847a8a45d198668aa6c20155d72f1be7720ec7"
+      },
+      "joint_weights_sha256": "77b9c995e6b0215ef648570f32359106b226b0bd9bf4ce6bd92f2b11f8794b26"
+    }
+  ],
+  "test_2024_metrics_used": false,
+  "cnn_retraining_cancelled_by_user": true,
+  "future_mean_rule": "retain frozen native joint increments and shift each lead by new-current minus old-current"
+}

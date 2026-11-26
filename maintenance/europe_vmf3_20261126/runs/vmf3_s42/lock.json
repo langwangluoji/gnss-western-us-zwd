@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "arm": "vmf3",
+  "steps": 3000,
+  "lr": 0.0003,
+  "initial_dev_rmse_mm": 12.453996516494795,
+  "initial_state": "exact frozen I1 output",
+  "parent_selection_sha256": "8ea3c227d21d3f9e2d1de2cdfb29e8c9a881166b5ec2ae15dce04da476459a68",
+  "feature_receipt_sha256": "0cb129a7218c0b5bdd5dcc4e7e9588dc82210b3f650fdff9e903ddfb2a7b8b10",
+  "code_sha256": "1af14661e66d11069688a0133197280c4ddbef0860978336113a202b3726782c",
+  "order": "consecutive four-record blocks over2020-2023, loop whole passes",
+  "blocks_per_pass": 1447,
+  "parameters": 15233,
+  "feature_multiplicative_gate": true,
+  "target_station_GNSS_or_weather_condition": false
+}

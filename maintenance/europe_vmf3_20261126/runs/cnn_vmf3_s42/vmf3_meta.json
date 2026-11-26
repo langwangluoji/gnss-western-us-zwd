@@ -1,0 +1,106 @@
+{
+  "train": {
+    "n_rows": 1275102,
+    "n_stations": 273,
+    "n_epochs_in_frame": 5844,
+    "n_epochs_from_cache": 5843,
+    "n_epochs_time_filled": 1,
+    "time_filled_epochs": [
+      "2023-12-18 00:00:00"
+    ],
+    "n_rows_time_filled": 242,
+    "cache_epochs_total": 7307,
+    "cache_sources": {
+      "e17_2020": 1464,
+      "e17_2021": 1460,
+      "e17_2022": 1460,
+      "e17_2023": 1459,
+      "extra_2023": 0,
+      "e17_2024": 1433,
+      "extra_2024": 31
+    },
+    "cache_duplicate_epochs": 0,
+    "grid_points_cached": 841,
+    "dh_m_min": -1434.6017677594018,
+    "dh_m_max": 1872.0597637718602,
+    "feature_columns": [
+      "vmf3g_zwd_site",
+      "vmf3g_zwd_aligned",
+      "vmf3g_zwd_anom"
+    ],
+    "flag_column": "vmf3g_filled",
+    "algorithm": "per-gridpoint Kouba(2008) vertical lift, then 4-point bilinear; order follows vmf3_grid.m",
+    "zwd_scale_height_m": 2000.0,
+    "stats": {
+      "vmf3g_zwd_site": {
+        "mean": 0.10295460570670847,
+        "std": 0.050646030687068605,
+        "min": 0.004285057482198588,
+        "max": 0.3196445704312679
+      },
+      "vmf3g_zwd_aligned": {
+        "mean": 0.11552528784267352,
+        "std": 0.05099722006404876,
+        "min": -0.02211353188700871,
+        "max": 0.33660877331668315
+      },
+      "vmf3g_zwd_anom": {
+        "mean": 0.002662189824432958,
+        "std": 0.03178128736127283,
+        "min": -0.11881782109762859,
+        "max": 0.1714078883261616
+      }
+    }
+  },
+  "test": {
+    "n_rows": 514526,
+    "n_stations": 385,
+    "n_epochs_in_frame": 1464,
+    "n_epochs_from_cache": 1464,
+    "n_epochs_time_filled": 0,
+    "time_filled_epochs": [],
+    "n_rows_time_filled": 0,
+    "cache_epochs_total": 7307,
+    "cache_sources": {
+      "e17_2020": 1464,
+      "e17_2021": 1460,
+      "e17_2022": 1460,
+      "e17_2023": 1459,
+      "extra_2023": 0,
+      "e17_2024": 1433,
+      "extra_2024": 31
+    },
+    "cache_duplicate_epochs": 0,
+    "grid_points_cached": 841,
+    "dh_m_min": -1428.04244105348,
+    "dh_m_max": 1872.0597637718602,
+    "feature_columns": [
+      "vmf3g_zwd_site",
+      "vmf3g_zwd_aligned",
+      "vmf3g_zwd_anom"
+    ],
+    "flag_column": "vmf3g_filled",
+    "algorithm": "per-gridpoint Kouba(2008) vertical lift, then 4-point bilinear; order follows vmf3_grid.m",
+    "zwd_scale_height_m": 2000.0,
+    "stats": {
+      "vmf3g_zwd_site": {
+        "mean": 0.11012317716223763,
+        "std": 0.05285464374670332,
+        "min": 0.00482211061303798,
+        "max": 0.3790460874351711
+      },
+      "vmf3g_zwd_aligned": {
+        "mean": 0.12292181623677516,
+        "std": 0.05325729061329753,
+        "min": -0.013404799922998478,
+        "max": 0.39220495927405885
+      },
+      "vmf3g_zwd_anom": {
+        "mean": 0.009620225574643032,
+        "std": 0.03384235470274804,
+        "min": -0.11498686111898235,
+        "max": 0.21350612925903636
+      }
+    }
+  }
+}

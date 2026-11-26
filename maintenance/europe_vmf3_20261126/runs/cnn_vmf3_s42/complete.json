@@ -1,0 +1,10 @@
+{
+  "seconds": 141.10900000002584,
+  "best_epoch": 4,
+  "train_sequences": 800216,
+  "validation_sequences": 291742,
+  "finite_2024_predictions": 415518,
+  "predictions_sha256": "f34190bd4b828f1f98f39d3c1748de93e5a742a2e6a824973db24e94421e0412",
+  "lstm_sha256": "9c27873d2b5074b962ea837bd6d67bdca7f4070e200c951dfbe63a005666d612",
+  "xgb_sha256": "947389b0e16e506a53ee93a35d9ef6b9ae0601d64b1fefa44d6c1fa74e425c10"
+}

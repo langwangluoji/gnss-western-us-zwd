@@ -1,0 +1,7 @@
+{
+  "status": "CANCELLED_BY_USER",
+  "reason": "User clarified that existing CNN must not be retrained and priority is VMF3-FC in the new diffusion model",
+  "terminated_process_id": 29324,
+  "partial_files_preserved": true,
+  "excluded_from_main_comparison": true
+}
