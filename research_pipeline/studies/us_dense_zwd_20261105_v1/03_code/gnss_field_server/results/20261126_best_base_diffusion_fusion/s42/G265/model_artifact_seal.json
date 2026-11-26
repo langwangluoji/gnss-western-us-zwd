@@ -1,0 +1,59 @@
+{
+  "weights_sha256": "2ee8c85ccfb0844c7f6a010da00677dfefede17985cc4bd4525dbb0aaae4aef8",
+  "checkpoint_sha256": "6b70d4226d800bc641a0dcfe65cc0b4aaac8f3c16157052e8e9c8d83fc678fe1",
+  "protocol_sha256": "555a56b148da71a9fc7c925ada668b7f5454913c72b7b7c2bd5c4a8d95c22273",
+  "status_sha256": "e54479aec5d144608c5679edca37d01e1d8a18a2b216f867e63b9cfaf5336328",
+  "code_sha256": {
+    "native_process_experiment.py": "ef7ca45c89f1a7489510a12762ac3e335c98d3bec611e81c8d16e90abe661c6f",
+    "native_process_models.py": "74e614bedd3a6b0ac8ef2fdf689cf1b1a10fd81f8d73aac5974af30d3408bb19",
+    "native_process_ops.py": "2b3c017dd0d9c3ddefd0a2e5dd2f7625f320f5ab27d214270c1779f1e49372de",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_probability_context.py": "ab3aad752ed3b6ed886939cdffe823966032c6811cd4976cba30f421e9a3f898",
+    "native_copula.py": "95eade5fb6d732901662509a881c6efcf28e12f06d3193d408ac079dad577c19",
+    "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+    "native_weather_gp.py": "330643f915c4771f318760d9d7c22784b01d064b89251488c1ab8c86bfcf3271",
+    "native_weather_gp_experiment.py": "371ce3374f2bb8ecedc966bf43b0b9efebb135fdc409e3ab41412b69c8853234"
+  },
+  "source": {
+    "gaussian_protocol_sha256": "faa9c2cc1d3f23cddecbe122320e34edc6ac390225048bbdda1d3c325ff5027f",
+    "gaussian_weights_sha256": "db2ab955ecf115ddf17613973ee44414e3b6c16502fb53785d801e61eae06244",
+    "copula_sha256": "7f2a7f0f02081982ab3fa946fa0f3388c4f4093d60119abded0fa9fdfcb6e22e",
+    "training_embedding_manifest_sha256": "9593f41372edde850f2833889830d292299e490ddced793757502b67ac705e62",
+    "mean_weights_sha256": "e1da8767797ee2fbfc470ff42b1905cc5b72552f46d5469d6bb521cb8838d318",
+    "normalization": {
+      "bias_mm": [
+        -0.0742797472610697,
+        0.07563675321550399,
+        0.19681153176721794,
+        0.3156571295848266,
+        0.4131086999768241,
+        0.45373436865906036,
+        0.4861643437462916
+      ],
+      "scale_mm": [
+        9.765614361514247,
+        10.549911659580996,
+        11.469752114682358,
+        12.476296929202999,
+        13.57226070554111,
+        14.671443267551831,
+        15.713752248951131
+      ],
+      "count": [
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603769.0,
+        4603767.0
+      ],
+      "role": "training_only"
+    }
+  },
+  "seal_implementation_sha256": "6a286fbbcf58926118a4228881f629b99596ca70ec1cd7031f77904b03c68fe5",
+  "final_step": 3000,
+  "contract": "last.pt equals checkpoint3000.model tensor by tensor; immutable completion artifact receipt"
+}

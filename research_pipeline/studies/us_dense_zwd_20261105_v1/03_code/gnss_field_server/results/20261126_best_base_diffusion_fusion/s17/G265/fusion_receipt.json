@@ -1,0 +1,16 @@
+{
+  "seed": 17,
+  "kind": "gp",
+  "lock_sha256": "138d8fadd91dcbaf8a4a3681b5b18c8164cd8b7da6349cdec1d37a9ab92075bf",
+  "protocol_sha256": "790ef7832be3104ee3d1495341331eea024cb7af35a0055b004fdb98ed62fc23",
+  "weights_sha256": "e472371724ee52bb858a707669743e7813fb5246985face08db65f336b3a1be8",
+  "checkpoint_sha256": "1c4c5e28c48d7946b16a8114f6d0adab150dfd62b6058f959b44ea6a4914d048",
+  "status_sha256": "cfa40c14f1e85ed9e1164bcbce6f8be3e6fa3d31c5026bb7640e5f3e41c5d70b",
+  "supervised_updates": 3000,
+  "optimizer_states": 11,
+  "optimizer_parameters": 11,
+  "actual_label_clock": {
+    "supervised_updates": 3000,
+    "complete_trajectories": 4602175
+  }
+}

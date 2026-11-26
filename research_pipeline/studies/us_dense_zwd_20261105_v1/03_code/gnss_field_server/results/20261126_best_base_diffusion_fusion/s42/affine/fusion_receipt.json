@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "kind": "affine",
+  "lock_sha256": "138d8fadd91dcbaf8a4a3681b5b18c8164cd8b7da6349cdec1d37a9ab92075bf",
+  "protocol_sha256": "c987a561abbafeaa7f52858921abdf0b91233ec585b7bc46d0c42008bb243aef",
+  "weights_sha256": "d9eb8fa9b2c730c6765eb314e2c265eceefd827de82295907466852261cffb60",
+  "checkpoint_sha256": "79cb162391724f5019dc51d0da43fab7cb9158c32654f85c1f3fc88ab58264e7",
+  "status_sha256": "68a6c90151667ba469d5a02eceee19bff750a3bd291b687abc8d8eba54befc94",
+  "supervised_updates": 3000,
+  "optimizer_states": 6,
+  "optimizer_parameters": 6,
+  "actual_label_clock": {
+    "supervised_updates": 3000,
+    "complete_trajectories": 4602209
+  }
+}

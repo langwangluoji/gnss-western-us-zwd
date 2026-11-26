@@ -19,3 +19,5 @@ Ruling: 独立审阅提出的K16秩覆盖、原joint数组直接核对、几何/
 Task 2: in progress — 140bd62已推送并核对远端后启动两个原队列。S175双种子3000/3000完整监督均完成，来源/训练掩码/全部最终Adam时钟通过；copula均仅使用训练残差拟合。G265真实4更新6144完整轨迹通过，双种子正式G265在运行。RTX4060 Laptop运行正常，主要计算量为float64完整协方差分解。
 
 Task 3 preparation — 新增只读diagnostics.py，直接核对原joint NPZ、几何/nearest与K16/K32覆盖，保留137站及五重点站；两项秩覆盖测试RED→GREEN。render_delivery.py准备完整融合图、曲线与报告；这些后处理不改已封存训练或主评分源码。
+
+Task 2 milestone — G265双种子3000/3000监督全部完成，完整轨迹数分别4602209/4602175。每个模型11个优化器参数全部有3000步Adam状态；最终权重与checkpoint、scheduler通过。Affine/Local按既定队列继续，每臂3000，核心锁138d8fad保持。

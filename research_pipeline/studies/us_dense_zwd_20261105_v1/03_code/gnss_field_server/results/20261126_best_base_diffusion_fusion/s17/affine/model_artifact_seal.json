@@ -1,0 +1,65 @@
+{
+  "weights_sha256": "adce26a89cc2a36d3a33c5ed9fac8910f77841ba250f02b67dc642f65b079fa5",
+  "checkpoint_sha256": "fe989e26051f10c0b9decfd569dd978108dd73f1244ff8375436f2c4603e4311",
+  "protocol_sha256": "1c0f7437f1d10166468f1f58c7fd6adae3edf5508ed37221392abf6cf267a198",
+  "status_sha256": "ac73aef4f543c200f20b5d5e1da90c79a739b96fb4162ae951b8afe5e7d22771",
+  "code_sha256": {
+    "native_process_experiment.py": "ef7ca45c89f1a7489510a12762ac3e335c98d3bec611e81c8d16e90abe661c6f",
+    "native_process_models.py": "74e614bedd3a6b0ac8ef2fdf689cf1b1a10fd81f8d73aac5974af30d3408bb19",
+    "native_process_ops.py": "2b3c017dd0d9c3ddefd0a2e5dd2f7625f320f5ab27d214270c1779f1e49372de",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_probability_context.py": "ab3aad752ed3b6ed886939cdffe823966032c6811cd4976cba30f421e9a3f898",
+    "native_copula.py": "95eade5fb6d732901662509a881c6efcf28e12f06d3193d408ac079dad577c19",
+    "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+    "native_weather_gp.py": "330643f915c4771f318760d9d7c22784b01d064b89251488c1ab8c86bfcf3271",
+    "native_weather_gp_experiment.py": "371ce3374f2bb8ecedc966bf43b0b9efebb135fdc409e3ab41412b69c8853234",
+    "native_weather_gp_diffusion.py": "0662c489f0ce014df720a7cbaf046df4830cffd6b1e46add5df691392543ed10",
+    "native_weather_gp_diffusion_experiment.py": "66106a06f8b8fa5249543a21b5d0a9f6a7655146cddbc95466dd71babd9f2e1d",
+    "native_model_seal.py": "6a286fbbcf58926118a4228881f629b99596ca70ec1cd7031f77904b03c68fe5"
+  },
+  "source": {
+    "gaussian_protocol_sha256": "3574e93b99c09722b55975e4957e03c9dd551e2171e6b2079673269291049e69",
+    "gaussian_weights_sha256": "6d204c7ad683f69ac614c0d0de79fdc7cec2aed05c78d7ad9f3b26887b8bbd23",
+    "copula_sha256": "a092a05f82ffcbbf1d453fc52aa56c8e249fbaf6e5c80ff7126ab257018bc8af",
+    "training_embedding_manifest_sha256": "0a80294f81baa62c00c858ff752b8dd8764caf46cc592bbba04a8996028d39aa",
+    "mean_weights_sha256": "634da56475401a0e19c4356b1b7e5e19f4af2370eb8a2652b4d5b2225c20c4f7",
+    "normalization": {
+      "bias_mm": [
+        -0.13157702359494702,
+        0.014127126982320635,
+        0.182472609112439,
+        0.31311387928131246,
+        0.4190772129158956,
+        0.5160021115025442,
+        0.5671730878990995
+      ],
+      "scale_mm": [
+        9.782709711101738,
+        10.562142119453194,
+        11.479541442279714,
+        12.482088410950054,
+        13.579309208971733,
+        14.6729159907374,
+        15.723269378405409
+      ],
+      "count": [
+        4603792.0,
+        4603779.0,
+        4603766.0,
+        4603753.0,
+        4603741.0,
+        4603728.0,
+        4603714.0
+      ],
+      "role": "training_only"
+    },
+    "weather_gp_protocol_sha256": "790ef7832be3104ee3d1495341331eea024cb7af35a0055b004fdb98ed62fc23",
+    "weather_gp_weights_sha256": "e472371724ee52bb858a707669743e7813fb5246985face08db65f336b3a1be8",
+    "weather_gp_seal_sha256": "0fb150bdcd87e30428287430a30f58f8befd7176bc02e850f5525f11f9c5b0b5"
+  },
+  "seal_implementation_sha256": "6a286fbbcf58926118a4228881f629b99596ca70ec1cd7031f77904b03c68fe5",
+  "final_step": 3000,
+  "contract": "last.pt equals checkpoint3000.model tensor by tensor; immutable completion artifact receipt"
+}
