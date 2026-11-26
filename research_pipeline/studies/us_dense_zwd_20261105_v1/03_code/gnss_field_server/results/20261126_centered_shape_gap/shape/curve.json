@@ -1,0 +1,20 @@
+[
+  {
+    "step": 1,
+    "loss": 0.40344205498695374,
+    "supervised_updates": 1,
+    "finite_label_cells": 7168,
+    "total_label_cells": 7168,
+    "last_origin_hour": 423600,
+    "seconds": 1.9219999999913853
+  },
+  {
+    "step": 4,
+    "loss": 0.40385645627975464,
+    "supervised_updates": 4,
+    "finite_label_cells": 7168,
+    "total_label_cells": 18088,
+    "last_origin_hour": 423600,
+    "seconds": 1.9839999999967404
+  }
+]

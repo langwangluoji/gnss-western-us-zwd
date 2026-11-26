@@ -39,3 +39,7 @@ Gaussian正交性保证解析均值0、方差1。若存在尺度头，mult=exp(c
 ## 首批核验
 
 6个数学合同与2个入口/工件守卫RED→GREEN；研究176项通过43.01s。Scale/Shape/Both真实缺测各4更新、18088有限标签，warm Gaussian最大差0，首批loss相同。旧GP与Local/Affine源码未改。工程小试不进入正式成绩排名。
+
+![结构保证均值的三臂架构](../../figures/weather_native_20261126/centered_shape_control.png)
+
+独立review通过数学实现。正式评价增加专门recipe核验：参考/三臂均比对源GP seal、模式、缓存/embedding、K32、共同采样seed、评分代码；joint绑定lineage和计分源码。新生成与重用均核验。模型核心和已完成小试来源不改。176研究测试、568默认测试、19维护测试通过。

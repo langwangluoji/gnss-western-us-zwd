@@ -6,8 +6,10 @@
 
 | 实验 | 已记录状态 | 证据入口 |
 |---|---|---|
+| 20261126_centered_shape_gap | ENGINEERING_COMPLETE：Scale/Shape/Both各4更新18088有限标签；解析均值固定基础场 | [数学/数据/比较合同](superpowers/specs/2026-11-26-centered-nongaussian-control.md) |
+| 20261126_frozen_event_audit_v2 | COMPLETE_MAIN_CALENDAR：10/20/30mm六小时双侧事件，阈值读取分数前冻结；补充日历待完成 | [完整事件结果](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_frozen_event_audit_v2/calendar8/REPORT.md) |
 | 20261126_diffusion_mean_sampling_audit | COMPLETE_READ_ONLY：双种子五模型K32，MSE方差扣除与共同月份区间；原数组/基础场不改 | [收益与均值误差](research_notes/2026-11-26-diffusion-benefits-and-mean-error.md)；[分析报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_diffusion_mean_sampling_audit/REPORT.md) |
-| 20261126_weather_projective_gp | TWO_SEED_IN_PROGRESS：G175/G265相关核各3000；冻结均值和尺度；masked/metric真实4更新通过 | [新架构与机制](research_notes/2026-11-26-weather-projective-trajectory.md)；[精确公式](superpowers/specs/2026-11-26-weather-projective-gp.md) |
+| 20261126_weather_projective_gp | G175_TWO_SEED_COMPLETE；G265_IN_PROGRESS：均值/尺度逐值继承，近邻F6合并改善20.29% | [新架构与机制](research_notes/2026-11-26-weather-projective-trajectory.md)；[精确公式](superpowers/specs/2026-11-26-weather-projective-gp.md) |
 | 20261126_weather_transport_gap_metric | ENGINEERING_COMPLETE：Local/Affine各4更新1435轨迹；正式3000衔接待GP完成 | [实现与执行计划](superpowers/plans/2026-11-26-weather-projective-gp.md) |
 | 20261126_gp_process_calendar15 | SEED42_COMPLETE；SEED17_IN_PROGRESS：冻结Full/Local/参考补充开发日期，无训练 | [冻结验证合同](superpowers/plans/2026-11-26-frozen-spatial-dependence-verification.md) |
 | 20261126_mean_fusion_v2 | TWO_SEED_COMPLETE：C/H/S同源各新增3000块、raw/EMA；H当前R9.811031mm，H−C区间低于0 | [独立均值续训设计](superpowers/specs/2026-11-26-native-mean-fusion-v2.md) |

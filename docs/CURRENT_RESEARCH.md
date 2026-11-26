@@ -1,5 +1,7 @@
 # 当前研究进展：2026-11-26
 
+最新G175双种子3000块完成：[条件相关核阶段报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_projective_gp/g175_checkpoint/REPORT.md)。近邻F6差值解析CRPS改善21.13%/19.42%，合并20.29%，基础场与Gaussian均值/标准差逐值不变；中远距离结果和Full比较一起列出。G265及预注册扩散连接仍在执行。另已实现[均值保持的形状/尺度对照](superpowers/specs/2026-11-26-centered-nongaussian-control.md)，仅完成真实4更新小试，尚无正式成绩。
+
 研究优先级已据实测重排：[下一步突破方向](research_notes/2026-11-26-next-breakthrough-directions.md)。优先固定均值、校准天气/lead相关性，再检验有向时滞创新传递和训练空间分布；长历史、连续滚动场与频域作为独立后续候选。
 
 最新问题核验：[扩散收益与均值误差分离](research_notes/2026-11-26-diffusion-benefits-and-mean-error.md)。Full改善未来近邻差值CRPS13%–15%，当前/远距离及全场评分有代价；扣除有限成员方差后，Full当前均值MSE相对基础场的差值区间仍为正。点预测继续保留9.818mm基础场，天气相关核及Local/Affine衔接继续按固定方案验证。

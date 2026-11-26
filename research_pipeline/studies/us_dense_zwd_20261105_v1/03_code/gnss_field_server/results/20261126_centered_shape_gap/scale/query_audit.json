@@ -1,0 +1,144 @@
+{
+  "rows": [
+    {
+      "block": 0,
+      "queries": 1,
+      "analytic_mean_max_difference_mm": 0.0,
+      "coefficient_unit_variance_error": 0.0,
+      "sample_path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 0,
+      "queries": 64,
+      "analytic_mean_max_difference_mm": 0.0,
+      "coefficient_unit_variance_error": 0.0,
+      "sample_path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 0,
+      "queries": 128,
+      "analytic_mean_max_difference_mm": 0.0,
+      "coefficient_unit_variance_error": 0.0,
+      "sample_path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 0,
+      "queries": 137,
+      "analytic_mean_max_difference_mm": 0.0,
+      "coefficient_unit_variance_error": 0.0,
+      "sample_path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 6,
+      "queries": 1,
+      "analytic_mean_max_difference_mm": 0.0,
+      "coefficient_unit_variance_error": 0.0,
+      "sample_path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 6,
+      "queries": 64,
+      "analytic_mean_max_difference_mm": 0.0,
+      "coefficient_unit_variance_error": 0.0,
+      "sample_path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 6,
+      "queries": 128,
+      "analytic_mean_max_difference_mm": 0.0,
+      "coefficient_unit_variance_error": 0.0,
+      "sample_path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 6,
+      "queries": 137,
+      "analytic_mean_max_difference_mm": 0.0,
+      "coefficient_unit_variance_error": 0.0,
+      "sample_path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 12,
+      "queries": 1,
+      "analytic_mean_max_difference_mm": 0.0,
+      "coefficient_unit_variance_error": 0.0,
+      "sample_path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 12,
+      "queries": 64,
+      "analytic_mean_max_difference_mm": 0.0,
+      "coefficient_unit_variance_error": 0.0,
+      "sample_path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 12,
+      "queries": 128,
+      "analytic_mean_max_difference_mm": 0.0,
+      "coefficient_unit_variance_error": 0.0,
+      "sample_path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 12,
+      "queries": 137,
+      "analytic_mean_max_difference_mm": 0.0,
+      "coefficient_unit_variance_error": 0.0,
+      "sample_path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    }
+  ],
+  "engineering_only": true,
+  "source": {
+    "gaussian_protocol_sha256": "7d4d374e551d11706761353456fe899c0f63eb2936e7e4dd11378267ff4d03b1",
+    "gaussian_weights_sha256": "de73760a315c0b5bd4967023365df156daeda5fa2cf4418b30342a367c4cf51c",
+    "copula_sha256": "baa8b467e363cbcd146674fd431cbc4a4a78737841aad4ad5ae35943fa1fd4bf",
+    "training_embedding_manifest_sha256": "9a40d444992cb09fbb45b689ab42eb0cf39feb69b28ee71c4e75bf3e91445cf1",
+    "mean_weights_sha256": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508",
+    "normalization": {
+      "bias_mm": [
+        -0.18208724374050447,
+        0.08582369715246142,
+        0.39398403823050154,
+        0.6452158673219606,
+        0.8442499068392654,
+        1.0042661034666491,
+        1.1351475027338613
+      ],
+      "scale_mm": [
+        9.820845495491572,
+        10.630630735588428,
+        11.593580157773715,
+        12.656472346066382,
+        13.81153593138061,
+        14.966359888233054,
+        16.07272898562415
+      ],
+      "count": [
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603769.0,
+        4603767.0
+      ],
+      "role": "training_only"
+    },
+    "weather_gp_protocol_sha256": "f5f2159b70d9e110bcc4a6fd78fcd6e80566750f77217e0e65cbb5875c7a4fe5",
+    "weather_gp_weights_sha256": "58cdf6f64c9567574c01cc28dc27aa7423cb92460b0fcf635dcf6ea3154994a6"
+  },
+  "weights_sha256": "c2807a8fb40c06e08d5833248578c819e0ba8ebe32bf10353b920962cde00115",
+  "code_sha256": "349c2c252cd175f015483caf81d37d71565607f1aeb1c3025c8b443995f2bece",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}

@@ -1,0 +1,134 @@
+{
+  "rows": [
+    {
+      "block": 0,
+      "queries": 1,
+      "kernel_max_difference": 1.9113919225155485e-08,
+      "path_max_difference_mm": 1.4683806497090233e-06,
+      "path_rms_difference_mm": 4.149150474769177e-07
+    },
+    {
+      "block": 0,
+      "queries": 64,
+      "kernel_max_difference": 3.620862094599886e-07,
+      "path_max_difference_mm": 3.5585196009643507e-06,
+      "path_rms_difference_mm": 3.3849925300767455e-07
+    },
+    {
+      "block": 0,
+      "queries": 128,
+      "kernel_max_difference": 4.649036914328164e-07,
+      "path_max_difference_mm": 3.295942415937243e-06,
+      "path_rms_difference_mm": 3.718772827061963e-07
+    },
+    {
+      "block": 0,
+      "queries": 137,
+      "kernel_max_difference": 0.0,
+      "path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 6,
+      "queries": 1,
+      "kernel_max_difference": 4.750545179454946e-08,
+      "path_max_difference_mm": 1.5798253256873513e-06,
+      "path_rms_difference_mm": 4.641429064366751e-07
+    },
+    {
+      "block": 6,
+      "queries": 64,
+      "kernel_max_difference": 5.737343832801223e-07,
+      "path_max_difference_mm": 2.4208949712097512e-06,
+      "path_rms_difference_mm": 3.1992254105476505e-07
+    },
+    {
+      "block": 6,
+      "queries": 128,
+      "kernel_max_difference": 4.9540187380126e-07,
+      "path_max_difference_mm": 2.9593233137685756e-06,
+      "path_rms_difference_mm": 3.544021234246333e-07
+    },
+    {
+      "block": 6,
+      "queries": 137,
+      "kernel_max_difference": 0.0,
+      "path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 12,
+      "queries": 1,
+      "kernel_max_difference": 5.0230300419062957e-08,
+      "path_max_difference_mm": 1.982463044623778e-06,
+      "path_rms_difference_mm": 3.5925717451920597e-07
+    },
+    {
+      "block": 12,
+      "queries": 64,
+      "kernel_max_difference": 5.752686352833436e-07,
+      "path_max_difference_mm": 2.5951094551887956e-06,
+      "path_rms_difference_mm": 3.6839061919333993e-07
+    },
+    {
+      "block": 12,
+      "queries": 128,
+      "kernel_max_difference": 4.226193496270625e-07,
+      "path_max_difference_mm": 3.86792856928155e-06,
+      "path_rms_difference_mm": 3.848950303388386e-07
+    },
+    {
+      "block": 12,
+      "queries": 137,
+      "kernel_max_difference": 0.0,
+      "path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    }
+  ],
+  "engineering_only": false,
+  "source": {
+    "gaussian_protocol_sha256": "c1f1e011fdcece1a605515acdd507996067036e0570fed9cae7c8bcf6c2386f0",
+    "gaussian_weights_sha256": "846d8e3af3bd25c4d827a80fa359a32865be059edd57168d0453e6217e64eb10",
+    "copula_sha256": "206c8bb2d915131f1e553e3442745f11abbe7ccfdb1da21da5168a618eede405",
+    "training_embedding_manifest_sha256": "59a1a973c723df20b81bff18515539f58649eeba0b3c3c97f422451f1a36f1d9",
+    "mean_weights_sha256": "68b8625b973897dba7ad89bd23d74ced2c6e123742a7889fdbc140bd5ac536e8",
+    "normalization": {
+      "bias_mm": [
+        -0.3191206658246343,
+        -0.2356088196125176,
+        -0.06838680860587248,
+        0.06610386056868962,
+        0.17816621285081177,
+        0.2986640770915261,
+        0.4088863253034804
+      ],
+      "scale_mm": [
+        9.847583624875096,
+        10.649084493794433,
+        11.601293686841542,
+        12.66060461674355,
+        13.817742383047642,
+        14.969984847430231,
+        16.075119820156544
+      ],
+      "count": [
+        4603792.0,
+        4603779.0,
+        4603766.0,
+        4603753.0,
+        4603741.0,
+        4603728.0,
+        4603714.0
+      ],
+      "role": "training_only"
+    },
+    "weather_gp_protocol_sha256": "4f2ac32c552e621a10faa94db5e5373a30f405f4df96bc3ed350ee03ea72bee8",
+    "weather_gp_weights_sha256": "e1d899fa2581a87adb8030b9e669bbd28b858194f97e47d11e4e254c9d29a9fb",
+    "weather_gp_seal_sha256": "9df91d5371e73ce3786124a0d416355906a2d960781e86729377d945568f6677"
+  },
+  "code_sha256": "b0dfc7bf2e29eef2c86932995e9a2aa914217b336799cc28577e21796a2e7a61",
+  "transport_weights_sha256": null,
+  "meaning": "Fixed visible histories and common superset GP initial path; no labels used; different Cholesky roots with the same seed are not a path-coupling test",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}

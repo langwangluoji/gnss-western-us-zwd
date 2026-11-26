@@ -8,6 +8,7 @@ from campaign import ROOT,RESULTS,STOP,read,run
 from tools.terrain_diffusion.native_model_seal import seal_completed_model,validate_model_seal,evaluation_marker
 from tools.terrain_diffusion.native_weather_gp_experiment import codes as gp_codes
 from tools.terrain_diffusion.native_centered_shape_experiment import codes
+from centered_artifact_audit import centered_marker,joint_marker
 
 
 def main():
@@ -34,8 +35,9 @@ def main():
     if not args.smoke:
         reference=root/'reference'
         run('native_centered_shape_experiment',['--phase','reference','--cache',cache/f'calendar8_s{seed}',
-            '--embeddings',emb/f'{name}_dev_s{seed}','--out',reference,*common],evaluation_marker(reference))
-        evaluation_marker(reference);targets.append(reference)
+            '--embeddings',emb/f'{name}_dev_s{seed}','--out',reference,*common],
+            centered_marker(reference,gp,cache/f'calendar8_s{seed}',emb/f'{name}_dev_s{seed}','reference'))
+        centered_marker(reference,gp,cache/f'calendar8_s{seed}',emb/f'{name}_dev_s{seed}','reference');targets.append(reference)
     for mode in ('scale','shape','both'):
         folder=root/mode
         run('native_centered_shape_experiment',['--phase','train','--mode',mode,'--cache',traincache,'--embeddings',trainemb,
@@ -45,13 +47,19 @@ def main():
         if args.smoke:continue
         seal=validate_model_seal(folder,'COMPLETE_CENTERED_SHAPE',codes());evaluation=folder/'eval'
         run('native_centered_shape_experiment',['--phase','evaluate','--cache',cache/f'calendar8_s{seed}',
-            '--embeddings',emb/f'{name}_dev_s{seed}','--model',folder,'--out',evaluation,*common],evaluation_marker(evaluation,seal))
-        evaluation_marker(evaluation,seal);targets.append(evaluation)
+            '--embeddings',emb/f'{name}_dev_s{seed}','--model',folder,'--out',evaluation,*common],
+            centered_marker(evaluation,gp,cache/f'calendar8_s{seed}',emb/f'{name}_dev_s{seed}',mode,folder))
+        centered_marker(evaluation,gp,cache/f'calendar8_s{seed}',emb/f'{name}_dev_s{seed}',mode,folder);targets.append(evaluation)
     for target in targets:
         if STOP.exists():raise SystemExit(75)
-        if not (target/'joint_metrics.json').exists():
-            subprocess.run([sys.executable,str(Path(__file__).with_name('probability_joint_audit.py')),
+        script=Path(__file__).with_name('probability_joint_audit.py')
+        if joint_marker(target,script) is None:
+            subprocess.run([sys.executable,str(script),
                 '--cache',str(cache/f'calendar8_s{seed}'),'--evaluation',str(target),'--out',str(target)],cwd=ROOT,check=True)
+        joint_marker(target,script)
+    if STOP.exists():raise SystemExit(75)
+    subprocess.run([sys.executable,str(Path(__file__).with_name('centered_query_audit.py')),'--seed',str(seed),
+        *( ['--smoke'] if args.smoke else [])],cwd=ROOT,check=True)
 
 
 if __name__=='__main__':main()

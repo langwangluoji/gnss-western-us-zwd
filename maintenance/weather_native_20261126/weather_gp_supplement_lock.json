@@ -1,0 +1,105 @@
+{
+  "policy": "Freeze all final3000 G175/G265 per seed, do not select by extra-date score; G175 known weights below; G265 final status+seal+config+source required when ready",
+  "sources": {
+    "42": {
+      "c175": {
+        "weights_sha256": "ffbad47866afc274d6fa34ea2966715e1cde5d4df7ea25e06a8e6bb05e2719a5",
+        "protocol_sha256": "82e9d68b286649f96c6ffe6084ff3fe81b0f3ad568c0e055efadd77797da5a32",
+        "source": {
+          "gaussian_protocol_sha256": "7d4d374e551d11706761353456fe899c0f63eb2936e7e4dd11378267ff4d03b1",
+          "gaussian_weights_sha256": "de73760a315c0b5bd4967023365df156daeda5fa2cf4418b30342a367c4cf51c",
+          "copula_sha256": "baa8b467e363cbcd146674fd431cbc4a4a78737841aad4ad5ae35943fa1fd4bf",
+          "training_embedding_manifest_sha256": "9a40d444992cb09fbb45b689ab42eb0cf39feb69b28ee71c4e75bf3e91445cf1",
+          "mean_weights_sha256": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508",
+          "normalization": {
+            "bias_mm": [
+              -0.18208724374050447,
+              0.08582369715246142,
+              0.39398403823050154,
+              0.6452158673219606,
+              0.8442499068392654,
+              1.0042661034666491,
+              1.1351475027338613
+            ],
+            "scale_mm": [
+              9.820845495491572,
+              10.630630735588428,
+              11.593580157773715,
+              12.656472346066382,
+              13.81153593138061,
+              14.966359888233054,
+              16.07272898562415
+            ],
+            "count": [
+              4603770.0,
+              4603770.0,
+              4603770.0,
+              4603770.0,
+              4603770.0,
+              4603769.0,
+              4603767.0
+            ],
+            "role": "training_only"
+          }
+        }
+      }
+    },
+    "17": {
+      "c175": {
+        "weights_sha256": "e1d899fa2581a87adb8030b9e669bbd28b858194f97e47d11e4e254c9d29a9fb",
+        "protocol_sha256": "4f2ac32c552e621a10faa94db5e5373a30f405f4df96bc3ed350ee03ea72bee8",
+        "source": {
+          "gaussian_protocol_sha256": "c1f1e011fdcece1a605515acdd507996067036e0570fed9cae7c8bcf6c2386f0",
+          "gaussian_weights_sha256": "846d8e3af3bd25c4d827a80fa359a32865be059edd57168d0453e6217e64eb10",
+          "copula_sha256": "206c8bb2d915131f1e553e3442745f11abbe7ccfdb1da21da5168a618eede405",
+          "training_embedding_manifest_sha256": "59a1a973c723df20b81bff18515539f58649eeba0b3c3c97f422451f1a36f1d9",
+          "mean_weights_sha256": "68b8625b973897dba7ad89bd23d74ced2c6e123742a7889fdbc140bd5ac536e8",
+          "normalization": {
+            "bias_mm": [
+              -0.3191206658246343,
+              -0.2356088196125176,
+              -0.06838680860587248,
+              0.06610386056868962,
+              0.17816621285081177,
+              0.2986640770915261,
+              0.4088863253034804
+            ],
+            "scale_mm": [
+              9.847583624875096,
+              10.649084493794433,
+              11.601293686841542,
+              12.66060461674355,
+              13.817742383047642,
+              14.969984847430231,
+              16.075119820156544
+            ],
+            "count": [
+              4603792.0,
+              4603779.0,
+              4603766.0,
+              4603753.0,
+              4603741.0,
+              4603728.0,
+              4603714.0
+            ],
+            "role": "training_only"
+          }
+        }
+      }
+    }
+  },
+  "views": [
+    175,
+    265
+  ],
+  "steps": 3000,
+  "device": "cpu",
+  "members": 32,
+  "sample_seed": 261126,
+  "calendar": "2020 each month15-17,72 continuous hours x3layouts x137queries",
+  "primary": "analytic Gaussian station-pair CRPS h0/h6; exact invariant mean/std vs CPU reference",
+  "secondary": "K32 IID fair energy, increments, coverage",
+  "development_exposed": true,
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}
