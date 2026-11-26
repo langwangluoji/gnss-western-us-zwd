@@ -1,0 +1,9 @@
+{
+  "step": 3000,
+  "supervised_updates": 3000,
+  "nll_per_dimension": 2.8463031713247298,
+  "finite_target_cells": 2688,
+  "total_finite_target_cells": 8056636,
+  "active_origins": 12,
+  "seconds": 5.14000000001397
+}

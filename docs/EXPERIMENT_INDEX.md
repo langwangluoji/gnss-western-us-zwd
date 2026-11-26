@@ -1,6 +1,14 @@
 # 当前区域实验索引
 
-2026-11-26执行中：[有向站点×lag完整架构](superpowers/specs/2026-11-26-directed-lag-transport.md)、[v2修正与版本合同](superpowers/specs/2026-11-26-directed-lag-v2.md)、[v1工程停止证据](research_notes/2026-11-26-directed-normalization-correction.md)。v2四组同预算3000训练队列已启动，正式指标待生成；v1部分权重不排名、不续用为v2。
+2026-11-26阶段收束：[全部工作、最佳架构与精度总报告](research_notes/2026-11-26-final-research-summary.md)。有向时滞v2、共享诱导创新流、完整场尾部及末轮天气尺度/同协方差Student-t均已完成。当前I1主/补/合并9.817/10.740/10.320mm；joint v2 F6为13.852/16.078/15.054mm。最终六模型与十二评价核验通过，按用户要求停止新增实验。
+
+| 最终实验 | 状态 | 结果入口 |
+|---|---|---|
+| 天气尺度与同协方差Student-t | COMPLETE：两种子三臂各3000块，监督2999/3000；12组K32评价 | [完整概率评分与区间](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_scale_tail/paired/REPORT.md) |
+| 有向时滞joint v2 | COMPLETE：双种子同预算、raw/EMA、两日历 | [精度与分层](research_notes/2026-11-26-directed-lag-v2-results.md) |
+| 两日历最终点指标 | COMPLETE_READ_ONLY：72抽样日重算，无新训练/日期 | [数值与来源](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_final_research_summary/point_metrics.json) |
+
+以下条目为阶段历史快照；其中进行中或待完成措辞按当时记录保留，最终状态以上表、总报告及实际锁为准。
 
 2026-11-26完成：[留站创新96块真实诊断](research_notes/2026-11-26-leaveout-innovation-panel-results.md)、[七组探针完整指标与分层](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_leaveout_innovation_panel/paired/REPORT.md)、[R²及能量分析](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_leaveout_innovation_panel/paired/RESIDUAL_ENERGY.md)。双种子各48个月块，LOSO创新尺度增大但额外线性收益区间跨零；原基础模型已拟合2019，这是训练池探针迁移，不与2020约9.8mm排名混用。
 

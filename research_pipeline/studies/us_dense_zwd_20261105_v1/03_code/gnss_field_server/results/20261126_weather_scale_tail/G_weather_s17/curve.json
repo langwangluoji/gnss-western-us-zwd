@@ -1,0 +1,281 @@
+[
+  {
+    "step": 1,
+    "supervised_updates": 1,
+    "nll_per_dimension": 3.312983595400356,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 2688,
+    "active_origins": 12,
+    "seconds": 0.030999999988125637
+  },
+  {
+    "step": 100,
+    "supervised_updates": 100,
+    "nll_per_dimension": 2.827191977679966,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 268800,
+    "active_origins": 12,
+    "seconds": 0.21799999999348074
+  },
+  {
+    "step": 200,
+    "supervised_updates": 200,
+    "nll_per_dimension": 3.113946662943556,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 537600,
+    "active_origins": 12,
+    "seconds": 0.4210000000020955
+  },
+  {
+    "step": 300,
+    "supervised_updates": 300,
+    "nll_per_dimension": 3.1098960246890504,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 806400,
+    "active_origins": 12,
+    "seconds": 0.5929999999934807
+  },
+  {
+    "step": 400,
+    "supervised_updates": 400,
+    "nll_per_dimension": 3.546247248148108,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 1075200,
+    "active_origins": 12,
+    "seconds": 0.7339999999967404
+  },
+  {
+    "step": 500,
+    "supervised_updates": 500,
+    "nll_per_dimension": 3.4551941936553323,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 1344000,
+    "active_origins": 12,
+    "seconds": 0.8900000000139698
+  },
+  {
+    "step": 600,
+    "supervised_updates": 600,
+    "nll_per_dimension": 3.3079646538752576,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 1612800,
+    "active_origins": 12,
+    "seconds": 1.0460000000020955
+  },
+  {
+    "step": 700,
+    "supervised_updates": 700,
+    "nll_per_dimension": 3.312051255910388,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 1881600,
+    "active_origins": 12,
+    "seconds": 1.2030000000086147
+  },
+  {
+    "step": 800,
+    "supervised_updates": 800,
+    "nll_per_dimension": 3.3634284211606165,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 2150400,
+    "active_origins": 12,
+    "seconds": 1.3429999999934807
+  },
+  {
+    "step": 900,
+    "supervised_updates": 900,
+    "nll_per_dimension": 3.0043380077881605,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 2419200,
+    "active_origins": 12,
+    "seconds": 1.4839999999967404
+  },
+  {
+    "step": 1000,
+    "supervised_updates": 1000,
+    "nll_per_dimension": 3.021955199281299,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 2688000,
+    "active_origins": 12,
+    "seconds": 1.687000000005355
+  },
+  {
+    "step": 1100,
+    "supervised_updates": 1100,
+    "nll_per_dimension": 3.8188012646458254,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 2956800,
+    "active_origins": 12,
+    "seconds": 1.8429999999934807
+  },
+  {
+    "step": 1200,
+    "supervised_updates": 1200,
+    "nll_per_dimension": 3.4003667690421726,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 3225600,
+    "active_origins": 12,
+    "seconds": 2.0309999999881256
+  },
+  {
+    "step": 1300,
+    "supervised_updates": 1300,
+    "nll_per_dimension": 3.43140147451084,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 3494400,
+    "active_origins": 12,
+    "seconds": 2.1710000000020955
+  },
+  {
+    "step": 1400,
+    "supervised_updates": 1400,
+    "nll_per_dimension": 2.854982816402958,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 3763200,
+    "active_origins": 12,
+    "seconds": 2.3280000000086147
+  },
+  {
+    "step": 1500,
+    "supervised_updates": 1500,
+    "nll_per_dimension": 3.356381973640147,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 4032000,
+    "active_origins": 12,
+    "seconds": 2.5
+  },
+  {
+    "step": 1600,
+    "supervised_updates": 1600,
+    "nll_per_dimension": 3.133195376018142,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 4300800,
+    "active_origins": 12,
+    "seconds": 2.687000000005355
+  },
+  {
+    "step": 1700,
+    "supervised_updates": 1700,
+    "nll_per_dimension": 3.1160659401452406,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 4564308,
+    "active_origins": 12,
+    "seconds": 2.937000000005355
+  },
+  {
+    "step": 1800,
+    "supervised_updates": 1800,
+    "nll_per_dimension": 3.3271159392015868,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 4833108,
+    "active_origins": 12,
+    "seconds": 3.0929999999934807
+  },
+  {
+    "step": 1900,
+    "supervised_updates": 1900,
+    "nll_per_dimension": 3.451497890131389,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 5101790,
+    "active_origins": 12,
+    "seconds": 3.26500000001397
+  },
+  {
+    "step": 2000,
+    "supervised_updates": 2000,
+    "nll_per_dimension": 3.549347730955123,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 5370590,
+    "active_origins": 12,
+    "seconds": 3.4679999999934807
+  },
+  {
+    "step": 2100,
+    "supervised_updates": 2100,
+    "nll_per_dimension": 3.4007873983918073,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 5639390,
+    "active_origins": 12,
+    "seconds": 3.6089999999967404
+  },
+  {
+    "step": 2200,
+    "supervised_updates": 2200,
+    "nll_per_dimension": 3.0628107794340127,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 5908190,
+    "active_origins": 12,
+    "seconds": 3.76500000001397
+  },
+  {
+    "step": 2300,
+    "supervised_updates": 2300,
+    "nll_per_dimension": 3.4275729627882754,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 6176989,
+    "active_origins": 12,
+    "seconds": 3.937000000005355
+  },
+  {
+    "step": 2400,
+    "supervised_updates": 2400,
+    "nll_per_dimension": 3.6401038085633135,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 6445789,
+    "active_origins": 12,
+    "seconds": 4.10899999999674
+  },
+  {
+    "step": 2500,
+    "supervised_updates": 2500,
+    "nll_per_dimension": 3.2017478126521763,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 6714589,
+    "active_origins": 12,
+    "seconds": 4.26500000001397
+  },
+  {
+    "step": 2600,
+    "supervised_updates": 2600,
+    "nll_per_dimension": 3.4905231185109606,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 6983389,
+    "active_origins": 12,
+    "seconds": 4.453000000008615
+  },
+  {
+    "step": 2700,
+    "supervised_updates": 2700,
+    "nll_per_dimension": 3.602569776653526,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 7252189,
+    "active_origins": 12,
+    "seconds": 4.655999999988126
+  },
+  {
+    "step": 2800,
+    "supervised_updates": 2800,
+    "nll_per_dimension": 2.8028505663844996,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 7520989,
+    "active_origins": 12,
+    "seconds": 4.842999999993481
+  },
+  {
+    "step": 2900,
+    "supervised_updates": 2900,
+    "nll_per_dimension": 3.009356158825554,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 7787836,
+    "active_origins": 12,
+    "seconds": 5.0
+  },
+  {
+    "step": 3000,
+    "supervised_updates": 3000,
+    "nll_per_dimension": 2.8463031713247298,
+    "finite_target_cells": 2688,
+    "total_finite_target_cells": 8056636,
+    "active_origins": 12,
+    "seconds": 5.14000000001397
+  }
+]

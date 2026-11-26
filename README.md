@@ -10,6 +10,7 @@
 
 | 入口 | 内容 |
 |---|---|
+| [阶段研究总报告与最佳架构](docs/research_notes/2026-11-26-final-research-summary.md) | 全部已完成工作、当前重建与六小时预报精度、扩散/频域归因、PNG/SVG架构；末轮完成后停止新增实验 |
 | [下一阶段计划与审阅](docs/NEXT_STAGE.md) | 统一阅读入口、因果边界、尺度公式、阶段出口和待补项 |
 | [当前研究进展](docs/CURRENT_RESEARCH.md) | 区域、数据角色、最新结果与证据范围 |
 | [实验索引](docs/EXPERIMENT_INDEX.md) | 当前区域实验、状态和报告 |

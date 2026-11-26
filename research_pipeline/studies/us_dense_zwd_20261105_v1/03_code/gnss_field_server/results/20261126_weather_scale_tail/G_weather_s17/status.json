@@ -1,0 +1,7 @@
+{
+  "status": "COMPLETE_WEATHER_CALIBRATION",
+  "steps": 3000,
+  "supervised_updates": 3000,
+  "seconds": 5.155999999988126,
+  "finite_target_cells": 8056636
+}

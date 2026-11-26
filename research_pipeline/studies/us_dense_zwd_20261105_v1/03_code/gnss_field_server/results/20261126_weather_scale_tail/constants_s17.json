@@ -1,0 +1,22 @@
+{
+  "seed": 17,
+  "nu": 20,
+  "grid_nll_per_dimension": {
+    "None": 3.2240733286564955,
+    "3": 3.2117785475346627,
+    "4": 3.2100228221673492,
+    "6": 3.2085371434442767,
+    "8": 3.2078072617196303,
+    "12": 3.2070764213265996,
+    "20": 3.2065973460211477,
+    "40": 3.2068244219078417,
+    "80": 3.208264664331576,
+    "160": 3.210922352380062,
+    "1000": 3.219380440959338
+  },
+  "training_cache_manifest_sha256": "071955fe32759276ad501b3723030b80a23c68ffdc36c8263c36a7a5c573ce76",
+  "covariance_G_weather_weights_sha256": "7861dec3ad5510ada9fd44d0e324fb0bbeec6aafefa0f4709ef821dc4d998dee",
+  "constant_scale2": 1.3195701892459977,
+  "role": "training-only analytic fit, not3000 neural updates",
+  "final_lock_sha256": "f81bc3477e73b0fc365d9967bb68339a03cbdfa923ef0cdaf88f140bd31d7084"
+}

@@ -1,6 +1,12 @@
 # 当前研究进展：2026-11-26
 
-按用户最新要求收束为[最后一轮天气条件Gaussian尺度与同协方差Student-t](superpowers/specs/2026-11-26-weather-scale-tail-final.md)：四份训练/开发统计缓存及真实四更新已完成，8项数学/生成和来源测试通过，v2锁已封存。随后只执行该队列与最终汇总，不再新增其他实验；详见[执行台账](superpowers/plans/2026-11-26-final-weather-calibration.md)。
+**阶段研究已收束，最后一轮已完成；停止新增实验。** 统一阅读[全部成果、最佳架构与精度总报告](research_notes/2026-11-26-final-research-summary.md)，含PNG/SVG架构、两日历合并评价、概率/扩散/频域归因、六类误差与重点区域。
+
+当前重建保留I1：主9.817064、补充10.740343、合并72抽样日10.319804mm。有向时滞joint v2主当前9.806169mm，但合并10.327014mm，对I1差异区间跨零；其六小时预报为主13.852222、补充16.077837、合并15.053927mm，推荐用于未来预报。
+
+[最后一轮天气尺度/同协方差Student-t](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_scale_tail/paired/REPORT.md)六模型与十二评价全部完成、独立复算通过。天气t对天气G的F6 CRPS减少0.011290mm，区间[-0.019208,-0.005174]；天气自适应尾部对常数t的额外收益未成立。原Affine time保留本轮最低F6 CRPS7.809858mm。概率分支沿用原TF3000均值，尚未在joint v2上重训，不能拼接精度。[最终执行台账](superpowers/plans/2026-11-26-final-weather-calibration.md)记录完成状态。
+
+以下为阶段历史记录；“待启动／进行中／下一项”按当时状态保留，当前状态以上述总报告和实际实验锁为准，不表示继续执行新队列。
 
 最新[完整场重尾探针](research_notes/2026-11-26-full-field-tail-probe-results.md)：两种子各48个固定训练块，2016–2018解析选择t20，2019探针迁移相对尺度Gaussian NLL/d减少0.021405，95%共同块区间[-0.034341,-0.009478]。源模型已拟合2019，并非整模型独立留年；真实径向PIT>95%由约56%–58%降至约17%–18%，仍高于5%参考。实际Gaussian生成自检符合chi-square参考，独立复核通过。尚无新增2020预报成绩；下一步先强化天气条件Gaussian尺度/相关控制，再检验完整场尾部机制。
 

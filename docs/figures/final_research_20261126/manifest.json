@@ -1,0 +1,16 @@
+{
+  "purpose": "render existing locked results; no new fitting or dates",
+  "sources": {
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_final_research_summary/point_metrics.json": "79f38a53aac20cede4196dd7b1b48e5531e1cf30dd5fbdff8e4d40a3647b8774",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_scale_tail/paired/summary.json": "da95d7bc15e7d9660ea4e654fb96ceba84b19253523786ea4dfee573fe650c33",
+    "maintenance/weather_native_20261126/final_research_figures.py": "08405a6ad839cf33b5bdce955262c496bfacf31ec92c31dc857a36708140c483"
+  },
+  "figures": {
+    "best_architecture.png": "0b94307224def55eeedeea007364f305e4e30e6ac9c4bd8c78178b0fa90df81c",
+    "best_architecture.svg": "6393853c84666e97bc290dcffff154ce7da2de682a472c7dddbc3bd00bd91aeb",
+    "final_training_curves.png": "2ebc8b918d766816e612a296d1c4b76552b959155fc81b8aa6c488d64cffb9a3",
+    "final_training_curves.svg": "18d9bb97caa0e888fda07c68c055016f2043df4c5d27f4143539925389636e67",
+    "performance_overview.png": "b98e92dcf15d60981fda27c95adfbcf523c01ab72c56c3981672edab34ad57b8",
+    "performance_overview.svg": "a42759a57ee4e59c4c4669c1c3f2d3151d3033191b06fbf419d57280d5d02675"
+  }
+}
