@@ -1,0 +1,9 @@
+{
+  "status": "published",
+  "verified_content_commit": "8d04c30b246a3e65d4b09ab153247df95be83fc8",
+  "verified_remote_main": "8d04c30b246a3e65d4b09ab153247df95be83fc8",
+  "verified_remote_research_branch": "8d04c30b246a3e65d4b09ab153247df95be83fc8",
+  "backup_tag": "archive/pre-paper-restructure-20261126",
+  "backup_commit": "b7287371ab198d03e7a0700995f1afcca04016ee",
+  "note": "This metadata-only delivery record follows the verified content publication; delivery session rechecks final HEAD on both remote branches."
+}

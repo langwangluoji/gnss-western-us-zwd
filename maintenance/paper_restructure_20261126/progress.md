@@ -56,3 +56,9 @@ Final integrity scope:16164 scientific protected files/92250828293 bytes,
 all matched. Six rebuilt egg-info metadata files and this task's mutable plan
 are explicitly excluded; the full second-run log and plan SHA transition are
 retained. No historical science file is excused as a mutable task document.
+
+Task6: complete — published content8d04c30b246a3e65d4b09ab153247df95be83fc8
+to both origin/main and origin/codex/paper-ready-restructure; archive/pre-paper-
+restructure-20261126 points to originalb728737. All three remote refs verified.
+This final metadata-only record follows the verified content publication; final
+delivery checks compare current local HEAD with both remote branch refs again.

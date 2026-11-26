@@ -15,7 +15,7 @@ future-independent query selection, cross-fitted residuals and full-year evaluat
   full-year development; freeze before registered confirmation access.
 - [x] 5a. Existing evidence catalog, module attribution, architecture/result guide.
 - [ ] 5b. New eight figure groups following formal experiment expansion.
-- [ ] 6. Clean checkout validation, independent review, default-main release.
+- [x] 6. Clean checkout validation, independent review, default-main release.
 
 ## Scientific contract
 
