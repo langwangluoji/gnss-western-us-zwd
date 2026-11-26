@@ -1,0 +1,23 @@
+{
+  "cache_manifest_sha256": "4d9dce850b72e561bad8bd6451738859aff3aa214c7547858a01fe69769c7aa2",
+  "embedding_manifest_sha256": "0246a83a926cf54cc92a10a29c72a887e3ca6fd1104f53a3cb52eba989716dfc",
+  "code_sha256": {
+    "native_directed_lag_v2.py": "5f7d88746188759032241e92bb1404f76d743862dba6b7b4a261ec3d332e31f8",
+    "native_directed_lag_v2_experiment.py": "b5de8a00cd2e237fa78f30b17b44f10f166f590104c6d80eef0b120af0fed463",
+    "native_directed_lag.py": "7da5812e1fe14f12d0d44c3d50a050316c3205df79cb7a1529125de873986260",
+    "native_directed_lag_experiment.py": "c94fd3edef3887b22b23f5c04ffadfa99848eaf105ef03860801d0321ca52ae8",
+    "native_increment_loss.py": "add00a4631a39247b399ed024e3a2be5d7712c1bf1a55e1f35635a9c0df56fe6",
+    "native_increment_experiment.py": "d46b52c718b254c17c479bee0f08c578a68cdba2f001dd0cddf278aba924c07b",
+    "native_model_seal.py": "6a286fbbcf58926118a4228881f629b99596ca70ec1cd7031f77904b03c68fe5",
+    "native_mean_fusion_v2.py": "9c8bb43a97d65dd00fb0395ea680fc9a8f350c8dea446327c736ab6c98308a06",
+    "native_mean_fusion_v2_experiment.py": "ad7fbbfa5add66750b7973a893e0de3dc410794fc836f9a9adbdf69db0a12b4a",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_physics_lm.py": "1cc6e3450745548dfb1a86502402a95cf1c27370427e81884bee1cf353d71bd6",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be"
+  },
+  "prediction_sha256": "21b741305934a656e36bc1dcfc32c7c74c03edfca70b5dbd84599428e99788ae",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}

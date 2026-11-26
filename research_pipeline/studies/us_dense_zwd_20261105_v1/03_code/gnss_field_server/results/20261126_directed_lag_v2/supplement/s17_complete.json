@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "seed": 17,
+  "calendar_day": 15,
+  "no_fitting": true,
+  "main_summary_sha256": "2b30598eb73d826cd0945ed8b6520c86bd5424880af031214f8e46506bacb354",
+  "cache_manifest_sha256": "4d9dce850b72e561bad8bd6451738859aff3aa214c7547858a01fe69769c7aa2",
+  "strict_oof": false,
+  "confirmation_C_D_read": false,
+  "code_sha256": "465ab733c0711a83a0cd8fe684b8f787eb8fa4a6dfc65c63d336a064e5bd0c7f"
+}

@@ -1,0 +1,314 @@
+{
+  "complete": true,
+  "traces": {
+    "affine_time": [
+      {
+        "step": 1,
+        "loss": 0.7770045655298048,
+        "gradient_norm": 0.04536169394850731,
+        "flow_gradient_norm": 0.010581310116862705,
+        "phi_gradient_norm": 0.004092731513082981,
+        "terms": {
+          "marginal": 0.4737447500228882,
+          "increment": 0.47782759365299854,
+          "pair": 0.4976604560638772,
+          "energy": 0.5938780307769775
+        },
+        "finite_labels": 2688,
+        "first_origin_hour": 403369,
+        "pair_count": 16,
+        "inducing_variance_fraction": 0.07702413382788975,
+        "seconds": 1.875
+      },
+      {
+        "step": 2,
+        "loss": 0.8097564409055311,
+        "gradient_norm": 0.04996607080101967,
+        "flow_gradient_norm": 0.020353573034603112,
+        "phi_gradient_norm": 0.006147829815745354,
+        "terms": {
+          "marginal": 0.5134100914001465,
+          "increment": 0.48072294193381687,
+          "pair": 0.44933141665901066,
+          "energy": 0.6383275985717773
+        },
+        "finite_labels": 2688,
+        "first_origin_hour": 403381,
+        "pair_count": 16,
+        "inducing_variance_fraction": 0.08529001914810137,
+        "seconds": 2.0310000000172295
+      },
+      {
+        "step": 3,
+        "loss": 0.7804314938025269,
+        "gradient_norm": 0.059566982090473175,
+        "flow_gradient_norm": 0.01673672981689131,
+        "phi_gradient_norm": 0.005711640231311321,
+        "terms": {
+          "marginal": 0.49184805154800415,
+          "increment": 0.41658683476363667,
+          "pair": 0.49149637933521134,
+          "energy": 0.6156263947486877
+        },
+        "finite_labels": 2688,
+        "first_origin_hour": 403393,
+        "pair_count": 16,
+        "inducing_variance_fraction": 0.08666919945344287,
+        "seconds": 2.2030000000086147
+      },
+      {
+        "step": 4,
+        "loss": 0.816991379024542,
+        "gradient_norm": 0.029579877853393555,
+        "flow_gradient_norm": 0.014736275074157819,
+        "phi_gradient_norm": 0.006594328675419092,
+        "terms": {
+          "marginal": 0.524596095085144,
+          "increment": 0.45072235953695305,
+          "pair": 0.4553859509318661,
+          "energy": 0.6586820483207703
+        },
+        "finite_labels": 2688,
+        "first_origin_hour": 403405,
+        "pair_count": 16,
+        "inducing_variance_fraction": 0.09234295103742608,
+        "seconds": 2.359000000025844
+      }
+    ],
+    "affine_frequency": [
+      {
+        "step": 1,
+        "loss": 0.7770045655298048,
+        "gradient_norm": 0.045239128172397614,
+        "flow_gradient_norm": 0.010042889345205972,
+        "phi_gradient_norm": 0.004092731513082981,
+        "terms": {
+          "marginal": 0.4737447500228882,
+          "increment": 0.47782759365299854,
+          "pair": 0.4976604560638772,
+          "energy": 0.5938780307769775
+        },
+        "finite_labels": 2688,
+        "first_origin_hour": 403369,
+        "pair_count": 16,
+        "inducing_variance_fraction": 0.07702413382788975,
+        "seconds": 2.5310000000172295
+      },
+      {
+        "step": 2,
+        "loss": 0.8097650942027783,
+        "gradient_norm": 0.04919925332069397,
+        "flow_gradient_norm": 0.01818324552614656,
+        "phi_gradient_norm": 0.006161438301205635,
+        "terms": {
+          "marginal": 0.5134190320968628,
+          "increment": 0.4807173781012975,
+          "pair": 0.44933189698709824,
+          "energy": 0.6383374333381653
+        },
+        "finite_labels": 2688,
+        "first_origin_hour": 403381,
+        "pair_count": 16,
+        "inducing_variance_fraction": 0.08529001914810137,
+        "seconds": 2.672000000020489
+      },
+      {
+        "step": 3,
+        "loss": 0.7804502403882674,
+        "gradient_norm": 0.05898502096533775,
+        "flow_gradient_norm": 0.01446649557880684,
+        "phi_gradient_norm": 0.005676929838955402,
+        "terms": {
+          "marginal": 0.49186229705810547,
+          "increment": 0.4166034263669677,
+          "pair": 0.4914892536690729,
+          "energy": 0.6156477332115173
+        },
+        "finite_labels": 2688,
+        "first_origin_hour": 403393,
+        "pair_count": 16,
+        "inducing_variance_fraction": 0.08666919945344287,
+        "seconds": 2.8280000000086147
+      },
+      {
+        "step": 4,
+        "loss": 0.8170111322065752,
+        "gradient_norm": 0.02958783134818077,
+        "flow_gradient_norm": 0.014623522005306032,
+        "phi_gradient_norm": 0.006555074825882912,
+        "terms": {
+          "marginal": 0.5246061682701111,
+          "increment": 0.4507408486005896,
+          "pair": 0.45540051941524046,
+          "energy": 0.6586962342262268
+        },
+        "finite_labels": 2688,
+        "first_origin_hour": 403405,
+        "pair_count": 16,
+        "inducing_variance_fraction": 0.09234295103742608,
+        "seconds": 3.0
+      }
+    ],
+    "odd_time": [
+      {
+        "step": 1,
+        "loss": 0.7770045655298048,
+        "gradient_norm": 0.0488477386534214,
+        "flow_gradient_norm": 0.02098528728060756,
+        "phi_gradient_norm": 0.004092731513082981,
+        "terms": {
+          "marginal": 0.4737447500228882,
+          "increment": 0.47782759365299854,
+          "pair": 0.4976604560638772,
+          "energy": 0.5938780307769775
+        },
+        "finite_labels": 2688,
+        "first_origin_hour": 403369,
+        "pair_count": 16,
+        "inducing_variance_fraction": 0.07702413382788975,
+        "seconds": 3.234000000025844
+      },
+      {
+        "step": 2,
+        "loss": 0.8097612949879203,
+        "gradient_norm": 0.060826096683740616,
+        "flow_gradient_norm": 0.04022302388716023,
+        "phi_gradient_norm": 0.006175075192004442,
+        "terms": {
+          "marginal": 0.513410210609436,
+          "increment": 0.4807410844127631,
+          "pair": 0.449331617626015,
+          "energy": 0.6383290886878967
+        },
+        "finite_labels": 2688,
+        "first_origin_hour": 403381,
+        "pair_count": 16,
+        "inducing_variance_fraction": 0.08529001914810137,
+        "seconds": 3.4530000000086147
+      },
+      {
+        "step": 3,
+        "loss": 0.7804715206692039,
+        "gradient_norm": 0.06419932097196579,
+        "flow_gradient_norm": 0.029367454737735624,
+        "phi_gradient_norm": 0.00572064658626914,
+        "terms": {
+          "marginal": 0.4918805658817291,
+          "increment": 0.4165947410889533,
+          "pair": 0.4915063041895242,
+          "energy": 0.6156569123268127
+        },
+        "finite_labels": 2688,
+        "first_origin_hour": 403393,
+        "pair_count": 16,
+        "inducing_variance_fraction": 0.08666919945344287,
+        "seconds": 3.6560000000172295
+      },
+      {
+        "step": 4,
+        "loss": 0.8169784360981204,
+        "gradient_norm": 0.042289264500141144,
+        "flow_gradient_norm": 0.03361198206326623,
+        "phi_gradient_norm": 0.00657079229131341,
+        "terms": {
+          "marginal": 0.5245780348777771,
+          "increment": 0.4507216714733297,
+          "pair": 0.4554101181538323,
+          "energy": 0.6586745381355286
+        },
+        "finite_labels": 2688,
+        "first_origin_hour": 403405,
+        "pair_count": 16,
+        "inducing_variance_fraction": 0.09234295103742608,
+        "seconds": 3.9060000000172295
+      }
+    ],
+    "odd_frequency": [
+      {
+        "step": 1,
+        "loss": 0.7770045655298048,
+        "gradient_norm": 0.04893626645207405,
+        "flow_gradient_norm": 0.02119053995981087,
+        "phi_gradient_norm": 0.004092731513082981,
+        "terms": {
+          "marginal": 0.4737447500228882,
+          "increment": 0.47782759365299854,
+          "pair": 0.4976604560638772,
+          "energy": 0.5938780307769775
+        },
+        "finite_labels": 2688,
+        "first_origin_hour": 403369,
+        "pair_count": 16,
+        "inducing_variance_fraction": 0.07702413382788975,
+        "seconds": 4.125
+      },
+      {
+        "step": 2,
+        "loss": 0.8097636095385284,
+        "gradient_norm": 0.06071401759982109,
+        "flow_gradient_norm": 0.039999012194294865,
+        "phi_gradient_norm": 0.006174294278025627,
+        "terms": {
+          "marginal": 0.5134158730506897,
+          "increment": 0.4807275491718925,
+          "pair": 0.4493298837579937,
+          "energy": 0.6383337378501892
+        },
+        "finite_labels": 2688,
+        "first_origin_hour": 403381,
+        "pair_count": 16,
+        "inducing_variance_fraction": 0.08529001914810137,
+        "seconds": 4.312000000005355
+      },
+      {
+        "step": 3,
+        "loss": 0.780466896032646,
+        "gradient_norm": 0.06425801664590836,
+        "flow_gradient_norm": 0.02941311378485087,
+        "phi_gradient_norm": 0.005681752227246761,
+        "terms": {
+          "marginal": 0.4918786883354187,
+          "increment": 0.4165824848087146,
+          "pair": 0.4915062012019429,
+          "energy": 0.6156603693962097
+        },
+        "finite_labels": 2688,
+        "first_origin_hour": 403393,
+        "pair_count": 16,
+        "inducing_variance_fraction": 0.08666919945344287,
+        "seconds": 4.547000000020489
+      },
+      {
+        "step": 4,
+        "loss": 0.8169814852831059,
+        "gradient_norm": 0.03990717604756355,
+        "flow_gradient_norm": 0.030561547575246355,
+        "phi_gradient_norm": 0.00652794074267149,
+        "terms": {
+          "marginal": 0.5245797038078308,
+          "increment": 0.4507176907992804,
+          "pair": 0.4554175634873638,
+          "energy": 0.6586796641349792
+        },
+        "finite_labels": 2688,
+        "first_origin_hour": 403405,
+        "pair_count": 16,
+        "inducing_variance_fraction": 0.09234295103742608,
+        "seconds": 4.7810000000172295
+      }
+    ]
+  },
+  "parameters": {
+    "affine_time": 53421,
+    "affine_frequency": 53421,
+    "odd_time": 54161,
+    "odd_frequency": 54161
+  },
+  "initial_common_noise_loss_exact": true,
+  "subset_max_difference": 2.8308679020372374e-07,
+  "total_seconds": 4.7810000000172295,
+  "protocol_sha256": "22dc6ddc1225c0cfe36b5c2f1fc9f76a501f154bf013b50a8ce1940a148757b9",
+  "role": "engineering only; no development evaluation",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}

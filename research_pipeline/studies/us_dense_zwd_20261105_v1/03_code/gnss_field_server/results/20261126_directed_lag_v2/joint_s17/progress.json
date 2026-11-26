@@ -1,0 +1,24 @@
+{
+  "step": 3000,
+  "supervised_updates": 3000,
+  "loss": 1.039381742477417,
+  "query_loss": 0.8251892924308777,
+  "within_forecast_increment_loss": 0.20102868974208832,
+  "causal_station_loss": 0.856769859790802,
+  "auxiliary_label_cells": 1133424,
+  "finite_label_cells": 10752,
+  "cache_block": 2999,
+  "last_origin_hour": 404460,
+  "group_lrs": [
+    1e-05,
+    2.9999999999999997e-05
+  ],
+  "current_correction_rms_mm": 0.7760776877403259,
+  "future6_correction_rms_mm": 2.2381389141082764,
+  "seconds": 873.5939999999828,
+  "current_readout_weight_norm": 0.3850708305835724,
+  "current_readout_bias_norm": 0.042872846126556396,
+  "transport_readout_norm": 0.5349287986755371,
+  "transport_key_gradient_norm": 0.016238370910286903,
+  "peak_memory_allocated_mb": 1504.3505859375
+}

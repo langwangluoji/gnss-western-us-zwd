@@ -1,0 +1,104 @@
+{
+  "seed": 42,
+  "steps": 4,
+  "members": 8,
+  "queries": 32,
+  "device": "cpu",
+  "source": {
+    "gaussian_protocol_sha256": "7d4d374e551d11706761353456fe899c0f63eb2936e7e4dd11378267ff4d03b1",
+    "gaussian_weights_sha256": "de73760a315c0b5bd4967023365df156daeda5fa2cf4418b30342a367c4cf51c",
+    "copula_sha256": "baa8b467e363cbcd146674fd431cbc4a4a78737841aad4ad5ae35943fa1fd4bf",
+    "training_embedding_manifest_sha256": "9a40d444992cb09fbb45b689ab42eb0cf39feb69b28ee71c4e75bf3e91445cf1",
+    "mean_weights_sha256": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508",
+    "normalization": {
+      "bias_mm": [
+        -0.18208724374050447,
+        0.08582369715246142,
+        0.39398403823050154,
+        0.6452158673219606,
+        0.8442499068392654,
+        1.0042661034666491,
+        1.1351475027338613
+      ],
+      "scale_mm": [
+        9.820845495491572,
+        10.630630735588428,
+        11.593580157773715,
+        12.656472346066382,
+        13.81153593138061,
+        14.966359888233054,
+        16.07272898562415
+      ],
+      "count": [
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603769.0,
+        4603767.0
+      ],
+      "role": "training_only"
+    },
+    "weather_gp_protocol_sha256": "471b6de584b30e2aaac743bdcc9f940a18acabd7228db86c5e70b5fa35bc91f4",
+    "weather_gp_weights_sha256": "b217a2b5b99c4d8f8279322564df4afa8eb0574b8d36bc10388cef7c6bbf8ac4",
+    "cache_manifest_sha256": "cf672eed77e2b45c964b298404fcc731ce3e2232dafb69908a819359ff527baf",
+    "embedding_manifest_sha256": "9a40d444992cb09fbb45b689ab42eb0cf39feb69b28ee71c4e75bf3e91445cf1"
+  },
+  "code_sha256": {
+    "native_latent_flow.py": "ed8c210b98240bb2b0c40532c3ec3c39e7f4484d4ccae4738a9ed22d73fc05c5",
+    "native_inducing_flow.py": "c866c5cc290710433c1270e8822a7eaf1ec3a7a778018ec81ef849baa80a72fd",
+    "native_weather_gp.py": "330643f915c4771f318760d9d7c22784b01d064b89251488c1ab8c86bfcf3271"
+  },
+  "driver_sha256": "63ab808cfd5fd58c47f40da49d23917c67c1fdfd69366d6302a6b6738407f91e",
+  "pair_driver_sha256": "5efda5e20e060958f33d1e43bee5a57d4f4aadd032157df527c119565a8f762d",
+  "anchors": [
+    [
+      2.1220169464747114,
+      -3.023313283920288,
+      0.13793697953224182
+    ],
+    [
+      -1.7181255420049033,
+      4.143638213475546,
+      0.12743867933750153
+    ],
+    [
+      -0.21554425358772278,
+      0.033551619077722236,
+      2.5940654277801514
+    ],
+    [
+      1.789149840672811,
+      2.815569837888082,
+      1.221752405166626
+    ],
+    [
+      -1.7819432417551677,
+      0.7055812080701193,
+      0.11846668273210526
+    ],
+    [
+      0.0194017185519139,
+      -1.3369151949882507,
+      0.28774818778038025
+    ],
+    [
+      1.5212074915568035,
+      0.402265265583992,
+      1.1868655681610107
+    ],
+    [
+      -0.3892174611488978,
+      2.5424522161483765,
+      0.7471539378166199
+    ]
+  ],
+  "mean": "frozen TF3000; no S175 mean shift",
+  "std": "frozen S175 scale times conditional gs",
+  "noise": "independent eta and residual GP; gp_path=residual+W eta; latent eta is coupled",
+  "objective": "joint proper-score endpoint probability flow; not denoising matching",
+  "experimental_mode": "ENGINEERING_ONLY",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}

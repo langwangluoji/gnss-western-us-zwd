@@ -1,0 +1,32 @@
+{
+  "cache": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_cache_v2\\calendar15_s42",
+  "cache_manifest_sha256": "c25c24c56cde147ead8e029b406a57cbc39a2e0638c03e83c4f50d68e41f28e5",
+  "mean_protocol_sha256": "a41adf0c36d91ec4f08d9030b502f15a6e25edade036c5c35d708263962f5fb2",
+  "mean_weights_sha256": "7f8788a7702cc9942c40790a8da14d6b7584cd23a7d936e96be379b559ec9627",
+  "model_kind": "transformer",
+  "mean_variant": "directed_v2_factorized",
+  "weights": "ema",
+  "files": {
+    "embedding.npy": "071ec4619c2764a9a17b94b37422a1987d999233c6b005de464ff07ee9f02405",
+    "mean.npy": "60d65a0196cde42eb58a13cb9517079272d020dce21321589618dff63d08687c"
+  },
+  "complete": true,
+  "experimental_mode": "MATCHED_CONTINUATION",
+  "absolute_mean_definition": "cache.mean[:,:,None] + bounded correction_mm",
+  "code_sha256": {
+    "native_directed_lag_v2.py": "5f7d88746188759032241e92bb1404f76d743862dba6b7b4a261ec3d332e31f8",
+    "native_directed_lag_v2_experiment.py": "b5de8a00cd2e237fa78f30b17b44f10f166f590104c6d80eef0b120af0fed463",
+    "native_directed_lag.py": "7da5812e1fe14f12d0d44c3d50a050316c3205df79cb7a1529125de873986260",
+    "native_directed_lag_experiment.py": "c94fd3edef3887b22b23f5c04ffadfa99848eaf105ef03860801d0321ca52ae8",
+    "native_increment_loss.py": "add00a4631a39247b399ed024e3a2be5d7712c1bf1a55e1f35635a9c0df56fe6",
+    "native_increment_experiment.py": "d46b52c718b254c17c479bee0f08c578a68cdba2f001dd0cddf278aba924c07b",
+    "native_model_seal.py": "6a286fbbcf58926118a4228881f629b99596ca70ec1cd7031f77904b03c68fe5",
+    "native_mean_fusion_v2.py": "9c8bb43a97d65dd00fb0395ea680fc9a8f350c8dea446327c736ab6c98308a06",
+    "native_mean_fusion_v2_experiment.py": "ad7fbbfa5add66750b7973a893e0de3dc410794fc836f9a9adbdf69db0a12b4a",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_physics_lm.py": "1cc6e3450745548dfb1a86502402a95cf1c27370427e81884bee1cf353d71bd6",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be"
+  }
+}

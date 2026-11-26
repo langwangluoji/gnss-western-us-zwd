@@ -1,0 +1,36 @@
+[
+  {
+    "step": 1,
+    "loss": 0.7779923307924931,
+    "terms": {
+      "marginal": 0.4778051972389221,
+      "increment": 0.46765780779615024,
+      "pair": 0.4948258527942855,
+      "energy": 0.5956621766090393
+    },
+    "supervised_updates": 1,
+    "finite_labels": 2688,
+    "total_labels": 2688,
+    "flow_gradient_norm": 0.024511115762049333,
+    "inducing_variance_fraction": 0.07702413201332092,
+    "last_origin_hour": 403380,
+    "seconds": 0.5629999999946449
+  },
+  {
+    "step": 4,
+    "loss": 0.8394906126817603,
+    "terms": {
+      "marginal": 0.5437734723091125,
+      "increment": 0.4588062803418818,
+      "pair": 0.4512378149202242,
+      "energy": 0.6820611357688904
+    },
+    "supervised_updates": 4,
+    "finite_labels": 2688,
+    "total_labels": 10752,
+    "flow_gradient_norm": 0.03652858487502966,
+    "inducing_variance_fraction": 0.09234294295310974,
+    "last_origin_hour": 403416,
+    "seconds": 0.8280000000086147
+  }
+]

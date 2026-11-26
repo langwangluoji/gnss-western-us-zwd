@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETE_DIRECTED_LAG_V2",
+  "steps": 3000,
+  "blocks_consumed": 3000,
+  "supervised_updates": 3000,
+  "seconds": 870.6879999999946,
+  "final_group_lrs": [
+    1e-05,
+    2.9999999999999997e-05
+  ],
+  "ema_weights_sha256": "79a70edb8531f7f4fee8421ae5047dc0986dace79c17edb75b35c901b3bd32be"
+}
