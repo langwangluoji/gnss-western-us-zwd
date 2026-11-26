@@ -1,0 +1,352 @@
+{
+  "seed": 17,
+  "parent_field_sha256": "69d3e337e1c04c1f511b650d026c3df8c428a50c958e2f0fb0fd87b452b2321f",
+  "parent_i1_sha256": "c963653f0d75cfc8d118e94f1496a2addecbfb9597007da5a4631f6a3436f93d",
+  "vmf3_sha256": "207f98ff988a3883024a63299272560c126b5d10815071ced0cf35914e36e38d",
+  "feature_order": [
+    "native_mm/100",
+    "aligned_referenceP_mm/100",
+    "aligned_minus_I1_mm/20",
+    "vmf3_valid"
+  ],
+  "aligned_pressure": "reference-only T/P, dry vertical transfer,150km kernel then300km fallback; if no support VMF3 own hydrostatic term",
+  "target_observations_read_as_conditions": false,
+  "segments": [
+    {
+      "file": "train_00.npz",
+      "source_sha256": "595110abd9b0fdac1daa7f261effd054f88c027cd411fbb37d05bcada5f307b9",
+      "query_count": 40,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_01.npz",
+      "source_sha256": "9c0ba5522b44bf36d6e36d380cf8dadc7f065367d4aa8303e90e6daacecfdc5b",
+      "query_count": 162,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_02.npz",
+      "source_sha256": "5002c3ddcf98d0c1b7ee11cb226a2871aeb56b6726ef6fea76bf3e0bbf78f4f5",
+      "query_count": 167,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_03.npz",
+      "source_sha256": "abe9a3269fcca29d6812e470bcb07cb5130edb638460b5f02c204450ea54bd7f",
+      "query_count": 40,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_04.npz",
+      "source_sha256": "0ef1a15c01fa4616e0c709faa74e9aa5fc98332d0c208b5e96e5c34b55bb93cd",
+      "query_count": 93,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_05.npz",
+      "source_sha256": "21c2a676eb59181001f436155ee81e70f349af9ef905f0b62d8a79d4b6a8517b",
+      "query_count": 100,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_06.npz",
+      "source_sha256": "f619593db97562a48f13196f265fab21299e856dd632b061a028177e1b44fd2f",
+      "query_count": 42,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_07.npz",
+      "source_sha256": "1ceea12a66321f0553a308f7807aca90f71f6932e8d969444e0172ca6e57fccf",
+      "query_count": 158,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_08.npz",
+      "source_sha256": "d92c05b3769284a985f291fe286ba8804ac131b76ac5aeafe608511b8e4f8aac",
+      "query_count": 160,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_09.npz",
+      "source_sha256": "c13f1aa3f2b5cb75a23d66b0f41d77949874002ac96cab7bb51483522ff38e50",
+      "query_count": 93,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_10.npz",
+      "source_sha256": "b5b392577abb4498cacd43dbd3477d1cf07456e211b95b40759b86d76aee74c3",
+      "query_count": 99,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_11.npz",
+      "source_sha256": "552854a6863b5ddd5af9819994297c3a1fbcdf000ead2b9a6ca3bfd150d28280",
+      "query_count": 40,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_12.npz",
+      "source_sha256": "9b078a725df1cf02d8104536c6d4addc8bc9823500c549e629415028f3ddb9ed",
+      "query_count": 94,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_13.npz",
+      "source_sha256": "ba4554a6c2d3a977850e026e6086df1a29804a3dda8de772ce6997cf9299b01b",
+      "query_count": 38,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_14.npz",
+      "source_sha256": "c74255263086f24343edf525a4b5430b78a8d2476ff2ebff5bfbc7204d3e369a",
+      "query_count": 101,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_15.npz",
+      "source_sha256": "f4ad984dfbe089b5e1ba803936f00059b51e6b9d30988b6ec7dce03327f2b4ca",
+      "query_count": 97,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_16.npz",
+      "source_sha256": "83f4b83e63f86beb0517a96978edba694c8356a336babf0e3a47a5cedbbaedd2",
+      "query_count": 39,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_17.npz",
+      "source_sha256": "3032b6c2714642b68f55a3e5e316f11c03414a3063057172ba623fc910829b9d",
+      "query_count": 94,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_18.npz",
+      "source_sha256": "bbdb12d66729158f31211086e35cf71383243a0f22a12ee0a8a189d26775e2b0",
+      "query_count": 164,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_19.npz",
+      "source_sha256": "2bf09617b975beeb7b5ce3c6c16d41ce3195356be20d0087f1bc4d916c1cf492",
+      "query_count": 97,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_20.npz",
+      "source_sha256": "66e633f6541a68f124cc75b829aafa594c86216e6abe72d30ce7d9a9d09840e0",
+      "query_count": 156,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_21.npz",
+      "source_sha256": "b69c36923a79ef66f64b6d583378f45e6fdabf481f321f10b417f41f28374210",
+      "query_count": 44,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_22.npz",
+      "source_sha256": "778c8275ab98d19bc6d76e201015e9fb32e50eca3e0e84d27117319d5ba88369",
+      "query_count": 38,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_23.npz",
+      "source_sha256": "0dc913cfe393f5a76eb603388be71c5da3cd404d639701912585308b1526a13c",
+      "query_count": 35,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_24.npz",
+      "source_sha256": "465c9831e9d51b17a52ffa7fdaf60e3bd1c7c53d90cca6ca02d25a3a6d149153",
+      "query_count": 164,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_25.npz",
+      "source_sha256": "e580ddd74a442c2e4d845962e56b91ddb10a5ec67b5bd4bf4059652dec4569c9",
+      "query_count": 156,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_26.npz",
+      "source_sha256": "cb00930e132eedc1083b492ab5d50d0266add2e885fc5a8db38c3772fe07e79f",
+      "query_count": 160,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_27.npz",
+      "source_sha256": "d2e646b335ad276d8494d57ff8147047b6c9ef79ab7b28224599bbd6601482cc",
+      "query_count": 97,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_28.npz",
+      "source_sha256": "da4f7ff0260cb9c59e11e31e99dfdbb1e6ae5e47e5b7e2d1fbb6bf6d31bfdf72",
+      "query_count": 39,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_29.npz",
+      "source_sha256": "9c14f1645e90e812826a41fd9134e43d1df862535a9df05ae39152eed47c0c72",
+      "query_count": 41,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_30.npz",
+      "source_sha256": "5b0688a1f7afed62b72b47bd96f02f27cf9eca5badbc9a0bfcdaf585acbd92d8",
+      "query_count": 155,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_31.npz",
+      "source_sha256": "b554770808d7e614dafe7908fb8fcd29cb48dd7b3f7bac0833933f47d0645837",
+      "query_count": 39,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_32.npz",
+      "source_sha256": "02e5b22bbf45c6286c428960fc549250f78808824c4d8cb64eb26d2ff6c57d50",
+      "query_count": 96,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_33.npz",
+      "source_sha256": "78aaf3cd47d72960e137422ca68afd579c1045ea19a75a75d977b70ab332e767",
+      "query_count": 96,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_34.npz",
+      "source_sha256": "56c1fca9ac8230c3d3e8a8f3cb8e3aedbc89511bb12983656a41509798b7b8e2",
+      "query_count": 43,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_35.npz",
+      "source_sha256": "7520a9cb9120f10bc962de9229021625c90d2afd8a4655d08f7bf996b0a95758",
+      "query_count": 96,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_36.npz",
+      "source_sha256": "2f8704ae3f176208e6a0e39b41048494b726ecf92341efc66e79ef8950dc78e0",
+      "query_count": 40,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_37.npz",
+      "source_sha256": "5a37c59196424f929b0062c5d299c42aed15f9a096e40703f4a60315ab3eaf3a",
+      "query_count": 95,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_38.npz",
+      "source_sha256": "54a24b4dcce2a13c6df3e2e6313e5811af1cf83dce211aa63f287cc58c298df7",
+      "query_count": 41,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_39.npz",
+      "source_sha256": "a1b6e692de14bd30554eba4a766be049061ee9b0fb1c82008e12dd1641f3ebab",
+      "query_count": 35,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_40.npz",
+      "source_sha256": "a83a93385d1d0eec559e237305cd507645115960da5057a600871e045530830e",
+      "query_count": 98,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_41.npz",
+      "source_sha256": "f8b4f681de1fa0ce6570c2bca9a3ed60e574a052610dc3abcd2c5c2b2fd18add",
+      "query_count": 160,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_42.npz",
+      "source_sha256": "4f7ad02ca1dd34c319ae28cbcc220e11ef9736b311b76a3fe0e9c4b29139d0c6",
+      "query_count": 40,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_43.npz",
+      "source_sha256": "c949f71c85dfa2a35365b376da60db72decf9947086d50d46df69544cbcd00fe",
+      "query_count": 40,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_44.npz",
+      "source_sha256": "9969511e1c5cbe198d1fa11d1992313578e3f7191796f19ea90778a5820f84e6",
+      "query_count": 155,
+      "epochs": 160,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "train_45.npz",
+      "source_sha256": "1fca80daa86282950a1c1b8de4bd904efd38f10510ddd82aee6594a17ed2b7c4",
+      "query_count": 38,
+      "epochs": 62,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "dev.npz",
+      "source_sha256": "e70afe2fb98c1f4e4bfedd34c16e516cf548851612e3b3023160949cd32c077a",
+      "query_count": 64,
+      "epochs": 1492,
+      "reference_pressure_support_fraction": 1.0
+    },
+    {
+      "file": "test.npz",
+      "source_sha256": "956e32d51cc3d47f81e9821ad42301865266545045bc4568de76649c6d08cd0f",
+      "query_count": 138,
+      "epochs": 1496,
+      "reference_pressure_support_fraction": 1.0
+    }
+  ]
+}
