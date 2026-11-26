@@ -1,0 +1,21 @@
+{
+  "step": 4,
+  "supervised_updates": 4,
+  "loss": 0.9406962990760803,
+  "query_loss": 0.7933152318000793,
+  "causal_station_loss": 0.5895243287086487,
+  "auxiliary_label_cells": 1166526,
+  "finite_label_cells": 10752,
+  "cache_block": 3,
+  "last_origin_hour": 403416,
+  "group_lrs": [
+    1e-05,
+    2.9999999999999997e-05
+  ],
+  "current_correction_rms_mm": 0.6396277546882629,
+  "future6_correction_rms_mm": 2.580599546432495,
+  "seconds": 0.42199999999138527,
+  "spatial_gate": -0.0006408434710465372,
+  "current_readout_weight_norm": 0.022184014320373535,
+  "current_readout_bias_norm": 0.002947914646938443
+}
