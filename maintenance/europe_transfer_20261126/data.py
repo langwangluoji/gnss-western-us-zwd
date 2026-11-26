@@ -20,7 +20,7 @@ CACHE=HERE/'cache'
 
 
 def write_json(path,value):
-    Path(path).write_text(json.dumps(value,ensure_ascii=False,indent=2,allow_nan=False),encoding='utf-8')
+    Path(path).write_text(json.dumps(value,ensure_ascii=False,indent=2,allow_nan=False)+'\n',encoding='utf-8',newline='\n')
 
 
 def sha(path):
@@ -120,7 +120,7 @@ def prepare():
     role,groups=site_roles(xy,old)
     meta['role']=role;meta['site_group']=groups;meta['x_km']=xy[:,0];meta['y_km']=xy[:,1]
     # Freeze metadata split before reading any ZWD labels.
-    meta.to_csv(HERE/'stations.csv',index=False)
+    meta.to_csv(HERE/'stations.csv',index=False,lineterminator='\n')
     write_json(HERE/'split_lock.json',dict(version=2,seed=20261126,source_metadata=[sha(p) for p in paths],stations_sha256=sha(HERE/'stations.csv'),roles=meta.role.value_counts().to_dict(),split_uses_labels=False,labels_previously_loaded_for_audit=True,site_group_radius_km=1))
     coordinates=xy-xy.mean(0)
     # Coarse terrain is reconstructed only from ERA5 static orography.

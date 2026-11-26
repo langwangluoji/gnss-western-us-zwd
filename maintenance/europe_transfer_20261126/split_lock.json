@@ -5,7 +5,7 @@
     "7ea9ee5f408cac3925d438762774933fc6d126be0b468175fd70944b7fd65ea3",
     "43c145ed311d6f94bef1908cecf00f42b1d8da5c288b7222788c1c1c00117f30"
   ],
-  "stations_sha256": "3ec17063466b6ca07f98b841312f10779c9e5acdf04fd9fc7203f5c5736a41d5",
+  "stations_sha256": "ba46dc1fbdfa8636d22c4bddf9cb15c621c2a5c21566b04df84a3998923a9171",
   "roles": {
     "train": 273,
     "dev": 64,
@@ -14,5 +14,6 @@
   },
   "split_uses_labels": false,
   "labels_previously_loaded_for_audit": true,
-  "site_group_radius_km": 1
+  "site_group_radius_km": 1,
+  "text_normalization": "LF before first formal training"
 }
