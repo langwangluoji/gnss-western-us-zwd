@@ -1,5 +1,7 @@
 # 当前区域实验索引
 
+2026-11-26完成：[H＋S正式双种子、raw/EMA与曲线](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_mean_hs/paired/REPORT.md)、[来源/分层完整JSON](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_mean_hs/paired/summary.json)、[下一步重点与E1–E5研究建议](research_notes/2026-11-26-next-research-after-hs.md)。HS当前/六小时为9.811297/13.972726mm；同预算续训和增量代价并列，新增架构方案仍待实测。
+
 2026-11-26新增：[42组中心消融与H＋S下一项训练](research_notes/2026-11-26-lead-mean-results.md)、[中心v2完整结果](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_lead_mean_audit_v2/paired/REPORT.md)、[H＋S协议](superpowers/specs/2026-11-26-combined-mean-hs.md)。中心实验为冻结场后处理，H＋S为独立神经续训，两者结果分开归因。
 
 2026-11-26新增：[频域与严格均值保持统一解释](research_notes/2026-11-26-spectral-and-mean-centering.md)、[七组C64完整结果](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_probability/paired_spectral/REPORT.md)、[独立双场配对结果](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_independent_pair_centering/paired/REPORT.md)。前者为既有正式训练的补齐汇总，后者为冻结成员后处理，不是新训练成绩。

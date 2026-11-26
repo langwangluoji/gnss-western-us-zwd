@@ -1,0 +1,28 @@
+{
+  "cache": "\\\\?\\E:\\Document\\FILE_package\\Research\\SITP\\基于生成对抗网络(GAN)的高精度对流层模型构建\\research_pipeline\\studies\\us_dense_zwd_20261105_v1\\03_code\\gnss_field_server\\results\\20261126_native_weather_cache_v2\\calendar8_s17",
+  "cache_manifest_sha256": "fc9c336b1f016133bfbf7bb521738566af0758ab27865072a834432e65e06b39",
+  "mean_protocol_sha256": "937da721f8c2322446ccc529b3c3699d7cc989260d20269d547a5e9ebdb307b3",
+  "mean_weights_sha256": "8d1d1eba330d6a1a4b805299156015a9797220439e4bb726b22b52488dfe62b0",
+  "model_kind": "transformer",
+  "mean_variant": "fusion_v2_HS",
+  "weights": "ema",
+  "files": {
+    "embedding.npy": "d33a0e78b47463d386d8d32061ae1f54c6b7f3b4e2996d00916724addfe4f60d",
+    "mean.npy": "6e572b29ea1655ddca7905bdc609c6f9dccdfaa0a9c8978fd3a03cc2dbc0525a"
+  },
+  "complete": true,
+  "experimental_mode": "MATCHED_CONTINUATION",
+  "absolute_mean_definition": "cache.mean[:,:,None] + bounded correction_mm",
+  "code_sha256": {
+    "native_mean_hs.py": "fc9de8f2833c0775a7f3921b85b6ceba2572221df27ca71c8fcda2f96f400327",
+    "native_mean_hs_experiment.py": "254560c20a3df69b9e633ebfe5cbfd4e3362858059a740ce62f1f846d7103e35",
+    "native_model_seal.py": "6a286fbbcf58926118a4228881f629b99596ca70ec1cd7031f77904b03c68fe5",
+    "native_mean_fusion_v2.py": "9c8bb43a97d65dd00fb0395ea680fc9a8f350c8dea446327c736ab6c98308a06",
+    "native_mean_fusion_v2_experiment.py": "ad7fbbfa5add66750b7973a893e0de3dc410794fc836f9a9adbdf69db0a12b4a",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_physics_lm.py": "1cc6e3450745548dfb1a86502402a95cf1c27370427e81884bee1cf353d71bd6",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be"
+  }
+}

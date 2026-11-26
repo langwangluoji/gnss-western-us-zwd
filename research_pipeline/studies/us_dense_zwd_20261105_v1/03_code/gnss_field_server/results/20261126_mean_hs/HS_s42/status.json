@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETE_MEAN_HS",
+  "steps": 3000,
+  "blocks_consumed": 3000,
+  "supervised_updates": 3000,
+  "seconds": 436.9679999999935,
+  "final_group_lrs": [
+    1e-05,
+    2.9999999999999997e-05
+  ],
+  "ema_weights_sha256": "081c89fed80566ac84cd51ec255f9d727b21083287d826d37dba27f1b23ddc15"
+}
