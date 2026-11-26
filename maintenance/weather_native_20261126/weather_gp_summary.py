@@ -90,7 +90,7 @@ def main():
         interval='2000 shared-month draws, shared across both seeds; exposed2020 exploratory intervals, no multiplicity correction',
         exact_frozen_marginal_arrays_verified=True,strict_oof=False,confirmation_C_D_read=False)
     write_json(out/'weather_gp_summary.json',payload)
-    lines=['# 天气条件时空Gaussian核：双种子结果','','2016–2019各3000连续12h块，仅抽站身份；2020每月8–10日、三布局、137查询，已暴露开发。冻结TF3000均值、S175边际尺度。G175与G265分别43893/44027参数。','',
+    lines=['# 天气条件时空Gaussian核：双种子结果','','2016–2019各3000连续12h块，仅抽站身份；2020每月8–10日、三布局、137查询，已暴露开发。冻结S175解析均值与边际尺度，单独保留TF3000基础场点预测。G175与G265分别43893/44027参数。','',
         '| 模型 | 0–50km F6解析差值CRPS/mm | 内部增量解析CRPS/mm | K32 fair energy/mm |', '|---|---:|---:|---:|']
     for mode in ('reference','c175','c265'):
         v=[records[s,mode] for s in (42,17)]

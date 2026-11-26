@@ -1,5 +1,7 @@
 # 下一步突破方向：因果创新传播与均值保持的概率场
 
+更新入口：[天气GP完成后的研究优先级](2026-11-26-research-priorities-after-weather-gp.md)。G175/G265与后续Local/Affine、centered-shape正式训练均已完成；本页下文保留早前设计时点，实施状态以更新入口及实验锁为准。
+
 下一步优先把逐站历史中的可预测误差传入目标空间场，同时保留约9.8mm均值。概率分支重点解决未来局地联合关系，收益由同条件Gaussian和非Gaussian对照分别归因。当前证据、代价与均值采样分析见[实测归因](2026-11-26-diffusion-benefits-and-mean-error.md)。本页新增架构属于后续候选；正在执行的G175/G265与Local/Affine协议保持原样。
 
 ## 优先级与判断依据
