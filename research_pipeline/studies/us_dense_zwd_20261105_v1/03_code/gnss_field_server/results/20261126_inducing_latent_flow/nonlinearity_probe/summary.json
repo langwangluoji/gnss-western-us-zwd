@@ -1,0 +1,429 @@
+{
+  "rows": [
+    {
+      "seed": 42,
+      "name": "affine_time_s42",
+      "training_block_index0": 0,
+      "latent_nonlinear_variance_fraction": 2.7948491692554086e-15,
+      "decoded_field_nonlinear_variance_fraction": 3.6980658286680027e-16,
+      "latent_departure_from_identity": 0.04090169958714399,
+      "inducing_original_variance_fraction": 0.09524355725144967,
+      "query_scale_min": 0.8654595017433167,
+      "query_scale_max": 0.9997060894966125,
+      "phi_rms": 0.00855453684926033
+    },
+    {
+      "seed": 42,
+      "name": "affine_time_s42",
+      "training_block_index0": 1000,
+      "latent_nonlinear_variance_fraction": 2.6940230385006363e-15,
+      "decoded_field_nonlinear_variance_fraction": 4.02538565050053e-16,
+      "latent_departure_from_identity": 0.010213104580018088,
+      "inducing_original_variance_fraction": 0.1480229151941295,
+      "query_scale_min": 0.8742583990097046,
+      "query_scale_max": 1.0091276168823242,
+      "phi_rms": 0.010891244746744633
+    },
+    {
+      "seed": 42,
+      "name": "affine_time_s42",
+      "training_block_index0": 2000,
+      "latent_nonlinear_variance_fraction": 2.7683664894638056e-15,
+      "decoded_field_nonlinear_variance_fraction": 1.768623284555097e-16,
+      "latent_departure_from_identity": 0.025692345508031886,
+      "inducing_original_variance_fraction": 0.061943988325925764,
+      "query_scale_min": 0.8582093119621277,
+      "query_scale_max": 0.994324803352356,
+      "phi_rms": 0.007524724118411541
+    },
+    {
+      "seed": 42,
+      "name": "affine_time_s42",
+      "training_block_index0": 2800,
+      "latent_nonlinear_variance_fraction": 2.7632434344340555e-15,
+      "decoded_field_nonlinear_variance_fraction": 2.600721219493064e-16,
+      "latent_departure_from_identity": 0.03660891458875174,
+      "inducing_original_variance_fraction": 0.1088828525635735,
+      "query_scale_min": 0.8991129398345947,
+      "query_scale_max": 1.027563452720642,
+      "phi_rms": 0.00996367633342743
+    },
+    {
+      "seed": 42,
+      "name": "affine_frequency_s42",
+      "training_block_index0": 0,
+      "latent_nonlinear_variance_fraction": 3.852425487630147e-15,
+      "decoded_field_nonlinear_variance_fraction": 5.38042711406865e-16,
+      "latent_departure_from_identity": 0.04220682674540121,
+      "inducing_original_variance_fraction": 0.09524355725144967,
+      "query_scale_min": 0.8693145513534546,
+      "query_scale_max": 1.0013055801391602,
+      "phi_rms": 0.007788510527461767
+    },
+    {
+      "seed": 42,
+      "name": "affine_frequency_s42",
+      "training_block_index0": 1000,
+      "latent_nonlinear_variance_fraction": 3.6259969962556866e-15,
+      "decoded_field_nonlinear_variance_fraction": 5.274592598122423e-16,
+      "latent_departure_from_identity": 0.029721339246164657,
+      "inducing_original_variance_fraction": 0.1480229151941295,
+      "query_scale_min": 0.8760986328125,
+      "query_scale_max": 1.0043559074401855,
+      "phi_rms": 0.009796936996281147
+    },
+    {
+      "seed": 42,
+      "name": "affine_frequency_s42",
+      "training_block_index0": 2000,
+      "latent_nonlinear_variance_fraction": 3.649230014143848e-15,
+      "decoded_field_nonlinear_variance_fraction": 2.485123921468328e-16,
+      "latent_departure_from_identity": 0.029040285122351035,
+      "inducing_original_variance_fraction": 0.061943988325925764,
+      "query_scale_min": 0.8620107173919678,
+      "query_scale_max": 0.9935713410377502,
+      "phi_rms": 0.00688265822827816
+    },
+    {
+      "seed": 42,
+      "name": "affine_frequency_s42",
+      "training_block_index0": 2800,
+      "latent_nonlinear_variance_fraction": 3.689336055469855e-15,
+      "decoded_field_nonlinear_variance_fraction": 3.5440444116006546e-16,
+      "latent_departure_from_identity": 0.030778118434080317,
+      "inducing_original_variance_fraction": 0.1088828525635735,
+      "query_scale_min": 0.9034915566444397,
+      "query_scale_max": 1.028000831604004,
+      "phi_rms": 0.009161066263914108
+    },
+    {
+      "seed": 42,
+      "name": "odd_time_s42",
+      "training_block_index0": 0,
+      "latent_nonlinear_variance_fraction": 0.0008752465592657742,
+      "decoded_field_nonlinear_variance_fraction": 5.376022139516996e-05,
+      "latent_departure_from_identity": 0.056895111398174464,
+      "inducing_original_variance_fraction": 0.09524355725144967,
+      "query_scale_min": 0.8666207790374756,
+      "query_scale_max": 1.0001075267791748,
+      "phi_rms": 0.007509228773415089
+    },
+    {
+      "seed": 42,
+      "name": "odd_time_s42",
+      "training_block_index0": 1000,
+      "latent_nonlinear_variance_fraction": 5.318501354939468e-05,
+      "decoded_field_nonlinear_variance_fraction": 1.3098382679636928e-05,
+      "latent_departure_from_identity": 0.012401378215909285,
+      "inducing_original_variance_fraction": 0.1480229151941295,
+      "query_scale_min": 0.8752534985542297,
+      "query_scale_max": 1.0086109638214111,
+      "phi_rms": 0.00934909749776125
+    },
+    {
+      "seed": 42,
+      "name": "odd_time_s42",
+      "training_block_index0": 2000,
+      "latent_nonlinear_variance_fraction": 0.00028125562292209894,
+      "decoded_field_nonlinear_variance_fraction": 2.9944983552266175e-05,
+      "latent_departure_from_identity": 0.033274132267114384,
+      "inducing_original_variance_fraction": 0.061943988325925764,
+      "query_scale_min": 0.8598127961158752,
+      "query_scale_max": 0.9956033825874329,
+      "phi_rms": 0.006902326829731464
+    },
+    {
+      "seed": 42,
+      "name": "odd_time_s42",
+      "training_block_index0": 2800,
+      "latent_nonlinear_variance_fraction": 0.0008106706331992401,
+      "decoded_field_nonlinear_variance_fraction": 0.0001529631170379083,
+      "latent_departure_from_identity": 0.04621042745783635,
+      "inducing_original_variance_fraction": 0.1088828525635735,
+      "query_scale_min": 0.9014192819595337,
+      "query_scale_max": 1.0280653238296509,
+      "phi_rms": 0.008668974041938782
+    },
+    {
+      "seed": 42,
+      "name": "odd_frequency_s42",
+      "training_block_index0": 0,
+      "latent_nonlinear_variance_fraction": 0.0003953639637267637,
+      "decoded_field_nonlinear_variance_fraction": 1.1927623198619547e-05,
+      "latent_departure_from_identity": 0.05753279903253314,
+      "inducing_original_variance_fraction": 0.09524355725144967,
+      "query_scale_min": 0.8664546012878418,
+      "query_scale_max": 1.0029314756393433,
+      "phi_rms": 0.00701030483469367
+    },
+    {
+      "seed": 42,
+      "name": "odd_frequency_s42",
+      "training_block_index0": 1000,
+      "latent_nonlinear_variance_fraction": 4.7916538697262836e-05,
+      "decoded_field_nonlinear_variance_fraction": 7.076933309605916e-06,
+      "latent_departure_from_identity": 0.026553026241579757,
+      "inducing_original_variance_fraction": 0.1480229151941295,
+      "query_scale_min": 0.8751910328865051,
+      "query_scale_max": 1.0126702785491943,
+      "phi_rms": 0.008783995173871517
+    },
+    {
+      "seed": 42,
+      "name": "odd_frequency_s42",
+      "training_block_index0": 2000,
+      "latent_nonlinear_variance_fraction": 0.00011533660185032193,
+      "decoded_field_nonlinear_variance_fraction": 9.428299629212689e-06,
+      "latent_departure_from_identity": 0.037568425208990015,
+      "inducing_original_variance_fraction": 0.061943988325925764,
+      "query_scale_min": 0.8595114946365356,
+      "query_scale_max": 0.9981359839439392,
+      "phi_rms": 0.0066552478820085526
+    },
+    {
+      "seed": 42,
+      "name": "odd_frequency_s42",
+      "training_block_index0": 2800,
+      "latent_nonlinear_variance_fraction": 0.00016769666523857844,
+      "decoded_field_nonlinear_variance_fraction": 1.621135826855872e-05,
+      "latent_departure_from_identity": 0.04251588358990418,
+      "inducing_original_variance_fraction": 0.1088828525635735,
+      "query_scale_min": 0.9016948938369751,
+      "query_scale_max": 1.0304136276245117,
+      "phi_rms": 0.007877991534769535
+    },
+    {
+      "seed": 17,
+      "name": "affine_time_s17",
+      "training_block_index0": 0,
+      "latent_nonlinear_variance_fraction": 2.824458967570445e-15,
+      "decoded_field_nonlinear_variance_fraction": 4.0291676323961887e-16,
+      "latent_departure_from_identity": 0.12300266408843841,
+      "inducing_original_variance_fraction": 0.14067620781701037,
+      "query_scale_min": 0.8480415940284729,
+      "query_scale_max": 0.958005428314209,
+      "phi_rms": 0.01199264544993639
+    },
+    {
+      "seed": 17,
+      "name": "affine_time_s17",
+      "training_block_index0": 1000,
+      "latent_nonlinear_variance_fraction": 2.851836035465886e-15,
+      "decoded_field_nonlinear_variance_fraction": 2.491353829964777e-16,
+      "latent_departure_from_identity": 0.17423581522276907,
+      "inducing_original_variance_fraction": 0.07450007997865411,
+      "query_scale_min": 0.8574760556221008,
+      "query_scale_max": 1.0152018070220947,
+      "phi_rms": 0.009612230584025383
+    },
+    {
+      "seed": 17,
+      "name": "affine_time_s17",
+      "training_block_index0": 2000,
+      "latent_nonlinear_variance_fraction": 2.8807796277512036e-15,
+      "decoded_field_nonlinear_variance_fraction": 2.6383445042196784e-16,
+      "latent_departure_from_identity": 0.12350485534612725,
+      "inducing_original_variance_fraction": 0.09810626123235555,
+      "query_scale_min": 0.8055436015129089,
+      "query_scale_max": 0.9605175256729126,
+      "phi_rms": 0.016445940360426903
+    },
+    {
+      "seed": 17,
+      "name": "affine_time_s17",
+      "training_block_index0": 2800,
+      "latent_nonlinear_variance_fraction": 2.8031427719607413e-15,
+      "decoded_field_nonlinear_variance_fraction": 2.541440854292428e-16,
+      "latent_departure_from_identity": 0.0942308678017663,
+      "inducing_original_variance_fraction": 0.0867976993002141,
+      "query_scale_min": 0.8432735800743103,
+      "query_scale_max": 0.9602249264717102,
+      "phi_rms": 0.014362409710884094
+    },
+    {
+      "seed": 17,
+      "name": "affine_frequency_s17",
+      "training_block_index0": 0,
+      "latent_nonlinear_variance_fraction": 3.827882960976599e-15,
+      "decoded_field_nonlinear_variance_fraction": 5.462440552858044e-16,
+      "latent_departure_from_identity": 0.0427905302655417,
+      "inducing_original_variance_fraction": 0.14067620781701037,
+      "query_scale_min": 0.8511226177215576,
+      "query_scale_max": 0.9630407691001892,
+      "phi_rms": 0.011389757506549358
+    },
+    {
+      "seed": 17,
+      "name": "affine_frequency_s17",
+      "training_block_index0": 1000,
+      "latent_nonlinear_variance_fraction": 4.219516011174884e-15,
+      "decoded_field_nonlinear_variance_fraction": 3.6570782966023936e-16,
+      "latent_departure_from_identity": 0.10099575897192553,
+      "inducing_original_variance_fraction": 0.07450007997865411,
+      "query_scale_min": 0.8631609678268433,
+      "query_scale_max": 1.0196642875671387,
+      "phi_rms": 0.008742163889110088
+    },
+    {
+      "seed": 17,
+      "name": "affine_frequency_s17",
+      "training_block_index0": 2000,
+      "latent_nonlinear_variance_fraction": 3.782415167764334e-15,
+      "decoded_field_nonlinear_variance_fraction": 3.3593659016281287e-16,
+      "latent_departure_from_identity": 0.039278683666438476,
+      "inducing_original_variance_fraction": 0.09810626123235555,
+      "query_scale_min": 0.8107680082321167,
+      "query_scale_max": 0.9658914804458618,
+      "phi_rms": 0.015243997797369957
+    },
+    {
+      "seed": 17,
+      "name": "affine_frequency_s17",
+      "training_block_index0": 2800,
+      "latent_nonlinear_variance_fraction": 3.6802787100569914e-15,
+      "decoded_field_nonlinear_variance_fraction": 3.2532684722483943e-16,
+      "latent_departure_from_identity": 0.03101829967679374,
+      "inducing_original_variance_fraction": 0.0867976993002141,
+      "query_scale_min": 0.8484642505645752,
+      "query_scale_max": 0.9705630540847778,
+      "phi_rms": 0.013512635603547096
+    },
+    {
+      "seed": 17,
+      "name": "odd_time_s17",
+      "training_block_index0": 0,
+      "latent_nonlinear_variance_fraction": 0.0040765432222861,
+      "decoded_field_nonlinear_variance_fraction": 0.0009819325648737513,
+      "latent_departure_from_identity": 0.15099389029264992,
+      "inducing_original_variance_fraction": 0.14067620781701037,
+      "query_scale_min": 0.8456103801727295,
+      "query_scale_max": 0.9552314877510071,
+      "phi_rms": 0.012622666545212269
+    },
+    {
+      "seed": 17,
+      "name": "odd_time_s17",
+      "training_block_index0": 1000,
+      "latent_nonlinear_variance_fraction": 0.0006837956266795204,
+      "decoded_field_nonlinear_variance_fraction": 7.402896413207056e-05,
+      "latent_departure_from_identity": 0.06349243368908304,
+      "inducing_original_variance_fraction": 0.07450007997865411,
+      "query_scale_min": 0.862209677696228,
+      "query_scale_max": 1.0157852172851562,
+      "phi_rms": 0.00894123874604702
+    },
+    {
+      "seed": 17,
+      "name": "odd_time_s17",
+      "training_block_index0": 2000,
+      "latent_nonlinear_variance_fraction": 0.00018720009757282463,
+      "decoded_field_nonlinear_variance_fraction": 1.882754138479815e-05,
+      "latent_departure_from_identity": 0.03168356752373686,
+      "inducing_original_variance_fraction": 0.09810626123235555,
+      "query_scale_min": 0.8078455328941345,
+      "query_scale_max": 0.9604506492614746,
+      "phi_rms": 0.0164906308054924
+    },
+    {
+      "seed": 17,
+      "name": "odd_time_s17",
+      "training_block_index0": 2800,
+      "latent_nonlinear_variance_fraction": 0.000646160767341532,
+      "decoded_field_nonlinear_variance_fraction": 7.183688510509429e-05,
+      "latent_departure_from_identity": 0.06742333492117489,
+      "inducing_original_variance_fraction": 0.0867976993002141,
+      "query_scale_min": 0.8429021239280701,
+      "query_scale_max": 0.9633302688598633,
+      "phi_rms": 0.014697166159749031
+    },
+    {
+      "seed": 17,
+      "name": "odd_frequency_s17",
+      "training_block_index0": 0,
+      "latent_nonlinear_variance_fraction": 0.0006346612906420303,
+      "decoded_field_nonlinear_variance_fraction": 0.00018814472511590412,
+      "latent_departure_from_identity": 0.07119375315548586,
+      "inducing_original_variance_fraction": 0.14067620781701037,
+      "query_scale_min": 0.8491567969322205,
+      "query_scale_max": 0.9609689712524414,
+      "phi_rms": 0.011582217179238796
+    },
+    {
+      "seed": 17,
+      "name": "odd_frequency_s17",
+      "training_block_index0": 1000,
+      "latent_nonlinear_variance_fraction": 0.0002528658781287756,
+      "decoded_field_nonlinear_variance_fraction": 3.396671232142064e-05,
+      "latent_departure_from_identity": 0.042682104207621994,
+      "inducing_original_variance_fraction": 0.07450007997865411,
+      "query_scale_min": 0.8636709451675415,
+      "query_scale_max": 1.020293951034546,
+      "phi_rms": 0.008605594746768475
+    },
+    {
+      "seed": 17,
+      "name": "odd_frequency_s17",
+      "training_block_index0": 2000,
+      "latent_nonlinear_variance_fraction": 9.397416029656302e-05,
+      "decoded_field_nonlinear_variance_fraction": 1.2386195339301688e-05,
+      "latent_departure_from_identity": 0.028824521542458948,
+      "inducing_original_variance_fraction": 0.09810626123235555,
+      "query_scale_min": 0.8117337822914124,
+      "query_scale_max": 0.9636883735656738,
+      "phi_rms": 0.015660349279642105
+    },
+    {
+      "seed": 17,
+      "name": "odd_frequency_s17",
+      "training_block_index0": 2800,
+      "latent_nonlinear_variance_fraction": 0.00020940922588019877,
+      "decoded_field_nonlinear_variance_fraction": 1.844931883142928e-05,
+      "latent_departure_from_identity": 0.0453225147248873,
+      "inducing_original_variance_fraction": 0.0867976993002141,
+      "query_scale_min": 0.8468973636627197,
+      "query_scale_max": 0.9678835868835449,
+      "phi_rms": 0.013646255247294903
+    }
+  ],
+  "sources": {
+    "affine_time_s42": {
+      "weights_sha256": "d5bb28113bd88b753aadecfd771aa59d95f892673773121c5a1207056c29aa4e",
+      "protocol_sha256": "18a1e9eea076018df1e8c2b8c7094f0770d7cfd7e5b39e5491a6d0d29953d1ef"
+    },
+    "affine_frequency_s42": {
+      "weights_sha256": "2d7103c2af278a3fc2662c6f3522ca9ade640778bf29656110c2d20c665632f0",
+      "protocol_sha256": "1b911cb1a5cc20904ad1c2a725beaf46e0883b7766d89250185f4626992eab3b"
+    },
+    "odd_time_s42": {
+      "weights_sha256": "36322b9b6cbfcaa4fa87330c455521373b4790b6659bbd56ffbc4afc7cef39cd",
+      "protocol_sha256": "140cd4f5a35f2c85e09629be5c50050e990589ed96236dd2c96b004dae62b921"
+    },
+    "odd_frequency_s42": {
+      "weights_sha256": "cc8597c4ac2bdc8536a144842a3521603596c10e996f9b58e8a661021b362d0b",
+      "protocol_sha256": "e495a2e11a97efb092c93ac7648cdbf603062055fbb9403015c22a5de461168f"
+    },
+    "affine_time_s17": {
+      "weights_sha256": "c7afb48ec9578c3e670a0da6360170487c1a1aad3e0cf2d16c6a4d85d4e17b0d",
+      "protocol_sha256": "6e808e94e33b0a196e10ae08b10b05589897b6f899c635b6e2421968372d8e93"
+    },
+    "affine_frequency_s17": {
+      "weights_sha256": "65c72039f73b0838c9503f3c36d3e0199c6cb5bf345cadbe85eabc41f2962e5b",
+      "protocol_sha256": "cd155591b77a92a4f0e25965e2ddcbcd069c7ff008198304feececa31ddfae2f"
+    },
+    "odd_time_s17": {
+      "weights_sha256": "ec63c31c0a35d90ca636044e29d9fbb9237d219f89da984d9bfd30e55e4ddf0e",
+      "protocol_sha256": "c893496bac70a6a6c8bd5f02af54fb14602eab39d7c8ca4e5100b44ddf93e832"
+    },
+    "odd_frequency_s17": {
+      "weights_sha256": "c87b935c20d572fdac4208a75c1159de4a5da24ed7f44e8d7eb2f9e43e6215bd",
+      "protocol_sha256": "056ad0973caa505007916c7977e2532fd89da22ea2cc77aaf1f6b799504c0d65"
+    }
+  },
+  "code_sha256": "d8ff3d1e226d87cb2654f6896e63d7db338caa2c6405bc9604810f2dbc7ae521",
+  "fit_noise": 1024,
+  "independent_test_noise": 1024,
+  "condition": "first origin in four fixed training blocks per seed; no GNSS target values used in surrogate fit",
+  "interpretation": "out-of-noise-sample linear-surrogate residual energy; diagnostic, not exact cumulants or forecast skill",
+  "full_Gaussian_residual_retained": true,
+  "confirmation_C_D_read": false
+}

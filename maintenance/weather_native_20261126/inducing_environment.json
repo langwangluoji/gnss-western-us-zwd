@@ -1,0 +1,16 @@
+{
+  "probe_utc": "2026-11-26T06:07:04.278459+00:00",
+  "python": "3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]",
+  "python_executable": "D:\\anaconda3-2025.12-2\\envs\\pytorch\\python.exe",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "torch": "2.8.0+cu129",
+  "cuda_runtime": "12.9",
+  "cudnn": 91002,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "gpu_memory_bytes": 8585216000,
+  "default_torch_deterministic_algorithms": false,
+  "default_matmul_tf32": false,
+  "default_cudnn_tf32": true,
+  "numerics": "model float32; kernel/decomposition float64",
+  "cost_note": "training/evaluation run concurrently; elapsed body times include resource sharing; not isolated latency benchmarks"
+}

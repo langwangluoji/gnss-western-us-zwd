@@ -1,0 +1,17 @@
+{
+  "step": 3000,
+  "loss": 0.8262978834311128,
+  "terms": {
+    "marginal": 0.519646942615509,
+    "increment": 0.43452014937987815,
+    "pair": 0.528307907591338,
+    "energy": 0.6594392657279968
+  },
+  "supervised_updates": 3000,
+  "finite_labels": 2688,
+  "total_labels": 8056636,
+  "flow_gradient_norm": 0.041428549987945026,
+  "inducing_variance_fraction": 0.08667908608913422,
+  "last_origin_hour": 404460,
+  "seconds": 492.48500000001513
+}

@@ -1,0 +1,123 @@
+{
+  "source": {
+    "gaussian_protocol_sha256": "c1f1e011fdcece1a605515acdd507996067036e0570fed9cae7c8bcf6c2386f0",
+    "gaussian_weights_sha256": "846d8e3af3bd25c4d827a80fa359a32865be059edd57168d0453e6217e64eb10",
+    "copula_sha256": "206c8bb2d915131f1e553e3442745f11abbe7ccfdb1da21da5168a618eede405",
+    "training_embedding_manifest_sha256": "59a1a973c723df20b81bff18515539f58649eeba0b3c3c97f422451f1a36f1d9",
+    "mean_weights_sha256": "68b8625b973897dba7ad89bd23d74ced2c6e123742a7889fdbc140bd5ac536e8",
+    "normalization": {
+      "bias_mm": [
+        -0.3191206658246343,
+        -0.2356088196125176,
+        -0.06838680860587248,
+        0.06610386056868962,
+        0.17816621285081177,
+        0.2986640770915261,
+        0.4088863253034804
+      ],
+      "scale_mm": [
+        9.847583624875096,
+        10.649084493794433,
+        11.601293686841542,
+        12.66060461674355,
+        13.817742383047642,
+        14.969984847430231,
+        16.075119820156544
+      ],
+      "count": [
+        4603792.0,
+        4603779.0,
+        4603766.0,
+        4603753.0,
+        4603741.0,
+        4603728.0,
+        4603714.0
+      ],
+      "role": "training_only"
+    },
+    "weather_gp_protocol_sha256": "f8eac21661f219778d4caae0f236771e3ad8f526f6333fbe32967539aced792b",
+    "weather_gp_weights_sha256": "7690cdd04a7a17cde00a7cbfeefacb445346b327e667f1201f5942ca619163c1",
+    "weather_gp_seal_sha256": "c4e3e3c22ead264ba8ab9ee0236b94377631897d84d992f85eaef1d43844a0e5"
+  },
+  "cache_manifest_sha256": "fc9c336b1f016133bfbf7bb521738566af0758ab27865072a834432e65e06b39",
+  "embedding_manifest_sha256": "d933de76368816c389182de348d9799e05f2b6202763505f113eada5a1d14eec",
+  "code_sha256": {
+    "native_process_experiment.py": "ef7ca45c89f1a7489510a12762ac3e335c98d3bec611e81c8d16e90abe661c6f",
+    "native_process_models.py": "74e614bedd3a6b0ac8ef2fdf689cf1b1a10fd81f8d73aac5974af30d3408bb19",
+    "native_process_ops.py": "2b3c017dd0d9c3ddefd0a2e5dd2f7625f320f5ab27d214270c1779f1e49372de",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_probability_context.py": "ab3aad752ed3b6ed886939cdffe823966032c6811cd4976cba30f421e9a3f898",
+    "native_copula.py": "95eade5fb6d732901662509a881c6efcf28e12f06d3193d408ac079dad577c19",
+    "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+    "native_weather_gp.py": "330643f915c4771f318760d9d7c22784b01d064b89251488c1ab8c86bfcf3271",
+    "native_weather_gp_experiment.py": "371ce3374f2bb8ecedc966bf43b0b9efebb135fdc409e3ab41412b69c8853234",
+    "native_weather_gp_diffusion.py": "0662c489f0ce014df720a7cbaf046df4830cffd6b1e46add5df691392543ed10",
+    "native_weather_gp_diffusion_experiment.py": "66106a06f8b8fa5249543a21b5d0a9f6a7655146cddbc95466dd71babd9f2e1d",
+    "native_model_seal.py": "6a286fbbcf58926118a4228881f629b99596ca70ec1cd7031f77904b03c68fe5",
+    "native_latent_flow.py": "ed8c210b98240bb2b0c40532c3ec3c39e7f4484d4ccae4738a9ed22d73fc05c5",
+    "native_inducing_flow.py": "c866c5cc290710433c1270e8822a7eaf1ec3a7a778018ec81ef849baa80a72fd",
+    "native_inducing_flow_experiment.py": "ed2543111eaaa0e8263614e567950a66cfb9e0e0e64932ccea7147030947d072",
+    "native_weather_evaluation.py": "47992e1d544b500f1c48e2f104aa1e8fa29fed4ef225486482dfc65f397999d1"
+  },
+  "family": "affine",
+  "domain": "frequency",
+  "process_protocol_sha256": "cd155591b77a92a4f0e25965e2ddcbcd069c7ff008198304feececa31ddfae2f",
+  "probability_weights_sha256": "65c72039f73b0838c9503f3c36d3e0199c6cb5bf345cadbe85eabc41f2962e5b",
+  "members": 32,
+  "seed": 261126,
+  "sample_seed": 261126,
+  "layout_training_seed": 17,
+  "device": "cuda",
+  "anchors": [
+    [
+      2.1220169464747114,
+      -3.023313283920288,
+      0.13793697953224182
+    ],
+    [
+      -1.7181255420049033,
+      4.143638213475546,
+      0.12743867933750153
+    ],
+    [
+      -0.21554425358772278,
+      0.033551619077722236,
+      2.5940654277801514
+    ],
+    [
+      1.789149840672811,
+      2.815569837888082,
+      1.221752405166626
+    ],
+    [
+      -1.7819432417551677,
+      0.7055812080701193,
+      0.11846668273210526
+    ],
+    [
+      0.0194017185519139,
+      -1.3369151949882507,
+      0.28774818778038025
+    ],
+    [
+      1.5212074915568035,
+      0.402265265583992,
+      1.1868655681610107
+    ],
+    [
+      -0.3892174611488978,
+      2.5424522161483765,
+      0.7471539378166199
+    ]
+  ],
+  "independent_iid_member_noise": true,
+  "coupled_gp_and_latent_noise": true,
+  "query_count": 137,
+  "mean": "exact frozen TF3000",
+  "neural_evaluations_per_sample": 8,
+  "prediction_sha256": "4de6f4a82894bb97cf2716a6982fb000bee1ff2db2914c514e6e757a0bef5379",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}
