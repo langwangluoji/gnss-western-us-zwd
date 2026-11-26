@@ -1,0 +1,7 @@
+{
+  "status": "COMPLETE_INDUCING_FLOW",
+  "steps": 3000,
+  "supervised_updates": 2999,
+  "seconds": 286.35899999999674,
+  "last_weights_sha256": "2d7103c2af278a3fc2662c6f3522ca9ade640778bf29656110c2d20c665632f0"
+}

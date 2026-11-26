@@ -1,0 +1,529 @@
+[
+  {
+    "step": 1,
+    "loss": 0.7961706051873294,
+    "terms": {
+      "marginal": 0.4915795922279358,
+      "increment": 0.4717083840086977,
+      "pair": 0.4984451929801293,
+      "energy": 0.6205261945724487
+    },
+    "supervised_updates": 1,
+    "finite_labels": 2688,
+    "total_labels": 2688,
+    "flow_gradient_norm": 0.023595545595116226,
+    "inducing_variance_fraction": 0.1089661568403244,
+    "last_origin_hour": 403380,
+    "seconds": 0.34400000001187436
+  },
+  {
+    "step": 100,
+    "loss": 0.7636338835849423,
+    "terms": {
+      "marginal": 0.47310376167297363,
+      "increment": 0.4682759790702325,
+      "pair": 0.45364836995726554,
+      "energy": 0.6004903316497803
+    },
+    "supervised_updates": 100,
+    "finite_labels": 2688,
+    "total_labels": 268800,
+    "flow_gradient_norm": 0.010675805880872233,
+    "inducing_variance_fraction": 0.09514884650707245,
+    "last_origin_hour": 404568,
+    "seconds": 9.73399999999674
+  },
+  {
+    "step": 200,
+    "loss": 0.9920081343930096,
+    "terms": {
+      "marginal": 0.5999719500541687,
+      "increment": 0.6506840353636534,
+      "pair": 0.611728600789699,
+      "energy": 0.7643302083015442
+    },
+    "supervised_updates": 200,
+    "finite_labels": 2688,
+    "total_labels": 537600,
+    "flow_gradient_norm": 0.013761878904572282,
+    "inducing_variance_fraction": 0.13841865956783295,
+    "last_origin_hour": 405768,
+    "seconds": 18.969000000011874
+  },
+  {
+    "step": 300,
+    "loss": 0.8450923832383868,
+    "terms": {
+      "marginal": 0.5469212532043457,
+      "increment": 0.5400061618234102,
+      "pair": 0.3805545446836036,
+      "energy": 0.680309534072876
+    },
+    "supervised_updates": 300,
+    "finite_labels": 2688,
+    "total_labels": 806400,
+    "flow_gradient_norm": 0.014019197822418927,
+    "inducing_variance_fraction": 0.04155215993523598,
+    "last_origin_hour": 406968,
+    "seconds": 28.219000000011874
+  },
+  {
+    "step": 400,
+    "loss": 0.7988763663284201,
+    "terms": {
+      "marginal": 0.474561870098114,
+      "increment": 0.5593167685014002,
+      "pair": 0.49770307142604203,
+      "energy": 0.6005953550338745
+    },
+    "supervised_updates": 400,
+    "finite_labels": 2688,
+    "total_labels": 1075200,
+    "flow_gradient_norm": 0.011870009086487719,
+    "inducing_variance_fraction": 0.053757429122924805,
+    "last_origin_hour": 408168,
+    "seconds": 37.89100000000326
+  },
+  {
+    "step": 500,
+    "loss": 0.8850334381657126,
+    "terms": {
+      "marginal": 0.5646154284477234,
+      "increment": 0.5007479322094059,
+      "pair": 0.48917379481104883,
+      "energy": 0.7293757796287537
+    },
+    "supervised_updates": 500,
+    "finite_labels": 2688,
+    "total_labels": 1344000,
+    "flow_gradient_norm": 0.01082936356662076,
+    "inducing_variance_fraction": 0.06110407039523125,
+    "last_origin_hour": 409368,
+    "seconds": 47.578000000008615
+  },
+  {
+    "step": 600,
+    "loss": 0.7717959021262272,
+    "terms": {
+      "marginal": 0.48334622383117676,
+      "increment": 0.48226789043323404,
+      "pair": 0.4273793049981351,
+      "energy": 0.6103788018226624
+    },
+    "supervised_updates": 600,
+    "finite_labels": 2688,
+    "total_labels": 1612800,
+    "flow_gradient_norm": 0.015477247475953929,
+    "inducing_variance_fraction": 0.11528977006673813,
+    "last_origin_hour": 410568,
+    "seconds": 56.78100000001723
+  },
+  {
+    "step": 700,
+    "loss": 0.9314055991726649,
+    "terms": {
+      "marginal": 0.5945082902908325,
+      "increment": 0.4618486841702453,
+      "pair": 0.58354270756703,
+      "energy": 0.7554945945739746
+    },
+    "supervised_updates": 700,
+    "finite_labels": 2688,
+    "total_labels": 1881600,
+    "flow_gradient_norm": 0.016723282493458915,
+    "inducing_variance_fraction": 0.131885826587677,
+    "last_origin_hour": 411768,
+    "seconds": 66.09400000001187
+  },
+  {
+    "step": 800,
+    "loss": 0.8142150656855451,
+    "terms": {
+      "marginal": 0.5198110342025757,
+      "increment": 0.42798978837675605,
+      "pair": 0.48379278090305255,
+      "energy": 0.6645838618278503
+    },
+    "supervised_updates": 800,
+    "finite_labels": 2688,
+    "total_labels": 2150400,
+    "flow_gradient_norm": 0.012313449015757606,
+    "inducing_variance_fraction": 0.08031333982944489,
+    "last_origin_hour": 412968,
+    "seconds": 75.34400000001187
+  },
+  {
+    "step": 900,
+    "loss": 0.8306853175749431,
+    "terms": {
+      "marginal": 0.525293231010437,
+      "increment": 0.3937555132121704,
+      "pair": 0.5614318375338458,
+      "energy": 0.6659524440765381
+    },
+    "supervised_updates": 900,
+    "finite_labels": 2688,
+    "total_labels": 2419200,
+    "flow_gradient_norm": 0.018634810096587615,
+    "inducing_variance_fraction": 0.11929900199174881,
+    "last_origin_hour": 414168,
+    "seconds": 85.03100000001723
+  },
+  {
+    "step": 1000,
+    "loss": 0.8605674424198236,
+    "terms": {
+      "marginal": 0.5458109974861145,
+      "increment": 0.5216318334146418,
+      "pair": 0.4597509213987775,
+      "energy": 0.6941075325012207
+    },
+    "supervised_updates": 1000,
+    "finite_labels": 2688,
+    "total_labels": 2688000,
+    "flow_gradient_norm": 0.02708986466630678,
+    "inducing_variance_fraction": 0.08469758182764053,
+    "last_origin_hour": 415368,
+    "seconds": 94.10899999999674
+  },
+  {
+    "step": 1100,
+    "loss": 0.8942723527268783,
+    "terms": {
+      "marginal": 0.560594916343689,
+      "increment": 0.5267198553950654,
+      "pair": 0.5062919505033687,
+      "energy": 0.7542448043823242
+    },
+    "supervised_updates": 1100,
+    "finite_labels": 2688,
+    "total_labels": 2956800,
+    "flow_gradient_norm": 0.019747329979725347,
+    "inducing_variance_fraction": 0.07734190672636032,
+    "last_origin_hour": 416568,
+    "seconds": 104.06200000000536
+  },
+  {
+    "step": 1200,
+    "loss": 0.7388267116781542,
+    "terms": {
+      "marginal": 0.4435608386993408,
+      "increment": 0.46601984648237643,
+      "pair": 0.48874361448614545,
+      "energy": 0.5657500624656677
+    },
+    "supervised_updates": 1200,
+    "finite_labels": 2688,
+    "total_labels": 3225600,
+    "flow_gradient_norm": 0.009720213907256919,
+    "inducing_variance_fraction": 0.0433594286441803,
+    "last_origin_hour": 417768,
+    "seconds": 114.01600000000326
+  },
+  {
+    "step": 1300,
+    "loss": 1.01715268253741,
+    "terms": {
+      "marginal": 0.6593941450119019,
+      "increment": 0.4441098832554586,
+      "pair": 0.6412827134446266,
+      "energy": 0.8641038537025452
+    },
+    "supervised_updates": 1300,
+    "finite_labels": 2688,
+    "total_labels": 3494400,
+    "flow_gradient_norm": 0.011205870499484872,
+    "inducing_variance_fraction": 0.04250749200582504,
+    "last_origin_hour": 418968,
+    "seconds": 123.10899999999674
+  },
+  {
+    "step": 1400,
+    "loss": 1.125711236306867,
+    "terms": {
+      "marginal": 0.7245022654533386,
+      "increment": 0.5158496058015314,
+      "pair": 0.6927839815939821,
+      "energy": 0.9905056953430176
+    },
+    "supervised_updates": 1400,
+    "finite_labels": 2688,
+    "total_labels": 3763200,
+    "flow_gradient_norm": 0.015723000044981977,
+    "inducing_variance_fraction": 0.09459549188613892,
+    "last_origin_hour": 420168,
+    "seconds": 132.43700000000536
+  },
+  {
+    "step": 1500,
+    "loss": 1.0134159534368892,
+    "terms": {
+      "marginal": 0.6292707324028015,
+      "increment": 0.5568445793660177,
+      "pair": 0.6558244590862811,
+      "energy": 0.8097795844078064
+    },
+    "supervised_updates": 1500,
+    "finite_labels": 2688,
+    "total_labels": 4032000,
+    "flow_gradient_norm": 0.013072358484498016,
+    "inducing_variance_fraction": 0.06618832051753998,
+    "last_origin_hour": 421368,
+    "seconds": 142.17199999999139
+  },
+  {
+    "step": 1600,
+    "loss": 0.8748060749151335,
+    "terms": {
+      "marginal": 0.5510697364807129,
+      "increment": 0.5500921436209358,
+      "pair": 0.46497989859712385,
+      "energy": 0.6996832489967346
+    },
+    "supervised_updates": 1600,
+    "finite_labels": 2688,
+    "total_labels": 4300800,
+    "flow_gradient_norm": 0.014356277334894675,
+    "inducing_variance_fraction": 0.08126115798950195,
+    "last_origin_hour": 422568,
+    "seconds": 151.32800000000861
+  },
+  {
+    "step": 1700,
+    "loss": 0.8008966446720674,
+    "terms": {
+      "marginal": 0.49524393677711487,
+      "increment": 0.5307559502072667,
+      "pair": 0.4472770861054384,
+      "energy": 0.6114444732666016
+    },
+    "supervised_updates": 1700,
+    "finite_labels": 2688,
+    "total_labels": 4564308,
+    "flow_gradient_norm": 0.013937836744289002,
+    "inducing_variance_fraction": 0.0551459863781929,
+    "last_origin_hour": 423768,
+    "seconds": 160.54699999999139
+  },
+  {
+    "step": 1800,
+    "loss": 0.7635884973760446,
+    "terms": {
+      "marginal": 0.4514065682888031,
+      "increment": 0.5938484618542105,
+      "pair": 0.42552126685246733,
+      "energy": 0.5733949542045593
+    },
+    "supervised_updates": 1800,
+    "finite_labels": 2688,
+    "total_labels": 4833108,
+    "flow_gradient_norm": 0.009938143015223425,
+    "inducing_variance_fraction": 0.061790380626916885,
+    "last_origin_hour": 424968,
+    "seconds": 169.95300000000861
+  },
+  {
+    "step": 1900,
+    "loss": 0.7769957920212124,
+    "terms": {
+      "marginal": 0.48851150274276733,
+      "increment": 0.45092583727560015,
+      "pair": 0.45054082652152966,
+      "energy": 0.631176233291626
+    },
+    "supervised_updates": 1900,
+    "finite_labels": 2688,
+    "total_labels": 5101790,
+    "flow_gradient_norm": 0.013610410357359735,
+    "inducing_variance_fraction": 0.08576163649559021,
+    "last_origin_hour": 426168,
+    "seconds": 179.29699999999139
+  },
+  {
+    "step": 2000,
+    "loss": 0.8826137539117521,
+    "terms": {
+      "marginal": 0.5608954429626465,
+      "increment": 0.46705220478439013,
+      "pair": 0.5403931828051385,
+      "energy": 0.6985695958137512
+    },
+    "supervised_updates": 2000,
+    "finite_labels": 2688,
+    "total_labels": 5370590,
+    "flow_gradient_norm": 0.01154239051066311,
+    "inducing_variance_fraction": 0.048863332718610764,
+    "last_origin_hour": 427368,
+    "seconds": 188.92199999999139
+  },
+  {
+    "step": 2100,
+    "loss": 0.9033630649488312,
+    "terms": {
+      "marginal": 0.564690887928009,
+      "increment": 0.5197147974148396,
+      "pair": 0.5534318777113721,
+      "energy": 0.7038550972938538
+    },
+    "supervised_updates": 2100,
+    "finite_labels": 2688,
+    "total_labels": 5639390,
+    "flow_gradient_norm": 0.010423965729926111,
+    "inducing_variance_fraction": 0.052751585841178894,
+    "last_origin_hour": 428568,
+    "seconds": 198.39100000000326
+  },
+  {
+    "step": 2200,
+    "loss": 0.7792935463710178,
+    "terms": {
+      "marginal": 0.49864286184310913,
+      "increment": 0.39642191011564876,
+      "pair": 0.4757841590850057,
+      "energy": 0.6259916424751282
+    },
+    "supervised_updates": 2200,
+    "finite_labels": 2688,
+    "total_labels": 5908190,
+    "flow_gradient_norm": 0.011109817159437466,
+    "inducing_variance_fraction": 0.07669861614704132,
+    "last_origin_hour": 429768,
+    "seconds": 208.0
+  },
+  {
+    "step": 2300,
+    "loss": 1.030691328248107,
+    "terms": {
+      "marginal": 0.6726524829864502,
+      "increment": 0.45045898240101523,
+      "pair": 0.6366400436460703,
+      "energy": 0.8626408576965332
+    },
+    "supervised_updates": 2300,
+    "finite_labels": 2688,
+    "total_labels": 6176989,
+    "flow_gradient_norm": 0.016624905699607964,
+    "inducing_variance_fraction": 0.049401987344026566,
+    "last_origin_hour": 430968,
+    "seconds": 217.28100000001723
+  },
+  {
+    "step": 2400,
+    "loss": 1.2205600811900437,
+    "terms": {
+      "marginal": 0.7399703860282898,
+      "increment": 0.7468571779682943,
+      "pair": 0.7937080738834791,
+      "energy": 0.9544838070869446
+    },
+    "supervised_updates": 2400,
+    "finite_labels": 2688,
+    "total_labels": 6445789,
+    "flow_gradient_norm": 0.016921710425439516,
+    "inducing_variance_fraction": 0.05166405811905861,
+    "last_origin_hour": 432168,
+    "seconds": 226.59400000001187
+  },
+  {
+    "step": 2500,
+    "loss": 0.8690041310750526,
+    "terms": {
+      "marginal": 0.5179716944694519,
+      "increment": 0.5483869443535954,
+      "pair": 0.5962116915436764,
+      "energy": 0.6488277316093445
+    },
+    "supervised_updates": 2500,
+    "finite_labels": 2688,
+    "total_labels": 6714589,
+    "flow_gradient_norm": 0.012816614311964954,
+    "inducing_variance_fraction": 0.09070729464292526,
+    "last_origin_hour": 433368,
+    "seconds": 235.65600000001723
+  },
+  {
+    "step": 2600,
+    "loss": 0.8237032317211603,
+    "terms": {
+      "marginal": 0.5062068104743958,
+      "increment": 0.5296362560859644,
+      "pair": 0.47684984112681694,
+      "energy": 0.6587489247322083
+    },
+    "supervised_updates": 2600,
+    "finite_labels": 2688,
+    "total_labels": 6983389,
+    "flow_gradient_norm": 0.010351741462486564,
+    "inducing_variance_fraction": 0.060736168175935745,
+    "last_origin_hour": 434568,
+    "seconds": 245.34400000001187
+  },
+  {
+    "step": 2700,
+    "loss": 0.9974041045777446,
+    "terms": {
+      "marginal": 0.6275981068611145,
+      "increment": 0.5886867437620096,
+      "pair": 0.5781396776865576,
+      "energy": 0.7809939384460449
+    },
+    "supervised_updates": 2700,
+    "finite_labels": 2688,
+    "total_labels": 7252189,
+    "flow_gradient_norm": 0.008859104379211093,
+    "inducing_variance_fraction": 0.03150136023759842,
+    "last_origin_hour": 435768,
+    "seconds": 255.29699999999139
+  },
+  {
+    "step": 2800,
+    "loss": 0.7437383073985679,
+    "terms": {
+      "marginal": 0.4702759385108948,
+      "increment": 0.38567386088187855,
+      "pair": 0.4682851584691684,
+      "energy": 0.599726140499115
+    },
+    "supervised_updates": 2800,
+    "finite_labels": 2688,
+    "total_labels": 7520989,
+    "flow_gradient_norm": 0.009410953685159436,
+    "inducing_variance_fraction": 0.0679791048169136,
+    "last_origin_hour": 436968,
+    "seconds": 265.0780000000086
+  },
+  {
+    "step": 2900,
+    "loss": 0.7827252515041421,
+    "terms": {
+      "marginal": 0.46599361300468445,
+      "increment": 0.4670570473493988,
+      "pair": 0.5639729341777668,
+      "energy": 0.5897414088249207
+    },
+    "supervised_updates": 2900,
+    "finite_labels": 2688,
+    "total_labels": 7787836,
+    "flow_gradient_norm": 0.014271416388307768,
+    "inducing_variance_fraction": 0.10941307991743088,
+    "last_origin_hour": 438168,
+    "seconds": 274.60899999999674
+  },
+  {
+    "step": 3000,
+    "loss": 0.8261169376526534,
+    "terms": {
+      "marginal": 0.5193837285041809,
+      "increment": 0.4347492180630457,
+      "pair": 0.528463940605734,
+      "energy": 0.6592991948127747
+    },
+    "supervised_updates": 3000,
+    "finite_labels": 2688,
+    "total_labels": 8056636,
+    "flow_gradient_norm": 0.014920513156420706,
+    "inducing_variance_fraction": 0.08667908608913422,
+    "last_origin_hour": 404460,
+    "seconds": 284.0
+  }
+]

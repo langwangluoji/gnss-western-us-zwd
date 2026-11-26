@@ -1,5 +1,7 @@
 # 当前研究进展：2026-11-26
 
+共享诱导创新流双种子四臂连续训练已启动，Affine两域已完成。[实际监督时钟与评价补充](research_notes/2026-11-26-inducing-evaluation-amendment.md)记录seed42零基索引1686（第1687块）Q32无标签：3000块对应2999/3000监督更新，四臂同源mask、训练行为不变。原锁/代码/权重保留，v2完成核验从实际标签重建；已训练候选开发成绩尚未读取。新增[逐站与尾部报告](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/station_tail_audit/REPORT.md)与有限成员覆盖诊断。
+
 最新[有向时滞v2完整结果](research_notes/2026-11-26-directed-lag-v2-results.md)：双种子各3000及raw/EMA、冻结补充日期全部完成。joint主当前/六小时站宏RMSE9.806169/13.852222mm，相对匹配H_delta六小时改善0.120905mm；补充改善0.129961mm。相对同参数factorized两日历额外改善0.025453/0.031809mm，区间均为负。远条件站>300km仍无稳定收益，主当前近邻站对有小代价；独立审阅复算通过，旧I1与概率来源保留。
 
 新增[共享诱导创新概率流合同](superpowers/specs/2026-11-26-inducing-innovation-flow.md)：独立加法原型及诱导创新版本分别完成真实CPU四更新，后者另完成CUDA四更新；相关模型/GP回归28项、维护3项通过，正式协议已封存、待启动。它用终端联合评分，固定TF3000解析均值、保留完整残余GP，不宣称已有新预报收益。

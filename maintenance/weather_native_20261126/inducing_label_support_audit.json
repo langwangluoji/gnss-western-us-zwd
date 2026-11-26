@@ -1,0 +1,20 @@
+{
+  "42": {
+    "blocks": 3000,
+    "supervised_blocks": 2999,
+    "zero_label_blocks": [
+      1686
+    ],
+    "total_finite_labels": 8056608,
+    "cache_manifest_sha256": "cf672eed77e2b45c964b298404fcc731ce3e2232dafb69908a819359ff527baf",
+    "query_selection": "seed+261126+block; choose32 of128 independently of future labels"
+  },
+  "17": {
+    "blocks": 3000,
+    "supervised_blocks": 3000,
+    "zero_label_blocks": [],
+    "total_finite_labels": 8056636,
+    "cache_manifest_sha256": "2e537ab2037ee5921176e5841ca940ae376929a32817a332d596773245a1e818",
+    "query_selection": "seed+261126+block; choose32 of128 independently of future labels"
+  }
+}
