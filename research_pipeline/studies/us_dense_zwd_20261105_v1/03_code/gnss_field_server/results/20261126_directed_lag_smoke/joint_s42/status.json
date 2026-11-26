@@ -1,0 +1,12 @@
+{
+  "status": "ENGINEERING_SMOKE_COMPLETE",
+  "steps": 4,
+  "blocks_consumed": 4,
+  "supervised_updates": 4,
+  "seconds": 0.5780000000086147,
+  "final_group_lrs": [
+    1e-05,
+    2.9999999999999997e-05
+  ],
+  "ema_weights_sha256": "64b0e7c8db7e272a7085ff59261943ded1e2a2af2a4af3f3f06c943fd5bd43b7"
+}
