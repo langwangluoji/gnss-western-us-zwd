@@ -1,0 +1,16 @@
+{
+  "01_station_split.png": "4022009c7467c31175fa022f0d325702b003d41992f4c85514dcc2bdd8d0bbfd",
+  "01_station_split.svg": "64f485ffd28fb3f1b2adcad88c9982fb809a83770ce1593715219c29650a87df",
+  "02_architecture.png": "44f37bff5cbba10ddac36fbc4706dafcf2412e6f53006e11333bc0a0196683a1",
+  "02_architecture.svg": "457399c3771190a06bb4215a7c384e3ff6d73af7d03868df09d63c247cd28c56",
+  "03_training_curves.png": "c7c990809695915e3784503bb3ca2887f4a247ddc7d0395cd920822c4e9a0bf3",
+  "03_training_curves.svg": "991290536c335d3b21c3fe195110bfff8837d66ca752723f2ab8c5e9b61cc6a0",
+  "04_rmse_comparison.png": "f68d49f3c6e52c60b24c6b79c27d7cee73abe1a4ad1278ce0375a4709718b48c",
+  "04_rmse_comparison.svg": "5abbf5491d87a736be04d6d3bf49e1d336924403fca2a308c450aa314fe2b70b",
+  "05_monthly_rmse.png": "c1af64ba5dd81786257e02869bdd967aed3c25e3651fa75a4dbe4e99860e3669",
+  "05_monthly_rmse.svg": "220cead7186de7db0064e6060ade370f9a1f6af6400bddb000b9d09569bc2325",
+  "06_station_error_maps.png": "2109c80edfcc4e0cb48d748b408e0a665bc411558f4bf86c5b6742f6802e5c5d",
+  "06_station_error_maps.svg": "bc1380832c0578467ef5048f514c26c204dd18263a62989d95de0cd6c360f0d9",
+  "07_architecture_ablation.png": "136c753d80b7febca1916730aa1d6eb4767d886d55f95adb8fa46604503f4a1b",
+  "07_architecture_ablation.svg": "3212ca5bf992ab218ceecfeeb4abc553a969ad16a834d2c1db32205befef4499"
+}

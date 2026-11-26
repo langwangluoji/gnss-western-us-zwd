@@ -1,0 +1,24 @@
+{
+  "purpose": "real CUDA engineering updates; not precision ranking",
+  "runs": {
+    "base_s42": {
+      "steps": 4,
+      "seconds": 3.10999999998603,
+      "best_dev_station_macro_rmse_mm": 9.930386173106195,
+      "best_sha256": "5ee68bd9b4e369b3a01c2f41e39ad98d68f8a01cab35a8d89e136fc3f7d07aa1",
+      "parameters": 87776
+    },
+    "joint_s42": {
+      "steps": 4,
+      "best_dev_current_rmse_mm": 12.51174117613534,
+      "seconds": 2.9219999999913853,
+      "best_sha256": "26019489971386e4021d8243d8dd2ee0cf4c460f015bfc20e34bbf3a2e4964f6"
+    },
+    "joint_v2_s42": {
+      "steps": 4,
+      "best_dev_current_rmse_mm": 12.454633930965743,
+      "seconds": 2.9059999999881256,
+      "best_sha256": "520bec281f7f9ac80eac493e94faed0b282533441e45d5b044dbd3b8aaee6f9e"
+    }
+  }
+}

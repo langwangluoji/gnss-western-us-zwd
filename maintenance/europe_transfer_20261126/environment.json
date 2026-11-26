@@ -1,0 +1,16 @@
+{
+  "python": "3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "D:\\anaconda3-2025.12-2\\envs\\pytorch\\python.exe",
+  "os": "Windows-10-10.0.26300-SP0",
+  "torch": "2.8.0+cu129",
+  "cuda": "12.9",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "numpy": "2.3.5",
+  "pandas": "2.3.3",
+  "h5py": "3.14.0",
+  "scipy": "1.16.3",
+  "pyproj": "3.7.2",
+  "xgboost": "3.0.5",
+  "matplotlib": "3.10.9",
+  "torch_threads_per_process": 4
+}

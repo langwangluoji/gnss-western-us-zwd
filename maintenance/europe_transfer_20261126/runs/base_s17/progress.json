@@ -1,0 +1,8 @@
+{
+  "step": 3000,
+  "origin": 3284,
+  "seconds": 91.09399999998277,
+  "batch_rmse_mm": 17.69301986694336,
+  "gradient_norm": 36.285675048828125,
+  "dev_station_macro_rmse_mm": 13.800401658150466
+}

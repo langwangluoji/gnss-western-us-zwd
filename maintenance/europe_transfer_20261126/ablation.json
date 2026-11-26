@@ -1,0 +1,25 @@
+{
+  "cohort": "confirm",
+  "records": 63494,
+  "selection_changed_after_2024": false,
+  "models": {
+    "p14_gru": {
+      "seed42_rmse_mm": 17.10121522786962,
+      "seed17_rmse_mm": 17.110514676423023,
+      "ensemble_rmse_mm": 17.014896654822728,
+      "preselected": false
+    },
+    "i1": {
+      "seed42_rmse_mm": 15.89581883840144,
+      "seed17_rmse_mm": 16.09849120902443,
+      "ensemble_rmse_mm": 15.927922306229155,
+      "preselected": true
+    },
+    "joint": {
+      "seed42_rmse_mm": 15.873658416896534,
+      "seed17_rmse_mm": 16.018478525797473,
+      "ensemble_rmse_mm": 15.865471297761568,
+      "preselected": false
+    }
+  }
+}

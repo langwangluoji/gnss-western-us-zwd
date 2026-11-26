@@ -1,0 +1,49 @@
+{
+  "confirm_stations_with_lower_rmse": 47,
+  "confirm_stations_with_higher_rmse": 12,
+  "analysis_only_after_frozen_selection": true,
+  "priority_stations": [
+    {
+      "station_phys": "MERS",
+      "original_ensemble": 18.429474101374403,
+      "ours_ensemble": 41.47105604856471,
+      "median_nearest_reference_km": 178.62646484375,
+      "coast_km": 0.2607171237468719
+    },
+    {
+      "station_phys": "MARS",
+      "original_ensemble": 19.02455352286772,
+      "ours_ensemble": 27.00178079765715,
+      "median_nearest_reference_km": 137.35658264160156,
+      "coast_km": 1.1084434986114502
+    },
+    {
+      "station_phys": "LAMP",
+      "original_ensemble": 19.170481306471203,
+      "ours_ensemble": 26.91054703004168,
+      "median_nearest_reference_km": 264.9120788574219,
+      "coast_km": 139.40899658203125
+    },
+    {
+      "station_phys": "NOT1",
+      "original_ensemble": 21.02565374818613,
+      "ours_ensemble": 25.01225162618507,
+      "median_nearest_reference_km": 145.19544982910156,
+      "coast_km": 11.99843406677246
+    },
+    {
+      "station_phys": "LERI",
+      "original_ensemble": 17.17347381750828,
+      "ours_ensemble": 24.43455872156226,
+      "median_nearest_reference_km": 344.7706298828125,
+      "coast_km": 1.1809000968933103
+    },
+    {
+      "station_phys": "CASC",
+      "original_ensemble": 21.564100607363677,
+      "ours_ensemble": 24.38807269687723,
+      "median_nearest_reference_km": 190.10057067871094,
+      "coast_km": 1.7045209407806396
+    }
+  ]
+}

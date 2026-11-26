@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "source_hashes_unchanged": [
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\联合信号分析与深度学习的高精度对流层建模\\Data\\model\\Model4\\Model4_FFT_SH_Patent\\data\\euref_train_2020_2023.h5",
+      "sha256": "7ea9ee5f408cac3925d438762774933fc6d126be0b468175fd70944b7fd65ea3"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\联合信号分析与深度学习的高精度对流层建模\\Data\\model\\Model4\\Model4_FFT_SH_Patent\\data\\euref_test_2024.h5",
+      "sha256": "43c145ed311d6f94bef1908cecf00f42b1d8da5c288b7222788c1c1c00117f30"
+    }
+  ],
+  "old_site_roles_disjoint": true,
+  "formal_version": 2,
+  "models_3000_steps_and_weight_hashes_verified": true,
+  "independent_rmse_recalculation": {
+    "confirm": {
+      "original_ensemble": 17.147244442943926,
+      "ours_ensemble": 15.927922306229155
+    },
+    "dev": {
+      "original_ensemble": 16.04625174176239,
+      "ours_ensemble": 13.984261277665002
+    },
+    "new_unseen_site": {
+      "original_ensemble": 15.956440819599628,
+      "ours_ensemble": 13.79550415469954
+    },
+    "all_spatial_holdout": {
+      "original_ensemble": 16.56422200030132,
+      "ours_ensemble": 14.913236654348077
+    }
+  },
+  "selected_ensemble_reconstructed": true,
+  "report_links_exist": true,
+  "architecture_source_sha256": {
+    "fixed_support.py": "ef317e24d891ad23bf54fbd4b81a5ca4b73b6b495f99e4d644d72f0d6f2a659a",
+    "p14_fusion.py": "8c0e85ffd23829a1fc47d9bafec1fe6cd674d17b7333a308afbb6ed1a641a438",
+    "temporal_encoders.py": "77a9efdc2b3081e22e234c22df45665808535cf897861a8687c9d9d2c1aa41e4",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_physics_lm.py": "1cc6e3450745548dfb1a86502402a95cf1c27370427e81884bee1cf353d71bd6",
+    "native_mean_fusion_v2.py": "9c8bb43a97d65dd00fb0395ea680fc9a8f350c8dea446327c736ab6c98308a06",
+    "native_directed_lag.py": "7da5812e1fe14f12d0d44c3d50a050316c3205df79cb7a1529125de873986260",
+    "native_directed_lag_v2.py": "5f7d88746188759032241e92bb1404f76d743862dba6b7b4a261ec3d332e31f8"
+  }
+}

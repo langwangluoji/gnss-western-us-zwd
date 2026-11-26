@@ -1,0 +1,856 @@
+{
+  "status": "diagnostic_only_not_formal_ranking",
+  "protocol": "v1 neural2020-2022; v2 formal2020-2023",
+  "curves": {
+    "base_s42": [
+      {
+        "step": 1,
+        "origin": 16,
+        "seconds": 0.8279999999795109,
+        "batch_rmse_mm": 24.51690673828125,
+        "gradient_norm": 51.3211784362793
+      },
+      {
+        "step": 100,
+        "origin": 412,
+        "seconds": 3.7969999999913853,
+        "batch_rmse_mm": 19.716432571411133,
+        "gradient_norm": 20.66931915283203
+      },
+      {
+        "step": 200,
+        "origin": 812,
+        "seconds": 6.639999999984866,
+        "batch_rmse_mm": 25.13006591796875,
+        "gradient_norm": 41.35927200317383
+      },
+      {
+        "step": 300,
+        "origin": 1212,
+        "seconds": 9.577999999979511,
+        "batch_rmse_mm": 22.01936912536621,
+        "gradient_norm": 39.767826080322266
+      },
+      {
+        "step": 400,
+        "origin": 1612,
+        "seconds": 12.405999999988126,
+        "batch_rmse_mm": 12.072702407836914,
+        "gradient_norm": 13.605706214904785
+      },
+      {
+        "step": 500,
+        "origin": 2012,
+        "seconds": 15.327999999979511,
+        "batch_rmse_mm": 17.5091495513916,
+        "gradient_norm": 23.914045333862305,
+        "dev_station_macro_rmse_mm": 14.614094284126626
+      },
+      {
+        "step": 600,
+        "origin": 2412,
+        "seconds": 18.70299999997951,
+        "batch_rmse_mm": 21.630996704101562,
+        "gradient_norm": 46.857460021972656
+      },
+      {
+        "step": 700,
+        "origin": 2812,
+        "seconds": 21.655999999988126,
+        "batch_rmse_mm": 13.972405433654785,
+        "gradient_norm": 6.464587688446045
+      },
+      {
+        "step": 800,
+        "origin": 3212,
+        "seconds": 24.59299999999348,
+        "batch_rmse_mm": 16.13623809814453,
+        "gradient_norm": 11.015195846557617
+      },
+      {
+        "step": 900,
+        "origin": 3612,
+        "seconds": 28.82799999997951,
+        "batch_rmse_mm": 28.545116424560547,
+        "gradient_norm": 16.631742477416992
+      },
+      {
+        "step": 1000,
+        "origin": 4012,
+        "seconds": 32.530999999988126,
+        "batch_rmse_mm": 19.101932525634766,
+        "gradient_norm": 15.854337692260742,
+        "dev_station_macro_rmse_mm": 14.204409945960428
+      },
+      {
+        "step": 1100,
+        "origin": 48,
+        "seconds": 36.20299999997951,
+        "batch_rmse_mm": 10.327528953552246,
+        "gradient_norm": 6.597433567047119
+      },
+      {
+        "step": 1200,
+        "origin": 448,
+        "seconds": 39.280999999988126,
+        "batch_rmse_mm": 14.152745246887207,
+        "gradient_norm": 26.25418472290039
+      },
+      {
+        "step": 1300,
+        "origin": 848,
+        "seconds": 42.280999999988126,
+        "batch_rmse_mm": 27.4635009765625,
+        "gradient_norm": 18.653026580810547
+      },
+      {
+        "step": 1400,
+        "origin": 1248,
+        "seconds": 45.312000000005355,
+        "batch_rmse_mm": 16.997644424438477,
+        "gradient_norm": 56.118160247802734
+      },
+      {
+        "step": 1500,
+        "origin": 1648,
+        "seconds": 48.35899999999674,
+        "batch_rmse_mm": 11.7979736328125,
+        "gradient_norm": 22.274063110351562,
+        "dev_station_macro_rmse_mm": 13.861614839302296
+      },
+      {
+        "step": 1600,
+        "origin": 2048,
+        "seconds": 51.82799999997951,
+        "batch_rmse_mm": 17.36955451965332,
+        "gradient_norm": 22.083559036254883
+      },
+      {
+        "step": 1700,
+        "origin": 2448,
+        "seconds": 54.812000000005355,
+        "batch_rmse_mm": 21.774646759033203,
+        "gradient_norm": 34.619747161865234
+      },
+      {
+        "step": 1800,
+        "origin": 2848,
+        "seconds": 57.84299999999348,
+        "batch_rmse_mm": 12.612548828125,
+        "gradient_norm": 12.40407657623291
+      },
+      {
+        "step": 1900,
+        "origin": 3248,
+        "seconds": 60.889999999984866,
+        "batch_rmse_mm": 14.047192573547363,
+        "gradient_norm": 17.510391235351562
+      },
+      {
+        "step": 2000,
+        "origin": 3648,
+        "seconds": 63.96799999999348,
+        "batch_rmse_mm": 20.871122360229492,
+        "gradient_norm": 7.652416229248047,
+        "dev_station_macro_rmse_mm": 14.033076870409129
+      },
+      {
+        "step": 2100,
+        "origin": 4048,
+        "seconds": 67.53099999998813,
+        "batch_rmse_mm": 16.408836364746094,
+        "gradient_norm": 14.73434066772461
+      },
+      {
+        "step": 2200,
+        "origin": 84,
+        "seconds": 70.75,
+        "batch_rmse_mm": 14.726954460144043,
+        "gradient_norm": 9.796448707580566
+      },
+      {
+        "step": 2300,
+        "origin": 484,
+        "seconds": 74.10899999999674,
+        "batch_rmse_mm": 12.260298728942871,
+        "gradient_norm": 27.765621185302734
+      },
+      {
+        "step": 2400,
+        "origin": 884,
+        "seconds": 77.28099999998813,
+        "batch_rmse_mm": 21.628923416137695,
+        "gradient_norm": 37.75482177734375
+      },
+      {
+        "step": 2500,
+        "origin": 1284,
+        "seconds": 80.63999999998487,
+        "batch_rmse_mm": 15.90751838684082,
+        "gradient_norm": 14.900574684143066,
+        "dev_station_macro_rmse_mm": 13.856089733058987
+      },
+      {
+        "step": 2600,
+        "origin": 1684,
+        "seconds": 84.29699999999139,
+        "batch_rmse_mm": 12.365205764770508,
+        "gradient_norm": 20.314971923828125
+      },
+      {
+        "step": 2700,
+        "origin": 2084,
+        "seconds": 87.31200000000536,
+        "batch_rmse_mm": 24.442758560180664,
+        "gradient_norm": 61.7808952331543
+      },
+      {
+        "step": 2800,
+        "origin": 2484,
+        "seconds": 90.76499999998487,
+        "batch_rmse_mm": 18.6882266998291,
+        "gradient_norm": 8.199851989746094
+      },
+      {
+        "step": 2900,
+        "origin": 2884,
+        "seconds": 94.18700000000536,
+        "batch_rmse_mm": 11.782623291015625,
+        "gradient_norm": 26.923433303833008
+      },
+      {
+        "step": 3000,
+        "origin": 3284,
+        "seconds": 97.38999999998487,
+        "batch_rmse_mm": 12.030746459960938,
+        "gradient_norm": 10.397747993469238,
+        "dev_station_macro_rmse_mm": 13.713714168371414
+      }
+    ],
+    "base_s17": [
+      {
+        "step": 1,
+        "origin": 16,
+        "seconds": 0.8129999999946449,
+        "batch_rmse_mm": 18.666915893554688,
+        "gradient_norm": 20.97125816345215
+      },
+      {
+        "step": 100,
+        "origin": 412,
+        "seconds": 3.8439999999827705,
+        "batch_rmse_mm": 18.109846115112305,
+        "gradient_norm": 20.82122230529785
+      },
+      {
+        "step": 200,
+        "origin": 812,
+        "seconds": 6.890999999974156,
+        "batch_rmse_mm": 24.75661849975586,
+        "gradient_norm": 26.691499710083008
+      },
+      {
+        "step": 300,
+        "origin": 1212,
+        "seconds": 9.96899999998277,
+        "batch_rmse_mm": 23.82451820373535,
+        "gradient_norm": 45.1383056640625
+      },
+      {
+        "step": 400,
+        "origin": 1612,
+        "seconds": 12.96899999998277,
+        "batch_rmse_mm": 18.873891830444336,
+        "gradient_norm": 39.50762176513672
+      },
+      {
+        "step": 500,
+        "origin": 2012,
+        "seconds": 15.890999999974156,
+        "batch_rmse_mm": 15.387510299682617,
+        "gradient_norm": 11.758682250976562,
+        "dev_station_macro_rmse_mm": 14.439721018767013
+      },
+      {
+        "step": 600,
+        "origin": 2412,
+        "seconds": 19.296999999991385,
+        "batch_rmse_mm": 21.685302734375,
+        "gradient_norm": 24.669063568115234
+      },
+      {
+        "step": 700,
+        "origin": 2812,
+        "seconds": 22.21899999998277,
+        "batch_rmse_mm": 18.263336181640625,
+        "gradient_norm": 18.098108291625977
+      },
+      {
+        "step": 800,
+        "origin": 3212,
+        "seconds": 25.140999999974156,
+        "batch_rmse_mm": 13.281941413879395,
+        "gradient_norm": 38.180213928222656
+      },
+      {
+        "step": 900,
+        "origin": 3612,
+        "seconds": 28.015999999974156,
+        "batch_rmse_mm": 29.879837036132812,
+        "gradient_norm": 26.718368530273438
+      },
+      {
+        "step": 1000,
+        "origin": 4012,
+        "seconds": 30.937999999994645,
+        "batch_rmse_mm": 25.706954956054688,
+        "gradient_norm": 52.00341033935547,
+        "dev_station_macro_rmse_mm": 14.262822812113285
+      },
+      {
+        "step": 1100,
+        "origin": 48,
+        "seconds": 34.20299999997951,
+        "batch_rmse_mm": 11.70431137084961,
+        "gradient_norm": 20.25444221496582
+      },
+      {
+        "step": 1200,
+        "origin": 448,
+        "seconds": 37.062999999994645,
+        "batch_rmse_mm": 12.53070068359375,
+        "gradient_norm": 11.812310218811035
+      },
+      {
+        "step": 1300,
+        "origin": 848,
+        "seconds": 40.046999999991385,
+        "batch_rmse_mm": 23.69833755493164,
+        "gradient_norm": 39.2655143737793
+      },
+      {
+        "step": 1400,
+        "origin": 1248,
+        "seconds": 43.125,
+        "batch_rmse_mm": 14.97690200805664,
+        "gradient_norm": 12.631306648254395
+      },
+      {
+        "step": 1500,
+        "origin": 1648,
+        "seconds": 45.96899999998277,
+        "batch_rmse_mm": 11.027813911437988,
+        "gradient_norm": 7.224526882171631,
+        "dev_station_macro_rmse_mm": 14.112865955295417
+      },
+      {
+        "step": 1600,
+        "origin": 2048,
+        "seconds": 49.25,
+        "batch_rmse_mm": 17.502187728881836,
+        "gradient_norm": 13.161407470703125
+      },
+      {
+        "step": 1700,
+        "origin": 2448,
+        "seconds": 52.09399999998277,
+        "batch_rmse_mm": 17.58497428894043,
+        "gradient_norm": 20.819974899291992
+      },
+      {
+        "step": 1800,
+        "origin": 2848,
+        "seconds": 54.937999999994645,
+        "batch_rmse_mm": 18.17796516418457,
+        "gradient_norm": 23.37681007385254
+      },
+      {
+        "step": 1900,
+        "origin": 3248,
+        "seconds": 57.780999999988126,
+        "batch_rmse_mm": 13.811758041381836,
+        "gradient_norm": 12.43390941619873
+      },
+      {
+        "step": 2000,
+        "origin": 3648,
+        "seconds": 61.171999999991385,
+        "batch_rmse_mm": 24.251087188720703,
+        "gradient_norm": 18.851354598999023,
+        "dev_station_macro_rmse_mm": 13.945107880450172
+      },
+      {
+        "step": 2100,
+        "origin": 4048,
+        "seconds": 64.68799999999464,
+        "batch_rmse_mm": 16.582752227783203,
+        "gradient_norm": 12.233977317810059
+      },
+      {
+        "step": 2200,
+        "origin": 84,
+        "seconds": 67.875,
+        "batch_rmse_mm": 13.922282218933105,
+        "gradient_norm": 38.97142028808594
+      },
+      {
+        "step": 2300,
+        "origin": 484,
+        "seconds": 70.76599999997416,
+        "batch_rmse_mm": 11.507397651672363,
+        "gradient_norm": 15.786556243896484
+      },
+      {
+        "step": 2400,
+        "origin": 884,
+        "seconds": 73.67199999999139,
+        "batch_rmse_mm": 25.37339973449707,
+        "gradient_norm": 45.29769515991211
+      },
+      {
+        "step": 2500,
+        "origin": 1284,
+        "seconds": 76.46899999998277,
+        "batch_rmse_mm": 17.118864059448242,
+        "gradient_norm": 34.547584533691406,
+        "dev_station_macro_rmse_mm": 13.824367869916466
+      },
+      {
+        "step": 2600,
+        "origin": 1684,
+        "seconds": 79.73499999998603,
+        "batch_rmse_mm": 9.727134704589844,
+        "gradient_norm": 10.619458198547363
+      },
+      {
+        "step": 2700,
+        "origin": 2084,
+        "seconds": 82.56299999999464,
+        "batch_rmse_mm": 22.649995803833008,
+        "gradient_norm": 25.849021911621094
+      },
+      {
+        "step": 2800,
+        "origin": 2484,
+        "seconds": 85.42199999999139,
+        "batch_rmse_mm": 17.686344146728516,
+        "gradient_norm": 17.883798599243164
+      },
+      {
+        "step": 2900,
+        "origin": 2884,
+        "seconds": 88.23499999998603,
+        "batch_rmse_mm": 13.825430870056152,
+        "gradient_norm": 26.694786071777344
+      },
+      {
+        "step": 3000,
+        "origin": 3284,
+        "seconds": 91.09399999998277,
+        "batch_rmse_mm": 17.69301986694336,
+        "gradient_norm": 36.285675048828125,
+        "dev_station_macro_rmse_mm": 13.800401658150466
+      }
+    ],
+    "joint_s42": [
+      {
+        "step": 1,
+        "seconds": 0.485000000015134,
+        "loss": 5.588186264038086,
+        "current_batch_rmse_mm": 13.357882499694824
+      },
+      {
+        "step": 100,
+        "seconds": 6.51600000000326,
+        "loss": 6.48435115814209,
+        "current_batch_rmse_mm": 20.457380294799805
+      },
+      {
+        "step": 200,
+        "seconds": 13.735000000015134,
+        "loss": 8.794230461120605,
+        "current_batch_rmse_mm": 24.09488296508789
+      },
+      {
+        "step": 300,
+        "seconds": 20.703000000008615,
+        "loss": 6.865143299102783,
+        "current_batch_rmse_mm": 18.428760528564453
+      },
+      {
+        "step": 400,
+        "seconds": 27.969000000011874,
+        "loss": 5.218549728393555,
+        "current_batch_rmse_mm": 12.141290664672852
+      },
+      {
+        "step": 500,
+        "seconds": 34.812999999994645,
+        "loss": 4.554061412811279,
+        "current_batch_rmse_mm": 15.950255393981934,
+        "dev_current_rmse_mm": 12.729331003797284,
+        "dev_f6_rmse_mm": 19.80400458573067
+      },
+      {
+        "step": 600,
+        "seconds": 43.312999999994645,
+        "loss": 4.42995023727417,
+        "current_batch_rmse_mm": 15.640767097473145
+      },
+      {
+        "step": 700,
+        "seconds": 50.79700000002049,
+        "loss": 4.283642292022705,
+        "current_batch_rmse_mm": 14.916328430175781
+      },
+      {
+        "step": 800,
+        "seconds": 57.985000000015134,
+        "loss": 2.4819257259368896,
+        "current_batch_rmse_mm": 10.882633209228516
+      },
+      {
+        "step": 900,
+        "seconds": 64.28200000000652,
+        "loss": 9.99657917022705,
+        "current_batch_rmse_mm": 23.79747200012207
+      },
+      {
+        "step": 1000,
+        "seconds": 70.59400000001187,
+        "loss": 6.02699089050293,
+        "current_batch_rmse_mm": 15.400193214416504,
+        "dev_current_rmse_mm": 12.664144988933357,
+        "dev_f6_rmse_mm": 19.164686369767534
+      },
+      {
+        "step": 1100,
+        "seconds": 78.21900000001187,
+        "loss": 5.264150142669678,
+        "current_batch_rmse_mm": 15.65204906463623
+      },
+      {
+        "step": 1200,
+        "seconds": 83.89100000000326,
+        "loss": 7.122002124786377,
+        "current_batch_rmse_mm": 19.391727447509766
+      },
+      {
+        "step": 1300,
+        "seconds": 90.15700000000652,
+        "loss": 6.365746974945068,
+        "current_batch_rmse_mm": 20.868804931640625
+      },
+      {
+        "step": 1400,
+        "seconds": 96.29700000002049,
+        "loss": 3.9721391201019287,
+        "current_batch_rmse_mm": 14.300007820129395
+      },
+      {
+        "step": 1500,
+        "seconds": 102.70300000000861,
+        "loss": 3.671994686126709,
+        "current_batch_rmse_mm": 16.059171676635742,
+        "dev_current_rmse_mm": 12.659192171145742,
+        "dev_f6_rmse_mm": 19.09079143989503
+      },
+      {
+        "step": 1600,
+        "seconds": 110.21900000001187,
+        "loss": 6.41234827041626,
+        "current_batch_rmse_mm": 20.397720336914062
+      },
+      {
+        "step": 1700,
+        "seconds": 118.28200000000652,
+        "loss": 6.823785781860352,
+        "current_batch_rmse_mm": 21.017578125
+      },
+      {
+        "step": 1800,
+        "seconds": 124.61000000001513,
+        "loss": 3.5688652992248535,
+        "current_batch_rmse_mm": 12.637419700622559
+      },
+      {
+        "step": 1900,
+        "seconds": 133.76600000000326,
+        "loss": 3.7921719551086426,
+        "current_batch_rmse_mm": 15.272276878356934
+      },
+      {
+        "step": 2000,
+        "seconds": 146.78200000000652,
+        "loss": 5.7856950759887695,
+        "current_batch_rmse_mm": 18.044471740722656,
+        "dev_current_rmse_mm": 12.640750800589085,
+        "dev_f6_rmse_mm": 18.588805314781926
+      },
+      {
+        "step": 2100,
+        "seconds": 162.06299999999464,
+        "loss": 3.9504733085632324,
+        "current_batch_rmse_mm": 13.827070236206055
+      },
+      {
+        "step": 2200,
+        "seconds": 175.0470000000205,
+        "loss": 2.9832563400268555,
+        "current_batch_rmse_mm": 10.492319107055664
+      },
+      {
+        "step": 2300,
+        "seconds": 187.32800000000861,
+        "loss": 5.585086822509766,
+        "current_batch_rmse_mm": 18.9669246673584
+      },
+      {
+        "step": 2400,
+        "seconds": 200.07800000000861,
+        "loss": 5.594593048095703,
+        "current_batch_rmse_mm": 21.722408294677734
+      },
+      {
+        "step": 2500,
+        "seconds": 212.64100000000326,
+        "loss": 3.7689907550811768,
+        "current_batch_rmse_mm": 14.946330070495605,
+        "dev_current_rmse_mm": 12.639694710782013,
+        "dev_f6_rmse_mm": 18.226327732057225
+      },
+      {
+        "step": 2600,
+        "seconds": 226.89100000000326,
+        "loss": 2.5267887115478516,
+        "current_batch_rmse_mm": 14.258269309997559
+      },
+      {
+        "step": 2700,
+        "seconds": 238.96900000001187,
+        "loss": 7.239368915557861,
+        "current_batch_rmse_mm": 18.60721778869629
+      },
+      {
+        "step": 2800,
+        "seconds": 251.96900000001187,
+        "loss": 5.582411766052246,
+        "current_batch_rmse_mm": 19.146848678588867
+      },
+      {
+        "step": 2900,
+        "seconds": 264.3440000000119,
+        "loss": 2.498502254486084,
+        "current_batch_rmse_mm": 9.25774097442627
+      },
+      {
+        "step": 3000,
+        "seconds": 277.39100000000326,
+        "loss": 2.513965606689453,
+        "current_batch_rmse_mm": 11.98889446258545,
+        "dev_current_rmse_mm": 12.613479598127682,
+        "dev_f6_rmse_mm": 18.19585716781887
+      }
+    ],
+    "joint_s17": [
+      {
+        "step": 1,
+        "seconds": 0.6089999999967404,
+        "loss": 4.224108695983887,
+        "current_batch_rmse_mm": 8.949776649475098
+      },
+      {
+        "step": 100,
+        "seconds": 12.84299999999348,
+        "loss": 4.5332746505737305,
+        "current_batch_rmse_mm": 11.292559623718262
+      },
+      {
+        "step": 200,
+        "seconds": 25.187000000005355,
+        "loss": 6.902623176574707,
+        "current_batch_rmse_mm": 18.61178970336914
+      },
+      {
+        "step": 300,
+        "seconds": 38.01500000001397,
+        "loss": 5.838871955871582,
+        "current_batch_rmse_mm": 14.895193099975586
+      },
+      {
+        "step": 400,
+        "seconds": 50.655999999988126,
+        "loss": 4.460184574127197,
+        "current_batch_rmse_mm": 12.544242858886719
+      },
+      {
+        "step": 500,
+        "seconds": 61.35899999999674,
+        "loss": 5.006979465484619,
+        "current_batch_rmse_mm": 17.9140567779541,
+        "dev_current_rmse_mm": 12.663964616854454,
+        "dev_f6_rmse_mm": 19.528959517423644
+      },
+      {
+        "step": 600,
+        "seconds": 69.875,
+        "loss": 5.434141635894775,
+        "current_batch_rmse_mm": 15.953571319580078
+      },
+      {
+        "step": 700,
+        "seconds": 76.14000000001397,
+        "loss": 3.91721773147583,
+        "current_batch_rmse_mm": 13.104287147521973
+      },
+      {
+        "step": 800,
+        "seconds": 82.81200000000536,
+        "loss": 2.4632339477539062,
+        "current_batch_rmse_mm": 12.778369903564453
+      },
+      {
+        "step": 900,
+        "seconds": 89.21799999999348,
+        "loss": 8.563268661499023,
+        "current_batch_rmse_mm": 20.443456649780273
+      },
+      {
+        "step": 1000,
+        "seconds": 94.71799999999348,
+        "loss": 6.622859477996826,
+        "current_batch_rmse_mm": 14.88313102722168,
+        "dev_current_rmse_mm": 12.650611935322704,
+        "dev_f6_rmse_mm": 19.036623578660407
+      },
+      {
+        "step": 1100,
+        "seconds": 101.9210000000021,
+        "loss": 4.350244522094727,
+        "current_batch_rmse_mm": 10.369490623474121
+      },
+      {
+        "step": 1200,
+        "seconds": 107.81200000000536,
+        "loss": 5.616547107696533,
+        "current_batch_rmse_mm": 10.789791107177734
+      },
+      {
+        "step": 1300,
+        "seconds": 113.7960000000021,
+        "loss": 7.061793804168701,
+        "current_batch_rmse_mm": 21.863628387451172
+      },
+      {
+        "step": 1400,
+        "seconds": 120.03099999998813,
+        "loss": 3.5099663734436035,
+        "current_batch_rmse_mm": 10.986051559448242
+      },
+      {
+        "step": 1500,
+        "seconds": 126.03099999998813,
+        "loss": 2.6950762271881104,
+        "current_batch_rmse_mm": 11.314154624938965,
+        "dev_current_rmse_mm": 12.682977114911257,
+        "dev_f6_rmse_mm": 18.945323134825763
+      },
+      {
+        "step": 1600,
+        "seconds": 133.31200000000536,
+        "loss": 6.992640972137451,
+        "current_batch_rmse_mm": 15.448987007141113
+      },
+      {
+        "step": 1700,
+        "seconds": 139.2960000000021,
+        "loss": 5.0577263832092285,
+        "current_batch_rmse_mm": 16.10139274597168
+      },
+      {
+        "step": 1800,
+        "seconds": 145.01500000001397,
+        "loss": 3.072969675064087,
+        "current_batch_rmse_mm": 11.505863189697266
+      },
+      {
+        "step": 1900,
+        "seconds": 150.78099999998813,
+        "loss": 3.8472037315368652,
+        "current_batch_rmse_mm": 16.404071807861328
+      },
+      {
+        "step": 2000,
+        "seconds": 157.06200000000536,
+        "loss": 7.02548885345459,
+        "current_batch_rmse_mm": 19.841381072998047,
+        "dev_current_rmse_mm": 12.726614577643616,
+        "dev_f6_rmse_mm": 18.624381515365553
+      },
+      {
+        "step": 2100,
+        "seconds": 165.03099999998813,
+        "loss": 4.8762335777282715,
+        "current_batch_rmse_mm": 12.22819995880127
+      },
+      {
+        "step": 2200,
+        "seconds": 172.25,
+        "loss": 3.398151397705078,
+        "current_batch_rmse_mm": 12.72431468963623
+      },
+      {
+        "step": 2300,
+        "seconds": 179.78099999998813,
+        "loss": 5.531434535980225,
+        "current_batch_rmse_mm": 18.201919555664062
+      },
+      {
+        "step": 2400,
+        "seconds": 187.82800000000861,
+        "loss": 6.860723972320557,
+        "current_batch_rmse_mm": 23.98103904724121
+      },
+      {
+        "step": 2500,
+        "seconds": 196.25,
+        "loss": 3.192136287689209,
+        "current_batch_rmse_mm": 12.227691650390625,
+        "dev_current_rmse_mm": 12.609032890911623,
+        "dev_f6_rmse_mm": 18.022017043695957
+      },
+      {
+        "step": 2600,
+        "seconds": 205.65599999998813,
+        "loss": 2.0174527168273926,
+        "current_batch_rmse_mm": 12.602794647216797
+      },
+      {
+        "step": 2700,
+        "seconds": 213.09299999999348,
+        "loss": 5.512468338012695,
+        "current_batch_rmse_mm": 16.02801513671875
+      },
+      {
+        "step": 2800,
+        "seconds": 220.75,
+        "loss": 5.590481758117676,
+        "current_batch_rmse_mm": 16.131864547729492
+      },
+      {
+        "step": 2900,
+        "seconds": 228.0,
+        "loss": 2.529930591583252,
+        "current_batch_rmse_mm": 8.227143287658691
+      },
+      {
+        "step": 3000,
+        "seconds": 235.23399999999674,
+        "loss": 2.6138079166412354,
+        "current_batch_rmse_mm": 13.464776039123535,
+        "dev_current_rmse_mm": 12.654951634749375,
+        "dev_f6_rmse_mm": 17.973128176554635
+      }
+    ]
+  }
+}

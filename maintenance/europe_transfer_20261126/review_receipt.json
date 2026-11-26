@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "review": "independent read-only code, scientific protocol, pandas one-to-one key recomputation and all7 rendered PNG figures",
+  "critical_unresolved": 0,
+  "important_unresolved": 0,
+  "minor_unresolved": 0,
+  "fixed": [
+    {
+      "issue": "train/inference observation age mismatch",
+      "resolution": "full-timeline causal age fallback, hand-checked36h regression, actual dev inputs max delta0"
+    },
+    {
+      "issue": "map colorbar overlap and clipped extremes",
+      "resolution": "horizontal colorbars and full ranges"
+    },
+    {
+      "issue": "ensemble column wording",
+      "resolution": "explicitly average predictions first then calculate RMSE"
+    }
+  ],
+  "primary_confirm": {
+    "registered_stations": 63,
+    "active_stations": 59,
+    "common_records": 63494,
+    "original_ensemble_rmse_mm": 17.147244442943926,
+    "ours_ensemble_rmse_mm": 15.927922306229155
+  },
+  "largest_independent_metric_difference_mm": 4e-14,
+  "valid_bitmap_exact_match": true
+}

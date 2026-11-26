@@ -1,0 +1,8 @@
+{
+  "prediction_sha256": "db7ef3403fb2a35ff0bcd8300eea3d6c1f7c2e4410b0bcb6b3788635019049c1",
+  "selection_sha256": "8ea3c227d21d3f9e2d1de2cdfb29e8c9a881166b5ec2ae15dce04da476459a68",
+  "test_cache_sha256": "956e32d51cc3d47f81e9821ad42301865266545045bc4568de76649c6d08cd0f",
+  "current_epochs": 1464,
+  "query_station_count": 138,
+  "target_station_current_and_historical_GNSS_used_as_input": false
+}

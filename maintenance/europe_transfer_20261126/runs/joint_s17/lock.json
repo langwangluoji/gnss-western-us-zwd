@@ -1,0 +1,22 @@
+{
+  "seed": 17,
+  "steps": 3000,
+  "base_sha256": "b7e8c2e12dd4e97c52d9982568e5d4fd29c19b682f85b3b586d7d707c56a9301",
+  "native_code_sha256": "2c4f0c0a87a0ee96deabbc935b1f1d21359ec2a8493c8788e2c2e40f99dcef47",
+  "class_name": "NativeDirectedLagV2",
+  "length_records": 16,
+  "identity_count": 411,
+  "train_blocks": 1082,
+  "order": "chronological per complete pass; no time sampling",
+  "supervised_leads_hours": [
+    0,
+    6,
+    12,
+    18,
+    24,
+    30,
+    36
+  ],
+  "selection": "2023 dev current station macro RMSE",
+  "test_2024_used_for_selection": false
+}

@@ -1,0 +1,202 @@
+{
+  "protocol": "same273training stations and2020-2023training pool; own feature pipelines; full2024 retrospective; primary63registered confirm stations, common valid keys",
+  "selection": "i1",
+  "cohorts": {
+    "confirm": {
+      "records": 63494,
+      "stations": 59,
+      "models": {
+        "original_s42": {
+          "micro_rmse_mm": 17.25689033894575,
+          "station_macro_rmse_mm": 16.761244407180843
+        },
+        "p14_gru_s42": {
+          "micro_rmse_mm": 17.10121522786958,
+          "station_macro_rmse_mm": 15.972905095622892
+        },
+        "i1_s42": {
+          "micro_rmse_mm": 15.89581883840144,
+          "station_macro_rmse_mm": 14.39560275376217
+        },
+        "joint_s42": {
+          "micro_rmse_mm": 15.8736584168965,
+          "station_macro_rmse_mm": 14.395846461357923
+        },
+        "original_s17": {
+          "micro_rmse_mm": 17.160412876575048,
+          "station_macro_rmse_mm": 16.677170302921088
+        },
+        "p14_gru_s17": {
+          "micro_rmse_mm": 17.110514676422994,
+          "station_macro_rmse_mm": 15.965861674227352
+        },
+        "i1_s17": {
+          "micro_rmse_mm": 16.09849120902443,
+          "station_macro_rmse_mm": 14.498165002247118
+        },
+        "joint_s17": {
+          "micro_rmse_mm": 16.018478525797438,
+          "station_macro_rmse_mm": 14.424784261145296
+        },
+        "original_ensemble": {
+          "micro_rmse_mm": 17.14724444294393,
+          "station_macro_rmse_mm": 16.65654700629731
+        },
+        "ours_ensemble": {
+          "micro_rmse_mm": 15.927922306229155,
+          "station_macro_rmse_mm": 14.379103433932684
+        }
+      }
+    },
+    "dev": {
+      "records": 67574,
+      "stations": 61,
+      "models": {
+        "original_s42": {
+          "micro_rmse_mm": 16.161387355549028,
+          "station_macro_rmse_mm": 16.063339373728603
+        },
+        "p14_gru_s42": {
+          "micro_rmse_mm": 15.248692803240079,
+          "station_macro_rmse_mm": 14.656746608904804
+        },
+        "i1_s42": {
+          "micro_rmse_mm": 14.119499670083004,
+          "station_macro_rmse_mm": 13.316615107272337
+        },
+        "joint_s42": {
+          "micro_rmse_mm": 14.065261635606634,
+          "station_macro_rmse_mm": 13.309283268569757
+        },
+        "original_s17": {
+          "micro_rmse_mm": 16.055300450353997,
+          "station_macro_rmse_mm": 15.97326523108652
+        },
+        "p14_gru_s17": {
+          "micro_rmse_mm": 15.184289971516376,
+          "station_macro_rmse_mm": 14.694740550137366
+        },
+        "i1_s17": {
+          "micro_rmse_mm": 13.951750980929486,
+          "station_macro_rmse_mm": 13.243492753508418
+        },
+        "joint_s17": {
+          "micro_rmse_mm": 13.886998243629078,
+          "station_macro_rmse_mm": 13.204399396465965
+        },
+        "original_ensemble": {
+          "micro_rmse_mm": 16.04625174176239,
+          "station_macro_rmse_mm": 15.956043436173596
+        },
+        "ours_ensemble": {
+          "micro_rmse_mm": 13.984261277665002,
+          "station_macro_rmse_mm": 13.233207210055038
+        }
+      }
+    },
+    "new_unseen_site": {
+      "records": 5390,
+      "stations": 11,
+      "models": {
+        "original_s42": {
+          "micro_rmse_mm": 16.050593414872267,
+          "station_macro_rmse_mm": 16.653046875751293
+        },
+        "p14_gru_s42": {
+          "micro_rmse_mm": 14.310388894188165,
+          "station_macro_rmse_mm": 14.74185074291259
+        },
+        "i1_s42": {
+          "micro_rmse_mm": 14.215476648346495,
+          "station_macro_rmse_mm": 14.15616349423571
+        },
+        "joint_s42": {
+          "micro_rmse_mm": 14.131364785138986,
+          "station_macro_rmse_mm": 14.133275823399986
+        },
+        "original_s17": {
+          "micro_rmse_mm": 15.9894113747192,
+          "station_macro_rmse_mm": 16.58223094032402
+        },
+        "p14_gru_s17": {
+          "micro_rmse_mm": 14.53473541908658,
+          "station_macro_rmse_mm": 15.008174716576631
+        },
+        "i1_s17": {
+          "micro_rmse_mm": 13.546346798090442,
+          "station_macro_rmse_mm": 13.501398167688949
+        },
+        "joint_s17": {
+          "micro_rmse_mm": 13.54842211376255,
+          "station_macro_rmse_mm": 13.507667202103919
+        },
+        "original_ensemble": {
+          "micro_rmse_mm": 15.956440819599633,
+          "station_macro_rmse_mm": 16.55211884674128
+        },
+        "ours_ensemble": {
+          "micro_rmse_mm": 13.79550415469954,
+          "station_macro_rmse_mm": 13.768644542806591
+        }
+      }
+    },
+    "all_spatial_holdout": {
+      "records": 136458,
+      "stations": 131,
+      "models": {
+        "original_s42": {
+          "micro_rmse_mm": 16.675852237175675,
+          "station_macro_rmse_mm": 16.427180438583047
+        },
+        "p14_gru_s42": {
+          "micro_rmse_mm": 16.103169692762666,
+          "station_macro_rmse_mm": 15.256666427152535
+        },
+        "i1_s42": {
+          "micro_rmse_mm": 14.975848093123622,
+          "station_macro_rmse_mm": 13.873067804978422
+        },
+        "joint_s42": {
+          "micro_rmse_mm": 14.936440640092256,
+          "station_macro_rmse_mm": 13.867841638628036
+        },
+        "original_s17": {
+          "micro_rmse_mm": 16.576160930565603,
+          "station_macro_rmse_mm": 16.341425704673174
+        },
+        "p14_gru_s17": {
+          "micro_rmse_mm": 16.08555701811323,
+          "station_macro_rmse_mm": 15.293549116184247
+        },
+        "i1_s17": {
+          "micro_rmse_mm": 14.974231181786516,
+          "station_macro_rmse_mm": 13.830230327795205
+        },
+        "joint_s17": {
+          "micro_rmse_mm": 14.90441016074534,
+          "station_macro_rmse_mm": 13.779503616909459
+        },
+        "original_ensemble": {
+          "micro_rmse_mm": 16.56422200030132,
+          "station_macro_rmse_mm": 16.321589544215914
+        },
+        "ours_ensemble": {
+          "micro_rmse_mm": 14.913236654348081,
+          "station_macro_rmse_mm": 13.79425826249052
+        }
+      }
+    }
+  },
+  "primary_improvement_percent": 7.110892603018348,
+  "source_receipts": {
+    "42": {
+      "original_sha256": "493031c942822dfe5f5554d4f385b29288ae99a6a6655512a572cbda4d1a4acd",
+      "new_sha256": "b317e91df98e3f963a3267fb917ea55774950e0b402c3f59c5a72b88f5862a51"
+    },
+    "17": {
+      "original_sha256": "5c51a5b1410821a1f6a0294a672151cd909632b61c62872826f88a0146398b10",
+      "new_sha256": "db7ef3403fb2a35ff0bcd8300eea3d6c1f7c2e4410b0bcb6b3788635019049c1"
+    }
+  },
+  "selection_sha256": "8ea3c227d21d3f9e2d1de2cdfb29e8c9a881166b5ec2ae15dce04da476459a68"
+}

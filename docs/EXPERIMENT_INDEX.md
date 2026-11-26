@@ -1,5 +1,7 @@
 # 当前区域实验索引
 
+**欧洲跨区迁移（2026-11-26）**：[训练、站址划分、架构、最终RMSE与7组图件](../maintenance/europe_transfer_20261126/REPORT.md)。同273站和2020–2023训练池，2024确认59有效站63494共同键17.1472→15.9279mm。预先选定p14＋GRU＋I1，Transformer候选保留；各自特征保持，扩散未迁移。[实施计划](superpowers/plans/2026-11-26-europe-model4-transfer.md)、[执行台账](../maintenance/europe_transfer_20261126/progress.md)、[独立复算](../maintenance/europe_transfer_20261126/verification.json)。
+
 2026-11-26新增融合已完成：[joint v2＋G265＋Local残差扩散](research_notes/2026-11-26-best-base-diffusion-fusion.md)。8组正式3000块训练、24组K32/K16评价、两日历、独立终审通过；点场保持原joint，Local F6 CRPS主/补7.657557/8.750280mm。单站概率、近邻与时间增量的收益/代价分别报告，不合并为全指标升级。
 
 2026-11-26阶段收束：[全部工作、最佳架构与精度总报告](research_notes/2026-11-26-final-research-summary.md)。有向时滞v2、共享诱导创新流、完整场尾部及末轮天气尺度/同协方差Student-t均已完成。当前I1主/补/合并9.817/10.740/10.320mm；joint v2 F6为13.852/16.078/15.054mm。最终六模型与十二评价核验通过，按用户要求停止新增实验。

@@ -1,0 +1,6 @@
+{
+  "source": "test.npz preserved",
+  "current_2024_epochs": 1464,
+  "cache_sha256": "eb4ff2b71d3190a39357ebdfb450c923bb0d27152d41e86ef9886653ccad5513",
+  "reason": "current output can cover last36h even when future labels lie outside2024"
+}

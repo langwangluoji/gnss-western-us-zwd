@@ -55,6 +55,9 @@ def run():
     body=(HERE/'REPORT.md').read_text(encoding='utf-8')
     for target in re.findall(r'\]\(([^)]+)\)',body):
         if not target.startswith('https://'):assert (HERE/target).exists(),target
+    figures=json.loads((HERE/'figure_manifest.json').read_text(encoding='utf-8'))
+    assert len(figures)==14
+    for name,expected in figures.items():assert sha(HERE/'figures'/name)==expected
     architecture={name:sha(ENGINE/'tools/terrain_diffusion'/name) for name in ['fixed_support.py','p14_fusion.py','temporal_encoders.py','native_weather_models.py','native_physics_lm.py','native_mean_fusion_v2.py','native_directed_lag.py','native_directed_lag_v2.py']}
     write_json(HERE/'verification.json',dict(status='passed',source_hashes_unchanged=source,old_site_roles_disjoint=True,formal_version=2,models_3000_steps_and_weight_hashes_verified=True,independent_rmse_recalculation=checks,selected_ensemble_reconstructed=True,report_links_exist=True,architecture_source_sha256=architecture))
     print(json.dumps(dict(status='passed',metrics=checks),ensure_ascii=False),flush=True)

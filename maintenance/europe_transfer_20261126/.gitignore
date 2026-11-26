@@ -1,0 +1,4 @@
+# Canonical curves and smoke receipts are versioned as compact JSON artifacts.
+runtime/
+smoke/
+runs/**/curve.jsonl
