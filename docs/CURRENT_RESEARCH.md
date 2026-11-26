@@ -1,5 +1,7 @@
 # 当前研究进展：2026-11-26
 
+留站创新研究正在扩大：[首块真实输入隔离与成本](research_notes/2026-11-26-leaveout-innovation-engineering.md)、[固定跨年月面板](superpowers/specs/2026-11-26-leaveout-innovation-panel.md)。首块self/LOSO/LOGO创新RMS为4.546/7.531/12.581mm；全依赖窗隐藏站GNSS/T/P扰动对留出背景影响为零。双种子各48块已完成2016–2018部分，探针系数先行封存，2019迁移评分尚待完成；创新尺度不作为精度收益。此为训练池信息诊断，背景已拟合2019，未读取确认及原C/D。
+
 最新实测：[固定H架构的内部增量监督结果](research_notes/2026-11-26-increment-supervision-results.md)。双种子各3000与主/补充日历raw/EMA完成；同起点内部增量microRMSE由5.803134/6.598862降至5.801856/6.597349mm，跨起点增量同向改善。六小时站宏RMSE改善0.004579/0.003326mm，补充区间跨零，属于微小收益。下一项优先审计留站创新与有向时滞传递，旧I1及概率来源保留。实数组审计同时确认nearest为当前有效GNSS最近站距，相关文字据此更正，数值不变。
 
 最新H＋S双种子各3000更新及raw/EMA评价完成：[正式结果与训练曲线](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_mean_hs/paired/REPORT.md)。HS当前/六小时站宏RMSE为9.811297/13.972726mm；相对同预算H六小时改善0.004979mm，相对普通续训C的六小时区间跨零，当前小时增量有代价。风险交互不支持超加性互补，未据此替换I1或旧概率残差来源。[最新研究重点](research_notes/2026-11-26-next-research-after-hs.md)据此优先安排留站创新审计、有向站点×滞后传递、内部增量监督和冻结均值的联合概率评分；近海、低地、远条件站及夏秋过程是重点诊断人口。下方“HS正式待生成”等为阶段历史，以本段及实际结果为准。
