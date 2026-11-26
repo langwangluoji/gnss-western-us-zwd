@@ -1,0 +1,18 @@
+[
+  {
+    "step": 1,
+    "loss": 0.28836268186569214,
+    "seconds": 0.42199999999138527,
+    "supervised_updates": 1,
+    "fully_observed_trajectories": 1536,
+    "supervised_origins": 12
+  },
+  {
+    "step": 4,
+    "loss": 0.27000147104263306,
+    "seconds": 0.4379999999946449,
+    "supervised_updates": 4,
+    "fully_observed_trajectories": 6144,
+    "supervised_origins": 48
+  }
+]

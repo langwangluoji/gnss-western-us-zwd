@@ -1,0 +1,163 @@
+{
+  "code_sha256": {
+    "native_directed_lag_v2.py": "5f7d88746188759032241e92bb1404f76d743862dba6b7b4a261ec3d332e31f8",
+    "native_directed_lag_v2_experiment.py": "b5de8a00cd2e237fa78f30b17b44f10f166f590104c6d80eef0b120af0fed463",
+    "native_directed_lag.py": "7da5812e1fe14f12d0d44c3d50a050316c3205df79cb7a1529125de873986260",
+    "native_directed_lag_experiment.py": "c94fd3edef3887b22b23f5c04ffadfa99848eaf105ef03860801d0321ca52ae8",
+    "native_increment_loss.py": "add00a4631a39247b399ed024e3a2be5d7712c1bf1a55e1f35635a9c0df56fe6",
+    "native_increment_experiment.py": "d46b52c718b254c17c479bee0f08c578a68cdba2f001dd0cddf278aba924c07b",
+    "native_model_seal.py": "6a286fbbcf58926118a4228881f629b99596ca70ec1cd7031f77904b03c68fe5",
+    "native_mean_fusion_v2.py": "9c8bb43a97d65dd00fb0395ea680fc9a8f350c8dea446327c736ab6c98308a06",
+    "native_mean_fusion_v2_experiment.py": "ad7fbbfa5add66750b7973a893e0de3dc410794fc836f9a9adbdf69db0a12b4a",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_physics_lm.py": "1cc6e3450745548dfb1a86502402a95cf1c27370427e81884bee1cf353d71bd6",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be",
+    "native_process_experiment.py": "ef7ca45c89f1a7489510a12762ac3e335c98d3bec611e81c8d16e90abe661c6f",
+    "native_process_models.py": "74e614bedd3a6b0ac8ef2fdf689cf1b1a10fd81f8d73aac5974af30d3408bb19",
+    "native_process_ops.py": "2b3c017dd0d9c3ddefd0a2e5dd2f7625f320f5ab27d214270c1779f1e49372de",
+    "native_probability_context.py": "ab3aad752ed3b6ed886939cdffe823966032c6811cd4976cba30f421e9a3f898",
+    "native_copula.py": "95eade5fb6d732901662509a881c6efcf28e12f06d3193d408ac079dad577c19",
+    "native_weather_gp.py": "330643f915c4771f318760d9d7c22784b01d064b89251488c1ab8c86bfcf3271",
+    "native_weather_gp_experiment.py": "371ce3374f2bb8ecedc966bf43b0b9efebb135fdc409e3ab41412b69c8853234",
+    "native_weather_gp_diffusion.py": "0662c489f0ce014df720a7cbaf046df4830cffd6b1e46add5df691392543ed10",
+    "native_weather_gp_diffusion_experiment.py": "66106a06f8b8fa5249543a21b5d0a9f6a7655146cddbc95466dd71babd9f2e1d",
+    "native_weather_evaluation.py": "47992e1d544b500f1c48e2f104aa1e8fa29fed4ef225486482dfc65f397999d1",
+    "native_paths.py": "54c6f2dd7b5e3d7e35fd4694245518f639d72e00d0eb08bff971119a47f8b42a",
+    "maintenance/joint_fusion_20261126/campaign.py": "0a2ecd78ccb8efcd6d566255f1a1cf8a75398e17e0fdcdef94f90b85a06ff017",
+    "maintenance/joint_fusion_20261126/fusion_contract.py": "3751cc632217c5269cdf672ef0d2e4a44ee679037a0cc3bc2445ff9ce39d2b34",
+    "maintenance/joint_fusion_20261126/summary.py": "c32fa3d89031fd5d712b883bb9d93b217d228281a7988c02ab42d712e98eb289",
+    "maintenance/weather_native_20261126/probability_joint_audit.py": "d802fcd4a5925f2263c835394ad2cbd2438f7a3df4ffb8b5a49dc0481f07596f",
+    "maintenance/weather_native_20261126/event_audit.py": "57e69440014fd2c39d762b53072b332253cf35c6e09c8541f9d7a5c07db10715",
+    "maintenance/weather_native_20261126/event_audit_lock.json": "13d4212698535a8fe00d7d7df1d4c08d1c56871d42181f1a1967206cdee001b0",
+    "maintenance/weather_native_20261126/mean_hs_summary.py": "d796db1c7035520efc5b196b9b1cc980238cf19f3f9619293c1c4e036a9a8145",
+    "maintenance/weather_native_20261126/weather_controls_summary.py": "6f89001a0e16377d6893952e86d68ec3e7f4f3ae524d988395eb547dd889bf2a",
+    "maintenance/weather_native_20261126/inducing_calibration_audit.py": "ba9d01913d113b2ba1eb453be185dc5120f717022a8f53e0a513a76ee284c0f1"
+  },
+  "sources": {
+    "42": {
+      "mean_weights_sha256": "e1da8767797ee2fbfc470ff42b1905cc5b72552f46d5469d6bb521cb8838d318",
+      "mean_protocol_sha256": "184b1d84ff7ed8598261652a2028556afc69b4243af3d1734f509fc222695b3a",
+      "mean_seal_sha256": "a44ae8645cdf98fec686266c4882c86c052dadf1a2402fe79c5f54c911f4629e",
+      "calendars": {
+        "0": {
+          "cache_manifest_sha256": "cf672eed77e2b45c964b298404fcc731ce3e2232dafb69908a819359ff527baf",
+          "embedding_manifest_sha256": "9593f41372edde850f2833889830d292299e490ddced793757502b67ac705e62",
+          "statistics_sha256": "8fc32913a0367ce12e22b13f00fef16dc975da6da7822610de794aef99962e03"
+        },
+        "8": {
+          "cache_manifest_sha256": "9dd091b18d094e8b1cc2a614b74b9586d69bfba74d9be798d3c1ef1c26f2e819",
+          "embedding_manifest_sha256": "6aa54f77f210277ebacc1b1ade2ff934b57c09e3de77d6e3bb91c34f772bb21b",
+          "statistics_sha256": "39078fb210b3534e5b68d36cb749a148a6395d294372857ca3e22a907649ab49"
+        },
+        "15": {
+          "cache_manifest_sha256": "c25c24c56cde147ead8e029b406a57cbc39a2e0638c03e83c4f50d68e41f28e5",
+          "embedding_manifest_sha256": "fb76e8e84bd80c8451d2846e4e1e9511c73d3367dd5549abb792748f1d196a72",
+          "statistics_sha256": "bf03b3cacecd1ea0e73d7724fb2fb0f111f0d0e63ea026981315aece515b2d0c"
+        }
+      },
+      "normalization": {
+        "bias_mm": [
+          -0.0742797472610697,
+          0.07563675321550399,
+          0.19681153176721794,
+          0.3156571295848266,
+          0.4131086999768241,
+          0.45373436865906036,
+          0.4861643437462916
+        ],
+        "scale_mm": [
+          9.765614361514247,
+          10.549911659580996,
+          11.469752114682358,
+          12.476296929202999,
+          13.57226070554111,
+          14.671443267551831,
+          15.713752248951131
+        ],
+        "count": [
+          4603770.0,
+          4603770.0,
+          4603770.0,
+          4603770.0,
+          4603770.0,
+          4603769.0,
+          4603767.0
+        ],
+        "role": "training_only"
+      }
+    },
+    "17": {
+      "mean_weights_sha256": "634da56475401a0e19c4356b1b7e5e19f4af2370eb8a2652b4d5b2225c20c4f7",
+      "mean_protocol_sha256": "a1886afa2d9543e006236d750b653f51e427499a2259c8c1c389ce331e4bfded",
+      "mean_seal_sha256": "5c85d6c2b18fcf2a0c2dabb6f8d354f6fc15b80684cf451e49c835a68f53c1b1",
+      "calendars": {
+        "0": {
+          "cache_manifest_sha256": "2e537ab2037ee5921176e5841ca940ae376929a32817a332d596773245a1e818",
+          "embedding_manifest_sha256": "0a80294f81baa62c00c858ff752b8dd8764caf46cc592bbba04a8996028d39aa",
+          "statistics_sha256": "7aee04d8a599d1b7f946b3cde560686a840f1e8ba41edd2604652fbf03f18c64"
+        },
+        "8": {
+          "cache_manifest_sha256": "fc9c336b1f016133bfbf7bb521738566af0758ab27865072a834432e65e06b39",
+          "embedding_manifest_sha256": "ac75dbc86b85acf5f3e9d12fcd3d97a8c8fbd6c05543168eed018a6d279cf598",
+          "statistics_sha256": "8807b207e66e98d489099253556d291e48c49a969a85fd407aee65b40dfbe951"
+        },
+        "15": {
+          "cache_manifest_sha256": "4d9dce850b72e561bad8bd6451738859aff3aa214c7547858a01fe69769c7aa2",
+          "embedding_manifest_sha256": "ecc0a518a624590226786abdb673237969eead9447521da04446bb9f95fde7e1",
+          "statistics_sha256": "88806a3d85966616ce6e61fa149586e4dd8079d157f4089270acef888782e96c"
+        }
+      },
+      "normalization": {
+        "bias_mm": [
+          -0.13157702359494702,
+          0.014127126982320635,
+          0.182472609112439,
+          0.31311387928131246,
+          0.4190772129158956,
+          0.5160021115025442,
+          0.5671730878990995
+        ],
+        "scale_mm": [
+          9.782709711101738,
+          10.562142119453194,
+          11.479541442279714,
+          12.482088410950054,
+          13.579309208971733,
+          14.6729159907374,
+          15.723269378405409
+        ],
+        "count": [
+          4603792.0,
+          4603779.0,
+          4603766.0,
+          4603753.0,
+          4603741.0,
+          4603728.0,
+          4603714.0
+        ],
+        "role": "training_only"
+      }
+    }
+  },
+  "neural_steps": 3000,
+  "primary": "local minus affine F6 fairCRPS; each calendar separately; common months; two fixed seeds",
+  "sample": {
+    "members": 32,
+    "seed": 261126,
+    "steps": 20,
+    "solver": "heun0"
+  },
+  "paired": {
+    "members": 16,
+    "mechanism": "disjoint independent pairs centered at frozen joint"
+  },
+  "calendar_days": [
+    8,
+    15
+  ],
+  "strict_oof": false,
+  "confirmation_C_D_read": false,
+  "spec_sha256": "0bfb0be5051de36b371c645d8357b6c93bb9ef4adde39b7db7c05bff2c65c20e"
+}
