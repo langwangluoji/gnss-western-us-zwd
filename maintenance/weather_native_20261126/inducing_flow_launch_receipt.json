@@ -1,0 +1,51 @@
+{
+  "snapshot_utc": "2026-11-26T05:44:00.818857+00:00",
+  "status": "RUNNING_SEALED_FOUR_ARM_QUEUE",
+  "source_commit": "fbe4653302f831c374c491dc87124e72233028c1",
+  "lock_sha256": "59ab66e6cfed372e757100619d211aa61acc6a4b948bca97d1b950fe7a1be43d",
+  "seed42_exec_session": 70326,
+  "seed17_exec_session": 86499,
+  "baseline_seed42_exec_session": 25329,
+  "baseline_seed17_exec_session": 1745,
+  "account_used_percent_before_launch": 23,
+  "account_remaining_stop_percent": 75,
+  "snapshot": {
+    "42": {
+      "step": 1000,
+      "loss": 0.8731467486383793,
+      "terms": {
+        "marginal": 0.540594756603241,
+        "increment": 0.5069114518298545,
+        "pair": 0.5431795112009116,
+        "energy": 0.7002925276756287
+      },
+      "supervised_updates": 1000,
+      "finite_labels": 2688,
+      "total_labels": 2688000,
+      "flow_gradient_norm": 0.016771317346683065,
+      "inducing_variance_fraction": 0.12082412093877792,
+      "last_origin_hour": 415368,
+      "seconds": 140.92199999999139
+    },
+    "17": {
+      "step": 1000,
+      "loss": 0.8576646265897432,
+      "terms": {
+        "marginal": 0.5431645512580872,
+        "increment": 0.5210003584011926,
+        "pair": 0.4600406726865553,
+        "energy": 0.6923981308937073
+      },
+      "supervised_updates": 1000,
+      "finite_labels": 2688,
+      "total_labels": 2688000,
+      "flow_gradient_norm": 0.025601756891998846,
+      "inducing_variance_fraction": 0.08469758182764053,
+      "last_origin_hour": 415368,
+      "seconds": 139.23499999998603
+    }
+  },
+  "source": "formal code and protocol committed/pushed before launch",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}
