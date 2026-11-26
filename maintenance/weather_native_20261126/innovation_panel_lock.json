@@ -1,0 +1,35 @@
+{
+  "code_sha256": {
+    "native_innovation_audit.py": "987cc84659e1856d21d272ac3bdd1fbd6aa7a7cdee6ec69e1c4337cfc779200e",
+    "p14_fusion.py": "8c0e85ffd23829a1fc47d9bafec1fe6cd674d17b7333a308afbb6ed1a641a438",
+    "innovation_refinement.py": "8958dc83abcf2a97d1fb9e46bdc1ea868dae70221eb92a2a97fa7484e9d463af",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+    "unet_foundation.py": "45d78c96b858cfa82272cc68be24a701ccd602e6e874cb7dbe608cef0d1bb9db",
+    "fixed_support.py": "ef317e24d891ad23bf54fbd4b81a5ca4b73b6b495f99e4d644d72f0d6f2a659a",
+    "temporal_encoders.py": "77a9efdc2b3081e22e234c22df45665808535cf897861a8687c9d9d2c1aa41e4",
+    "temporal_experiment.py": "5c35aa7ca6d65230033b2c888130fde18f2f9c840524db684fb156157080bacb"
+  },
+  "spec_sha256": "2cf1f6b2683652fc5b867e2f6e64a58357b1504cbc8667ab881a6a0a2a04b8d4",
+  "new_sources": {
+    "innovation_panel_campaign.py": "55d8843f616e5d01ed4b7b3d47076a7cf6e31ab7113b4f8abb61beb901f21c48",
+    "innovation_panel_summary.py": "d48450d144062222ac14f631937f99798fc3c83e5a17fe7c764b1bb2410f781d",
+    "test_innovation_panel.py": "32fb816b558c276ae8595071f04d0cfe5980fe210e5b76e2e42c4763f67021f6"
+  },
+  "panel_protocol_sha256": {
+    "42": "d8ad7332026a08cf23374e7ee78609fe50cc7094677a40bde00abc2b05e37528",
+    "17": "aaf1934646f2b5330d5c3b4bb89b3c1ba4d9bf80508e8da4bcb9c0ad9813d2d8"
+  },
+  "before_probe_fit": true,
+  "fit_years": [
+    2016,
+    2017,
+    2018
+  ],
+  "probe_transfer_year": 2019,
+  "ridge": 0.01,
+  "std_floor": 0.001,
+  "foundation_already_fitted2019": true,
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}

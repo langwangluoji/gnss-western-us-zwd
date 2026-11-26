@@ -1,0 +1,312 @@
+{
+  "seed": 17,
+  "schedule": [
+    {
+      "year": 2016,
+      "month": 1,
+      "index": 2,
+      "first_hour": 403393
+    },
+    {
+      "year": 2016,
+      "month": 2,
+      "index": 64,
+      "first_hour": 404137
+    },
+    {
+      "year": 2016,
+      "month": 3,
+      "index": 122,
+      "first_hour": 404833
+    },
+    {
+      "year": 2016,
+      "month": 4,
+      "index": 184,
+      "first_hour": 405577
+    },
+    {
+      "year": 2016,
+      "month": 5,
+      "index": 244,
+      "first_hour": 406297
+    },
+    {
+      "year": 2016,
+      "month": 6,
+      "index": 306,
+      "first_hour": 407041
+    },
+    {
+      "year": 2016,
+      "month": 7,
+      "index": 366,
+      "first_hour": 407761
+    },
+    {
+      "year": 2016,
+      "month": 8,
+      "index": 428,
+      "first_hour": 408505
+    },
+    {
+      "year": 2016,
+      "month": 9,
+      "index": 490,
+      "first_hour": 409249
+    },
+    {
+      "year": 2016,
+      "month": 10,
+      "index": 550,
+      "first_hour": 409969
+    },
+    {
+      "year": 2016,
+      "month": 11,
+      "index": 612,
+      "first_hour": 410713
+    },
+    {
+      "year": 2016,
+      "month": 12,
+      "index": 672,
+      "first_hour": 411433
+    },
+    {
+      "year": 2017,
+      "month": 1,
+      "index": 734,
+      "first_hour": 412177
+    },
+    {
+      "year": 2017,
+      "month": 2,
+      "index": 796,
+      "first_hour": 412921
+    },
+    {
+      "year": 2017,
+      "month": 3,
+      "index": 852,
+      "first_hour": 413593
+    },
+    {
+      "year": 2017,
+      "month": 4,
+      "index": 914,
+      "first_hour": 414337
+    },
+    {
+      "year": 2017,
+      "month": 5,
+      "index": 974,
+      "first_hour": 415057
+    },
+    {
+      "year": 2017,
+      "month": 6,
+      "index": 1036,
+      "first_hour": 415801
+    },
+    {
+      "year": 2017,
+      "month": 7,
+      "index": 1096,
+      "first_hour": 416521
+    },
+    {
+      "year": 2017,
+      "month": 8,
+      "index": 1158,
+      "first_hour": 417265
+    },
+    {
+      "year": 2017,
+      "month": 9,
+      "index": 1220,
+      "first_hour": 418009
+    },
+    {
+      "year": 2017,
+      "month": 10,
+      "index": 1280,
+      "first_hour": 418729
+    },
+    {
+      "year": 2017,
+      "month": 11,
+      "index": 1342,
+      "first_hour": 419473
+    },
+    {
+      "year": 2017,
+      "month": 12,
+      "index": 1402,
+      "first_hour": 420193
+    },
+    {
+      "year": 2018,
+      "month": 1,
+      "index": 1464,
+      "first_hour": 420937
+    },
+    {
+      "year": 2018,
+      "month": 2,
+      "index": 1526,
+      "first_hour": 421681
+    },
+    {
+      "year": 2018,
+      "month": 3,
+      "index": 1582,
+      "first_hour": 422353
+    },
+    {
+      "year": 2018,
+      "month": 4,
+      "index": 1644,
+      "first_hour": 423097
+    },
+    {
+      "year": 2018,
+      "month": 5,
+      "index": 1704,
+      "first_hour": 423817
+    },
+    {
+      "year": 2018,
+      "month": 6,
+      "index": 1766,
+      "first_hour": 424561
+    },
+    {
+      "year": 2018,
+      "month": 7,
+      "index": 1826,
+      "first_hour": 425281
+    },
+    {
+      "year": 2018,
+      "month": 8,
+      "index": 1888,
+      "first_hour": 426025
+    },
+    {
+      "year": 2018,
+      "month": 9,
+      "index": 1950,
+      "first_hour": 426769
+    },
+    {
+      "year": 2018,
+      "month": 10,
+      "index": 2010,
+      "first_hour": 427489
+    },
+    {
+      "year": 2018,
+      "month": 11,
+      "index": 2072,
+      "first_hour": 428233
+    },
+    {
+      "year": 2018,
+      "month": 12,
+      "index": 2132,
+      "first_hour": 428953
+    },
+    {
+      "year": 2019,
+      "month": 1,
+      "index": 2194,
+      "first_hour": 429697
+    },
+    {
+      "year": 2019,
+      "month": 2,
+      "index": 2256,
+      "first_hour": 430441
+    },
+    {
+      "year": 2019,
+      "month": 3,
+      "index": 2312,
+      "first_hour": 431113
+    },
+    {
+      "year": 2019,
+      "month": 4,
+      "index": 2374,
+      "first_hour": 431857
+    },
+    {
+      "year": 2019,
+      "month": 5,
+      "index": 2434,
+      "first_hour": 432577
+    },
+    {
+      "year": 2019,
+      "month": 6,
+      "index": 2496,
+      "first_hour": 433321
+    },
+    {
+      "year": 2019,
+      "month": 7,
+      "index": 2556,
+      "first_hour": 434041
+    },
+    {
+      "year": 2019,
+      "month": 8,
+      "index": 2618,
+      "first_hour": 434785
+    },
+    {
+      "year": 2019,
+      "month": 9,
+      "index": 2680,
+      "first_hour": 435529
+    },
+    {
+      "year": 2019,
+      "month": 10,
+      "index": 2740,
+      "first_hour": 436249
+    },
+    {
+      "year": 2019,
+      "month": 11,
+      "index": 2802,
+      "first_hour": 436993
+    },
+    {
+      "year": 2019,
+      "month": 12,
+      "index": 2862,
+      "first_hour": 437713
+    }
+  ],
+  "origins_per_block": 12,
+  "code_sha256": {
+    "native_innovation_audit.py": "987cc84659e1856d21d272ac3bdd1fbd6aa7a7cdee6ec69e1c4337cfc779200e",
+    "p14_fusion.py": "8c0e85ffd23829a1fc47d9bafec1fe6cd674d17b7333a308afbb6ed1a641a438",
+    "innovation_refinement.py": "8958dc83abcf2a97d1fb9e46bdc1ea868dae70221eb92a2a97fa7484e9d463af",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+    "unet_foundation.py": "45d78c96b858cfa82272cc68be24a701ccd602e6e874cb7dbe608cef0d1bb9db",
+    "fixed_support.py": "ef317e24d891ad23bf54fbd4b81a5ca4b73b6b495f99e4d644d72f0d6f2a659a",
+    "temporal_encoders.py": "77a9efdc2b3081e22e234c22df45665808535cf897861a8687c9d9d2c1aa41e4",
+    "temporal_experiment.py": "5c35aa7ca6d65230033b2c888130fde18f2f9c840524db684fb156157080bacb"
+  },
+  "campaign_sha256": "55d8843f616e5d01ed4b7b3d47076a7cf6e31ab7113b4f8abb61beb901f21c48",
+  "spec_sha256": "2cf1f6b2683652fc5b867e2f6e64a58357b1504cbc8667ab881a6a0a2a04b8d4",
+  "cache_manifest_sha256": "2e537ab2037ee5921176e5841ca940ae376929a32817a332d596773245a1e818",
+  "mean_manifest_sha256": "59a1a973c723df20b81bff18515539f58649eeba0b3c3c97f422451f1a36f1d9",
+  "role": "2016-18 probe fit;2019 probe transfer; background already fitted2016-19; exposed training-pool diagnostic",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}
