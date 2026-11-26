@@ -1,0 +1,39 @@
+{
+  "reason": "shared exponent origin plus per-variable epsilon floor attenuates valid far GNSS when nearer onlyT/P available",
+  "category": "ENGINEERING_CORRECTNESS_STOP_NOT_QUOTA",
+  "budget_threshold_reached": false,
+  "automatic_stop_marker_reused": true,
+  "reproduction_mm": {
+    "expected": 0.9645383,
+    "actual_after_unrelated_temperature": 0.00457947
+  },
+  "stopped_models": [
+    {
+      "seed": 42,
+      "actual_stop_step": 1532,
+      "status": {
+        "status": "STOPPED_AT_BUDGET",
+        "blocks_consumed": 1532,
+        "supervised_updates": 1532
+      },
+      "status_sha256": "97770ecf9fc1ee51dc63ac50f7cdc6044570aee47f0f51917555c4ea45231482",
+      "checkpoint_sha256": "d7ea691713859b065b9b7a9548940d1cc1b75d95e493d6790e61cc97911982cb",
+      "protocol_sha256": "f7bd74354167c4eeeb9070fa68a254a360ca967eec78206099e79206edce29a0"
+    },
+    {
+      "seed": 17,
+      "actual_stop_step": 1530,
+      "status": {
+        "status": "STOPPED_AT_BUDGET",
+        "blocks_consumed": 1530,
+        "supervised_updates": 1530
+      },
+      "status_sha256": "b1ee5ea019cfdd031aa3a8f7c0a8c1bd906e33d0a781cec3c70161da467211a7",
+      "checkpoint_sha256": "b9fe79aaed8154b32c9145996b35f2bcac548732da3b09be67db31cc6e45a9b5",
+      "protocol_sha256": "c2190e88144f35b8a1065258e9615e6771dd871322727c04cc87cf0f8fa3574b"
+    }
+  ],
+  "source_lock_sha256": "a42376562c395889889b472c794fd5aac8f1e59ff8cd1084802ae96292fb99e4",
+  "no_formal_results": true,
+  "old_code_weights_and_locks_preserved": true
+}

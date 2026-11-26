@@ -1,0 +1,55 @@
+{
+  "code_sha256": {
+    "native_directed_lag_v2.py": "5f7d88746188759032241e92bb1404f76d743862dba6b7b4a261ec3d332e31f8",
+    "native_directed_lag_v2_experiment.py": "b5de8a00cd2e237fa78f30b17b44f10f166f590104c6d80eef0b120af0fed463",
+    "native_directed_lag.py": "7da5812e1fe14f12d0d44c3d50a050316c3205df79cb7a1529125de873986260",
+    "native_directed_lag_experiment.py": "c94fd3edef3887b22b23f5c04ffadfa99848eaf105ef03860801d0321ca52ae8",
+    "native_increment_loss.py": "add00a4631a39247b399ed024e3a2be5d7712c1bf1a55e1f35635a9c0df56fe6",
+    "native_increment_experiment.py": "d46b52c718b254c17c479bee0f08c578a68cdba2f001dd0cddf278aba924c07b",
+    "native_model_seal.py": "6a286fbbcf58926118a4228881f629b99596ca70ec1cd7031f77904b03c68fe5",
+    "native_mean_fusion_v2.py": "9c8bb43a97d65dd00fb0395ea680fc9a8f350c8dea446327c736ab6c98308a06",
+    "native_mean_fusion_v2_experiment.py": "ad7fbbfa5add66750b7973a893e0de3dc410794fc836f9a9adbdf69db0a12b4a",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_physics_lm.py": "1cc6e3450745548dfb1a86502402a95cf1c27370427e81884bee1cf353d71bd6",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be"
+  },
+  "spec_sha256": "3976b68d0fe9f0759e1d0735ac8d9acfb3b8b2802c128295caed7938c32621e3",
+  "inherited_spec_sha256": "fc7fad73b1b90cbe277d5dd8561ae91690218f60f3670a0a19a1ac133e55d25a",
+  "smoke_receipt_sha256": "fab5de2e430cab664dde268cfe1f3e6026b7acad71f570d118c83d45bcfde11b",
+  "v1_engineering_stop_sha256": "2540faced65edb3a0319e21233205ffe90b7ba1af6fe5d1138ca384eaed27e66",
+  "modes": [
+    "factorized",
+    "joint"
+  ],
+  "seeds": [
+    42,
+    17
+  ],
+  "steps": 3000,
+  "increment_weight": 0.5,
+  "parameters": {
+    "factorized": 117757,
+    "joint": 117757
+  },
+  "source": {
+    "42": {
+      "checkpoint_sha256": "2a985fc172e54810ead279e300c21c2c12f2e625fda44e2649eded9cd12e0fb9",
+      "cache_manifest_sha256": "cf672eed77e2b45c964b298404fcc731ce3e2232dafb69908a819359ff527baf"
+    },
+    "17": {
+      "checkpoint_sha256": "c138a6280c491d303290eacd747cc39d852c4258f206fba134e864b4283ff70f",
+      "cache_manifest_sha256": "2e537ab2037ee5921176e5841ca940ae376929a32817a332d596773245a1e818"
+    }
+  },
+  "evaluation_sources": {
+    "native_weather_evaluation.py": "47992e1d544b500f1c48e2f104aa1e8fa29fed4ef225486482dfc65f397999d1",
+    "native_paths.py": "54c6f2dd7b5e3d7e35fd4694245518f639d72e00d0eb08bff971119a47f8b42a",
+    "data.py": "fa1413d7cc9f8ac592535053cd134698cceda0cfd495cb5758c62a7f206b6593"
+  },
+  "primary": "joint_vs_H_delta raw final3000 F6 macroRMSE; no v1 weight reuse",
+  "before_formal_training": true,
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}

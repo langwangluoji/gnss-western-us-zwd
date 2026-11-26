@@ -1,5 +1,7 @@
 # Directed station-lag transport Implementation Plan
 
+状态：v1因异步缺测归一化Important问题在正式队列1532/1530步工程停止；原文件保留，[后续v2计划](2026-11-26-directed-lag-v2.md)从原来源重训。v1部分权重不参与正式精度排名，原架构假设及比较合同保持。
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans, inline TDD and one final read-only review.
 
 **Goal:** 在匹配H_delta预算上验证显式有向站点×lag传递。

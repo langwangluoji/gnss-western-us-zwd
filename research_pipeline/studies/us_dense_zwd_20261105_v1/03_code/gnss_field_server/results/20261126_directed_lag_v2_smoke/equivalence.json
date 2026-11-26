@@ -1,0 +1,113 @@
+{
+  "complete": true,
+  "common_H_delta_state_exact": true,
+  "common_optimizer_by_name_exact": true,
+  "source_rng_exact": true,
+  "legacy_checkpoint_sha256": "fbd90ebf8d736f955216fb0b547e1ace64cf797dfeec16801926a2d7536dbc12",
+  "disabled_checkpoint_sha256": "77e46731663339f05c1e1d53c266c218d32a0cacd9d0e1bfdb6dfbd4f1791d83",
+  "active_curves": {
+    "factorized": [
+      {
+        "step": 1,
+        "supervised_updates": 1,
+        "loss": 1.3618853092193604,
+        "query_loss": 1.1851993799209595,
+        "within_forecast_increment_loss": 0.3052904009819031,
+        "causal_station_loss": 0.7067435383796692,
+        "auxiliary_label_cells": 1189131,
+        "finite_label_cells": 10752,
+        "cache_block": 0,
+        "last_origin_hour": 403380,
+        "group_lrs": [
+          8.681980515339464e-05,
+          0.0002604594154601839
+        ],
+        "current_correction_rms_mm": 0.8321739435195923,
+        "future6_correction_rms_mm": 5.521764278411865,
+        "seconds": 0.42199999999138527,
+        "current_readout_weight_norm": 0.011757412925362587,
+        "current_readout_bias_norm": 0.0014696888392791152,
+        "transport_readout_norm": 0.003174861427396536,
+        "transport_key_gradient_norm": 0.0,
+        "peak_memory_allocated_mb": 1390.58935546875
+      },
+      {
+        "step": 4,
+        "supervised_updates": 4,
+        "loss": 1.058449149131775,
+        "query_loss": 0.9110667109489441,
+        "within_forecast_increment_loss": 0.2352062165737152,
+        "causal_station_loss": 0.5895296931266785,
+        "auxiliary_label_cells": 1166526,
+        "finite_label_cells": 10752,
+        "cache_block": 3,
+        "last_origin_hour": 403416,
+        "group_lrs": [
+          1e-05,
+          2.9999999999999997e-05
+        ],
+        "current_correction_rms_mm": 0.6411893367767334,
+        "future6_correction_rms_mm": 2.5807037353515625,
+        "seconds": 1.5940000000118744,
+        "current_readout_weight_norm": 0.022185254842042923,
+        "current_readout_bias_norm": 0.002948758192360401,
+        "transport_readout_norm": 0.0061301677487790585,
+        "transport_key_gradient_norm": 6.37080374872312e-05,
+        "peak_memory_allocated_mb": 1401.16259765625
+      }
+    ],
+    "joint": [
+      {
+        "step": 1,
+        "supervised_updates": 1,
+        "loss": 1.3618853092193604,
+        "query_loss": 1.1851993799209595,
+        "within_forecast_increment_loss": 0.3052904009819031,
+        "causal_station_loss": 0.7067435383796692,
+        "auxiliary_label_cells": 1189131,
+        "finite_label_cells": 10752,
+        "cache_block": 0,
+        "last_origin_hour": 403380,
+        "group_lrs": [
+          8.681980515339464e-05,
+          0.0002604594154601839
+        ],
+        "current_correction_rms_mm": 0.8321739435195923,
+        "future6_correction_rms_mm": 5.521764278411865,
+        "seconds": 0.625,
+        "current_readout_weight_norm": 0.011757412925362587,
+        "current_readout_bias_norm": 0.0014696888392791152,
+        "transport_readout_norm": 0.0031748777255415916,
+        "transport_key_gradient_norm": 0.0,
+        "peak_memory_allocated_mb": 1494.27587890625
+      },
+      {
+        "step": 4,
+        "supervised_updates": 4,
+        "loss": 1.058452844619751,
+        "query_loss": 0.9110704064369202,
+        "within_forecast_increment_loss": 0.235213965177536,
+        "causal_station_loss": 0.5895297527313232,
+        "auxiliary_label_cells": 1166526,
+        "finite_label_cells": 10752,
+        "cache_block": 3,
+        "last_origin_hour": 403416,
+        "group_lrs": [
+          1e-05,
+          2.9999999999999997e-05
+        ],
+        "current_correction_rms_mm": 0.6409711837768555,
+        "future6_correction_rms_mm": 2.5804083347320557,
+        "seconds": 1.9219999999913853,
+        "current_readout_weight_norm": 0.022185208275914192,
+        "current_readout_bias_norm": 0.0029487900901585817,
+        "transport_readout_norm": 0.006192701403051615,
+        "transport_key_gradient_norm": 0.00017328126705251634,
+        "peak_memory_allocated_mb": 1504.3505859375
+      }
+    ]
+  },
+  "engineering_only": true,
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}
