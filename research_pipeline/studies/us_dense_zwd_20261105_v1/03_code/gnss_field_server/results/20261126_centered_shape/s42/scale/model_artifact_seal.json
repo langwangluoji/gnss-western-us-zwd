@@ -1,0 +1,68 @@
+{
+  "weights_sha256": "add7c9510710af6349f0f67e87c1027b2fc50e0673f5a9b0f4f9e2bb66e5b03f",
+  "checkpoint_sha256": "6d600575ea81a38fa086c40fa1464df2d2969d4fe54d9aadcf788a85f5352095",
+  "protocol_sha256": "de50a162c154ca6005693249aabbfa9357cab474ea9e912021deffaefbda1e89",
+  "status_sha256": "0cf04e3f327438f4f1ba8af3241431c32ae11a0ff79a2785fb6a8da4cc72e2b5",
+  "code_sha256": {
+    "native_process_experiment.py": "ef7ca45c89f1a7489510a12762ac3e335c98d3bec611e81c8d16e90abe661c6f",
+    "native_process_models.py": "74e614bedd3a6b0ac8ef2fdf689cf1b1a10fd81f8d73aac5974af30d3408bb19",
+    "native_process_ops.py": "2b3c017dd0d9c3ddefd0a2e5dd2f7625f320f5ab27d214270c1779f1e49372de",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_probability_context.py": "ab3aad752ed3b6ed886939cdffe823966032c6811cd4976cba30f421e9a3f898",
+    "native_copula.py": "95eade5fb6d732901662509a881c6efcf28e12f06d3193d408ac079dad577c19",
+    "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+    "native_weather_gp.py": "330643f915c4771f318760d9d7c22784b01d064b89251488c1ab8c86bfcf3271",
+    "native_weather_gp_experiment.py": "371ce3374f2bb8ecedc966bf43b0b9efebb135fdc409e3ab41412b69c8853234",
+    "native_weather_gp_diffusion.py": "0662c489f0ce014df720a7cbaf046df4830cffd6b1e46add5df691392543ed10",
+    "native_weather_gp_diffusion_experiment.py": "66106a06f8b8fa5249543a21b5d0a9f6a7655146cddbc95466dd71babd9f2e1d",
+    "native_model_seal.py": "6a286fbbcf58926118a4228881f629b99596ca70ec1cd7031f77904b03c68fe5",
+    "native_centered_shape.py": "ae87462ea129de7a8fc9548e533c2d6c5b34d130dfc78ead63b9f32fb0439b6c",
+    "native_centered_shape_experiment.py": "d74aa0e5e63caab3e3935231f3c4bdc10245480aae4dca7c656f9c71f29a6ae6",
+    "native_weather_evaluation.py": "47992e1d544b500f1c48e2f104aa1e8fa29fed4ef225486482dfc65f397999d1"
+  },
+  "source": {
+    "gaussian_protocol_sha256": "7d4d374e551d11706761353456fe899c0f63eb2936e7e4dd11378267ff4d03b1",
+    "gaussian_weights_sha256": "de73760a315c0b5bd4967023365df156daeda5fa2cf4418b30342a367c4cf51c",
+    "copula_sha256": "baa8b467e363cbcd146674fd431cbc4a4a78737841aad4ad5ae35943fa1fd4bf",
+    "training_embedding_manifest_sha256": "9a40d444992cb09fbb45b689ab42eb0cf39feb69b28ee71c4e75bf3e91445cf1",
+    "mean_weights_sha256": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508",
+    "normalization": {
+      "bias_mm": [
+        -0.18208724374050447,
+        0.08582369715246142,
+        0.39398403823050154,
+        0.6452158673219606,
+        0.8442499068392654,
+        1.0042661034666491,
+        1.1351475027338613
+      ],
+      "scale_mm": [
+        9.820845495491572,
+        10.630630735588428,
+        11.593580157773715,
+        12.656472346066382,
+        13.81153593138061,
+        14.966359888233054,
+        16.07272898562415
+      ],
+      "count": [
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603769.0,
+        4603767.0
+      ],
+      "role": "training_only"
+    },
+    "weather_gp_protocol_sha256": "471b6de584b30e2aaac743bdcc9f940a18acabd7228db86c5e70b5fa35bc91f4",
+    "weather_gp_weights_sha256": "b217a2b5b99c4d8f8279322564df4afa8eb0574b8d36bc10388cef7c6bbf8ac4",
+    "weather_gp_seal_sha256": "aa68a50a3d810a986b82b17ac8dee0520a99ffe3861cf6d3c40937a4e5a344c0"
+  },
+  "seal_implementation_sha256": "6a286fbbcf58926118a4228881f629b99596ca70ec1cd7031f77904b03c68fe5",
+  "final_step": 3000,
+  "contract": "last.pt equals checkpoint3000.model tensor by tensor; immutable completion artifact receipt"
+}

@@ -1,0 +1,134 @@
+{
+  "rows": [
+    {
+      "block": 0,
+      "queries": 1,
+      "kernel_max_difference": 3.457138708640173e-08,
+      "path_max_difference_mm": 2.7334087741934803e-06,
+      "path_rms_difference_mm": 6.524610305350968e-07
+    },
+    {
+      "block": 0,
+      "queries": 64,
+      "kernel_max_difference": 4.1034810882578654e-07,
+      "path_max_difference_mm": 5.656761008475986e-06,
+      "path_rms_difference_mm": 5.418333178445975e-07
+    },
+    {
+      "block": 0,
+      "queries": 128,
+      "kernel_max_difference": 0.0,
+      "path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 0,
+      "queries": 137,
+      "kernel_max_difference": 0.0,
+      "path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 6,
+      "queries": 1,
+      "kernel_max_difference": 2.537749643760634e-08,
+      "path_max_difference_mm": 2.9300952432322267e-06,
+      "path_rms_difference_mm": 8.15144239972628e-07
+    },
+    {
+      "block": 6,
+      "queries": 64,
+      "kernel_max_difference": 5.16344016487924e-07,
+      "path_max_difference_mm": 5.285499125723448e-06,
+      "path_rms_difference_mm": 5.625642347520648e-07
+    },
+    {
+      "block": 6,
+      "queries": 128,
+      "kernel_max_difference": 0.0,
+      "path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 6,
+      "queries": 137,
+      "kernel_max_difference": 0.0,
+      "path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 12,
+      "queries": 1,
+      "kernel_max_difference": 4.2111934051014543e-08,
+      "path_max_difference_mm": 2.944539983700899e-06,
+      "path_rms_difference_mm": 6.47426730287996e-07
+    },
+    {
+      "block": 12,
+      "queries": 64,
+      "kernel_max_difference": 4.7655004120628064e-07,
+      "path_max_difference_mm": 5.522783555985071e-06,
+      "path_rms_difference_mm": 6.311932373535929e-07
+    },
+    {
+      "block": 12,
+      "queries": 128,
+      "kernel_max_difference": 0.0,
+      "path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    },
+    {
+      "block": 12,
+      "queries": 137,
+      "kernel_max_difference": 0.0,
+      "path_max_difference_mm": 0.0,
+      "path_rms_difference_mm": 0.0
+    }
+  ],
+  "engineering_only": false,
+  "source": {
+    "gaussian_protocol_sha256": "7d4d374e551d11706761353456fe899c0f63eb2936e7e4dd11378267ff4d03b1",
+    "gaussian_weights_sha256": "de73760a315c0b5bd4967023365df156daeda5fa2cf4418b30342a367c4cf51c",
+    "copula_sha256": "baa8b467e363cbcd146674fd431cbc4a4a78737841aad4ad5ae35943fa1fd4bf",
+    "training_embedding_manifest_sha256": "9a40d444992cb09fbb45b689ab42eb0cf39feb69b28ee71c4e75bf3e91445cf1",
+    "mean_weights_sha256": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508",
+    "normalization": {
+      "bias_mm": [
+        -0.18208724374050447,
+        0.08582369715246142,
+        0.39398403823050154,
+        0.6452158673219606,
+        0.8442499068392654,
+        1.0042661034666491,
+        1.1351475027338613
+      ],
+      "scale_mm": [
+        9.820845495491572,
+        10.630630735588428,
+        11.593580157773715,
+        12.656472346066382,
+        13.81153593138061,
+        14.966359888233054,
+        16.07272898562415
+      ],
+      "count": [
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603770.0,
+        4603769.0,
+        4603767.0
+      ],
+      "role": "training_only"
+    },
+    "weather_gp_protocol_sha256": "471b6de584b30e2aaac743bdcc9f940a18acabd7228db86c5e70b5fa35bc91f4",
+    "weather_gp_weights_sha256": "b217a2b5b99c4d8f8279322564df4afa8eb0574b8d36bc10388cef7c6bbf8ac4",
+    "weather_gp_seal_sha256": "aa68a50a3d810a986b82b17ac8dee0520a99ffe3861cf6d3c40937a4e5a344c0"
+  },
+  "code_sha256": "b0dfc7bf2e29eef2c86932995e9a2aa914217b336799cc28577e21796a2e7a61",
+  "transport_weights_sha256": "580c297f9f0fd96bc2cd9a505eba78e33612c63028b22dac482bf9b499f13bdd",
+  "meaning": "Fixed visible histories and common superset GP initial path; no labels used; different Cholesky roots with the same seed are not a path-coupling test",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}

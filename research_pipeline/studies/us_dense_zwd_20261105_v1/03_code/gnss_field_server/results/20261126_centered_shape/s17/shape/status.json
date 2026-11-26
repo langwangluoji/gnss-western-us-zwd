@@ -1,0 +1,7 @@
+{
+  "status": "COMPLETE_CENTERED_SHAPE",
+  "steps": 3000,
+  "supervised_updates": 3000,
+  "seconds": 29.25,
+  "last_weights_sha256": "34d9c87db1df9030ac89582ee77a53d805b0b13bd676a50506c64f42b9e524ca"
+}

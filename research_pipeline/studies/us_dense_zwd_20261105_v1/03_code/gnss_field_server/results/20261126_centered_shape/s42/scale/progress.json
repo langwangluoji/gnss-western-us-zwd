@@ -1,0 +1,9 @@
+{
+  "step": 3000,
+  "loss": 0.33799102902412415,
+  "supervised_updates": 3000,
+  "finite_label_cells": 10752,
+  "total_label_cells": 32226386,
+  "last_origin_hour": 404460,
+  "seconds": 23.718999999997322
+}

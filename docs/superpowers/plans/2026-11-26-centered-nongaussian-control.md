@@ -45,12 +45,14 @@
 
 ## Task3：收益与归档
 
-**Files:** `maintenance/weather_native_20261126/centered_shape_summary.py`及新results目录。
+**Files:** `maintenance/weather_native_20261126/weather_controls_summary.py`及新results目录。Ruling：统一三组来源验收、同月份统计与事件定义，替代单独的centered_shape_summary.py；各family中心分开，避免重复计分实现及跨组混中心。
 
-- [ ] 逐值核验解析均值=mu_base，标准差按归一化理论；ScaleOnly解析CRPS复算。
-- [ ] 三项消融的月份配对、边际/站对/增量/energy/事件诊断，不把固定均值当新增精度收益。
-- [ ] 更新架构图、结果入口，提交推送并核对远端。
+- [x] 逐值核验解析均值=mu_base，真实查询系数方差归一化审计；ScaleOnly解析CRPS复算。
+- [x] 三项消融的月份配对、边际/站对/增量/energy/事件诊断，不把固定均值当新增精度收益。
+- [x] 保留既有全流程架构图，新增三组性能图及结果入口；代码与轻量证据持续同步，远端以提交记录核验。
 
 ## 当前执行状态
 
 Task1数学/模型与Task2工程实现、真实缺测小试已完成；三臂各4实际更新、18088有限标签，初始化Gaussian样本最大差0。独立审阅补强工件recipe及joint来源守卫，RED→GREEN；未修改已锁定GP或Local/Affine。正式三臂在G265及预注册轨迹diffusion完成后顺序运行，避免同时增加GPU压力。
+
+2026-11-26最终更新：三臂均完成双种子各3000连续更新、K32全查询评价及真实查询子集核验。Task3完整汇总完成，维护测试23项通过；Gaussian参考/scale解析CRPS复算、原始样本与float32存储分数逐值核验、固定均值逐值相等。完整结果见[统一归因](../../research_notes/2026-11-26-weather-controls-final.md)。shape/both相对scale的六小时边际额外收益区间跨零，增量与近邻有代价，未升级为最优概率模型。

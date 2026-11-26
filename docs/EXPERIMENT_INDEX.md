@@ -1,5 +1,7 @@
 # 当前区域实验索引
 
+2026-11-26完整新增：[天气/传输/固定均值对照统一结论](research_notes/2026-11-26-weather-controls-final.md)，包含三组双种子配对、两采样器、主阈值事件、补充日期与均值误差；各结果目录的`paired/REPORT.md`及JSON/图均已归档。
+
 2026-11-26新增：[G175/G265双种子完整汇总](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_projective_gp/paired/REPORT.md)、[细距离与逐站误差](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_projective_gp/g175_locality/REPORT.md)、[下一步研究优先级](research_notes/2026-11-26-research-priorities-after-weather-gp.md)。近邻六小时差值CRPS分别改善20.29%/20.76%，点预测保持不变；新增扩散与均值保持三臂已完成训练，待完整归因。
 
 下一阶段设计与执行顺序见 [NEXT_STAGE.md](NEXT_STAGE.md)。首轮连续融合已完成，新掩码Transformer及L/A/B/J已实现并完成工程短训，见[实现入口](research_notes/2026-11-25-joint-spectral-implementation.md)，不加入正式模型精度排名。
