@@ -38,11 +38,13 @@ def inputs(cache,a,positions,query,coef):
     ix=p[:,None]-np.arange(15,-1,-1)[None];global_ix=ix+s
     raw=a['values'][global_ix[:,:,None],c[None,None]];valid=np.isfinite(raw)
     norm=np.where(valid,(raw-np.array([0,280,900]))/np.array([100,20,100]),0)
-    if 'ages' in a:age=a['ages'][global_ix[:,:,None],c[None,None]]
-    else:
-        loc=np.arange(16)[None,:,None,None]
-        last=np.maximum.accumulate(np.where(valid,loc,-10000),axis=1)
-        age=np.minimum((loc-last)*6,10000)
+    if 'ages' not in a:
+        # Same causal full-timeline construction used during training. A gap
+        # at the history boundary retains its actual earlier observation age.
+        absolute=np.arange(len(a['values']))[:,None,None]
+        last=np.maximum.accumulate(np.where(np.isfinite(a['values']),absolute,-100000),axis=0)
+        a['ages']=np.minimum((absolute-last)*6,10000).astype('f4')
+    age=a['ages'][global_ix[:,:,None],c[None,None]]
     fx=i1_features(cache['innovation']);correction=fx@coef
     bkg=cache['base']+correction
     old_error=np.where(valid[...,0],cache['self_error'][ix],0)

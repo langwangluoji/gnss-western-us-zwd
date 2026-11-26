@@ -40,3 +40,12 @@ def test_missing_gnss_masks_both_innovation_channels():
     result=native.inputs(cache,a,np.array([25]),np.array([2,3]),np.ones(9))
     assert result['history'][0,0,0,3]==0
     np.testing.assert_array_equal(result['history'][0,0,0,9:11],[0,0])
+
+
+def test_inference_age_includes_observations_before_history_window():
+    cache=dict(base=np.zeros((50,4),dtype='f4'),innovation=np.zeros((50,4,3),dtype='f4'),weather=np.zeros((50,4,18),dtype='f4'),context=np.array([0,1]),start=0,self_error=np.zeros((50,2),dtype='f4'))
+    values=np.ones((50,4,3),dtype='f4');values[10:25,0,0]=np.nan
+    a=dict(values=values,hours=np.arange(50)*6,static=np.zeros((4,9),dtype='f4'),xy=np.zeros((4,2),dtype='f4'))
+    result=native.inputs(cache,a,np.array([30]),np.array([2,3]),np.zeros(9))
+    # History begins at15; last observed record9 is36physical hours earlier.
+    np.testing.assert_allclose(result['history'][0,0,0,6],np.log1p(36)/5,rtol=1e-6)
