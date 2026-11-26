@@ -1,0 +1,81 @@
+{
+  "code_sha256": {
+    "native_process_experiment.py": "ef7ca45c89f1a7489510a12762ac3e335c98d3bec611e81c8d16e90abe661c6f",
+    "native_process_models.py": "74e614bedd3a6b0ac8ef2fdf689cf1b1a10fd81f8d73aac5974af30d3408bb19",
+    "native_process_ops.py": "2b3c017dd0d9c3ddefd0a2e5dd2f7625f320f5ab27d214270c1779f1e49372de",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_probability_context.py": "ab3aad752ed3b6ed886939cdffe823966032c6811cd4976cba30f421e9a3f898",
+    "native_copula.py": "95eade5fb6d732901662509a881c6efcf28e12f06d3193d408ac079dad577c19",
+    "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+    "native_weather_gp.py": "330643f915c4771f318760d9d7c22784b01d064b89251488c1ab8c86bfcf3271",
+    "native_weather_gp_experiment.py": "371ce3374f2bb8ecedc966bf43b0b9efebb135fdc409e3ab41412b69c8853234",
+    "native_weather_gp_diffusion.py": "0662c489f0ce014df720a7cbaf046df4830cffd6b1e46add5df691392543ed10",
+    "native_weather_gp_diffusion_experiment.py": "66106a06f8b8fa5249543a21b5d0a9f6a7655146cddbc95466dd71babd9f2e1d",
+    "native_model_seal.py": "6a286fbbcf58926118a4228881f629b99596ca70ec1cd7031f77904b03c68fe5",
+    "native_latent_flow.py": "ed8c210b98240bb2b0c40532c3ec3c39e7f4484d4ccae4738a9ed22d73fc05c5",
+    "native_inducing_flow.py": "c866c5cc290710433c1270e8822a7eaf1ec3a7a778018ec81ef849baa80a72fd",
+    "native_inducing_flow_experiment.py": "ed2543111eaaa0e8263614e567950a66cfb9e0e0e64932ccea7147030947d072",
+    "native_weather_evaluation.py": "47992e1d544b500f1c48e2f104aa1e8fa29fed4ef225486482dfc65f397999d1",
+    "native_student_process.py": "f8782e4451c1250dfc620493ff9bfe3881a94023390514c3869eafda2d333ce1",
+    "native_weather_calibration.py": "41bacfd59fab9b5f50974d297e46920701a9a0597006c54bde8f58483f0aec2a",
+    "runner": "efecf7b38be556cd58a4e68f9c3d16709f1a5f4c986b189855fe97ed432bec5c",
+    "lock_helper": "59603ef8d15207c3bfce308d1ed2c45832162ca80b3b3f9d2da6879ca7001970"
+  },
+  "sources": {
+    "42": {
+      "training_manifest_sha256": "e9e8664429d523f2523b08bf47160d463acc979a959860b344907031faf34b40",
+      "development_manifest_sha256": "5242fedb0794c5644c6773fbc2259a3d34d70d0455df3bc58b84d9ba9864bd55",
+      "affine_model_seal_sha256": "33589d306b78c55929a7b26455aa00f02c6075dd8a60b2959f8fcb690708c976",
+      "parent_evaluation_sha256": "b847c4941a7828877a9cc1026e6df18c7cb4ae788b60a9117386f45f706471ba",
+      "parent_lineage_sha256": "f11f8f1d2477d1faa985f018d8cda60383d8278a2fb93054b13f4b946b18a641"
+    },
+    "17": {
+      "training_manifest_sha256": "071955fe32759276ad501b3723030b80a23c68ffdc36c8263c36a7a5c573ce76",
+      "development_manifest_sha256": "c2ed65874bc50344e99826b83a2c860944486d40bbdb534c8ccfeaebfaecec38",
+      "affine_model_seal_sha256": "ac8dc6a39934362fcc360b54df31eb169a113cb5ce270bbe0f2c9b77d28ebf87",
+      "parent_evaluation_sha256": "e1096df23ce59976949fc4eaaf9484e9b04ffb374b75d25d3a36d8ddfbd9004b",
+      "parent_lineage_sha256": "b429443ec96994369359adccc57986ee713a1f186c99d89ab33a4f8c199cb5bb"
+    }
+  },
+  "helpers": {
+    "probability_joint_audit.py": "d802fcd4a5925f2263c835394ad2cbd2438f7a3df4ffb8b5a49dc0481f07596f",
+    "inducing_calibration_audit.py": "ba9d01913d113b2ba1eb453be185dc5120f717022a8f53e0a513a76ee284c0f1",
+    "weather_controls_summary.py": "6f89001a0e16377d6893952e86d68ec3e7f4f3ae524d988395eb547dd889bf2a",
+    "event_audit.py": "57e69440014fd2c39d762b53072b332253cf35c6e09c8541f9d7a5c07db10715",
+    "weather_calibration_summary.py": "463e76dd424e1ef586396c99b8b07065737f6e1bdf5b33c6ff0080aba34428a6",
+    "weather_calibration_lock.py": "59603ef8d15207c3bfce308d1ed2c45832162ca80b3b3f9d2da6879ca7001970",
+    "mean_hs_summary.py": "d796db1c7035520efc5b196b9b1cc980238cf19f3f9619293c1c4e036a9a8145",
+    "event_audit_lock.json": "13d4212698535a8fe00d7d7df1d4c08d1c56871d42181f1a1967206cdee001b0"
+  },
+  "variants": [
+    "fixed",
+    "constant",
+    "G_weather",
+    "G_extra",
+    "T_constant",
+    "T_weather"
+  ],
+  "steps": 3000,
+  "members": 32,
+  "gamma_seed": 261128,
+  "primary": "T_weather vs G_weather F6 fairCRPS; G_extra matched extra budget control",
+  "covariance_match": "T_weather and G_weather same mu and s2(c)C",
+  "nu_grid": [
+    null,
+    3,
+    4,
+    6,
+    8,
+    12,
+    20,
+    40,
+    80,
+    160,
+    1000
+  ],
+  "user_end_condition": "finish this experiment then stop new experiments and deliver full research summary",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}

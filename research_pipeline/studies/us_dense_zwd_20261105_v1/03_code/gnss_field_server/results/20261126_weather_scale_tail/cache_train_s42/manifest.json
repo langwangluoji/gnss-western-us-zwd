@@ -1,0 +1,34 @@
+{
+  "complete": true,
+  "code_sha256": {
+    "native_process_experiment.py": "ef7ca45c89f1a7489510a12762ac3e335c98d3bec611e81c8d16e90abe661c6f",
+    "native_process_models.py": "74e614bedd3a6b0ac8ef2fdf689cf1b1a10fd81f8d73aac5974af30d3408bb19",
+    "native_process_ops.py": "2b3c017dd0d9c3ddefd0a2e5dd2f7625f320f5ab27d214270c1779f1e49372de",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_probability_context.py": "ab3aad752ed3b6ed886939cdffe823966032c6811cd4976cba30f421e9a3f898",
+    "native_copula.py": "95eade5fb6d732901662509a881c6efcf28e12f06d3193d408ac079dad577c19",
+    "native_weather.py": "deff0c1d902340579faa091c68af7a010dbe7dfa28db73f2653e7d4cceb963be",
+    "native_weather_cache.py": "26829a87f0e483f9d4fa3abc7590607498412c8eddc3f91a632dbfd50787cc03",
+    "native_weather_experiment.py": "83d04a5dea1f937252b50652a6ea9c2f265ed1d58dec238e16c7c458011040e7",
+    "native_weather_gp.py": "330643f915c4771f318760d9d7c22784b01d064b89251488c1ab8c86bfcf3271",
+    "native_weather_gp_experiment.py": "371ce3374f2bb8ecedc966bf43b0b9efebb135fdc409e3ab41412b69c8853234",
+    "native_weather_gp_diffusion.py": "0662c489f0ce014df720a7cbaf046df4830cffd6b1e46add5df691392543ed10",
+    "native_weather_gp_diffusion_experiment.py": "66106a06f8b8fa5249543a21b5d0a9f6a7655146cddbc95466dd71babd9f2e1d",
+    "native_model_seal.py": "6a286fbbcf58926118a4228881f629b99596ca70ec1cd7031f77904b03c68fe5",
+    "native_latent_flow.py": "ed8c210b98240bb2b0c40532c3ec3c39e7f4484d4ccae4738a9ed22d73fc05c5",
+    "native_inducing_flow.py": "c866c5cc290710433c1270e8822a7eaf1ec3a7a778018ec81ef849baa80a72fd",
+    "native_inducing_flow_experiment.py": "ed2543111eaaa0e8263614e567950a66cfb9e0e0e64932ccea7147030947d072",
+    "native_weather_evaluation.py": "47992e1d544b500f1c48e2f104aa1e8fa29fed4ef225486482dfc65f397999d1",
+    "native_student_process.py": "f8782e4451c1250dfc620493ff9bfe3881a94023390514c3869eafda2d333ce1",
+    "cache_driver": "ab4fe1fe14a6b6f8e0b5cb4c695de9be377f65528c1f1e0c1b977138e7f02849"
+  },
+  "protocol_sha256": "abf61dfb7a8001db3a656fbf95b299a5aeaeaf7298d42ee8031cba9aa81a47a0",
+  "files": {
+    "q.npy": "83b7f9960a4f5efc63f088a169213b9e5b3d8cd12f2d6f6ba2ee2ffc76cc2da6",
+    "logdet.npy": "0af479db1868710982d4f8f2411fcdfb2d6b3cabd772357d7c9a4336b65874bc",
+    "dimension.npy": "1882316e40683ef9de3ad8d48c4a52e3bf64cff4b6bfd2c11870e896bafc4c1a",
+    "weather.npy": "e7eb96a3583ce1dc03f75be73f90c163eaee0ad71934b8b7f14f58837596be7b",
+    "origins.npy": "bb678de89e6c84dcb68a23a5a6910cf58bca13351c41782267ca80d00ad427e2",
+    "statistics.json": "64f65e454c67b172e437b0c9ccdd13459daa62b85253f457dafe737d8a64d201"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE_VOLATILITY_CACHE",
+  "blocks": 216,
+  "seconds": 83.21900000001187,
+  "positive_origins": 2592,
+  "positive_blocks": 216,
+  "finite_target_cells": 2290407,
+  "constant_scale2": 1.3695272187125949
+}
