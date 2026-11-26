@@ -1,5 +1,7 @@
 # 当前区域实验索引
 
+2026-11-26执行中：[有向站点×lag完整架构](superpowers/specs/2026-11-26-directed-lag-transport.md)、[v2修正与版本合同](superpowers/specs/2026-11-26-directed-lag-v2.md)、[v1工程停止证据](research_notes/2026-11-26-directed-normalization-correction.md)。v2四组同预算3000训练队列已启动，正式指标待生成；v1部分权重不排名、不续用为v2。
+
 2026-11-26完成：[留站创新96块真实诊断](research_notes/2026-11-26-leaveout-innovation-panel-results.md)、[七组探针完整指标与分层](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_leaveout_innovation_panel/paired/REPORT.md)、[R²及能量分析](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_leaveout_innovation_panel/paired/RESIDUAL_ENERGY.md)。双种子各48个月块，LOSO创新尺度增大但额外线性收益区间跨零；原基础模型已拟合2019，这是训练池探针迁移，不与2020约9.8mm排名混用。
 
 2026-11-26完成：[内部增量监督双种子及两日历结果](research_notes/2026-11-26-increment-supervision-results.md)、[主日历配对](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/paired_calendar8/REPORT.md)、[补充日历配对](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/paired_calendar15/REPORT.md)。固定H仅改变query损失，内部增量分别改善0.001279/0.001513mm；六小时额外改善微小，未新增扩散训练。新增[逐时有效距离实数组审计](../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_condition_distance_audit/audit.json)。
