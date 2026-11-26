@@ -1,0 +1,27 @@
+{
+  "model": "original P14Fusion(gru16) + current transported spatial prior",
+  "version": 2,
+  "seed": 42,
+  "steps": 3000,
+  "block_records": 4,
+  "block_hours": 24,
+  "chronological": true,
+  "context_count_range": [
+    96,
+    224
+  ],
+  "train_stations": 273,
+  "dev_stations": 64,
+  "neural_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "selection_year": 2023,
+  "selection_is_spatial_holdout": true,
+  "data_sha256": "ffd911ccf2367c7f653fcc7440e4404ae777b9b4444cf428d0162dc4dfd58c74",
+  "code_sha256": "a17d1d5727d32b003e9a6cb7a186007d0f1f81a86f3dee5c56edc74025d9353d",
+  "feature_sha256": "5c926f9b6d9e3bb8213cead76b25b7d3cd0b08867b380996190261f8332ab622",
+  "test_2024_used_for_training_or_selection": false
+}

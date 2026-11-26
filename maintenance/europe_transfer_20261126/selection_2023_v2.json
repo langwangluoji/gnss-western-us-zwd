@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "year": 2023,
+  "metric": "24 fixed4-record blocks, spatially held-out dev station macro RMSE;2023 is inside training time pool",
+  "seeds": [
+    {
+      "seed": 42,
+      "dev_station_macro_rmse_mm": {
+        "p14_gru": 13.623560865345572,
+        "i1": 12.453996558005471,
+        "joint": 12.459986938262315
+      },
+      "joint_sha256": "2f9dc42ebc9a802a8aa6acb9775e28297db10191b2f5e2b83db24f89a4c84c14",
+      "base_sha256": "2a3f88ca6b5fe639d9898a04d68e8a63422aafa62186deeaf84d3c41179ae138",
+      "i1_sha256": "79076f8639a557a7d026c4f6e2bd39fb5bff55f145d6cf36b30331ebc468ea0a"
+    },
+    {
+      "seed": 17,
+      "dev_station_macro_rmse_mm": {
+        "p14_gru": 13.585081229353323,
+        "i1": 12.395749395807124,
+        "joint": 12.414984115292354
+      },
+      "joint_sha256": "77b9c995e6b0215ef648570f32359106b226b0bd9bf4ce6bd92f2b11f8794b26",
+      "base_sha256": "69d3e337e1c04c1f511b650d026c3df8c428a50c958e2f0fb0fd87b452b2321f",
+      "i1_sha256": "c963653f0d75cfc8d118e94f1496a2addecbfb9597007da5a4631f6a3436f93d"
+    }
+  ],
+  "mean_scores_mm": {
+    "p14_gru": 13.604321047349448,
+    "i1": 12.424872976906297,
+    "joint": 12.437485526777333
+  },
+  "selected_architecture": "i1",
+  "test_2024_labels_used": false
+}
