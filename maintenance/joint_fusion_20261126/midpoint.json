@@ -1,0 +1,36 @@
+{
+  "phase": "G265 training midpoint, not development accuracy",
+  "progress": {
+    "42": {
+      "view": 265,
+      "step": 1600,
+      "loss": -0.06059708731698944,
+      "supervised_updates": 1600,
+      "complete_trajectories": 1536,
+      "used_origins": 12,
+      "total_trajectories": 2457600,
+      "group_lrs": [
+        0.00015088865745886676,
+        0.0005029621915295559
+      ],
+      "last_origin_hour": 422568,
+      "seconds": 1238.2190000000119
+    },
+    "17": {
+      "view": 265,
+      "step": 1600,
+      "loss": -0.06332753382216873,
+      "supervised_updates": 1600,
+      "complete_trajectories": 1536,
+      "used_origins": 12,
+      "total_trajectories": 2457600,
+      "group_lrs": [
+        0.00015088865745886676,
+        0.0005029621915295559
+      ],
+      "last_origin_hour": 422568,
+      "seconds": 1226.6570000000065
+    }
+  },
+  "formal_lock_sha256": "138d8fadd91dcbaf8a4a3681b5b18c8164cd8b7da6349cdec1d37a9ab92075bf"
+}
