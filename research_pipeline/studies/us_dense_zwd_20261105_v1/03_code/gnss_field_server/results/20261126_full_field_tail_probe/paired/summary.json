@@ -1,0 +1,393 @@
+{
+  "summaries": {
+    "42": {
+      "complete": true,
+      "seed": 42,
+      "selected_tail_family": "t20",
+      "gaussian_scale2_fit": 1.2730335639924648,
+      "scores": {
+        "gaussian": {
+          "fit2016_2018": 3.2630437539074215,
+          "transfer2019": 3.218652733221529
+        },
+        "scaled_gaussian": {
+          "fit2016_2018": 3.2472283189897846,
+          "transfer2019": 3.198149629707885
+        },
+        "t3": {
+          "fit2016_2018": 3.2388634158333445,
+          "transfer2019": 3.184155180023985
+        },
+        "t4": {
+          "fit2016_2018": 3.2371271799975667,
+          "transfer2019": 3.182443246931344
+        },
+        "t6": {
+          "fit2016_2018": 3.2356678634970453,
+          "transfer2019": 3.1810321908747095
+        },
+        "t8": {
+          "fit2016_2018": 3.2349633145310084,
+          "transfer2019": 3.180375446513796
+        },
+        "t12": {
+          "fit2016_2018": 3.234286041612825,
+          "transfer2019": 3.1797924358539182
+        },
+        "t20": {
+          "fit2016_2018": 3.233924586598619,
+          "transfer2019": 3.1796142638257603
+        },
+        "t40": {
+          "fit2016_2018": 3.234481575344629,
+          "transfer2019": 3.180600833371304
+        },
+        "t80": {
+          "fit2016_2018": 3.236632736843677,
+          "transfer2019": 3.183504935363455
+        },
+        "t160": {
+          "fit2016_2018": 3.2406266936336143,
+          "transfer2019": 3.188685677112972
+        },
+        "t1000": {
+          "fit2016_2018": 3.25466353435147,
+          "transfer2019": 3.2071146050087815
+        }
+      },
+      "fit_origins": 432,
+      "transfer_origins": 144,
+      "valid_origins": 576,
+      "empty_origins": 0,
+      "fit_blocks": [
+        0,
+        61,
+        123,
+        185,
+        247,
+        309,
+        371,
+        433,
+        494,
+        556,
+        618,
+        680,
+        742,
+        804,
+        866,
+        928,
+        989,
+        1051,
+        1113,
+        1175,
+        1237,
+        1299,
+        1361,
+        1423,
+        1484,
+        1546,
+        1608,
+        1670,
+        1732,
+        1794,
+        1856,
+        1918,
+        1979,
+        2041,
+        2103,
+        2165
+      ],
+      "transfer_blocks": [
+        2227,
+        2289,
+        2351,
+        2413,
+        2474,
+        2536,
+        2598,
+        2660,
+        2722,
+        2784,
+        2846,
+        2908
+      ],
+      "radial": {
+        "fit2016_2018": {
+          "radius_per_dimension_mean": 1.2730335639924648,
+          "radius_per_dimension_quantiles": [
+            1.2177996014409818,
+            1.7881534049430285,
+            1.9581502727406972,
+            2.138762151846831
+          ],
+          "gaussian_radial_pit_above95": 0.5625,
+          "gaussian_radial_pit_below05": 0.12037037037037036
+        },
+        "transfer2019": {
+          "radius_per_dimension_mean": 1.3167465740146023,
+          "radius_per_dimension_quantiles": [
+            1.2824376167474505,
+            1.9116400033366152,
+            2.083059573919914,
+            2.7442795488885556
+          ],
+          "gaussian_radial_pit_above95": 0.5763888888888888,
+          "gaussian_radial_pit_below05": 0.13194444444444445
+        }
+      },
+      "covariance_diagonal_max_error_mm2": 1.8189894035458565e-12,
+      "body_seconds": 3.860000000015134,
+      "protocol_sha256": "929c5bf0a674e0a207731729a73e8eea586a1bd66a9b5a2f793848d372f24384",
+      "interpretation": "analytic diagnostic only;2019 source models already trained; no forecast CRPS gain established",
+      "strict_oof": false,
+      "confirmation_C_D_read": false,
+      "radial_calibration": {
+        "fit2016_2018": {
+          "gaussian_above95": 0.5625,
+          "scaled_gaussian_above95": 0.2986111111111111,
+          "selected_tail_above95": 0.1412037037037037
+        },
+        "transfer2019": {
+          "gaussian_above95": 0.5763888888888888,
+          "scaled_gaussian_above95": 0.3055555555555556,
+          "selected_tail_above95": 0.18055555555555555
+        }
+      }
+    },
+    "17": {
+      "complete": true,
+      "seed": 17,
+      "selected_tail_family": "t20",
+      "gaussian_scale2_fit": 1.3379882321546428,
+      "scores": {
+        "gaussian": {
+          "fit2016_2018": 3.2831568602363683,
+          "transfer2019": 3.187327949435483
+        },
+        "scaled_gaussian": {
+          "fit2016_2018": 3.259746322677506,
+          "transfer2019": 3.168295575512776
+        },
+        "t3": {
+          "fit2016_2018": 3.243334807491589,
+          "transfer2019": 3.148299121344514
+        },
+        "t4": {
+          "fit2016_2018": 3.2416350598164603,
+          "transfer2019": 3.1466039777976893
+        },
+        "t6": {
+          "fit2016_2018": 3.2402482144397418,
+          "transfer2019": 3.1452259375786324
+        },
+        "t8": {
+          "fit2016_2018": 3.239615468857239,
+          "transfer2019": 3.1446014837909266
+        },
+        "t12": {
+          "fit2016_2018": 3.239079828056431,
+          "transfer2019": 3.1440809941329864
+        },
+        "t20": {
+          "fit2016_2018": 3.2389939422565925,
+          "transfer2019": 3.144020346077087
+        },
+        "t40": {
+          "fit2016_2018": 3.240197692411739,
+          "transfer2019": 3.145264571996077
+        },
+        "t80": {
+          "fit2016_2018": 3.243484979574706,
+          "transfer2019": 3.148575242349014
+        },
+        "t160": {
+          "fit2016_2018": 3.249274177974834,
+          "transfer2019": 3.1543234523961114
+        },
+        "t1000": {
+          "fit2016_2018": 3.269969430687542,
+          "transfer2019": 3.1745639764757883
+        }
+      },
+      "fit_origins": 432,
+      "transfer_origins": 144,
+      "valid_origins": 576,
+      "empty_origins": 0,
+      "fit_blocks": [
+        0,
+        61,
+        123,
+        185,
+        247,
+        309,
+        371,
+        433,
+        494,
+        556,
+        618,
+        680,
+        742,
+        804,
+        866,
+        928,
+        989,
+        1051,
+        1113,
+        1175,
+        1237,
+        1299,
+        1361,
+        1423,
+        1484,
+        1546,
+        1608,
+        1670,
+        1732,
+        1794,
+        1856,
+        1918,
+        1979,
+        2041,
+        2103,
+        2165
+      ],
+      "transfer_blocks": [
+        2227,
+        2289,
+        2351,
+        2413,
+        2474,
+        2536,
+        2598,
+        2660,
+        2722,
+        2784,
+        2846,
+        2908
+      ],
+      "radial": {
+        "fit2016_2018": {
+          "radius_per_dimension_mean": 1.3379882321546428,
+          "radius_per_dimension_quantiles": [
+            1.2645495185337232,
+            1.9095811483098737,
+            2.0488726983870387,
+            2.9138360424346046
+          ],
+          "gaussian_radial_pit_above95": 0.5925925925925926,
+          "gaussian_radial_pit_below05": 0.16435185185185186
+        },
+        "transfer2019": {
+          "radius_per_dimension_mean": 1.3033247091894764,
+          "radius_per_dimension_quantiles": [
+            1.2294474556939194,
+            1.9653550815014544,
+            2.411050705734804,
+            2.597595272209369
+          ],
+          "gaussian_radial_pit_above95": 0.5625,
+          "gaussian_radial_pit_below05": 0.1388888888888889
+        }
+      },
+      "covariance_diagonal_max_error_mm2": 1.3642420526593924e-12,
+      "body_seconds": 4.078000000008615,
+      "protocol_sha256": "6ee4103081b6b7a6373e8db625ccf372a90ebcd84011baa730b725c5422c1105",
+      "interpretation": "analytic diagnostic only;2019 source models already trained; no forecast CRPS gain established",
+      "strict_oof": false,
+      "confirmation_C_D_read": false,
+      "radial_calibration": {
+        "fit2016_2018": {
+          "gaussian_above95": 0.5925925925925926,
+          "scaled_gaussian_above95": 0.3125,
+          "selected_tail_above95": 0.2361111111111111
+        },
+        "transfer2019": {
+          "gaussian_above95": 0.5625,
+          "scaled_gaussian_above95": 0.2361111111111111,
+          "selected_tail_above95": 0.16666666666666666
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "fit2016_2018/scaled_gaussian_vs_gaussian": {
+      "candidate": 3.2534873208336452,
+      "reference": 3.273100307071895,
+      "delta": -0.019612986238249697,
+      "gain_percent": 0.5992173901873301,
+      "delta_ci95": [
+        -0.03143155007290617,
+        -0.007550136572660681
+      ]
+    },
+    "fit2016_2018/selected_tail_vs_gaussian": {
+      "candidate": 3.236459264427606,
+      "reference": 3.273100307071895,
+      "delta": -0.03664104264428891,
+      "gain_percent": 1.1194598150604151,
+      "delta_ci95": [
+        -0.049340045520340006,
+        -0.02553305295639432
+      ]
+    },
+    "fit2016_2018/selected_tail_vs_scaled_gaussian": {
+      "candidate": 3.236459264427606,
+      "reference": 3.2534873208336452,
+      "delta": -0.017028056406039216,
+      "gain_percent": 0.5233786004635818,
+      "delta_ci95": [
+        -0.023506863573056692,
+        -0.011028810225253429
+      ]
+    },
+    "transfer2019/scaled_gaussian_vs_gaussian": {
+      "candidate": 3.1832226026103307,
+      "reference": 3.2029903413285057,
+      "delta": -0.019767738718174943,
+      "gain_percent": 0.6171651054675322,
+      "delta_ci95": [
+        -0.042754619945397365,
+        0.0030807843627391218
+      ]
+    },
+    "transfer2019/selected_tail_vs_gaussian": {
+      "candidate": 3.1618173049514233,
+      "reference": 3.2029903413285057,
+      "delta": -0.04117303637708236,
+      "gain_percent": 1.2854561515788088,
+      "delta_ci95": [
+        -0.06628826887157425,
+        -0.02045565494422222
+      ]
+    },
+    "transfer2019/selected_tail_vs_scaled_gaussian": {
+      "candidate": 3.1618173049514233,
+      "reference": 3.1832226026103307,
+      "delta": -0.02140529765890742,
+      "gain_percent": 0.6724411180466764,
+      "delta_ci95": [
+        -0.034341331983206005,
+        -0.009478216240648115
+      ]
+    }
+  },
+  "sources": {
+    "42": {
+      "protocol.json": "929c5bf0a674e0a207731729a73e8eea586a1bd66a9b5a2f793848d372f24384",
+      "records.json": "c9637ff2b9567fcbeb7b1898a8a661efa2d2df798c38bc6082f23817cfe8398a",
+      "summary.json": "9214aaa605948ca57aeb2165335e1bdb28e0225f94170c07f03f1ad99efe9bb4"
+    },
+    "17": {
+      "protocol.json": "6ee4103081b6b7a6373e8db625ccf372a90ebcd84011baa730b725c5422c1105",
+      "records.json": "b869052bcc4c697c8999a7b616e4def73e55b3e53cd180befa41cfbb044d8991",
+      "summary.json": "7b20c8577a31bda5e80d2ad47fd1c49582e242fb7fd29fa3b4b46ad5ec96adc4"
+    }
+  },
+  "generated_check_sha256": "680ae153c36ea650fa5ab50678e889266574c79c3f6a79b6264c49106bb1dc83",
+  "code_sha256": "15113343fecfc5f09f01194effeca043114b8d42e1e6ec49d1524ef3d22aaa3d",
+  "interval": "2000 shared selected-block resamples, equal fixed seeds; paired_record generic slots are blocks, not extra independent hours",
+  "dependency_sha256": "6f89001a0e16377d6893952e86d68ec3e7f4f3ae524d988395eb547dd889bf2a",
+  "interpretation": "probe transfer2019; base/covariance already fitted2019; log-score diagnostic, not2020 forecast gain",
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}

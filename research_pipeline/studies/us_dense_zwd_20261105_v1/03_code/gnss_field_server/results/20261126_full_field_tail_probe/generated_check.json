@@ -1,0 +1,49 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "seed": 42,
+      "training_block_index0": 0,
+      "members": 4096,
+      "observed_subvector_dimension": 224,
+      "generated_radius_per_dimension_mean": 1.0011289508120778,
+      "generated_pit_above95": 0.05322265625,
+      "generated_pit_below05": 0.05029296875,
+      "source_weights_sha256": "d5bb28113bd88b753aadecfd771aa59d95f892673773121c5a1207056c29aa4e"
+    },
+    {
+      "seed": 42,
+      "training_block_index0": 2000,
+      "members": 4096,
+      "observed_subvector_dimension": 224,
+      "generated_radius_per_dimension_mean": 0.9996239768070242,
+      "generated_pit_above95": 0.051025390625,
+      "generated_pit_below05": 0.05419921875,
+      "source_weights_sha256": "d5bb28113bd88b753aadecfd771aa59d95f892673773121c5a1207056c29aa4e"
+    },
+    {
+      "seed": 17,
+      "training_block_index0": 0,
+      "members": 4096,
+      "observed_subvector_dimension": 224,
+      "generated_radius_per_dimension_mean": 1.0005414057516153,
+      "generated_pit_above95": 0.047607421875,
+      "generated_pit_below05": 0.048828125,
+      "source_weights_sha256": "c7afb48ec9578c3e670a0da6360170487c1a1aad3e0cf2d16c6a4d85d4e17b0d"
+    },
+    {
+      "seed": 17,
+      "training_block_index0": 2000,
+      "members": 4096,
+      "observed_subvector_dimension": 224,
+      "generated_radius_per_dimension_mean": 0.999561661740931,
+      "generated_pit_above95": 0.049072265625,
+      "generated_pit_below05": 0.055908203125,
+      "source_weights_sha256": "c7afb48ec9578c3e670a0da6360170487c1a1aad3e0cf2d16c6a4d85d4e17b0d"
+    }
+  ],
+  "code_sha256": "09cf5a0b8280c52d56366abe73127626350d156534d96d66d511e8c30aeb97fd",
+  "role": "generated Gaussian diagnostic, not independent atmospheric forecast evidence",
+  "rounding": "kernel float64 and decoder float32; covariance checked at source numeric precision",
+  "confirmation_C_D_read": false
+}
