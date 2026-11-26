@@ -1,0 +1,131 @@
+{
+  "status": "passed",
+  "models": [
+    {
+      "model": "probability\\s17\\base\\gaussian",
+      "steps": 3000,
+      "optimizer_steps": [
+        3000
+      ],
+      "observed_units": 6023485,
+      "weight_sha256": "c9a9eb55d7d8bd9a38a83bd57d692fa79fd04954fedb81ea21d27cb87976e004"
+    },
+    {
+      "model": "probability\\s17\\base\\gp",
+      "steps": 3000,
+      "optimizer_steps": [
+        3000
+      ],
+      "observed_units": 292065,
+      "weight_sha256": "013ea06f172fb479f7a4b1539d849017af43dbd0a8764b138dc14d430fe0f462"
+    },
+    {
+      "model": "probability\\s17\\base\\local",
+      "steps": 3000,
+      "optimizer_steps": [
+        3000
+      ],
+      "observed_units": 830207,
+      "weight_sha256": "21acc1698a523be25b701ea8859ad8456083864d9b9e2197f7f093a7af2907fe"
+    },
+    {
+      "model": "probability\\s17\\vmf\\affine",
+      "steps": 3000,
+      "optimizer_steps": [
+        3000
+      ],
+      "observed_units": 830207,
+      "weight_sha256": "fd804f56b404c9557c9eefacf2b1fcc388ff119072eb21e9bf645b7680c3e4f2"
+    },
+    {
+      "model": "probability\\s17\\vmf\\gaussian",
+      "steps": 3000,
+      "optimizer_steps": [
+        3000
+      ],
+      "observed_units": 6023485,
+      "weight_sha256": "907da4ad1b05e0eb178fd3e2a1d693a52b393e00c1007d0edf919e55c02421b9"
+    },
+    {
+      "model": "probability\\s17\\vmf\\gp",
+      "steps": 3000,
+      "optimizer_steps": [
+        3000
+      ],
+      "observed_units": 292065,
+      "weight_sha256": "1e0c29df2a4a41f257e2a425ac101a2650e2707f855c3e1f5616109024ee95ca"
+    },
+    {
+      "model": "probability\\s17\\vmf\\local",
+      "steps": 3000,
+      "optimizer_steps": [
+        3000
+      ],
+      "observed_units": 830207,
+      "weight_sha256": "7e1865c47db9c7e07325b30dfaa03d8b0b3ad819c6b97c1ec234a01141e940b3"
+    },
+    {
+      "model": "probability\\s42\\base\\gaussian",
+      "steps": 3000,
+      "optimizer_steps": [
+        3000
+      ],
+      "observed_units": 7310386,
+      "weight_sha256": "e61481a9042716884fcf7abe40a8e3cfe105bae46913de7503c2aac95c53f971"
+    },
+    {
+      "model": "probability\\s42\\base\\gp",
+      "steps": 3000,
+      "optimizer_steps": [
+        3000
+      ],
+      "observed_units": 290257,
+      "weight_sha256": "edb889ac8763deab9e4bafc416a4d284e3ae0c54d7e000cfe686713b8d1879e3"
+    },
+    {
+      "model": "probability\\s42\\base\\local",
+      "steps": 3000,
+      "optimizer_steps": [
+        3000
+      ],
+      "observed_units": 1006061,
+      "weight_sha256": "1b886c25e364bd8bdd4e05aeef46d7cf0dc2a0da795a70fd5620277811d5fdb6"
+    },
+    {
+      "model": "probability\\s42\\vmf\\affine",
+      "steps": 3000,
+      "optimizer_steps": [
+        3000
+      ],
+      "observed_units": 1006061,
+      "weight_sha256": "6a5f8dfd509fcedda1cff85f3787cfc5b38fa9a68e50627fc7500390cd321a9c"
+    },
+    {
+      "model": "probability\\s42\\vmf\\gaussian",
+      "steps": 3000,
+      "optimizer_steps": [
+        3000
+      ],
+      "observed_units": 7310386,
+      "weight_sha256": "078458ea79d13931efe3decb1fa1939e5d846ff8b17b84bebcc912672385a07a"
+    },
+    {
+      "model": "probability\\s42\\vmf\\gp",
+      "steps": 3000,
+      "optimizer_steps": [
+        3000
+      ],
+      "observed_units": 290257,
+      "weight_sha256": "e433966c171f30e85e611a9a4e861b530fd1513ec0f04ea351310aa1a8a88c5f"
+    },
+    {
+      "model": "probability\\s42\\vmf\\local",
+      "steps": 3000,
+      "optimizer_steps": [
+        3000
+      ],
+      "observed_units": 1006061,
+      "weight_sha256": "8b4d5241ca9cc1bc6b23482fc8eb207027aa193992d2c357968cc5c0969fef0b"
+    }
+  ]
+}

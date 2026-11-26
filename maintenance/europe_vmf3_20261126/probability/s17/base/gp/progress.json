@@ -1,0 +1,8 @@
+{
+  "step": 3000,
+  "loss": -0.013139415665935442,
+  "supervised_updates": 3000,
+  "observed_units": 100,
+  "total_observed_units": 292065,
+  "seconds": 113.78200000000652
+}

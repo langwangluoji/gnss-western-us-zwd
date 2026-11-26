@@ -1,0 +1,12 @@
+{
+  "steps": 3000,
+  "supervised_updates": 3000,
+  "optimizer_state_steps": [
+    3000
+  ],
+  "optimizer_state_parameters": 6,
+  "total_observed_units": 1006061,
+  "seconds": 51.73399999999674,
+  "last_sha256": "8b4d5241ca9cc1bc6b23482fc8eb207027aa193992d2c357968cc5c0969fef0b",
+  "engineering_smoke": false
+}

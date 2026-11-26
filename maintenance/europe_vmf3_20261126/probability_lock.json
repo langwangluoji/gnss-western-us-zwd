@@ -1,0 +1,83 @@
+{
+  "code_sha256": {
+    "diffusion_data.py": "fe891756af3b1d9f5b7dc918515873861fe087e719bfd6418599ba0d1842af47",
+    "prob_models.py": "e6e29ab3637985e025c340e9ed7f5cfe07bf812593fa8fe2a2aa09a49c78a4b9",
+    "prob_train.py": "27a7ccce95f8b69fbe40462c869b285dfb0caa9739a503849436a85e4adef8d1",
+    "model.py": "1af14661e66d11069688a0133197280c4ddbef0860978336113a202b3726782c",
+    "features.py": "dc7f5ab5bc35b40c16571fdbe42192574d3c537b08c2f5f3a854e15e2ac60578",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_weather_gp.py": "330643f915c4771f318760d9d7c22784b01d064b89251488c1ab8c86bfcf3271",
+    "native_process_models.py": "74e614bedd3a6b0ac8ef2fdf689cf1b1a10fd81f8d73aac5974af30d3408bb19",
+    "native_process_ops.py": "2b3c017dd0d9c3ddefd0a2e5dd2f7625f320f5ab27d214270c1779f1e49372de",
+    "native_weather_gp_diffusion.py": "0662c489f0ce014df720a7cbaf046df4830cffd6b1e46add5df691392543ed10"
+  },
+  "models": {
+    "42/base/gaussian": {
+      "weight_sha256": "e61481a9042716884fcf7abe40a8e3cfe105bae46913de7503c2aac95c53f971",
+      "protocol_sha256": "c63cc677c715a336e968486e8844e7d407361a1407d3a05169ff82d4a73d5bdd"
+    },
+    "42/base/gp": {
+      "weight_sha256": "edb889ac8763deab9e4bafc416a4d284e3ae0c54d7e000cfe686713b8d1879e3",
+      "protocol_sha256": "7fc1b5e53b25b2fcd0681c5e0fce455e10175527f87e98e9e7cb8c20c9e85cea"
+    },
+    "42/base/local": {
+      "weight_sha256": "1b886c25e364bd8bdd4e05aeef46d7cf0dc2a0da795a70fd5620277811d5fdb6",
+      "protocol_sha256": "19dba1e56d36f8bafa1e6fc1d57af1a621079c782eaa84d75f0ff92a819a028f"
+    },
+    "42/vmf/gaussian": {
+      "weight_sha256": "078458ea79d13931efe3decb1fa1939e5d846ff8b17b84bebcc912672385a07a",
+      "protocol_sha256": "58f926186395b6eafc8b3837064af928824ebe3ba495e4d05728ee0687fc6c9c"
+    },
+    "42/vmf/gp": {
+      "weight_sha256": "e433966c171f30e85e611a9a4e861b530fd1513ec0f04ea351310aa1a8a88c5f",
+      "protocol_sha256": "61fc492c008a4c7bf170207e927b89db29649580038aef3b7a6f64ae08753c1f"
+    },
+    "42/vmf/affine": {
+      "weight_sha256": "6a5f8dfd509fcedda1cff85f3787cfc5b38fa9a68e50627fc7500390cd321a9c",
+      "protocol_sha256": "fd98d58e5ca9151446eeed8fdc1cbbd53608196e499d0257ce4c2de988fd5e4f"
+    },
+    "42/vmf/local": {
+      "weight_sha256": "8b4d5241ca9cc1bc6b23482fc8eb207027aa193992d2c357968cc5c0969fef0b",
+      "protocol_sha256": "b1b7ac8a33c5275c8d02da68b568281226489a6c1def082f038722483347ef91"
+    },
+    "17/base/gaussian": {
+      "weight_sha256": "c9a9eb55d7d8bd9a38a83bd57d692fa79fd04954fedb81ea21d27cb87976e004",
+      "protocol_sha256": "b2355778a73ae6e7f1d1e33165fe4826c174b65daddea71e0f8a4d29dc0e81fc"
+    },
+    "17/base/gp": {
+      "weight_sha256": "013ea06f172fb479f7a4b1539d849017af43dbd0a8764b138dc14d430fe0f462",
+      "protocol_sha256": "33752a7a088666098d546814c112ed6479e4e60db53d97115a0c41031b9dae7f"
+    },
+    "17/base/local": {
+      "weight_sha256": "21acc1698a523be25b701ea8859ad8456083864d9b9e2197f7f093a7af2907fe",
+      "protocol_sha256": "5e45f29cf8e9ccc87f4b21d93ff182f33b4a209b3447cde70a8464e6848d92a0"
+    },
+    "17/vmf/gaussian": {
+      "weight_sha256": "907da4ad1b05e0eb178fd3e2a1d693a52b393e00c1007d0edf919e55c02421b9",
+      "protocol_sha256": "08a012a491c44ef37468dfbac46f7c3100a1590d4dfad49f2f89884b24882b5d"
+    },
+    "17/vmf/gp": {
+      "weight_sha256": "1e0c29df2a4a41f257e2a425ac101a2650e2707f855c3e1f5616109024ee95ca",
+      "protocol_sha256": "79c353458de6143fb8a4c63328204b5dd72e86300b751cbe934266586bc8271f"
+    },
+    "17/vmf/affine": {
+      "weight_sha256": "fd804f56b404c9557c9eefacf2b1fcc388ff119072eb21e9bf645b7680c3e4f2",
+      "protocol_sha256": "568bd0b6a885a8b9d85c8e528ea78c18c312a968e4690e1f10387785323d697c"
+    },
+    "17/vmf/local": {
+      "weight_sha256": "7e1865c47db9c7e07325b30dfaa03d8b0b3ad819c6b97c1ec234a01141e940b3",
+      "protocol_sha256": "0ea6dfbebaa1b77f2aeb914ef7b9dbb71b1e479095076b06433574bfcb2d7f18"
+    }
+  },
+  "members": 32,
+  "solver": "heun0",
+  "sampling_steps": 20,
+  "sample_seed": 261126,
+  "primary_cohort": "previous confirm common63494 anchors; all future horizons score where observed",
+  "selection": "registered final3000; no2024 model selection",
+  "source_seals": {
+    "42": "7d4eadef0162e2b631a186b44f4f42e3bf71d0ab11467ee7b8b2a0a5ffd91394",
+    "17": "b1d5e74e3ccd9014d3eab01570845d0ab5321cd1fd4ca63828ac5ed2c27b85c3"
+  },
+  "point_mean_selection_sha256": "7b3efe43c0cf23f1442f3d0713f03a83babc9c1cc007e53184a42916fad7a4da"
+}

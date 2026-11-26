@@ -1,0 +1,70 @@
+{
+  "seed": 42,
+  "view": "base",
+  "kind": "gaussian",
+  "steps": 3000,
+  "code_sha256": {
+    "diffusion_data.py": "fe891756af3b1d9f5b7dc918515873861fe087e719bfd6418599ba0d1842af47",
+    "prob_models.py": "e6e29ab3637985e025c340e9ed7f5cfe07bf812593fa8fe2a2aa09a49c78a4b9",
+    "prob_train.py": "27a7ccce95f8b69fbe40462c869b285dfb0caa9739a503849436a85e4adef8d1",
+    "model.py": "1af14661e66d11069688a0133197280c4ddbef0860978336113a202b3726782c",
+    "features.py": "dc7f5ab5bc35b40c16571fdbe42192574d3c537b08c2f5f3a854e15e2ac60578",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_weather_gp.py": "330643f915c4771f318760d9d7c22784b01d064b89251488c1ab8c86bfcf3271",
+    "native_process_models.py": "74e614bedd3a6b0ac8ef2fdf689cf1b1a10fd81f8d73aac5974af30d3408bb19",
+    "native_process_ops.py": "2b3c017dd0d9c3ddefd0a2e5dd2f7625f320f5ab27d214270c1779f1e49372de",
+    "native_weather_gp_diffusion.py": "0662c489f0ce014df720a7cbaf046df4830cffd6b1e46add5df691392543ed10"
+  },
+  "source_sha256": "7d4eadef0162e2b631a186b44f4f42e3bf71d0ab11467ee7b8b2a0a5ffd91394",
+  "statistics": {
+    "bias_mm": [
+      -1.2117035995254863,
+      -0.4824036899989605,
+      0.10746162500845494,
+      0.20229914793112477,
+      0.07438746752033598,
+      -0.241360693733454,
+      -0.4784895104031395
+    ],
+    "scale_mm": [
+      11.033025795101574,
+      17.50596358441085,
+      23.6558339709087,
+      27.35136300504069,
+      29.867006417654235,
+      31.73283720921712,
+      33.108959662263054
+    ],
+    "count": [
+      505501,
+      505452,
+      505401,
+      505344,
+      505288,
+      505257,
+      505205
+    ],
+    "years": [
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "strict_oof": false
+  },
+  "parameters": 14926,
+  "gp_query_count": 32,
+  "query_selection": "fixed seeded random subset independent of future labels",
+  "mean_fixed": true,
+  "strict_oof": false,
+  "condition": "native175 plus final_mean7 plus explicit_VMF36; base zeros only explicit_VMF36",
+  "forecast_hours": [
+    0,
+    6,
+    12,
+    18,
+    24,
+    30,
+    36
+  ]
+}

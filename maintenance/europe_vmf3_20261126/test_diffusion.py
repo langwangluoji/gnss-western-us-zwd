@@ -51,3 +51,12 @@ def test_gaussian_supervision_counts_actual_cells_and_skips_empty_block():
     assert count==5 and abs(float(loss.detach())-.6)<1e-6
     empty,count=gaussian_loss(model,torch.full_like(y,float('nan')),c)
     assert count==0 and float(empty.detach())==0
+
+
+def test_probability_scores_keep_point_estimate_separate_from_sample_mean():
+    from .prob_evaluate import elementary_scores
+    samples=np.array([[[[0.]]],[[[2.]]]])
+    result=elementary_scores(samples,np.array([[[.5]]]),np.array([[[1.]]]),np.ones((1,1,1),bool))
+    assert result['point_rmse_mm_by_lead']==[.5]
+    assert result['sample_mean_rmse_mm_by_lead']==[0.]
+    assert result['fair_crps_mm_by_lead']==[0.]

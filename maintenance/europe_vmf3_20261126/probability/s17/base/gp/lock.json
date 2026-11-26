@@ -1,0 +1,70 @@
+{
+  "seed": 17,
+  "view": "base",
+  "kind": "gp",
+  "steps": 3000,
+  "code_sha256": {
+    "diffusion_data.py": "fe891756af3b1d9f5b7dc918515873861fe087e719bfd6418599ba0d1842af47",
+    "prob_models.py": "e6e29ab3637985e025c340e9ed7f5cfe07bf812593fa8fe2a2aa09a49c78a4b9",
+    "prob_train.py": "27a7ccce95f8b69fbe40462c869b285dfb0caa9739a503849436a85e4adef8d1",
+    "model.py": "1af14661e66d11069688a0133197280c4ddbef0860978336113a202b3726782c",
+    "features.py": "dc7f5ab5bc35b40c16571fdbe42192574d3c537b08c2f5f3a854e15e2ac60578",
+    "native_weather_models.py": "8e2e3135e401e9dc5ee2e17bc3b991ee88c97e8d1d7e93e12b0d3a6ea3d3c4fc",
+    "native_weather_gp.py": "330643f915c4771f318760d9d7c22784b01d064b89251488c1ab8c86bfcf3271",
+    "native_process_models.py": "74e614bedd3a6b0ac8ef2fdf689cf1b1a10fd81f8d73aac5974af30d3408bb19",
+    "native_process_ops.py": "2b3c017dd0d9c3ddefd0a2e5dd2f7625f320f5ab27d214270c1779f1e49372de",
+    "native_weather_gp_diffusion.py": "0662c489f0ce014df720a7cbaf046df4830cffd6b1e46add5df691392543ed10"
+  },
+  "source_sha256": "b1d5e74e3ccd9014d3eab01570845d0ab5321cd1fd4ca63828ac5ed2c27b85c3",
+  "statistics": {
+    "bias_mm": [
+      -1.2150403554233906,
+      -0.06873795896368676,
+      1.594703655405392,
+      2.7710785817845913,
+      3.168936150108829,
+      3.0617026525678184,
+      2.7986808541998713
+    ],
+    "scale_mm": [
+      11.049498744169133,
+      17.55908918592044,
+      23.845709783606317,
+      27.720580258146953,
+      30.248051719718966,
+      32.16827629782024,
+      33.62698295337813
+    ],
+    "count": [
+      411264,
+      411307,
+      411354,
+      411408,
+      411470,
+      411534,
+      411597
+    ],
+    "years": [
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "strict_oof": false
+  },
+  "parameters": 48241,
+  "gp_query_count": 32,
+  "query_selection": "fixed seeded random subset independent of future labels",
+  "mean_fixed": true,
+  "strict_oof": false,
+  "condition": "native175 plus final_mean7 plus explicit_VMF36; base zeros only explicit_VMF36",
+  "forecast_hours": [
+    0,
+    6,
+    12,
+    18,
+    24,
+    30,
+    36
+  ]
+}
