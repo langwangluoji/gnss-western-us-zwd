@@ -26,23 +26,25 @@
 
 Files: 新建`maintenance/joint_fusion_20261126/campaign.py`、`test_contract.py`、`progress.md`、`lock.json`；结果目录`results/20261126_best_base_diffusion_fusion`。
 
-- [ ] RED：来源验证测试覆盖joint/last/同种子、开发角色、归一化与完成来源拒绝。
-- [ ] GREEN：实现最小注册/复用守卫；复用既有joint exporter生成双种子训练嵌入，开发嵌入复用已封存导出。
-- [ ] 核验新训练统计与数组、原joint开发点场一致；真实四更新Gaussian/后续模块使用原实现的工程模式或独立四块缓存。
-- [ ] 冻结协议/来源/执行依赖，提交推送后启动正式训练。
+- [x] RED：来源验证测试覆盖joint/last/同种子、开发角色、归一化与完成来源拒绝。
+- [x] GREEN：实现最小注册/复用守卫；复用既有joint exporter生成双种子训练嵌入，开发嵌入复用已封存导出。
+- [x] 核验新训练统计与数组、原joint开发点场一致；Gaussian/GP/两传输真实四更新通过，上游冻结依赖顺序见台账。
+- [x] 冻结协议/来源/执行依赖，140bd62提交推送并核对远端后启动正式训练。
 
 ## Task 2: 配对训练与评价
 
 Interfaces: 既有`native_weather_experiment`、`native_copula`、`native_weather_gp_experiment`、`native_weather_gp_diffusion_experiment`。
 
-- [ ] 每种子依次新拟合S175、copula、G265，再拟合Affine/Local，各神经臂3000块。
-- [ ] 原始两日历K32评价及joint评分，核验每个模型最终checkpoint和真实监督数。
-- [ ] RED→GREEN：独立成员差分保持均值/协方差与不重叠规则；输出K16匹配对照。
+- [x] 每种子依次新拟合S175、copula、G265，再拟合Affine/Local，各神经臂3000块。
+- [x] 原始两日历K32评价及joint评分，核验每个模型最终checkpoint和真实监督数。
+- [x] RED→GREEN：独立成员差分保持均值/协方差与不重叠规则；输出K16匹配对照。
 
 ## Task 3: 归因与交付
 
 Files: `maintenance/joint_fusion_20261126/summary.py`；研究报告与PNG/SVG图；更新当前入口。
 
-- [ ] 检查真实样本、哈希及点场，计算主/补配对区间、事件、分层和均值误差。
-- [ ] 绘制融合架构、训练曲线与性能图，实际查看。
-- [ ] 独立只读终审；完成核验后提交推送，核对本地远端一致；交付已测结论。
+- [x] 检查真实样本、哈希及点场，计算主/补配对区间、事件、分层和均值误差。
+- [x] 绘制融合架构、训练曲线与性能图，实际查看。
+- [x] 独立只读终审及交付核验：8模型、24输出、12派生成员逐值重算、2000共同月份区间通过。
+
+最终交付动作：将本次已核验的报告、图与轻量结果提交推送，实时对照远端HEAD；提交号与同步结论以执行会话最终回报为准。结果入口为[正式融合报告](../../research_notes/2026-11-26-best-base-diffusion-fusion.md)。本轮不追加训练。

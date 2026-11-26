@@ -1,0 +1,12 @@
+{
+  "source_evaluation_sha256": "411178fe3ddd8e906407e56190c6e05550aff940bc656be6672c2fd6dec71938",
+  "lock_sha256": "138d8fadd91dcbaf8a4a3681b5b18c8164cd8b7da6349cdec1d37a9ab92075bf",
+  "cache_manifest_sha256": "fc9c336b1f016133bfbf7bb521738566af0758ab27865072a834432e65e06b39",
+  "members": 16,
+  "independent_iid_member_noise": true,
+  "mechanism": "mu_joint + (independent even member - independent odd member)/sqrt(2)",
+  "postprocessor_sha256": "72f0d8e7dda67a6153d31c34a446ecdbb2a4b8eb9bf3654038c3c0593ed24386",
+  "strict_oof": false,
+  "confirmation_C_D_read": false,
+  "prediction_sha256": "6aa30a99778bd355ffd6d805b8386b6b370246edc678cc5060ba2118aa89a86f"
+}

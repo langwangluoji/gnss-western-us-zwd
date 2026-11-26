@@ -1,0 +1,24 @@
+{
+  "sources": {
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/paired/summary.json": "ef645e20e658a778984982da1f21349d0778d594a4258eed517e351a1a5310c9",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/paired/diagnostics.json": "103cbdf435c862230881fd7cb32c55b5a8a416a09ab2b6e7cb83a9164f864a24",
+    "maintenance/joint_fusion_20261126/render_delivery.py": "25722fbfcd7b25dd178d1def63a142e36ffddb599a8636de4f1a4c5242d81cf3",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_transport/paired/summary.json": "f7d6faf76b46cba17eb8b8bf97e276e699e37094d742535fef8e6a0256b2dce0",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/S175/curve.json": "e62cd4744c87f8e8e9b29c71023791932d63154aa552c2bd5c52d1897fa16281",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/G265/curve.json": "ad5e1da82892f0aed298b6e1d99ac7228c4dcdb9e13546b4292c2e081c746341",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/affine/curve.json": "0f59af68083c6daeebbdacdaa1bdd7ed35d142335a89c3d178c1144455a6765e",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/local/curve.json": "5dd5d08fe8e53d2616a3cea2ff3308b893cb1523059eed5d1a6528a7a7879711",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/S175/curve.json": "230ad3ded169e926782464a4baf7e070e3d60678b483439177d707a0d1a95ee9",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/G265/curve.json": "ebc174d051ab307a6e7e61294b42f3a913d509fd80ba0f36681775e91eb9934a",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/affine/curve.json": "8d104fbda91cc02a1e909276883bdacb5f442aab365db02c77342665e5926a8b",
+    "research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/local/curve.json": "27db40b065a02903abf91fad35f819ab4e06b5f3dd1ebc059f8dca38a36db561"
+  },
+  "figures": {
+    "architecture.png": "e7cb2f3fb55cb6cfece97e96d92255e1879ecbdd0591683d9f6e728198410e75",
+    "architecture.svg": "c90234fbd036675bf1296a8a3c7c7503a3c693d4fb3b9c87cff4e3e71da62fe3",
+    "performance.png": "c59e7bd7ced86f54f19712b11945d28fc9f863a662870336c0c1cec89d9efd28",
+    "performance.svg": "190248518f1869ab35f7efa15479da65c30a09f0147c125c4c9aa1486ba4a2a2",
+    "training_curves.png": "cc03f5abc934532b815d8ddeaf25651c57e93f495653e16dcf452293cab54760",
+    "training_curves.svg": "990550160d86ccb2c56aa38da5d2019727b49f9eee42d91aa60f5417e36616ab"
+  }
+}

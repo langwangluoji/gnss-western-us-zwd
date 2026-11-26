@@ -29,3 +29,11 @@ Task 3 review note — diagnostics的K16秩混合、原点场及几何/站距合
 Task 2: complete — 原session95277/4929均正常退出0，两日历×两种子×三模型共12份K32评价及joint评分全部完成。主日历双种子F6 CRPS：G265=7.67524161、Affine=7.67298325、Local=7.65755655mm；Local增量CRPS3.14035754高于Affine3.11962944。此处为原始分数，主比较区间及K16尚待完整汇总。
 
 Task 3: in progress — 原锁定summary正在session15210执行，逐个生成独立K16配对及joint评分，不得重复启动。接续顺序：summary退出0→diagnostics.py→render_delivery.py→独立终审与verify_delivery.py→核验Git同步。
+
+Task 3 result — session15210正常退出0，diagnostics/render的session56117退出0。24组点场/真值直接等于原joint；12份K16与raw不重叠成员逐值重算一致。独立审阅重算F6、增量、近邻三指标及2000次共同月份区间通过（误差≤1e-8mm），无阻断问题。K32 Local−Affine主F6区间负、补跨零；K16单站两区间均跨零；近邻相对Affine两日历改善，但对G265须单独解释。增量与部分减湿事件有代价。
+
+Task 3 artifact — 架构、训练曲线、性能PNG/SVG已实际查看；图源绑定8份训练曲线。verify_delivery实际核验8模型、24输出、13个链接通过。最终报告补明中心保持后处理、单次MC均值MSE与G265/仿射对照边界。
+
+Ruling: 源码核对h在显式物理/transport读出之前产生，新最终μ已进入残差但未显式加入概率条件。将预测/有向分支数值直连条件的建议归档，不追加新训练；本轮到完整结果交付为止。
+
+Task 3: complete — 训练、两日历raw/pair评价、来源/实际点场/独立成员核对、区间、事件、分层、站点与PNG/SVG报告均完成。报告明确raw相对G265/强Affine的不同收益、K16后处理和单次MC界限。最终Git操作由交付会话执行并核对HEAD，不以后台启动代替完成。原队列与后处理进程均正常结束，没有追加实验。

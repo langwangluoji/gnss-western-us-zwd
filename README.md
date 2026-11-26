@@ -10,6 +10,7 @@
 
 | 入口 | 内容 |
 |---|---|
+| [最佳基础场＋残差扩散融合实测](docs/research_notes/2026-11-26-best-base-diffusion-fusion.md) | joint v2载体、天气相关过程与Local扩散；8模型3000块、24组评价，完整架构与曲线 |
 | [阶段研究总报告与最佳架构](docs/research_notes/2026-11-26-final-research-summary.md) | 全部已完成工作、当前重建与六小时预报精度、扩散/频域归因、PNG/SVG架构；末轮完成后停止新增实验 |
 | [下一阶段计划与审阅](docs/NEXT_STAGE.md) | 统一阅读入口、因果边界、尺度公式、阶段出口和待补项 |
 | [当前研究进展](docs/CURRENT_RESEARCH.md) | 区域、数据角色、最新结果与证据范围 |

@@ -72,6 +72,8 @@ def performance(summary):
 
 def report(summary):
     path=ROOT/'docs/research_notes/2026-11-26-best-base-diffusion-fusion.md'
+    value=lambda day,name,key:float(np.mean([r['records'][key]['value'] for r in summary['rows'] if r['day']==day and r['name']==name]))
+    metric=lambda day,name,key:np.mean([r[key] for r in summary['rows'] if r['day']==day and r['name']==name],0)
     lines=['# 最佳基础场与扩散融合：实测架构与结果','',
         '本实验把已验证的joint v2/last载体冻结，重新拟合其训练残差上的S175、G265及Affine/Local扩散。两种子各四臂3000连续块完成；点输出与原joint v2数组逐值一致。原始K32生成与独立双场差分K16均完整评价两组2020开发日期。','',
         '![完整融合架构](../figures/best_base_diffusion_fusion_20261126/architecture.png)','',
@@ -79,11 +81,37 @@ def report(summary):
         '确定性均值使用p14/I1背景、逐站因果Transformer和地形/海岸条件有向时滞传递。新概率分支接收其64维查询状态、111维原始查询条件和90维固定可见站历史天气摘要。72h状态依赖146h原始数值，输入截至预测起点。','',
         '设冻结点场为μjoint，训练残差均值/尺度为b、s，先标准化e=(y−μjoint−b)/s。S175学习条件残差位置mG与尺度σG；G265学习完整时空相关矩阵R。用同一Gaussian场作为Affine与Local的初值，逐查询7×7轨迹块白化后执行v扩散/仿射流，再恢复物理mm。','',
         '原始输出为Z=μjoint+b+s[mG+σG·udiff]。μjoint仍作为独立点输出，概率中心可以因S175及扩散而变化。中心保持输出用两个独立完整场之差：Zpair=μjoint+(Z−Z′)/√2，其总体均值严格等于μjoint、协方差等于原Z；偏态被对称化。它不等于将同一成员集合减样本均值，实际K16成员均值仍有采样方差。','',
+        '## 当前实际效果','',
+        '融合模型提供两类输出：确定性点预测保持原joint；Local生成场用于概率预测。两种子平均点精度如下，未把采样均值混入点模型成绩。','',
+        '| 日历 | 当前站宏RMSE/mm | 六小时站宏RMSE/mm |','|---|---:|---:|']
+    for day in (8,15):
+        p=metric(day,'local','point_R_F6_mm');lines.append(f'| {day} | {p[0]:.6f} | {p[1]:.6f} |')
+    lines+=['','| 概率模型 | 主F6 CRPS/mm | 补充F6 CRPS/mm | 主增量CRPS/mm | 补充增量CRPS/mm |','|---|---:|---:|---:|---:|']
+    for name in ('G265','affine','local'):
+        lines.append('| '+name+' | '+' | '.join(f'{value(d,name,k):.6f}' for d,k in ((8,'crps_h6'),(15,'crps_h6'),(8,'increment'),(15,'increment')))+' |')
+    lines+=['',
+        'Local相对新G265的F6 CRPS主/补改善0.230%/0.243%，内部增量改善2.295%/2.366%、energy改善0.239%/0.190%，这些比较的月份区间均支持改善。与同预算Affine相比，单站F6额外收益为0.201%/0.061%，只有主日历区间完全低于零；内部增量分别增加0.664%/0.722%，区间均为正。','',
+        'Local的近邻F6差值CRPS相对Affine改善0.691%/0.558%，但Affine本身相对G265有局地代价。Local相对G265的近邻改善为0.077%/0.171%，主日历区间跨零、补充区间低于零。因而较强证据是保留天气核的局地关系并改善边际/轨迹分布，额外空间收益须按对照解释。','',
+        '20mm减湿Brier相对G265改善约0.532%/0.529%；相对Affine则增加约0.598%/1.141%，补充日历区间为正。当前单站CRPS和相对Affine的energy额外收益区间跨零。局地、时间变化和尾部评分因此分别报告，不能合并称为全面升级。','',
         '## 完整评分与额外收益','']
     for day in (8,15):
         for edge in ('local_vs_affine','paired_local_vs_paired_affine'):
             r=summary['comparisons'][f'day{day}/{edge}']['crps_h6'];ci=r['delta_ci95']
             lines.append(f"- 日历{day}，{edge}：F6 CRPS差值{r['delta']:.6f}mm，95%共同月份区间[{ci[0]:.6f},{ci[1]:.6f}]mm；负值表示Local改善。")
+    oldpath=ROOT/'research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_transport/paired/summary.json'
+    old=read(oldpath);oldscore=float(np.mean([r['records']['crps_h6']['value'] for r in old['rows'] if r['name']=='local_heun0']))
+    newscore=value(8,'local','crps_h6')
+    lines+=['',f'与此前TF3000＋Local完整方案相比，同主日历F6 CRPS由{oldscore:.6f}变为{newscore:.6f}mm，描述性改善{100*(oldscore-newscore)/oldscore:.3f}%。这包含更强基础场/编码及匹配概率重训的共同作用，不是扩散模块的单独收益。旧Local方案没有同口径补充日历成绩，本轮不补造。','',
+        '## 严格保持基础场均值的版本','',
+        'K16差分版本的总体均值等于joint，其确定性点场仍为上述精度。相对K16 Affine，单站F6额外收益约0.059%/0.042%，两区间均跨零；近邻差值CRPS改善0.639%/0.545%，但对K16 G265主日历反而增加0.129%，补充也没有稳定改善。内部增量相对K16 Affine增加0.752%/0.762%。','',
+        '这是冻结模型后的中心保持变换，尺度与扩散原先围绕S175校准中心训练，未在固定joint中心条件下重新拟合。它证明本轮可以保留基础场均值并生成相关场，同时保留对称化、中心重置的实际代价；这些分数不代表所有零均值扩散的可达上限。','',
+        'K16表中的方差扣除均值MSE是单次噪声流的Monte Carlo诊断，可能给出偏离零的月份区间；解析总体均值与保存点场仍严格joint。月份重采样固定本次训练种子与采样流，不包含独立重抽成员的全部不确定性。','',
+        '## 重点站与使用选择','',
+        '重点站的收益并不均匀：主日历PLTX的Local F6 CRPS为13.0043mm、Affine为12.9716mm；P786则为11.4475/11.5035mm。PLTX与P786等站的点RMSE保持原joint，不把概率评分改善写成点误差降低。完整137站及两日历见下面补充报告。','',
+        '点预测保留joint；要求严格概率均值一致时使用中心保持版本。原始Local可作为侧重边际与局地关系的概率候选，Affine继续作为时间增量及减湿事件的强参考。当前证据支持按任务选择，并未产生同时提升全部指标的新融合冠军。','',
+        '## 本轮定位的条件接口','',
+        '源码核对显示，joint返回的64维h生成于显式物理创新及有向transport读出之前；导出时另外保存最终七小时均值。概率网使用h＋原查询111维，Local再加90维天气摘要。新均值已用于残差定义与还原，但最终七小时预测、有向分支数值和注意力统计尚未作为独立条件通道直连概率网。已有h仍可间接反映相关输入；本轮没有证明这些信息被完全丢失。','',
+        '后续可用同预算消融检验最终预测/有向修正的显式条件接口，再比较固定中心下重拟合尺度和扩散。这里记录具体可检验的接口，未据此继续启动新训练，也不将其写成已取得收益。']
     rel='../../research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/paired/'
     lines+=['',f'[完整数值、点预测与采样均值表]({rel}REPORT.md) · [全部区间与分层JSON]({rel}summary.json) · [覆盖和重点站]({rel}DIAGNOSTICS.md)','',
         '![概率性能](../figures/best_base_diffusion_fusion_20261126/performance.png)','',
@@ -105,6 +133,7 @@ def main():
     effect=RESULT/'paired/fusion_effects.svg'
     effect.write_text('\n'.join(l.rstrip() for l in effect.read_text(encoding='utf-8').splitlines())+'\n',encoding='utf-8')
     sources=[RESULT/'paired/summary.json',RESULT/'paired/diagnostics.json',Path(__file__),
+        ROOT/'research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_weather_transport/paired/summary.json',
         *[RESULT/f's{seed}/{mode}/curve.json' for seed in (42,17) for mode in ('S175','G265','affine','local')]]
     manifest=dict(sources={p.relative_to(ROOT).as_posix():sha(p) for p in sources},figures={p.name:sha(p) for p in FIG.iterdir() if p.suffix in ('.png','.svg')})
     (FIG/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

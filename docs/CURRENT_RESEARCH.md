@@ -1,6 +1,6 @@
 # 当前研究进展：2026-11-26
 
-用户新增授权的[最佳joint基础场＋残差扩散融合](superpowers/specs/2026-11-26-best-base-diffusion-fusion.md)：S175/G265/Affine/Local共8模型全部3000块完成，独立权重与完整Adam核验通过；两日历12份K32评价完成。主日历Local/Affine六小时CRPS为7.657557/7.672983mm，Local的小时增量有代价；raw与独立双场差分K16的完整区间、分层和图件正在汇总，暂不作晋级结论。此前阶段总结保留，新增过程见[执行台账](../maintenance/joint_fusion_20261126/progress.md)。
+最新已完成：[最佳joint基础场＋残差扩散融合实测](research_notes/2026-11-26-best-base-diffusion-fusion.md)。8模型各3000块、两日历raw K32及均值保持K16共24组评价全部完成，独立复算通过。确定性点输出主当前/F6保持9.806169/13.852222mm，补充10.767129/16.077837mm；Local主/补F6 CRPS为7.657557/8.750280mm，相对G265改善0.230%/0.243%。相对Affine额外收益主0.201%、补0.061%（补区间跨零），近邻有收益而增量有代价；K16单站额外收益区间均跨零。完整架构、曲线、分层与条件接口见报告和[执行台账](../maintenance/joint_fusion_20261126/progress.md)。
 
 **阶段研究已收束，最后一轮已完成；停止新增实验。** 统一阅读[全部成果、最佳架构与精度总报告](research_notes/2026-11-26-final-research-summary.md)，含PNG/SVG架构、两日历合并评价、概率/扩散/频域归因、六类误差与重点区域。
 
