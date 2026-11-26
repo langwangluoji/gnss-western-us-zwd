@@ -1,0 +1,155 @@
+{
+  "policy": "pure-center intervention, no training, no center coefficient fitting or member-pair selection",
+  "centers": [
+    "base",
+    "gaussian",
+    "hybrid"
+  ],
+  "hybrid_rule": "h0=mu_base; h1..h6=mu_g",
+  "gaussian_calendars": [
+    8,
+    15
+  ],
+  "paired_calendar": 8,
+  "seeds": [
+    42,
+    17
+  ],
+  "paired_models": [
+    "reference",
+    "local_heun0",
+    "affine_heun0",
+    "local_ddim",
+    "affine_ddim"
+  ],
+  "pairs": [
+    [
+      0,
+      16
+    ],
+    [
+      1,
+      17
+    ],
+    [
+      2,
+      18
+    ],
+    [
+      3,
+      19
+    ],
+    [
+      4,
+      20
+    ],
+    [
+      5,
+      21
+    ],
+    [
+      6,
+      22
+    ],
+    [
+      7,
+      23
+    ],
+    [
+      8,
+      24
+    ],
+    [
+      9,
+      25
+    ],
+    [
+      10,
+      26
+    ],
+    [
+      11,
+      27
+    ],
+    [
+      12,
+      28
+    ],
+    [
+      13,
+      29
+    ],
+    [
+      14,
+      30
+    ],
+    [
+      15,
+      31
+    ]
+  ],
+  "gaussian_members": 32,
+  "paired_members": 16,
+  "thresholds_mm": [
+    10,
+    20,
+    30
+  ],
+  "primary_threshold_mm": 20,
+  "sides": [
+    "increase",
+    "decrease"
+  ],
+  "sources": {
+    "calendar8/s42/reference": {
+      "lineage_sha256": "c7e1a4b838f6a09c9d6c4f22654a5556407fe1ffd6d56bc9859b72785b0291f7",
+      "prediction_sha256": "7edb119836cc0d78da714d2ddeb379a2e218c55f00ec9329853795bb7efbc128"
+    },
+    "calendar8/s42/local_heun0": {
+      "lineage_sha256": "af3e6be21f1ba126afbfba70add22bb1b8516794c822e9f4955ba9e3a314df2b",
+      "prediction_sha256": "e6b222ce2a5b0069bf89b051062964659a794b79d77098b4bdf52853665b799a"
+    },
+    "calendar8/s42/affine_heun0": {
+      "lineage_sha256": "2d5b4d5c34a1c98110f1d53a9bfe1d80ccc1ed4609d5bd65ed49b48ac220665f",
+      "prediction_sha256": "22e4f171f9e72492f139b38e708a060747bb7066182fbb2663455697482d46ee"
+    },
+    "calendar8/s42/local_ddim": {
+      "lineage_sha256": "f7eef0c53bd6afaa1ce6a43b774e249651f520e210be379f790af8514e65a3b2",
+      "prediction_sha256": "16c4907d72051ab716a2f70d61e4f55eade13099b9a324aa648626529fdfd2b1"
+    },
+    "calendar8/s42/affine_ddim": {
+      "lineage_sha256": "d8c7aa6ca72304be546c9cd428be1d6bd600dc1eb84579f4e2ac87395afd5605",
+      "prediction_sha256": "36c9f74ae782e175ce1caaae88410a763db67d947f6dd81328fd85197bb09a2a"
+    },
+    "calendar15/s42/reference": {
+      "lineage_sha256": "2891ffa3119b96c727097842dda5f8047b0f5015335751d5e38aa3cc54ba09cd",
+      "prediction_sha256": "1ab9132f5bf8bad6e3046379a8c29c6f3c2042d2ff13c0121c51a0a26df4ba02"
+    },
+    "calendar8/s17/reference": {
+      "lineage_sha256": "3c3fef169aadd688242b420fa45f0dc1a58aa0a28ce6489cc7c7f7ff23a944ce",
+      "prediction_sha256": "7f8686e17647c1faf5bbe35ae1038b5301072aaf60bb196bd01d75d2506b4ed2"
+    },
+    "calendar8/s17/local_heun0": {
+      "lineage_sha256": "cebe48ef940f6cfb2dc23731de41381641c3f9cb9f17aef0fa5af995be365c2c",
+      "prediction_sha256": "693e1d9fac1e652d60c825647d40782c76be6f53e80cc0e66910ebb3b174706d"
+    },
+    "calendar8/s17/affine_heun0": {
+      "lineage_sha256": "d6b28977d65deedf82c20091ff07b85200a2277d387bb86b25999b7db7c3bdd8",
+      "prediction_sha256": "3d88e91bf44097f08252572029f0e434f695d2b09291279bf28401e0ca3e9d3c"
+    },
+    "calendar8/s17/local_ddim": {
+      "lineage_sha256": "f2d5badf46b0bda2a0d527d29efd25bd20f149c7ace2e4fab234d9209eef5ae6",
+      "prediction_sha256": "51a1373a1802c70360774a4a88ee2da92ba14cb4493f7071a722eabd83b5f956"
+    },
+    "calendar8/s17/affine_ddim": {
+      "lineage_sha256": "b159585c54efdc12deee733516d8d918d33cba5c3b088a42f96be4ca6f3f97a5",
+      "prediction_sha256": "292854f55f12bb70ab01e8e071793e92986a193b9fa8f2775257d0bc481dd4d2"
+    },
+    "calendar15/s17/reference": {
+      "lineage_sha256": "d374c483dbf833436e7401becb3451a1b23ecf68961981dd14bbeb934923d265",
+      "prediction_sha256": "0f19bdab458215587ceeccc2dd385d20bf072a91830534fcbcf339e8975f026f"
+    }
+  },
+  "strict_oof": false,
+  "confirmation_C_D_read": false
+}
