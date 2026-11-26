@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "kind": "local",
+  "lock_sha256": "138d8fadd91dcbaf8a4a3681b5b18c8164cd8b7da6349cdec1d37a9ab92075bf",
+  "protocol_sha256": "4b1e67ca2372e40395316b67f5446676ae5c8e5c6646b82c571d11f656e4370d",
+  "weights_sha256": "39cf8cbd910efd8086d35a93775ba0644b198c74d1172702ffb72478a3253043",
+  "checkpoint_sha256": "96915c8dacebc41878be90f852610de3812bc8d3b5f6e344f7ea9fa04da9fa3b",
+  "status_sha256": "0f7db071d573f6895380810cabb760976a6bbbd4ba7e5b0ea3724b4db853e708",
+  "supervised_updates": 3000,
+  "optimizer_states": 6,
+  "optimizer_parameters": 6,
+  "actual_label_clock": {
+    "supervised_updates": 3000,
+    "complete_trajectories": 4602209
+  }
+}

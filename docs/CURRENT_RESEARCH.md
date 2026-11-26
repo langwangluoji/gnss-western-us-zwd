@@ -1,6 +1,6 @@
 # 当前研究进展：2026-11-26
 
-用户新增授权的[最佳joint基础场＋残差扩散融合](superpowers/specs/2026-11-26-best-base-diffusion-fusion.md)已开始：两种子joint训练嵌入/残差统计完整重建，7项来源/差分/监督时钟测试及Gaussian真实4更新通过。重新拟合S175、G265、Affine与Local，各3000连续块；raw K32与独立双场差分K16分别评价两日历。此前阶段总结保留，当前新增结果尚待训练评价，见[执行台账](../maintenance/joint_fusion_20261126/progress.md)。
+用户新增授权的[最佳joint基础场＋残差扩散融合](superpowers/specs/2026-11-26-best-base-diffusion-fusion.md)：S175/G265/Affine/Local共8模型全部3000块完成，独立权重与完整Adam核验通过；两日历12份K32评价完成。主日历Local/Affine六小时CRPS为7.657557/7.672983mm，Local的小时增量有代价；raw与独立双场差分K16的完整区间、分层和图件正在汇总，暂不作晋级结论。此前阶段总结保留，新增过程见[执行台账](../maintenance/joint_fusion_20261126/progress.md)。
 
 **阶段研究已收束，最后一轮已完成；停止新增实验。** 统一阅读[全部成果、最佳架构与精度总报告](research_notes/2026-11-26-final-research-summary.md)，含PNG/SVG架构、两日历合并评价、概率/扩散/频域归因、六类误差与重点区域。
 

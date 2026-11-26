@@ -102,7 +102,10 @@ def main():
     FIG.mkdir(parents=True,exist_ok=True);plt.rcParams.update({'font.family':'Microsoft YaHei','axes.unicode_minus':False,'svg.fonttype':'path'})
     summary=read(RESULT/'paired/summary.json');read(RESULT/'paired/diagnostics.json')
     architecture(summary);curves();performance(summary);report(summary)
-    sources=[RESULT/'paired/summary.json',RESULT/'paired/diagnostics.json',Path(__file__)]
+    effect=RESULT/'paired/fusion_effects.svg'
+    effect.write_text('\n'.join(l.rstrip() for l in effect.read_text(encoding='utf-8').splitlines())+'\n',encoding='utf-8')
+    sources=[RESULT/'paired/summary.json',RESULT/'paired/diagnostics.json',Path(__file__),
+        *[RESULT/f's{seed}/{mode}/curve.json' for seed in (42,17) for mode in ('S175','G265','affine','local')]]
     manifest=dict(sources={p.relative_to(ROOT).as_posix():sha(p) for p in sources},figures={p.name:sha(p) for p in FIG.iterdir() if p.suffix in ('.png','.svg')})
     (FIG/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('Rendered fusion architecture, curves, performance and report',flush=True)

@@ -1,0 +1,7 @@
+{
+  "status": "COMPLETE_WEATHER_TRANSPORT",
+  "steps": 3000,
+  "supervised_updates": 3000,
+  "seconds": 65.89100000000326,
+  "last_weights_sha256": "39cf8cbd910efd8086d35a93775ba0644b198c74d1172702ffb72478a3253043"
+}
