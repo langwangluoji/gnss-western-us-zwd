@@ -12,7 +12,8 @@
 | [全部实验索引](experiments/README.md) | 每个实验的原理/结果入口、状态依据与来源 |
 | [快速上手](docs/GETTING_STARTED.md) | 根目录安装、测试和兼容路径 |
 | [本地数据与权重](artifacts/README.md) | 大文件位置和恢复边界 |
-| [本次整理记录](maintenance/paper_restructure_20261126/README.md) | 迁移、删除、哈希与验证 |
+| [数据精简与恢复](maintenance/compact_20261127/README.md) | 核心保留、退役清单、云端模型与核验 |
+| [目录迁移记录](maintenance/paper_restructure_20261126/README.md) | 上轮迁移、哈希与验证 |
 
 ## 目前的主要结果
 
@@ -39,4 +40,4 @@ archive/           历史兼容源与迁移前导航
 maintenance/       本次整理脚本和核验回执
 ```
 
-Git保存代码、协议、指标与图件；原始观测、唯一权重和大型数组留本地。历史实验锁不改写。安装与复现见快速上手；历史研究版本固定在标签`archive/pre-paper-restructure-20261126`。
+Git保存代码、协议、指标与图件；原始观测、核心权重及其数据依赖留本地。退役模型和拟合参数保存到GitHub Release，非核心大数组按[精简清单](maintenance/compact_20261127/README.md)退役。历史实验锁不改写。安装与复现见快速上手；历史研究版本固定在标签`archive/pre-paper-restructure-20261126`。

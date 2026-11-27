@@ -1,0 +1,44 @@
+{
+  "status": "scientific_compaction_verified; temporary_archive_cleanup_blocked",
+  "date": "2026-11-27",
+  "source_commit": "36949d3b7a2b92ae7620d18c26deeb2c90d52d7d",
+  "backup_tag": "archive/pre-data-compaction-20261127",
+  "scopes": {
+    "project": {
+      "before_bytes": 92362896165,
+      "deleted_files": 3123,
+      "deleted_bytes": 58286151833,
+      "retained_original_bytes": 34076744332
+    },
+    "cache_d": {
+      "before_bytes": 99041561096,
+      "deleted_files": 72,
+      "deleted_bytes": 64630499633,
+      "retained_original_bytes": 34411061463
+    }
+  },
+  "original_files_deleted": 3195,
+  "original_bytes_deleted": 122916651466,
+  "retention_verified_files": 12352,
+  "core_weights_loadable": 435,
+  "full_tests": {
+    "status": "passed",
+    "passed": 611,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 286.61,
+    "command": "python -m pytest -q",
+    "log_sha256": "ca4e51adceac6004f30ac93c194b89f6f535e59422e47b80558047dde08c1273"
+  },
+  "remote_verified_assets": 7,
+  "remote_unique_model_or_parameter_objects": 2308,
+  "remote_evidence_files": 4868,
+  "remote_release": "https://github.com/langwangluoji/gnss-western-us-zwd/releases/tag/archive/pre-data-compaction-20261127",
+  "pending_temporary_archive_bytes": 2879158305,
+  "pending_reason": "automatic approval rejected both bounded batch and fixed-path single-file deletion; blocked by policy; no more specific reason provided",
+  "training_started": false,
+  "new_research_metrics_produced": false,
+  "scientific_locks_unchanged": true,
+  "posttest_scientific_metadata_verified": 6415,
+  "publication_status": "pending final commit and remote verification"
+}

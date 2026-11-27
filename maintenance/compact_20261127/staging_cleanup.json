@@ -1,0 +1,56 @@
+{
+  "status": "automatic_approval_rejected",
+  "attempts": 2,
+  "actions": [
+    "bounded manifest-driven native PowerShell removal",
+    "single explicitly named native PowerShell removal after hash verification"
+  ],
+  "reason": "blocked by policy; no more specific reason provided",
+  "removed_files": 0,
+  "remaining_bytes": 2879158305,
+  "files": [
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u57fa\u4e8e\u751f\u6210\u5bf9\u6297\u7f51\u7edc(GAN)\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u6a21\u578b\u6784\u5efa\\maintenance\\compact_20261127\\staging\\retired-models-01.tar.gz",
+      "bytes": 615393892,
+      "sha256": "c6e9e22d0d50c5b72c07f161208890779d3916e09a9d96af6bf074acdbede4c8",
+      "remote_verified": true
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u57fa\u4e8e\u751f\u6210\u5bf9\u6297\u7f51\u7edc(GAN)\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u6a21\u578b\u6784\u5efa\\maintenance\\compact_20261127\\staging\\retired-models-04.tar.gz",
+      "bytes": 583257433,
+      "sha256": "91dc243877532c1086d2452e70764a791d8fa0149e14bba8e71a1f598ee2296f",
+      "remote_verified": true
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u57fa\u4e8e\u751f\u6210\u5bf9\u6297\u7f51\u7edc(GAN)\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u6a21\u578b\u6784\u5efa\\maintenance\\compact_20261127\\staging\\retired-models-03.tar.gz",
+      "bytes": 658666025,
+      "sha256": "816d2e616a9c4befe1906cb5f116ba55b7c52348074920c23d13fac63cfb986f",
+      "remote_verified": true
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u57fa\u4e8e\u751f\u6210\u5bf9\u6297\u7f51\u7edc(GAN)\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u6a21\u578b\u6784\u5efa\\maintenance\\compact_20261127\\staging\\retired-models-02.tar.gz",
+      "bytes": 671342513,
+      "sha256": "144c514abdf780611864e5217777e8868318bf3dcffa708d686008245d5c7dac",
+      "remote_verified": true
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u57fa\u4e8e\u751f\u6210\u5bf9\u6297\u7f51\u7edc(GAN)\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u6a21\u578b\u6784\u5efa\\maintenance\\compact_20261127\\staging\\recovery_manifest.json",
+      "bytes": 514402,
+      "sha256": "8e4ca2a29ba6c00bc49608fb00f9f09447f4f3528c866880383b520bf22ff9f6",
+      "remote_verified": true
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u57fa\u4e8e\u751f\u6210\u5bf9\u6297\u7f51\u7edc(GAN)\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u6a21\u578b\u6784\u5efa\\maintenance\\compact_20261127\\staging\\retired-evidence.tar.gz",
+      "bytes": 71100089,
+      "sha256": "8d7ca86eeb0e57f12fe585efa678ec8dbcda72e98330ee383d7aaa6a9826c448",
+      "remote_verified": true
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u57fa\u4e8e\u751f\u6210\u5bf9\u6297\u7f51\u7edc(GAN)\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u6a21\u578b\u6784\u5efa\\maintenance\\compact_20261127\\staging\\retired-models-05.tar.gz",
+      "bytes": 278883951,
+      "sha256": "9e333759c00628aad4cba596b332b9366a9563f7ab7fc7735d1ee09c7e34c36b",
+      "remote_verified": true
+    }
+  ],
+  "staging_bytes_not_part_of_original_retirement_inventory": true
+}

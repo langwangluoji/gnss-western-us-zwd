@@ -1,0 +1,16 @@
+{
+  "project": {
+    "bytes": 37046813547,
+    "GiB": 34.50253377389163,
+    "files": 24405,
+    "junctions_skipped": 30,
+    "includes_git_and_audit_and_pending_staging": true
+  },
+  "cache_d": {
+    "bytes": 34411061463,
+    "GiB": 32.047798356972635,
+    "files": 651,
+    "junctions_skipped": 0,
+    "includes_git_and_audit_and_pending_staging": false
+  }
+}

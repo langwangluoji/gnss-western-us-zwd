@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "verified_assets": 7,
+  "unique_model_objects": 2308,
+  "all_big_assets_server_digest_match": true,
+  "evidence_and_recovery_manifest_downloaded": true,
+  "models_authorized_only_after_complete_archive": true
+}

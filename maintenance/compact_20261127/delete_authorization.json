@@ -1,0 +1,9 @@
+{
+  "inventory_sha256": "95900525dccaa7098fed54f7aad90df1568502864c334ba29b7faa6ba74876d9",
+  "delete_plan_sha256": "c7d91f885cdaa497147bbd89da4d5ae5938f8e10199a7c997aabb4075ed1334a",
+  "archive_receipt_sha256": "0b5a3b2722483f17d5d3f75601bd2e8f879775669a95647931f02e88e88644d6",
+  "roots": {
+    "project": "E:\\Document\\FILE_package\\Research\\SITP\\\u57fa\u4e8e\u751f\u6210\u5bf9\u6297\u7f51\u7edc(GAN)\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u6a21\u578b\u6784\u5efa",
+    "cache_d": "D:\\SITP_cache"
+  }
+}

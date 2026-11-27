@@ -1,11 +1,12 @@
 # 当前研究与成果入口
 
-现有项目已完成目录迁移、结果整理与安全清理，当前入口如下。
+现有项目已完成目录迁移、结果整理与主要数据精简，当前入口如下。
 
 - [最佳结果与证据范围](../paper/README.md)
 - [各模块贡献](../paper/MODULE_CONTRIBUTIONS.md)
 - [架构与流程图](../paper/ARCHITECTURE.md)
 - [全部实验说明](../experiments/README.md)
+- [2026-11-27数据精简、核心保留与模型恢复](../maintenance/compact_20261127/README.md)
 - [美国最佳基础场＋残差生成融合](research_notes/2026-11-26-best-base-diffusion-fusion.md)
 - [欧洲VMF3融合全年结果](../research/europe_vmf3_20261126/REPORT.md)
 - [迁移前进展记录](../archive/legacy/navigation_before/CURRENT_RESEARCH.md)

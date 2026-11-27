@@ -27,7 +27,7 @@ def main():
             removed.append(row)
             continue
         # Documentation/implementation edits are intentional; scientific data aren't.
-        if row['scope']=='project' and not row['path'].startswith('artifacts/'):
+        if row['scope']=='project' and (not row['path'].startswith('artifacts/') or row['path']=='artifacts/README.md'):
             continue
         if not path.is_file() or path.stat().st_size!=row['size'] or sha(path)!=row['sha256']:
             failures.append({'scope':row['scope'],'path':row['path'],'problem':'protected bytes changed'})

@@ -40,7 +40,8 @@ def test_manifest_paths_cannot_escape(tmp_path):
     for bad in ('../outside.npy', '/outside.npy', 'E:/outside.npy', 'a/../../x.npy'):
         with pytest.raises(ValueError):
             m.safe_path(tmp_path, bad)
-    assert str(m.safe_path(tmp_path, 'a/b.npy')).endswith('a\\b.npy')
+    target = m.safe_path(tmp_path, 'a/b.npy')
+    assert target.name == 'b.npy' and target.parent.name == 'a'
 
 
 def test_no_model_or_raw_in_delete_plan_without_archive():

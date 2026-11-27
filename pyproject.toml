@@ -13,7 +13,7 @@ dependencies = ["numpy>=2.0", "scipy>=1.14", "pandas>=2.2", "torch>=2.8,<2.9", "
 gnss-field = "gnss_field.cli:main"
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "h5py>=3.10", "matplotlib>=3.8"]
+dev = ["pytest>=8", "h5py>=3.10", "matplotlib>=3.8", "requests>=2.31"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

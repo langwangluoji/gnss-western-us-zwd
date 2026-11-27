@@ -18,13 +18,17 @@
 
 ## 精简范围
 
-下表是删除清单预计值；执行结果以最终核验回执为准。单位GiB=2³⁰字节。按真实文件统计，不重复计算junction；排除`.git`、`.superpowers`和本次审计目录。
+下表为已执行的原项目文件精简结果，见[删除回执](deletion_receipt.json)。单位GiB=2³⁰字节。按真实文件统计，不重复计算junction；排除`.git`、`.superpowers`和本次审计目录。
 
-| 范围 | 整理前/GiB | 计划释放/GiB | 计划保留/GiB |
+| 范围 | 整理前/GiB | 已删除/GiB | 原清单保留/GiB |
 |---|---:|---:|---:|
 | 当前项目 | 86.020 | 54.283 | 31.736 |
 | `D:\SITP_cache` | 92.240 | 60.192 | 32.048 |
 | 合计 | 178.259 | 114.475 | 63.784 |
+
+实际删除3195个文件；本次新建的临时归档包另占2.681GiB，详见文末的自动审批拦截记录。该新增占用不计入上表原文件清单，因此114.475GiB是删除的旧文件体积，不是把临时包也扣除后的净缩减量。
+
+包含Git、审计记录和上述临时包的项目实际目录约34.50GiB，D盘缓存约32.05GiB，见[整理后目录实测](disk_after.json)。
 
 旧权重、优化器检查点、归一化/拟合尺度参数和≤4MiB的小数组归档到[GitHub Release](https://github.com/langwangluoji/gnss-western-us-zwd/releases/tag/archive%2Fpre-data-compaction-20261127)。模型压缩包内部恢复哈希、压缩包哈希、GitHub服务器资产SHA256与字节数核验一致后，才允许删除本地对应文件；轻量证据与恢复清单另回下载复核。未回下载的大包在回执中明确记录为服务器摘要验证。原始观测不上传Release，权重和GB数组不提交Git历史。
 
@@ -38,9 +42,16 @@ D盘清理范围为旧dense physics/validation H5、旧ref expanded中间H5和�
 - [逐实验空间清单](run_storage.csv)：美国各运行目录的本地保留、云归档与退役体积。
 - [云端对象索引](archive_index.json)：SHA256对应的压缩包及成员名；原始路径从inventory查找。
 - [审阅记录](review_receipt.json)：归一化参数恢复性问题及修复；科学依赖核对。
+- [远端归档核验](remote_archive_verification.json)与[详细资产回执](remote_archive.json)：7个核心资产验证通过，另有校验和文本。
+- [保留集合核验](retention_verification.json)：12352个科学文件、68303771249字节逐文件哈希一致，435份核心权重可加载；删除日志3195项与清单一致。此检查不解析目标观测值，不训练模型。
+- [删除后全项目测试](postdelete_tests.json)：611 passed，286.61秒；测试覆盖本轮7项整理回归和原研究工程测试。
 
 恢复退役模型时，先按Release的`recovery_manifest.json`验证下载压缩包SHA256；从对应`retired-models-*.tar.gz`中读取`objects/<SHA256>.<扩展名>`，再按inventory中的原始路径恢复。相同内容去重保存，恢复后再次核验文件SHA256。`retired-evidence.tar.gz`保存原路径映射和未纳入网页索引的轻量记录。
 
 旧完整历史环境使用标签`archive/pre-paper-restructure-20261126`恢复代码；本次精简前代码身份为`archive/pre-data-compaction-20261127`。Git标签保存代码，不保存已退役数组。原科学锁按原代码身份校验；不通过修改锁绕过代码哈希检查。
 
 安全执行入口为[retire_files.ps1](retire_files.ps1)：全批预检、逐文件绝对路径边界/reparse检查、大小与SHA256校验，使用`Remove-Item -LiteralPath`删除指定文件。无递归清空；上轮被审批拒绝的build/pytest缓存不在删除范围内。
+
+## 临时归档包的自动审批拦截
+
+模型与证据已上传并核验。本次生成的`maintenance/compact_20261127/staging/`仍有7个压缩包/恢复清单，合计2879158305字节（2.681GiB）。原生PowerShell按清单删除、以及固定路径单文件删除均被自动审批拒绝，只返回`blocked by policy`，没有更具体理由；两次均未执行删除。见[拦截记录](staging_cleanup.json)。这些是可手工删除的上传临时副本，Git忽略该目录，模型恢复材料已在Release中。上表原项目文件的删除已独立执行并核验。

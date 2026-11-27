@@ -1,0 +1,17 @@
+{
+  "groups": {
+    "project:archive_model": {
+      "files": 2473,
+      "bytes": 3456512148
+    },
+    "project:retire_derived": {
+      "files": 650,
+      "bytes": 54829639685
+    },
+    "cache_d:retire_derived": {
+      "files": 72,
+      "bytes": 64630499633
+    }
+  },
+  "total_bytes": 122916651466
+}

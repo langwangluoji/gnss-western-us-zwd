@@ -9,11 +9,11 @@ python -m gnss_field --help
 python -m pytest -q
 ```
 
-`research.layout`建立可重建的本地兼容目录：旧研究路径映射到新源代码和本地产物；Windows使用目录junction，其他平台使用相对符号链接。它不会训练、改实验锁或复制大数据。公开克隆只含轻量证据，完整数据回放还需要恢复artifacts。
+`research.layout`建立可重建的本地兼容目录：旧研究路径映射到新源代码和本地产物；Windows使用目录junction，其他平台使用相对符号链接。它不会训练、改实验锁或复制大数据。公开克隆只含代码与轻量证据；核心模型需要本地artifacts，退役权重可从Release恢复，退役大数组需按历史流程重新生成，见[精简与恢复说明](../maintenance/compact_20261127/README.md)。
 
 主包在`src/gnss_field`，研究工具和568项工程测试在`research/engine`；欧洲研究及其30项测试在`research/europe_*`。根pytest显式收集这些测试与整理回归测试，避免扫描历史运行中保存的多份源码快照。
 
-完整本机套件为604项。公开克隆缺少观测数据时，两项标记为`real_data`的CUDA观测检查会明确跳过；其余602项可执行。四项历史模型一致性检查使用随仓库保留的兼容源，正常克隆也应执行。
+当前完整本机套件已验证611项通过，见[本轮测试回执](../maintenance/compact_20261127/postdelete_tests.json)。公开克隆缺少观测数据时，标记为`real_data`的CUDA观测检查会明确跳过。历史模型一致性检查使用随仓库保留的兼容源，正常克隆也应执行。
 
 先读[结果指南](../paper/README.md)、[模块贡献](../paper/MODULE_CONTRIBUTIONS.md)、[架构](../paper/ARCHITECTURE.md)和[实验目录](../experiments/README.md)。本地数据恢复见[产物说明](../artifacts/README.md)。
 
