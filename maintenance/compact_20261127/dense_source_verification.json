@@ -1,0 +1,312 @@
+{
+  "status": "passed",
+  "verified_sources": [
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2020\\era5_sfc_202001.nc",
+      "size": 38391986,
+      "sha256": "3450e4ff85f1f8e340cd8a87e4e4ced92931b13127f79fb66a708acc711a5e8d"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2020\\era5_sfc_202002.nc",
+      "size": 35929106,
+      "sha256": "655f3bc662a4b280b666521ac1255e9376ab0236cd520be1c61b1cba1caadaab"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2020\\era5_sfc_202003.nc",
+      "size": 38331766,
+      "sha256": "4dd4409b890ce21ea59db357f9ab9f8e56af53d6add5fa7ae62361967f30502e"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2020\\era5_sfc_202004.nc",
+      "size": 36893339,
+      "sha256": "5081f13bc706ca1a3928ebf39676589b87157dcc5141f2bafc7608c2a7361bbf"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2020\\era5_sfc_202005.nc",
+      "size": 38204167,
+      "sha256": "d0c127e3caeeb618315e377c71521003fd1c286d906e2b825e572e74e497f883"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2020\\era5_sfc_202006.nc",
+      "size": 37025550,
+      "sha256": "75f0e02b785d38495fae711cfeabe06d769c2034ea84c6fdedcd54cb58c75b6f"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2020\\era5_sfc_202007.nc",
+      "size": 38183354,
+      "sha256": "00162f99c943a7be8f7602cf601744238c11ad2e2f1d65b6014658a4387b3f2b"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2020\\era5_sfc_202008.nc",
+      "size": 38176476,
+      "sha256": "75ac3c72f474be580674352dae28bb7be17bad18d898ae8cbbca3087acd9be31"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2020\\era5_sfc_202009.nc",
+      "size": 37093711,
+      "sha256": "9ea6ad942d9b5b7acbaac39f2f798f4928d2ab212e8b4607c9a16f7b1d9569eb"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2020\\era5_sfc_202010.nc",
+      "size": 38177005,
+      "sha256": "a94872786eee03f030a4ce46855022155a399cc1f6b4b73d88009b9e65dc84fa"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2020\\era5_sfc_202011.nc",
+      "size": 37053816,
+      "sha256": "1c906af183f20f6ec985a5e62b29140afd6258341e4f18115b95474ea7af3f88"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2020\\era5_sfc_202012.nc",
+      "size": 38344854,
+      "sha256": "64a96c8e65e961fb4ecbd0eccd349291fcc62558880478f1fb9d7686d8ed34ff"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2021\\era5_sfc_202101.nc",
+      "size": 38572059,
+      "sha256": "ed5241190661732b93de1e8fadf5a4d2c69bc9dafe8321b2dc829a72e699889b"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2021\\era5_sfc_202102.nc",
+      "size": 34751987,
+      "sha256": "142e56ea25206c75ea09f6050bf0a71ab3d6773a6ce992dd028e88929bf61ff6"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2021\\era5_sfc_202103.nc",
+      "size": 38275097,
+      "sha256": "5ca8ac51d5f9db97c8c9158ae50bf8f385b877a70de4deb22b3fbde2207f2701"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2021\\era5_sfc_202104.nc",
+      "size": 36977509,
+      "sha256": "52f085c95346d00350fa052af682e13ebc6fa562373d9f1da80af9a39e481fc2"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2021\\era5_sfc_202105.nc",
+      "size": 38321196,
+      "sha256": "2b39e3ac3b52f6e1b0e655baa6d93db9a6a2be7a1d79a0f5a258b70b2a06415f"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2021\\era5_sfc_202106.nc",
+      "size": 37149527,
+      "sha256": "1ba79a78edc607afdef0873545c12c82262b565e6999da956ddb99b395809dca"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2021\\era5_sfc_202107.nc",
+      "size": 38207589,
+      "sha256": "7ab980152a4d41a03cbf052693a7a75cc69f0d1cac0c228b5ed18a8b7a397f18"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2021\\era5_sfc_202108.nc",
+      "size": 38054109,
+      "sha256": "984a0eb999e4a982c575a9c24fe9e81a2375131245ddc28d4372a63a730cd9e7"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2021\\era5_sfc_202109.nc",
+      "size": 36954518,
+      "sha256": "1129e41617ee0b5456ecd6bdc666ec17e00dfeb6098371ae515b350f2abf2110"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2021\\era5_sfc_202110.nc",
+      "size": 38242556,
+      "sha256": "85e4e64c085c38e99598abc19365de56590f183bdfab451c4baa5bba8c76b895"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2021\\era5_sfc_202111.nc",
+      "size": 37165239,
+      "sha256": "e7d5cfa96827043902563329ee524c8f23759da23c8d2f85ef43f34d6362a2f1"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2021\\era5_sfc_202112.nc",
+      "size": 38507876,
+      "sha256": "d29796ba7d8d0ee8351b4903af1735992ba6a35240b0d1b04b7d494f93ce89e2"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2022\\era5_sfc_202201.nc",
+      "size": 38567015,
+      "sha256": "2323c205463c61ca6470839f82f288f950feb33aa34cc11fef14dbb3c55efa1a"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2022\\era5_sfc_202202.nc",
+      "size": 34778327,
+      "sha256": "d4f7bff06d351cc782abbba10f81faeb2bc3ef43e1584bfd179b2b13d1230e27"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2022\\era5_sfc_202203.nc",
+      "size": 38441866,
+      "sha256": "7175c0e81b310d78d6f448e3d521fe46e956cfc8e440c98ab07c4de64126abd7"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2022\\era5_sfc_202204.nc",
+      "size": 36973889,
+      "sha256": "eb493a79eae7dc2c5c65754f658cfb3e35412c7b93a024c3446c06f86dbae7db"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2022\\era5_sfc_202205.nc",
+      "size": 38241493,
+      "sha256": "4d07d6b7e83428adccee3949554135718f37ccadbc7f7019aedbdec837898819"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2022\\era5_sfc_202206.nc",
+      "size": 37087413,
+      "sha256": "9c21587d7da636be001689258f388552a61e833526a6172ede5befa066c55046"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2022\\era5_sfc_202207.nc",
+      "size": 38257143,
+      "sha256": "ca13b19ff87432ae622922945206b1d1ea1dc6eeeac40971c367df0af207f9e6"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2022\\era5_sfc_202208.nc",
+      "size": 38369319,
+      "sha256": "a398de2689278042c3fed4d83283f5ec91a731e19962aa59ece6a1f8df717a59"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2022\\era5_sfc_202209.nc",
+      "size": 36989301,
+      "sha256": "0fb9b5828dbe3c7064a52f4f7b9a3a892adf7d2c0e53727850994f89d787c51e"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2022\\era5_sfc_202210.nc",
+      "size": 38141106,
+      "sha256": "fa0fbc3dfc46e3e6bb49839a5f05a4ee39f206873f5a2940494b3e32dd8752a2"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2022\\era5_sfc_202211.nc",
+      "size": 37026272,
+      "sha256": "58bea393acbf50e147634ed911a859bb59bca940654cab74a4459a3076df3b30"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2022\\era5_sfc_202212.nc",
+      "size": 38416117,
+      "sha256": "bc210be8cc72ef4bf14905aafbe83d15004136daba7a293a2c6fc0716d372a53"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2023\\era5_sfc_202301.nc",
+      "size": 38491538,
+      "sha256": "c549d7f860934bf87f36242f0f972e293480e7c4c29f9267765446fbad4c7909"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2023\\era5_sfc_202302.nc",
+      "size": 34720090,
+      "sha256": "382d3e7c50a715edcf36e11b5828fe3b5de618357b49ab8ed6b5cfb339b68dc7"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2023\\era5_sfc_202303.nc",
+      "size": 38366237,
+      "sha256": "11a86cd700d96a8608d3c6772aa54086c8cef36b9ca2dd683eff561f2da35024"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2023\\era5_sfc_202304.nc",
+      "size": 37026600,
+      "sha256": "8e358ecd6451c51a52fe2e6962d778d578ee18517b655f6e78078f923b7bfafe"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2023\\era5_sfc_202305.nc",
+      "size": 38076204,
+      "sha256": "f6df580297ae5d1c8ad0fe297b3cc361295ab144b3705fb0ced3f4df0381bd81"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2023\\era5_sfc_202306.nc",
+      "size": 36974862,
+      "sha256": "9e14c70f4cefd6af40a4d534efd1adb12048785dde2aaf4fc914788cdeff61ef"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2023\\era5_sfc_202307.nc",
+      "size": 38258726,
+      "sha256": "b364bac0c1277d1ad30d36516f442605b3e76f27dedfff0c7b98e3802d81c915"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2023\\era5_sfc_202308.nc",
+      "size": 38251122,
+      "sha256": "45bc2132c5e1417ab8d58931ed9eee983b6fee37722554f97ab765f3aee75736"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2023\\era5_sfc_202309.nc",
+      "size": 37012411,
+      "sha256": "0a5ccb33002d62f498b4807a9cece3f91b6e767e4a970e54bd4cba3cb499c0c2"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2023\\era5_sfc_202310.nc",
+      "size": 38189717,
+      "sha256": "6bbeb44e74cd446bcc63effbff6812e34c88671c114f154b5ef6973eb9e7b58f"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2023\\era5_sfc_202311.nc",
+      "size": 37097903,
+      "sha256": "27433fec9e1a1fa2cc3bce8b264bc87fdf5118b2a593dcb854727967c8511791"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2023\\era5_sfc_202312.nc",
+      "size": 38382650,
+      "sha256": "0c6fdbe0b181ab5a17b242c06b4126795642ad4d4cc03e2f009bcf08db0e465b"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2024\\era5_sfc_202401.nc",
+      "size": 38635691,
+      "sha256": "c42176a80cd31c904dac8380a1c3b814bade6806433f9edbe65144349fbca289"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2024\\era5_sfc_202402.nc",
+      "size": 35847237,
+      "sha256": "95a1000ae231dab6cf87506e2fb3c7c552fc6036913c12d73e9c94f9cb2d58d5"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2024\\era5_sfc_202403.nc",
+      "size": 38259068,
+      "sha256": "9d86b3b3f9c82b0a50a9014452fc8fca2d0b8bb19ba1bf160419759c7020e064"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2024\\era5_sfc_202404.nc",
+      "size": 37111876,
+      "sha256": "c3e8b01cd53d89b1e8bfe923ff1f9e52a36e5d29b51490079c20fdbe7d15d5a4"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2024\\era5_sfc_202405.nc",
+      "size": 38163150,
+      "sha256": "6dcb8645b24dcb809ed2d20531f018333adeeb2b1d9660cca5b2917f9a9e6f99"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2024\\era5_sfc_202406.nc",
+      "size": 37082372,
+      "sha256": "c1bf665f6c630228d53a61c6a7ed29932d2c99f96ad6a99a34417715ff734b02"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2024\\era5_sfc_202407.nc",
+      "size": 38228280,
+      "sha256": "c13ae31d3787fcf7aacbd06bd12b5001fb049ce44016380807b473dbacced976"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2024\\era5_sfc_202408.nc",
+      "size": 38404379,
+      "sha256": "cd355fff4120400ed9fcbb964c9884f7ba1726e9b63b696f443ecc8ce53c1b6c"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2024\\era5_sfc_202409.nc",
+      "size": 37133902,
+      "sha256": "c55ce43819540fee99b0c3dd9fed6f6648fa887e2683d3bfd14a15071b4fb50a"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2024\\era5_sfc_202410.nc",
+      "size": 38392267,
+      "sha256": "2b822e5815c8c8e2c248a9eb36e619ad93988e5d66953847c3c53090ac50d4e2"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2024\\era5_sfc_202411.nc",
+      "size": 37020214,
+      "sha256": "c4afa522d7529efb9f5ace5f02cfe2815e70aa4a812c970f86f81d627cb2618b"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\sfc\\2024\\era5_sfc_202412.nc",
+      "size": 38374663,
+      "sha256": "d439c42ae26fcd19490d528abf513bbabec95d90e6d81cd05cca46ef6e7478ad"
+    },
+    {
+      "path": "E:\\Document\\FILE_package\\Research\\SITP\\\u8054\u5408\u4fe1\u53f7\u5206\u6790\u4e0e\u6df1\u5ea6\u5b66\u4e60\u7684\u9ad8\u7cbe\u5ea6\u5bf9\u6d41\u5c42\u5efa\u6a21\\Data\\model\\Model4\\_project_archive\\2026-08-20_pre_patent_reorganization\\gnss_source_and_cache\\era5_euref_cds\\invariant\\era5_invariant.nc",
+      "size": 213379,
+      "sha256": "0a74a53eaf4fe5e068402e52b3da370a93373e652c209db04023804bb60da42b"
+    }
+  ],
+  "dense_weather_caches_regenerable_from_verified_sources": true,
+  "ref_frozen_sources_not_fully_available": true
+}

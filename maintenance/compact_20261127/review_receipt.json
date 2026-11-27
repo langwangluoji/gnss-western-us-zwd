@@ -1,0 +1,28 @@
+{
+  "reviewer": "independent agent /root/final_cleanup_review",
+  "phase": "pre-deletion code and dependency review",
+  "status": "passed_with_important_fixed",
+  "important_finding": "Retired normalization.npz and feature_normalization.npz are fitted inference parameters, not disposable evaluation caches.",
+  "resolution": "Archive named normalization/statistics/scale/basis/parameter arrays and all retired NPY/NPZ <=4 MiB; verify recovery SHA256 for each tar member.",
+  "tests": "classification normalization regression RED then GREEN; all current local compaction tests pass",
+  "additional_fitted_artifacts_checked": [
+    "geometry.npz",
+    "condition_pca.npz",
+    "spatial.npz",
+    "anchor.npz",
+    "transforms.npz",
+    "linear_predictions.npz"
+  ],
+  "all_additional_fitted_artifacts_covered_by_small_array_policy": true,
+  "core_small_metadata_checked": 627,
+  "noncore_weather_cache_reference": "v2 prefix-copy provenance only; not a current inference dependency",
+  "large_curvature_gram_arrays": "training regularization caches; not inference parameters",
+  "execution_gate": "actual remote verified_remote receipts, final manifest, and native PowerShell all-file preflight required",
+  "review_training_started": false,
+  "review_target_arrays_parsed": false,
+  "remote_integrity_adjustment_review": "passed; server SHA256 and size required for big assets, forced full download if digest missing and for all small evidence; no false downloaded claims",
+  "metadata_after_predelete_tests": {
+    "checked": 6416,
+    "mismatches": 0
+  }
+}

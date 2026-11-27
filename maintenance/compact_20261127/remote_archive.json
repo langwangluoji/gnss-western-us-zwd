@@ -1,0 +1,17 @@
+{
+  "release_url": "https://github.com/langwangluoji/gnss-western-us-zwd/releases/tag/archive/pre-data-compaction-20261127",
+  "tag": "archive/pre-data-compaction-20261127",
+  "assets": [
+    {
+      "name": "retired-models-01.tar.gz",
+      "size": 615393892,
+      "sha256": "c6e9e22d0d50c5b72c07f161208890779d3916e09a9d96af6bf074acdbede4c8",
+      "url": "https://github.com/langwangluoji/gnss-western-us-zwd/releases/download/archive/pre-data-compaction-20261127/retired-models-01.tar.gz",
+      "asset_id": 799532153,
+      "server_digest": "sha256:c6e9e22d0d50c5b72c07f161208890779d3916e09a9d96af6bf074acdbede4c8",
+      "verified_remote": true,
+      "verified_download": false
+    }
+  ],
+  "models": {}
+}

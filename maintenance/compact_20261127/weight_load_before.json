@@ -1,0 +1,2183 @@
+{
+  "status": "passed",
+  "core_weights_loaded": 435,
+  "weights": [
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/cache/original/models_s17/model4_fft_lstm.pth",
+      "sha256": "8bebb4525f5bc37586e4aa257efb8712ccbb28e1c0a7e1afc2022396e3198b37",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/cache/original/models_s42/model4_fft_lstm.pth",
+      "sha256": "203fa9e9efa99ad71a6e446997ca6e1f3336f2c77869610e98cce8b85f454a2c",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/base_s17/best.pt",
+      "sha256": "b7e8c2e12dd4e97c52d9982568e5d4fd29c19b682f85b3b586d7d707c56a9301",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/base_s17/ema.pt",
+      "sha256": "b7e8c2e12dd4e97c52d9982568e5d4fd29c19b682f85b3b586d7d707c56a9301",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/base_s17/last.pt",
+      "sha256": "2fa578d4bea2ae03510a7bd6189edebdec42e594e599cfb60adf646c9e47f6e3",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/base_s42/best.pt",
+      "sha256": "9b3ffd3c5f9bebf2a9871d819afe242c63b42505df5b16472b48c890a94d7887",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/base_s42/ema.pt",
+      "sha256": "9b3ffd3c5f9bebf2a9871d819afe242c63b42505df5b16472b48c890a94d7887",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/base_s42/last.pt",
+      "sha256": "774f6e609665ca0340a4994f459285028d302fff30ddee39cb40a26ddc3c5c71",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/base_v2_s17/best.pt",
+      "sha256": "69d3e337e1c04c1f511b650d026c3df8c428a50c958e2f0fb0fd87b452b2321f",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/base_v2_s17/ema.pt",
+      "sha256": "69d3e337e1c04c1f511b650d026c3df8c428a50c958e2f0fb0fd87b452b2321f",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/base_v2_s17/last.pt",
+      "sha256": "363f0528fc54e35ea02546ec6879a4d56b4970dee14dc492ff95b579c110214a",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/base_v2_s42/best.pt",
+      "sha256": "2a3f88ca6b5fe639d9898a04d68e8a63422aafa62186deeaf84d3c41179ae138",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/base_v2_s42/ema.pt",
+      "sha256": "2a3f88ca6b5fe639d9898a04d68e8a63422aafa62186deeaf84d3c41179ae138",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/base_v2_s42/last.pt",
+      "sha256": "a88239a274d4939c28695eaf9c9996b05eb6ee47e536b8067089fd613aa5695a",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/joint_s17/best.pt",
+      "sha256": "d4d036eadc1854cbab612829c6a627fde03fd8236e4956df4105c04aa0689b24",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/joint_s17/ema.pt",
+      "sha256": "ab8c3a231830ff2726380500c13673fd37d491bd7b118f320795e4a7e7666158",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/joint_s17/last.pt",
+      "sha256": "476e3170cf604f7464189fde65ce65aea6407ada9989e90e96b2c9b0fe7add79",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/joint_s42/best.pt",
+      "sha256": "e1fadd85947a403e6c56d00c63ee00ce4b9b61ce2bb857fe7eecb92accd68838",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/joint_s42/ema.pt",
+      "sha256": "e1fadd85947a403e6c56d00c63ee00ce4b9b61ce2bb857fe7eecb92accd68838",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/joint_s42/last.pt",
+      "sha256": "824c8a6fd05911af806c0bcf73470a399902a1f959f1948fcefb18233a5a8188",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/joint_v2_s17/best.pt",
+      "sha256": "77b9c995e6b0215ef648570f32359106b226b0bd9bf4ce6bd92f2b11f8794b26",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/joint_v2_s17/ema.pt",
+      "sha256": "77b9c995e6b0215ef648570f32359106b226b0bd9bf4ce6bd92f2b11f8794b26",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/joint_v2_s17/last.pt",
+      "sha256": "b4c4fccf55592a529cb0029279f04d67dcfb3f8761f9aff2b10b16d4bd2f3353",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/joint_v2_s42/best.pt",
+      "sha256": "2f9dc42ebc9a802a8aa6acb9775e28297db10191b2f5e2b83db24f89a4c84c14",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/joint_v2_s42/ema.pt",
+      "sha256": "2f9dc42ebc9a802a8aa6acb9775e28297db10191b2f5e2b83db24f89a4c84c14",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_transfer_20261126/runs/joint_v2_s42/last.pt",
+      "sha256": "b1d7c308a7a3103d5bc624e2d6a0234db8e95d9e8fddd1291a82c0c904c831fa",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/cache/cnn_models_s42/model4_fft_lstm.pth",
+      "sha256": "9c27873d2b5074b962ea837bd6d67bdca7f4070e200c951dfbe63a005666d612",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s17/base/gaussian/checkpoint.pt",
+      "sha256": "320b34a9e7178685b36e47ebb6e745d008d8e9180545fde486d4adbcc12264c1",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s17/base/gaussian/last.pt",
+      "sha256": "c9a9eb55d7d8bd9a38a83bd57d692fa79fd04954fedb81ea21d27cb87976e004",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s17/base/gp/checkpoint.pt",
+      "sha256": "e0745de7fdbeb8d1b0441eba94e1738a53cccb00eab676c8b6851f13a4309fb9",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s17/base/gp/last.pt",
+      "sha256": "013ea06f172fb479f7a4b1539d849017af43dbd0a8764b138dc14d430fe0f462",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s17/base/local/checkpoint.pt",
+      "sha256": "9fc9712905935c18f7a4a7d423cd5f4831a6c190bdc590a3cb3e4d1293be773a",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s17/base/local/last.pt",
+      "sha256": "21acc1698a523be25b701ea8859ad8456083864d9b9e2197f7f093a7af2907fe",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s17/vmf/affine/checkpoint.pt",
+      "sha256": "cd731f89a93dd8d0e3ad220d340e173e6beae5ab3b1ef54f82adc9051ea521c4",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s17/vmf/affine/last.pt",
+      "sha256": "fd804f56b404c9557c9eefacf2b1fcc388ff119072eb21e9bf645b7680c3e4f2",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s17/vmf/gaussian/checkpoint.pt",
+      "sha256": "c899d844a8a0c519ff4b7d084888dc11ffc06b1aef65e1773de03cf4a7613f70",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s17/vmf/gaussian/last.pt",
+      "sha256": "907da4ad1b05e0eb178fd3e2a1d693a52b393e00c1007d0edf919e55c02421b9",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s17/vmf/gp/checkpoint.pt",
+      "sha256": "1fe67ce97474e072c9ec08e93c06aaeeb7d201b3e79c66e58cbb5649284c1eac",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s17/vmf/gp/last.pt",
+      "sha256": "1e0c29df2a4a41f257e2a425ac101a2650e2707f855c3e1f5616109024ee95ca",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s17/vmf/local/checkpoint.pt",
+      "sha256": "dde7ff4a8f0f7b64a7da154b4fffb4bf6ddcbd06aef7bfab3767276ab7b7ffeb",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s17/vmf/local/last.pt",
+      "sha256": "7e1865c47db9c7e07325b30dfaa03d8b0b3ad819c6b97c1ec234a01141e940b3",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s42/base/gaussian/checkpoint.pt",
+      "sha256": "02cf8d63a6acc035867869cd868ff8dced59c7195dd40f253342bf5f3ae36656",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s42/base/gaussian/last.pt",
+      "sha256": "e61481a9042716884fcf7abe40a8e3cfe105bae46913de7503c2aac95c53f971",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s42/base/gp/checkpoint.pt",
+      "sha256": "3a1a4ad6970e756763dd30b7f272d27edafd6023e6c9a4d291bba26bf64ff36b",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s42/base/gp/last.pt",
+      "sha256": "edb889ac8763deab9e4bafc416a4d284e3ae0c54d7e000cfe686713b8d1879e3",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s42/base/local/checkpoint.pt",
+      "sha256": "2e288b7d0a2b2c0252a00f79f1011be8ea64997fe90c87c2187a49aaffd62327",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s42/base/local/last.pt",
+      "sha256": "1b886c25e364bd8bdd4e05aeef46d7cf0dc2a0da795a70fd5620277811d5fdb6",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s42/vmf/affine/checkpoint.pt",
+      "sha256": "be7445aa000aea759d517a2c90d99bc2cf2fdf419f4790a1c45d4100f798d801",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s42/vmf/affine/last.pt",
+      "sha256": "6a5f8dfd509fcedda1cff85f3787cfc5b38fa9a68e50627fc7500390cd321a9c",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s42/vmf/gaussian/checkpoint.pt",
+      "sha256": "98f561e055598c7977bc8f4be555b5e86485d81bf9ff337785078054f02a3a7d",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s42/vmf/gaussian/last.pt",
+      "sha256": "078458ea79d13931efe3decb1fa1939e5d846ff8b17b84bebcc912672385a07a",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s42/vmf/gp/checkpoint.pt",
+      "sha256": "c6eec6749d8bfc6703384033fd48209166342db4afd9fcf4030f14431b0a2572",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s42/vmf/gp/last.pt",
+      "sha256": "e433966c171f30e85e611a9a4e861b530fd1513ec0f04ea351310aa1a8a88c5f",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s42/vmf/local/checkpoint.pt",
+      "sha256": "ebbe5fcf9afeee052a236e3df7c7312b3f14cc7c271b4f53472d7f60be9beae1",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/probability/s42/vmf/local/last.pt",
+      "sha256": "8b4d5241ca9cc1bc6b23482fc8eb207027aa193992d2c357968cc5c0969fef0b",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/runs/control_s17/best.pt",
+      "sha256": "bac46af78ac6d80b6ea98661668eaf49d71908d8ee045c99ca10f64f261cb0b2",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/runs/control_s17/ema.pt",
+      "sha256": "bac46af78ac6d80b6ea98661668eaf49d71908d8ee045c99ca10f64f261cb0b2",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/runs/control_s17/last.pt",
+      "sha256": "515eacd3ec72c9d94591a3b2899ea1c62b25d6ab58f2067d5ef997186bfed0e6",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/runs/control_s42/best.pt",
+      "sha256": "c7593ad43b4e30cd812cd989ecab43d8117a10c8a7dd616f58fe21801ef01e35",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/runs/control_s42/ema.pt",
+      "sha256": "c7593ad43b4e30cd812cd989ecab43d8117a10c8a7dd616f58fe21801ef01e35",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/runs/control_s42/last.pt",
+      "sha256": "56e48725114f8548b634186698fc9e9cb40eef506dedb207bc9c9cb2f0365ea2",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/runs/vmf3_s17/best.pt",
+      "sha256": "60f4d3f5863b804854f244965d847a8a45d198668aa6c20155d72f1be7720ec7",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/runs/vmf3_s17/ema.pt",
+      "sha256": "60f4d3f5863b804854f244965d847a8a45d198668aa6c20155d72f1be7720ec7",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/runs/vmf3_s17/last.pt",
+      "sha256": "894f7e6488085fd1f62bcbd0ee109183101e9ba31490e8963d1645b0430bb9c6",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/runs/vmf3_s42/best.pt",
+      "sha256": "01351700e7ee9bca4b1fc3ad5a45450d0655f93a6d638e93bf2466542e851567",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/runs/vmf3_s42/ema.pt",
+      "sha256": "01351700e7ee9bca4b1fc3ad5a45450d0655f93a6d638e93bf2466542e851567",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/campaigns/europe_vmf3_20261126/runs/vmf3_s42/last.pt",
+      "sha256": "d9e0fde219fe515590fa79e51b3ba0a999d18d2349f236807bb93698badc1731",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/I0_current_s17/coefficients.pt",
+      "sha256": "fe54ba8c32fbd6e1b9cc49b87a0a2dc2698d49203d14fc50bf897728ded920bd",
+      "type": "Tensor"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/I0_current_s42/coefficients.pt",
+      "sha256": "d4aa2474f660de30f7ca81c032e4f651edec120c17a1d2150deddd63efbf4a3f",
+      "type": "Tensor"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/I1_history_s17/coefficients.pt",
+      "sha256": "5cfa1d6d1f8f003976169d9fa96d94a0968c5eff285eb4e929d0347ce06054e3",
+      "type": "Tensor"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/I1_history_s42/coefficients.pt",
+      "sha256": "91afccab384f5909db2f2b53fc5046783f85c2c05313aa1b8229c084d28682fe",
+      "type": "Tensor"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/I2_seasonal_s17/coefficients.pt",
+      "sha256": "65906d2723f321c056ffe9011dfe9cab9443267e1108a9c34c8d34139a003a99",
+      "type": "Tensor"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/I2_seasonal_s42/coefficients.pt",
+      "sha256": "0570eba8eaddc83cdb21864e9424ebe72c2577cc49881e8b1c556b4fbcae5063",
+      "type": "Tensor"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/trajectory_s17/statistics_1000.pt",
+      "sha256": "6c69a474e70f10cfff5863ccff9c3dfddf62c4ec564b49e1206576258b03043e",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/trajectory_s17/statistics_1500.pt",
+      "sha256": "ea5caf392b7fcfb956068ba849b507a42f11ee7f64365680a850cacc42f0821c",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/trajectory_s17/statistics_2000.pt",
+      "sha256": "bde0ef23375b783c7b168716611c5143cb80105e4ca9a658fd6c432e7c9efea5",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/trajectory_s17/statistics_2500.pt",
+      "sha256": "211d0f084c0dfc61005f7e780930eb2ef5102520e1ac72768ec8f36d6937fda7",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/trajectory_s17/statistics_3000.pt",
+      "sha256": "00f223ea0ead028285229c7d32c673206756fafde0670a8a9578fe47447584dc",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/trajectory_s17/statistics_500.pt",
+      "sha256": "fce5cb9eb4b9465ed9ae7acaaadc9b8da46599e84c26ce15c017bd53830c3e99",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/trajectory_s42/statistics_1000.pt",
+      "sha256": "743d0316fed5cfb916584353ce4d7640f1b0f0f4b14b60a083c7be1e28864965",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/trajectory_s42/statistics_1500.pt",
+      "sha256": "a7d8cec3ccc6df57e087696d3bb4ae3d5f227d4fa30dcd183d0329b1ac73a568",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/trajectory_s42/statistics_2000.pt",
+      "sha256": "b981a530892e704364656c1de6f82286efba1c04e1b202543884a044ed570ed5",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/trajectory_s42/statistics_2500.pt",
+      "sha256": "787fb5c43d7bb19613b4b2acd25388b76c34a8e2eec24861691c62e0ca56644c",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/trajectory_s42/statistics_3000.pt",
+      "sha256": "27a6c02070b8986ce87a9446579028e9e1604fbfdb018b9c64334253082643d8",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_observed_innovation_precision/trajectory_s42/statistics_500.pt",
+      "sha256": "8cfac3aa6562f93a2c6c6ce850aa6c15dea38a3eb0d1ca55f976c897448d4a1b",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/features_s17/last.pt",
+      "sha256": "a26783aa473b40fffc858aff9ca9ea3c83beb9d49a7ff8ca3f38e22a91f93c0f",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/features_s17/step_1000.pt",
+      "sha256": "6d4ac75bc85270f9c58f808fd8948e2f653930c9d4f8d30e0997f51942a62cf9",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/features_s17/step_2000.pt",
+      "sha256": "ee1315b8597a2f34b792e8b45652d3717f5ce033e3bf4af68ae542e999b913b8",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/features_s17/step_3000.pt",
+      "sha256": "3247223a1731e7ebc957c263a890fc8ebc97b822fd648d399a5fd2a36332a5d0",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/features_s42/last.pt",
+      "sha256": "bd42ecf05c1dfc056e75abaef88ed6477987b78bc6ca0b68bce9886b4b854643",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/features_s42/step_1000.pt",
+      "sha256": "255ed0b8c0d6cce3796b111e119e193f85a857526959be77a87496fa01675a31",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/features_s42/step_2000.pt",
+      "sha256": "66ae7a64f0358c13402145928e06c9ae6b291483b83d9ded3307409acb514f43",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/features_s42/step_3000.pt",
+      "sha256": "5079eaedc354b2ec80f4b4e8de38480482d6cb09b3d3516e6de4d836dbdb7b8c",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/gru_s17/last.pt",
+      "sha256": "0167bfb5c067adcfebe55b7ab58f850585d91573da9ecc8a8e1dead58017ca3a",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/gru_s17/step_1000.pt",
+      "sha256": "86495db9b0e52472867a84947acd7c9642cdf4bba324c601bd993a217c4b2b08",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/gru_s17/step_2000.pt",
+      "sha256": "0207fddd7b7c498a13d294055c1a4e7154549c6b5686b69eecb0e32129fd7325",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/gru_s17/step_3000.pt",
+      "sha256": "a191a4ca97aa5cda9e75c52ae371a8d2ef784597f67f789095fa55db608684ae",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/gru_s42/last.pt",
+      "sha256": "d87223f76df74354dde4ad1f1ab18097880b4a0396b2d5b565bda10000385f3a",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/gru_s42/step_1000.pt",
+      "sha256": "7fb6009e0f7e9557e2b63e774c0e0a4f13c3d1011cd52b88e0756bf2bc7da6ee",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/gru_s42/step_2000.pt",
+      "sha256": "ace7273d6b57871665cb1a53022de12e8b34189320da3da88457a3d90a38ec32",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/gru_s42/step_3000.pt",
+      "sha256": "cb4aaa23bb9731cbd92828b24f12457647c1077305fb62502844fa8b616c49ab",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/lstm_s17/last.pt",
+      "sha256": "ce1db6b34a3ae8acad8917d66cc6679b832c4c0eca09f229a121c2e0509c66b9",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/lstm_s17/step_1000.pt",
+      "sha256": "c96f3cc9a6db2084ae8d78cb6a3208c35d77fdd463b388e896d0975535e2c9d1",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/lstm_s17/step_2000.pt",
+      "sha256": "3a81fda51e183cf6146eed05eb041d4a84d4cb196dd44caef8c784a102cc8cfb",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/lstm_s17/step_3000.pt",
+      "sha256": "dff7f5c130bd2a7a832cfdd53f2ca11630126b564795a5660b0d2acf1e9dbccb",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/lstm_s42/last.pt",
+      "sha256": "221f117dfeb154fcf527fc625d5ebd3be878788394274aa434121921e06f5ae0",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/lstm_s42/step_1000.pt",
+      "sha256": "c307d2279ff3971c122e56669202e1695fad30833e2e4b488ad393dc67fcca6f",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/lstm_s42/step_2000.pt",
+      "sha256": "5a1a9b4cc2618d6d08bddee806fac856fd916f5c4d8097f018d6249b443ef1d1",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/lstm_s42/step_3000.pt",
+      "sha256": "08bddea92335e336fd32643d893d29079e3d0066b8e930967448c6b5e23760ec",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/mlp_s17/last.pt",
+      "sha256": "bcbac4f9aba23237f337b8ab759ebc029ed28ca3cf3ae2313757a1f0b683be0f",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/mlp_s17/step_1000.pt",
+      "sha256": "dc0926e64ec7d92f4b821df36f8fb8205518a60bb0ab52cd8e92511344d26935",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/mlp_s17/step_2000.pt",
+      "sha256": "3739bc8d1500c40e35143e744d8185bb57e6b21515214fc780a38bc6f843c7ce",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/mlp_s17/step_3000.pt",
+      "sha256": "ccd58529e644fbaf03a5aaa070a2b6cef5458b666753ba4b491c917003ced223",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/mlp_s42/last.pt",
+      "sha256": "41de130e63c493028ecad68f28ce83512df926efa4d49a51c0919f2cd1f62ae7",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/mlp_s42/step_1000.pt",
+      "sha256": "e7c100b3ae5df002cb47d59e88ba2081fc364b403502af5319a26ac8df628dfa",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/mlp_s42/step_2000.pt",
+      "sha256": "d2d379fcf5ec8db1edd3cf13c7477ed56ff577afbf094267f5a9d0ab004fb11d",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/mlp_s42/step_3000.pt",
+      "sha256": "92c6324ad4c9cebcfbe6798e3486310609795c9411d6caaeb222067de30e3011",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/p14_s17/last.pt",
+      "sha256": "331286acfbf11f09adff3101f50b96442264895f6fe8cfd4350ba9760aab60ae",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/p14_s17/step_1000.pt",
+      "sha256": "87fa90d14a6ffa309df75fd472cad3e3ab624e2acdee32863ab47bfd6659d235",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/p14_s17/step_2000.pt",
+      "sha256": "30fecb50db3b1e50ed2ef19fd99cc82f1f571807627d0895a00013d104c8dff4",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/p14_s17/step_3000.pt",
+      "sha256": "59e5a9c8a4fcf7d0dc80e543a6c460750f8e31c972563d1f809ff05761d3aff4",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/p14_s42/last.pt",
+      "sha256": "0fe02a99ef8db33ae18c07281342dbbd4e04f88284956bc21bae1d15303e49e1",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/p14_s42/step_1000.pt",
+      "sha256": "fc814ea702f08c101425d3fa9f488d34bbbf898567906f26ac4ce563a080ede8",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/p14_s42/step_2000.pt",
+      "sha256": "fe382919bc76ee1217d884a5cbe800c7e9f48a4e89085fa0ef852f87a63b67a0",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/p14_s42/step_3000.pt",
+      "sha256": "41c12e1c21f3d326b79969b527d8d7e67676f93dcb78a1cf18e2f0e6c132704b",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/source_weights/s17.pt",
+      "sha256": "9ddb7cd7a8de39a569a3904eb52797c9a7a055aab657bca417ed76e631214efa",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/source_weights/s42.pt",
+      "sha256": "ca28ac2dddc3747b35e3cf3c1a057e435d3e28803bb4240f55791d2f05872536",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/transformer_s17/last.pt",
+      "sha256": "956a4c0e7e67b2d8b7fa2ba2397a020bbf0ae79b3a91f80f9674d599717d4bc4",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/transformer_s17/step_1000.pt",
+      "sha256": "1474192d55920f3650e86ee60acee728d4867a6c67069e37308be1d80dd7e583",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/transformer_s17/step_2000.pt",
+      "sha256": "c9d9062389d0262dd59730bbedb6a60ef9b34827202d4ed91166c82c1ed33970",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/transformer_s17/step_3000.pt",
+      "sha256": "3dede796c75f94ce0bf2e3d566c6b2ce1f1cb2896f68e89c3ed98d418916ef30",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/transformer_s42/last.pt",
+      "sha256": "bcb4f91447d6d52076eb44d8437460cfe8c12922e4a5a8397d913575e77f52e8",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/transformer_s42/step_1000.pt",
+      "sha256": "225b8ce9f75d456b4d4798ba1068ce7b8c2fdc880929e84a2cb75fa62e9737ff",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/transformer_s42/step_2000.pt",
+      "sha256": "2b350c7ef6885a20dfce2fc66b5cf2139e27d8eefa5f61e9df0377ebaaaeb719",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261125_p14_continuous_fusion/transformer_s42/step_3000.pt",
+      "sha256": "0efbb330fa1b67b6e478e4180b42c27136a77a046da548a49398a6bda9805170",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/G265/checkpoint_1000.pt",
+      "sha256": "2e998adbcc6e3e70e1ab6cbc2c7f31744f08f3a9f60ebdcd3f4d4bb02cfb5c7e",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/G265/checkpoint_1500.pt",
+      "sha256": "1f52222b345d51d6dec1865ebacdfdc7993c4e04be8d7ca275765f5423b5c7d3",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/G265/checkpoint_2000.pt",
+      "sha256": "35620667a70c12c3f56fe31915ed2ee29f24990ed55c5f62b452425383f29b4e",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/G265/checkpoint_2500.pt",
+      "sha256": "8a7f339ccaa7ba4518f7d4ba066ad886af311cfd46cc98fdf2615a62b9c89b4a",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/G265/checkpoint_3000.pt",
+      "sha256": "1c4c5e28c48d7946b16a8114f6d0adab150dfd62b6058f959b44ea6a4914d048",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/G265/checkpoint_500.pt",
+      "sha256": "fc86ccc70536dd196fe283c75b99b3f9ad1ebf0d1093d019acd1d08610968d85",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/G265/last.pt",
+      "sha256": "e472371724ee52bb858a707669743e7813fb5246985face08db65f336b3a1be8",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/S175/checkpoint_1000.pt",
+      "sha256": "ab75b861700a57e90c4ee3f6dc9705bd4a651a58cb367f4aae22203d885a6586",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/S175/checkpoint_1500.pt",
+      "sha256": "e48bd144c8a1002bf5f33eeaa9023a39ce3ecc3eefce58018600be34a5c592ad",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/S175/checkpoint_2000.pt",
+      "sha256": "2960297b627cffd3cf3661939c48700e63dd9c7b364273ca3935e00a74e39678",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/S175/checkpoint_2500.pt",
+      "sha256": "d295865ea5d4d9ea0035d9eac0ef100cc3c84e17a6e4f59e026555ddd2860842",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/S175/checkpoint_3000.pt",
+      "sha256": "8e803319e17c301ea78e2dc0406b0a24815dc6df640dc5116d5cc5e9f73adfc7",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/S175/checkpoint_500.pt",
+      "sha256": "89b593530d7e4a6b41c49273b29799cc2ba14f46ac3bebe6a831d7ee3fad1593",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/S175/last.pt",
+      "sha256": "6d204c7ad683f69ac614c0d0de79fdc7cec2aed05c78d7ad9f3b26887b8bbd23",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/affine/checkpoint_1000.pt",
+      "sha256": "b25cac885ab9983d4e7cb681c9c1a48c2efa3d23ae5c0795a86fe8154a57e211",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/affine/checkpoint_1500.pt",
+      "sha256": "4d2fcf119a0609647f1a33340821aaec3826b9d310de1d9a35d50802fa8f4abd",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/affine/checkpoint_2000.pt",
+      "sha256": "76775a4402043817a7d9d5e54734a5b985f16a5a3efeaed6f95cc2b2fa73130a",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/affine/checkpoint_2500.pt",
+      "sha256": "e770fe8152f3bb8e358fe4510e4909b9c4b303ba86685730017628ab88154e2f",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/affine/checkpoint_3000.pt",
+      "sha256": "fe989e26051f10c0b9decfd569dd978108dd73f1244ff8375436f2c4603e4311",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/affine/checkpoint_500.pt",
+      "sha256": "5311ffcbba79fd77ab4464b4d5b7e15a28f12080e6679331939f16800ff3f0b9",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/affine/last.pt",
+      "sha256": "adce26a89cc2a36d3a33c5ed9fac8910f77841ba250f02b67dc642f65b079fa5",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/local/checkpoint_1000.pt",
+      "sha256": "81cdf557792a4ef53975bf0cd2cf645d06da9607defaaa71939ea39fa4ab4ee4",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/local/checkpoint_1500.pt",
+      "sha256": "1616adc9567e3839613cb8b96258b63f97093710ef38ab724b9aca6a18f40da3",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/local/checkpoint_2000.pt",
+      "sha256": "187e88f404ba1f8744e5a22ca30d8a05965358d55cd8411defd13e25a5ed7cfa",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/local/checkpoint_2500.pt",
+      "sha256": "60688333687a205b2396a3f5af1cd7887ed9ef66b7ccc36070f01d5ab12ddf1d",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/local/checkpoint_3000.pt",
+      "sha256": "b037f163e1d83957c685fe8b691744ad8a5c365b94fe190708d0c2a5b89c2aa9",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/local/checkpoint_500.pt",
+      "sha256": "6dd9625e9dd967b4bca82b81efbe3e43320636dd18734ae71d60ad52c1cb69de",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s17/local/last.pt",
+      "sha256": "f053e8ce3cc14941828e7531563abcb46bd517996b2540e4398496b3ff71bb6f",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/G265/checkpoint_1000.pt",
+      "sha256": "3638be64d356eff46f3b0e2cff51752b9d0c2164f0111f86bb755065c69d76ed",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/G265/checkpoint_1500.pt",
+      "sha256": "6baa2ba8ac2cc0e6a3c110a007dc5b8fc98c8fde2186e9cfe7204531970aa865",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/G265/checkpoint_2000.pt",
+      "sha256": "aa3a075c32582a43c8eef321cf9921515d59b070c061f783a6481ecf63ec9943",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/G265/checkpoint_2500.pt",
+      "sha256": "c41356fa07aa8a166bdbac35aa2b56abcf9c0e7968146a2657ec972f8e776203",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/G265/checkpoint_3000.pt",
+      "sha256": "6b70d4226d800bc641a0dcfe65cc0b4aaac8f3c16157052e8e9c8d83fc678fe1",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/G265/checkpoint_500.pt",
+      "sha256": "f70579f2f2ebe3e27a635b5a893c335e9ee2b3c607c9a30efdd942f302c147a9",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/G265/last.pt",
+      "sha256": "2ee8c85ccfb0844c7f6a010da00677dfefede17985cc4bd4525dbb0aaae4aef8",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/S175/checkpoint_1000.pt",
+      "sha256": "07ecb9e2eb9fb4123e78427baf085a0d8e1cb984990a0265eb2b296e817adc12",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/S175/checkpoint_1500.pt",
+      "sha256": "e0ebdd6e161803b039445eb2e4bb2d1c89e2587f1113d551c6a436bca7dd57fb",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/S175/checkpoint_2000.pt",
+      "sha256": "bafa149669655d29217bf8954c1a934b6de5aab441a252e6eca08fe3ec8accca",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/S175/checkpoint_2500.pt",
+      "sha256": "e2ecf2cb34106b52788d7e732ad0e2faacab148a369d655bfb7d5da2062fd97a",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/S175/checkpoint_3000.pt",
+      "sha256": "7f25f33f791b3b05a792ba6e9467202c4228cd71cb2cc161d95fa4e3ad2f236b",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/S175/checkpoint_500.pt",
+      "sha256": "5caf46a9fbe4c74794f943e2060211b8b046b8dcc4119b12c26198167bd0a83f",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/S175/last.pt",
+      "sha256": "db2ab955ecf115ddf17613973ee44414e3b6c16502fb53785d801e61eae06244",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/affine/checkpoint_1000.pt",
+      "sha256": "24f8379ce1f997e33bc3edeee2994e73da3fd64f6e2e1d7f8ec09dd05a32467a",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/affine/checkpoint_1500.pt",
+      "sha256": "ad2bbeca1ed9d78100c0ec6f2d349a473bb8f0e77608bfcb2faa812dab50f72c",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/affine/checkpoint_2000.pt",
+      "sha256": "f2ccf770179968230faa328f4577badd2efbc352f1aa24d9a8b662171c3a1c92",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/affine/checkpoint_2500.pt",
+      "sha256": "805f6ee2d8c6da9cab11a292f005caee13f0fcaecaf13add08f9ba3c65347ccb",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/affine/checkpoint_3000.pt",
+      "sha256": "79cb162391724f5019dc51d0da43fab7cb9158c32654f85c1f3fc88ab58264e7",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/affine/checkpoint_500.pt",
+      "sha256": "e5a3d797f93da0984246d71da45f65c0f0003b53e0faa859c0c12cdf92b71404",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/affine/last.pt",
+      "sha256": "d9eb8fa9b2c730c6765eb314e2c265eceefd827de82295907466852261cffb60",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/local/checkpoint_1000.pt",
+      "sha256": "5ab2ff6afc76b9e02f00636345ffac1098c52a5d7437d83279333588f1eb4151",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/local/checkpoint_1500.pt",
+      "sha256": "3a1ea84086aceba2c202727e86c62b193572d3432a842366dc0267bc8ff07430",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/local/checkpoint_2000.pt",
+      "sha256": "991028e00cfdf881dcf8decb80cd92d53af8614f6ea1ec588768079b8322a83c",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/local/checkpoint_2500.pt",
+      "sha256": "34ed2963f11189c7477073b392e9e869590cf3f7b356265e11dc0734a8576e09",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/local/checkpoint_3000.pt",
+      "sha256": "96915c8dacebc41878be90f852610de3812bc8d3b5f6e344f7ea9fa04da9fa3b",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/local/checkpoint_500.pt",
+      "sha256": "339cf19b36290da5cbd9f53997d53501001dcf2b0a7437ba6f638c7eb970c6c3",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/local/last.pt",
+      "sha256": "39cf8cbd910efd8086d35a93775ba0644b198c74d1172702ffb72478a3253043",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/smoke_G265/last.pt",
+      "sha256": "ceb3b90228f74ac541dbc001ca2a91b658bf44efe0f4e72f2a01c7d7c24d83bb",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/smoke_S175/last.pt",
+      "sha256": "8ae86c5a56961819649cf90104cf95098dc98add8b040ced3d540b95ef86bddd",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/smoke_affine/last.pt",
+      "sha256": "1e1c7ec11a1a02327a29bc341f70152495f4902fbfd0c52a97e9ce9429840218",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_best_base_diffusion_fusion/s42/smoke_local/last.pt",
+      "sha256": "5bee2ec738f848a9d8a2a54509ff05acf3c57b3380f5c31242135ee46009df66",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/factorized_s17/checkpoint_1000.pt",
+      "sha256": "eecfa9e26ee6e9f37b2bf7645b5a19c32e387e2a0c1f843ce1450d29150bdd65",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/factorized_s17/checkpoint_1500.pt",
+      "sha256": "04389154e7a342577f0592c001383f37d9b81ab4a9dac38e76b237a4b1498fcd",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/factorized_s17/checkpoint_2000.pt",
+      "sha256": "f74d6b47e39ae6d40b59345bb870615d8eab7ad6e736ba6386e82f5170128e5d",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/factorized_s17/checkpoint_2500.pt",
+      "sha256": "b4071fc71c0152930689f334a392b547dc4d57554873084774b5b5d559651654",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/factorized_s17/checkpoint_3000.pt",
+      "sha256": "e908da7879385ab9e6567b7a7c93f6d53e13f8c61e1fcd6a3e997a8c9ed04e2f",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/factorized_s17/checkpoint_500.pt",
+      "sha256": "a0c8643bd06a5731433f221ec41c5f54b8922bf3707e3dd8b8fd7a56b056fab5",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/factorized_s17/ema.pt",
+      "sha256": "6f6dac5fe052b97563de50760bfe226d5fbcb49188ceb13fce4df23006964c07",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/factorized_s17/last.pt",
+      "sha256": "178a2b97bd4f6c335eec3fd8de4b5021e04ff1f264e1812245b81796fdca82f6",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/factorized_s42/checkpoint_1000.pt",
+      "sha256": "1a85ecd0a7f35bf3258c0e15f4d6064d0f979357956fdda652d6840215b54b9b",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/factorized_s42/checkpoint_1500.pt",
+      "sha256": "a7f8ebb072ef5207c364f4657d98ea747d52d2d5e90add63265a85c5b5369772",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/factorized_s42/checkpoint_2000.pt",
+      "sha256": "ad3580a1410815d08431d64ebd4b4a1168c521a66150493ab51c179a0fa28084",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/factorized_s42/checkpoint_2500.pt",
+      "sha256": "360b889eda79e4fd982259b7c40bb517fc329c055566af8ca42b801867968cb2",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/factorized_s42/checkpoint_3000.pt",
+      "sha256": "0e2a2052fffca73a4366bc30927e9b1ebbd2460b143fd113f1b38b0dccd24ec3",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/factorized_s42/checkpoint_500.pt",
+      "sha256": "948f9bddc574aea53d60c5c56d1e4ae5a94a87e0381028867854618083858a4a",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/factorized_s42/ema.pt",
+      "sha256": "7f8788a7702cc9942c40790a8da14d6b7584cd23a7d936e96be379b559ec9627",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/factorized_s42/last.pt",
+      "sha256": "39b7ae77f9e27e9869fb6d45f88847d51490f18ce05e208c7920077dd067f732",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/joint_s17/checkpoint_1000.pt",
+      "sha256": "2343f6d0a741ee8f1ce1752e5b030a06a8f8ca78a075dfce061af288b50476a5",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/joint_s17/checkpoint_1500.pt",
+      "sha256": "b36443dcff95157188cfb95d32aee6b7986eb8aefc80ffd025e73c274f0fec5f",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/joint_s17/checkpoint_2000.pt",
+      "sha256": "834dac385a25e018e340bf87650e4a0a189b5ee9166ce5746a6c132ee11ff526",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/joint_s17/checkpoint_2500.pt",
+      "sha256": "fad3fcb4640e96f4829764c3f5ab1a6ee141bb14af3c53e7f7be97bd1476ff24",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/joint_s17/checkpoint_3000.pt",
+      "sha256": "3b4372fc2d11c1fc94076c0c1f8f8531100a4db2e1b737ed5603317c3ba0f16d",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/joint_s17/checkpoint_500.pt",
+      "sha256": "b19f31c99d1b8b5bd280f8b8ce22ccea1af59f56a078f56f71a8f762dc221def",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/joint_s17/ema.pt",
+      "sha256": "916b8067f985d69790c1715c56496e0c012242fc8f20c14f30959b90b41e198f",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/joint_s17/last.pt",
+      "sha256": "634da56475401a0e19c4356b1b7e5e19f4af2370eb8a2652b4d5b2225c20c4f7",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/joint_s42/checkpoint_1000.pt",
+      "sha256": "2f930ce6aa0136b1206975c5acf3c130175e10e24722984fd788c0522e1bb176",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/joint_s42/checkpoint_1500.pt",
+      "sha256": "f4b5d82ab7e0227ff8b24a9ba0848396a5806aab39464908e66044c045a0e385",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/joint_s42/checkpoint_2000.pt",
+      "sha256": "2c22073cd1c09778cf6b7cdbb6d13d86bb4aa11f13b5a1b5698f5e3d52573ed9",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/joint_s42/checkpoint_2500.pt",
+      "sha256": "d66ac2a5c7a4d524f3f0162552d16323d79cf0b383716fb2d8be66706f3cf9bd",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/joint_s42/checkpoint_3000.pt",
+      "sha256": "0556c49089418c04e5e4fc5613e53a3104a997b99936edf561db0c0fb3ba2637",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/joint_s42/checkpoint_500.pt",
+      "sha256": "54bcb027f02a92500b1f16bc7c475ff23e2f1eea4213f6a52156e02655e225b3",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/joint_s42/ema.pt",
+      "sha256": "79a70edb8531f7f4fee8421ae5047dc0986dace79c17edb75b35c901b3bd32be",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_directed_lag_v2/joint_s42/last.pt",
+      "sha256": "e1da8767797ee2fbfc470ff42b1905cc5b72552f46d5469d6bb521cb8838d318",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_physics_aux_s17/checkpoint_1000.pt",
+      "sha256": "4af5c642f5460b2298cee9bf94e194963ca59dc130f1a15f1f123ae9489fd7ba",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_physics_aux_s17/checkpoint_1500.pt",
+      "sha256": "2780edf3dfdce8f699b4434d1f29a2c657e332fbfb1b25bafd5332471306d30c",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_physics_aux_s17/checkpoint_2000.pt",
+      "sha256": "ab976e99f58e6b644666acb268f3a0a9e6498f71d53ac47d8eb3ca967ca78b88",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_physics_aux_s17/checkpoint_2500.pt",
+      "sha256": "49b93ff6efe02f864e910182a81f9bf285e9c5c26b6380a6c9fa1ecac844d8ad",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_physics_aux_s17/checkpoint_3000.pt",
+      "sha256": "0ebe343f9c9173f1ca80ac4e05815e0d270a3eb2f5ac0ab89d6a31956a1a7b39",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_physics_aux_s17/checkpoint_500.pt",
+      "sha256": "272078ce78c8974eefdcbdbea723c609f87b113d0f19e57484848dfbd36feece",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_physics_aux_s17/ema.pt",
+      "sha256": "2c387ce4e9f5e26bdbc77d01af73e6376df163c4a3badbb7e06a36713e26e3ed",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_physics_aux_s17/last.pt",
+      "sha256": "3ef02d61a7f241082a3d1f5423e4bf96ef5a2d34b46b289c807edde30e54b7e0",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_physics_aux_s42/checkpoint_1000.pt",
+      "sha256": "d5ea8933157c2a56ebfbcf78d39e7997f3bfc8a6752b036d59f8ea680abd50cf",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_physics_aux_s42/checkpoint_1500.pt",
+      "sha256": "ceff95c573e617244af03e195ce5eaf3e7360814d0d985c413e7c5bfd813ce4c",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_physics_aux_s42/checkpoint_2000.pt",
+      "sha256": "343144e9fd8404034719faf3c7a6c29352f27231df6229dbd37a0762fcd5de8c",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_physics_aux_s42/checkpoint_2500.pt",
+      "sha256": "5efad7efe7176165ac5d06c15722dfbf2151742b6a661be094a26959d3c34f1f",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_physics_aux_s42/checkpoint_3000.pt",
+      "sha256": "204661d592880837d0d81ff528630e1815de2906eff4f762bad1908ee61e0d90",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_physics_aux_s42/checkpoint_500.pt",
+      "sha256": "3dee874122d22d79f379c07d530751fa0d7d0810fa75487c68373aee3f8c721f",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_physics_aux_s42/ema.pt",
+      "sha256": "23ff392e871a75f55c77dde3690c0c9552d7452671cf326510a98f97b2c2a429",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_physics_aux_s42/last.pt",
+      "sha256": "9a8c8be335c9e7f28986122bc6534023ffd7350078070960d974f0de026e711e",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_s17/checkpoint_1000.pt",
+      "sha256": "1bb7f0f1fa1e52feddbcca2065f0680f12b355415311490cd6975a3fa6d2ffde",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_s17/checkpoint_1500.pt",
+      "sha256": "0ab32449a61911b9fd258ee139a5a080c242069935c8a709065c695d8be38e12",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_s17/checkpoint_2000.pt",
+      "sha256": "076a45163dff2f933a3e455d2b88e8285fbb79bf466237b073f4b72863ab7d04",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_s17/checkpoint_2500.pt",
+      "sha256": "7147be5a34f8baeb118766d685dff3e0c71486dc427dcd89cc021914d94b7665",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_s17/checkpoint_3000.pt",
+      "sha256": "95b9c3efeca1ca443c86066e90d9af66a09c49fe9e861f6f788f1cae9391f8d0",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_s17/checkpoint_500.pt",
+      "sha256": "b8739a015f5a1901ed900e7ed4ce68e69f53d584a55b0b1f14cb2b437d0cf087",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_s17/ema.pt",
+      "sha256": "9515a3bd5d58246afebaad2dcdd9f8967b493ffc29c48342f8c5e54fcdbe03b7",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_s17/last.pt",
+      "sha256": "c903cf6b3b496cdccde9f0aba76d726c6f96b1437e10130d6e84043967dd361c",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_s42/checkpoint_1000.pt",
+      "sha256": "95852725caeda6e57a4b001452712a14db9ead68b87671bc06abd627b7dae315",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_s42/checkpoint_1500.pt",
+      "sha256": "3c67be3d6e8cb57c62470ddcffdbd53ce8478130ead1a3dbe1cd35f7f03874cf",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_s42/checkpoint_2000.pt",
+      "sha256": "b1bdc37ea7fa0c4618178b7723e3a2b6fadc30a15255cf7446dad7ed47755377",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_s42/checkpoint_2500.pt",
+      "sha256": "62f671b54041f69c4c435456b7016155cc48469700d89e3505740fbcc78c3807",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_s42/checkpoint_3000.pt",
+      "sha256": "785dc8fcdc9bb19db44e93e087b5d7f457caf964c1c75f626bce3ec020e30aa1",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_s42/checkpoint_500.pt",
+      "sha256": "9539574fc724c767522530a6f99506bcd959b4b9775842b79818f3d6d8754dbd",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_s42/ema.pt",
+      "sha256": "4103a9c33cec82b0e77447a4dc3838acb6b68fa228eb9ca0770857d7b41ffdec",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/gru72_s42/last.pt",
+      "sha256": "86fb38d92af6448039987f0c44e8b516bcdaf45a18458320246fdc2f32a1e654",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/history_mlp_s17/checkpoint_1000.pt",
+      "sha256": "bbd67c53506b844bc6e1a1a0b5fbd3d26c22a0da909f3e45c094d795b58cfb85",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/history_mlp_s17/checkpoint_1500.pt",
+      "sha256": "b948f92bfb5cdccc6a4f632f8cb7e3c119492d94ecf94d38ed304098bd97bf2b",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/history_mlp_s17/checkpoint_2000.pt",
+      "sha256": "7580175eb03944ff690772ed0044664b3b32e0d29ba4a2f7f2781207827d9ddf",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/history_mlp_s17/checkpoint_2500.pt",
+      "sha256": "67e131519da5b5e1c5784aacadd5009fcb057b27b10fe1492b2f5a7e15ba08f6",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/history_mlp_s17/checkpoint_3000.pt",
+      "sha256": "fe31fc8733286bc282e5cb7e9d44e7c8b7ce3ba0eae73f7bd0865f4c4d5d679d",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/history_mlp_s17/checkpoint_500.pt",
+      "sha256": "8b5956de339aebbf9e69be99ed896ff13185eb2d8287b4253570d024d370f3a4",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/history_mlp_s17/ema.pt",
+      "sha256": "caefc1f8a8f3ccf80663272af06a241420b264696754e6f56af803ecbd90da27",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/history_mlp_s17/last.pt",
+      "sha256": "420f14c3f0db8556ad136cc59faa4a2f760a9a7b510162abe49ab5257723267b",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/history_mlp_s42/checkpoint_1000.pt",
+      "sha256": "ab8d134de412ffc00221927efedaba1b2560727cd91e55297e6f6c578bb68d20",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/history_mlp_s42/checkpoint_1500.pt",
+      "sha256": "114a1ce086b127fdb025b897069df4eab7c2079f8faf268ad6c9ddfc811e1eea",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/history_mlp_s42/checkpoint_2000.pt",
+      "sha256": "c3e19f0038920c0986716b8ced618d6c58b7f470757e3c5b5b1d030cc0d8c82f",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/history_mlp_s42/checkpoint_2500.pt",
+      "sha256": "10ac44aa44596e9baca0f81e49e3635ded50fba11c779b8d4bb3b071ead08233",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/history_mlp_s42/checkpoint_3000.pt",
+      "sha256": "1b9a686f476012af918df5f1b8a8bdabacb398bcd54488ca9180a744ea0191f1",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/history_mlp_s42/checkpoint_500.pt",
+      "sha256": "7e582c9ca56bb3328fb5b244655ed2879418d2e65e654b5ddd602840bc8dbeed",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/history_mlp_s42/ema.pt",
+      "sha256": "6c2b96dc2c459c386252398281a02aa076600b45290863fe3734643d0b7564ed",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/history_mlp_s42/last.pt",
+      "sha256": "78c5896b51261285bf0acb765fd1b31b14959c807cd06a0f86ae4ebb11cdffe5",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_physics_aux_s17/checkpoint_1000.pt",
+      "sha256": "62dda7079ae6dfcf7d0e1f49fba73741f5c626c3ea601fa732e3dbfde8a50fbb",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_physics_aux_s17/checkpoint_1500.pt",
+      "sha256": "6777841306e36847e70f2351e82f6cc0ee0c3a0084aff105a6129e46234a7e2f",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_physics_aux_s17/checkpoint_2000.pt",
+      "sha256": "03348522a176fe40a41c747dfb0d781384bceaa130357a31a0ed4e704685338a",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_physics_aux_s17/checkpoint_2500.pt",
+      "sha256": "657f806e4d673c9ec2c03fa6b476feb557bf227cf7cf1025cfdf7d80a1c22e06",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_physics_aux_s17/checkpoint_3000.pt",
+      "sha256": "509f12f0c16e9186a32e4e050b0b94a567aceefa3c3fdf05e122f8a5094bd568",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_physics_aux_s17/checkpoint_500.pt",
+      "sha256": "ca36f83c3d24f6d4c101a196863cf77d76ab9363c628a4c1ec34ece5087790a2",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_physics_aux_s17/ema.pt",
+      "sha256": "f746050048a0a0a6762d683656c5ccb7914ca87193be07e2fdbbcacf4173de54",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_physics_aux_s17/last.pt",
+      "sha256": "005b66bf2c71b2c821ae6df7bdcb43e84926a6b4ec8656a54e38e0eb9506506e",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_physics_aux_s42/checkpoint_1000.pt",
+      "sha256": "b0e4cae4154bd3532f200c4e7671d0f7bafe064336c19d76e6199264e5b5d09e",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_physics_aux_s42/checkpoint_1500.pt",
+      "sha256": "942401ae9995bf25dff07048b8ad8fd4beeb5ad379079214c945b41c1bd76556",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_physics_aux_s42/checkpoint_2000.pt",
+      "sha256": "45d96ce6d2b5ef7c7be99db4696d67493a416c9ba974463d48be52d1b8a2a325",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_physics_aux_s42/checkpoint_2500.pt",
+      "sha256": "462be6c24459ffb287d9b414d07efd7779b6df418adbd2feca65cd5d4279129a",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_physics_aux_s42/checkpoint_3000.pt",
+      "sha256": "e3a6795f01c9fd3fd568aba1ac20fe0ac42f86ee7771b10958d7069db0b5c17a",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_physics_aux_s42/checkpoint_500.pt",
+      "sha256": "98087c93234c06142c99e3952a062b7ce9fbd4246fed9ba93a6721ac01f11562",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_physics_aux_s42/ema.pt",
+      "sha256": "b0b25b3cfeaf662fd1de3eb179b19b8017f14a138ba18c3c5f796abfb779afa9",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_physics_aux_s42/last.pt",
+      "sha256": "5235531b3a6791ec528e84c208a1f389c554fd479a289c7db608bbc444918a0c",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_s17/checkpoint_1000.pt",
+      "sha256": "1d75dc194e9f6dc5866c9827d2c829eade75fd98b0d5d0a543d410c4b4a6aa6d",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_s17/checkpoint_1500.pt",
+      "sha256": "875116757c04522b048592a6daeb39c4751acb0f0aebd239b353b193a3d444ab",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_s17/checkpoint_2000.pt",
+      "sha256": "4c5430401df3eb813d6f878ced096bfa3337fc97f5265d58b60068a881cc7b90",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_s17/checkpoint_2500.pt",
+      "sha256": "ee00da3b0a48d5d6ff01dc57e7f286c92dd471bd86c81f2a766781131fe912a3",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_s17/checkpoint_3000.pt",
+      "sha256": "f1a9f943b3b391e090c7b8200e7e17b33b27da0ef705a26fa30250d8a22a1acc",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_s17/checkpoint_500.pt",
+      "sha256": "a52fcc1d27c14cf70b3e61b72742b13505347356db924b6bbae97d11c249bb78",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_s17/ema.pt",
+      "sha256": "2388fbceda96dd8ad2064415eb452724cfaad823e7b478be95954321f6e98ab4",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_s17/last.pt",
+      "sha256": "2c8d799b11a6e2adbe6cf531e9c16a505ee91b82bc2a14a76743bbc1a4c14b31",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_s42/checkpoint_1000.pt",
+      "sha256": "0e673b7f8c8be027c03f3212d3f7993ee9e7f3bfa66f233450a582c145b118a1",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_s42/checkpoint_1500.pt",
+      "sha256": "1a5b8ac3ef391b1d3a0fcbb4abb30082c0c0bfd4373d8f119d16d040e0c3ba5d",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_s42/checkpoint_2000.pt",
+      "sha256": "467a7a06dbcce576a7a088734845ffc79937edde0f7793da07b4b49098abad82",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_s42/checkpoint_2500.pt",
+      "sha256": "c9ec9d16964647c382063521ccb6f6b237f062f93ba90f716b9eb9cfff90fc38",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_s42/checkpoint_3000.pt",
+      "sha256": "1365080280aec16fef98e8169d36502ee740e02e7128599e06ed179d301c9776",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_s42/checkpoint_500.pt",
+      "sha256": "5324d85eea2d247e384c342facee0e4e33eb6e0fa6ae9e1bc97138b673b7f471",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_s42/ema.pt",
+      "sha256": "6610500142eb04d03390b8c706f55c383e29bfb0b399c6b4c54908bf0af1c62d",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/lstm72_s42/last.pt",
+      "sha256": "3859cfdaf02e18125b24dcad51462950cf18effda6b4731cfdfd027fb8f1b019",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer24_s17/checkpoint_1000.pt",
+      "sha256": "1d812fa9d76ff7d715a4d4fd1814faf8c4e645e91840e48735eb2e01c0d3965b",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer24_s17/checkpoint_1500.pt",
+      "sha256": "bdbfd7db8d008ff0c1a6f19b4bab790064e43ce5ed0c91cd0dcb89fcb5dbaaf3",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer24_s17/checkpoint_2000.pt",
+      "sha256": "4bc44bd8e3cba18c773f4cd78b1f70afcfc9c82532635af1d663c67b4d90662b",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer24_s17/checkpoint_2500.pt",
+      "sha256": "bc83e8b55b77fec46b080e2996fb5593822580e3418f63afb995a5da3750b685",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer24_s17/checkpoint_3000.pt",
+      "sha256": "2d2222c0c57d1950f08470ef3ae7153688053c753ea65b798e7c0c6cccbb242a",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer24_s17/checkpoint_500.pt",
+      "sha256": "3983323f7bb795c0f96ebe71aa3d4bcf311a926e7dc8cf20270cab30c962a86b",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer24_s17/ema.pt",
+      "sha256": "ce06070cc524038b1f63e2973d03b04837ec037bf93d59f9ed28a9fe42e3f597",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer24_s17/last.pt",
+      "sha256": "8d90076fbaad8b90f755fc101760b8041cf548d449947c315846622965739081",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer24_s42/checkpoint_1000.pt",
+      "sha256": "0c85bfed373a975a772530a41db88251fd271335044040b0df138864c1ce9da9",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer24_s42/checkpoint_1500.pt",
+      "sha256": "cc4cd423baf25b7b60ce8f79732a292cbdf9ca9c054f079c6e5ebd64255b86c5",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer24_s42/checkpoint_2000.pt",
+      "sha256": "2f74cae7916c1cbf568ce5507f1f505c6f6c163daa46176fad973ee4ba59595b",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer24_s42/checkpoint_2500.pt",
+      "sha256": "803440f9483adcca786f56b2954efcdf1b149cc6988d76c23b8a677070218e44",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer24_s42/checkpoint_3000.pt",
+      "sha256": "c515e741d53c4108116e432c2f0f52e764e12796e32c22879b22437bbda29e50",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer24_s42/checkpoint_500.pt",
+      "sha256": "3be2a539699a45f7c1fb7f5043c4b7e8bb0bfea63515a998ac89dcb4b93f274f",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer24_s42/ema.pt",
+      "sha256": "888c9c89a7674d78ff1062d07b35c563c0be9d15163303f8d732b05f72403078",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer24_s42/last.pt",
+      "sha256": "92153ebd0daf4f3b127ef590458771727ec9835a2507d8c3ea9beebb6b484f73",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_aux_s17/checkpoint_1000.pt",
+      "sha256": "cb7d8b8c52a96724b323cff059d3062fca3e39e9c34432d5882368437b91f2e7",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_aux_s17/checkpoint_1500.pt",
+      "sha256": "6d0828c2a93701bfcd4ba0c7eb73e7bcc49f102b4cd1b3e320d47a9b5e3b54a6",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_aux_s17/checkpoint_2000.pt",
+      "sha256": "11d0d59de79849c8e7dc208b3063540eba674280ff1e7b1c0aada50cce0f383f",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_aux_s17/checkpoint_2500.pt",
+      "sha256": "5587ec22fce9f6bde6b5dee34a3158f62963c9fa2a16735db07e2912b1dc051e",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_aux_s17/checkpoint_3000.pt",
+      "sha256": "00767abe82b47f339469d18fd2b457e5e3125a121f14fbfbe8e86e36b92af806",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_aux_s17/checkpoint_500.pt",
+      "sha256": "785949698e4e4aef03e4315e302a38a59605f4c5e40a71a108cc728a166e76c6",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_aux_s17/ema.pt",
+      "sha256": "f498e5304c49b2563d6d4d0726069b48090f5a0e1059b18d32a2170a7a21869d",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_aux_s17/last.pt",
+      "sha256": "23243d7884a0008efabe4e13eb20a1b6b1deb21759139924a1cd253764272fd4",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_aux_s42/checkpoint_1000.pt",
+      "sha256": "1a81a81010933c8498d06f7cd834450d19dde062b4958193958653f0d8fcc2d8",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_aux_s42/checkpoint_1500.pt",
+      "sha256": "49fe75f700d331c134e0ef208dd48d69b398cba53266c88746b2d318cf7570cd",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_aux_s42/checkpoint_2000.pt",
+      "sha256": "ecf91f42a0125cacd3b9a149e83cf15cb5ae0f010d36b5e0624a70d367c4119e",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_aux_s42/checkpoint_2500.pt",
+      "sha256": "5433b2d3e98499c6f4066ad0bd3bbdbfacfb350148e1cccc7b283da17e85e1a8",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_aux_s42/checkpoint_3000.pt",
+      "sha256": "7b5ae05e300dbbcb0215ee94718d4aade8e5fa73eb00ec90f1cca15b6ca1c6ee",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_aux_s42/checkpoint_500.pt",
+      "sha256": "49d284226885695ed389cc4061069f3e57c8b58c83c0c00d0b98582dec9019f6",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_aux_s42/ema.pt",
+      "sha256": "991253f2432a00edf647b61e35d66545f9d9daf9ad45084fd1b0e5453710ed4d",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_aux_s42/last.pt",
+      "sha256": "405c33c147204c60da04caa516a4713ea6609728bcca9064939b4faf53c7c49b",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_local_s17/checkpoint_1000.pt",
+      "sha256": "df5e91d3501478807c0be74d08696a55cc98b3f8fbe29159219a045a4867f9a9",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_local_s17/checkpoint_1500.pt",
+      "sha256": "19a387ed18741bbfd95d9a6ca5da3a284e49e037b6332b8e90c39b7d2036b151",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_local_s17/checkpoint_2000.pt",
+      "sha256": "ac1713020493dd22ff48870173f8b9d325e3f04f9f1b100d43c3db7c790588ca",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_local_s17/checkpoint_2500.pt",
+      "sha256": "9945e29a261b79be71e64fb655742e3566c5811ed6a93b7dc42be9230dfb6996",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_local_s17/checkpoint_3000.pt",
+      "sha256": "3120a88204ae909b55e4318574cef7a636eaf34f475752f31a8127bc64041eac",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_local_s17/checkpoint_500.pt",
+      "sha256": "15402060311fde12946e113961e8c8066bbe0def5dc4192f411492834a411acb",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_local_s17/ema.pt",
+      "sha256": "abde682fec814c4aa3b9ac0a07a2574bfbaa0a657e21dcb34e8119a9271c318a",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_local_s17/last.pt",
+      "sha256": "59079c44fcd8145a02250b030a5ea0b58da60bb11a82b8f6ab4881cca8e1b30f",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_local_s42/checkpoint_1000.pt",
+      "sha256": "3d70c8333a20ec8175fd62c5e82fd17d1d46700dcfe07ce480339d84ca63434c",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_local_s42/checkpoint_1500.pt",
+      "sha256": "3f4db0ea6891ae13b8d395015f2e5d4f916ff12634b8b58f3721f8bd8ac97466",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_local_s42/checkpoint_2000.pt",
+      "sha256": "4f8f1e01ed10c11aebaa78fe37baf9cb6b8c6b717ce08f9d0bf77ff930723f46",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_local_s42/checkpoint_2500.pt",
+      "sha256": "53e583349f260ece975b6495aec3c59efb9189156fc115d8dd9ee2fae71320a1",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_local_s42/checkpoint_3000.pt",
+      "sha256": "1358d2f7b2fe61bbd0dd543ac8a9148157470345312e23885a82d737e3cc432c",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_local_s42/checkpoint_500.pt",
+      "sha256": "a25ba0daafa892c5edd69e2c56bc3765197a4869c0df96dc45b8dadc96c09243",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_local_s42/ema.pt",
+      "sha256": "c9ef24fc4ba9274063e3953eaf87c2957d6ae0d488916379b61cc17dbe1617f2",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_local_s42/last.pt",
+      "sha256": "1cb7ab9ab30e513a333b5a0568ec9566dc4d840c93e2d48e988ac4bf2e602ad3",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_aux_s17/checkpoint_1000.pt",
+      "sha256": "1644999bbbe4c778d3bed8ccba681f7a191843b7514493a1a2149912a594ed49",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_aux_s17/checkpoint_1500.pt",
+      "sha256": "71cbc8f00ae03f8b9c8a7e74c501eb999aebe0d0c2eccf09a256c3188b239cee",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_aux_s17/checkpoint_2000.pt",
+      "sha256": "03d1ca8ee0ef7f2cf07ee067ef0460e89f61580529697eaad7a174687c4d95a0",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_aux_s17/checkpoint_2500.pt",
+      "sha256": "bca78138a0e6cf0bb160fbfb122766961709e7692caf3430e1d893949735d3b5",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_aux_s17/checkpoint_3000.pt",
+      "sha256": "c138a6280c491d303290eacd747cc39d852c4258f206fba134e864b4283ff70f",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_aux_s17/checkpoint_500.pt",
+      "sha256": "2b138075be61c91762c137f555f7d07953f3a001774dd5c45169b316f119c6cd",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_aux_s17/ema.pt",
+      "sha256": "5a5b526bae650e3fa2140766c33847b4a53791805b0283339ec6100fac4a03af",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_aux_s17/last.pt",
+      "sha256": "68b8625b973897dba7ad89bd23d74ced2c6e123742a7889fdbc140bd5ac536e8",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_aux_s42/checkpoint_1000.pt",
+      "sha256": "175414e0abab36210c2d4a867c3c719b3e8d304a595083e6f4c337605bcc5180",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_aux_s42/checkpoint_1500.pt",
+      "sha256": "92003285b3d9e81f58ed807fa95f1ef623c199a04bad94b2faf9ba101835d6c8",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_aux_s42/checkpoint_2000.pt",
+      "sha256": "582287138979bf03d01fc4c85a84bab4ffcbc76465170084292ef26a77ef876a",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_aux_s42/checkpoint_2500.pt",
+      "sha256": "47a4da08c53b270269298e817c3fe6da18662b976dc60548be1930dfff426406",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_aux_s42/checkpoint_3000.pt",
+      "sha256": "2a985fc172e54810ead279e300c21c2c12f2e625fda44e2649eded9cd12e0fb9",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_aux_s42/checkpoint_500.pt",
+      "sha256": "6bb0a34a587d23687b2617d9a0d217a03b7ed1e43c56372f30bae3f44482cc77",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_aux_s42/ema.pt",
+      "sha256": "c33e61ab8de6b26c7f88b1037fd759c6657eb8cee44eff2ad5acc898a07a0855",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_aux_s42/last.pt",
+      "sha256": "be3b45c4ce4353f89945c1613ad8501febc4a3bcda9e5b9fab92420b7849e508",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_s17/checkpoint_1000.pt",
+      "sha256": "69895314e82584080887626f7474e408bd3ec7e6e06a778403f1a44a705e7cb8",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_s17/checkpoint_1500.pt",
+      "sha256": "f52331016d05a6e2afe66920c9d4fda3ffc4d78bf235d39ad118f18e9109c37c",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_s17/checkpoint_2000.pt",
+      "sha256": "5517acc1b3cb60f1d61901fa6d3d8d882a21280dfb68130d954ba4f3430e11a6",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_s17/checkpoint_2500.pt",
+      "sha256": "64dbc1a728e7a7dc1b214c4a2ec44dd68a0c16163b34d7c326324bdd2c1004c1",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_s17/checkpoint_3000.pt",
+      "sha256": "264b938fbe4ed8549f0cf9189617cd61734c9529833f94871dbc95abc94a56cd",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_s17/checkpoint_500.pt",
+      "sha256": "3aed0fefb6f3f373a157a42ffcf9fed001462039d3d768431bd0cc0c3e9d7109",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_s17/ema.pt",
+      "sha256": "9ba17b23b6abb82b427162e4a11b123ecf7ad0b8d8aa9666dfb376bc02a64890",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_s17/last.pt",
+      "sha256": "ef57e45e6d8aaa7e2516a38b3ec34e1170dabee568d515e9fb30b069247e5ba1",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_s42/checkpoint_1000.pt",
+      "sha256": "a5cb82239a818d4859e99b9f9973f9d86ada2b7384b8667357595348ee4d1a6b",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_s42/checkpoint_1500.pt",
+      "sha256": "8089a5d1446c73f6f4374f9eca824992f00673f8528a2d925552af4096faf67c",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_s42/checkpoint_2000.pt",
+      "sha256": "8d14653c2921451e41af11ff0901d78b182e96aed24962ad99315725ec5890f3",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_s42/checkpoint_2500.pt",
+      "sha256": "3315800b85e4975c007ab56212762c194ea05a4b56a160b51d4fabefa679bf5b",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_s42/checkpoint_3000.pt",
+      "sha256": "89225b0c7d4c03a5d5b5865eb3155bea0bd054add2024268cb82d27398149514",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_s42/checkpoint_500.pt",
+      "sha256": "a4bc819cc60b200a2404677a717700b8262842b61751a93c33d37655cd3ccee6",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_s42/ema.pt",
+      "sha256": "1b1d35793cbd24b7e354ddf0631a0491b1d36d230e9eb8c9d453a0bb19b73537",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_physics_s42/last.pt",
+      "sha256": "9928e91c07c65cc25d20ff268a712d23f9e45a734958b9f30faad72d66cdf0a2",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_s17/checkpoint_1000.pt",
+      "sha256": "4ed6d6df0eaa69ed4ce0fa95500a1a0727d7d21b9edad741bfb28b97a0bad9dc",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_s17/checkpoint_1500.pt",
+      "sha256": "1df70e45c7c7606c8be38df315d8a9705ad4e03897e919248f711a65b0fe5c56",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_s17/checkpoint_2000.pt",
+      "sha256": "d9ff19f6e086967b9b177e681259aacc081c677d41142f1e60f60b678cd7adde",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_s17/checkpoint_2500.pt",
+      "sha256": "5b2e5ffdf9f258454b3cb6493cd255b25ad44baeedb3c6a48130f1b5600c72b2",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_s17/checkpoint_3000.pt",
+      "sha256": "a23bbe761173fef17ebd9c507f1ff860cfc8ae5b6b66ac65ade6754d3af0543a",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_s17/checkpoint_500.pt",
+      "sha256": "98c76f2c9db65998761c3a0fc875c0efda14a1c6318e48df80f8ee6371291854",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_s17/ema.pt",
+      "sha256": "941369616db416e05f9b1716fa620979cf64a613511e7815c38b3c3ffe71d27d",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_s17/last.pt",
+      "sha256": "d76ed1b9d26c00c15af0e7009b2c8d44c7a97126fa9438b4b5ccbca271780684",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_s42/checkpoint_1000.pt",
+      "sha256": "5ffe877b9928d92d496c5f7adf9dc83b5c3c056a0938b07c5c52f30f9e6d2ded",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_s42/checkpoint_1500.pt",
+      "sha256": "7f087f3d0643a9197267e58ef428fbcad7d9db9dd04e2518659807b01af5a958",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_s42/checkpoint_2000.pt",
+      "sha256": "29e59c30ae098c0b576858d6ff6f718c841963fc6eee7384d004607cceddef1d",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_s42/checkpoint_2500.pt",
+      "sha256": "1ffb02f84156a9d60ef0b0304720fcc569ade71a0e7db63856818d1654a357e0",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_s42/checkpoint_3000.pt",
+      "sha256": "d997ebc72fb967e30380ba493d6daed7572558d63936ed45108fcdefdb488434",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_s42/checkpoint_500.pt",
+      "sha256": "052634bfe6d5f62132ed0e5836f99f97262f78fc59d5f71d9b77b926a7475d69",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_s42/ema.pt",
+      "sha256": "571fc469b5c0b10954d9b0bcc202867340d8000df8364ff1349f6cd533a55f74",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/transformer72_s42/last.pt",
+      "sha256": "8661cc3513b3f458412413f57fb8cbf22982c89b970681ef08afe49b7ff6d26d",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/weather_mlp_s17/checkpoint_1000.pt",
+      "sha256": "ec4e9e2ed346c9dca20773f68dad54c957c886703aff0266d4e1f9b783999f0b",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/weather_mlp_s17/checkpoint_1500.pt",
+      "sha256": "b7a2d163c663d14eae27d5550dcbc78dc5c98612a1880beb3830bd8a54178fdd",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/weather_mlp_s17/checkpoint_2000.pt",
+      "sha256": "328e3517591b5bb2954cc16128b9449efb8e39b9a2c3b8c2b024426481afafd0",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/weather_mlp_s17/checkpoint_2500.pt",
+      "sha256": "a3c1b2bab32e7eb0484125d6e73cedec785cc7f664c61d3ddf8b57ee3db5fce5",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/weather_mlp_s17/checkpoint_3000.pt",
+      "sha256": "44bac1d7ff09656c8c9b4ab7035f93db41ab883f29678a54d059df72d803f78d",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/weather_mlp_s17/checkpoint_500.pt",
+      "sha256": "4c971ebe0fe22002010122936eaab6eb8f0e1306e884b1a5005e00c40f58eaf1",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/weather_mlp_s17/ema.pt",
+      "sha256": "8cf50e3ed85d0c8f6045abb1fd1987a53bfce4c55b522e3e0b4f34c0a36700e1",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/weather_mlp_s17/last.pt",
+      "sha256": "7439a7fa37b5459a4df57c7258dffb388630bbfc3b99246beee1c87e83b0d528",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/weather_mlp_s42/checkpoint_1000.pt",
+      "sha256": "88985d52547d37a0e7c4375982978fc11a6a7a652e6c8c610ea7b5cd705c0e5a",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/weather_mlp_s42/checkpoint_1500.pt",
+      "sha256": "c8bacde1c59aa98c371368b3071bc99516a2f33bc632f8de222d87b47cea2dd7",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/weather_mlp_s42/checkpoint_2000.pt",
+      "sha256": "acf315545c090889087ee8a1b3c5a986b7f167fda72aec456d4080c24d02623b",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/weather_mlp_s42/checkpoint_2500.pt",
+      "sha256": "c3a2e8be2927850d018dd9dd9d0ccfac714af14d0e07dbdbcbe80eca0a408528",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/weather_mlp_s42/checkpoint_3000.pt",
+      "sha256": "fdcf84b9d8d87c79b187d456b1ecb40ea4313fefbae14754a8b329d81038e64f",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/weather_mlp_s42/checkpoint_500.pt",
+      "sha256": "17ef6c5c8ee47944635ef5764691e06853f3cafee3d3c5a91119b5550eeb871f",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/weather_mlp_s42/ema.pt",
+      "sha256": "7757c0923191c5328b750963be204eb897b643a525906ad4b7e111a000b2b4ea",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_native_weather_means/weather_mlp_s42/last.pt",
+      "sha256": "9914d364e71cc9a4ced1294fa2e31e4a91a50ae7205d6d194a2d544f5ece89b6",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/H_delta_s17/checkpoint_1000.pt",
+      "sha256": "7a8feafe33cea7fec81231030eeebcd38d03a9a7c3533a4ad6317579b203d394",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/H_delta_s17/checkpoint_1500.pt",
+      "sha256": "7249f9f82dbacd6c5cb17c9373dd2d00b42559701e0141f578540231205a3972",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/H_delta_s17/checkpoint_2000.pt",
+      "sha256": "c9b6cae2229bcf627de92914090ca921eb570e23bebca9b4230d16d7bfb31f99",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/H_delta_s17/checkpoint_2500.pt",
+      "sha256": "194b30bd44ff4670f0050d8d4c2dc94c88a16d92ab4e920033679a903ff66214",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/H_delta_s17/checkpoint_3000.pt",
+      "sha256": "ea5f1c320e6dbfb7da99de30d6f90007a8b5a2610fd475a162e8ff4dad7f1979",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/H_delta_s17/checkpoint_500.pt",
+      "sha256": "247c8f64fbb5d7abad0cdce9cb386b4e615f1815541e631617da10e1a4b97152",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/H_delta_s17/ema.pt",
+      "sha256": "7dc72e58f776f93f10a9512e29ed215d99cf46d21ef7df485e20846a80cc528d",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/H_delta_s17/last.pt",
+      "sha256": "b65f137ef13638f1e30f4aad508fa26da8031babfdf3485b0bb94de82ad832a3",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/H_delta_s42/checkpoint_1000.pt",
+      "sha256": "21479898d1bc8719bb7ad6e7bf638a3439879fc91f5b8c9964a09196e1347e09",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/H_delta_s42/checkpoint_1500.pt",
+      "sha256": "6c4f729d04b83bb26245a14a1f7dc83f20f403fe13f64b9fcb246ffb3f46f244",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/H_delta_s42/checkpoint_2000.pt",
+      "sha256": "c4d3d5a019cf3af9fd8fafb23602bff83f06a27ac00d1e0ecd40b43f5bb4378e",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/H_delta_s42/checkpoint_2500.pt",
+      "sha256": "ef54b4167b43d7aefa40f116eb8f22cd50955388afb20b5b29e68ce0b6fb177d",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/H_delta_s42/checkpoint_3000.pt",
+      "sha256": "9ba3bd120a5e2587ed7dba38690d46dc7b8c24f0d2e79629d60ad292d23e8517",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/H_delta_s42/checkpoint_500.pt",
+      "sha256": "a60fa5aa5fa3c58ad3fc5d840066fee020738399b91d4ba6055950104f55810f",
+      "type": "dict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/H_delta_s42/ema.pt",
+      "sha256": "033c21f267da58dabc4fb49d6a38a9e900a786d645b406aad5a9e681bd580111",
+      "type": "OrderedDict"
+    },
+    {
+      "path": "artifacts/legacy_layout/research_pipeline/studies/us_dense_zwd_20261105_v1/03_code/gnss_field_server/results/20261126_within_forecast_increment/H_delta_s42/last.pt",
+      "sha256": "f5fc5daa092e604886d25a0c935d8b63074bf28045fcd2c59f3cb4e0a2032e17",
+      "type": "OrderedDict"
+    }
+  ],
+  "labels_parsed": false,
+  "training_started": false
+}

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "passed": 609,
+  "seconds": 279.93,
+  "scope": "full project before sixth compaction test added; all current compaction tests separately 6 passed",
+  "log_sha256": "b6ec6bbde37c2355361d9dc5dc4ce664ddde525cbc7b9fc9a15c9ea539ceebd0"
+}

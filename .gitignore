@@ -59,6 +59,8 @@
 /research_pipeline/
 /maintenance/*
 !/maintenance/paper_restructure_20261126/
+!/maintenance/compact_20261127/
+/maintenance/compact_20261127/staging/
 /research/engine/results/
 /research/engine/src/
 /research/engine/local_validation/

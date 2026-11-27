@@ -1,0 +1,41 @@
+{
+  "groups": {
+    "project:keep_other": {
+      "files": 8999,
+      "bytes": 5023731134
+    },
+    "project:keep_raw": {
+      "files": 4740,
+      "bytes": 6525516559
+    },
+    "project:keep_core": {
+      "files": 1926,
+      "bytes": 22393279279
+    },
+    "project:keep_evidence": {
+      "files": 4540,
+      "bytes": 134217360
+    },
+    "project:archive_model": {
+      "files": 2473,
+      "bytes": 3456512148
+    },
+    "project:retire_derived": {
+      "files": 650,
+      "bytes": 54829639685
+    },
+    "cache_d:keep_evidence": {
+      "files": 586,
+      "bytes": 26465796
+    },
+    "cache_d:keep_raw": {
+      "files": 65,
+      "bytes": 34384595667
+    },
+    "cache_d:retire_derived": {
+      "files": 72,
+      "bytes": 64630499633
+    }
+  },
+  "total_bytes": 191404457261
+}

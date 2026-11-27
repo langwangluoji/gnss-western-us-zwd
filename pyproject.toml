@@ -23,5 +23,5 @@ gnss_field = ["resources/*.json", "resources/*.html"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src", ".", "research/engine", "research/engine/tools"]
-testpaths = ["research/engine/tests", "research/europe_transfer_20261126", "research/europe_vmf3_20261126", "maintenance/paper_restructure_20261126"]
+testpaths = ["research/engine/tests", "research/europe_transfer_20261126", "research/europe_vmf3_20261126", "maintenance/paper_restructure_20261126", "maintenance/compact_20261127"]
 markers = ["cuda: requires a CUDA device", "real_data: requires the prepared project data"]
