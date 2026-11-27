@@ -1,0 +1,10 @@
+{
+  "status": "verified",
+  "verified_at": "2026-11-27T16:48:49.425839+08:00",
+  "verified_content_commit": "59ee16f7af1c08b8123581d6eb37214da9d69b6a",
+  "remote_refs_at_verification": {
+    "refs/heads/codex/data-compaction-20261127": "59ee16f7af1c08b8123581d6eb37214da9d69b6a",
+    "refs/heads/main": "59ee16f7af1c08b8123581d6eb37214da9d69b6a"
+  },
+  "note": "This receipt is committed after the verified content commit; final receipt-only HEAD is checked again after its push."
+}

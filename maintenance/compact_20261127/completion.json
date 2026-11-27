@@ -40,5 +40,6 @@
   "new_research_metrics_produced": false,
   "scientific_locks_unchanged": true,
   "posttest_scientific_metadata_verified": 6415,
-  "publication_status": "pending final commit and remote verification"
+  "publication_status": "content commit verified on remote main and compaction branch",
+  "verified_published_content_commit": "59ee16f7af1c08b8123581d6eb37214da9d69b6a"
 }

@@ -45,6 +45,7 @@ D盘清理范围为旧dense physics/validation H5、旧ref expanded中间H5和�
 - [远端归档核验](remote_archive_verification.json)与[详细资产回执](remote_archive.json)：7个核心资产验证通过，另有校验和文本。
 - [保留集合核验](retention_verification.json)：12352个科学文件、68303771249字节逐文件哈希一致，435份核心权重可加载；删除日志3195项与清单一致。此检查不解析目标观测值，不训练模型。
 - [删除后全项目测试](postdelete_tests.json)：611 passed，286.61秒；测试覆盖本轮7项整理回归和原研究工程测试。
+- [总体执行回执](completion.json)与[GitHub发布核验](publication.json)：本地执行、远端内容提交和临时包拦截分别记录。
 
 恢复退役模型时，先按Release的`recovery_manifest.json`验证下载压缩包SHA256；从对应`retired-models-*.tar.gz`中读取`objects/<SHA256>.<扩展名>`，再按inventory中的原始路径恢复。相同内容去重保存，恢复后再次核验文件SHA256。`retired-evidence.tar.gz`保存原路径映射和未纳入网页索引的轻量记录。
 
